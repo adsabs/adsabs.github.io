@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Search the ADS
-permalink: /search-syntax/
+layout: post
+title: "Search Syntax"
+order: 1
 ---
 
 
@@ -71,58 +71,3 @@ The **"+ options"** button next to the search box allows you to
   * specify which databases to be searched.  The default is set to search both the astronomy and physics databases but you can specify to search only the astronomy database or to search only the physics database or to search all databases (by selecting all you will include articles which have not been categorized as physics or astronomy, e.g. arXiv preprints in computer science or general science articles in journals.)  
   * specify how many results to display on one page (20 is the default; 3000 is the maximum.)
   
-##Advanced Searches##
-
-Our search engine supports a list of operators which can take any query and manipulate the list of results to accomplish additional functionality.
-
-###Second-order Queries###
-
-We provide three operators which modify the query results by performing second-order operations on the original query. To use them, simply click on one of the three options below the search box or wrap your query with the corresponding operator in the search box.
-
-**Trending** -- returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field.  For example:
-
-    trending(exoplanets)
-    
-will return a ranked list of papers which are currently popular among the readers interested in exoplanets.
-
-**Useful** -- returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field.  For example:
-
-    useful("galaxy surveys")
-
-will return a ranked list of papers spanning a variety of topics useful to researchers interested in analyzing surveys of galaxies.
-
-**Instructive** -- returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field.  For example:
-
-    instructive("weak lensing")
-
-will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications. 
-
-###Citation and Reference operators###
-
-The search engine supports two operators which generate lists of references or citations from a query.  The syntax for this operators are _references(query)_ and _citations(query)_.  Some examples will help clarify their use:
-
-    citations(author:"huchra, john")           # returns the list of papers citing John Huchra's papers
-    references(bibcode:2003AJ....125..525J)    # returns papers cited by the paper 2003AJ....125..525J
-    citations(abs:HST)                         # returns papers citing papers which have "HST" in their abstract
-    
-One powerful aspect of having these operators at our disposal when creating a query is that we can combine them with additional search terms to expand or narrow your query.  For example, the following query finds all papers which cite [the original JWST paper](http://labs.adsabs.harvard.edu/adsabs/abs/2006SSRv..123..485G/) as well as papers which contain the terms "Webb" or "JWST" in their abstract:
-
-    citations(bibcode:2006SSRv..123..485G) OR abs:(Webb OR JWST)
-
-###Positional Field Searches###
-
-The _pos()_ operator allows you to search for an item within a field by specifying the position in the field.  The syntax for this operator is _pos(fieldedquery,position)_ For example:
-
-    pos(author:"Oort, J",2)         # returns papers which have "J. Oort" as the second author
-    pos(aff:harvard,1)              # returns papers for which the first author has a Harvard affiliation
-    pos(title:M31,1)                # returns papers for which the title start with "M31"
-    
-Currently the _pos()_ operator works on these fields: _author_, _aff_, _title_.
-
-###Truncation of result list###
-
-You can limit the number of results returned by your search by using the _topn()_ operator, which accepts the syntax _topn(N,query)_ and returns the top N papers from a list of results
-
-    topn(20,"galaxy clusters")
-    
-This will limit the list of results to be the 20 most relevant papers on "galaxy clusters."  

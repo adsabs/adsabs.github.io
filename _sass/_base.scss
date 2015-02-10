@@ -93,7 +93,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($brand-color, 20%);
     }
 
     &:hover {
@@ -130,7 +130,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: lighten($brand-color, 30);
 }
 
 code {
@@ -154,20 +154,67 @@ pre {
  * Wrapper
  */
 .wrapper {
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
+}
 
-    // @include media-query($on-laptop) {
-    //     max-width: -webkit-calc(800px - (#{$spacing-unit}));
-    //     max-width:         calc(800px - (#{$spacing-unit}));
-    //     padding-right: $spacing-unit / 2;
-    //     padding-left: $spacing-unit / 2;
-    // }
+/* 
+for posts
+ */
+
+.left-nav {
+
+    width: 20%;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: lighten($grey-color-light, 5);
+    border-radius: 4px;
+
+    ul {
+        list-style: none;
+        margin-left: 15px;
+    }
+
+    li {
+        font-size: $small-font-size;
+        padding: 4px 10px;
+
+    }
+
+    li.active {
+
+        background-color : $background-color;
+        padding-left: 5px;
+        border-left: 5px solid saturate($brand-color, 30);
+  
+
+
+    }
+
+    h3 {
+        font-size: $base-font-size;
+        margin-bottom: 6px;
+    }
+
+    h3.active { 
+        background-color : $background-color;
+        padding-left: 5px;
+        border-left: 5px solid saturate($brand-color, 30);
+
+    }
+}
+
+.main-content {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2%;
 }
 
 

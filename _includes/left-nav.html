@@ -1,0 +1,23 @@
+<div class="left-nav">
+
+
+<h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/search">Searching the ADS</a></h3>
+<ul>
+ {% assign posts = (site.categories.search | sort:"order")  %}
+    {% for post in posts %}
+       {% if post.url %}
+        <a href="{{ site.baseurl }}{{ post.url }}"><li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li></a>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<h3 class="{% if '/actions/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/actions">Working with Search Results </a></h3>
+<ul>
+ {% assign posts = (site.categories.actions | sort:"order")  %}
+    {% for post in posts %}
+       {% if post.url %}
+       <a href="{{ site.baseurl }}{{ post.url }}"> <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li></a>
+        {% endif %}
+    {% endfor %}
+</ul>
+</div>

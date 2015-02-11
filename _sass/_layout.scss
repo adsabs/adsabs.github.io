@@ -2,12 +2,12 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    border-bottom: 1px solid $brand-color-muted;
+    margin-bottom: 50px;
 }
 
 .site-title {
@@ -166,7 +166,7 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 34px;
 }
 
 .post-list {
@@ -198,7 +198,7 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 34px;
     letter-spacing: -1px;
     line-height: 1;
 

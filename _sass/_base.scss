@@ -130,7 +130,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: lighten($brand-color, 30);
+    background-color: $code-color;
 }
 
 code {
@@ -173,8 +173,12 @@ for posts
     padding: 1%;
     display: inline-block;
     vertical-align: top;
-    background-color: lighten($grey-color-light, 5);
-    border-radius: 4px;
+    background-color: $nav-color;
+    border-radius: 2px;
+
+    a {
+       color: $nav-text-color;
+    }
 
     ul {
         list-style: none;
@@ -182,39 +186,46 @@ for posts
     }
 
     li {
-        font-size: $small-font-size;
-        padding: 4px 10px;
+        padding: 2px 10px;
+        font-size: 15px;
 
     }
 
     li.active {
 
-        background-color : $background-color;
-        padding-left: 5px;
-        border-left: 5px solid saturate($brand-color, 30);
-  
-
+        padding-left: 6px;
+        border-left: 4px solid $brand-color-muted;
+        color: $brand-color-muted;
 
     }
 
     h3 {
         font-size: $base-font-size;
         margin-bottom: 6px;
+        padding-left: 8px;
+        font-weight: 500;
+
+        a {
+           color: $nav-header-color;
+        }
     }
 
     h3.active { 
-        background-color : $background-color;
-        padding-left: 5px;
-        border-left: 5px solid saturate($brand-color, 30);
+        padding-left: 4px;
+        border-left: 4px solid $brand-color-muted;
+        a {
+          color: $brand-color-muted;
+
+        }
 
     }
 }
 
 .main-content {
-    width: 75%;
+    width: 74%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 2%;
+    padding-left: 3%;
 }
 
 

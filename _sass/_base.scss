@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 3;
 }
 
 
@@ -48,8 +48,8 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
     vertical-align: middle;
+    max-width: 50%;
 }
 
 
@@ -163,6 +163,7 @@ pre {
 .wrapper {
     width: 90%;
     max-width: 1400px;
+    min-width:850px;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -170,12 +171,14 @@ pre {
     @extend %clearfix;
 }
 
-//wrapper column styling
-.page-content .wrapper{
-
-    background-image: linear-gradient(to right, #fdfdfd, #fdfdfd 3%, #1a1a1a 3%, #1a1a1a 24%, #1a1a1a, #1a1a1a 24%, #fdfdfd 24%, #fdfdfd);
-    min-height: 1000px;
+.pull-right {
+    float:right !important;
 }
+
+.pull-left{
+    float:left !important;
+}
+
 
 /* 
 for posts
@@ -188,6 +191,7 @@ for posts
     display: inline-block;
     vertical-align: top;
     border-radius: 2px;
+    background-color: $nav-color;
 
     a {
        color: $nav-text-color;

@@ -20,4 +20,16 @@
         {% endif %}
     {% endfor %}
 </ul>
+
+<h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/api">Using the ADS API </a></h3>
+<ul>
+ {% assign posts = (site.categories.api | sort:"order")  %}
+    {% for post in posts %}
+       {% if post.url %}
+       <a href="{{ site.baseurl }}{{ post.url }}"> <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li></a>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+
 </div>

@@ -1,0 +1,18 @@
+---
+layout: default
+category: api
+---
+
+  {%include left-nav.html %}
+
+<div class="post main-content">
+
+<h2>All Entries in the Category "ADS API"</h2>
+
+{% assign posts = (site.categories[page.category] | sort:"order")  %}
+    {% for post in posts %}
+    <h3><a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a></h3>
+    {{post.content}}
+      {% endfor %}
+
+ </div>

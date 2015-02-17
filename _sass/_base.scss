@@ -161,13 +161,13 @@ pre {
  * Wrapper
  */
 .wrapper {
-    width: 90%;
-    max-width: 1400px;
-    min-width:850px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    // width: 90%;
+    // max-width: 1400px;
+    // min-width:850px;
+    // margin-right: auto;
+    // margin-left: auto;
+    // padding-right: $spacing-unit;
+    // padding-left: $spacing-unit;
     @extend %clearfix;
 }
 
@@ -192,6 +192,12 @@ for posts
     vertical-align: top;
     border-radius: 2px;
     background-color: $nav-color;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    box-shadow: 1px 0px 4px lighten($grey-color, 10);
+
 
     a {
        color: $nav-text-color;
@@ -211,8 +217,8 @@ for posts
     li.active {
 
         padding-left: 6px;
-        border-left: 4px solid $brand-color-muted;
-        color: $brand-color-muted;
+        border-left: 4px solid $bright-brand;
+        color: $bright-brand;
 
     }
 
@@ -229,9 +235,9 @@ for posts
 
     h3.active { 
         padding-left: 4px;
-        border-left: 4px solid $brand-color-muted;
+        border-left: 4px solid $bright-brand;
         a {
-          color: $brand-color-muted;
+          color: $bright-brand;
 
         }
 
@@ -240,9 +246,8 @@ for posts
 
 .main-content {
     width: 74%;
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 3%;
+    margin-left: 25%;
+    margin-top: $spacing-unit*2;
 }
 
 

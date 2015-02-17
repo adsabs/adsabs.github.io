@@ -13,23 +13,26 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #1a1a1a;
-$background-color: #fdfdfd;
-$brand-color:      #4173dd;
+$background-color: #fff;
+$brand-color:      #1c459b;
+$bright-brand:     #648de1;
 $brand-color-muted: lighten($brand-color, 20);
 
-$code-color: lighten($brand-color, 38);
+$code-color: lighten($bright-brand, 28);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #555;
+$grey-color-light: #eee;
+$grey-color-dark:  #333;
+
+$text-color:       $grey-color-dark;
+
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$nav-color:        $text-color;
-$nav-header-color:  darken($background-color, 20);
-$nav-text-color:  $background-color;
+$nav-color:        $grey-color-light;
+$nav-header-color:  desaturate($brand-color, 30);
+$nav-text-color:  $text-color;
 
 
 

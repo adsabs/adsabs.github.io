@@ -194,7 +194,6 @@
 }
 
 
-
 /**
  * Posts
  */
@@ -204,7 +203,6 @@
 
 .post-title {
     font-size: 36px;
-    font-weight: 500;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -218,20 +216,14 @@
 
 
     h2 {
-        font-size: 32px;
-        color: $brand-color;
+        border-bottom: 4px solid mix($brand-color-muted, $background-color, 30);
+         font-size: 28px;
+         margin-top: $spacing-unit * 1.5;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
     }
 
     h3 {
         font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
     }
 
     h4 {

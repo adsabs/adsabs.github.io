@@ -13,12 +13,11 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$background-color: #fff;
 $brand-color:      #1c459b;
-$bright-brand:     #648de1;
-$brand-color-muted: lighten($brand-color, 20);
+$bright-brand:     lighten(saturate($brand-color, 15), 15);
+$brand-color-muted: lighten($brand-color, 15);
 
-$code-color: lighten($bright-brand, 28);
+$code-color: lighten($bright-brand, 38);
 
 $grey-color:       #555;
 $grey-color-light: #eee;
@@ -26,11 +25,14 @@ $grey-color-dark:  #333;
 
 $text-color:       $grey-color-dark;
 
+$background-color: lighten($grey-color-light, 5);
+
+
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$nav-color:        $grey-color-light;
+$nav-color:        darken($grey-color-light, 2);
 $nav-header-color:  desaturate($brand-color, 30);
 $nav-text-color:  $text-color;
 
@@ -55,5 +57,6 @@ $nav-text-color:  $text-color;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "tables"
 ;

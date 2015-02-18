@@ -43,7 +43,6 @@ ul, ol, dl, figure,
 }
 
 
-
 /**
  * Images
  */
@@ -90,17 +89,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h1 {
+    color: $brand-color;
+}
 
 
 /**
  * Links
  */
 a {
-    color: $brand-color;
+    color: $bright-brand;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 20%);
+        color: darken($bright-brand, 20);
     }
 
     &:hover {
@@ -157,19 +159,6 @@ pre {
 
 
 
-/**
- * Wrapper
- */
-.wrapper {
-    // width: 90%;
-    // max-width: 1400px;
-    // min-width:850px;
-    // margin-right: auto;
-    // margin-left: auto;
-    // padding-right: $spacing-unit;
-    // padding-left: $spacing-unit;
-    @extend %clearfix;
-}
 
 .pull-right {
     float:right !important;
@@ -188,17 +177,19 @@ for posts
 
     width: 20%;
     padding: 1%;
-    display: inline-block;
-    vertical-align: top;
     border-radius: 2px;
     background-color: $nav-color;
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
-    box-shadow: 1px 0px 5px lighten($grey-color, 10);
+    overflow:auto;
 
     .s-nav-header{
+
+        a:hover, a:focus{
+            text-decoration: none;
+        }
 
         margin-bottom: $spacing-unit;
         text-align: center;
@@ -206,8 +197,18 @@ for posts
             margin-bottom: 0;
         }
 
-        a:nth-of-type(2) {
-            color:$bright-brand;
+        .s-nav-header-icon {
+            background-color: mix($grey-color-light, #fff, 40);
+            color: mix($brand-color-muted, $grey-color-light);
+            margin: 2%;
+            padding: 4%;
+            border-radius: 40px;
+            font-size: 1.6em;
+
+            &:hover {
+               background-color: mix($brand-color-muted, $grey-color-light, 40);
+               color: mix($grey-color-light, #fff);
+            }
         }
     }
 
@@ -258,9 +259,9 @@ for posts
 }
 
 .main-content {
-    width: 74%;
+    width: 70%;
     margin-left: 25%;
-    margin-top: $spacing-unit*2;
+    margin-top: $spacing-unit;
 }
 
 

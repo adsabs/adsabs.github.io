@@ -11,7 +11,7 @@ category: search
 
 {% assign posts = (site.categories[page.category] | sort:"order")  %}
     {% for post in posts %}
-    <h3><a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a></h3>
+    <h2><a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a></h2>
     {{post.content}}
       {% endfor %}
 

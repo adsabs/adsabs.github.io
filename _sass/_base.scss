@@ -196,7 +196,20 @@ for posts
     left: 0;
     top: 0;
     height: 100%;
-    box-shadow: 1px 0px 4px lighten($grey-color, 10);
+    box-shadow: 1px 0px 5px lighten($grey-color, 10);
+
+    .s-nav-header{
+
+        margin-bottom: $spacing-unit;
+        text-align: center;
+        h1 {
+            margin-bottom: 0;
+        }
+
+        a:nth-of-type(2) {
+            color:$bright-brand;
+        }
+    }
 
 
     a {

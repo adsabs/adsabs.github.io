@@ -1,6 +1,6 @@
 # Site settings
 title: NASA/ADS Help Pages
-email: help-adsabs.cfa.harvard.edu
+email: help-adsabs@cfa.harvard.edu
 description: All your questions will be answered here. All of them.
 baseurl: "/help" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site

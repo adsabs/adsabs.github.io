@@ -7,8 +7,9 @@ layout: default
 <div class="post main-content">
 
   <header class="post-header">
-    <h2 class="post-title">{{ page.title }}</h2>
-    <p class="post-meta">{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} {% if page.category%} • {{ page.category }}{% endif %}</p>
+  {%unless page.no-header %} <h2 class="post-title">{{ page.title }}</h2>{% endunless %}
+
+<p class="post-meta">{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} {% if page.category%} • {{ page.category }}{% endif %}</p>
   </header>
 
   <article class="post-content">

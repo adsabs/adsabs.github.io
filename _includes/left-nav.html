@@ -1,40 +1,45 @@
 <div class="left-nav">
 
 
-<div class="nav-header s-nav-header">
-<a href="{{ site.baseurl }}/"><h1>ADS Help Pages</h1></a>
-<a href="mailto:{{ site.email }}">{{ site.email }}</a>
-</div>
+    <div class="nav-header s-nav-header">
+        <a href="{{ site.baseurl }}/"><h1>ADS Help</h1></a>
+        <a href="mailto:{{ site.email }}">
+        <i class="fa fa-envelope-o  s-nav-header-icon"></i>
+        </a>
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+           <i class="fa fa-twitter s-nav-header-icon"></i>
+        </a>
+        <a href="http://ui.adslabs.org/">
+        <i class="fa fa-home s-nav-header-icon"></i>
+        </a>
+    </div>
 
-<h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/search">Searching the ADS</a></h3>
-<ul>
- {% assign posts = (site.categories.search | sort:"order")  %}
-    {% for post in posts %}
-       {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}"><li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li></a>
-        {% endif %}
-    {% endfor %}
-</ul>
+    <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/search">Searching the ADS</a></h3>
+    <ul>
+        {% assign posts = (site.categories.search | sort:"order") %} {% for post in posts %} {% if post.url %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
+        </a>
+        {% endif %} {% endfor %}
+    </ul>
 
-<h3 class="{% if '/actions/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/actions">Working with Search Results </a></h3>
-<ul>
- {% assign posts = (site.categories.actions | sort:"order")  %}
-    {% for post in posts %}
-       {% if post.url %}
-       <a href="{{ site.baseurl }}{{ post.url }}"> <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li></a>
-        {% endif %}
-    {% endfor %}
-</ul>
+    <h3 class="{% if '/actions/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/actions">Working with Search Results </a></h3>
+    <ul>
+        {% assign posts = (site.categories.actions | sort:"order") %} {% for post in posts %} {% if post.url %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
+        </a>
+        {% endif %} {% endfor %}
+    </ul>
 
-<h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/api">Using the ADS API </a></h3>
-<ul>
- {% assign posts = (site.categories.api | sort:"order")  %}
-    {% for post in posts %}
-       {% if post.url %}
-       <a href="{{ site.baseurl }}{{ post.url }}"> <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li></a>
-        {% endif %}
-    {% endfor %}
-</ul>
+    <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/api">Using the ADS API </a></h3>
+    <ul>
+        {% assign posts = (site.categories.api | sort:"order") %} {% for post in posts %} {% if post.url %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
+        </a>
+        {% endif %} {% endfor %}
+    </ul>
 
 
 </div>

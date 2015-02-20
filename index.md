@@ -9,28 +9,9 @@ layout: default
 
 <div class="main-content">
 
+<h3>Welcome to to the ADS Help Pages</h3>
 
-<h3> Quick Guides </h3>
-
-<ul>
-  <li>
-        Setting up your Orcid ID 
-  </li>
-  <li>
-       10 Basic Things Every ADS User Should Know
-  </li>
-  <li>
-      10 Advanced Techniques for Searching the ADS 
-  </li>
-</ul>
-
-<h3>FAQ</h3>
-
-<ul>
-  <li>
-    How do I find a list of every paper that has cited my papers?
-  </li>
-</ul>
+<p>They are still under construction, but you can find information about many aspects of the new interface in the panel to the left.</p>
 
 
 

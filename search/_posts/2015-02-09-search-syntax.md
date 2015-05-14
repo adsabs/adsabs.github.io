@@ -15,33 +15,22 @@ ADS's one boxy search box utilizes fielded searches.  Queries without fields wil
 
 We provide some shortcuts, some options and some hints.  
 
-##Preformatted Fielded Searches## 
+##Preformatted Fielded Searches
 
-Above the search box we supply shortcuts to 6 frequently used searches and 3 operators (the operators are explained in 
+Above the search box we supply shortcuts to 6 frequently used searches and 3 operators (the operators are explained in the [Smart Searches section below.] (2015-02-09-search/second-order.md)  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles which include John Huchra as an author in the Astrophysical Journal  and were published between 1980 and 1990, you can use the preformatted fields to generate the query below:
+(IMAGE TO COME)
+
+##Manually entering a fielded search 
+
 * to search for an *author*, enter **author:&ldquo;huchra,j"**
 * to search for *multiple authors*, enter **author:("huchra,j" "geller,m")**
 * to search for a *first author*, enter **author:&ldquo;^huchra,j"**
-
 * to search for a *year or year range*, enter **year:1995** or **year:1995-2000**
 * to search for a *phrase*, enclose it in quotations: **"primordial black holes"**
 
 
-## Fielded Searches
-
-*FIELD* : [*QUERY*]
-
-The list of searches shown above were examples of fielded searches. Fielded searches ensure that the correct database fields are queried for your results. Queries without fields will search in the article metadata and the full-text, which might return irrelevant results.   
-
-Some more example searches:
-
- * "dark matter" -LHC
- * title:"QSO" year:1995-2000
- * arXiv:1012.5859
- * doi:10.1086/345794
- * bibcode:2003AJ....125..525J
-
-
 ###Available Fields
+This is a list of fields currently available in the ADS and the preferred search format.  
 
 Field Name   | Search Field Syntax         | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | -------------- 
@@ -60,7 +49,7 @@ Affiliation  | aff:"phrase"                | aff:"harvard"           | search fo
 Title        | title:"phrase"              | title:"weak lensing"    | search for word or phrase in title field   
 Keywords     | keyword:"phrase"            | keyword:sun             | search publisher- or author-supplied keywords 
 Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics 
-Properties   | property:type               | property:openaccess     | limit search to article with specific attributes (see below) 
+Properties   | property:type               | property:openaccess     | limit search to article with specific attributes [see below.] (Querying for Properties.md)
 
 
 ##Combining Search Terms to Make a Compound Query
@@ -71,8 +60,6 @@ You can string together any of the search terms to develop a query.  By default 
     abs:(QSO OR "dark energy")              # finds papers containing either "QSO" or "dark energy in their abstract
     author:"huchra, j" -title:2mass         # finds papers by "J. Huchra" but excludes ones with "2mass" in their title
     
-[See more examples.](examples.md#stringing-together-a-query)
-
 
 ## Querying for Properties (refereed, openaccess, etc)
 
@@ -80,9 +67,17 @@ The "properties" search field allows one to restrict the search results to paper
 
 Property flag  | Selection                
 -------------- | ------------------------ 
-refereed       | refereed papers only    
+refereed       | refereed papers only   
+notrefereed    | non-refereed papers only
 eprint         | arXiv eprints            
-catalog        | astronomical catalogs (e.g. Vizier)          
-openaccess     | there is at least one open access version of the article available   
+nonarticle     | not regular articles, for instance meeting abstracts, observing proposals, catalog descriptions, etc
+catalog        | astronomical catalogs (e.g. Vizier)
+inproceedings  | papers which are in conference proceedings
+inbook         | papers which are chapters in books
+openaccess     | there is at least one open access version of the article available 
+ADS_openaccess | open access papers that have been scanned by the ADS
+pub_openaccess | open access papers supplied by the publisher
 software       | records for software packages (mostly from the [ASCL](http://ascl.net)) 
+ocrabstract    | abstracts in ocr format
+
 

@@ -17,7 +17,7 @@ We provide some shortcuts, some options and some hints.
 
 ##Preformatted Fielded Searches
 
-Above the search box we supply shortcuts to 6 frequently used searches and 3 operators (the operators are explained in the [Smart Searches section below.] (2015-02-09-search/second-order.md)  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles which include John Huchra as an author in the Astrophysical Journal  and were published between 1980 and 1990, you can use the preformatted fields to generate the query below:
+Above the search box we supply shortcuts to 6 frequently used searches and 3 operators (the operators are explained in the [Smart Searches section.] (2015-02-09-search/second-order.md)  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles which include John Huchra as an author in the Astrophysical Journal  and were published between 1980 and 1990, you can use the preformatted fields to generate the query below:
 (IMAGE TO COME)
 
 ##Manually entering a fielded search 

@@ -11,14 +11,18 @@ no-header: true
 
 ## Search Basics
 
-Our new one box search allows you to quickly formulate a query without having to enter data into multiple form fields, as you would in ADS Classic.
-At a minimum, to use it successfully you will want to know the following:
+ADS's one boxy search box utilizes fielded searches.  Queries without fields will search in the metadata and the full text, which may not return the results that you want.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Mars** to make sure you don't return papers that simply have the word "Mars" somewhere in the article or metadata.  
 
-* to search for an *author*, write **author:&ldquo;huchra,j"**
-* to search for *multiple authors*, write **author:("huchra,j" "geller,m")**
-* to search for a *first author*, write **author:&ldquo;^huchra,j"**
+We provide some shortcuts, some options and some hints.  
 
-* to search for a *year or year range*, write **year:1995** or **year:1995-2000**
+##Preformatted Fielded Searches## 
+
+Above the search box we supply shortcuts to 6 frequently used searches and 3 operators (the operators are explained in 
+* to search for an *author*, enter **author:&ldquo;huchra,j"**
+* to search for *multiple authors*, enter **author:("huchra,j" "geller,m")**
+* to search for a *first author*, enter **author:&ldquo;^huchra,j"**
+
+* to search for a *year or year range*, enter **year:1995** or **year:1995-2000**
 * to search for a *phrase*, enclose it in quotations: **"primordial black holes"**
 
 
@@ -26,7 +30,7 @@ At a minimum, to use it successfully you will want to know the following:
 
 *FIELD* : [*QUERY*]
 
-The list of searches shown above were examples of fielded searches. Fielded searches ensure that the correct database fields are queried for your results. Queries without fields will search in the article metadata and the full-text, which might return irrelevant results. For instance, if you are searching for papers by the author Marc Mars, you want to search for author:"Mars, M" in order to make sure you don't return papers that simply have the word "Mars" somewhere in the fulltext.  
+The list of searches shown above were examples of fielded searches. Fielded searches ensure that the correct database fields are queried for your results. Queries without fields will search in the article metadata and the full-text, which might return irrelevant results.   
 
 Some more example searches:
 
@@ -46,7 +50,7 @@ Author (cont.)| author:"Last, First [...]"  | author:"huchra, john p" | an examp
 First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the search to first-author papers    
 Abstract     | abs:"phrase"                | abs:"dark energy"       | search for word or phrase in abstract      
 Year         | year:YYYY                   | year:2000               | require specific publication year          
-Year Range  | year:XXXX-YYYY              | year:2000-2005          | require publication date range             
+Year Range  | year:YYYY-YYYY              | year:2000-2005          | require publication date range             
 Publication  | bibstem:"abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html">specific publication</a> 
 Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext   
 Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds a specific record using the <A HREF="http://adsabs.harvard.edu/abs_doc/help_pages/data.html#bibcodes">ADS bibcode</A> 

@@ -46,7 +46,7 @@ Author (cont.)| author:"Last, First [...]"  | author:"huchra, john p" | an examp
 First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the search to first-author papers    
 Abstract     | abs:"phrase"                | abs:"dark energy"       | search for word or phrase in abstract      
 Year         | year:YYYY                   | year:2000               | require specific publication year          
-Year Range  | year:XXXX-YYYY              | year:2000-2005          | require publication date range             
+Year Range   | year:YYYY-YYYY              | year:2000-2005          | require publication date range             
 Publication  | bibstem:"abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html">specific publication</a> 
 Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext   
 Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds a specific record using the <A HREF="http://adsabs.harvard.edu/abs_doc/help_pages/data.html#bibcodes">ADS bibcode</A> 

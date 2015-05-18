@@ -13,14 +13,14 @@ no-header: true
 
 ADS's one boxy search box utilizes fielded searches.  Queries without fields will search in the metadata and the full text, which may not return the results that you want.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Mars** to make sure you don't return papers that simply have the word "Mars" somewhere in the article or metadata.  
 
-We provide some shortcuts, some options and some hints.  
-
 ##Preformatted Fielded Searches
 
 Above the search box we supply shortcuts to 6 frequently used searches and 3 operators (the operators are explained in the [Smart Searches section.] (2015-02-09-search/second-order.md)  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles which include John Huchra as an author in the Astrophysical Journal  and were published between 1980 and 1990, you can use the preformatted fields to generate the query below:
 (IMAGE TO COME)
 
 ##Manually entering a fielded search 
+
+You can also enter the fields directly by prepending the field(s) that you wish to search to your search terms.  Unfielded searches may give you unwanted results.    
 
 * to search for an *author*, enter **author:&ldquo;huchra,j"**
 * to search for *multiple authors*, enter **author:("huchra,j" "geller,m")**
@@ -48,7 +48,7 @@ DOI          | doi:DOI                     | doi:10.1086/345794      | finds a s
 Affiliation  | aff:"phrase"                | aff:"harvard"           | search for word or phrase in affiliation field 
 Title        | title:"phrase"              | title:"weak lensing"    | search for word or phrase in title field   
 Keywords     | keyword:"phrase"            | keyword:sun             | search publisher- or author-supplied keywords 
-Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics 
+Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics or general
 Properties   | property:type               | property:openaccess     | limit search to article with specific attributes [see below.] (Querying for Properties.md)
 
 

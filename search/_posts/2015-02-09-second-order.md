@@ -6,7 +6,7 @@ order: 3
 
 
 
-We provide three operators which modify the query results by performing second-order operations on the original query. To invoke the operations, simply click on one of the three operators above the search box or prepend the corresponding operator before your search terms (enclosing your search terms in parentheses) in the search box.
+We provide three operators which modify the query results by performing second-order operations on the original query. To invoke the operators, enter the corresponding operator before your search terms (enclosing your search terms in parentheses) in the search box.
 
 **Trending** -- returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field.  For example:
 

@@ -13,11 +13,10 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$brand-color:      #1c459b;
-$bright-brand:     lighten(saturate($brand-color, 15), 15);
-$brand-color-muted: lighten($brand-color, 15);
+$brand-color:       #1c459b;
+$bright-brand:     lighten($brand-color, 20);
+$brand-color-muted: lighten($bright-brand, 15);
 
-$code-color: lighten($bright-brand, 38);
 
 $grey-color:       #555;
 $grey-color-light: #eee;
@@ -25,14 +24,17 @@ $grey-color-dark:  #333;
 
 $text-color:       $grey-color-dark;
 
-$background-color: lighten($grey-color-light, 5);
+$background-color: #fff;
+
+$code-color: lighten($bright-brand, 38);
+
 
 
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$nav-color:        darken($grey-color-light, 2);
+$nav-color:        #fff;
 $nav-header-color:  desaturate($brand-color, 30);
 $nav-text-color:  $text-color;
 

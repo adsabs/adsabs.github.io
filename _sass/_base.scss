@@ -184,6 +184,7 @@ for posts
     top: 0;
     height: 100%;
     overflow:auto;
+    border-right: 1px solid rgb(231, 231, 231);
 
     .s-nav-header{
 
@@ -198,16 +199,16 @@ for posts
         }
 
         .s-nav-header-icon {
-            background-color: mix($grey-color-light, #fff, 40);
-            color: mix($brand-color-muted, $grey-color-light);
+            color: $brand-color-muted;
+            border: 1px solid $brand-color-muted;
             margin: 2%;
             padding: 4%;
             border-radius: 40px;
             font-size: 1.6em;
 
             &:hover {
-               background-color: mix($brand-color-muted, $grey-color-light, 40);
-               color: mix($grey-color-light, #fff);
+               background-color:$brand-color-muted;
+               color: #fff;
             }
         }
     }

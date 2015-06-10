@@ -6,17 +6,14 @@ no-header: true
 ---
 
 
-*One-box search bar:*
-<img src="{{site.baseurl}}/img/one-box-search.png"  alt="" style="max-width:100%;display:block;margin-bottom:15px;">
-
 ## Search Basics
 
-ADS's one boxy search box utilizes fielded searches.  Queries without fields will search in the metadata and the full text, which may not return the results that you want.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Mars** to make sure you don't return papers that simply have the word "Mars" somewhere in the article or metadata.  
+ADS's one box search box utilizes fielded searches.  Queries without fields will search in the metadata and the full text, which may not return the results that you want.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Mars** to make sure you don't return papers that simply have the word "Mars" somewhere in the article or metadata.  
 
 ##Preformatted Fielded Searches
 
-Above the search box we supply shortcuts to 6 frequently used searches and 3 operators (the operators are explained in the [Smart Searches section.] (2015-02-09-search/second-order.md)  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles which include John Huchra as an author in the Astrophysical Journal  and were published between 1980 and 1990, you can use the preformatted fields to generate the query below:
-(IMAGE TO COME)
+Above the search box we supply shortcuts to 6 frequently used search fields.  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles which include John Huchra as an author in the Astrophysical Journal  and were published between 1980 and 1990, you can use the preformatted fields to generate the query below:
+   author:"huchra, john" year: 1980-1990 bibstem:"ApJ"
 
 ##Manually entering a fielded search 
 
@@ -29,7 +26,7 @@ You can also enter the fields directly by prepending the field(s) that you wish 
 * to search for a *phrase*, enclose it in quotations: **"primordial black holes"**
 
 
-###Available Fields
+##Available Fields
 This is a list of fields currently available in the ADS and the preferred search format.  
 
 Field Name   | Search Field Syntax         | Example                 | Notes

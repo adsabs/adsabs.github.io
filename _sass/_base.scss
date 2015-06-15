@@ -89,10 +89,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-h1 {
-    color: $brand-color;
-}
-
 
 /**
  * Links
@@ -185,8 +181,40 @@ for posts
     height: 100%;
     overflow:auto;
     border-right: 1px solid rgb(231, 231, 231);
+    box-shadow: 2px 0 5px rgb(241, 241, 241);
+
+    a {
+        &:hover {
+          text-decoration: none;
+        }
+    }
+
+         .s-nav-header-icon {
+            color: $bright-brand;
+            margin: 2%;
+            padding: 4%;
+            border-radius: 40px;
+            font-size: 1.6em;
+
+            &:hover {
+               background-color:$bright-brand;
+               color: #fff;
+            }
+    
+        }
+
+        .header-icon-container {
+            text-align: center;
+            position: relative;
+            top: -17px;
+        }
 
     .s-nav-header{
+
+        background-color: rgb(25, 25, 25);
+        margin : -16px;
+        margin-bottom : 15px;
+        padding-bottom: 10px;
 
         a:hover, a:focus{
             text-decoration: none;
@@ -194,28 +222,20 @@ for posts
 
         margin-bottom: $spacing-unit;
         text-align: center;
+
         h1 {
+
             margin-bottom: 0;
-        }
-
-        .s-nav-header-icon {
-            color: $brand-color-muted;
-            border: 1px solid $brand-color-muted;
-            margin: 2%;
-            padding: 4%;
-            border-radius: 40px;
-            font-size: 1.6em;
-
-            &:hover {
-               background-color:$brand-color-muted;
-               color: #fff;
-            }
         }
     }
 
 
     a {
        color: $nav-text-color;
+
+       h1 {
+        color: #fff
+       }
     }
 
     ul {

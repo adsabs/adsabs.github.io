@@ -2,18 +2,25 @@
 layout: default
 ---
 
-  {%include left-nav.html %}
+  <div class="row row-offcanvas row-offcanvas-left">
+    
+    <div class="col-sm-6 col-md-3">
+        {%include left-nav.html %}
+    </div>
 
-<div class="post main-content">
+    <div class="post main-content col-sm-12 col-md-9">
 
-  <header class="post-header">
-  {%unless page.no-header %} <h2 class="post-title">{{ page.title }}</h2>{% endunless %}
+    <button class="btn btn-primary visible-sm-inline-block visible-xs-inline-block" data-toggle="off-canvas">toggle sidebar</button>
 
-<p class="post-meta">{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} {% if page.category%} • {{ page.category }}{% endif %}</p>
-  </header>
+      <header class="post-header">
+      {%unless page.no-header %} <h3 class="post-title">{{ page.title }}</h3>{% endunless %}
+      </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+      <article class="post-content">
+        {{ content }}
+      </article>
+
+    </div>
 
 </div>
+

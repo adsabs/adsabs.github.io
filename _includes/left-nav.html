@@ -1,12 +1,8 @@
-<div class="left-nav">
+<!--googleoff: all-->
 
+<nav class="left-nav sidebar-offcanvas">
 
-    <div class="nav-header s-nav-header">
-        <a href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/img/logo.png" alt="NASA ADS" style="max-width:80%">
-        <h1>Help Pages</h1></a>
-    </div>
-    <div class="header-icon-container">
+<!--     <div class="header-icon-container">
         <a href="mailto:{{ site.email }}">
         <i class="fa fa-envelope-o  s-nav-header-icon"></i>
         </a>
@@ -16,7 +12,13 @@
         <a href="https://ui.adsabs.harvard.edu/">
         <i class="fa fa-home s-nav-header-icon"></i>
         </a>
-    </div>
+    </div> -->
+
+    <a><h2 class="{% if '/blog/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/blog">ADS Blog</a></h2>
+    <p>Tips, Tricks, and Tutorials</p>
+
+    <hr>
+
 
     <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/search">Searching the ADS</a></h3>
     <ul>
@@ -45,5 +47,6 @@
         {% endif %} {% endfor %}
     </ul>
 
+</nav>
 
-</div>
+<!--googleon: all-->

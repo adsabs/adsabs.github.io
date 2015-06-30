@@ -5,15 +5,23 @@
 
 <body>
 
-<!--     {% include header.html %}
- -->
-    <div class="page-content">
+    {% include header.html %}
+
+    <div class="page-content container-fluid">
             {{ content }}
     </div>
 
-<!--     {% include footer.html %}
- -->    
+   
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+<script>
+$(document).ready(function () {
+  $("body").on('click', 'button[data-toggle="off-canvas"]', function () {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});</script>
 
 
 

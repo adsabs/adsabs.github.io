@@ -1,22 +1,16 @@
 ---
-layout: default
+layout: post
 category: actions
 ---
 
 
-{%include left-nav.html %}
-
-<div class="post main-content">
 
 <h2>All Entries in the Category "Working with Search Results"</h2>
 
 
 {% assign posts = (site.categories[page.category] | sort:"order")  %}
     {% for post in posts %}
-    <h2><a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a></h2>
     {{post.content}}
       {% endfor %}
-
-</div>
 
  

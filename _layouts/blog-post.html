@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+  <div class="row">
+    
+
+    <div class="post main-content col-sm-11 col-sm-offset-1">
+
+      <header class="post-header">
+      <h2 class="post-title">{{ page.title }}</h2>
+
+        <p class="post-meta">{% if page.author %} By <b>{{ page.author }}</b> {% endif %}</p>
+
+        <p class="post-meta">{% if page.date %} Published on <b>{{ page.date | date: "%m-%d-%Y" }}</b> {% endif %}</p>
+      </header>
+
+      <article class="post-content">
+        {{ content }}
+      </article>
+
+    </div>
+
+</div>
+

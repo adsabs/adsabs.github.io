@@ -12,6 +12,11 @@ p {
 pre code {
     font-size:14px;
 }
+
+.main-content table {
+    @extend .table;
+    @extend .table-striped;
+}
 /**
  * Clearfix
  */

@@ -13,11 +13,14 @@
         <i class="fa fa-home s-nav-header-icon"></i>
         </a>
     </div> -->
-
+    <div class="nav-blog-container">
+        
     <a><h2 style="font-size:28px" class="{% if '/blog/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/blog">ADS Blog</a></h2>
     <p>Tips, Tricks, and Tutorials</p>
 
     <hr>
+    </div>
+
 
 
     <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/search">Searching the ADS</a></h3>
@@ -39,13 +42,7 @@
     </ul>
 
     <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/api">Using the ADS API </a></h3>
-    <ul>
-        {% assign posts = (site.categories.api | sort:"order") %} {% for post in posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
-        </a>
-        {% endif %} {% endfor %}
-    </ul>
+
 
 </nav>
 

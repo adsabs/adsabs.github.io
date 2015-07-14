@@ -26,7 +26,7 @@ Clicking on an inside edge of a group will show you all papers from that group. 
 * #### Visually explore your results set
 To get an at-a-glance overview of a scientist’s career, search “author:LastName,FirstName” in the ADS, view the network, and quickly see an organized overview of important collaborators.
 
-* #### As a way to answer specific questions about the result set.
+* #### As a way to answer specific questions about the results set.
      * To find authors who collaborate not only within their group but outside of it, check the “view link overlay” box and see which authors tend to collaborate with authors in other groups.
      * To see the collaborations that have been most fruitful in terms of citations yielded, under “Size wedges based on”, click “Paper Citations”.
 

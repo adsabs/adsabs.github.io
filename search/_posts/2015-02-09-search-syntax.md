@@ -8,13 +8,13 @@ no-header: true
 
 ## Search Basics
 
-ADS's one box search box utilizes fielded searches.  Queries without fields will search in the metadata and the full text, which may not return the results that you want.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Mars** to make sure you don't return papers that simply have the word "Mars" somewhere in the article or metadata.  
+ADS's one box search box utilizes fielded searches.  Queries without fields will search in the metadata and the full text, which may not return the results that you want.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Mars** to make sure that you don't return papers that simply have the word "Mars" somewhere in the article or metadata.  
 
 ##Preformatted Fielded Searches
 
-Above the search box we supply shortcuts to 6 frequently used search fields.  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles which include John Huchra as an author in the Astrophysical Journal  and were published between 1980 and 1990, you can use the preformatted fields to generate the query below:
+Above the search box we supply shortcuts to 6 frequently used search fields.  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles published between 1980 and 1990 which cite an article written by John Huchra, you can use the preformatted fields to generate the query below:
 
-   author:"huchra, john" year: 1980-1990 bibstem:"ApJ"
+   citations(author:"Huchra, John") year:1980-1990
 
 ##Manually entering a fielded search 
 

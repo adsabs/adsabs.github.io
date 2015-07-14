@@ -12,7 +12,7 @@ ADS's one box search box utilizes fielded searches.  Queries without fields will
 
 ##Preformatted Fielded Searches
 
-Above the search box we supply shortcuts to 6 frequently used search fields.  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance is you want to find articles published between 1980 and 1990 which cite an article written by John Huchra, you can use the preformatted fields to generate the query below:
+Above the search box we supply shortcuts to 6 frequently used search fields.  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks.)  You may string several search terms together.  For instance if you want to find articles published between 1980 and 1990 which cite an article written by John Huchra, you can use the preformatted fields to generate the query below:
 
    citations(author:"Huchra, John") year:1980-1990
 

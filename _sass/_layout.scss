@@ -134,7 +134,6 @@ pre code {
 }
 
 .post-meta {
-    font-size: $small-font-size;
     color: $grey-color;
 }
 
@@ -152,8 +151,8 @@ pre code {
 }
 
 .post-title {
-    font-size: 36px;
-    line-height: .5;
+    font-size: 28px;
+    font-weight:400;
 }
 
 
@@ -173,8 +172,8 @@ nav.top-nav {
 
 
   .logo-container img {
-    width:300px;
-    margin-top:10px;
+    width: 200px;
+    margin-top: -4px;;
   }
 
 

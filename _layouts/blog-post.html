@@ -5,7 +5,7 @@ layout: default
   <div class="row">
     
 
-    <div class="post main-content col-sm-11 col-sm-offset-1">
+    <div class="post main-content col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
 
       <header class="post-header">
       <h2 class="post-title">{{ page.title }}</h2>
@@ -14,6 +14,8 @@ layout: default
 
         <p class="post-meta">{% if page.date %} Published on <b>{{ page.date | date: "%m-%d-%Y" }}</b> {% endif %}</p>
       </header>
+
+      <hr>
 
       <article class="post-content">
         {{ content }}

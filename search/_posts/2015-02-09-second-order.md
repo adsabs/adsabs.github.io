@@ -20,9 +20,9 @@ will return a ranked list of papers which are currently popular among the reader
 
 will return a ranked list of papers spanning a variety of topics useful to researchers interested in analyzing surveys of galaxies.
 
-**Instructive** -- returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field.  For example:
+**Reviews** -- returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field.  For example:
 
-    instructive("weak lensing")
+    reviews("weak lensing")
 
 will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications. 
 

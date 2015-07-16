@@ -4,18 +4,18 @@ title: "Quick Links"
 order: 5
 ---
 
-###*this article is in need of revision*
+####Quick Links
 
-Following each bibcode is a list of letters which indicate what data are available for the article.  
+Following each article in a search result there are symbols which indicate the availability of what information is available for the article.  These can be used as direct links to the information or as quick indicators of what you can find in the article.  
 
- * C   (Citations)   A list of articles that cite the current article. (This list is not necessarily complete)
- * D   (On-line Data)  Links to on-line data at other data centers.
- * E   (Electronic Article)  Links to the on-line version of the article. These on-line versions are in HTML format for viewing on-screen, not for printing.
- * F   (Printable Article)   Links to on-line articles in PDF or Postscript format for printing.
- * G   (Gif Images)  Links to the images of scanned articles in the ADS Article Service.
- * L   (Library Entries)   Links to entries in the Library of Congress and other on-line library system.
- * N   (NED Objects)   Access to the lists of objects for the current article in the NED database.
- * R   (References)  A list of articles referred to in the current article. For older articles these lists are not necessarily complete, they contain only references to articles that are in the ADS database. For some articles that are on-line in electronic form, the "R" link points to the on-line reference list, and therefore the complete list of references in that article.
- * S   (SIMBAD Objects)  Access to the lists of objects for the current article in the SIMBAD database.
- * T   (Table of Contents)   Links to the list of all articles in a books or proceedings volume.
- * X   (arXiv e-print)   Links to on-line articles in the arXiv database.
+Information is grouped into three categories:
+
+* **Available full text sources**:  here you will find links to Publisher Article, Publisher PDF, arXiv e-print, ADS scanned article or ADS PDF.  Links that are green mean that this article is "Open Access", meaning that there is no subscription necessary to access the full text through this link.  ADS gives all available links to provide the user with the choice that best suits him/her.  Please note that a lot of these links go to resources outside of the ADS and the user may be prompted for a username or password.  The external links can be configured to work with your library subscriptions.  
+  
+* **References and Citations**:  here you will find links to the references in the article and citations to the article.  The number of references and citations is indicated by the number in the parentheses. Please note that as with all abstracting and indexing services, the reference and citation lists in the ADS are not complete. There are several sources of incompleteness of citation lists: 
+    * The ADS doesn't have the cited article in the database. This happens for instance for most papers appearing in mathematics, chemistry, and geophysics journals.
+    * Our reference resolver program couldn't interpret the reference. This may be due to errors or incompleteness in the reference, unusual formatting of it, or simply limitations in our program's abilities. 
+    * We do not have the reference list for the citing paper. This happens for older articles and for articles in journals and conference proceedings that do not supply us with reference lists. 
+    * We are constantly adding to our references by extracting reference lists from scanned articles, trying to improve reference recognition capabilities, and adding new records to our databases, so this work is an ongoing effort which will cause reference and citation lists to change over time. 
+
+* **Data Links**:  here you will find links to Data in the article.  We provide links to Archival Data (from data centers including MAST, NExSci, Chandra, PDS) and to SIMBAD and to NED. 

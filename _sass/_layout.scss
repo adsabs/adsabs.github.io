@@ -1,5 +1,16 @@
 
 
+.smart-container {
+@include container-fixed;
+ @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+
 h1, h2, h3, h4 {
     font-weight: 300;
 }

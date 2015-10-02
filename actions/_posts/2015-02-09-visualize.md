@@ -10,7 +10,7 @@ order: 4
 ##Author Network
 The author network detects **groups of authors** and **connections between those groups** within a set of results.
 
-<img src="{{site.baseurl}}/img/author-network.png" alt="author network" class="pull-right">
+<img src="{{site.baseurl}}/img/author-network.png" alt="author network" class="img-responsive">
 
 ###How the network is made
 
@@ -34,7 +34,7 @@ To get an at-a-glance overview of a scientist’s career, search “author:LastN
 ##Paper Network
 The paper network detects **groups of papers** based on **shared references** between those papers. In general, papers with many shared references will tend to have similar topics.
 
-<img src="{{site.baseurl}}/img/paper-network.png" alt="paper network" class="pull-right">
+<img src="{{site.baseurl}}/img/paper-network.png" alt="paper network" class="img-responsive">
 
 
 ###How the network is made
@@ -55,7 +55,7 @@ Clicking on a group will also show you in the right pane the most commonly refer
 ##Results Graph
 When you look at a list of ADS search results, you can sort by date published, by citation count, or by recent popularity of the article in ADS, but you cannot see all of these dimensions at once, and you cannot easily see outliers. The results graph is a customizable scatter chart that allows you to assign values to the x and y axes as well as to the radius of the circle representing a paper.
 
-<img src="{{site.baseurl}}/img/scatter-plot.png" class="pull-right">
+<img src="{{site.baseurl}}/img/scatter-plot.png" class="img-responsive">
 
 ###How to use it
 
@@ -69,7 +69,7 @@ The default graph shows the [recent views]({{site.baseurl}}/actions/analyze#rece
 ##Word Cloud
 The word cloud shows you **frequently appearing** and **unique words** in your search results.
 
-<img src="{{site.baseurl}}/img/word-cloud.png" class="pull-right">
+<img src="{{site.baseurl}}/img/word-cloud.png" class="img-responsive">
 
 
 ###How the word cloud is made

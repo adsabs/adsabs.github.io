@@ -41,9 +41,9 @@ First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the
 Abstract     | abs:"phrase"                | abs:"dark energy"       | search for word or phrase in abstract      
 Year         | year:YYYY                   | year:2000               | require specific publication year          
 Year Range  | year:YYYY-YYYY              | year:2000-2005          | require publication date range             
-Publication  | bibstem:"abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html">specific publication</a> 
+Publication  | bibstem:"abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html" target="_blank">specific publication</a>
 Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext   
-Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds a specific record using the <A HREF="http://adsabs.harvard.edu/abs_doc/help_pages/data.html#bibcodes">ADS bibcode</A> 
+Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds a specific record using the [ADS bibcode]({{ site.baseurl }}/actions/bibcode)
 arXiv ID     | arXiv:arxivid               | arXiv:1108.0669         | finds a specific record using its arXiv id
 DOI          | doi:DOI                     | doi:10.1086/345794      | finds a specific record using its digital object id 
 Affiliation  | aff:"phrase"                | aff:"harvard"           | search for word or phrase in affiliation field 
@@ -78,7 +78,7 @@ inbook         | papers which are chapters in books
 openaccess     | there is at least one open access version of the article available 
 ADS_openaccess | open access papers that have been scanned by the ADS
 pub_openaccess | open access papers supplied by the publisher
-software       | records for software packages (mostly from the [ASCL](http://ascl.net)) 
+software       | records for software packages (mostly from the <a href="http://ascl.net" target="_blank">ASCL</a>)
 ocrabstract    | abstracts in ocr format
 
 

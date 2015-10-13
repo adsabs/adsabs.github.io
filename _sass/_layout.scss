@@ -10,14 +10,8 @@
   }
 }
 
-
-h1, h2, h3 {
-    font-weight: 400;
-}
-
-p {
-    font-size: 17px;
-    font-weight: 300;
+p, ul, table {
+  font-weight: 300;
 }
 
 pre code {
@@ -161,9 +155,11 @@ pre code {
     margin: $spacing-unit 0;
 }
 
-.post-title {
-    font-size: 28px;
-    font-weight:400;
+
+//for subheadings within posts
+h3 {
+  font-weight: 500;
+  font-size: 22px;
 }
 
 

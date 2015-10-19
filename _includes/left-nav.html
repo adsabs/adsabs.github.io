@@ -12,18 +12,18 @@
         <a href="https://ui.adsabs.harvard.edu/">
         <i class="fa fa-home s-nav-header-icon"></i>
         </a>
-    </div> -->
+    </div>
     <div class="nav-blog-container">
 
-    <a><h2 style="font-size:28px" class="{% if '/blog/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/blog">ADS Blog</a></h2>
-    <p>Tips, Tricks, and Tutorials</p>
+        <a><h2 style="font-size:28px" class="{% if '/blog/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/blog">ADS Blog</a></h2>
+        <p>Tips, Tricks, and Tutorials</p>
 
-    <hr>
+        <hr>
     </div>
+-->
 
 
-
-    <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/search">Searching the ADS</a></h3>
+    <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/search">Searching the ADS</a></h3>
     <ul>
         {% assign posts = (site.categories.search | sort:"order") %} {% for post in posts %} {% if post.url %}
         <a href="{{ site.baseurl }}{{ post.url }}">
@@ -32,7 +32,7 @@
         {% endif %} {% endfor %}
     </ul>
 
-    <h3 class="{% if '/actions/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/actions">Working with Search Results </a></h3>
+    <h3 class="{% if '/actions/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/actions">Working with Search Results </a></h3>
     <ul>
         {% assign posts = (site.categories.actions | sort:"order") %} {% for post in posts %} {% if post.url %}
         <a href="{{ site.baseurl }}{{ post.url }}">
@@ -41,14 +41,18 @@
         {% endif %} {% endfor %}
     </ul>
 
-    <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/api">Using the ADS API </a></h3>
+    <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/api">Using the ADS API </a></h3>
 
-    <h3 class="{% if '/logos/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/logos">Logos </a></h3>
+    <h3 class="{% if '/logos/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/logos">Logos </a></h3>
 
 
-    <h3 class="{% if '/privacy/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/privacy">Privacy Policy</a><h3>
+    <h3 class="{% if '/privacy/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/privacy">Privacy Policy</a></h3>
 
-    <h3 class="{% if '/terms/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/terms">Terms of Use</a><h3>
+    <h3 class="{% if '/terms/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/terms">Terms of Use</a></h3>
+    <hr>
+    <h3 class><img src="{{ site.baseurl }}/img/github.png" width="24"> Edit help pages on <a href="https://github.com/adsabs/help">GitHub</a></h3>
+
+
 </nav>
 
 <!--googleon: all-->

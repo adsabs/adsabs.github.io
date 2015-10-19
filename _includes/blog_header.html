@@ -1,20 +1,41 @@
 <nav class="top-nav row">
-<div class="logo-container col-sm-4">
-         <a  href="{{ site.baseurl }}/help">
-        <img src="{{ site.baseurl }}/img/logo.png" alt="NASA ADS Help Pages"></a>
 
-</div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA" />
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css ">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <div class="logo-container col-sm-4">
+            <a  href="{{ site.baseurl }}/blog/"><img src="{{ site.baseurl }}/img/blog_logo.png" alt="NASA ADS Blog"></a>
+        </div>
 
 
+        <div class="col-sm-4" align="center">
 
-<div class="col-sm-4" align="center">
+        <div class="pull-left">
+            <a href="{{ site.baseurl }}/blog">all</a> | 
+            <a href="{{ site.baseurl }}/blog/news">news</a> |
+
+            <a href="{{ site.baseurl }}/blog/general">general</a> |
+
+            <a href="{{ site.baseurl }}/blog/technical">technical</a>
+        </div>
 
         <div class="pull-right">
             <a href="{{ site.baseurl }}/help/">help</a> |
 
             <a href="{{ site.baseurl }}/blog/">blog</a>
         </div>
-</div>
+
+        </div>
 
 <div class="search-bar-container col-sm-4">
 <div class="pull-right">

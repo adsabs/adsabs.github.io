@@ -1,0 +1,16 @@
+---
+layout: post
+category: actions
+---
+
+
+
+<h2>All Entries in the Category "Working with Search Results"</h2>
+
+
+{% assign posts = (site.categories[page.category] | sort:"order")  %}
+    {% for post in posts %}
+    {{post.content}}
+      {% endfor %}
+
+ 

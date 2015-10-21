@@ -3,8 +3,8 @@
 Static web pages that serve the help and blog pages of the NASA/SAO Astrophysics Data System.
 
 #### Current pages
-[View the help pages](https://adsabs.github.io/help/)
-[View the blog pages](https://adsabs.github.io/blog/)
+  * [View the help pages](https://adsabs.github.io/help/)
+  * [View the blog pages](https://adsabs.github.io/blog/)
 
 #### Updating the help pages
 

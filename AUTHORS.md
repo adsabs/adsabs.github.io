@@ -1,6 +1,12 @@
 Authors and contributors to adsabs.github.io (listed alphabetically):
 
-- Alex Holachek
-- Donna Thompson
+- Alberto Accomazzi
 - Kelle Cruz
+- Roman Chyla
 - Jonathan Elliott
+- Carolyn Grant
+- Edwin Henneken
+- Alex Holachek
+- Mike Kurtz
+- Donna Thompson
+- Vladimir Sudilovsky

@@ -24,8 +24,9 @@ If making a pull request, follow the rules described in `CONTRIBUTING.md`.
 
 All the blogs are kept under the folder `blog/_posts/`. The following rules must be kept to when making a blog post:
 
-  1. Name the file with <DATE>_<NAME>.md, eg., `2015-10-10_my_post.md`
+  1. Name the file with `DATE_NAME`.md, eg., `2015-10-10_my_post.md`
   2. Within the file, you must include the following content at the top of the file:
+    
     ```
     ---
     layout: blog_post
@@ -34,7 +35,7 @@ All the blogs are kept under the folder `blog/_posts/`. The following rules must
     position: "Job position of author"
     category: blog
     label: general
-    thumbnail: blog/images/blog_<DATE>_thumbnail.png
+    thumbnail: blog/images/blog_DATE_thumbnail.png
     ---
     ```
     * `layout`: leave as blog_post

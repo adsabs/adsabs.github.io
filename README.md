@@ -10,7 +10,7 @@ Static web pages that serve the help and blog pages of the NASA/SAO Astrophysics
 
 All the help pages can be found under the folder `help`. To add new content, you will have to read about how jekyll's [layout system works](http://jekyllrb.com/docs/structure/). A quick way to add content is to:
 
-  1. Add a new folder, eg., `help/my_help/
+  1. Add a new folder, eg., `help/my_help/`
   2. Add a landing page, eg., `help/my_help/index.md`
   3. Add a `_posts` folder, eg., `help/my_help/_posts`
   4. Add a post, eg., `help/my_help/_posts/2015-10-10_my_first_post.md`

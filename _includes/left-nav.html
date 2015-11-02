@@ -41,6 +41,16 @@
         {% endif %} {% endfor %}
     </ul>
 
+    <h3 class="{% if '/libraries/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/libraries">Using ADS Libraries</a></h3>
+    <ul>
+        {% assign posts = (site.categories.libraries | sort:"order") %} {% for post in posts %} {% if post.url %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
+        </a>
+        {% endif %} {% endfor %}
+    </ul>
+
+
     <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/api">Using the ADS API </a></h3>
 
     <h3 class="{% if '/logos/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/logos">Logos </a></h3>

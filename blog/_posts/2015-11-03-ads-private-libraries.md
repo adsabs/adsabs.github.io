@@ -5,6 +5,7 @@ author: "ADS Team"
 position: "ADS"
 category: blog
 label: news
+thumbnail: img/blog_news.png
 ---
 
 We are happy to announce the first release of the private libraries in ADS Bumblebee, and are pleased to see that some people have already started using it.

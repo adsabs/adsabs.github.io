@@ -5,9 +5,9 @@ author: "Alberto Accomazzi"
 position: "ADS PI/Project Manager"
 category: blog
 label: general
-thumbnail: img/ads_logo.png
+thumbnail: blog/images/blog_2015-07-15_adsbumblebee.png
 ---
-<img src="{{ site.baseurl }}/img/ads_logo.png" width="128"><br>
+<img src="{{ site.baseurl }}/blog/images/blog_2015-07-15_adsbumblebee.png" width="128"><br>
 The Astrophysics Data System (ADS) is a tool for finding astronomy and planetary science publications. ADS currently has three different interfaces:
 
  * [ADS “Classic”](http://adsabs.harvard.edu/abstract_service.html) -- the one you all know and love,

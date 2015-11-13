@@ -51,11 +51,11 @@ Our search engine also identifies acronyms during indexing and searching (define
 Example Query                         | Results
 --------------------------------------|-------------------------------------------------------------------
 title:star                            | title contains "star", any of its synonyms, or the acronym "STAR"
-title:etoile                          | title contains "star" or any of its synonyms (etoile being a synonym of star); no acronym ETOILE exists
+title:etoile                          | title contains "star" or any of its synonyms (etoile being a synonym of star); the results differ from above since "STAR" is not searched for
 =title:star                           | title contains "star" or the acronym "STAR"
 =title:etoile                         | title contains "etoile"
 title:STAR                            | title contains the acronym "STAR"
-title:(=star NOT STAR)                | title contains "star" but not the acronym "STAR"
+title:(=star -STAR)                | title contains "star" but not the acronym "STAR"
 fuse                                  | the word "fuse" or acronym "FUSE" appear anywhere in the paper
 FUSE                                  | the acronym "FUSE" appears anywhere in paper
 

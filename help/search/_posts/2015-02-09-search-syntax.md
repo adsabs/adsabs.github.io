@@ -79,7 +79,7 @@ As a general rule we recommend to use the full name of the person for author sea
 
 This is a list of fields currently recognized by the ADS search engine and the preferred search format:  
 
-Field Name   | Search Field Syntax         | Example                 | Notes
+Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------
 Author       | author:"Last, F"            | author:"huchra, j"      | author name may include just lastname and initial
 Author (cont.)| author:"Last, First [...]"  | author:"huchra, john p" | an example of stricter author search (recommended)

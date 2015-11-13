@@ -129,7 +129,7 @@ The list of current Telescope bibgroups is: ALMA, CXC, ESO, Gemini, Herschel, HS
 
 ### Data Links
 
-The "data" search field can be used to select papers which have data links associated to them.  The list of archives which ADS links to can be seen under the "Data" filter selection.  To generate a list of all records which have data links one can issue a simple wildcard query: [data:*](https://ui.adsabs.harvard.edu/#search/q=data%3A*&sort=date+desc).  Using the data search field allows one to focus on data-rich papers, for example:
+The "data" search field can be used to select papers which have data links associated to them.  The list of archives which ADS links to can be seen under the "Data" filter selection.  To generate a list of all records which have data links one can issue a simple wildcard query: [data:* ](https://ui.adsabs.harvard.edu/#search/q=data%3A*&sort=date+desc).  Using the data search field allows one to focus on data-rich papers, for example:
 
     data:(CXO OR XMM) AND data:HST
     

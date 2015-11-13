@@ -35,6 +35,8 @@ Example Query                        | Results
 -------------------------------------|--------------------------------------------------------------
 abs:(QSO "dark energy")              | papers containing both "QSO" and "dark energy" in their abstract
 abs:(QSO OR "dark energy")           | papers containing either "QSO" or "dark energy in their abstract
+author:"huchra, j" abs:cfa           | papers by J. Huchra which have "cfa" in their abstract
+author:"huchra, j" OR abs:"great wall" | papers by J. Huchra or which mention "great wall" in their abstract
 author:"huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
 author:"huchra, j" NOT title:2mass   | same as above
 
@@ -91,25 +93,70 @@ Affiliation  | aff:"phrase"                | aff:"harvard"           | search fo
 Title        | title:"phrase"              | title:"weak lensing"    | search for word or phrase in title field   
 Keywords     | keyword:"phrase"            | keyword:sun             | search publisher- or author-supplied keywords
 Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics or general
-Bibliographic group | bibgroup:name        | bibgroup:HST            | limit search to papers in HST bibliography
-Properties   | property:type               | property:openaccess     | limit search to article with specific attributes (see below)
+Properties   | property:type               | property:openaccess     | limit search to article with specific attributes (*)
+Bibliographic groups | bibgroup:name       | bibgroup:HST            | limit search to papers in HST bibliography (*)
+Data links   | data:archive                | data:NED                | limit search to papers with data from NED (*)
+Document type | doctype:type               | doctype:catalog         | limit search to records corresponding to data catalogs (*)
+
+(*) See below for details on these filters.  In most cases, filtering of results based on these fields is available in the user interface.
+
+### Properties
+
+The "properties" search field allows one to restrict the search results to papers which belong to a particular class.  The allowed properties currently include:
+
+Property flag    | Selection                
+---------------- | ------------------------
+refereed         | refereed papers only   
+notrefereed      | non-refereed papers only
+article          | records corresponding to regular articles
+nonarticle       | not regular articles, for instance meeting abstracts, observing proposals, catalog descriptions, etc
+ads_openaccess   | OA version of article is available from ADS
+eprint_openaccess | OA version of article is available from arXiv
+pub_openaccess   | OA version of article is available from publisher
+openaccess       | article has at least one openaccess version available
+ocrabstract      | records with an abstract generated from OCR (may contain typos or mistakes)
+
+### Bibliographic Groups
+
+The "bibgroup" search field allows restriction of the search results to one of the [ADS bibliographic groups](http://doc.adsabs.harvard.edu/abs_doc/help_pages/search.html#Select_References_From_Group).  These groups are curated by a number of librarians and archivists who maintain either institutional or "telescope" bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.
+
+The list of current Institutional bibgroups is: ARI, CfA, CFHT, Leiden, USNO
+
+The list of current Telescope bibgroups is: ALMA, CXC, ESO, Gemini, Herschel, HST, ISO, IUE, JCMT, Keck, Magellan, NOAO, NRAO, ROSAT, SDO, SMA, Spitzer, Subaru, Swift, UKIRT, XMM
+
+### Data Links
+
+The "data" search field can be used to select papers which have data links associated to them.  The list of archives which ADS links to can be seen under the "Data" filter selection.  To generate a list of all records which have data links one can issue a simple wildcard query: [data:*](https://ui.adsabs.harvard.edu/#search/q=data%3A*&sort=date+desc).  Using the data search field allows one to focus on data-rich papers, for example:
+
+    data:(CXO OR XMM) AND data:HST
+    
+Finds multi-wavelength papers which have observations both in the X-ray spectrum (from Chandra or XMM) and in the optical (HST).  Of course additional search terms can be used to further refine the selection criteria.
+
+### Document Type
+
+Records in ADS are assigned a document type which is indexed in the "doctype" search field, the contents of which are an extension of the [BibTeX](https://en.wikipedia.org/wiki/BibTeX) entry types.  Currently these are the document types indexed by ADS:
+
+Document Type  | Resource associated with record
+---------------|--------------------------------
+article        | journal article
+eprint         | article preprinted in arXiv
+inproceedings  | article appearing in a conference proceedings
+inbook         | article appearing in a book
+abstract       | meeting abstract
+book           | book (monograph)
+catalog        | data catalog (or other high-level data product)
+circular       | printed or electronic circular
+intechreport   | article appearing in a technical report
+mastersthesis  | Masters thesis
+newsletter     | printed or electronic newsletter
+phdthesis      | PhD thesis
+pressrelease   | press release
+proceedings    | conference proceedings book
+proposal       | observing or funding proposal
+software       | software package
+talk           | research talk given at a scholarly venue
+techreport     | technical report
+misc           | anything not found in the above list
 
 
-### Querying for Properties (refereed, openaccess, etc)
 
-The "properties" search field allows one to restrict the search results to papers which possess a particular property.  The allowed properties currently include:
-
-Property flag  | Selection                
--------------- | ------------------------
-refereed       | refereed papers only   
-notrefereed    | non-refereed papers only
-eprint         | arXiv eprints            
-nonarticle     | not regular articles, for instance meeting abstracts, observing proposals, catalog descriptions, etc
-catalog        | astronomical catalogs (e.g. Vizier)
-inproceedings  | papers which are in conference proceedings
-inbook         | papers which are chapters in books
-openaccess     | there is at least one open access version of the article available
-ADS_openaccess | open access papers that have been scanned by the ADS
-pub_openaccess | open access papers supplied by the publisher
-software       | records for software packages (mostly from the <a href="http://ascl.net" target="_blank">ASCL</a>)
-ocrabstract    | abstracts in ocr format

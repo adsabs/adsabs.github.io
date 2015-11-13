@@ -51,7 +51,7 @@ Our search engine also identifies acronyms during indexing and searching (define
 Example Query                         | Results
 --------------------------------------|-------------------------------------------------------------------
 title:star                            | title contains "star", any of its synonyms, or the acronym "STAR"
-title:etoile                          | title contains "star" or any of its synonyms (etoile being a synonym of star); the results differ from above since "STAR" is not searched for
+title:etoile                          | title contains "star" or any of its synonyms (etoile being a synonym of star); <br>the results differ from above since "STAR" is not searched for
 =title:star                           | title contains "star" or the acronym "STAR"
 =title:etoile                         | title contains "etoile"
 title:STAR                            | title contains the acronym "STAR"

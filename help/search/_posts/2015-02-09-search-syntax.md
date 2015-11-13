@@ -7,15 +7,15 @@ order: 1
 
 ### Search Basics
 
-ADS's one box search box utilizes fielded searches.  Queries without fields will search in the metadata and the full text, which may not return the results that you want.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Mars** to make sure that you don't return papers that simply have the word "Mars" somewhere in the article or metadata.
+ADS's one box search form supports both fielded and unfielded queries.  Queries without fields will search the metadata and the full text of the publications, which may not produce the expected results.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Marc Mars** to make sure that you don't return papers that simply have the words "Marc" and "Mars" somewhere in the body of the article.
 
 ### Fielded Searches
 
-Above the search box we supply shortcuts to 5 frequently used search fields.  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks).  Alternatively, if you start entering the name of a field an autocomplete feature will suggest a list of fields.  You may string several search terms together.  For instance if you want to find articles published between 1980 and 1990 by John Huchra, you can use:
+Above the search box we supply shortcuts to frequently used search fields.  Simply click on the field that you wish to search and enter your search term in the provided location (generally between the supplied quotation marks).  Alternatively, if you start entering the name of a field an autocomplete feature will suggest a list of possible search fields.  You may string several search terms or use the filters provided with your results to help narrow the search selection.  For instance if you want to find articles published between 1980 and 1990 by John Huchra, you can use:
 
     author:"Huchra, John" year:1980-1990
 
-Here is a list of search examples for commonly used fields:    
+To get you started, here is a list of search examples for commonly used fields:    
 
 Example Query                        | Explanation
 -------------------------------------|------------------------------------------------------------
@@ -26,6 +26,8 @@ year:2000                            | search for publications written in 2000
 year:2000-2005                       | search for publications written between 2000 and 2005 (inclusive)
 full:"gravitational waves"           | search for papers containing the phrase "gravitational waves" anywhere in the full-text
 bibstem:ApJ                          | select papers published in a particular publication
+
+The rest of this page goes over the search syntax and fields indexed in our database.  
 
 ### Combining Search Terms to Make a Compound Query
 
@@ -74,7 +76,8 @@ As a general rule we recommend to use the full name of the person for author sea
 
 
 ### Available Fields
-This is a list of fields currently available in the ADS and the preferred search format.  
+
+This is a list of fields currently recognized by the ADS search engine and the preferred search format:  
 
 Field Name   | Search Field Syntax         | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------

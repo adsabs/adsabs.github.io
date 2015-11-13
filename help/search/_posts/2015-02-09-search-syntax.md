@@ -13,7 +13,7 @@ ADS's one box search box utilizes fielded searches.  Queries without fields will
 
 Above the search box we supply shortcuts to 5 frequently used search fields.  Simply click on the field that you wish to search and enter your search term in provided format (generally between the supplied quotation marks).  Alternatively, if you start entering the name of a field an autocomplete feature will suggest a list of fields.  You may string several search terms together.  For instance if you want to find articles published between 1980 and 1990 by John Huchra, you can use:
 
-    **author:"Huchra, John" year:1980-1990**
+    author:"Huchra, John" year:1980-1990
 
 Here is a list of search examples for commonly used fields:    
 

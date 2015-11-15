@@ -5,11 +5,15 @@ order: 4
 ---
 
 
-The _pos()_ operator allows you to search for an item within a field by specifying the position in the field.  The syntax for this operator is _pos(fieldedquery,position)_ For example:
+The _pos()_ operator allows you to search for an item within a field by specifying the position in the field.  The syntax for this operator is _pos(fieldedquery,position,[endposition])_.  If no _endposition_ is given, then it is assumed to be _endposition = position_, otherwise this performs a query within the range _[position, endposition]_. For example:
 
-    pos(author:"Oort, J",2)         # returns papers which have "J. Oort" as the second author
-    pos(aff:harvard,1)              # returns papers for which the first author has a Harvard affiliation
-    pos(title:M31,1)                # returns papers for which the title start with "M31"
+Example                    | Results
+---------------------------|--------------------------------
+pos(author:"Oort, J",2)    | papers which have "J. Oort" as the second author
+pos(author:"Oort, J",2,2)  | same as above
+pos(author:"Oort, J",1,3)  | papers which have "J. Oort" as first, second, or third author
+pos(aff:harvard,1)         | papers for which the first author has a Harvard affiliation
+pos(title:M31,1)           | papers for which the title start with "M31"
     
 Currently the _pos()_ operator works on these fields: _author_, _aff_, _title_.
 

@@ -63,16 +63,40 @@ FUSE                                  | the acronym "FUSE" appears anywhere in p
 
 Synoym expansion also applies to author names, which provide a way to account for changes in a person's name and/or different spellings due to transliterations.  In addition to this, the default author search in ADS is "greedy" in the sense that it will retun all documents in which an author signature may match the input search string.  This allows, for instance, to have an author search for "Huchra, John" to return papers where the author name appears as "Huchra, John" or "Huchra, J."  By prepending the "=" character to the author search one can disable this feature (as well as any additional synonym expansion) and require an exact match on the author name.  Some examples:
 
-Example Query                 | Results
-------------------------------|---------------------------------------------------------------
-author:"murray, s"            | Least precise variations: finds records authored by any of the following:<ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S.</li><li>Murray, S.</li><li>Murray, Stephen D.</li><li>Murray, S. D.</li><li>Murray, Sarah S.</li><li>Murray, Scott</li><li>...</li></ul>(any possible combination with last name "murray" and first name starting with S)
-author:"murray, stephen"      | More precise variations: finds record authored by any of the following: <ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S.</li><li>Murray, S.</li><li>Murray, Stephen D.</li><li>Murray, S. D.</li><li>...</li></ul>(any possible variation of "Murray, Stephen" with or without middle name)
-author:"murray, stephen s"    | Most precise variations: finds record authored by any of the following: <ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S.</li><li>Murray, S.</li></ul>(any possible variation of "Murray, Stephen S" but no others)
-=author:"murray, s"           | Matches only records authored by "Murray, S."
-=author:"murray, stephen"     | Matches only records authored by "Murray, Stephen"
-=author:"murray, stephen s"   | Matches only records authored by "Murray, Stephen S."
+<table>
+  <tbody>
+    <tr>
+      <th>Example Query</th>
+      <th>Results</th>
+    </tr>
+    <tr>
+        <td>author:"murray, s"</td>
+        <td>Least precise variations: finds records authored by any of the following:<ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S. </li><li>Murray, S.</li><li>Murray, Stephen D.</li><li>Murray, S. D.</li><li>Murray, Sarah S.</li><li>Murray, Scott</li><li>...</li></ul> (any possible combination with last name "murray" and first name starting with S) </td>
+    </tr>
+    <tr>
+        <td>author:"murray, stephen"</td>
+        <td>More precise variations: finds record authored by any of the following: <ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S.</li><li>Murray, S.</li><li>Murray, Stephen D.</li><li>Murray, S. D.</li><li>...</li></ul>(any possible variation of "Murray, Stephen" with or without middle name)</td>
+    </tr>
+    <tr>
+        <td>author:"murray, stephen s"</td>
+        <td>Most precise variations: finds record authored by any of the following: <ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S.</li><li>Murray, S.</li></ul>(any possible variation of "Murray, Stephen S" but no others)</td>
+    </tr>
+    <tr>
+        <td>=author:"murray, s"</td>
+        <td>Matches only records authored by "Murray, S."</td>    
+    </tr>
+    <tr>
+        <td>=author:"murray, stephen"</td>
+        <td>Matches only records authored by "Murray, Stephen"</td>    
+    </tr>
+    <tr>
+        <td>=author:"murray, stephen s"</td>
+        <td>Matches only records authored by "Murray, Stephen S."</td>    
+    </tr>
+  </tbody>
+</table>
 
-As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/actions/filter)
+As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/actions/filter).
 
 
 ### Available Fields

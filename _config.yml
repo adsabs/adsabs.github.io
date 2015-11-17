@@ -7,6 +7,8 @@ github_username:  adsabs
 permalink: /:categories/:title
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 
 sass:
     style: :compressed

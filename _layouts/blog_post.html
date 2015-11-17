@@ -19,6 +19,14 @@ layout: blog_default
       {% endunless %}
       </header>
 
+      {% if page.repost %}
+           <small>
+           <blockquote>
+           <p class="text-info">This post was originally published elsewhere and has been put here with the authors permission. You can see where it was originally published <a href="{{ page.repost }}">here</a>.</p>
+           </blockquote>
+           </small>
+      {% endif %}
+
       <article class="post-content">
         {{ content }}
       </article>

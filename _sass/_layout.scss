@@ -10,9 +10,6 @@
   }
 }
 
-p, ul, table {
-  font-weight: 300;
-}
 
 pre code {
     font-size:14px;
@@ -184,4 +181,13 @@ nav.top-nav {
   }
 
 
+}
+
+
+h1, h2 {
+  font-weight: 300;
+}
+
+.main-content {
+  padding: 0 8%;
 }

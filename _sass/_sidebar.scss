@@ -23,7 +23,7 @@ body {
             transition: all .25s ease-out;
   }
 
- 
+
   .row-offcanvas-left {
     left: 0;
   }
@@ -48,6 +48,10 @@ body {
 
 
 .left-nav {
+
+  background-color: #F1F1F1;
+  margin-top: 20px;
+  padding-bottom: 20px;
 
   .nav-blog-container {
       padding-left: 2%;
@@ -75,7 +79,7 @@ body {
                background-color:$bright-brand;
                color: #fff;
             }
-    
+
         }
 
         .header-icon-container {
@@ -92,9 +96,8 @@ body {
     }
 
     li {
-          padding: 3px 0px;
+          padding: 2px 0px;
           font-size: 16px;
-          font-weight:300;
 
     }
 
@@ -117,7 +120,7 @@ body {
         }
     }
 
-    h3.active { 
+    h3.active {
         padding-left: 4px;
         border-left: 4px solid $bright-brand;
         a {
@@ -127,4 +130,3 @@ body {
 
     }
 }
-

@@ -9,7 +9,7 @@
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
@@ -22,7 +22,7 @@ $grey-color:       #555;
 $grey-color-light: #eee;
 $grey-color-dark:  #333;
 
-$text-color:       $grey-color-dark;
+$text-color:       lighten($grey-color-dark, 10%);
 
 $background-color: #fff;
 
@@ -46,3 +46,10 @@ $nav-text-color:  $text-color;
         "bootstrap",
         "layout",
         "sidebar";
+
+
+//general styles
+
+p {
+  color: lighten($text-color, 5%);
+}

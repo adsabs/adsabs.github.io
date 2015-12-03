@@ -26,7 +26,7 @@ layout: nil
         <author>
           <name>{{ post.author }}</name>
         </author>
-        <content type="html">{{ post.content | xml_escape  | truncatewords:40 }}</content>
+        <content type="html">{{ post.content | xml_escape }}</content>
       </entry>
       {% endif %}
   {% endfor %}

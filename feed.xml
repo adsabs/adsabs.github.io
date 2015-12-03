@@ -1,0 +1,34 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>NASA/SAO Astrophysics Data System</title>
+  <link href="https://ui.adsabs.harvard.edu/"/>
+  <link type="application/atom+xml" rel="self" href="http://adsabs.github.io/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>https://ui.adsabs.harvard.edu/</id>
+  <author>
+    <name>ADS Team</name>
+    <email>adshelp@cfa.harvard.edu</email>
+  </author>
+  <rights>Copyright © 2015, NASA/SAO Astrophysics Data System</rights>
+
+  {% for post in site.posts limit:10 %}
+      {% if post.category contains 'blog' %}
+      <entry>
+        <id>{{ post.id }}</id>
+        <link type="text/html" rel="alternate" href="https://adsabs.github.io{{ post.url }}"/>
+        <title>{{ post.title }}</title>
+        <published>{{ post.date | date_to_xmlschema }}</published>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <author>
+          <name>{{ post.author }}</name>
+        </author>
+        <content type="html">{{ post.content | xml_escape  | truncatewords:40 }}</content>
+      </entry>
+      {% endif %}
+  {% endfor %}
+ 
+</feed>

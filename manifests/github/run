@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd /github
+
+if [ ! -e nanoc.yaml ]; then
+  git clone https://github.com/github/developer.github.com.git ./
+  git pull && git reset --hard HEAD
+  bundle install
+  gem install asdf
+  npm install
+  npm install -g gulp
+else
+  git fetch origin
+fi
+
+
+gulp

@@ -189,6 +189,54 @@ Name | Type | Description
 ]
 ```
 
+## Getting User Preferences
+
+Clients can store various data about the user (ie: Bumblebee saves here alternative names
+and user preferences associated to the ORCiD display).
+
+    GET /preferences/:orcid_id
+
+### Scopes and limits
+
+  * No scopes applied
+  * `Orcid-Authorization` with the current `access_token`
+  * 100 reqs/day
+
+<%= headers 200 %>
+```json
+{
+  "alternativeNames" : ["Doe, J", "Doe X, J"]
+}
+```
+
+
+## Saving User Preferences
+
+Post a JSON payload to **replace** the existing stored values.
+
+    POST /preferences/:orcid_id
+
+### Scopes and limits
+
+  * No scopes applied
+  * `Orcid-Authorization` with the current `access_token`
+  * 100 reqs/day
+
+### Parameters
+
+Name | Type | Description
+-----|------|--------------
+`json payload`  | `string` | JSON formatted data. Clients cannot store large values, length limit of 1000 chars applied.
+
+
+``` command-line
+
+$ curl 'https://api.adsabs.harvard.edu/v1/preferences/0000-00002-9384-846X' -H 'Authorization: Bearer:TOKEN' -H 'Orcid-Authorization: Bearer:ea12a66a-2a07-49fc-b0cb-9d0967c484c8' -X POST -d $'{"foo":"bar"}' -H 'Content-Type: application/json'
+
+> {"foo": "bar"}
+```
+
+
 
 ## Source Code
 

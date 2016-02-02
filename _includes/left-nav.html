@@ -1,63 +1,96 @@
 <!--googleoff: all-->
 
-<nav>
+<nav class="help-nav">
 
-<!--     <div class="header-icon-container">
-        <a href="mailto:{{ site.email }}">
-        <i class="fa fa-envelope-o  s-nav-header-icon"></i>
-        </a>
-        <a href="https://twitter.com/{{ site.twitter_username }}">
-           <i class="fa fa-twitter s-nav-header-icon"></i>
-        </a>
-        <a href="https://ui.adsabs.harvard.edu/">
-        <i class="fa fa-home s-nav-header-icon"></i>
-        </a>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="search-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#search-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Searching the ADS</h3>
+        <a>
     </div>
-    <div class="nav-blog-container">
-
-        <a><h2 style="font-size:28px" class="{% if '/blog/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/blog">ADS Blog</a></h2>
-        <p>Tips, Tricks, and Tutorials</p>
-
-        <hr>
+    <div id="search-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="search-help">
+      <ul class="list-group">
+            {% assign posts = (site.categories.search | sort:"order") %} {% for post in posts %} {% if post.url %}
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
+            </a>
+            {% endif %} {% endfor %}
+        </ul>
     </div>
--->
+  </div>
 
 
-    <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/search">Searching the ADS</a></h3>
-    <ul>
-        {% assign posts = (site.categories.search | sort:"order") %} {% for post in posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
-        </a>
-        {% endif %} {% endfor %}
-    </ul>
-
-    <h3 class="{% if '/actions/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/actions">Working with Search Results </a></h3>
-    <ul>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="actions-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#actions-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"><i class="fa fa-lg fa-caret-right"> </i> Working with Search Results</h3>
+      <a>
+  </div>
+  <div id="actions-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="actions-help">
+    <ul class="list-group">
         {% assign posts = (site.categories.actions | sort:"order") %} {% for post in posts %} {% if post.url %}
         <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
         </a>
         {% endif %} {% endfor %}
-    </ul>
+      </ul>
+    </div>
+</div>
 
-    <h3 class="{% if '/userpreferences/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/userpreferences">User Preferences</a></h3>
-    <ul>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="userpreferences-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#userpreferences-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</h3>
+      <a>
+  </div>
+  <div id="userpreferences-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="userpreferences-help">
+    <ul class="list-group">
         {% assign posts = (site.categories.userpreferences | sort:"order") %} {% for post in posts %} {% if post.url %}
         <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
         </a>
         {% endif %} {% endfor %}
-    </ul>
+      </ul>
+  </div>
+</div>
 
-    <h3 class="{% if '/libraries/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/libraries">Using ADS Libraries</a></h3>
-    <ul>
-        {% assign posts = (site.categories.libraries | sort:"order") %} {% for post in posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %}">{{ post.title }}</li>
-        </a>
-        {% endif %} {% endfor %}
-    </ul>
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="libraries-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#libraries-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Using ADS Libraries</h3>
+      <a>
+  </div>
+  <div id="libraries-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="libraries-help">
+      <ul class="list-group">
+          {% assign posts = (site.categories.libraries | sort:"order") %} {% for post in posts %} {% if post.url %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
+          </a>
+          {% endif %} {% endfor %}
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="orcid-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#orcid-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ORCID </h3>
+      <a>
+  </div>
+  <div id="orcid-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="orcid-help">
+      <ul class="list-group">
+          {% assign posts = (site.categories.orcid | sort:"order") %} {% for post in posts %} {% if post.url %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
+          </a>
+          {% endif %} {% endfor %}
+      </ul>
+  </div>
+</div>
+
+</div>
 
 
     <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/api">Using the ADS API </a></h3>
@@ -67,7 +100,11 @@
     <h3 class="{% if '/privacy/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/privacy">Privacy Policy</a></h3>
 
     <h3 class="{% if '/terms/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/terms">Terms of Use</a></h3>
+    <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/api">Using the ADS API </a></h3>
+
+
     <hr>
+
     <h3 class><img src="{{ site.baseurl }}/img/github.png" width="24"> Edit help pages on <a href="https://github.com/adsabs/help">GitHub</a></h3>
 
 

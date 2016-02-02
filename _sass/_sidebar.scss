@@ -49,7 +49,6 @@ body {
 
 .left-nav {
 
-  background-color: #F1F1F1;
   margin-top: 20px;
   padding-bottom: 20px;
 
@@ -57,35 +56,6 @@ body {
       padding-left: 2%;
 
   }
-
-  ul {
-    padding-left:2.5%;
-  }
-
-
-    .s-logo {
-          max-width: 250px;
-          width: 65%;
-    }
-
-         .s-nav-header-icon {
-            color: $bright-brand;
-            margin: 2%;
-            padding: 4%;
-            border-radius: 40px;
-            font-size: 1.6em;
-
-            &:hover {
-               background-color:$bright-brand;
-               color: #fff;
-            }
-
-        }
-
-        .header-icon-container {
-            margin-top: 15px;
-        }
-
 
     ul a {
        color: $nav-text-color;
@@ -96,37 +66,73 @@ body {
     }
 
     li {
-          padding: 2px 0px;
+          padding: 2px 4px;
           font-size: 16px;
+          border-left: 4px solid transparent
 
     }
 
-    li.active {
-
-        padding-left: 6px;
-        border-left: 4px solid $bright-brand;
-        color: $bright-brand;
-
-    }
 
     h3 {
         font-size: $base-font-size;
-        margin-bottom: 6px;
+        font-weight: bold;
         padding-left: 2%;
         font-weight: 500;
+        font-size: 17px;
+        text-decoration: none;
+        margin: 20px 0;
+        &:active {
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        &:focus {
+          text-decoration: none;
+        }
 
         a {
-           color: $nav-header-color;
-        }
-    }
-
-    h3.active {
-        padding-left: 4px;
-        border-left: 4px solid $bright-brand;
-        a {
-          color: $bright-brand;
-
+          color: $text-color;
         }
 
     }
+
+    .panel-heading h3 {
+      margin: 10px 0;
+    }
+
+    .panel-heading > a {
+      &:active {
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+      color: $text-color;
+      width: 100%;
+      height: 100%;
+      display:block;
+
+    }
+
+    .panel-heading {
+      background-color : #fff;
+    }
+
+    .list-group-item {
+      padding-left: 10%;
+    }
+
+    li.active.list-group-item {
+      border-radius:  0 !important;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-left: 4px solid $bright-brand !important;
+      color: $bright-brand;
+      background: lighten($bright-brand, 40%)
+    }
+
 }

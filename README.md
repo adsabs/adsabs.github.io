@@ -19,6 +19,11 @@ You can now access your help pages at `http://localhost:4000/help/my_help/` whic
 
 If making a pull request, follow the rules described in `CONTRIBUTING.md`.
 
+#### Adding a category
+Unfortunately if you add a new category (e.g. "search", "actions", "userpreferences"), you need to do some configuration beyond
+adding the folder with the category name, with an index.html and _posts folder.
+You also need to add some markup to _includes/left-nav.html (use the previous accordion divs as a template).
+
 
 #### Contributing a blog post
 
@@ -26,7 +31,7 @@ All the blogs are kept under the folder `blog/_posts/`. The following rules must
 
   1. Name the file with `DATE_NAME`.md, eg., `2015-10-10_my_post.md`
   2. Within the file, you must include the following content at the top of the file:
-    
+
     ```
     ---
     layout: blog_post

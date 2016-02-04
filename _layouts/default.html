@@ -29,6 +29,7 @@ $(document).ready(function () {
 <!-- for sidebar -->
 <script>
 $(document).ready(function () {
+  //ADD THE PROPER HIGHLIGHT
   try {
     var category = window.location.pathname.split("/")[2];
   }
@@ -37,7 +38,26 @@ $(document).ready(function () {
   }
   //this should fail without causing a problem if category can't be found
   if ( $(".help-nav").find("div#" + category + "-items").length === 0) console.log("couldnt find accordion drawer for: ", category)
-  $(".help-nav").find("div#" + category + "-items").addClass("in");
+  $(".help-nav").find("div#" + category + "-items")
+  .addClass("in")
+  //set the caret pointing down
+  .parent()
+  .find(".fa")
+  .removeClass("fa-caret-right")
+  .addClass("fa-caret-down");
+
+  //SET LISTENERS FOR CARET OPEN/CLOSED
+  $('.help-nav .collapse').on('show.bs.collapse', function(){
+      $(this).parent()
+      .find(".fa")
+      .removeClass("fa-caret-right")
+      .addClass("fa-caret-down");
+    }).on('hide.bs.collapse', function(){
+      $(this).parent()
+      .find(".fa")
+      .removeClass("fa-caret-down")
+      .addClass("fa-caret-right");
+    });
 });
 </script>
 

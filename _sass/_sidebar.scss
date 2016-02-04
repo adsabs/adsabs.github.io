@@ -124,6 +124,7 @@ body {
 
     .list-group-item {
       padding-left: 10%;
+      background-color: lighten($grey-color-light, 6%);
     }
 
     li.active.list-group-item {
@@ -132,7 +133,7 @@ body {
       border: 1px solid #ddd;
       border-left: 4px solid $bright-brand !important;
       color: $bright-brand;
-      background: lighten($bright-brand, 40%)
+      background: lighten($bright-brand, 38%)
     }
 
 }

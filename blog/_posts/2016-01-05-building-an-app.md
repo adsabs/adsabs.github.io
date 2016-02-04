@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "Wrecipe for Simple ADS Apps"
-author: "ADS Team"
+author: "Jonny Elliott, Alex Holachek"
 position: "ADS Developers"
 category: blog
 label: technical
@@ -23,7 +23,9 @@ The following is needed for the wrecipe:
 
 First, we decided to create an application that pits two authors against one another by comparing their publication metrics against each other. Second, apply the 90s-00s WWE/WWF theme.
 
-![WWF](blog_2016-02-04_image02.jpg)
+<div class="text-center">
+    <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-04_image02.jpg"/>
+</div>
 
 ### Step 2: Obtain the information you need from the ADS
 
@@ -61,12 +63,14 @@ Our application will receive two authors names, and return the RIQs of each auth
 
 You can opt to host your application locally if you prefer, and there are a plethora of free options on the internet. To get things running quickly, we chose to host our application on Heroku app (http://herokuapp.com). You only need to do two things:
 
-  1. Configure your heroku app as outlined on Heroku
-  2. Supply your `API_DEV_KEY` via Heroku config
+  1. Configure your heroku app as outlined on [Heroku](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app)
+  2. Supply your `API_DEV_KEY` via the [Heroku config command](https://devcenter.heroku.com/articles/config-vars)
 
-*Note* If you use your own API token for an application that is available to other users, your rate limits will be consumed as normal, and may run out during a 24 hour period. If you believe your application deserves its own rate limits then feel free to tweet us [@adsabs](http://twitter.com/adsabs) or [contact us directly](adshelp@cfa.harvard.edu)
+*Note* If you use your own API token for an application that is available to other users, your rate limits will be consumed as normal, and may run out during a 24 hour period. If you believe your application deserves its own rate limits then feel free to tweet us [@adsabs](http://twitter.com/adsabs) or [contact us directly](adshelp@cfa.harvard.edu).
 
-### Step 5: Put it in the oven
+### Step 5: Put it in the oven and add a cliché title
 
-![Oven](blog/images/blog_2016-02-04.jpg)
+<div class="text-center">
+     <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-04_image02.png"/>
+</div>
 

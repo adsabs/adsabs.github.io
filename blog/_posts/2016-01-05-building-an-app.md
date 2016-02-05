@@ -57,14 +57,14 @@ The above is fairly simple, and so you could do it via curl requests as outlined
 
 ### Step 3: Serve your logic in a web app
 
-Our application will receive two authors names, and return the RIQs of each author, which will then display the winner (and loser) on the front-end application. To do this, we built a back-end application using Python-Flask, and a front-end application written in JavaScript. If you want to see the full code, you can see it [here](https://github.com/jonnybazookatone/authorsmackdown). At this stage you can utilise your favourite web application, cgi-bins, ruby on rails, go-lang, etc.
+Our application will receive two authors names, and return the RIQs of each author, which will then display the winner (and loser) on the front-end application. To do this, we built a back-end application using Python-Flask, and a front-end application written in JavaScript. If you want to see the full code, you can see the Flask backend [here](https://github.com/jonnybazookatone/authorsmackdown) and the JavaScript frontend [here](https://github.com/aholachek/smackdown). At this stage you can utilise your favourite web application, cgi-bins, ruby on rails, go-lang, etc.
 
 ### Step 4: Give your app to the public
 
 You can opt to host your application locally if you prefer, and there are a plethora of free options on the internet. To get things running quickly, we chose to host our application on Heroku app (http://herokuapp.com). You only need to do two things:
 
   1. Configure your heroku app as outlined on [Heroku](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app)
-  2. Supply your `API_DEV_KEY` via the [Heroku config command](https://devcenter.heroku.com/articles/config-vars)
+  2. Supply your **API_DEV_KEY** via the [Heroku config command](https://devcenter.heroku.com/articles/config-vars)
 
 *Note* If you use your own API token for an application that is available to other users, your rate limits will be consumed as normal, and may run out during a 24 hour period. If you believe your application deserves its own rate limits then feel free to tweet us [@adsabs](http://twitter.com/adsabs) or [contact us directly](adshelp@cfa.harvard.edu).
 

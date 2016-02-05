@@ -8,6 +8,8 @@ label: technical
 thumbnail: blog/images/blog_2016-01-13_thumb.jpg
 ---
 
+**tl; dr**: who is a better author, you or your colleague? Find out [here](http://authorsmackdown.herokuapp.com/).
+
 Underneath the new user interface of the ADS, ADS Beta (or Bumblebee), there is the rebuilt infrastructure of the ADS platform that serves the application layer of the ADS. At the start of last year, we made these services accessesible to the community via an API, for personal use, to build apps for themselves, their departments, or even the community as a whole. During the recent 227th Meeting of the American Astronomical Society, we decided to build a simple application for the Hack Day to demonstrate the ease at which you can create and deploy an application that makes use of the data available at the ADS.
 
 *FYI: this is more technical, and repetively uses a cooking/Wrestling theme.*
@@ -71,6 +73,11 @@ You can opt to host your application locally if you prefer, and there are a plet
 ### Step 5: Put it in the oven and add a cliché title
 
 <div class="text-center">
-     <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-04_image02.png"/>
+     <a href="http://authorsmackdown.herokuapp.com/">
+         <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-04_image02.png"/>
+     </a>
 </div>
+
+Click here: <a href="http://authorsmackdown.herokuapp.com/">Author Smackdown</a>
+
 

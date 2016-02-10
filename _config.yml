@@ -7,7 +7,9 @@ github_username:  adsabs
 permalink: /:categories/:title
 # Build settings
 markdown: kramdown
+highlighter: rouge
 kramdown:
+  syntax_highlighter: rouge
   input: GFM
 
 sass:

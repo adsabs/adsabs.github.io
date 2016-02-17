@@ -122,18 +122,19 @@ body {
       background-color : #fff;
     }
 
-    .list-group-item {
+    li.list-group-item {
       padding-left: 10%;
-      background-color: lighten($grey-color-light, 6%);
+      background-color: lighten($grey-color-light, 2%);
+      border: none;
+      border-left: 4px solid transparent !important;
     }
 
     li.active.list-group-item {
-      border-radius:  0 !important;
+      border-radius: 0 !important;
       background-color: #fff;
-      border: 1px solid #ddd;
-      border-left: 4px solid $bright-brand !important;
-      color: $bright-brand;
-      background: lighten($bright-brand, 38%)
+      border-left: 4px solid #4073dd !important;
+      background: #C8DEFF;
+      color: #2169DA;
     }
 
 }

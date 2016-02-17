@@ -1,42 +1,45 @@
-<nav class="top-nav row">
-<div class="logo-container col-sm-4">
-         <a  href="{{ site.baseurl }}/help">
-        <img src="{{ site.baseurl }}/img/logo.png" alt="NASA ADS Help Pages"></a>
+<div class="smart-container">
+  <nav class="top-nav row header">
+  <div class="logo-container col-sm-3">
+           <a  href="{{ site.baseurl }}/help">
+          <img src="{{ site.baseurl }}/img/logo.png" alt="NASA ADS Help Pages"></a>
 
-</div>
-
-
-
-<div class="col-sm-4" align="center">
-
-        <div class="pull-right">
-            <a href="{{ site.baseurl }}/help/">help</a> |
-
-            <a href="{{ site.baseurl }}/blog/">blog</a>
-        </div>
-</div>
-
-<div class="search-bar-container col-sm-4">
-<div class="pull-right">
-  <div id='cse' style='width: 100%;'>Loading</div>
-  <script src='//www.google.com/jsapi' type='text/javascript'></script>
-  <script type='text/javascript'>
-  google.load('search', '1', {language: 'en', style: google.loader.themes.V2_DEFAULT});
-  google.setOnLoadCallback(function() {
-    var customSearchOptions = {};
-    var orderByOptions = {};
-    orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
-    customSearchOptions['enableOrderBy'] = true;
-    customSearchOptions['orderByOptions'] = orderByOptions;
-    customSearchOptions['overlayResults'] = true;
-    var customSearchControl =   new google.search.CustomSearchControl('010769743734682606793:smmrakl8phk', customSearchOptions);
-    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    var options = new google.search.DrawOptions();
-    options.setAutoComplete(true);
-    customSearchControl.draw('cse', options);
-  }, true);
-  </script>
   </div>
-</div>
 
-</nav>
+
+  <div class="search-bar-container col-sm-5 col-sm-offset-4">
+  <div class="pull-right">
+    <div id='cse' style='width: 100%;'>Loading</div>
+    <script src='//www.google.com/jsapi' type='text/javascript'></script>
+    <script type='text/javascript'>
+    google.load('search', '1', {language: 'en', style: google.loader.themes.V2_DEFAULT});
+    google.setOnLoadCallback(function() {
+      var customSearchOptions = {};
+      var orderByOptions = {};
+      orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+      customSearchOptions['enableOrderBy'] = true;
+      customSearchOptions['orderByOptions'] = orderByOptions;
+      customSearchOptions['overlayResults'] = true;
+      var customSearchControl =   new google.search.CustomSearchControl('010769743734682606793:smmrakl8phk', customSearchOptions);
+      customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+      var options = new google.search.DrawOptions();
+      options.setAutoComplete(true);
+      customSearchControl.draw('cse', options);
+    }, true);
+    </script>
+    </div>
+  </div>
+
+  </nav>
+  <nav class="header row">
+    <div class="col-sm-6 col-sm-offset-6">
+
+            <div class="navbar-links">
+                <a href="{{ site.baseurl }}/help/"><i class="fa fa-info-circle"></i> help</a>
+                <a href="{{ site.baseurl }}/blog/"> <i class="fa fa-newspaper-o"></i> blog</a>
+                <a href="https://ui.adsabs.harvard.edu/"><i class="fa fa-home"></i> back to ADS</a>
+
+            </div>
+    </div>
+  </nav>
+</div>

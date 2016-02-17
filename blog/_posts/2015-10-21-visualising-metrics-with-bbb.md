@@ -16,25 +16,25 @@ For many scientists, it's all about the numbers and when it comes to evaluating 
 To get started, go to [ADS Bumblebee](https://ui.adsabs.harvard.edu) and perform an [author query](http://adsabs.github.io/help/search/search-syntax/):
 
 <div class="text-center">
-    <img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image02.png" align="center"/>
+    <img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image02.png" class="img-responsive"/>
 </div>
 
 On the search results page, click the Explore button and select Citation Metrics:
 
 <div class="text-center">
-    <img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image00.png" align="center"/>
+    <img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image00.png" class="img-responsive"/>
 </div>
 
 The top panel displayed is a graphical representation of the search results as a histogram of the number of products published per year.
 
-<img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image01.png" align="center"/>
+<img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image01.png" class="img-responsive"/>
 
 Use this panel as a sanity check that your search is selecting the publications you are interested in, since all of the indices are calculated based on this set. On the left side of the panel, the total number of publications and the number of those which are refereed are listed. On the histogram, you can mouse over any data point to see the actual values. The first result set is for the default amount of publications (300). If you have more, you can specify that number in the box at the top of the overview (up to the maximum of 2,000). We expect to be able to increase this maximum at some point in the future.
 
 
 There are panels that display information about Citations and Reads, but let’s focus on the Indices. The panel illustrates the values of various indices on any given year.
 
-<img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image03.png">
+<img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image03.png" class="img-responsive"/>
 
 On the left, the present value of many popular indices are calculated. Mouse over the help icon next to each index to get a brief description of how it’s calculated.
 

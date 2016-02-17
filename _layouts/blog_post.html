@@ -4,13 +4,12 @@ layout: blog_default
 
 <div class="row row-offcanvas row-offcanvas-left">
 
-    <div class="col-md-2"></div>
-    <div class="post main-content col-xs-12 col-md-8">
+    <div class="post col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 
     <button class="btn btn-primary visible-sm-inline-block visible-xs-inline-block" data-toggle="off-canvas">toggle sidebar</button>
 
       <header class="post-header">
-      {%unless page.no-header %} 
+      {%unless page.no-header %}
       <h1 class="post-title">{{ page.title }}</h1>
       <h3 class="post-author">{{ page.author}}, <b>{{ page.position }}</b></h3>
       <h3 class="post-date">{{ page.date | date_to_string }}</h3>
@@ -21,7 +20,7 @@ layout: blog_default
       {% endif %}
 
       <hr>
-      
+
       {% endunless %}
       </header>
 
@@ -38,7 +37,7 @@ layout: blog_default
       </article>
 
     </div>
-    <div class="col-md-2"></div>
+
 
 </div>
 <div class="row">
@@ -47,7 +46,7 @@ layout: blog_default
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'adsabsblog';
-    
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -58,5 +57,3 @@ layout: blog_default
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 </div>
-
-

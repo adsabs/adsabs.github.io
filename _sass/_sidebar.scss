@@ -124,13 +124,12 @@ body {
 
     li.list-group-item {
       padding-left: 10%;
-      background-color: lighten($grey-color-light, 2%);
-      border: none;
       border-left: 4px solid transparent !important;
+      border-radius: 0 !important;
+
     }
 
     li.active.list-group-item {
-      border-radius: 0 !important;
       background-color: #fff;
       border-left: 4px solid #4073dd !important;
       background: #C8DEFF;

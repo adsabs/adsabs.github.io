@@ -54,64 +54,26 @@ pre code {
 /**
  * Site header
  */
-.site-header {
-    min-height: 56px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
-    border-bottom: 1px solid $brand-color-muted;
-    margin-bottom: 50px;
+.navbar-links {
+  padding: 1%;
+  @media(min-width: $screen-md-min){
+    text-align: right;
+  }
+ >a {
+   display:inline-block;
+   margin-right: 4%;
+   font-size: 1.7rem;
+ }
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+.blog-links {
+  padding: 1%;
 }
 
-.site-nav {
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+.rss-container {
+  padding: 1%;
 }
-
-
-
 
 
 
@@ -169,11 +131,16 @@ h3 {
           box-sizing: content-box !important;
 }
 
-nav.top-nav {
-  border-bottom: 1px solid rgb(211, 211, 211);
-  box-shadow: 0px 2px 3px rgb(241, 241, 241);
-  padding: 2% 2% 1% 2%;
+nav.header {
+  border-bottom: 1px solid darken($grey-color-light, 8%);
+  &:nth-of-type(2) {
+    margin-bottom: 20px;
+  }
+}
 
+
+nav.top-nav {
+  padding: 2% 0 1% 0%;
 
   .logo-container img {
     width: 200px;

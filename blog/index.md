@@ -15,9 +15,9 @@ layout: blog_page
 
             <div class="col-md-2">
                 {% if post.thumbnail %}
-                    <img src="{{ site.baseurl }}/{{ post.thumbnail }}" style="width: 280px"/>
+                    <img src="{{ site.baseurl }}/{{ post.thumbnail }}" style="max-width: 340px;height:auto"/>
                 {% else %}
-                    <img src="{{ site.baseurl }}/img/ads_logo.png" style="width: 280px"/>
+                    <img src="{{ site.baseurl }}/img/ads_logo.png" style="max-width: 340px;height:auto"/>
                 {% endif %}
             </div>
 

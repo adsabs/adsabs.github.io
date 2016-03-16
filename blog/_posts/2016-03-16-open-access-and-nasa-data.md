@@ -19,7 +19,7 @@ The philosophy of open access to data was fully ingrained in the NASA community 
 
 At the beginning of the 1980s NASA established three wavelength specific data centers, at CfA/SAO (X-ray), Caltech/IPAC (infrared) and JHU/STScI (UV, optical).  These projects have been spectacularly successful, and they now house data from Chandra, Spitzer and HST.  Also at this time the SIMBAD database was born at the CDS in Strasbourg.
 
-In 1987 NASA sponsored a series of workshops to chart the future path for NASA astrophysics data, the Astrophysics Data System Study.  The report of this study (of which [The Squibb Report](https://ui.adsabs.harvard.edu/#abs/1979ApJ...230..540G/) is a summary) is a remarkably prescient document: it lays out in some detail the requirements for the networked astronomy information system we have today.
+In 1987 NASA sponsored a series of workshops to chart the future path for NASA astrophysics data, the Astrophysics Data System Study.  The report of this study (of which [The Squibb Report](https://ui.adsabs.harvard.edu/#abs/1988ESOC...28..489S/) is a summary) is a remarkably prescient document: it lays out in some detail the requirements for the networked astronomy information system we have today.
 
 While the network system NASA built in the early 90s was eventually replaced by the World Wide Web, the new infrastructure created persists to this day.  The collaboration between NASA and the CDS, the creation of NED, HEASARC, and the ADS all occurred at this time.  All these organizations exist today, and together with the three great NASA data centers, and with international partners at the CDS, CADC, ESO and ESA, form the core of our modern interconnected and interoperable open astronomical data environment.
 

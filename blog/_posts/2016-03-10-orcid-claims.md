@@ -6,6 +6,7 @@ position: ADS PI
 category: blog
 label: news
 thumbnail: img/orcid-claiming.gif
+repost: "http://www.astrobetter.com/blog/2016/03/07/claiming-papers-and-finding-people-with-orcid/"
 comment: "Claim your ORCID papers easily in ADS"
 ---
 
@@ -52,4 +53,4 @@ Once ORCID data has been indexed, other people can search for a researcher’s p
 
 ORCID integration in ADS started in 2015 with support from the AAS and is still work in progress.  During 2016 we intend to make the claiming system more robust and enhance the interface to allow a user-friendly way to search for an author’s publications without requiring users to know that author’s ORCID id.  An additional enhancement we are considering is sending alerts to registered users when papers matching their names appear in ADS, prompting them to claim the papers if no ORCID data is available.  To find out more about our plans, please take a look at a [recent presentation](https://docs.google.com/presentation/d/1SCTL7z45ROYSCQstu6aqwaxQ0-m7RRWE-1Fdz5M5j5U/edit?usp=sharing) we gave at the AAS Jan 2016 meeting.  We would love to hear your feedback and ideas on this topic!
 
-Please Note: The original version of this post was [published on the Astrobetter website](http://www.astrobetter.com/blog/2016/03/07/claiming-papers-and-finding-people-with-orcid/).  You may also want to read a nice [step-by-step guide](http://www.eso.org/sci/libraries/edocs/ESO/ADS-ORCID_StepByStep.pdf) of the claiming process created by the ESO Library.
+Please Note: You may also want to read a nice [step-by-step guide](http://www.eso.org/sci/libraries/edocs/ESO/ADS-ORCID_StepByStep.pdf) of the claiming process created by the ESO Library.

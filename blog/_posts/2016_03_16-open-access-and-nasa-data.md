@@ -5,7 +5,7 @@ author: "Michael J. Kurtz"
 position: "ADS Project Scientist"
 category: blog
 label: general
-thumbnail: blog/images/blog_2015-07-15_adsbumblebee.png
+thumbnail: http://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png
 ---
 <img src="http://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png" width="128"><p>
 

@@ -56,18 +56,15 @@ You can follow exactly the same process to import your libraries from ADS 2.0 in
 At least for the near future, we are not supporting the transition of tags/notes from ADS 2.0 into ADS Bumblebee. To mitigate this issue, you have the option to export the libraries from ADS 2.0 and import them into the following set of tools specifically designed for tagging:
 
    1. <a href="https://www.zotero.org/">Zotero</a>
-   2. Papers (to be done)
-   3. Mendeley (to be done)
+   2. <a href="https://www.mendeley.com/download-mendeley-desktop/">Mendeley</a>
 
-To export your libraries, press the **Download my ADS 2.0 libraries to Zotero-style BibTeX**, or the relevant button for the format you prefer.
+To export your libraries, press the **Download my ADS 2.0 libraries to Zotero/Mendeley-style BibTeX**, or the relevant button for the format you prefer.
 
 To import your libraries, please follow the relevant instructions for each third-party service:
 
   * <a href="https://www.zotero.org/support/getting_stuff_into_your_library#importing_from_other_tools">Zotero</a>
-{% comment %}
-  * <a href="http://support.mekentosj.com/kb/discover-how-to-find-new-articles-and-import-content/import-your-existing-documents-and-reference-files-to-papers-3-for-windows">Papers</a>
   * <a href="https://www.mendeley.com/features/add-and-organize/">Mendeley</a>
-{% endcomment %}
+
 
 ## FAQ
 

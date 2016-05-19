@@ -26,3 +26,9 @@ will return a ranked list of papers spanning a variety of topics useful to resea
 
 will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications. 
 
+**TopN** -- returns the list of top N documents for a user defined query, where they are ordered by their score or a user specified sort. For example:
+    
+    topn(200, title:hubble, citation_count desc)
+
+will return the first 200 most cited papers for documents that habe "hubble" in their title.
+

@@ -101,30 +101,51 @@ As a general rule we recommend to use the full name of the person for author sea
 
 ### Available Fields
 
-This is a list of fields currently recognized by the ADS search engine and the preferred search format:  
+This is a list of fields currently recognized by the ADS search engine and the preferred search format:
 
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------
+Abstract/Title     | abs:"phrase"                | abs:"dark energy"       | search for word or phrase in abstract & title
+Acknowledgements | ack:"phrase"            | ack:"ADS"                     | search for a word or phrase in the ackknowledgements
+Affiliation  | aff:"phrase"                | aff:"harvard"           | search for word or phrase in affiliation field
+Abstract     | abstract:"phrase"           | abstract:"dark energy"        | search for a word or phrase in an abstract only
+Alternate Bibcode | alternate_bibcode:adsbib | alternate_bibcode:2003AJ....125..525J | finds articles that used to (or still have) this bibcode
+Alternate Title | alternate_title:"phrase" | alternate_title:"Gammablitz" | search for a word or phrase in an articles title if they have more than one, in multiple languages
+arXiv ID     | arXiv:arxivid               | arXiv:1108.0669         | finds a specific record using its arXiv id
+arXiv Class | arxiv_class:arxivclass       | arxiv_class:"High Energy Physics - Experiment" | finds all arXiv pre-prints in the class specified
 Author       | author:"Last, F"            | author:"huchra, j"      | author name may include just lastname and initial
 Author (cont.)| author:"Last, First [...]"  | author:"huchra, john p" | an example of stricter author search (recommended)
-First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the search to first-author papers    
-Abstract     | abs:"phrase"                | abs:"dark energy"       | search for word or phrase in abstract & title      
-Year         | year:YYYY                   | year:2000               | require specific publication year          
-Year Range   | year:YYYY-YYYY              | year:2000-2005          | require publication date range  
-Date Range   | pubdate:[YYYY-MM TO YYYY-MM] | pubdate:[2005-10 TO 2006-09] | use fine-grained dates for publication range
-Publication  | bibstem:"abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html" target="_blank">specific publication</a>
-Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext   
 Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds a specific record using the [ADS bibcode]({{ site.baseurl }}/help/actions/bibcode)
-arXiv ID     | arXiv:arxivid               | arXiv:1108.0669         | finds a specific record using its arXiv id
-DOI          | doi:DOI                     | doi:10.1086/345794      | finds a specific record using its digital object id
-Affiliation  | aff:"phrase"                | aff:"harvard"           | search for word or phrase in affiliation field
-Title        | title:"phrase"              | title:"weak lensing"    | search for word or phrase in title field   
-Keywords     | keyword:"phrase"            | keyword:sun             | search publisher- or author-supplied keywords
-Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics or general
-Properties   | property:type               | property:openaccess     | limit search to article with specific attributes (*)
 Bibliographic groups | bibgroup:name       | bibgroup:HST            | limit search to papers in HST bibliography (*)
+Bibliographic stem | bibstem:adsbibstem    | bibstem:ApJ             | find records that contain a specific bibstem in their bibcode
+Body         | body:"phrase"               | body:"gravitational waves" | search for a word or phrase in (only) the full text
+Citation count | citation_count:count      | citation_count:40       | find records that have a specific number of citations
+Copyright | copyright:copyright            | copyright:2012          | search for articles with certain copyrights
 Data links   | data:archive                | data:NED                | limit search to papers with data from NED (*)
+Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics or general
+Date Range   | pubdate:[YYYY-MM TO YYYY-MM] | pubdate:[2005-10 TO 2006-09] | use fine-grained dates for publication range
 Document type | doctype:type               | doctype:catalog         | limit search to records corresponding to data catalogs (*)
+DOI          | doi:DOI                     | doi:10.1086/345794      | finds a specific record using its digital object id
+First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the search to first-author papers
+Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext, acknowledgements, and abstract
+Grant        | grant:grant                 | grant:NASA              | finds papers with specific grants listed in them
+Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | finds a paper using any of its identifiers, arXiv, bibcode, doi, etc.
+Issue        | issue:number                | issue:10                | search for papers in a certain issue
+Keywords     | keyword:"phrase"            | keyword:sun             | search publisher- or author-supplied keywords
+Language     | lang:"language"             | lang:korean             | search for papers with a given language
+ORCiD iDs    | orcid:id                    | orcid:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD
+ORCiD iDs from publishers    | orcid_pub:id                    | orcid_pub:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD specified by a Publisher
+ORCiD iDs from known ADS users    | orcid_user:id                    | orcid_id:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by known ADS users
+ORCiD iDs from uknknown ADS users   | orcid_other:id                    | orcid_other:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by unknown ADS users
+Page         | page:number                 | page:410                | search for papers with a given page number
+Publication  | bibstem:"abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html" target="_blank">specific publication</a>
+Properties   | property:type               | property:openaccess     | limit search to article with specific attributes (*)
+Read count   | read_count:count            | read_count:10           | search for papers with a given number of reads
+Title        | title:"phrase"              | title:"weak lensing"    | search for word or phrase in title field
+VizieR keywords | vizier:"phrase"          | vizier:"Optical"        | search for papers with a given set of VizieR keywords
+Volume       | volume:volume               | volume:10               | search for papers with a given volume
+Year         | year:YYYY                   | year:2000               | require specific publication year
+Year Range   | year:YYYY-YYYY              | year:2000-2005          | require publication date range
 
 (*) See below for details on these filters.  In most cases, filtering of results based on these fields is available in the user interface.
 

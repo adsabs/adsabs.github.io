@@ -5,12 +5,12 @@ order: 4
 ---
 
 
-
-
 ### Author Network
 The author network detects **groups of authors** and **connections between those groups** within a set of results.
 
-<img src="{{site.baseurl}}/img/author-network.png" alt="author network" class="img-responsive">
+<img src="{{site.baseurl}}/img/author_network.png" alt="author network" class="img-responsive">
+<i>An image of the author network for John Huchra with the link overlay activated. </i>
+<br/>
 
 #### How the network is made
 
@@ -35,7 +35,8 @@ To get an at-a-glance overview of a scientist’s career, search “author:LastN
 The paper network detects **groups of papers** based on **shared references** between those papers. In general, papers with many shared references will tend to have similar topics.
 
 <img src="{{site.baseurl}}/img/paper-network.png" alt="paper network" class="img-responsive">
-
+<i>Paper network for John Huchra.</i>
+<br/>
 
 #### How the network is made
 The paper network creates groups of papers that share a significant number of references, and names those groups by looking for shared, unique words in their titles.
@@ -78,3 +79,9 @@ The word cloud takes words from the titles and abstracts of your search results,
 #### How to use it
 * Move the slider to the left of the word cloud towards "unique" to see those words that appeared relatively frequently in your results but rarely in the rest of ADS.
 * Move the slider to the left of the word cloud towards "frequent" to see those words that appear frequently in your results, regardless of how often they appear in the rest of ADS.
+
+### Instructions on Downloading Graphics as High-Quality PNGS in Chrome
+1. <a href="https://nytimes.github.io/svg-crowbar/"> Install the SVG Crowbar 2 Bookmarklet</a>
+2. Open the graph in ADS (currently the paper and author networks have the best support)
+3. Click the SVG Crowbar icon, you will see something that looks a bit messy, like this: <img src="{{site.baseurl}}/img/svg-crowbar.png" class="img-responsive">
+4. Click on the two bottom buttons: <b> #network-viz-main-chart</b> to download the main chart, and <b>#network-viz-time-series</b> to download the accompanying time series graph.

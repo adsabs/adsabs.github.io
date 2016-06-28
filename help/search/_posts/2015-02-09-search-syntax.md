@@ -128,7 +128,7 @@ Date Range   | pubdate:[YYYY-MM TO YYYY-MM] | pubdate:[2005-10 TO 2006-09] | use
 Document type | doctype:type               | doctype:catalog         | limit search to records corresponding to data catalogs (*)
 DOI          | doi:DOI                     | doi:10.1086/345794      | finds a specific record using its digital object id
 First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the search to first-author papers
-Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext, acknowledgements, abstract and keywords
+Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext, acknowledgements, abstract, title and keywords
 Grant        | grant:grant                 | grant:NASA              | finds papers with specific grants listed in them
 Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | finds a paper using any of its identifiers, arXiv, bibcode, doi, etc.
 Issue        | issue:number                | issue:10                | search for papers in a certain issue

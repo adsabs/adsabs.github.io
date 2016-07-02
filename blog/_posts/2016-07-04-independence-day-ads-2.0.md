@@ -15,6 +15,8 @@ For those of you that didn't know, today is also the day that we are decommissio
 
 Do not worry if you had private libraries in ADS 2.0 and you still want to access them, you can do this, as is explained in the help pages <a href="https://adsabs.github.io/help/libraries/legacy-importing">here</a>. Also, redirects will be in place for those that had bookmarked certain searches.
 
+Also, if you use to be an ADS 2.0 API user, you can find details about our new API <a href="https://github.com/adsabs/adsabs-dev-api">here</a>.
+
 If you run into any problems or have any questions about this change, then don't hesitate to contact us via <a href="mailto:adshelp@cfa.harvard.edu">e-mail</a>, <a href="https://twitter.com/adsabs">twitter</a>, or our feedback form.
 
 

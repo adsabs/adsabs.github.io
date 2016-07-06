@@ -24,7 +24,8 @@ author:"^huchra, john"               | limit search to first-author papers
 abs:"dark energy"                    | search for the phrase "dark energy" in abstract and title
 year:2000                            | search for publications written in 2000
 year:2000-2005                       | search for publications written between 2000 and 2005 (inclusive)
-full:"gravitational waves"           | search for papers containing the phrase "gravitational waves" anywhere in the full-text
+body:"gravitational waves"           | search for papers containing the phrase "gravitational waves" in the body of an article
+full:"gravitational waves"           | search for papers containing the phrase "gravitational waves" in a number of fields (title, abstract, body, acknowledgements and keywords)
 bibstem:ApJ                          | select papers published in a particular publication
 
 The rest of this page goes over the search syntax and fields indexed in our database.  
@@ -127,7 +128,7 @@ Date Range   | pubdate:[YYYY-MM TO YYYY-MM] | pubdate:[2005-10 TO 2006-09] | use
 Document type | doctype:type               | doctype:catalog         | limit search to records corresponding to data catalogs (*)
 DOI          | doi:DOI                     | doi:10.1086/345794      | finds a specific record using its digital object id
 First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the search to first-author papers
-Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext, acknowledgements, and abstract
+Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext, acknowledgements, abstract, title and keywords
 Grant        | grant:grant                 | grant:NASA              | finds papers with specific grants listed in them
 Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | finds a paper using any of its identifiers, arXiv, bibcode, doi, etc.
 Issue        | issue:number                | issue:10                | search for papers in a certain issue

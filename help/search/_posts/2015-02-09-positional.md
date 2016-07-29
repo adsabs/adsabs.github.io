@@ -14,7 +14,7 @@ pos(author:"Oort, J",2,2)  | same as above
 pos(author:"Oort, J",1,3)  | papers which have "J. Oort" as first, second, or third author
 pos(aff:harvard,1)         | papers for which the first author has a Harvard affiliation
 pos(title:M31,1)           | papers for which the title start with "M31"
-    
+
 Currently the _pos()_ operator works on these fields: _author_, _aff_, _title_.
 
 <!---###Truncation of result list###
@@ -22,5 +22,5 @@ Currently the _pos()_ operator works on these fields: _author_, _aff_, _title_.
 You can limit the number of results returned by your search by using the _topn()_ operator, which accepts the syntax _topn(N,query)_ and returns the top N papers from a list of results
 
     topn(20,"galaxy clusters")
-    
+
 This will limit the list of results to be the 20 most relevant papers on "galaxy clusters." --->

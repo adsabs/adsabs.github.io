@@ -15,7 +15,7 @@ Above the search box we supply shortcuts to frequently used search fields.  Simp
 
     author:"Huchra, John" year:1980-1990
 
-To get you started, here is a list of search examples for commonly used fields:    
+To get you started, here is a list of search examples for commonly used fields:
 
 Example Query                        | Explanation
 -------------------------------------|------------------------------------------------------------
@@ -28,7 +28,7 @@ body:"gravitational waves"           | search for papers containing the phrase "
 full:"gravitational waves"           | search for papers containing the phrase "gravitational waves" in a number of fields (title, abstract, body, acknowledgements and keywords)
 bibstem:ApJ                          | select papers published in a particular publication
 
-The rest of this page goes over the search syntax and fields indexed in our database.  
+The rest of this page goes over the search syntax and fields indexed in our database.
 
 ### Combining Search Terms to Make a Compound Query
 
@@ -45,7 +45,7 @@ author:"huchra, j" NOT title:2mass   | same as above
 
 ### Synonyms and Acronyms
 
-By default most search terms in ADS are expanded by adding a list of words which are synonyms of the search term.  So for example, a search of "star" in the title field will be expanded to include words such as "stars," "stellar," "starry," "starlike," and so on.  (Notice that this often includes words in foreign languages such as "etoile," "stern," and "stella"). While this feature improves recall, it sometimes compromises the precision of the results.  Our search engine allows one to turn off the synonym expansion feature by simply prepending an "=" sign in front of the search term.  
+By default most search terms in ADS are expanded by adding a list of words which are synonyms of the search term.  So for example, a search of "star" in the title field will be expanded to include words such as "stars," "stellar," "starry," "starlike," and so on.  (Notice that this often includes words in foreign languages such as "etoile," "stern," and "stella"). While this feature improves recall, it sometimes compromises the precision of the results.  Our search engine allows one to turn off the synonym expansion feature by simply prepending an "=" sign in front of the search term.
 
 Our search engine also identifies acronyms during indexing and searching (defined as words consisting entirely of uppercase characters).  A search for an uppercase word will only match documents which contain that acronym, whereas a search for a lowercase word will match documents which contain any variation of the word, irregardless of its case.  Acronyms can themselves have synonyms (for example "ADS" and "Astrophysics Data System" are synonyms), so one should be aware that there is an interaction between case-sensitiveness and synonym expansion.  The examples below illustrate these effects:
 
@@ -84,15 +84,15 @@ Synoym expansion also applies to author names, which provide a way to account fo
     </tr>
     <tr>
         <td>=author:"murray, s"</td>
-        <td>Matches only records authored by "Murray, S."</td>    
+        <td>Matches only records authored by "Murray, S."</td>
     </tr>
     <tr>
         <td>=author:"murray, stephen"</td>
-        <td>Matches only records authored by "Murray, Stephen"</td>    
+        <td>Matches only records authored by "Murray, Stephen"</td>
     </tr>
     <tr>
         <td>=author:"murray, stephen s"</td>
-        <td>Matches only records authored by "Murray, Stephen S."</td>    
+        <td>Matches only records authored by "Murray, Stephen S."</td>
     </tr>
   </tbody>
 </table>
@@ -154,9 +154,9 @@ Year Range   | year:YYYY-YYYY              | year:2000-2005          | require p
 
 The "properties" search field allows one to restrict the search results to papers which belong to a particular class.  The allowed properties currently include:
 
-Property flag    | Selection                
+Property flag    | Selection
 ---------------- | ------------------------
-refereed         | refereed papers only   
+refereed         | refereed papers only
 notrefereed      | non-refereed papers only
 article          | records corresponding to regular articles
 nonarticle       | not regular articles, for instance meeting abstracts, observing proposals, catalog descriptions, etc
@@ -179,7 +179,7 @@ The list of current Telescope bibgroups is: ALMA, CXC, ESO, Gemini, Herschel, HS
 The "data" search field can be used to select papers which have data links associated to them.  The list of archives which ADS links to can be seen under the "Data" filter selection.  To generate a list of all records which have data links one can issue a simple wildcard query: [data:* ](https://ui.adsabs.harvard.edu/#search/q=data%3A*&sort=date+desc).  Using the data search field allows one to focus on data-rich papers, for example:
 
     data:(CXO OR XMM) AND data:HST
-    
+
 Finds multi-wavelength papers which have observations both in the X-ray spectrum (from Chandra or XMM) and in the optical (HST).  Of course additional search terms can be used to further refine the selection criteria.
 
 ### Document Type
@@ -207,4 +207,3 @@ software       | software package
 talk           | research talk given at a scholarly venue
 techreport     | technical report
 misc           | anything not found in the above list
-

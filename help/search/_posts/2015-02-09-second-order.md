@@ -11,7 +11,7 @@ We provide three operators which modify the query results by performing second-o
 **Trending** -- returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field.  For example:
 
     trending(exoplanets)
-    
+
 will return a ranked list of papers which are currently popular among the readers interested in exoplanets.
 
 **Useful** -- returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field.  For example:
@@ -24,11 +24,10 @@ will return a ranked list of papers spanning a variety of topics useful to resea
 
     reviews("weak lensing")
 
-will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications. 
+will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications.
 
 **TopN** -- returns the list of top N documents for a user defined query, where they are ordered by their score or a user specified sort. For example:
-    
+
     topn(200, title:hubble, citation_count desc)
 
 will return the first 200 most cited papers for documents that habe "hubble" in their title.
-

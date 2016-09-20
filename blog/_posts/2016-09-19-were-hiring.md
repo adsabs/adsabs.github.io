@@ -47,9 +47,9 @@ Some of the perks of these jobs include:
 
 Click below to read the full job description and apply to the openings:
 
-  * **Front-end developer**: [https://www.cfa.harvard.edu/hr/postings/16-57.html](https://www.cfa.harvard.edu/hr/postings/16-57.html)
-  * **Back-end developer**: [https://www.cfa.harvard.edu/hr/postings/16-53.html](https://www.cfa.harvard.edu/hr/postings/16-53.html)
-  * **Devops specialist**: [https://www.cfa.harvard.edu/hr/postings/16-56.html](https://www.cfa.harvard.edu/hr/postings/16-56.html)
+  * **Front-end developer**: [https://www.usajobs.gov/GetJob/ViewDetails/450964300/](https://www.usajobs.gov/GetJob/ViewDetails/450964300/)
+  * **Back-end developer**: [https://www.usajobs.gov/GetJob/ViewDetails/450964800/](https://www.usajobs.gov/GetJob/ViewDetails/450964800/)
+  * **Devops specialist**: [https://www.usajobs.gov/GetJob/ViewDetails/450964500/](https://www.usajobs.gov/GetJob/ViewDetails/450964500/)
 
 For more information, please see:
 

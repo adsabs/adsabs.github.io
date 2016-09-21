@@ -13,7 +13,7 @@ The ADS team announces openings for four developers in its team!
 
 ## Who we are
 
-The NASA Astrophysics Data System (ADS) is a digital library portal for researchers in Astronomy and Astrophysics which finds substantial use in the Physics and Geophysics communities. The ADS corpus consists of over ten million documents, and is growing at a rate of several thousand per month. Nearly every Astronomy, Physics, and Geophysics article refereed in the past 20 years is fully indexed and served by the ADS. Over 50,000 scientists and librarians use the ADS daily. 
+The NASA Astrophysics Data System (ADS) is a digital library portal for researchers in Astronomy and Astrophysics which finds substantial use in the Physics and Geophysics communities. The ADS corpus consists of over ten million documents, and is growing at a rate of several thousand per week. Every Astronomy paper ever published and nearly every Physics and Geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily. 
 
 The ADS project develops and maintains services to facilitate the discovery and access of the scholarly literature published in the relevant fields of research.  The project embraces the spirit of openness long championed by NASA and the astronomy community in general: all the software we are developing is licensed to under an open source license model, and access to our data holdings is provided via an open API.
 
@@ -48,7 +48,7 @@ Some of the perks of these jobs include:
 Click below to read the full job description and apply to the openings:
 
   * **Front-end developer**: [https://www.usajobs.gov/GetJob/ViewDetails/450964300/](https://www.usajobs.gov/GetJob/ViewDetails/450964300/)
-  * **Back-end developer**: [https://www.usajobs.gov/GetJob/ViewDetails/450964800/](https://www.usajobs.gov/GetJob/ViewDetails/450964800/)
+  * **Back-end developer**: [https://www.usajobs.gov/GetJob/ViewDetails/451251000/](https://www.usajobs.gov/GetJob/ViewDetails/451251000/)
   * **Devops specialist**: [https://www.usajobs.gov/GetJob/ViewDetails/450964500/](https://www.usajobs.gov/GetJob/ViewDetails/450964500/)
 
 For more information, please see:

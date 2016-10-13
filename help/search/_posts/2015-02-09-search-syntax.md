@@ -27,6 +27,7 @@ year:2000-2005                       | search for publications written between 2
 body:"gravitational waves"           | search for papers containing the phrase "gravitational waves" in the body of an article
 full:"gravitational waves"           | search for papers containing the phrase "gravitational waves" in a number of fields (title, abstract, body, acknowledgements and keywords)
 bibstem:ApJ                          | select papers published in a particular publication
+object:((SMC OR LMC) AND M31)        | using the SIMBAD object search, find papers tagged with either SMC or LMC and M31
 
 The rest of this page goes over the search syntax and fields indexed in our database.
 
@@ -134,6 +135,7 @@ Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | fi
 Issue        | issue:number                | issue:10                | search for papers in a certain issue
 Keywords     | keyword:"phrase"            | keyword:sun             | search publisher- or author-supplied keywords
 Language     | lang:"language"             | lang:korean             | search for papers with a given language
+Object       | object:"object"             | object:Andromeda        | search for papers tagged with astronomical object by SIMBAD
 ORCiD iDs    | orcid:id                    | orcid:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD
 ORCiD iDs from publishers    | orcid_pub:id                    | orcid_pub:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD specified by a Publisher
 ORCiD iDs from known ADS users    | orcid_user:id                    | orcid_id:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by known ADS users

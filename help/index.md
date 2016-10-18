@@ -8,5 +8,5 @@ layout: post
 
 <p>To view the latest information about the ADS, visit the <a href="{{ site.baseurl }}/blog">ADS blog</a>.</p>
 
-<p>If you cannot find what you are looking for, please reach out to us at <a href="mailto:adshelp@cfa.harvard.edu">adshelp@cfa.harvard.edu</a> or Tweet us at <a href="https://twitter.com/adsabs">@adsabs</a>.
+<p>If you cannot find what you are looking for, please reach out to us at <a href="mailto:adshelp@cfa.harvard.edu">adshelp@cfa.harvard.edu</a>.
 

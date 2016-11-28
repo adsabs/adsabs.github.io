@@ -13,6 +13,6 @@ There are two ways to create a private library:
 
   2. Go the **My Account** drop down and select **ADS Libraries**. Press the **Create a library** button.
 
-Currently, it is possible to modify the name and description of the library you have created. To do this, simply navigate to the ADS Libraries page from the **My Account** drop down, at the top right of the web interface. Once there, you can select your library of interest, and press **edit** on the attribute you would like to modify.
+It is possible to modify the name and description of the library you have created. To do this, simply navigate to the ADS Libraries page from the **My Account** drop down, at the top right of the web interface. Once there, you can select your library of interest, and press **edit** on the attribute you would like to modify.
 
-To delete any of the bibcodes in your library, simply navigate to the library and press the red **x** next to the bibcode you do not want in the library.
+To delete any of the records in your library, simply navigate to the library and press the red **x** next to the bibcode you do not want in the library.  To delete the entire library, navigate to the library page, click on the "View Editing Options" button and select the "Delete library" option.  Once deleted, a library is gone forever, so click with caution!

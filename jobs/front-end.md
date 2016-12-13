@@ -2,7 +2,7 @@
 layout: minimal
 ---
 
-# **The NASA/Astrophysics Data System is seeking a talented Front End Developer**
+# The NASA/Astrophysics Data System is seeking a talented Front End Developer
 
 ## Your front-end code will empower astrophysicists around the world to solve the mysteries of the universe.
 

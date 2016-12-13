@@ -2,7 +2,7 @@
 layout: minimal
 ---
 
-# **The NASA/Astrophysics Data System is seeking a talented Back End Engineer**
+# The NASA/Astrophysics Data System is seeking a talented Back End Engineer
 
 ## Your code will empower astrophysicists around the world to solve the mysteries of the universe.
 

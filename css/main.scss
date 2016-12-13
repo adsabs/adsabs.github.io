@@ -39,6 +39,17 @@ $nav-header-color:  desaturate($brand-color, 30);
 $nav-text-color:  $text-color;
 
 
+/* ==========================================================================
+   .default-layout is a plain layout, just used for job announcements right now
+   ========================================================================== */
+
+.default-layout h1 {
+  font-weight: bold;
+}
+
+.default-layout {
+  padding-bottom: 5rem !important;
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)

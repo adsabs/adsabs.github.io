@@ -28,6 +28,6 @@ Both US citizen and foreign nationals are eligible to apply.
 Please drop a note with your resume attached to the ADS program manager at aaccomazzi@cfa.harvard.edu.
 We'll say hi and help you with the formal USAJOBS application process. 
 If you'd just like to apply directly, the link to the application is here: 
-https://www.usajobs.gov/GetJob/ViewDetails/461177800
+[https://www.usajobs.gov/GetJob/ViewDetails/461177800](https://www.usajobs.gov/GetJob/ViewDetails/461177800)
 We look forward to meeting you!
 

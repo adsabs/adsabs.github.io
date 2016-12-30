@@ -11,6 +11,15 @@ comment: "<b>Four software developer positions available</b>"
 
 The ADS team announces openings for four developers in its team!
 
+## Update (Jan 1, 2017)
+
+The positions have been reopened, and we will be accepting applications through the end of February, 
+although hiring decisions may be taken before then.  For more information, please see:
+  * [Front-end developer position](https://adsabs.github.io/jobs/front-end.html)
+  * [Back-end developer positions (2)](https://adsabs.github.io/jobs/back-end.html)
+  * [Dev-Ops engineer position](https://adsabs.github.io/jobs/dev-ops.html)
+
+
 ## Who we are
 
 The NASA Astrophysics Data System (ADS) is a digital library portal for researchers in Astronomy and Astrophysics which finds substantial use in the Physics and Geophysics communities. The ADS corpus consists of over ten million documents, and is growing at a rate of several thousand per week. Every Astronomy paper ever published and nearly every Physics and Geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily. 

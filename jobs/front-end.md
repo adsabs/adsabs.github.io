@@ -13,7 +13,7 @@ layout: minimal
 - A self-starter who enjoys implementing new features and learning new front-end technologies.
 
 ### We are:
-Based at the Center for Astrophysics at Harvard University, the Astrophysics Data System
+Based at the Center for Astrophysics within Harvard University, the Astrophysics Data System
 is a free, NASA-funded search engine used by every working astrophysicist around the world. We have a small dedicated team
 working on feature-rich platform using a modern development stack.
 
@@ -23,5 +23,9 @@ working on feature-rich platform using a modern development stack.
 - **Support for professional development**: Attend conferences of your choice, engage with users at community meetings, and optionally present your work and findings at scientific conferences in astronomy and information science.
 
 ### Interested?
-Please drop us a note with your resume attached at aaccomazzi@cfa.harvard.edu.
-We'll say hi and help you with the formal USAJOBS application process. If you'd just like to apply directly, the link to the application is here: http://usajobs.gov/... We look forward to meeting you!
+Both US citizen and foreign nationals are eligible to apply.
+Please drop a note with your resume attached to the ADS program manager at aaccomazzi@cfa.harvard.edu.
+We'll say hi and help you with the formal USAJOBS application process. 
+If you'd just like to apply directly, the link to the application is here: 
+https://www.usajobs.gov/GetJob/ViewDetails/461177500
+We look forward to meeting you!

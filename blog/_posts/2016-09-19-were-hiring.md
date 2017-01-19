@@ -53,15 +53,6 @@ Some of the perks of these jobs include:
   * Access to the astronomical community and events at the CfA and Harvard University
   * Engage with users at community meetings, present your work and findings at scientific conferences in astronomy and information science
 
-## How to apply
-
-All positions are open to both US Citizens and Foreign Nationals.
-Click below to read the full job description and apply to the openings:
-
-  * **Front-end developer**: [https://www.usajobs.gov/GetJob/ViewDetails/450964300/](https://www.usajobs.gov/GetJob/ViewDetails/450964300/)
-  * **Back-end developer**: [https://www.usajobs.gov/GetJob/ViewDetails/451251000/](https://www.usajobs.gov/GetJob/ViewDetails/451251000/)
-  * **Devops specialist**: [https://www.usajobs.gov/GetJob/ViewDetails/450964500/](https://www.usajobs.gov/GetJob/ViewDetails/450964500/)
-
 For more information, please see:
 
   * [The ADS homepage](http://adsabs.harvard.edu)

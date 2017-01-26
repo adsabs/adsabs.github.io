@@ -10,8 +10,7 @@ comment: "<b>A tutorial on basic and advanced use of ADS bumblebee</b>"
 ---
 
 
-A recording of a tutorial given at the Center for Astrophysics on using the new ADS interface 
-is now available.  Hope you enjoy it!
+A recording of a tutorial given at the Center for Astrophysics on using the new ADS interface is now available.  Hope you enjoy it!
 
    * [Recording of the tutorial (1h 8m)](https://youtu.be/q7RXnVyieRM)
    * [Slides of the presentation](https://docs.google.com/presentation/d/1Nob5D2JEW131E4IfpNYE--eHienKQbwdauTcTvSWl38/edit?usp=sharing)

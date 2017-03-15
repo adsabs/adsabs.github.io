@@ -13,12 +13,12 @@ The ADS team announces openings for four developers in its team!
 
 ## Update (Jan 1, 2017)
 
-The positions have been reopened, and we will be accepting applications through the end of February, 
+The positions have been reopened, and we will be accepting applications through the end of March, 
 although hiring decisions may be taken before then.  For more information, please see:
 
-  * [Front-end developer position](https://adsabs.github.io/jobs/front-end.html)
-  * [Back-end developer positions (2)](https://adsabs.github.io/jobs/back-end.html)
-  * [Dev-Ops engineer position](https://adsabs.github.io/jobs/dev-ops.html)
+  * Front-end developer position (no longer accepting applications)
+  * [Back-end developer position](https://adsabs.github.io/jobs/back-end.html)
+  * Dev-Ops engineer position (no longer accepting applications)
 
 
 ## Who we are

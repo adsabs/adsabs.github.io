@@ -14,7 +14,7 @@ comment: "<b>ADS Classic off the air on April 13, 4pm-11pm EDT</b>"
 The main ADS site at the Harvard-Smithsonian Center for Astrophysics (CfA), 
 [http://adsabs.harvard.edu](http://adsabs.harvard.edu), 
 will be shutdown on April 13 at 4pm EDT and will remain unavailable till
-approximately 11pm due to scheduled maintenance of the electrical power supply.
+approximately 11pm due to scheduled maintenance of the local power supply line.
 
 During this time, you can still access the ADS Classic interface on one 
 of our mirror sites: [http://cdsads.u-strasbg.fr/mirrors.html](http://cdsads.u-strasbg.fr/mirrors.html).

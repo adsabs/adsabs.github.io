@@ -9,7 +9,9 @@ thumbnail: blog/images/blog_2016-09-19_adsbumblebee.png
 comment: "<b>Four software developer positions available</b>"
 ---
 
-The ADS team announces openings for four developers in its team!
+## Update (April 25, 2017)
+
+All positions are now closed.  Thanks to those who applied!
 
 ## Update (Jan 1, 2017)
 
@@ -17,7 +19,7 @@ The positions have been reopened, and we will be accepting applications through 
 although hiring decisions may be taken before then.  For more information, please see:
 
   * Front-end developer position (no longer accepting applications)
-  * [Back-end developer position](https://adsabs.github.io/jobs/back-end.html)
+  * Back-end developer position (no longer accepting applications)
   * Dev-Ops engineer position (no longer accepting applications)
 
 

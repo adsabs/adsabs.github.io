@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "Become an ADS Power User!"
-author: "Alberto Accomazzi & Michael Kurtz"
+author: "Alberto Accomazzi and Michael Kurtz"
 position: "ADS"
 category: blog
 label: news

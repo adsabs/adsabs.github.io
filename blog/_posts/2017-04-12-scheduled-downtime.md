@@ -29,7 +29,7 @@ search forms:
   * [Bublebee modern search form](https://ui.adsabs.harvard.edu/)
   * [Bumblebee classic search form](https://ui.adsabs.harvard.edu/#classic-form)
 
-The downtime will also affect the SIMBAD and Vizier mirrors at the CfA:
+The downtime will also affect the SIMBAD and VizieR mirrors at the CfA:
 [http://simbad.harvard.edu/](http://simbad.harvard.edu/) and 
 [http://vizier.cfa.harvard.edu/](http://vizier.cfa.harvard.edu/).
 

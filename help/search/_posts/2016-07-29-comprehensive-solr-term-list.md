@@ -6,7 +6,7 @@ order: 6
 
 
 **This is an extensive list of methods of querying the ADS system.**
-It is a technical document and you probably don't need to read it if you are the average ADS user.
+It is a technical document and you probably don't need to read it unless you are interested in performing advanced searches.
 
 **Solr (Virtual) Fields, Operators, and Other Stuff**
 
@@ -16,8 +16,8 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | Field Name | Deprecated | Useful for user | Show/Give access? [y/n] | Explanation |
 | ---------- | ---------- | --------------- | ----------------------- | ----------- |
 | abstract | n | y | y | the abstract of the record |
-| ack | n | y | y | Contains acknowledgements extracted from fulltexts (if it was possible to identify them). |
-| aff | n | y | y | List of affiliations in a given paper |
+| ack | n | y | y | Contains acknowledgements extracted from fulltexts (if identified in article). |
+| aff | n | y | y | List of author affiliations in a given paper |
 | alternate_bibcode | n | y | y | List of alternate bibcodes for that document |
 | alternate_title | n | y | y | Alternate title, usually when the original title is not in English  |
 | arxiv_class | n | y | y | Which arXiv class was the paper submitted to |
@@ -26,8 +26,8 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | author_facet_hier | n | n | n | Hiearchical facet field which contains author/author_id. |
 | author_norm | n | n | n | List of authors with their first names shortened? |
 | bibcode | n | y | y | ADS identifier of a paper |
-| bibgroup | n | y | y | Bibliographic group that the bibcode belongs to (maintained by librarians of the relevant group) |
-| bibgroup_facet | n | y&n | y&n | Contains list of groups with the number of occurences that group has for the search |
+| bibgroup | n | y | y | Bibliographic group that the bibcode belongs to (curated and by staff outside of ADS) |
+| bibgroup_facet | n | y&n | y&n | Contains list of groups with the number of occurrences that group has for the search |
 | bibstem | n | y | y | the abbreviated name of the journal or publication, e.g., ApJ. |
 | bibstem_facet | n | n | n | Technical field, used for faceting by publication. It contains only bibstems without volumes (eg. Sci) |
 | body | n | y | n | Contains extracted fulltext minus acknowledgements section |
@@ -35,19 +35,19 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | citation_count | n | y | y | number of citations the item has received |
 | cite_read_boost | n | n | n | Float values containing normalized (float) boost factors. These can be used with functional queries to modify ranking of results. |
 | classic_factor | n | n | n | Integer values containing the boost factor used by ADS Classic. In essence log(1 + cites + norm_reads) where number of citations has been normalized and the whole value is multiplied by 5000 and then cast to Integer. |
-| comment | n | y | tbd | This is currently index, but not stored. To see the values, Solr needs to also store it. |
+| comment | n | y | tbd | This is currently indexed, but not stored. To see the values, Solr needs to also store it. |
 | copyright | n | y | y | Copyright given by the publisher |
 | data | n | y | y | List of sources that have data related to this bibcode |
-| data_facet | n | y&n | y&n | Contains list of data with the number of occurences that data has for the search |
-| database | n | y | y | Databases that the paper resides in |
+| data_facet | n | y&n | y&n | Contains list of data with the number of occurrences that data has for the search |
+| database | n | y | y | Database that the paper resides in (astronomy or physics)|
 | date | n | n | n | Same as pubdate, but of time format and used for indexing; too excessive for a user to care about/use |
 | doctype | n | n | n | Type of document: article, thesis, etc, these stem from classic |
 | doi | n | y | y | Digital object identifier |
-| eid | n | y | y | electronic id of the paper (equivalent of page) |
+| eid | n | y | y | electronic id of the paper (equivalent of page number) |
 | email | n | y | n | List of e-mails for the authors that included them in the article; protect due to privacy concerns - difficult to stop unless we stop people seeing it now |
 | facility | n | y | tbd | List of facilities declared in paper (controlled list for AAS journals so far). Needs to be added in ADSImportpipeline and Solr schemas |
 | first_author | n | y | y | First author of the paper |
-| first_author_facet_hier | n | y&n | y&n | Contains list of first names with the number of occurences that author has for the search, contains author/author_id |
+| first_author_facet_hier | n | y&n | y&n | Contains list of first names with the number of occurrences that author has for the search, contains author/author_id |
 | first_author_norm | n | n | n | First author of the paper with their first name shortened? |
 | grant | n | y | y | Field that contains both grant ids and grant agencies. |
 | grant_agencies | y | n | n | Index with just the grant agencies names (e.g. NASA). |
@@ -59,13 +59,13 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | indexstamp | n | y | y | Date at which the document was indexed by Solr YYYY-MM-DD'T'hh:mm:ss.SSS'Z' |
 | isbn | n | y | tbd | ISBN of the publication (this applies to books) |
 | issn | n | y | tbd | ISSN of the publication (applies to journals - ie. periodical publications) |
-| issue | n | y | y | Issue of the journal that the article belongs to |
-| keyword | n | y | y | an array of normalized and un-normalized keyword values associated with the record |
-| keyword_facet | n | y&n | y&n | Contains list of keywords with the number of occurences that keyword has for the search |
+| issue | n | y | y | Issue number of the journal that includes the article |
+| keyword | n | y | y | an array of normalized and non-normalized keyword values associated with the record |
+| keyword_facet | n | y&n | y&n | Contains list of keywords with the number of occurrences that keyword has for the search |
 | keyword_norm | n | n | n | Controlled keywords, each entry will have a corresponding keyword_schema entry |
 | keyword_schema | n | y | y | Schema for each controlled keyword, i.e., what was the origin of the keyword? |
 | lang | n | y | y | In ADS this field contains a language of the main title. Currently, this value is present in a very small portion of records (try searching for lang:*) |
-| links_data | n | n | n | We use it to contain info on what readable linked documents are available? - If true, I think unimportant for users |
+| links_data | n | n | n | We use it to contain info on what readable linked documents are available? |
 | orcid_other | n | y | y | ORCID claims from users who used Bumblebee claiming interface, but did not give us consent to show their profiles |
 | orcid_pub | n | y | y | ORCID IDs supplied by publishers |
 | orcid_user | n | y | y | ORCID claims from users who gave ADS consent to expose their public profiles. |
@@ -106,4 +106,4 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | topn() | n | y | y | Return the top N number of documents |
 | trending() | n | y | y | Trending – returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field. |
 | useful() | n | y | y | Useful – returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field. |
-| useful2() | y | n | n | What experts are citing; original implementation of useful()| Field Name | Deprecated | Useful for user | Show/Give access? [y/n] | Explanation | |
+| useful2() | y | n | n | What experts are citing; original implementation of useful()| Field Name | Deprecated | Useful for user | Show/Give access? [y/n] | Explanation 

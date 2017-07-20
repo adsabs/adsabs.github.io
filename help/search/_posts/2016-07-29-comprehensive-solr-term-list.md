@@ -23,10 +23,10 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | arxiv_class | n | y | y | Which arXiv class was the paper submitted to |
 | author | n | y | y | List of authors on a paper |
 | author_facet | n | y&n | y&n | Contains list of names with the number of occurences that author has for the search (can only be searched) |
-| author_facet_hier | n | n | n | Hiearchical facet field which contains author/author_id. |
+| author_facet_hier | n | n | n | Hierarchical facet field which contains author/author_id. |
 | author_norm | n | n | n | List of authors with their first names shortened? |
 | bibcode | n | y | y | ADS identifier of a paper |
-| bibgroup | n | y | y | Bibliographic group that the bibcode belongs to (curated and by staff outside of ADS) |
+| bibgroup | n | y | y | Bibliographic group that the bibcode belongs to (curated by staff outside of ADS) |
 | bibgroup_facet | n | y&n | y&n | Contains list of groups with the number of occurrences that group has for the search |
 | bibstem | n | y | y | the abbreviated name of the journal or publication, e.g., ApJ. |
 | bibstem_facet | n | n | n | Technical field, used for faceting by publication. It contains only bibstems without volumes (eg. Sci) |
@@ -51,7 +51,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | first_author_norm | n | n | n | First author of the paper with their first name shortened? |
 | grant | n | y | y | Field that contains both grant ids and grant agencies. |
 | grant_agencies | y | n | n | Index with just the grant agencies names (e.g. NASA). |
-| grant_facet_hier | n | n | n | Hiearchical facet field which contains grant/grant_id. This field is not suitable for user queries, but rather for UI components. Term frequencies and positions are deactivated. |
+| grant_facet_hier | n | n | n | Hierarchical facet field which contains grant/grant_id. This field is not suitable for user queries, but rather for UI components. Term frequencies and positions are deactivated. |
 | grant_id | n | n | n | Index with just the grant ids (e.g. 0618398) |
 | id | n | n | y | a unique integer for this record. Generally not useful, but used by Andy Casey's python client |
 | identifier | n | y | y | an array of alternative identifiers for the record. May contain alternative bibcodes, DOIs and/or arxiv ids. |
@@ -102,8 +102,8 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | pos() | n | y | y | The pos() operator allows you to search for an item within a field by specifying the position in the field. The syntax for this operator is pos(fieldedquery,position,[endposition]). If no endposition is given, then it is assumed to be endposition = position, otherwise this performs a query within the range [position, endposition]. |
 | references() | n | y | y | returns list of references from given papers |
 | reviews() | n | y | y | returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field. |
-| reviews2() | y | n | n | Original implimentation of reviews |
+| reviews2() | y | n | n | Original implementation of reviews |
 | topn() | n | y | y | Return the top N number of documents |
 | trending() | n | y | y | Trending – returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field. |
 | useful() | n | y | y | Useful – returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field. |
-| useful2() | y | n | n | What experts are citing; original implementation of useful()| Field Name | Deprecated | Useful for user | Show/Give access? [y/n] | Explanation 
+| useful2() | y | n | n | What experts are citing; original implementation of useful()| Field Name | Deprecated | Useful for user | Show/Give access? [y/n]

@@ -4,7 +4,7 @@ title: "Creating and editing a library"
 order: 1
 ---
 
-There are two ways to create a private library:
+There are two ways to create an ADS library:
 
 <img class="img-responsive" src="/img/library_screenshot.png" alt="a screenshot of the ads search results interface showing the ads libraries button"/>
 

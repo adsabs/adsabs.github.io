@@ -53,7 +53,8 @@ All the blogs are kept under the folder `blog/_posts/`. The following rules must
 
 For more information on formatting within jekyll you can read [here](http://jekyllrb.com/docs/posts/), or any other places that has information about markdown. Markdown can also render HTML if you prefer to write using that.
 
-If you wish to see the content you are writing while working in markdown, you can use some online tools such as [dillinger.io](http://dillinger.io/) or some programs such as [haroopad](http://pad.haroopress.com/).
+If you wish to see the content you are writing while working in markdown, the recommended tool as of October 2017 is 
+[grip](https://github.com/joeyespo/grip).  Other ones we have considered/used in the past are [dillinger.io](http://dillinger.io/) or some programs such as [haroopad](http://pad.haroopress.com/).
 
 If making a pull request, follow the rules described in `CONTRIBUTING.md`.
 

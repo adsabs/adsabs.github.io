@@ -65,7 +65,7 @@ Mouse over a circle to read information about the paper, or drag a square around
 
 
 * **Find newly popular papers**
-The default graph shows the [recent views]({{site.baseurl}}/actions/analyze#recent-views) (the number of times a paper has been accessed in the ADS in the last 90 days) as the y-axis value. In general, graphs will show a trend of decreasing reads over time as an article ages. If any paper has a higher read count than predicted by the general trend, it might be worth investigating further.
+The default graph shows the [recent views](../actions/analyze#recent-views) (the number of times a paper has been accessed in the ADS in the last 90 days) as the y-axis value. In general, graphs will show a trend of decreasing reads over time as an article ages. If any paper has a higher read count than predicted by the general trend, it might be worth investigating further.
 
 
 ### Word Cloud

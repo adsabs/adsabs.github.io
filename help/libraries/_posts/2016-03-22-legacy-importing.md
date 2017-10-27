@@ -7,7 +7,7 @@ order: 6
 
 #### Linking accounts
 
-If you have accounts in one or both of our legacy systems, <a href="adsabs.harvard.edu">ADS Classic</a> and <a href="http://labs.adsabs.harvard.edu/adsabs/">ADS 2.0</a>, it is possible to import libraries from your old accounts, into the new interface, ADS Bumblebee. 
+If you have accounts in one or both of our legacy systems, <a href="http://adsabs.harvard.edu">ADS Classic</a> and <a href="http://labs.adsabs.harvard.edu/adsabs/">ADS 2.0</a>, it is possible to import libraries from your old accounts, into the new interface, ADS Bumblebee. 
 
 *Please note that ADS 2.0 is no longer accepting new users, and will be shutdown in the near future. We advise you not to use it, and existing users should import their existing libraries from 2.0 to ADS Bumblebee if you wish to continue curating them via ADS.*
 

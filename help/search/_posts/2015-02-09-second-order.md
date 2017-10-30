@@ -30,4 +30,4 @@ will return a ranked list of papers featuring reviews of weak gravitational lens
 
     topn(200, title:hubble, citation_count desc)
 
-will return the first 200 most cited papers for documents that habe "hubble" in their title.
+will return the first 200 most cited papers for documents that have "hubble" in their title.

@@ -18,9 +18,10 @@ Above the search box we supply shortcuts to frequently used search fields.  Simp
 To get you started, here is a list of search examples for commonly used fields:
 
 Example Query                        | Explanation
--------------------------------------|------------------------------------------------------------
+-------------------------------------------------|------------------------------------------------
 author:"huchra, john"                | search for papers written by an author
 author:"^huchra, john"               | limit search to first-author papers
+^huchra, john                         | limit search to first-author papers
 abs:"dark energy"                    | search for the phrase "dark energy" in abstract and title
 year:2000                            | search for publications written in 2000
 year:2000-2005                       | search for publications written between 2000 and 2005 (inclusive)
@@ -128,7 +129,7 @@ Database     | database:DB                 | database:astronomy      | limit sea
 Date Range   | pubdate:[YYYY-MM TO YYYY-MM] | pubdate:[2005-10 TO 2006-09] | use fine-grained dates for publication range
 Document type | doctype:type               | doctype:catalog         | limit search to records corresponding to data catalogs (*)
 DOI          | doi:DOI                     | doi:10.1086/345794      | finds a specific record using its digital object id
-First Author | author:"^Last, F"           | author:"^huchra, j"     | limit the search to first-author papers
+First Author |^Last, F   <br>      author:"^Last, F"   | ^huchra, j   <br>author:"^huchra, j" | limit the search to first-author papers
 Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext, acknowledgements, abstract, title and keywords
 Grant        | grant:grant                 | grant:NASA              | finds papers with specific grants listed in them
 Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | finds a paper using any of its identifiers, arXiv, bibcode, doi, etc.

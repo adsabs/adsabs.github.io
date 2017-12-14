@@ -3,6 +3,25 @@
 <nav class="help-nav">
 
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="quickstart-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#quickstart-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class="{% if '/search/index.html' == page.url %}
+    active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i>
+    Quick Start</h3>
+        <a>
+    </div>
+    <div id="quickstart-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quickstart-help">
+      <ul class="list-group">
+            {% assign posts = (site.categories.quickstart | sort:"order") %} {% for post in posts %} {% if post.url %}
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
+            </a>
+            {% endif %} {% endfor %}
+        </ul>
+    </div>
+    </div>
   
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="search-help">

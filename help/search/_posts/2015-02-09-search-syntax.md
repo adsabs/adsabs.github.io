@@ -7,7 +7,7 @@ order: 1
 
 ### Search Basics
 
-ADS's one box search form supports both fielded and unfielded queries.  Queries without fields will search the metadata and the full text of the publications, which may not produce the expected results.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:"Mars, M"** instead of **Marc Mars** to make sure that you don't return papers that simply have the words "Marc" and "Mars" somewhere in the body of the article.
+ADS's one box search form supports both fielded and unfielded queries.  Queries without fields will search the metadata and the full text of the publications, which may not produce the expected results.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:&ldquo;Mars, M"** instead of **Marc Mars** to make sure that you don't return papers that simply have the words "Marc" and "Mars" somewhere in the body of the article.
 
 ### Fielded Searches
 
@@ -19,14 +19,14 @@ To get you started, here is a list of search examples for commonly used fields:
 
 Example Query                        | Explanation
 -------------------------------------------------|------------------------------------------------
-author:"huchra, john"                | search for papers written by an author
-author:"^huchra, john"               | limit search to first-author papers
+author:&ldquo;huchra, john"                | search for papers written by an author
+author:&ldquo;^huchra, john"               | limit search to first-author papers
 ^huchra, john                         | limit search to first-author papers
-abs:"dark energy"                    | search for the phrase "dark energy" in abstract and title
+abs:&ldquo;dark energy"                    | search for the phrase "dark energy" in abstract and title
 year:2000                            | search for publications written in 2000
 year:2000-2005                       | search for publications written between 2000 and 2005 (inclusive)
-body:"gravitational waves"           | search for papers containing the phrase "gravitational waves" in the body of an article
-full:"gravitational waves"           | search for papers containing the phrase "gravitational waves" in a number of fields (title, abstract, body, acknowledgements and keywords)
+body:&ldquo;gravitational waves"           | search for papers containing the phrase "gravitational waves" in the body of an article
+full:&ldquo;gravitational waves"           | search for papers containing the phrase "gravitational waves" in a number of fields (title, abstract, body, acknowledgements and keywords)
 bibstem:ApJ                          | select papers published in a particular publication
 object:((SMC OR LMC) AND M31)        | using the SIMBAD object search, find papers tagged with either SMC or LMC and M31
 
@@ -40,10 +40,10 @@ Example Query                        | Results
 -------------------------------------|--------------------------------------------------------------
 abs:(QSO "dark energy")              | papers containing both "QSO" and "dark energy" in their abstract
 abs:(QSO OR "dark energy")           | papers containing either "QSO" or "dark energy in their abstract
-author:"huchra, j" abs:cfa           | papers by J. Huchra which have "cfa" in their abstract
-author:"huchra, j" OR abs:"great wall" | papers by J. Huchra or which mention "great wall" in their abstract
-author:"huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
-author:"huchra, j" NOT title:2mass   | same as above
+author:&ldquo;huchra, j" abs:cfa           | papers by J. Huchra which have "cfa" in their abstract
+author:&ldquo;huchra, j" OR abs:&ldquo;great wall" | papers by J. Huchra or which mention "great wall" in their abstract
+author:&ldquo;huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
+author:&ldquo;huchra, j" NOT title:2mass   | same as above
 
 ### Synonyms and Acronyms
 
@@ -64,7 +64,7 @@ FUSE                                  | the acronym "FUSE" appears anywhere in p
 
 ### Author Searches
 
-Synoym expansion also applies to author names, which provide a way to account for changes in a person's name and/or different spellings due to transliterations.  In addition to this, the default author search in ADS is "greedy" in the sense that it will retun all documents in which an author signature may match the input search string.  This allows, for instance, to have an author search for "Huchra, John" to return papers where the author name appears as "Huchra, John" or "Huchra, J."  By prepending the "=" character to the author search one can disable this feature (as well as any additional synonym expansion) and require an exact match on the author name.  Some examples:
+Synoym expansion also applies to author names, which provide a way to account for changes in a person's name and/or different spellings due to transliterations.  In addition to this, the default author search in ADS is "greedy" in the sense that it will return all documents in which an author signature may match the input search string.  This allows, for instance, to have an author search for "Huchra, John" to return papers where the author name appears as "Huchra, John" or "Huchra, J."  By prepending the "=" character to the author search one can disable this feature (as well as any additional synonym expansion) and require an exact match on the author name.  Some examples:
 
 <table>
   <tbody>
@@ -108,20 +108,20 @@ This is a list of fields currently recognized by the ADS search engine and the p
 
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------
-Abstract/Title     | abs:"phrase"                | abs:"dark energy"       | search for word or phrase in abstract & title
-Acknowledgements | ack:"phrase"            | ack:"ADS"                     | search for a word or phrase in the ackknowledgements
-Affiliation  | aff:"phrase"                | aff:"harvard"           | search for word or phrase in affiliation field
-Abstract     | abstract:"phrase"           | abstract:"dark energy"        | search for a word or phrase in an abstract only
+Abstract/Title     | abs:&ldquo;phrase"                | abs:&ldquo;dark energy"       | search for word or phrase in abstract & title
+Acknowledgements | ack:&ldquo;phrase"            | ack:&ldquo;ADS"                     | search for a word or phrase in the ackknowledgements
+Affiliation  | aff:&ldquo;phrase"                | aff:&ldquo;harvard"           | search for word or phrase in affiliation field
+Abstract     | abstract:&ldquo;phrase"           | abstract:&ldquo;dark energy"        | search for a word or phrase in an abstract only
 Alternate Bibcode | alternate_bibcode:adsbib | alternate_bibcode:2003AJ....125..525J | finds articles that used to (or still have) this bibcode
-Alternate Title | alternate_title:"phrase" | alternate_title:"Gammablitz" | search for a word or phrase in an articles title if they have more than one, in multiple languages
+Alternate Title | alternate_title:&ldquo;phrase" | alternate_title:&ldquo;Gammablitz" | search for a word or phrase in an articles title if they have more than one, in multiple languages
 arXiv ID     | arXiv:arxivid               | arXiv:1108.0669         | finds a specific record using its arXiv id
-arXiv Class | arxiv_class:arxivclass       | arxiv_class:"High Energy Physics - Experiment" | finds all arXiv pre-prints in the class specified
-Author       | author:"Last, F"            | author:"huchra, j"      | author name may include just lastname and initial
-Author (cont.)| author:"Last, First [...]"  | author:"huchra, john p" | an example of stricter author search (recommended)
+arXiv Class | arxiv_class:arxivclass       | arxiv_class:&ldquo;High Energy Physics - Experiment" | finds all arXiv pre-prints in the class specified
+Author       | author:&ldquo;Last, F"            | author:&ldquo;huchra, j"      | author name may include just lastname and initial
+Author (cont.)| author:&ldquo;Last, First [...]"  | author:&ldquo;huchra, john p" | an example of stricter author search (recommended)
 Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds a specific record using the [ADS bibcode]({{ site.baseurl }}/help/actions/bibcode)
 Bibliographic groups | bibgroup:name       | bibgroup:HST            | limit search to papers in HST bibliography (*)
 Bibliographic stem | bibstem:adsbibstem    | bibstem:ApJ             | find records that contain a specific bibstem in their bibcode
-Body         | body:"phrase"               | body:"gravitational waves" | search for a word or phrase in (only) the full text
+Body         | body:&ldquo;phrase"               | body:&ldquo;gravitational waves" | search for a word or phrase in (only) the full text
 Citation count | citation_count:count      | citation_count:40       | find records that have a specific number of citations
 Copyright | copyright:copyright            | copyright:2012          | search for articles with certain copyrights
 Data links   | data:archive                | data:NED                | limit search to papers with data from NED (*)
@@ -129,24 +129,24 @@ Database     | database:DB                 | database:astronomy      | limit sea
 Date Range   | pubdate:[YYYY-MM TO YYYY-MM] | pubdate:[2005-10 TO 2006-09] | use fine-grained dates for publication range
 Document type | doctype:type               | doctype:catalog         | limit search to records corresponding to data catalogs (*)
 DOI          | doi:DOI                     | doi:10.1086/345794      | finds a specific record using its digital object id
-First Author |^Last, F   <br>      author:"^Last, F"   | ^huchra, j   <br>author:"^huchra, j" | limit the search to first-author papers
-Fulltext     | full:"phrase"               | full:"gravitational waves" | search for word or phrase in fulltext, acknowledgements, abstract, title and keywords
+First Author |^Last, F   <br>      author:&ldquo;^Last, F"   | ^huchra, j   <br>author:&ldquo;^huchra, j" | limit the search to first-author papers
+Fulltext     | full:&ldquo;phrase"               | full:&ldquo;gravitational waves" | search for word or phrase in fulltext, acknowledgements, abstract, title and keywords
 Grant        | grant:grant                 | grant:NASA              | finds papers with specific grants listed in them
 Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | finds a paper using any of its identifiers, arXiv, bibcode, doi, etc.
 Issue        | issue:number                | issue:10                | search for papers in a certain issue
-Keywords     | keyword:"phrase"            | keyword:sun             | search publisher- or author-supplied keywords
-Language     | lang:"language"             | lang:korean             | search for papers with a given language
-Object       | object:"object"             | object:Andromeda        | search for papers tagged with astronomical object by SIMBAD
+Keywords     | keyword:&ldquo;phrase"            | keyword:sun             | search publisher- or author-supplied keywords
+Language     | lang:&ldquo;language"             | lang:korean             | search for papers with a given language
+Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with astronomical object by SIMBAD
 ORCiD iDs    | orcid:id                    | orcid:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD
 ORCiD iDs from publishers    | orcid_pub:id                    | orcid_pub:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD specified by a Publisher
 ORCiD iDs from known ADS users    | orcid_user:id                    | orcid_id:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by known ADS users
 ORCiD iDs from uknknown ADS users   | orcid_other:id                    | orcid_other:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by unknown ADS users
 Page         | page:number                 | page:410                | search for papers with a given page number
-Publication  | bibstem:"abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html" target="_blank">specific publication</a>
+Publication  | bibstem:&ldquo;abbrev"            | bibstem:ApJ             | limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html" target="_blank">specific publication</a>
 Properties   | property:type               | property:openaccess     | limit search to article with specific attributes (*)
 Read count   | read_count:count            | read_count:10           | search for papers with a given number of reads
-Title        | title:"phrase"              | title:"weak lensing"    | search for word or phrase in title field
-VizieR keywords | vizier:"phrase"          | vizier:"Optical"        | search for papers with a given set of VizieR keywords
+Title        | title:&ldquo;phrase"              | title:&ldquo;weak lensing"    | search for word or phrase in title field
+VizieR keywords | vizier:&ldquo;phrase"          | vizier:&ldquo;Optical"        | search for papers with a given set of VizieR keywords
 Volume       | volume:volume               | volume:10               | search for papers with a given volume
 Year         | year:YYYY                   | year:2000               | require specific publication year
 Year Range   | year:YYYY-YYYY              | year:2000-2005          | require publication date range
@@ -197,11 +197,13 @@ inproceedings  | article appearing in a conference proceedings
 inbook         | article appearing in a book
 abstract       | meeting abstract
 book           | book (monograph)
+bookreview     | published book review
 catalog        | data catalog (or other high-level data product)
 circular       | printed or electronic circular
-intechreport   | article appearing in a technical report
+erratum        | erratum to a journal article
 mastersthesis  | Masters thesis
 newsletter     | printed or electronic newsletter
+obituary       | obituary (article containing "obituary" in its title)
 phdthesis      | PhD thesis
 pressrelease   | press release
 proceedings    | conference proceedings book

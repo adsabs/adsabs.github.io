@@ -156,9 +156,132 @@ nav.top-nav {
 
 
 h1, h2 {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .main-content {
   padding: 0 4%;
+}
+
+.s-starry-background-wrapper {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .5)), url("../img/bbb_assets/background.jpg");
+  margin: 0 0px;
+  background-attachment: fixed;
+
+}
+
+
+.s-logo-header {
+
+  font-size: 40px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+
+  img {
+    max-width: 75px;
+    position: relative;
+    top: -5px;
+  }
+
+  >div {
+    position: relative;
+    left: -2%;
+  }
+
+  background-attachment: fixed;
+  @extend .row;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.navbar{
+    margin-bottom: 0!important;
+    line-height: 62px;
+    height: 62px;
+    background-color: #1a1a1a;
+    border-radius: 0px;
+}
+
+.navbar-brand {
+
+  h1 {
+    display : inline;
+    color: #fff !important;
+    position: relative;
+    top: 0px;
+    left: 5px;
+    font-size: 25px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    letter-spacing: .1rem;
+
+  }
+
+  img {
+    display : inline-block;
+  }
+}
+
+  .s-ads-icon {
+    height: 45px;
+    position: relative;
+    top: -4px;
+    left: 6px;
+  }
+
+.s-footer {
+
+  background-color:  #E0E0E0;
+  color: lighten($text-color, 10%);
+  margin-top: 20px;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 -15px;
+  position: relative;
+  z-index: 4;
+  border-top: 1px solid #D8D8D8;
+  line-height: 1.4;
+
+      
+  .top-ads-links {
+    margin: -31px -50px -15px -50px;
+    padding: 33px 15px;
+
+    h4 {
+      display: inline-block;
+      margin-left: 45px;
+      padding-top: 27px;
+      font-weight: 300;
+      font-size: 19px;
+    }
+    h4:first-of-type {
+      margin-left:0;
+    }
+
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 120px;
+    position: relative;
+    top: 12px;
+    margin-left: 2%;
+  }
+
+  img.smithsonian{
+    width: 67px;
+    margin-right: 2%;
+  }
+
+  .s-help {
+    text-align: center;
+    font-size: 18px;
+
+  }
+
 }

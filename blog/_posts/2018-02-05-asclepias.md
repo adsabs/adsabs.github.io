@@ -28,13 +28,13 @@ This is exactly what the Asclepias project focuses on. Its goal is to **promote 
 What does all of this mean in practice? Let’s look at an example. The Python module *corner.py* (previously known as *triangle.py*) is widely used in astronomy. Its main developer, Daniel Foreman-Mackey, made it available on [Github](https://github.com/dfm/corner.py) and published an [entry](http://joss.theoj.org/papers/10.21105/joss.00024) in the Journal of Open Source Software (JOSS). The ADS has a [record](http://ui.adsabs.harvard.edu/#abs/2016JOSS.2016...24F/abstract) for this JOSS software paper, and as a result citations are being captured (provided people cite this record properly). As of November 9, 2017, this JOSS paper accumulated 77 citations.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_JOSS_corner.jpg" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_JOSS_corner.png" />
 </div>
 
 Thanks to Zenodo’s interoperability with Github, records were created for both *triangle.py* and *[corner.py](https://doi.org/10.5281/zenodo.53155)*. Zenodo mints a DOI for each software version and also a so-called concept DOI. The concept DOI is available for when you don’t want to cite a specific software version, but just “the latest”. The crucial step that make this interoperability possible is the authentication within Zenodo, using your Github account, allowing Zenodo to view and retrieve your repositories on Github. For details, see: https://guides.github.com/activities/citable-code/.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_Zenodo.jpg" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_zenodo.png" />
 </div>
 
 The next step is to go through the reference data in the ADS holdings and see if we find any evidence of the Zenodo DOIs, corresponding with the different versions of both *triangle.py* and *corner.py*. The table below shows the results (as of Feburary 5, 2018).

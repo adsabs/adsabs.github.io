@@ -1,8 +1,8 @@
 ---
 layout: about
+title: "ADS History"
 ---
 
-<h2>ADS History</h2>
 
 <p>To include:
 <ul>

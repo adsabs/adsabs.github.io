@@ -22,7 +22,7 @@ Example Query                        | Explanation
 author:&ldquo;huchra, john"                | search for papers written by an author
 author:&ldquo;^huchra, john"               | limit search to first-author papers
 ^huchra, john                         | limit search to first-author papers
-abs:&ldquo;dark energy"                    | search for the phrase "dark energy" in abstract and title
+abs:&ldquo;dark energy"                    | search for the phrase "dark energy" in abstract, title and keywords
 year:2000                            | search for publications written in 2000
 year:2000-2005                       | search for publications written between 2000 and 2005 (inclusive)
 body:&ldquo;gravitational waves"           | search for papers containing the phrase "gravitational waves" in the body of an article
@@ -38,10 +38,10 @@ You can string together any number of search terms to develop a query.  By defau
 
 Example Query                        | Results
 -------------------------------------|--------------------------------------------------------------
-abs:(QSO "dark energy")              | papers containing both "QSO" and "dark energy" in their abstract
-abs:(QSO OR "dark energy")           | papers containing either "QSO" or "dark energy in their abstract
-author:&ldquo;huchra, j" abs:cfa           | papers by J. Huchra which have "cfa" in their abstract
-author:&ldquo;huchra, j" OR abs:&ldquo;great wall" | papers by J. Huchra or which mention "great wall" in their abstract
+abstract:(QSO "dark energy")              | papers containing both "QSO" and "dark energy" in their abstract
+abstract:(QSO OR "dark energy")           | papers containing either "QSO" or "dark energy in their abstract
+author:&ldquo;huchra, j" abstract:cfa           | papers by J. Huchra which have "cfa" in their abstract
+author:&ldquo;huchra, j" OR abstract:&ldquo;great wall" | papers by J. Huchra or which mention "great wall" in their abstract
 author:&ldquo;huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
 author:&ldquo;huchra, j" NOT title:2mass   | same as above
 
@@ -108,7 +108,7 @@ This is a list of fields currently recognized by the ADS search engine and the p
 
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------
-Abstract/Title     | abs:&ldquo;phrase"                | abs:&ldquo;dark energy"       | search for word or phrase in abstract & title
+Abstract/Title/Keywords     | abs:&ldquo;phrase"                | abs:&ldquo;dark energy"       | search for word or phrase in abstract, title and keywords
 Acknowledgements | ack:&ldquo;phrase"            | ack:&ldquo;ADS"                     | search for a word or phrase in the ackknowledgements
 Affiliation  | aff:&ldquo;phrase"                | aff:&ldquo;harvard"           | search for word or phrase in affiliation field
 Abstract     | abstract:&ldquo;phrase"           | abstract:&ldquo;dark energy"        | search for a word or phrase in an abstract only

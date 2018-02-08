@@ -60,9 +60,28 @@ If making a pull request, follow the rules described in `CONTRIBUTING.md`.
 
 #### For development
 
-The help pages are static web pages built using jekyll and taking avantage of GitHub's support of jekyll. To run locally, first install jekyll and then run the following commands:
+The help pages are static web pages built using Jekyll (written in Ruby) and taking avantage of GitHub's support of Jekyll. To run locally, first install Ruby, then Jekyll:
+
+* install GnuPG:  
+`brew install gnupg`
+
+* get the public key:  
+`gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB `
+
+* install the Ruby version manager and the latest stable version of Ruby:  
+`\curl -sSL https://get.rvm.io | bash -s stable --ruby`
+
+* then install jekyll:  
+`gem install jekyll`  
+`gem install jekyll bundler`
+
+After installing Jekyll, run the following commands to preview the site:
 
 * build with `jekyll build`
 * serve the project with the command `jekyll serve`
 
-You will now be able to access the help pages locally at `http://0.0.0.0:4000/help` (default configuration).
+You will now be able to access the help pages locally at `http://0.0.0.0:4000/help`  or `localhost:4000` (default configuration). After the website is built for the first time, you should only need to save the file, wait a second or two for it to rebuild automatically (check the terminal window where you ran `jekyll serve`), then refresh the page to see any changes.
+
+### Maintainer
+
+Kelly

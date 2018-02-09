@@ -5,9 +5,9 @@ title: "ADS Awards and Recognition"
 
 This page describes some of the awards presented to the NASA Astrophysics Data System and to individual team members highlighting the importance of the ADS services to the scientific community. 
 
-The **Special Libraries Association** awarded the 2016 Physics, Astronomy and Mathematics Achievement Award to **Donna Thompson** for outstanding contributions to the division and her professional work at the ADS marked by distinction and dedication to librarianship in astronomy and physics. 
+The **Special Libraries Association** awarded the [2016 Physics, Astronomy and Mathematics Achievement Award](http://pam.sla.org/2016/08/2016-pam-awards/) to **Donna Thompson** for outstanding contributions to the division and her professional work at the ADS marked by distinction and dedication to librarianship in astronomy and physics. 
 
-**Minor Planet 69287 was named Gunthereichhorn** for G&uuml;nther Eichhorn who developed and managed the Astrophysics Data System from 1992-2007. (From **Minor Planet Circular 95804**, 2015/09/28) 
+**Minor Planet 69287 was named Gunthereichhorn** for G&uuml;nther Eichhorn who developed and managed the Astrophysics Data System from 1992-2007. (From **Minor Planet Circular 95804**, 2015/09/28, available [online](https://minorplanetcenter.net/iau/ECS/MPCArchive/2015/MPC_20150928.pdf).) 
 
 The **NASA Astrophysics Archival Senior Review Panel** ranked ADS first among 6 projects in its 2008 assessment. "ADS is so extensively used by the entire professional astronomy community that it is hard to imagine existing without it," commented the panel. The [full report is available](https://smd-prod.s3.amazonaws.com/science-red/s3fs-public/atoms/files/ApArchSR-2008_final.pdf).
 
@@ -25,6 +25,6 @@ The **United Nations General Assembly** ". . . noted the great value of NASA's A
 
 The **American Astronomical Society** awarded the 2001 [van Biesbroeck Prize](https://aas.org/grants-and-prizes/george-van-biesbroeck-prize) to **Michael Kurtz**, "... the visionary designer of the Astrophysics Data System (ADS) which clearly has revolutionized for over a decade the speed and thoroughness in which astronomers now can search and access the vast and still growing technical literature." (Excerpt from **Physics Today**, vol. 54, issue 6, p. 72; available [online](http://physicstoday.scitation.org/doi/10.1063/1.1387600).) 
 
-The **Special Libraries Association** awarded the 2001 Physics, Astronomy and Mathematics Division Award to **G&uuml;nther Eichhorn** for his role "in the genesis and growth of the Astrophysics Data System, the development of which represents an unparalleled shift in the propagation of the literature of astronomy. ... Under your leadership, the ADS ... has become an indispensable aid to astronomical research." (Excerpt from **Physics Today**, vol. 54, issue 8, p. 61; available [online](http://physicstoday.scitation.org/doi/10.1063/1.2405666).)
+The **Special Libraries Association** awarded the [2001 Physics, Astronomy and Mathematics Division Award](http://pam.sla.org/manual/awards/division-winners-list/) to **G&uuml;nther Eichhorn** for his role "in the genesis and growth of the Astrophysics Data System, the development of which represents an unparalleled shift in the propagation of the literature of astronomy. ... Under your leadership, the ADS ... has become an indispensable aid to astronomical research." (Excerpt from **Physics Today**, vol. 54, issue 8, p. 61; available [online](http://physicstoday.scitation.org/doi/10.1063/1.2405666).)
 
 

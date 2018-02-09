@@ -2,51 +2,11 @@
 
 <nav class="help-nav">
 
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-<div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="team-about">
-        <a class="collapsed" role="button" data-toggle="collapse" href="#team-items" aria-expanded="false" aria-controls="collapseThree">
-            <h3 class="{% if '/about/index.html' == page.url %}
-    active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i>
-    Team</h3>
-        <a>
-    </div>
-    <div id="team-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="team-about">
-      <ul class="list-group">
-            {% assign posts = (site.categories.team | sort:"order") %} {% for post in posts %} {% if post.url %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-            </a>
-            {% endif %} {% endfor %}
-        </ul>
-    </div>
-    </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="adsug-about">
-        <a class="collapsed" role="button" data-toggle="collapse" href="#adsug-items" aria-expanded="false" aria-controls="collapseThree">
-            <h3 class="{% if '/about/index.html' == page.url %} active
-    {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ADS Users Group</h3>
-        <a>
-    </div>
-    <div id="adsug-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="adsug-about">
-      <ul class="list-group">
-            {% assign posts = (site.categories.adsug | sort:"order") %} {% for post in posts %} {% if post.url %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-            </a>
-            {% endif %} {% endfor %}
-        </ul>
-    </div>
-    </div>
-
-</div>
-
     <h3 class="{% if '/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about">About </a></h3>
+    <h3 class="{% if '/team/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/team">Team </a></h3>
     <h3 class="{% if '/history/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/history">History of ADS </a></h3>
+    <h3 class="{% if '/adsug/adsug' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/adsug/adsug">ADS Users Group </a></h3>
     <h3 class="{% if '/documents/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/documents">Past Presentations & Posters </a></h3>
-
 
 </nav>
 

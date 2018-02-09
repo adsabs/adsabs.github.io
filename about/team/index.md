@@ -1,7 +1,6 @@
 ---
 layout: about
-title: "Team 3"
-order: 3
+title: "Team"
 ---
 
 The ADS personnel are:

@@ -235,32 +235,36 @@ h1, h2 {
 
   background-color:  #E0E0E0;
   color: lighten($text-color, 10%);
+   padding: 16px 0;
   margin-top: 20px;
-  padding: 16px 0;
   font-size: 16px;
   font-weight: 300;
   margin: 0 -15px;
   position: relative;
   z-index: 4;
   border-top: 1px solid #D8D8D8;
-  line-height: 1.4;
+   line-height: 1.4;
 
       
   .top-ads-links {
     margin: -31px -50px -15px -50px;
-    padding: 33px 15px;
+     padding: 29px 15px 38px;
 
     h4 {
       display: inline-block;
       margin-left: 45px;
       padding-top: 27px;
       font-weight: 300;
-      font-size: 19px;
+       font-size: 19px;
     }
     h4:first-of-type {
       margin-left:0;
     }
 
+  }
+
+  p {
+      margin-top: 0px;
   }
 
   img {

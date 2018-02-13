@@ -3,8 +3,14 @@ layout: about
 title: "Dr. Alberto Accomazzi"
 ---
 
-<img src="{{ site.baseurl }}/img/ads_logo.png" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/img/team/accomazzi.jpg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Alberto Accomazzi is the Principal Investigator and Program Manager for the ADS.
+
+After receiving a Doctorate in Physics from the University of Milan in 1988, he worked on image processing and analysis projects at the Center for Astrophysics, helping researchers transition from dedicated hardware systems to workstation-based computing platforms. In 1994 he joined the ADS project as a developer and focused on the implementation of the ADS Search Engine and Article archive.
+
+In 2007 he became program manager of the ADS and in 2015 took the additional role of Principal Investigator.
+
+He currently serves on the scientific advisory board of the high-energy INSPIRE information system, on the Next Generation IT advisory board for arXiv, on the steering committee of the Unified Astronomy Thesaurus, and as current vice-chair of the International Virtual Astronomy Alliance (IVOA) Working group on Semantics. He referees for various scholarly publications and is an editor of the journal Astronomy & Computing.
 
 [aaccomazzi [at] cfa.harvard.edu](mailto:aaccomazzi@cfa.harvard.edu)

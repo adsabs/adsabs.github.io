@@ -3,8 +3,10 @@ layout: about
 title: "Dr. Kelly Lockhart"
 ---
 
-<img src="{{ site.baseurl }}/img/ads_logo.png" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/img/team/lockhart.jpeg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I'm an astronomer by training: I completed my PhD in 2017 at the Institute for Astronomy at the University of Hawai&#8216;i at M&#257;noa, focusing on the interaction between galactic centers and their host galaxies using high spatial resolution observations, including a study on the [nuclear star cluster in M31](https://ui.adsabs.harvard.edu/#abs/2017arXiv171001394L/abstract). As part of my dissertation, I also worked with the Keck/OSIRIS Working Group to improve the [data reduction pipeline](https://github.com/Keck-DataReductionPipelines/OsirisDRP) for the OSIRIS integral field spectrograph on Keck I. After finishing my degree, I moved more firmly into the astronomical software world and started as a developer with ADS the same year.
+
+My work at ADS includes maintaining and developing the ORCID pipeline and service, supporting users, and translating between developers and astronomers for our blog and other outreach.
 
 [kelly.lockhart [at] cfa.harvard.edu](mailto:kelly.lockhart@cfa.harvard.edu)

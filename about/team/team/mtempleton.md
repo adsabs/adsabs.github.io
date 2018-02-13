@@ -1,10 +1,13 @@
 ---
 layout: about
-title: "Dr. Matt Templeton"
+title: "Dr. Matthew Templeton"
 ---
 
-<img src="{{ site.baseurl }}/img/ads_logo.png" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/img/matthew_templeton.jpg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+My background is primarily in stellar astrophysics, with a focus on various kinds of intrinsic stellar variability including pulsations.  I spent more than 10 years as staff scientist (and later, Science Director) at the American Association of Variable Star Observers, and worked as a postdoctoral scientist at Yale University with Sarbani Basu. I did my graduate work at New Mexico State University and Los Alamos National Laboratory, and my undergraduate work at the University of Delaware.
+
+My work at ADS includes curation of our bibliographic data holdings, development of new and improved curation monitors and tools, and creation of features and functionality for the new ADS.
 
 [matthew.templeton [at] cfa.harvard.edu](mailto:matthew.templeton@cfa.harvard.edu)
+[Publications and other information](https://orcid.org/0000-0003-1918-0622)

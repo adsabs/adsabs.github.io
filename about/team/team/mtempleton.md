@@ -9,5 +9,5 @@ My background is primarily in stellar astrophysics, with a focus on various kind
 
 My work at ADS includes curation of our bibliographic data holdings, development of new and improved curation monitors and tools, and creation of features and functionality for the new ADS.
 
-[matthew.templeton [at] cfa.harvard.edu](mailto:matthew.templeton@cfa.harvard.edu)
+[matthew.templeton [at] cfa.harvard.edu](mailto:matthew.templeton@cfa.harvard.edu)<br>
 [Publications and other information](https://orcid.org/0000-0003-1918-0622)

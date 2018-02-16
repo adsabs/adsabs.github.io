@@ -3,3 +3,4 @@ _site
 *.xcf
 Gemfile.lock
 .DS_Store
+.idea

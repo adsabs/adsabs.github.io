@@ -7,7 +7,7 @@ title: "Dr. Michael J. Kurtz"
 
 Michael Kurtz is an astronomer and computer scientist at the Harvard-Smithsonian Center for Astrophysics in Cambridge, Massachusetts, which he joined after receiving a Ph.D. in Physics from Dartmouth College in 1982. Kurtz is the author or co-author of over 300 technical articles and abstracts on subjects ranging from cosmology and extra-galactic astronomy to data reduction and archiving techniques to information systems and text retrieval algorithms.
 
-<br>
+Kurtz has been with the ADS project since its inception. He is the ADS project scientist.
 
 * 2001 George Van Biesbroeck Award “for the visionary design of the Astrophysics Data System,” American Astronomical Society
 * 2000 ISI-ASIST Citation Research Award, American Society for Information Science and Technology

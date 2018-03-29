@@ -7,4 +7,6 @@ title: "Tim Hostetler"
 
 Tim has a degree in computer science, and hails originally from Pittsburgh.  He is the resident UX/UI guy, currently working on the ADS front-end.
 
+<br style="clear:left;"/>
+
 [thostetler [at] cfa.harvard.edu](mailto:thostetler@cfa.harvard.edu)

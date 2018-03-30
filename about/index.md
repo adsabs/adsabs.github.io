@@ -9,7 +9,7 @@ The ADS maintains three bibliographic databases containing more than 12.8 millio
 
 In addition to maintaining its bibliographic corpus, the ADS tracks citations and usage of its records to provide advanced discovery and evaluation capabilities. Integrated in its databases, the ADS provides access and pointers to a wealth of external resources, including electronic articles available from publisher's websites, astronomical object information, data catalogs and data sets hosted by external archives. We currently have links to over 13.3 million records maintained by our collaborators. This depth of information has enabled a number of publications ([refeered](https://ui.adsabs.harvard.edu/#/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ), [non-refereed](https://ui.adsabs.harvard.edu/#/public-libraries/iETdWs2pSGajhFBI30X3UQ)) in fields such as bibliometrics and information science.
 
-**Please note that all abstracts and articles in the ADS are copyrighted by the publisher, and their use is free for personal use only.** For more information, please read our page detailing the [Terms and Conditions](../help/terms) regulating the use of our resources. 
+**Please note that all abstracts and articles in the ADS are copyrighted by the publisher, and their use is free for personal use only.** For more information, please read our page detailing the [Terms and Conditions](http://adsabs.github.io/help/terms/) regulating the use of our resources. 
 
 The importance of ADS's role in supporting the scientific community [has been recognized by societies and individuals](../about/awards.html).
 

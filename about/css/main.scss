@@ -1,0 +1,66 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.6;
+
+$spacing-unit:     30px;
+
+$brand-color:       #1c459b;
+$bright-brand:     lighten($brand-color, 20);
+$brand-color-muted: lighten($bright-brand, 15);
+
+
+$grey-color:       #555;
+$grey-color-light: #eee;
+$grey-color-dark:  #333;
+
+$text-color:       lighten($grey-color-dark, 14%);
+
+$background-color: #fff;
+
+$code-color: #F8F8F8;
+
+
+
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$nav-color:        #fff;
+$nav-header-color:  desaturate($brand-color, 30);
+$nav-text-color:  $text-color;
+
+
+/* ==========================================================================
+   .default-layout is a plain layout, just used for job announcements right now
+   ========================================================================== */
+
+.default-layout h1 {
+  font-weight: bold;
+}
+
+.default-layout {
+  padding-bottom: 5rem !important;
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "bootstrap",
+        "layout",
+        "sidebar";
+
+
+//general styles
+
+p {
+  color: lighten($text-color, 5%);
+}

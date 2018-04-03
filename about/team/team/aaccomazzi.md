@@ -3,7 +3,7 @@ layout: about
 title: "Dr. Alberto Accomazzi"
 ---
 
-<img src="{{ site.baseurl }}/img/team/accomazzi.jpg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/about/team/img/accomazzi.jpg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
 Alberto Accomazzi is the Principal Investigator and Program Manager for the ADS.
 

@@ -3,7 +3,7 @@ layout: about
 title: "Dr. Roman Chyla"
 ---
 
-<img src="{{ site.baseurl }}/img/team/rchyla.jpeg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/about/team/img/rchyla.jpeg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
 Roman is the system architect for ADS.
 

@@ -3,7 +3,7 @@ layout: about
 title: "Dr. Michael J. Kurtz"
 ---
 
-<img src="{{ site.baseurl }}/img/team/kurtz.jpg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/about/team/img/kurtz.jpg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
 Michael Kurtz is an astronomer and computer scientist at the Harvard-Smithsonian Center for Astrophysics in Cambridge, Massachusetts, which he joined after receiving a Ph.D. in Physics from Dartmouth College in 1982. Kurtz is the author or co-author of over 300 technical articles and abstracts on subjects ranging from cosmology and extra-galactic astronomy to data reduction and archiving techniques to information systems and text retrieval algorithms.
 

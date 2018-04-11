@@ -7,7 +7,7 @@ order: 1
 
 ### Search Basics
 
-ADS's one box search form supports both fielded and unfielded queries.  Queries without fields will search the metadata and the full text of the publications, which may not produce the expected results.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:&ldquo;Mars, M"** instead of **Marc Mars** to make sure that you don't return papers that simply have the words "Marc" and "Mars" somewhere in the body of the article.
+ADS's one box search form supports both fielded and unfielded queries.  Unfielded queries without search terms will search the metadata of the publications, including author, publication year, title, abstract, identifiers, and bibstem, which may not produce the expected results.  For instance, if you are searching for papers by the author Marc Mars, you want to search for **author:&ldquo;Mars, Marc"** instead of **Marc Mars** to make sure that you don't return papers that simply have the words "Marc" and "Mars" somewhere in the article metadata.
 
 ### Fielded Searches
 

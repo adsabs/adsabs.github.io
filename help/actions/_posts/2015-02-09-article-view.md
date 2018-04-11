@@ -12,7 +12,7 @@ Clicking on the title of an individual article will bring you to a page showing 
    * Graphics in the article 
  
 Export functions will allow you to export the article metadata in
-available formats (currently BibTEX, AASTex, Endnote, and RIS.) 
+available formats (see [Export Results](../actions/export) for a full list of formats) 
 
 You can also generate the metrics for the individual article by selecting metrics from the Analyze list.
 

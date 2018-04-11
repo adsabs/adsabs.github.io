@@ -23,7 +23,7 @@ and smoothly.
 - It is not generally recommended that you initially search on author affiliation as a number of publishers do not provide this information to ADS. Additionally, variants on institution name may confuse the search results.
 
 ### Fielded vs. unfielded queries
-The one-box search field accepts both fielded queries, where the user specifies the field being searched (such as *year:*) along with the search terms, and unfielded queries, where no search fields are explicitly specified. Unfielded queries automatically search all metadata fields and the full article text (where available); this may not produce the expected results.
+The one-box search field accepts both fielded queries, where the user specifies the field being searched (such as *year:*) along with the search terms, and unfielded queries, where no search fields are explicitly specified. Unfielded queries automatically search all metadata fields; this may not produce the expected results.
 
 We recommend that you use the field tags (e.g. *author:*) when searching for a known author and/or year of publication. However, you do not have to type the full tag or select it from the list each time you search. Auto-completion is enabled, so you can start typing the tag, then press Return to accept the auto-complete when the appropriate tag is shown. The cursor will automatically be moved to the appropriate spot within the tag to type the search term.
 

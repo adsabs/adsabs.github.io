@@ -11,5 +11,5 @@ She has been instrumental in removing dependencies of ADS Bumblebee on the Class
 
 <br style="clear:left;"/>
 
-[gshapurian [at] cfa.harvard.edu](mailto:gshapurian@cfa.harvard.edu)
+[gshapurian [at] cfa.harvard.edu](mailto:gshapurian@cfa.harvard.edu)<br>
 [LinkedIn Profile](https://www.linkedin.com/in/gshapurian)

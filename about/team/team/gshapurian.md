@@ -8,7 +8,6 @@ title: "Golnaz Shapurian"
 Golnaz Shapurian joined ADS in 2017 and has more than 25 years of scientific software development experience across several industries including biotech, pharmaceuticals, and scientific and medical instrumentations.
 
 She has been instrumental in removing dependencies of ADS Bumblebee on the Classic ADS, implementing microservices, including Export, Author-Affiliation and Linkout to replace Classic services.
-
 <br style="clear:left;"/>
 
 [gshapurian [at] cfa.harvard.edu](mailto:gshapurian@cfa.harvard.edu)<br>

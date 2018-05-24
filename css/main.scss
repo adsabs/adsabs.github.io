@@ -26,7 +26,8 @@ $text-color:       lighten($grey-color-dark, 14%);
 
 $background-color: #fff;
 
-$code-color: #F8F8F8;
+/*$code-color: #F8F8F8;*/
+$code-color: lighten($grey-color-dark, 14%);
 
 
 

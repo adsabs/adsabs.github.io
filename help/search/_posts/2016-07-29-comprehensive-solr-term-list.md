@@ -47,7 +47,8 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | doi | n | y | y | Digital object identifier |
 | eid | n | y | y | electronic id of the paper (equivalent of page number) |
 | email | n | y | n | List of e-mails for the authors that included them in the article; protect due to privacy concerns - difficult to stop unless we stop people seeing it now |
-| entry_date | n | y | y | Creation date of ADS record |
+| entdate | n | y | y | Creation date of ADS record in user-friendly format (YYYY-MM-DD) |
+| entry_date | n | n | y | Creation date of ADS record in RFC 3339 (machine-readable) format |
 | esources | n | y | y | Types of electronic sources available for a record (e.g. pub_html, eprint_pdf) |
 | facility | n | y | tbd | List of facilities declared in paper (controlled list for AAS journals so far). Needs to be added in ADSImportpipeline and Solr schemas |
 | first_author | n | y | y | First author of the paper |

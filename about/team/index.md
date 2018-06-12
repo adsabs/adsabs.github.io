@@ -12,7 +12,6 @@ The ADS personnel are:
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
 - [Dr. Roman Chyla](../team/team/rchyla.html) - System Architecture and Development  
 - [Stephen McDonald](../team/team/smcdonald.html) - System Development and Operations  
-- [Taylor Shaulis](../team/team/tshaulis.html) - System Operations and Cloud Computing  
 - [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Back-End Development (applications & services)  
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Back-End Development (pipelines)  

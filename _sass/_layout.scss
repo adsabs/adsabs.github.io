@@ -289,3 +289,25 @@ h1, h2 {
   }
 
 }
+
+.scalable {
+  overflow: hidden;
+}
+
+.scalable iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.scalable .scalable-content {
+  height: 0;
+  position: relative;
+}
+
+.scalable-16-9 .scalable-content {
+  /* Percentage from 9 divided by 16 for ratio of 16:9. */
+  padding-bottom: 56.25%;
+}

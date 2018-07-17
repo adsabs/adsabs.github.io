@@ -1,17 +1,12 @@
 ---
-title: ADS BLOG
-author: Karin Pelte
-date: April 2018
-bibliography: NETWORKLit_2.bib
+layout: blog_post
+title: "How research on multiple and interacting galaxies evolved: an epistemological and bibliometric investigation"
+author: "Karin Pelte and Edwin Henneken"
+position: "Technische Universität Berlin Germany and ADS"
+category: blog
+label: general
+thumbnail: blog/images/VV_1977.png
 ---
-
-# How research on multiple and interacting galaxies evolved: an epistemological and bibliometric investigation
-
-<br>
-
-<span style="font-size:larger;">Karin Pelte (Technische Universität Berlin Germany)</span>
-
-<span style="font-size:larger;">Edwin Henneken (ADS)</span>
 
 ## Introduction
 
@@ -23,18 +18,18 @@ The research project "Concepts at work" was originally developed in a workshop w
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/LudwikFleck.jpg" />
-<br>Ludwik Fleck (credit: Archiv für Zeitgeschichte Zürich)
+<br><em>Ludwik Fleck (credit: Archiv für Zeitgeschichte Zürich)</em>
 </div>
-
+<br>
 The historical project which was granted a three year funding by the DFG (German Research Foundation) in 2015, still profits from these initial discussions between philosophers, sociologists and historians of science, and continues to work along the lines which were then sketched out.
 
 In the project at hand, [Karin Pelte](http://www.philosophie.tu-berlin.de/menue/fachgebiete/wissenschaftsgeschichte/team/wissenschaftliche_mitarbeiter/karin_pelte_ma/) studies the world wide development of the research on multiple and interacting galaxies from around 1925 to 1980. *Multiple and interacting galaxies* (MIG from here on) is used as a catch-all and represents many of the names given to such phenomena as double, binary, multiple, colliding, merging, exploding, satellite galaxies, or small groups and chains or nests of galaxies.
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/VV_1977.png" />
-Taken fromVorontsov-Vel'yaminov's <a href="https://ui.adsabs.harvard.edu/#abs/19771977A&AS...28....1V/abstract">Atlas and Catalogue of Interacting Galaxies II</a>, 1977
+<em>Taken from Vorontsov-Vel'yaminov's <a href="https://ui.adsabs.harvard.edu/#abs/19771977A&AS...28....1V/abstract">Atlas and Catalogue of Interacting Galaxies II</a>, 1977</em>
 </div>
-
+<br>
 Why this specific type of research, and why this time period? During and after the so-called "Hubble Era", when our Galaxy became one amongst many in an expanding universe, another major conceptual transformation set in: the so-called "Island Universes" evolving uniformly in empty space turned into multi-frequency and multifaceted interactive systems in a universe so violent that astronomers asked whether it was actually "unsafe for a galaxy to walk the streets" (King, 1977). Karin suspects that the studies on MIG contributed substantially to this second development. Even though studies on MIG were undertaken in many different places such as Sweden, the Soviet Socialist Republics, the United States, Germany, Argentine, France, Italy, India, Japan, those scientists who contributed works over a longer stretch of time remained small in numbers. How to place their contributions in the field of galaxy studies or extragalactic astronomy as a whole, and whether they actually formed a proper research strand is hard to say. Galaxy studies and astrophysics in general developed into a great many different directions and separated domains before 1980 (Eisber, 2001; Harwit, 1973), and the history of astronomy has hardly started to draw a map of astrophysics after WW II. It seems rather that MIG remained objects of study related to various greater research areas as e.g. cosmic radio emission, quasars and missing mass (dark matter).
 
 ## Project Goal and Techniques Used
@@ -43,9 +38,9 @@ The main goal of Karin's project is to explore how the central astrophysical con
 
 ## Data Collection and Core Data Set
 
-At an early stage of her investigation, Karin put together a list of main actors and publications in the research on MIG. This list was based on a growing collection of original papers as well as the present historiography which includes many recollections of participating astronomers. Based on the citations and references of this first selection of papers which were provided by the online data bases Web of Science (WoS) and ADS, this selection grew into a snow ball sample. Combined keyword searches added further pertinent papers. The ADS soon proved to be the better data base especially since its search engine is open source and hence allows customized access to its data. Web of Science, by contrast, is now owned by private equity investors Onex and Baring Asia - and according to Chadegani (2013) a subscription to WoS might cost a larger institution such as an university around 100,000 dollars a year.
+At an early stage of her investigation, Karin put together a list of main actors and publications in the research on MIG. This list was based on a growing collection of original papers as well as the present historiography which includes many recollections of participating astronomers. Based on the citations and references of this first selection of papers which were provided by the online data bases Web of Science (WoS) and ADS, this selection grew into a snow ball sample. Combined keyword searches added further pertinent papers. The ADS soon proved to be the better database especially since its search engine is open source and hence allows customized access to its data. WoS, by contrast, is now owned by private equity investors Onex and Baring Asia - and according to Chadegani (2013) a subscription to WoS might cost a larger institution such as an university around $100,000 a year.
 
-The open source search engine of the ADS soon came in handy. Karin's assistant Theodor Costea, who only learnt how to code in Python during the project, developed a script using the [ADS API](http://adsabs.github.io/help/api/) to extract the pertaining references and citations from the ADS into the open source DB browser for SQLite (<http://sqlitebrowser.org/>). The script allows not only a compound search including authors names, title and keywords as well as time intervals, but also defines the network type (e.g. co-citation or bibliographic coupling) and adds weighted attributes. A recent addition is the community detecting algorithm *InfoMap* (©<http://mapequation.org>) in the script. This algorithm takes into account the directionality of a direct citation network, as opposed to, say "modularity" (Blondel, 2008). The latter was implemented using open source network visualizing software gephi (<https://gephi.org/>). Theo's script has been published on Github (<https://github.com/ghineaion/ads2gephi>) so that many more scholars or people simply interested in astrophysics research dynamics might profit from it.
+The open source search engine of the ADS soon came in handy. Karin's assistant Theodor Costea, who only learnt how to code in Python during the project, developed a script using the [ADS API](http://adsabs.github.io/help/api/) to extract the pertaining references and citations from the ADS into the open source DB browser for SQLite (<http://sqlitebrowser.org/>). The script allows not only a compound search including authors' names, title and keywords as well as time intervals, but also defines the network type (e.g. co-citation or bibliographic coupling) and adds weighted attributes. A recent addition is the community detecting algorithm *InfoMap* (©, <http://mapequation.org>) in the script. This algorithm takes into account the directionality of a direct citation network, as opposed to, say "modularity" (Blondel, 2008). The latter was implemented using open source network visualizing software [gephi](https://gephi.org/). Theo's [script](https://github.com/ghineaion/ads2gephi) has been published on Github so that many more scholars or people simply interested in astrophysics research dynamics might profit from it.
 
 ## Things to Come
 

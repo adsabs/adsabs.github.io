@@ -14,9 +14,9 @@ The ADS project develops and maintains services to facilitate the discovery and 
 The ADS project has three openings to join its dynamic team of seven software developers and three curators. The ADS has built a scalable web-based platform using a modern development stack: a custom build of the open-source search engine Solr, a highly responsive UI engineered on top of React, a high performance distributed brokerage system, and cloud-based hosted services with Kubernetes in Amazon Web Services. The developers will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
 
 We're looking for:
-* a highly-motivated [DevOps engineer](https://www.cfa.harvard.edu/hr/postings/18-50.html) experienced in administering key components of software infrastructure, including search engines, relational databases, and cloud-based microservices
-* a UX-aware [full-stack developer](https://www.cfa.harvard.edu/hr/postings/18-55.html) interested in designing and implementing key components of the user interface and back-end API services, including user profiles, notifications, and search capabilities
-* a search and text mining-focused [software developer](https://www.cfa.harvard.edu/hr/postings/18-56.html) able to maintain and enhance the capabilities of the ADS search engine, enhance its text processing pipelines, and use machine learning techniques to improve a variety of ADS services including metadata enrichment, citation analysis, and recommendations
+* a highly-motivated [DevOps engineer](https://www.cfa.harvard.edu/hr/postings/18-50.html) experienced in administering key components of software infrastructure, including search engines, relational databases, and cloud-based microservices ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/503073800))
+* a UX-aware [full-stack developer](https://www.cfa.harvard.edu/hr/postings/18-55.html) interested in designing and implementing key components of the user interface and back-end API services, including user profiles, notifications, and search capabilities ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/505201800))
+* a search and text mining-focused [software developer](https://www.cfa.harvard.edu/hr/postings/18-56.html) able to maintain and enhance the capabilities of the ADS search engine, enhance its text processing pipelines, and use machine learning techniques to improve a variety of ADS services including metadata enrichment, citation analysis, and recommendations ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/505201400))
 
 ## What we offer
 
@@ -31,7 +31,6 @@ Some of the perks of the jobs include:
 
 For more information, please see:
 
-  * [The official job ad and application instructions](https://www.cfa.harvard.edu/hr/postings/18-50.html)
   * [The ADS UI](https://ui.adsabs.harvard.edu)
   * [The ADS legacy UI](http://adsabs.harvard.edu)
   * [The ADS Github repositories](https://github.com/adsabs)

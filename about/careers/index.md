@@ -20,7 +20,7 @@ We're looking for:
 
 ## What we offer
 
-The ADS project is funded by NASA through a cooperative agreement and provides its services to the entire worldwide research community in astronomy and physics. We are hosted by the Smithsonian Astrophysical Observatory at the Harvard-Smithsonian Center for Astrophysics (CfA) in Cambridge, MA, one the largest and most diverse astrophysical institution in the world. Here, scientists carry out a broad program of research in astronomy, astrophysics, and earth and space sciences. By joining our group, you will be actively supporting the discovery and dissemination of scientific results to the worldwide research community!
+The ADS project is funded by NASA through a cooperative agreement and provides its services to the entire worldwide research community in astronomy and physics. We are hosted by the Smithsonian Astrophysical Observatory at the Harvard-Smithsonian Center for Astrophysics (CfA) in Cambridge, Massachusetts (USA), one the largest and most diverse astrophysical institution in the world. Here, scientists carry out a broad program of research in astronomy, astrophysics, and earth and space sciences. By joining our group, you will be actively supporting the discovery and dissemination of scientific results to the worldwide research community!
 
 Some of the perks of the jobs include:
 

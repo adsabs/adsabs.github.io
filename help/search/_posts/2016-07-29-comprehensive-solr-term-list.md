@@ -74,7 +74,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | nedid |  | y | y | List of NED IDs within a record |
 | nedtype |  | y | y | Keywords used to describe the NED type (e.g. galaxy, star) |
 | nedtype_object_facet_hier |  | y | n | Hierarchical facet consisting of NED object type and ID |
-| orcid_other |  | y | y | ORCID claims from users who used Bumblebee claiming interface, but did not give us consent to show their profiles |
+| orcid_other |  | y | y | ORCID claims from users who used the ADS claiming interface, but did not give us consent to show their profiles |
 | orcid_pub |  | y | y | ORCID IDs supplied by publishers |
 | orcid_user |  | y | y | ORCID claims from users who gave ADS consent to expose their public profiles. |
 | page |  | y | y | First page of a record |

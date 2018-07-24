@@ -7,13 +7,13 @@ order: 6
 
 #### Linking accounts
 
-If you have accounts in our legacy systems, <a href="http://adsabs.harvard.edu">ADS Classic</a>, it is possible to import libraries from your old accounts, into the new interface, ADS Bumblebee. 
+If you have an account in our legacy system, <a href="http://adsabs.harvard.edu">ADS Classic</a>, it is possible to import libraries from your old account into the new ADS interface. 
 
-First login with your normal credentials on ADS Bumblebee, and then navigate yourself to the *Customize Settings* page:
+First login with your normal credentials on the new ADS, and then navigate to the *Customize Settings* page:
 
 <img class="img-responsive" src="/img/import_help_01.png" alt="a screenshot of the location of the Customize Settings button"/>
 
-Once there, select the panel **Import Libraries**:
+Once there, select **Import Libraries** in the left panel:
 
 <img class="img-responsive" src="/img/import_help_02.png" alt="a screenshot of ADS Classic library import with the form filled in"/>
 
@@ -25,24 +25,24 @@ If you need to link a different account, then simply press **Sign into a new Cla
 
 #### Importing libraries
 
-Once you have successfully connected your ADS Classic account with ADS Bumblebee, you now have the option to import your ADS Classic libraries into Bumblebee. 
+Once you have successfully connected your ADS Classic account with the new ADS, you now have the option to import your ADS Classic libraries into the new ADS. 
 
 <img class="img-responsive" src="/img/import_help_03.png" alt="a screenshot after the Import all Classic libraries button has been pressed"/>
 
-You can now see my original ADS Classic library now exists in ADS Bumblebee:
+You can see my original ADS Classic library now exists in the new ADS:
 
 **ADS Classic**
 <img class="img-responsive" src="/img/import_help_04.png" alt="a screenshot of the library in ADS Classic"/>
 
-**ADS Bumblebee**
-<img class="img-responsive" src="/img/import_help_05.png" alt="a screenshot of the library in ADS Bumblebee"/>
+**The new ADS**
+<img class="img-responsive" src="/img/import_help_05.png" alt="a screenshot of the library in the new ADS"/>
 
 
 
 <u><b>ATTENTION</b>: the following rules are used to import your libraries into the new interface</u>
 
   1. **All the libraries you own** will be imported, and created with their 'Name' and 'Description' from ADS Classic. Entries for all bibcodes for each library will be created also.
-  2. If you have a library in ADS Bumblebee with the same name, it will **merge** the documents from your ADS Classic library into Bumblebee; **Bumblebee takes precedent**.
+  2. If you have a library in the new ADS with the same name, it will **merge** the documents from your ADS Classic library into the new ADS; **the new ADS takes precedent**.
   3. You can repeat this process as many times as you wish, but must keep in mind the actions of 2. and 3.
   4. You **cannot undo** your import, you must delete a library and re-import if you make a mistake.
 

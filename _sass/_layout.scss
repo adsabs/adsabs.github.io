@@ -246,6 +246,10 @@ h1, h2 {
     flex-direction: row;
   }
 
+   p {
+     font-size: 16px;
+  }
+
   &>* {
     padding: 0 30px;
   }

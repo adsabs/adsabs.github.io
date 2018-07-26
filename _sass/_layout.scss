@@ -231,63 +231,72 @@ h1, h2 {
     left: 6px;
   }
 
-.s-footer {
-
-  background-color:  #E0E0E0;
-  color: lighten($text-color, 10%);
-   padding: 16px 0;
-  margin-top: 20px;
-  font-size: 16px;
+.__footer_wrapper {
+  background-color: #484f4f;
+  color: white;
+  //font-size: 1.1em;
+  font-size: 0.97058824em;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
-  margin: 0 -15px;
-  position: relative;
-  z-index: 4;
-  border-top: 1px solid #D8D8D8;
-   line-height: 1.4;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: $screen-sm-min) {
+    flex-direction: row;
+  }
 
-      
-  .top-ads-links {
-    margin: -31px -50px -15px -50px;
-     padding: 29px 15px 38px;
-
-    h4 {
-      display: inline-block;
-      margin-left: 45px;
-      padding-top: 27px;
-      font-weight: 300;
-       font-size: 19px;
+  &>* {
+    padding: 0 30px;
+  }
+  .__footer_brand {
+    line-height: 1.428571429;
+  }
+  .__footer_brand_extra {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7em;
+    max-width: 300px;
+    @media (min-width: $screen-sm-min) {
+      width: 100%;
     }
-    h4:first-of-type {
-      margin-left:0;
+  }
+
+  .__footer_brand_logos img {
+    width: 64px;
+    .smithsonian {
+      width: 56px;
     }
+  }
+}
 
+.__footer_links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 100;
+    &:hover {
+      color: #5683e0;
+    }
   }
 
-  p {
-      margin-top: 0px;
+  li {
+    line-height: 1.25;
+    margin-bottom: 8px;
   }
+}
 
-  img {
-    width: 80px;
-    height: auto;
-    margin-bottom: 20px;
-    max-width: 120px;
-    position: relative;
-    top: 12px;
-    margin-left: 2%;
-  }
+.__footer_list_title {
+  font-weight: 400;
+  margin-bottom: 1em;
+}
 
-  img.smithsonian{
-    width: 67px;
-    margin-right: 2%;
-  }
-
-  .s-help {
-    text-align: center;
-    font-size: 18px;
-
-  }
-
+.s-footer {
+  width: 100%;
 }
 
 .scalable {
@@ -310,4 +319,9 @@ h1, h2 {
 .scalable-16-9 .scalable-content {
   /* Percentage from 9 divided by 16 for ratio of 16:9. */
   padding-bottom: 56.25%;
+}
+
+
+html, body {
+  height: 100%;
 }

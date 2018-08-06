@@ -6,7 +6,7 @@ category: orcid
 <h1> ORCID + ADS  </h1>
 
 
-{% assign posts = (site.categories[page.category] | sort:"order")  %}
+{% assign posts = site.categories[page.category] | sort:"order"  %}
     {% for post in posts %}
         <h3>{{post.title}}</h3>
         {{post.content}}

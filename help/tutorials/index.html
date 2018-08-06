@@ -7,7 +7,8 @@ category: tutorials
 
 <h2>All Entries in the Category "Tutorials"</h2>
 
-{% assign posts = (site.categories[page.category] | sort:"order")  %}
+{% assign posts = site.categories[page.category] | sort:"order"  %}
     {% for post in posts %}
+    <h3>{{post.title}}</h3>
     {{post.content}}
       {% endfor %}

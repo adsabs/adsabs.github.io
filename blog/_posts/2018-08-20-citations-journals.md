@@ -8,7 +8,7 @@ label: general
 thumbnail: blog/images/citations-journals-pt1_1.png
 ---
 
-This is the first of a series of blog posts measuring the journals which publish research astronomy articles, using citation statistics.  In this post we describe the measurement process and the sample.  In the appendix we publish a table with the entire data set used.
+This is the first of a series of blog posts measuring the journals which publish research astronomy articles, using citation statistics.  In this post we describe the measurement process and the sample.  The tables with the entire data set used are published in a [Zenodo repository (DOI: 10.5281/zenodo.1400692)](https://doi.org/10.5281/zenodo.1400692).
 
 ADS pioneered the use of citation indices on the WWW ([Kurtz, et al, 1996](https://ui.adsabs.harvard.edu/#abs/1996AAS...189.0607K/abstract)) and they remain the third most used feature of the ADS (after the abstracts and full text).  While various so-called alt-metrics have become popular, in particular forms of download measures (e.g. [Kurtz and Eichhorn 1998](https://ui.adsabs.harvard.edu/#abs/1998ASPC..153..293K), [Henneken and Kurtz 2017](https://ui.adsabs.harvard.edu/#abs/2017arXiv170602153H/)), they are not yet widely accepted or used; citations remain the gold standard for scholarly measurement, particularly of journals.
 
@@ -22,11 +22,11 @@ The data were obtained via a series of ADS queries submitted via Python scripts 
 
 By this definition 38% of PhRvD papers are astronomy papers.
 
-We ran these queries in the middle of July 2018 for each of the 20 years 1997-2016, and for each of the about 50 journals in the study (<a href="{{site.baseurl}}/blog/docs/citations-journals-pt1.table1" download>table 1</a>).  Some sets of journals were treated as a single entity, notably Physica (A,B,C,...), JGR(A,B,C,...) and the Physical Review except for PhRvD and PhRvL, which were treated individually.
+We ran these queries in the middle of July 2018 for each of the 20 years 1997-2016, and for each of the about 50 journals in the study (<a href="https://zenodo.org/record/1400693/files/BlogOne.table1.txt?download=1" download>table 1</a>).  Some sets of journals were treated as a single entity, notably Physica (A,B,C,...), JGR(A,B,C,...) and the Physical Review, except for PhRvD and PhRvL, which were treated individually.
 
-For each list of papers we obtained a set of five measures: number of papers, number of citations to those papers, h index, number of papers with 10 or more citations, and number of papers with 100 or more citations.  <a href="{{site.baseurl}}/blog/docs/citations-journals-pt1.table2" download>Table 2</a> gives the data in the format: year, bibstem, measure, type of measure (e.g. num, cites, h, i10 or i100).  Note that we have removed the ampersand (&) from the bibstems to aid the scripting.
+For each list of papers we obtained a set of five measures: number of papers, number of citations to those papers, h index, number of papers with 10 or more citations, and number of papers with 100 or more citations.  <a href="https://zenodo.org/record/1400693/files/BlogOne.table2.txt?download=1" download>Table 2</a> gives the data in the format: year, bibstem, measure, type of measure (e.g. num, cites, h, i10 or i100).  Note that we have removed the ampersand (&) from the bibstems to aid the scripting.
 
-We have also run the query on all refereed articles in the ADS; <a href="{{site.baseurl}}/blog/docs/citations-journals-pt1.table3" download>table 3</a> gives these results.
+We have also run the query on all refereed articles in the ADS; <a href="https://zenodo.org/record/1400693/files/BlogOne.table3.txt?download=1" download>table 3</a> gives these results.
 
 In the next blog posts we will examine individual journals; here we look at the behavior of the sample as a whole.
 
@@ -36,7 +36,7 @@ In the next blog posts we will examine individual journals; here we look at the 
 </div>
 <br>
 
-Figure 1 shows the growth in the number of papers over the 20 years of the study, for all refereed articles, those in the 50 journal sample, and the rest.  The journals in the main sample are all major international journals; all astronomy journals which have published at least fifty papers with 100 or more citations in the last 20 years are included in this sample.  The journals outside the sample are of two basic types: smaller, mostly national, astronomy journals, such as ARep, AstL, MmSAI, BASI, ChA&A, BaltA, etc., and journals which are not normally considered “astronomy” journals but which sometimes publish astronomy-related articles.  There are more than 350 different journals which have published one or more astronomy-related articles which have received 100 or more citations in the last 20 years.
+Figure 1 shows the growth in the number of papers over the 20 years of the study, for all refereed articles, those in the 50 journal sample, and the rest.  The journals in the main sample (the In Sample set) are all major international journals; all astronomy journals which have published at least fifty papers with 100 or more citations in the last 20 years are included in this sample.  The journals outside the sample (the Out of Sample set) are of two basic types: smaller, mostly national, astronomy journals, such as ARep, AstL, MmSAI, BASI, ChA&A, BaltA, etc., and journals which are not normally considered “astronomy” journals but which sometimes publish astronomy-related articles.  There are more than 350 different journals which have published one or more astronomy-related articles which have received 100 or more citations in the last 20 years.
 
 The In Sample group shows a steady 4% yearly increase in number of papers published, fully consistent with the growth of the scholarly literature over the last 350 years ([de Solla Price, 1961](http://derekdesollaprice.org/science-since-babylon/)).  The Out of Sample group, with 6.7% growth, indicates the growing sphere of influence of astronomy.
 
@@ -59,7 +59,5 @@ We suggest there are a few factors at play here.  The interdisciplinarity goes b
 In this blog post we have presented the data which we will use to evaluate and rank the main international journals which publish astronomy research.  We have shown that astronomy articles in these journals, as a whole, are increasing consistent with the centuries long trends in scholarship, and that the interdisciplinary aspect of astronomy research is steadily expanding.
 
 
-
+<br>
 COMING UP NEXT: We will publish and discuss 20 years of yearly rankings for the 50 In Sample journals for each of our five measures (number of articles, citations, h, i10, i100).
-
-The appendix has the data used here.  <a href="{{site.baseurl}}/blog/docs/citations-journals-pt1.table1" download>Table 1</a> are the bibstems for the journals in the main sample; <a href="{{site.baseurl}}/blog/docs/citations-journals-pt1.table2" download>table 2</a> has the individual data for each journal in the format journal, indicator, value, year; and <a href="{{site.baseurl}}/blog/docs/citations-journals-pt1.table3" download>table 3</a> has these data for all refereed journals (including the journals in the main sample, and all the rest).

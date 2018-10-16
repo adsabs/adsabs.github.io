@@ -5,7 +5,11 @@ title: "ADS Awards and Recognition"
 
 This page describes some of the awards presented to the NASA Astrophysics Data System and to individual team members highlighting the importance of the ADS services to the scientific community. 
 
-The **Special Libraries Association** awarded the [2016 Physics, Astronomy and Mathematics Achievement Award](http://pam.sla.org/2016/08/2016-pam-awards/) to **Donna Thompson** for outstanding contributions to the division and her professional work at the ADS marked by distinction and dedication to librarianship in astronomy and physics. 
+The **Association for Information Science & Technology** awarded the [2018 Best JASIST (Journal of the Association for Information Science & Technology) Paper Award](https://www.asist.org/news/kurtz-henneken-win-best-jasist-paper-award/) to  **Michael Kurtz** and **Edwin Henneken** for their paper, “Measuring Metrics---A 40-Year Longitudinal Cross-Validation of Citations, Downloads, and Peer Review in Astrophysics."
+
+The **Special Libraries Association** awarded the [2018 Physics, Astronomy, and Mathematics Division Award](http://pam.sla1.org/report-of-the-awards-presentation/) to ADS, noting that "ADS is not only an outstanding provider of information but an integral and involved part of the physics and astronomy communities."
+
+The **Special Libraries Association** awarded the [2016 Physics, Astronomy and Mathematics Achievement Award](http://pam.sla1.org/2016-pam-awards/) to **Donna Thompson** for outstanding contributions to the division and her professional work at the ADS marked by distinction and dedication to librarianship in astronomy and physics. 
 
 **Minor Planet 69287 was named Gunthereichhorn** for G&uuml;nther Eichhorn who developed and managed the Astrophysics Data System from 1992-2007. (From **Minor Planet Circular 95804**, 2015/09/28, available [online](https://minorplanetcenter.net/iau/ECS/MPCArchive/2015/MPC_20150928.pdf).) 
 

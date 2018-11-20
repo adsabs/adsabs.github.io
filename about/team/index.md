@@ -17,6 +17,8 @@ The ADS personnel are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Back-End Development (pipelines)  
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Ingest and Curation Support  
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ingest, ORCID) & User Support  
+- [Kris Bukovi](../team/team/kbukovi.html) - Back-End Development (text mining)  
+- [Nathan Rapport](../team/team/nrapport.html) - Back-End Development (search) and DevOps  
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 

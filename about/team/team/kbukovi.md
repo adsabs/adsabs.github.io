@@ -8,5 +8,5 @@ title: "Kris Bukovi"
 Kris has a B.S. in Computer Engineering with a concentration in Machine Intelligence from Florida Polytechnic University. She previously worked as a software developer for an applied psychological research company that specialized in creating tools to test and analyze users in the efforts of defining a pathway to expertise. She has a passion for deep learning and natural language processing, and likes to work on more abstract (fun) applications of Neural Networks.
 
 <br style="clear:left;"/>
-[kristine.bukovi [at] cfa.harvard.edu](mailto:kristine.bukovi@cfa.harvard.edu)  
+[kbukovi [at] cfa.harvard.edu](mailto:kbukovi@cfa.harvard.edu)  
 [LinkedIn profile](https://linkedin.com/in/krisbukovi/)

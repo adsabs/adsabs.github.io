@@ -1,0 +1,9 @@
+---
+layout: post
+category: data_faq
+---
+
+{% assign posts = site.categories[page.category] | sort:"order"  %}
+    {% for post in posts %}
+    {{post.content}}
+      {% endfor %}

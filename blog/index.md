@@ -1,6 +1,8 @@
 ---
 layout: blog_page
 ---
+# ADS Blog
+[Sign up](http://eepurl.com/ggoxhn) for our monthly email updates.
 
 <div class="container">
     <div class="row">

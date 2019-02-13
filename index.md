@@ -14,7 +14,12 @@ layout: post
 </p>
 
 <p>
-To see the latest releases to our website, API, and data holdings, see our <a href="{{ site.baseurl }}/whats-new">What's New</a> page.
+To see the latest releases to our website, API, and data holdings, see our <a href="{{ site.baseurl }}/help/whats_new">What's New</a> page.
+</p>
+
+<p>
+<a href="http://eepurl.com/ggoxhn">Sign up</a> for our monthly newsletter to keep up with the latest
+developments on our website and the latest posts on our blog.
 </p>
   
 <p>Search for information by using the search bar in the upper right corner.</p>

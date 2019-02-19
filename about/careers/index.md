@@ -11,7 +11,9 @@ The ADS project develops and maintains services to facilitate the discovery and 
 
 ## Who we are looking for 
 
-We don't currently have any job openings! If you'd like to be notified of future postings, [email us](mailto:adshelp@cfa.harvard.edu?Subject=Notify%20me%20of%20future%20job%20postings).
+The ADS project has an opening for a [UX-aware front-end developer](https://www.cfa.harvard.edu/hr/postings/19-17.html) to join its dynamic team of nine software developers and three curators. The ADS has built a scalable web-based platform using a modern development stack: a custom build of the open-source search engine Solr, a highly responsive UI, a high-performance distributed brokerage system, and cloud-based hosted services with Kubernetes in Amazon Web Services. The developer will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
+
+We're looking for a front-end developer interested in designing and implementing key components of the user interface, including user profiles, notifications, and search capabilities. Candidates should have knowledge of JavaScript and Node.js, the ability to create solid, usable user interfaces, and experience with UI/UX design in a technical envrionment. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/524662400))
 
 ## What we offer
 
@@ -27,7 +29,6 @@ Some of the perks of the jobs include:
 For more information, please see:
 
   * [The ADS UI](https://ui.adsabs.harvard.edu)
-  * [The ADS legacy UI](http://adsabs.harvard.edu)
   * [The ADS Github repositories](https://github.com/adsabs)
   * [Our Twitter page](https://twitter.com/adsabs)
   * [The CfA website](https://www.cfa.harvard.edu/)

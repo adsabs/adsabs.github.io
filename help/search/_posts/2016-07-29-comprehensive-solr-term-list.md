@@ -70,7 +70,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | keyword_norm |  | y | y | Controlled keywords, each entry will have a corresponding keyword_schema entry |
 | keyword_schema |  | y | y | Schema for each controlled keyword, i.e., what was the origin of the keyword? |
 | lang |  | y | y | In ADS this field contains a language of the main title. Currently, this value is present in a very small portion of records (try searching for lang:*) |
-| links_data |  | y | y | We use it to contain info on what readable linked documents are available? |
+| links_data | y | y | y | We use it to contain info on what readable linked documents are available |
 | nedid |  | y | y | List of NED IDs within a record |
 | nedtype |  | y | y | Keywords used to describe the NED type (e.g. galaxy, star) |
 | nedtype_object_facet_hier |  | y | n | Hierarchical facet consisting of NED object type and ID |

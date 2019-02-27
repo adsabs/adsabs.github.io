@@ -45,6 +45,15 @@ author:&ldquo;huchra, j" OR abstract:&ldquo;great wall" | papers by J. Huchra or
 author:&ldquo;huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
 author:&ldquo;huchra, j" NOT title:2mass   | same as above
 
+**The difference between NOT and &ldquo;-&rdquo;**
+
+In most searches, NOT and the negative sign (-) are interchangeable, as shown above; however, in multi-part queries, there are some slight behavior differences between the two.
+
+Example Query                        | Results
+-------------------------------------|--------------------------------------------------------------
+aff:("China" OR "Hong Kong" NOT "Taiwan") | This is parsed as aff:("China" OR ("Hong Kong" NOT "Taiwan"))
+aff:("China" OR "Hong Kong" -"Taiwan") | This is parsed as aff:(("China" OR "Hong Kong") NOT "Taiwan")
+
 ### Synonyms and Acronyms
 
 By default most search terms in ADS are expanded by adding a list of words which are synonyms of the search term.  So for example, a search of "star" in the title field will be expanded to include words such as "stars," "stellar," "starry," "starlike," and so on.  (Notice that this often includes words in foreign languages such as "etoile," "stern," and "stella"). While this feature improves recall, it sometimes compromises the precision of the results.  Our search engine allows one to turn off the synonym expansion feature by simply prepending an "=" sign in front of the search term.

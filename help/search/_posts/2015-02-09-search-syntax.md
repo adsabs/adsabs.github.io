@@ -45,14 +45,19 @@ author:&ldquo;huchra, j" OR abstract:&ldquo;great wall" | papers by J. Huchra or
 author:&ldquo;huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
 author:&ldquo;huchra, j" NOT title:2mass   | same as above
 
-**The difference between NOT and &ldquo;-&rdquo;**
+**Operator precedence in multi-part searches**
 
-In most searches, NOT and the negative sign (-) are interchangeable, as shown above; however, in multi-part queries, there are some slight behavior differences between the two.
+Searches involving only two search terms, as shown above, are straightforward to parse. However, for searches with multiple search terms and multiple operators, understanding how operators take precendence over each other is important. For the most control, use parentheses around terms and operators that should be executed first. Otherwise, operators follow these general rules:
+* AND, OR, and NOT are set operators, operating on the search terms on either side. AND takes the intersection of the result set of the two search terms, OR takes the union, and NOT takes the difference. NOT takes precendence over AND, which takes precendence over OR.
+* The default AND (i.e., not typing out AND but using just a blank space between the two terms, as in the first example above) has lower precedence than any of the Boolean operators above.
+* The negative sign (-) is read as "prohibit"; results containing this term are completely excluded. In multi-part queries, its behavior can differ from that of NOT, because of the precedence rules.
 
-Example Query                        | Results
+Example Query                        | Parsed as
 -------------------------------------|--------------------------------------------------------------
-aff:("China" OR "Hong Kong" NOT "Taiwan") | This is parsed as aff:("China" OR ("Hong Kong" NOT "Taiwan"))
-aff:("China" OR "Hong Kong" -"Taiwan") | This is parsed as aff:(("China" OR "Hong Kong") NOT "Taiwan")
+aff:(China OR "Hong Kong" AND Taiwan) | aff:(China OR ("Hong Kong" AND Taiwan))
+aff:(China OR "Hong Kong" Taiwan) | aff:((China OR "Hong Kong") AND Taiwan)
+aff:(China OR "Hong Kong" NOT Taiwan) |aff:(China OR ("Hong Kong" NOT Taiwan))
+aff:(China OR "Hong Kong" -Taiwan) | aff:((China OR "Hong Kong") NOT Taiwan)
 
 ### Synonyms and Acronyms
 

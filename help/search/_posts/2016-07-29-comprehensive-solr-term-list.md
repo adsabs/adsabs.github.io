@@ -29,7 +29,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | bibcode |  | y | y | ADS identifier of a paper |
 | bibgroup |  | y | y | Bibliographic group that the bibcode belongs to (curated by staff outside of ADS) |
 | bibgroup_facet |  | y | y | Contains list of groups with the number of occurrences that group has for the search |
-| bibstem |  | y | y | the abbreviated name of the journal or publication, e.g., ApJ. |
+| bibstem |  | y | y | the abbreviated name of the journal or publication, e.g., ApJ. Full lists of bibstems can be found [here](http://adsabs.harvard.edu/abs_doc/journal_abbr.html) |
 | bibstem_facet |  | y | n | Technical field, used for faceting by publication. It contains only bibstems without volumes (eg. Sci) |
 | body |  | y | n | Contains extracted fulltext minus acknowledgements section |
 | citation |  | y | y | List of bibcodes that cite the paper |

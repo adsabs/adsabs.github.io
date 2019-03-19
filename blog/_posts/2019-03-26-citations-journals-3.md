@@ -45,7 +45,7 @@ We offer one last way of comparing journals: compare mean cites for astronomy pa
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_3.png" />
-<em>Figure 1</em>
+<em>Figure 3</em>
 </div>
 <br>
 
@@ -53,7 +53,7 @@ The relatively steep rise for PhRvL is largely due to gravitational wave publica
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_4.png" />
-<em>Figure 1</em>
+<em>Figure 4</em>
 </div>
 <br>
 

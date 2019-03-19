@@ -41,7 +41,7 @@ You can see my original ADS Classic library now exists in the new ADS:
 
 <u><b>ATTENTION</b>: the following rules are used to import your libraries into the new interface</u>
 
-  1. **All the libraries you own** will be imported, and created with their 'Name' and 'Description' from ADS Classic. Entries for all bibcodes for each library will be created also.
+  1. **All the libraries you own** will be imported, and created with their 'Name' and 'Description' from ADS Classic. Entries for all bibcodes for each library will be created also. However, notes attached to individual entries within a library will not be imported and are not supported in the new ADS.
   2. If you have a library in the new ADS with the same name, it will **merge** the documents from your ADS Classic library into the new ADS; **the new ADS takes precedent**.
   3. You can repeat this process as many times as you wish, but must keep in mind the actions of 2. and 3.
   4. You **cannot undo** your import, you must delete a library and re-import if you make a mistake.

@@ -8,6 +8,10 @@ label: news
 thumbnail: blog/images/blog_2016-09-19_adsbumblebee.png
 ---
 
+### Update (April 12, 2019)
+Classic's retirement timeline has been adjusted slightly. We plan to begin disabling searching in Classic in May 2019, with full site retirement slated for Q3 2019. For more on steps to take before that time, see [our post on things to do before the transition](../blog/transition-reminder).
+
+### Original post
 ADS is excited to announce that the [new ADS interface](https://ui.adsabs.harvard.edu/), codenamed Bumblebee, is leaving its beta label behind! The service, under development since 2015, has reached parity with ADS Classic. In addition, it provides a modern interface and new search features.
 
 ADS Classic, in service since 1994, will be phased out over the next year and will be retired on May 31, 2019. While it has served its original purpose well, still serving roughly 50,000 unique users a day and around three-quarters of a million unique users a month, Classic’s 90s-era infrastructure makes it impossible to continue to scale and to incorporate more modern search features. (For the curious, check out our [more technical post](../blog/technical) about what’s under the hood of both Classic and Bumblebee.)

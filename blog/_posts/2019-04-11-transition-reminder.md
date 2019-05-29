@@ -8,6 +8,9 @@ label: news
 thumbnail: img/import_help_02.png
 ---
 
+### Update (May 29, 2019)
+*This post has been updated to reflect that the library set operations and the "perform actions on selected articles" functionality, previously listed in the "Classic features in progress" section, are now available.*
+
 ADS Classic, [online since 1994](https://ui.adsabs.harvard.edu/about/history/), will be retired later this summer. (For more on the technical need for this upgrade, see [this previous blog post](http://adsabs.github.io/blog/technical).) Regular Classic users may have noticed some changes over the last few months, including an increasing number of warnings and pointers to the [new ADS](https://ui.adsabs.harvard.edu/), meant to encourage users to begin routinely using the new interface. As of the date of this post, Classic is still available, though its remaining time is limited. Now is an excellent time for the remaining Classic users to begin to familiarize themselves with the new system and to [contact us](mailto:adshelp@cfa.harvard.edu) if they run into problems. Below, we list a few important things for users to know as they begin to use the new ADS.
 
 ## To-Do Quick List
@@ -45,18 +48,20 @@ In addition to the library link server, users with accounts can set some [applic
 The ADS team is hard at work adding the last few features from Classic to the new ADS. Features still in progress are:
 
 - myADS: Setup for new users and a transfer tool for existing users, similar to that used for libraries, will be made available before the myADS email service in Classic is turned off
-- Perform actions on selected articles: Second order operations, such as retrieving the references of selected articles, are currently available for individual articles or for the entire set of results from a search. The ability to perform these operations for a subset of articles manually selected from the search results set is currently being added to the website
-
-<div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_04_11_perform-actions-on-selected.png" />
-<em>Performing actions on selected articles in Classic</em>
-</div>
-<br>
-
 - Classic-style relevance sorting: A new relevance sorting method, similar to the relevance sorting in Classic, is being developed. This new relevance sort ranks more highly articles that both better match search terms and are more popular (i.e., more highly cited and/or read)
-- Library set operations: Set operations (union, intersection, difference, etc.) on libraries are currently available via the new ADS API, and an interface to these operations is being developed for the website. This extends the ability in Classic to effectively take the union or the difference between libraries
 - Citation helper on a temporary set: The citation helper returns articles that are highly cited by a given set of articles but are not included in the original set. It is currently available within a library and is being considered for use with a given selected set of articles from a set of search results
 - Recently read articles: Work is proceeding on allowing a user to see a list of their own recently read articles
+
+## Classic features now in the new ADS
+These features were previously listed as "in-progress" but are now available in the new ADS:
+- Library set operations: Set operations (union, intersection, difference, etc.) on libraries are now available; click the Actions button from your list of libraries to access this new feature. This extends the ability in Classic to effectively take the union or the difference between libraries
+- Perform actions on selected articles: Second order operations, such as retrieving the references of selected articles, are now available for a subset of articles manually selected from the search results set. To access this feature, select the desired articles in the search results, then click the Explore menu and choose the desired operation
+
+<div class="text-center">
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_04_11_perform-actions-on-selected_newADS.gif" />
+<em>Performing actions on selected articles in the new ADS</em>
+</div>
+<br>
 
 ## More help
 To make it easier to start using the new ADS, the ADS team has prepared a range of supports to help users make the transition:

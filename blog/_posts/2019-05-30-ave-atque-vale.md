@@ -8,7 +8,7 @@ label: news
 thumbnail: blog/images/blog_2019_05_30_ave-2.png
 ---
 
-ADS Classic, a pioneer of the Information Age, died at noon on 30 May 2019 after a long period on life support.  Perhaps the last of its generation to succumb to the infirmities of age, Classic is survived by its lineal descendant, the “new” ADS.  
+ADS Classic, a pioneer of the Information Age, died at 3:19 pm EDT on 30 May 2019 after a long period on life support.  Perhaps the last of its generation to succumb to the infirmities of age, Classic is survived by its lineal descendant, the “new” ADS.  
 
 Conceived near the dawn of the internet era, and born, following a difficult gestation, after the first cup of coffee, the Abstract Service, as it was then called, had many parents.  In approximate time order: Michael Kurtz, Joyce Rey-Watson, Geoff Shaw, Peter Ossorio, Steve Murray, Guenther Riegler, Frank Giovane, Margaret Geller, Guenther Eichhorn, Todd Karakashian, Carolyn Stern Grant, and Alberto Accomazzi.
 

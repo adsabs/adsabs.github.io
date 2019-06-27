@@ -32,9 +32,14 @@ will return a ranked list of papers featuring reviews of weak gravitational lens
 </figure>
 <br>
 
-**TopN** -- returns the list of top N documents for a user defined query, where they are ordered by their score or a user specified sort. For example:
+**TopN** -- returns the list of top N documents for a user defined query, where they are ordered by their default sort order or a user specified sort order. For example:
 
-    topn(200, title:hubble, citation_count desc)
+    topn(100, database:astronomy, citation_count desc)
 
-will return the first 200 most cited papers for documents that have "hubble" in their title.
+will return the top 100 most cited astronomy papers.
 
+This next example uses the default sort order for the interior query, so no sort order needs to be specified:
+
+    trending(topn(10, reviews("weak lensing")))
+
+This query returns papers currently being read by users who are interested in the field of weak lensing.

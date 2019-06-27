@@ -26,8 +26,15 @@ will return a ranked list of papers spanning a variety of topics useful to resea
 
 will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications.
 
+<figure>
+    <img src="/img/operators.png"  class="img-responsive" alt="diagram showing use of the second order operators">
+    <figcaption><em><center>Usage of the trending( ), useful( ), and reviews( ) smart operators</center></em></figcaption>
+</figure>
+<br>
+
 **TopN** -- returns the list of top N documents for a user defined query, where they are ordered by their score or a user specified sort. For example:
 
     topn(200, title:hubble, citation_count desc)
 
 will return the first 200 most cited papers for documents that have "hubble" in their title.
+

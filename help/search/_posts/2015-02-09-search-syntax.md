@@ -119,9 +119,9 @@ As a general rule we recommend to use the full name of the person for author sea
 
 The query modifier `object:` in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky ("cone search"). The cone search also makes use of services offered by SIMBAD and NED. 
 
-Queries for astronomical objects via `object:` queries return publications that have been tagged with the canonical names for these objects. This tagging has been done by the SIMBAD and NED teams. Additio9nally, the object names (as specified in the query) are also used in an ADS query against abstracts, titles and keywords in the astronomy collection (with synonym replacement switched off). The result set is a combination of all these matches. Object queries that target just one service (e.g. SIMBAD) are not currently supported. The `data` facet can be used to filter the results set.
+Queries for astronomical objects via `object:` queries return publications that have been tagged with the canonical names for these objects. This tagging has been done by the SIMBAD and NED teams. Additionally, the object names (as specified in the query) are also used in an ADS query against abstracts, titles and keywords in the astronomy collection (with synonym replacement switched off). The result set is a combination of all these matches. Object queries that target just one service (e.g. SIMBAD) are not currently supported. The `data` facet can be used to filter the results set.
 
-The syntax for position searches is: 
+The syntax for cone searches is: 
 
 ```
   object:"RA ±Dec:radius"

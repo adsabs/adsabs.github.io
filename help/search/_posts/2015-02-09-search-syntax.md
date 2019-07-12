@@ -28,7 +28,7 @@ year:2000-2005                       | search for publications written between 2
 body:&ldquo;gravitational waves"           | search for papers containing the phrase "gravitational waves" in the body of an article
 full:&ldquo;gravitational waves"           | search for papers containing the phrase "gravitational waves" in a number of fields (title, abstract, body, acknowledgements and keywords)
 bibstem:ApJ                          | select papers published in a particular publication
-object:((SMC OR LMC) AND M31)        | using the SIMBAD object search, find papers tagged with either SMC or LMC and M31
+object:((SMC OR LMC) AND M31)        | using the SIMBAD and NED object search, find papers tagged with either SMC or LMC and M31
 
 The rest of this page goes over the search syntax and fields indexed in our database.
 
@@ -115,6 +115,33 @@ Synoym expansion also applies to author names, which provide a way to account fo
 
 As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/search/filter).
 
+### Astronomical Objects and Position Search
+
+The query modifier `object:` in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky ("cone search"). The cone search also makes use of services offered by SIMBAD and NED. 
+
+Queries for astronomical objects via `object:` queries return publications that have been tagged with the canonical names for these objects. This tagging has been done by the SIMBAD and NED teams. Additio9nally, the object names (as specified in the query) are also used in an ADS query against abstracts, titles and keywords in the astronomy collection (with synonym replacement switched off). The result set is a combination of all these matches. Object queries that target just one service (e.g. SIMBAD) are not currently supported. The `data` facet can be used to filter the results set.
+
+The syntax for position searches is: 
+
+```
+  object:"RA ±Dec:radius"
+```
+
+where RA and Dec are right ascention and declination J2000 positions, expressed in decimal degrees or in sexagesimal notation (hours minutes seconds and degrees arcmin and arcsec). The plus or minus sign before the declination is ***mandatory***. The search radius may be given in arcmin, decimal or sexagesimal degrees (The default search radius is 2', and the maximum is 60'). Examples:
+
+* A 10' radius may be written as 0.1667 or 0 10
+* The following 3 notations are equivalent:
+	1.      05h23m34.6s -69d45m22s
+	2.      05 23 34.6 -69 45 22
+	3.    	 80.894167 -69.756111
+
+The equivalent of (see [2007ASPC..382..495K](https://ui.adsabs.harvard.edu/abs/2007ASPC..382..495K/abstract))
+
+```
+http://adsabs.harvard.edu/cgi-bin/abs_connect?data_type=VOTABLE&DEC=60&RA=16&SR=.1
+```
+
+is the search `object:"16 +60:0.1"`, followed by exporting the results in the `VOTable` export format. Currently there is no equivalent of the ADS Classic URL shown above.
 
 ### Available Fields
 

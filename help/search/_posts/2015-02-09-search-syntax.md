@@ -135,6 +135,12 @@ where RA and Dec are right ascention and declination J2000 positions, expressed 
 	2.      05 23 34.6 -69 45 22
 	3.    	 80.894167 -69.756111
 
+Searching for publications tagged with objects returned by the coordinates in the example above, with a search radius of 10' is done as follows:
+
+```
+object:"05h23m34.6s -69d45m22s:0.1667"
+```
+
 The equivalent of (see [2007ASPC..382..495K](https://ui.adsabs.harvard.edu/abs/2007ASPC..382..495K/abstract))
 
 ```

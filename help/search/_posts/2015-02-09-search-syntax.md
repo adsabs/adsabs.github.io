@@ -169,7 +169,8 @@ Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds
 Bibliographic groups | bibgroup:name       | bibgroup:HST            | limit search to papers in HST bibliography (*)
 Bibliographic stem | bibstem:adsbibstem    | bibstem:ApJ             | find records that contain a specific bibstem in their bibcode
 Body         | body:&ldquo;phrase"               | body:&ldquo;gravitational waves" | search for a word or phrase in (only) the full text
-Citation count | citation_count:count      | citation_count:40       | find records that have a specific number of citations
+Citation count | citation_count:count | citation_count:40 | find records that have a specific number of citations
+Citation count (cont.) | citation_count:[min_count TO max_count]      | citation_count:[10 TO 100]       | find records that have a range of citation counts
 Copyright | copyright:copyright            | copyright:2012          | search for articles with certain copyrights
 Data links   | data:archive                | data:NED                | limit search to papers with data from NED (*)
 Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics or general
@@ -183,7 +184,7 @@ Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | fi
 Issue        | issue:number                | issue:10                | search for papers in a certain issue
 Keywords     | keyword:&ldquo;phrase"            | keyword:sun             | search publisher- or author-supplied keywords
 Language     | lang:&ldquo;language"             | lang:korean             | search for papers with a given language
-Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with astronomical object by SIMBAD
+Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see [Astronomical Objects and Position Search](http://localhost:4000/help/search/search-syntax/#astronomical-objects-and-position-search) above)
 ORCiD iDs    | orcid:id                    | orcid:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD
 ORCiD iDs from publishers    | orcid_pub:id                    | orcid_pub:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD specified by a Publisher
 ORCiD iDs from known ADS users    | orcid_user:id                    | orcid_id:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by known ADS users

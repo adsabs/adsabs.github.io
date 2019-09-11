@@ -8,10 +8,13 @@ label: news
 thumbnail: img/import_help_02.png
 ---
 
+### Update (September 11, 2019)
+*This post has been updated with the latest schedule. Some links have been updated.*
+
 ### Update (May 29, 2019)
 *This post has been updated to reflect that the library set operations and the "perform actions on selected articles" functionality, previously listed in the "Classic features in progress" section, are now available.*
 
-ADS Classic, [online since 1994](https://ui.adsabs.harvard.edu/about/history/), will be retired later this summer. (For more on the technical need for this upgrade, see [this previous blog post](http://adsabs.github.io/blog/technical).) Regular Classic users may have noticed some changes over the last few months, including an increasing number of warnings and pointers to the [new ADS](https://ui.adsabs.harvard.edu/), meant to encourage users to begin routinely using the new interface. As of the date of this post, Classic is still available, though its remaining time is limited. Now is an excellent time for the remaining Classic users to begin to familiarize themselves with the new system and to [contact us](mailto:adshelp@cfa.harvard.edu) if they run into problems. Below, we list a few important things for users to know as they begin to use the new ADS.
+ADS Classic, [online since 1994](https://ui.adsabs.harvard.edu/about/history/), will be retired at the end of October 2019. (For more on the technical need for this upgrade, see [this previous blog post](http://adsabs.github.io/blog/technical).) Regular Classic users may have noticed some changes over the last few months, including an increasing number of warnings and pointers to the [new ADS](https://ui.adsabs.harvard.edu/), meant to encourage users to begin routinely using the new interface. As of the date of this post, Classic is still available, though its remaining time is limited. Now is an excellent time for the remaining Classic users to begin to familiarize themselves with the new system and to [contact us](mailto:adshelp@cfa.harvard.edu) if they run into problems. Below, we list a few important things for users to know as they begin to use the new ADS.
 
 ## To-Do Quick List
 - [Create a user account](https://ui.adsabs.harvard.edu/user/account/register) in the new ADS
@@ -19,6 +22,7 @@ ADS Classic, [online since 1994](https://ui.adsabs.harvard.edu/about/history/), 
 - Check your [application settings](https://ui.adsabs.harvard.edu/user/settings/application) to personalize your user experience in the new ADS
 - Copy any [custom export formats](https://adsabs.github.io/help/actions/export) you had set up in Classic into your [application settings](https://ui.adsabs.harvard.edu/user/settings/application)
 - Note: some Classic features, including myADS settings, are still in progress in the new ADS; more info on these will be announced in the future
+- Note: URLs pointing to Classic search results and abstract pages will not break after Classic's retirement, and will be redirected to the corresponding pages in the new ADS
 - If you need more help, check our [Quick Start guides](https://adsabs.github.io/help/quickstart), come to our live Office Hours (live streams and recordings available on our [YouTube channel](https://www.youtube.com/watch?v=QVewqgjUCJI)), or [email us](mailto:adshelp@cfa.harvard.edu)
 
 ## User accounts
@@ -69,6 +73,6 @@ To make it easier to start using the new ADS, the ADS team has prepared a range 
 - The [Quick Start guides](https://adsabs.github.io/help/quickstart) are a set of simple written tutorials to walk users through basic tasks in the new ADS, such as finding a paper using an author name and the publication year
 - The [FAQs](http://adsabs.github.io/help/faq/) and the [data and curation FAQs](http://adsabs.github.io/help/data_faq/) answer some frequently asked questions about the new system
 - Users who prefer a [short video demo](http://adsabs.github.io/help/) to reading documentation can find that at the front of our help pages
-- The ADS team will be hosting a biweekly series of talks throughout the spring, called ADS Office Hours, with the next scheduled for Tuesday, April 23rd. Talks start at 1pm US Eastern time, followed by time for questions or one-on-one demos until 3pm. Users can attend in person at the Center for Astrophysics in Cambridge, MA, USA, or watch the talks via live stream on [our YouTube channel](https://www.youtube.com/user/nasaads). Users wishing to join after the talk for the informal question and demo portion of the session can connect via [Google Hangouts](https://hangouts.google.com/hangouts/_/cfa.harvard.edu/adsofficehours). Recordings of the talks will also be available on our YouTube channel after the conclusion of the talk. The first talk, [an introduction to the new ADS](https://www.youtube.com/watch?v=QVewqgjUCJI), is now available.
+- The ADS team is hosting a monthly series of talks, called ADS Office Hours. Talks are 30 minutes and are designed to introduce users to new or advanced features on the website. The talks are followed by unstructured drop-in time for users to ask questions or get a demo of unfamiliar features. Users can attend in person at the Center for Astrophysics in Cambridge, MA, USA, or watch the talks via live stream on [our YouTube channel](https://www.youtube.com/user/nasaads). Users wishing to join after the talk for the informal question and demo portion of the session can connect via [Google Meet](http://bit.ly/ADS_Office_Hours). Recordings of the talks will be available on our YouTube channel after the conclusion of the talk. Previous talks are also posted on our [help pages](http://adsabs.github.io/help/videos). Upcoming talks are announced on our [Twitter feed](https://twitter.com/adsabs).
 
 And as always, we welcome questions and feedback from our users via [email](mailto:adshelp@cfa.harvard.edu).

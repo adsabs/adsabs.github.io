@@ -17,7 +17,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | ---------- | ---------- | --------------- | ----------------------- | ----------- |
 | abstract |  | y | y | the abstract of the record |
 | ack |  | y | y | Contains acknowledgements extracted from fulltexts (if identified in article). |
-| aff |  | y | y | List of author-provided affiliations in a given paper |
+| aff |  | y | y | List of provided affiliations in a given paper |
 | aff_id | | y | n | List of curated affiliation IDs in a given paper |
 | alternate_bibcode |  | y | y | List of alternate bibcodes for that document |
 | alternate_title |  | y | y | Alternate title, usually when the original title is not in English  |

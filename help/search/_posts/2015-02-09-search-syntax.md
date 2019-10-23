@@ -158,7 +158,7 @@ Field Name   | Syntax                      | Example                 | Notes
 Abstract/Title/Keywords     | abs:&ldquo;phrase"                | abs:&ldquo;dark energy"       | search for word or phrase in abstract, title and keywords
 Abstract     | abstract:&ldquo;phrase"           | abstract:&ldquo;dark energy"        | search for a word or phrase in an abstract only
 Acknowledgements | ack:&ldquo;phrase"            | ack:&ldquo;ADS"                     | search for a word or phrase in the acknowledgements
-Affiliation  | aff:&ldquo;phrase"                | aff:&ldquo;harvard"           | search for word or phrase in the raw, author-provided affiliation field
+Affiliation  | aff:&ldquo;phrase"                | aff:&ldquo;harvard"           | search for word or phrase in the raw, provided affiliation field
 Affiliation ID | aff_id:ID | aff_id:A00211 | search for an affiliation ID listed in the [Canonical Affiliations list](https://github.com/csgrant00/CanonicalAffiliations/blob/master/parent_child.tsv) in the *child* column. This field will soon also accept 9-digit ROR ids.
 Alternate Bibcode | alternate_bibcode:adsbib | alternate_bibcode:2003AJ....125..525J | finds articles that used to (or still have) this bibcode
 Alternate Title | alternate_title:&ldquo;phrase" | alternate_title:&ldquo;Gammablitz" | search for a word or phrase in an articles title if they have more than one, in multiple languages

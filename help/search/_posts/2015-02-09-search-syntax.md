@@ -156,9 +156,10 @@ This is a list of fields currently recognized by the ADS search engine and the p
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------
 Abstract/Title/Keywords     | abs:&ldquo;phrase"                | abs:&ldquo;dark energy"       | search for word or phrase in abstract, title and keywords
-Acknowledgements | ack:&ldquo;phrase"            | ack:&ldquo;ADS"                     | search for a word or phrase in the ackknowledgements
-Affiliation  | aff:&ldquo;phrase"                | aff:&ldquo;harvard"           | search for word or phrase in affiliation field
 Abstract     | abstract:&ldquo;phrase"           | abstract:&ldquo;dark energy"        | search for a word or phrase in an abstract only
+Acknowledgements | ack:&ldquo;phrase"            | ack:&ldquo;ADS"                     | search for a word or phrase in the acknowledgements
+Affiliation  | aff:&ldquo;phrase"                | aff:&ldquo;harvard"           | search for word or phrase in the raw, author-provided affiliation field
+Affiliation ID | aff_id:ID | aff_id:A00211 | search for an affiliation ID listed in the [Canonical Affiliations list](https://github.com/csgrant00/CanonicalAffiliations/blob/master/parent_child.tsv) in the *child* column. This field will soon also accept 9-digit ROR ids.
 Alternate Bibcode | alternate_bibcode:adsbib | alternate_bibcode:2003AJ....125..525J | finds articles that used to (or still have) this bibcode
 Alternate Title | alternate_title:&ldquo;phrase" | alternate_title:&ldquo;Gammablitz" | search for a word or phrase in an articles title if they have more than one, in multiple languages
 arXiv ID     | arXiv:arxivid               | arXiv:1108.0669         | finds a specific record using its arXiv id
@@ -181,6 +182,7 @@ First Author |^Last, F   <br>      author:&ldquo;^Last, F"   | ^huchra, j   <br>
 Fulltext     | full:&ldquo;phrase"               | full:&ldquo;gravitational waves" | search for word or phrase in fulltext, acknowledgements, abstract, title and keywords
 Grant        | grant:grant                 | grant:NASA              | finds papers with specific grants listed in them
 Identifiers  | identifier:bibcode          | identifier:2003AJ....125..525J | finds a paper using any of its identifiers, arXiv, bibcode, doi, etc.
+Institution | inst:&ldquo;abbreviation" | inst:&ldquo;Harvard U" | search the curated list of affiliations (e.g. STScI and "Space Telescope Science Institute" have been matched); the full list is in the *Abbrev* column in the [Canonical Affiliations list](https://github.com/csgrant00/CanonicalAffiliations/blob/master/parent_child.tsv)
 Issue        | issue:number                | issue:10                | search for papers in a certain issue
 Keywords     | keyword:&ldquo;phrase"            | keyword:sun             | search publisher- or author-supplied keywords
 Language     | lang:&ldquo;language"             | lang:korean             | search for papers with a given language

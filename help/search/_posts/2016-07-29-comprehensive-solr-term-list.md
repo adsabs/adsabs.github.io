@@ -17,7 +17,8 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | ---------- | ---------- | --------------- | ----------------------- | ----------- |
 | abstract |  | y | y | the abstract of the record |
 | ack |  | y | y | Contains acknowledgements extracted from fulltexts (if identified in article). |
-| aff |  | y | y | List of author affiliations in a given paper |
+| aff |  | y | y | List of provided affiliations in a given paper |
+| aff_id | | y | n | List of curated affiliation IDs in a given paper |
 | alternate_bibcode |  | y | y | List of alternate bibcodes for that document |
 | alternate_title |  | y | y | Alternate title, usually when the original title is not in English  |
 | arxiv_class |  | y | y | Which arXiv class was the paper submitted to |
@@ -62,6 +63,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | identifier |  | y | n | Abstract field that can be used to search an array of alternative identifiers for the record. May contain alternative bibcodes, DOIs and/or arxiv ids. |
 | ids_data | ? | ? | ? | https://github.com/adsabs/issues/issues/73 |
 | indexstamp |  | y | y | Date at which the document was indexed by Solr YYYY-MM-DD'T'hh:mm:ss.SSS'Z' |
+| inst | | y | n | List of curated affiliations (institutions) in a given paper |
 | isbn |  | y | tbd | ISBN of the publication (this applies to books) |
 | issn |  | y | tbd | ISSN of the publication (applies to journals - ie. periodical publications) |
 | issue |  | y | y | Issue number of the journal that includes the article |

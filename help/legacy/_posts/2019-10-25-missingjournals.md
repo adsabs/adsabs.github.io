@@ -3,9 +3,6 @@ layout: post
 title: "Journal issues needed by ADS"
 order: 4
 ---
-Journal issues needed by ADS
-============================
-
 The ADS is looking for donations of the following publications for
 scanning or for rescanning of color/gray scale images.
 

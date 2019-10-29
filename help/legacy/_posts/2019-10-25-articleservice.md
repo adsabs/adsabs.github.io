@@ -3,7 +3,6 @@ layout: post
 title: "Article Service"
 order: 1
 ---
-# Article Service
 The following query pages provide access to articles that have been scanned by the ADS. If you want to access the fulltext of every article from a particular journal (including the recent electronic articles available from publisher's web sites), please use the [Journal/Volume/Page](https://ui.adsabs.harvard.edu/paper-form) Query Page.
 
 Please note that all articles are copyrighted by the publisher of the article. They can only be downloaded for personal use. Any commercial use or large-scale downloading is prohibited. Please see the [Conditions of Use](https://adsabs.github.io/help/terms/) for more details.

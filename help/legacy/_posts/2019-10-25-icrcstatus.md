@@ -1,11 +1,8 @@
 ---
 layout: post
-title: "Status of the ICRC series in the ADS"
+title: "Status of the ICRC scans"
 order: 5
 ---
-Status of the ICRC series in the ADS
-====================================
-
 The ADS is in the process of scanning the ICRC conference proceedings
 series and making these publications available on-line. In order for
 this to proceed, we need permission from the copyright holder of each

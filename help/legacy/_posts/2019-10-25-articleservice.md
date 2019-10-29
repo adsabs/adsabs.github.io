@@ -61,5 +61,3 @@ view and print scanned pages of conference proceedings digitized by ADS.
 
 [Scanned Bulletins and Observatory Publications Service](http://articles.adsabs.harvard.edu/bulletins_service.html):
 view and print scanned pages of Bulletins and Observatory Publications digitized by ADS.
-
-The ADS is looking for donations of [missing publications]({{ site.baseurl }}/help/legacy/missingjournals) for scanning. If you can help, please let us know.

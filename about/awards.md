@@ -5,6 +5,8 @@ title: "ADS Awards and Recognition"
 
 This page describes some of the awards presented to the NASA Astrophysics Data System and to individual team members highlighting the importance of the ADS services to the scientific community.
 
+The **Smithsonian Institution** awarded the [2019 Secretary's Research Award](https://www.si.edu/scos/awards) in the category of *scholarly web site* to **Alberto Accomazzi** for the new ADS website.
+
 The **Center for Astrophysics \| Harvard & Smithsonian** commended ADS in the [CfA strategic plan for 2019--2024](https://www.cfa.harvard.edu/do/comms/CfA_Strategic_Plan_2019-2024.pdf): "A prime example of the CfA ground-breaking efforts in the data and literature arena is provided by the NASA-funded Astrophysics Data System (ADS), which provides a first-class interface to the astronomy and astrophysics literature, serving the international astronomical community as its primary connection to its literature."
 
 The **Association for Information Science & Technology** awarded the [2018 Best JASIST (Journal of the Association for Information Science & Technology) Paper Award](https://www.asist.org/news/kurtz-henneken-win-best-jasist-paper-award/) to  **Michael Kurtz** and **Edwin Henneken** for their paper, “Measuring Metrics---A 40-Year Longitudinal Cross-Validation of Citations, Downloads, and Peer Review in Astrophysics."

@@ -5,7 +5,7 @@ author: "Carolyn Stern Grant and Matthew Templeton"
 position: "ADS"
 category: blog
 label: general
-thumbnail: blog/images/blog_2019-11-13_example.png
+thumbnail: blog/images/blog_2020-01-15_example.png
 ---
 
 One of the features new to ADS since the new interface has launched is search and organization by institutional affiliation.  The 15 million publications in ADS have more than 35 million combined author affiliations.  The ADS has long wanted to have these data in a searchable format, and we introduced a new curated affiliation feature in early 2019. The project involved matching existing publisher-provided affiliation strings to unique, curated affiliation identifiers and institution strings, stored in an internal affiliation database, and constructing a pipeline to match the publisher-provided affiliation strings in incoming new publications to the appropriate entry in this database. Constructing the internal affiliation database took a lot of manual labor -- in fact, much more than the pipeline that resolves the affiliation strings -- and while this database will never be 100 percent complete, we’re hoping to use machine learning techniques to reduce the amount of human effort required to match affiliation data to their identifiers.
@@ -17,7 +17,7 @@ Users are reminded that while affiliation information is largely complete for re
 Affiliation data for papers are available via the “Affiliations” facet in ADS.  As an example, if you search for a first author, you’ll get a list of papers having that first author, and on the left-hand side of the results page you’ll see ways to refine those results -- who their coauthors are, whether the paper is in the astronomy, physics, or general database, whether it’s a refereed publication or not, and so on.  One of those facets is “Affiliations”, and by clicking it you’ll get a list of institutional affiliations sorted by the number of times that affiliation occurs in a paper with that first author.
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2019-11-13_facet.png" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2020-01-15_facet.png" />
 <br>
 <em>Example of the Affiliations facet</em>
 </div>
@@ -27,7 +27,9 @@ Using one of this blog’s coauthors, searching for first_author:“Templeton, M
 
 Affiliations in the ADS have been indexed in several different fields, with the intention of allowing multiple use cases. We have currently assigned identifiers with parent/child relationships, such as an academic department within a university. A child may have multiple parents, but we restrict a child from having children of its own. This has required a few modifications to remain useful. For instance, so that University of California schools can identify departments, we have assigned them a parent status, even though the "University of California System" should really be the parent level.  Likewise, NASA's Goddard Space Flight Center is at a parent level, as are France's CNRS institutions to allow for further subdivision.  Further work on a schema to allow more complex relationships between institutions is under development in conjunction with work by the [ROR Community](https://ror.org/).
 
-The Solr fields in ADS that store the affiliation information are:
+We've recently changed the way we index affiliations by introducing a new search field: "affil".  Affil combines all of the available affiliation data -- raw strings, canonical strings, IDs, and abbreviations into a single, searchable field.  It's intended to be a more comprehensive search of both raw strings and the enriched institution asssignments we've applied to our data.  So for example, searching for [affil:"UCB"] (https://ui.adsabs.harvard.edu/search/fl=identifier&q=affil:"UCB") will return papers where 'UCB' matches some part of the raw affiliation, but *also* return affiliations we've matched to the University of California at Berkeley (and also to "Catholic University of Brasilia, Brazil", either of which can be (de-)selected in the affiliation facet).
+
+In addition to this new field, we've maintained the original search terms for affiliations that we deployed last year:
 
 * aff: raw affiliation string, searchable word-by-word
 
@@ -62,7 +64,7 @@ We’ve entirely automated the process, so once the dictionary of affiliation st
 However, we’re getting close to the limit of what we can do with human classification without lots of effort.  Our most recent pass through our metadata has just over 4.6 million unclassified strings.  There are about 6000 unclassified affiliations that appear 100 times or more in the metadata and assigning them aff_ids would provide a lot of new information.  However, over 95 percent of unclassified affiliations occur fewer than 10 times, and **46 percent of affiliation strings only appear once in our affiliation metadata**.
 
 <div class="text-center">
-        <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019-11-13_matched.png" width="50%" /><img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019-11-13_unmatched.png" width="50%"/>
+        <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-01-15_matched.png" width="50%" /><img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-01-15_unmatched.png" width="50%"/>
 <em>Left: The vast majority of matched publisher-provided affiliation strings in our database appear at least 10 times. Right: XXX</em>
 </div>
 <br>

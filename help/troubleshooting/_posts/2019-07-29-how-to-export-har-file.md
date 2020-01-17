@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "How to generate a HAR File"
-order: 3
+title: "How to Generate a HAR File"
+order: 2
 ---
 
 ### What is a HAR file?
-HAR files are used to gather data from users' browser which can be used to troubleshoot network or resource issues.  This information includes detailed timing information about the requests made between the browser and the server.
+HAR files are used to gather data from users' browser which can be used to troubleshoot network or resource issues with the ADS support staff.  This information includes detailed timing information about the requests made between the browser and the server.
 
 ### Google Chrome
 

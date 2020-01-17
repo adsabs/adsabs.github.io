@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Exporting Results"
-order: 2
+title: "How to Export Results"
+order: 1
 ---
 
 ADS provides the ability to export results into various formats.  There are two options:

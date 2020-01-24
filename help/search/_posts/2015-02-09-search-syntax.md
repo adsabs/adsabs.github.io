@@ -166,6 +166,8 @@ arXiv ID     | arXiv:arxivid               | arXiv:1108.0669         | finds a s
 arXiv Class | arxiv_class:arxivclass       | arxiv_class:&ldquo;High Energy Physics - Experiment" | finds all arXiv pre-prints in the class specified
 Author       | author:&ldquo;Last, F"            | author:&ldquo;huchra, j"      | author name may include just lastname and initial
 Author (cont.)| author:&ldquo;Last, First [...]"  | author:&ldquo;huchra, john p" | an example of stricter author search (recommended)
+Author count | author_count:count | author_count:40 | find records that have a specific number of authors
+Author count (cont.) | author_count:[min_count TO max_count]      | author_count:[10 TO 100]       | find records that have a range of author counts
 Bibcode      | bibcode:adsbib              | bibcode:2003AJ....125..525J | finds a specific record using the [ADS bibcode]({{ site.baseurl }}/help/actions/bibcode)
 Bibliographic groups | bibgroup:name       | bibgroup:HST            | limit search to papers in HST bibliography (*)
 Bibliographic stem | bibstem:adsbibstem    | bibstem:ApJ             | find records that contain a specific bibstem in their bibcode

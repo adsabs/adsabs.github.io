@@ -98,7 +98,6 @@ We will divide the discussion by NASA’s Science Mission Directorate’s four s
 
 **Elsevier.**  Elsevier is the leading publisher of PS research articles. In addition to Icar we look at seven journals which primarily cover planetary and space science, with some overlap in earth science (in particular E&PSL). The high similarity of these journals with the AGU journals, along with the lower fraction of NASA articles suggests that the cultural differences are real and widespread.
 
-## Discussion
 Clearly there are cultural differences at play here. Astrophysics is the main outlier, for the historical reasons discussed above. Heliophysics mostly has followed the lead of astro. The study of solar system planets lies between astro and space physics or earth science, which are similar. The range of OA goes from 95+% to 20% and the green/gold OA distinction runs from almost all green to almost all gold.
 
 There is very little or no effect from different publishers, funding sources, or nationalities. In particular, NASA funding has had little or no measurable influence on whether an article is OA, or not. The use of PubSpace does not change this; the 2717 NASA related papers papers in ADS which are not OA would be reduced by less than 5%, were the full analysis to be made.

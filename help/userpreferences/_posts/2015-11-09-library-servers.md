@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Library Link Server"
-order: 4
+order: 1
 ---
 
 Users who have access to electronic resources through their library subscriptions can configure their user preferences so that the appropriate links to the fulltext will be provided when viewing a record in the ADS. If your library provides online linking services, and if it has provided the relevant information to ADS, all you have to do is select the proper entry in your preferences under [Library Link Server](https://ui.adsabs.harvard.edu/user/settings/librarylink).  If you find an entry for your institute, select it and click on the **Apply** button. If not, please contact your electronic resources librarian and request that they email the information about your institute's OpenURL server to us, at [adshelp@cfa.harvard.edu](mailto:adshelp@cfa.harvard.edu), so that we can include this in our menu selection.

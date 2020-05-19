@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "Summer AAS2 020"
+title: "Summer AAS 2020"
 order: 1
 ---
 

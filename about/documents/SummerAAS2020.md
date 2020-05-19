@@ -29,16 +29,16 @@ Visualizations and analysis tools
 
 
 
-Main search page:  https://ui.adsabs.harvard.edu/
+Main search page:  [https://ui.adsabs.harvard.edu/](https://ui.adsabs.harvard.edu/)
 
-About the ADS:  https://ui.adsabs.harvard.edu/about/
+About the ADS:  [https://ui.adsabs.harvard.edu/about/](https://ui.adsabs.harvard.edu/about/)
 
-Intro to the new ADS:  https://adsabs.github.io/help/videos/intro
+Intro to the new ADS:  [https://adsabs.github.io/help/videos/intro](https://adsabs.github.io/help/videos/intro)
 
-Using the API:  https://adsabs.github.io/help/api/
+Using the API:  [https://adsabs.github.io/help/api/](https://adsabs.github.io/help/api/)
 
-List of available search fields:  https://adsabs.github.io/help/search/comprehensive-solr-term-list
+List of available search fields:  [https://adsabs.github.io/help/search/comprehensive-solr-term-list](https://adsabs.github.io/help/search/comprehensive-solr-term-list)
 
-Getting to your library’s resources from ADS:  https://adsabs.github.io/help/userpreferences/library-servers
+Getting to your library’s resources from ADS:  [https://adsabs.github.io/help/userpreferences/library-servers](https://adsabs.github.io/help/userpreferences/library-servers)
 
-Find out what’s happening behind the scenes at ADS:  https://adsabs.github.io/blog/
+Find out what’s happening behind the scenes at ADS:  [https://adsabs.github.io/blog/](https://adsabs.github.io/blog/)

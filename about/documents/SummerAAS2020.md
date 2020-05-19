@@ -7,14 +7,17 @@ order: 1
 Welcome to the new ADS!  
 
 Who we are 
+
 Online since 1993, we serve as the main portal to the literature for astronomy research worldwide, indexing over 14 million publications with a total of over 120 million citations. We also have substantial holdings in planetary science, heliophysics, and physics.
 
 What we cover 
+
 Refereed journal articles, arXiv preprints, and major conference proceedings (astronomy, heliophysics, planetary science, physics)
 Gray literature, including minor conferences, technical reports, PhD theses (currently astronomy only, but considering an expansion to planetary science)
 Links to data sources (space-based and larger ground-based telescopes)
 
 Why use ADS
+
 Hand-curated literature in your field
 Accurate citation counts and metrics
 Links to publisher and arXiv articles, data 

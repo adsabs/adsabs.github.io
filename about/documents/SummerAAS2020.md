@@ -41,3 +41,5 @@ List of available search fields:  [https://adsabs.github.io/help/search/comprehe
 Getting to your library’s resources from ADS:  [https://adsabs.github.io/help/userpreferences/library-servers](https://adsabs.github.io/help/userpreferences/library-servers)
 
 Find out what’s happening behind the scenes at the ADS:  [https://adsabs.github.io/blog/](https://adsabs.github.io/blog/)
+
+Miss the classic interface? [https://ui.adsabs.harvard.edu/classic-form](https://ui.adsabs.harvard.edu/classic-form)

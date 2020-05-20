@@ -16,7 +16,7 @@ Refereed journal articles, arXiv preprints, and major conference proceedings (as
 Gray literature, including minor conferences, technical reports, PhD theses (currently astronomy only, but considering an expansion to planetary science)
 Links to data sources (space-based and larger ground-based telescopes)
 
-Why use ADS
+Why use the ADS
 
 Hand-curated literature in your field
 Accurate citation counts and metrics
@@ -41,4 +41,4 @@ List of available search fields:  [https://adsabs.github.io/help/search/comprehe
 
 Getting to your library’s resources from ADS:  [https://adsabs.github.io/help/userpreferences/library-servers](https://adsabs.github.io/help/userpreferences/library-servers)
 
-Find out what’s happening behind the scenes at ADS:  [https://adsabs.github.io/blog/](https://adsabs.github.io/blog/)
+Find out what’s happening behind the scenes at the ADS:  [https://adsabs.github.io/blog/](https://adsabs.github.io/blog/)

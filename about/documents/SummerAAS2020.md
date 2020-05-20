@@ -12,20 +12,19 @@ Online since 1993, we serve as the main portal to the literature for astronomy r
 
 What we cover 
 
-Refereed journal articles, arXiv preprints, and major conference proceedings (astronomy, heliophysics, planetary science, physics)
-Gray literature, including minor conferences, technical reports, PhD theses (currently astronomy only, but considering an expansion to planetary science)
-Links to data sources (space-based and larger ground-based telescopes)
+* Refereed journal articles, arXiv preprints, and major conference proceedings (astronomy, heliophysics, planetary science, physics)
+* Gray literature, including minor conferences, technical reports, PhD theses (currently astronomy only, but considering an expansion to planetary science)
+* Links to data sources (space-based and larger ground-based telescopes)
 
 Why use the ADS
 
-Hand-curated literature in your field
-Accurate citation counts and metrics
-Links to publisher and arXiv articles, data 
-Full text searching
-Creation of personal libraries and easy 
-export to bibliography managers
-ORCID integration
-Visualizations and analysis tools
+* Hand-curated literature in your field
+* Accurate citation counts and metrics
+* Links to publisher and arXiv articles, data 
+* Full text searching
+* Creation of personal libraries and easy export to bibliography managers
+* ORCID integration
+* Visualizations and analysis tools
 
 
 

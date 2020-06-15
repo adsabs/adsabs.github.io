@@ -2,7 +2,7 @@
 
 We at the Astrophysics Data System want our data to be accessible to everyone. We make every effort to be compliant with Section 508 and the W3C accessibility guidelines.
 
-Our website currently meets WCAG 2.0 A & AA baselines. We are continuing to improve the experience for users needing assistive technologies or have trouble accessing our data.
+Our web application strives to meet WCAG 2.0 A & AA baselines. We are continuing to improve the experience for users needing assistive technologies or have trouble accessing our data.
 
 We follow the policies and guidelines listed here:
 

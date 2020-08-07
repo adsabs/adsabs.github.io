@@ -11,16 +11,7 @@ The ADS project develops and maintains services to facilitate the discovery and 
 
 ## Who we are looking for 
 
-The ADS project has an opening for a [UX-aware front-end developer](https://www.cfa.harvard.edu/hr/postings/19-69.html) to join its dynamic team of eight software developers and three curators. The ADS has built a highly scalable and feature-rich platform using a modern development stack: a custom build of the open-source search engine Solr, a highly responsive UI engineered on top of React, a high performance distributed brokerage system, and cloud-based hosted services with Kubernetes in Amazon Web Services. The developers will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
-
-We're looking for a front-end devloper interested in designing and implementing key components of the user interface, including user profiles, notifications, and search capabilities. The successful candidate will be responsible for designing visually appealing, intuitive, and accessible user interfaces that help to make our set of complex APIs simple to interact with and understand; developing and maintaining user stories, wireframes, specifications and other design tools/documentation; communicating with users to understand their needs and use that knowledge to drive the design process; and collaborating with senior developers to help implement components of the ADS user interface as a web application. ([apply here](http://www.usajobs.gov/GetJob/ViewDetails/540960000))
-
-A few things to keep in mind:
-
-* Depending on the candidate's experience and education, we can hire at a variety of seniority levels, which explains the wide salary range advertised in the job postings.
-* We are very accommodating with flex time and part-time telecommuting, but these positions require the employees to be based in Cambridge, MA.
-* Candidates can qualify for the positions based on either education, experience, or a mixture of both.  If you don't have the academic credentials but have relevant on the job experience, you should apply.
-* Both US citizens and foreign nationals are welcome to apply.  Our institution is able to sponsor the appropriate work VISA if one is required. 
+We don't currently have any job openings! If you'd like to be notified of future postings, [email us](mailto:adshelp@cfa.harvard.edu?Subject=Notify%20me%20of%20future%20job%20postings).
 
 ## What we offer
 

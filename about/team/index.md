@@ -6,7 +6,7 @@ title: "Team"
 The ADS personnel are:
 
 - [Dr. Alberto Accomazzi](../team/team/aaccomazzi.html) - PI & Program Manager  
-- [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist  
+- [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist Emeritus 
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingest and Curation  
 - [Edwin Henneken](../team/team/ehenneken.html) - System Development and Operations / Content & Curation Lead
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  

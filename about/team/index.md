@@ -14,7 +14,7 @@ The ADS personnel are:
 - [Stephen McDonald](../team/team/smcdonald.html) - System Development and Operations  
 - [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Back-End Development (applications & services)  
-- [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Back-End Development (pipelines)  
+- [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Software Development & Operations Lead
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Ingest and Curation Support  
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ingest, ORCID) & User Support  
 

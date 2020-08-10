@@ -6,7 +6,7 @@ title: "Team"
 The ADS personnel are:
 
 - [Dr. Alberto Accomazzi](../team/team/aaccomazzi.html) - PI & Program Manager  
-- [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist  
+- [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist Emeritus 
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingest and Curation  
 - [Edwin Henneken](../team/team/ehenneken.html) - System Development and Operations / Content & Curation Lead
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
@@ -14,10 +14,9 @@ The ADS personnel are:
 - [Stephen McDonald](../team/team/smcdonald.html) - System Development and Operations  
 - [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Back-End Development (applications & services)  
-- [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Back-End Development (pipelines)  
+- [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Software Development & Operations Lead
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Ingest and Curation Support  
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ingest, ORCID) & User Support  
-- [Kris Bukovi](../team/team/kbukovi.html) - Back-End Development (text mining)  
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 

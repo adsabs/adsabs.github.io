@@ -141,29 +141,13 @@
       </ul>
     </div>
   </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="legacy-help">
-      <a class="collapsed" role="button" data-toggle="collapse"  href="#legacy-items" aria-expanded="false" aria-controls="collapseThree">
-        <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Legacy Services </h3>
-        <a>
-    </div>
-    <div id="legacy-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="legacy-help">
-      <ul class="list-group">
-        {% assign posts = (site.categories.legacy | sort:"order") %} {% for post in posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-        </a>
-        {% endif %} {% endfor %}
-      </ul>
-    </div>
-  </div>
 </div>
 
     <h3 class="{% if '/faq/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/whats_new">What's New</a></h3>
     <h3 class="{% if '/faq/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/faq">Frequently Asked Questions </a></h3>
     <h3 class="{% if '/data_faq/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/data_faq">Data and Curation FAQs </a></h3>
     <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/api">Using the ADS API </a></h3>
+	<h3 class="{% if '/legacy/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/legacy">Legacy Services </a></h3>
     <h3 class="{% if '/logos/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/logos">Logos </a></h3>
     <h3 class="{% if '/privacy/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/privacy">Privacy Policy</a></h3>
     <h3 class="{% if '/terms/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/terms">Terms of Use</a></h3>

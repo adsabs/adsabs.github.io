@@ -11,7 +11,7 @@ We follow the policies and guidelines listed here:
 - [Web Content Accessibility Guidelines (WCAG)][wcag]
 - [Section 508 of the Rehabilitation Act of 1973][508]
 
-If you or someone else is having issues accessing our data or cannot perform certain actions on our website, please let us know at <a href="mailto:adshelp@harvard.edu">adshelp@harvard.edu</a>.
+If you or someone else is having issues accessing our data or cannot perform certain actions on our website, please let us know at <a href="mailto:adshelp@cfa.harvard.edu">adshelp@cfa.harvard.edu</a>.
 
 <!-- Links -->
 

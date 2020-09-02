@@ -8,7 +8,7 @@ label: general
 thumbnail: blog/images/citations-journals-pt2_1.png
 ---
 
-This is the second of a series of blog posts measuring the journals that publish astronomy research articles, using citation statistics with a number of different indices. In this post, we examine the performance of individual journals with respect to each other over time. We use the data described and published in [Part 1](http://adsabs.github.io/blog/citations-journals), which looked at some of the integrated properties of the sample, such as citation counts and h-indices. In Part 3, we will look into some of the properties of the indices.
+This is the second of a series of blog posts measuring the journals that publish astronomy research articles, using citation statistics with a number of different indices. In this post, we examine the performance of individual journals with respect to each other over time. We use the data described and published in [Part 1](../blog/citations-journals), which looked at some of the integrated properties of the sample, such as citation counts and h-indices. In Part 3, we will look into some of the properties of the indices.
 
 ### A. Ranked Lists
 We begin by creating ranked lists of the 50 journals in the main sample for each of the 5 bibliometric indicators: number of articles, number of citations to these articles, h (Hirsch) index, i10 (number of articles with 10 or more citations), and i100 (number of articles with 100 or more citations). We do this for each of the 20 years (1997-2016) of the study. The appendix, [published on Zenodo (DOI: 10.5281/zenodo.1400692)](https://doi.org/10.5281/zenodo.1400692), contains all the lists.
@@ -39,7 +39,7 @@ There are (at least) three main takeaways from looking at these lists:
 
 ### B. Winners and Losers
 
-As shown in Figure 1 of [Part 1](http://adsabs.github.io/blog/citations-journals), the astronomy literature has been growing over the past two decades. While astronomy has spread its influence into related areas (and this is the point of that figure), the core astronomy literature can be taken as being within the ~50 major international journals of physics, astrophysics, and geophysics in our main sample (listed in Part 1). The growth of this literature has been a steady 4% per year, doubling over the period, consistent with long term trends in many disciplines.
+As shown in Figure 1 of [Part 1](../blog/citations-journals), the astronomy literature has been growing over the past two decades. While astronomy has spread its influence into related areas (and this is the point of that figure), the core astronomy literature can be taken as being within the ~50 major international journals of physics, astrophysics, and geophysics in our main sample (listed in Part 1). The growth of this literature has been a steady 4% per year, doubling over the period, consistent with long term trends in many disciplines.
 
 Not all journals have participated in this growth equally. Here we look at the biggest winners and losers in terms of market share, which we define as number of articles published. In the figures we show the changes in market share for the selected journals, defined as the number of articles published by the journal divided by the number articles published by the 50 in-sample journals (shown in Figure 1, Part 1).
 

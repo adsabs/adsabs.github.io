@@ -38,9 +38,9 @@ More information is available on the
 
 The ADS project still has four openings for software developers in its group:
 
-  * [Front-end developer position](https://adsabs.github.io/jobs/front-end.html)
-  * [Back-end developer positions (2)](https://adsabs.github.io/jobs/back-end.html)
-  * [Dev-Ops engineer position](https://adsabs.github.io/jobs/dev-ops.html)
+  * [Front-end developer position](../jobs/front-end.html)
+  * [Back-end developer positions (2)](../jobs/back-end.html)
+  * [Dev-Ops engineer position](../jobs/dev-ops.html)
 
 If you are interested in contributing to our mission and working in the 
 world's largest and most diverse astrophysical institution in the world,

@@ -9,7 +9,7 @@ thumbnail: blog/images/blog_2020-04-06_nasa_oa_results.png
 ---
 
 ## Introduction
-NASA has long been a (some would say the) [leader in providing open access to scientific data](https://adsabs.github.io/blog/open-access-and-nasa-data). This commitment continues with the recent whitepaper: [NASA’s Science Mission Directorate’s Strategy for Data Management and Computing for Groundbreaking Science 2019-2024](https://smd-prod.s3.amazonaws.com/science-red/s3fs-public/atoms/files/SDMWG_Full%20Document_v3.pdf), by the Strategic Data Management Working Group, approved by Thomas H. Zurbuchen, Associate Administrator for the Science Mission Directorate (SMD), on 17 Dec 2019.
+NASA has long been a (some would say the) [leader in providing open access to scientific data](../blog/open-access-and-nasa-data). This commitment continues with the recent whitepaper: [NASA’s Science Mission Directorate’s Strategy for Data Management and Computing for Groundbreaking Science 2019-2024](https://smd-prod.s3.amazonaws.com/science-red/s3fs-public/atoms/files/SDMWG_Full%20Document_v3.pdf), by the Strategic Data Management Working Group, approved by Thomas H. Zurbuchen, Associate Administrator for the Science Mission Directorate (SMD), on 17 Dec 2019.
 
 A portion of the whitepaper discusses the scholarly literature and NASA’s strategy for improving access to it. In this blog I will discuss the current status of Open Access (OA) for NASA refereed research articles. First the relevant excerpts from the 23-page document:
 

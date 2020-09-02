@@ -13,7 +13,7 @@ For many scientists, it's all about the numbers and when it comes to evaluating 
 [Bumblebee](https://ui.adsabs.harvard.edu/#index/) can calculate metrics on the results of any search but in this post, we will show how to calculate them for an individual author.
 
 
-To get started, go to [ADS Bumblebee](https://ui.adsabs.harvard.edu) and perform an [author query](http://adsabs.github.io/help/search/search-syntax/):
+To get started, go to [ADS Bumblebee](https://ui.adsabs.harvard.edu) and perform an [author query](../help/search/search-syntax/):
 
 <div class="text-center">
     <img src="{{ site.baseurl }}/blog/images/blog_2015-10-21_image02.png" class="img-responsive"/>
@@ -40,7 +40,7 @@ On the left, the present value of many popular indices are calculated. Mouse ove
 
 In the near future, you will be able to save/print the pages showing the metrics overview. In addition, we will provide permanent links to the metrics results pages so that these results can be more easily shared.
 
-Please don’t take the inclusion or exclusion of a particular index as an indication on our part of its usefulness.  For example, one of the most popular and widely used metrics is the h-index.  It is also a highly controversial index. Using one metric to describe productivity is like using one moment to characterize a probability distribution, so please take these numbers with a grain of salt.  If you are interested in these topics or are on any search committees, we encourage you to explore some more esoteric indices such as the [read10, tori, and riq](http://adsabs.github.io/help/actions/analyze/), [which have been invented by our own team members](http://arxiv.org/abs/1209.2124).
+Please don’t take the inclusion or exclusion of a particular index as an indication on our part of its usefulness.  For example, one of the most popular and widely used metrics is the h-index.  It is also a highly controversial index. Using one metric to describe productivity is like using one moment to characterize a probability distribution, so please take these numbers with a grain of salt.  If you are interested in these topics or are on any search committees, we encourage you to explore some more esoteric indices such as the [read10, tori, and riq](../help/actions/analyze/), [which have been invented by our own team members](http://arxiv.org/abs/1209.2124).
 
 These metrics are also available through our API, for those of you who want to access them programmatically. Details about our API can be found in the [github repo](https://github.com/adsabs/adsabs-dev-api) and on the [discussion group](https://groups.google.com/forum/#!forum/adsabs-dev-api).
 

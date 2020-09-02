@@ -4,7 +4,7 @@ title: "Asclepias - Enabling software citation & discovery workflows"
 author: "Edwin Henneken"
 position: "ADS Developer"
 category: blog
-label: technical
+label: technical-posts
 thumbnail: blog/images/blog_2016-09-19_adsbumblebee.png
 ---
 Soon, if not already, the research lifecycle will be fully digital. Every stage can be captured by one or more digital objects, each of which carries specific knowledge with regards to that stage. The most obvious inhabitant of this digital cosmos is the scholarly publication, but there are many more species, ranging from observation proposals, datasets, software to posters and presentations. With repositories like mission data archives, [Figshare](https://figshare.com/) and [Zenodo](https://zenodo.org/), all of these objects can, in principle, be made discoverable and citable. In this blog we focus on one particular digital object: software. Enter ***Asclepias***! Asclepias, “*Enabling software citation and discovery workflows*”, is a project funded through a grant from the Alfred P. Sloan Foundation to the American Astronomical Society (AAS), and it involves collaboration between the AAS, Zenodo, the ADS and Thomas Robitaille as freelancer. Why this collaboration? It reflects the fact that no one stakeholder can “solve” the problem of software citation.

@@ -30,7 +30,7 @@ For more information, please see:
 
   * [The ADS User Interface](https://ui.adsabs.harvard.edu)
   * [The ADS Application Programming Interface](https://github.com/adsabs/adsabs-dev-api)
-  * [The ADS help pages](http://adsabs.github.io/help/)
+  * [The ADS help pages](../help/)
 
 
 

@@ -21,7 +21,7 @@ The [setup page](https://ui.adsabs.harvard.edu/user/settings/myads) can be found
 </div>
 <br>
 
-A quick overview: emails are generated daily (on weekdays) and/or weekly (over the weekend). Daily emails let you know about new arXiv papers, while the weekly emails are geared towards notifications of newly published articles. If you used the Classic myADS, all of the notifications you had set up there have their counterparts in the new myADS, though there are some small differences. We’ve also added one additional notification type, designed to allow for more general notifications. Full documentation for the new myADS is available [here](http://adsabs.github.io/help/userpreferences/myads).
+A quick overview: emails are generated daily (on weekdays) and/or weekly (over the weekend). Daily emails let you know about new arXiv papers, while the weekly emails are geared towards notifications of newly published articles. If you used the Classic myADS, all of the notifications you had set up there have their counterparts in the new myADS, though there are some small differences. We’ve also added one additional notification type, designed to allow for more general notifications. Full documentation for the new myADS is available [here](../help/userpreferences/myads).
 
 ## Library Collaborators
 One of the most-requested features for ADS libraries has now arrived: the ability to share library editing privileges with collaborators. There are 4 privilege levels available:

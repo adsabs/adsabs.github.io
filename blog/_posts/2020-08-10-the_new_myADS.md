@@ -17,7 +17,7 @@ Nowadays, it’s challenging to keep up with astronomical research given that th
 myADS provides four main types of notifications:
 
 - arXiv: Receive the daily list of new papers published in [arXiv](https://arxiv.org/) in a given set of categories (e.g., [Earth and Planetary Astrophysics](https://arxiv.org/list/astro-ph.EP/new) and/or [Solar and Stellar Astrophysics](https://arxiv.org/list/astro-ph.SR/new)). If an optional list of keywords is provided (e.g., *spectroscopy OR chemical abundances*), the system will automatically split the list in two: papers that match the keywords, and other articles in the selected categories. This will help you to identify the most relevant papers while still being able to browse the full list.
-- Authors: Be notified of new publications from certain authors, especially from collaborators and colleagues that work in your area of interest. Authors can be disambiguated by using their [ORCID iDs](https://orcid.org/). (If you haven’t yet, please [register your ORCiD with ADS](https://adsabs.github.io/help/orcid/claiming-papers).)
+- Authors: Be notified of new publications from certain authors, especially from collaborators and colleagues that work in your area of interest. Authors can be disambiguated by using their [ORCID iDs](https://orcid.org/). (If you haven’t yet, please [register your ORCiD with ADS](../help/orcid/claiming-papers).)
 - Citations: Keep track of the citations of a particular author or set of authors on a weekly basis. The most popular use case is to keep an eye on what papers are citing your own work.
 - Keywords: Follow the most popular, recent, and cited papers that match a certain list of keywords (e.g., *gravitational waves OR cosmic microwave background*). 
 
@@ -72,7 +72,7 @@ Once queries are set up as myADS notifications, the system will automatically ad
 
 The weekly email will include only the top five articles for each notification (although the notification title is a link to the full list in ADS), while the daily email has a larger limit, although you can always reduce it by using the topn operator.
 
-Notification emails from the classic myADS service were disabled on July 11, so now is the time to [learn how to create your own myADS email notifications](https://adsabs.github.io/help/userpreferences/myads) to stay on top of the latest news in your field with ADS! And as always, if you’d like to share any feedback about the new service, do not hesitate to [drop us a line](mailto:adshelp@cfa.harvard.edu) or tweet us [@adsabs](https://twitter.com/adsabs).
+Notification emails from the classic myADS service were disabled on July 11, so now is the time to [learn how to create your own myADS email notifications](../help/userpreferences/myads) to stay on top of the latest news in your field with ADS! And as always, if you’d like to share any feedback about the new service, do not hesitate to [drop us a line](mailto:adshelp@cfa.harvard.edu) or tweet us [@adsabs](https://twitter.com/adsabs).
 
 *This article was originally published on [AstroBetter](https://www.astrobetter.com/blog/2020/08/10/introducing-the-new-myads/).*
 

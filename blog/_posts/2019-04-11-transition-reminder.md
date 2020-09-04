@@ -5,7 +5,7 @@ author: "Kelly Lockhart"
 position: "ADS"
 category: blog
 label: news
-thumbnail: img/import_help_02.png
+thumbnail: ../help/img/import_help_02.png
 ---
 
 ### Update (September 11, 2019)
@@ -32,7 +32,7 @@ The new ADS and Classic have separate user databases, which means that user acco
 As with user accounts, libraries in Classic and the new ADS are stored in different databases and will not be transferred automatically. However, we do offer a tool to help import libraries from the old system into the new one. After creating a new user account and logging in, users can link their old account to their new one and [import their libraries](../help/libraries/legacy-importing) using the import tool. There are several things to note about the import tool: all libraries in the old account will be imported, though unwanted libraries may be deleted after import. Also, the tool imports libraries, it does not link them, so changes made to libraries in the old system after import will not propagate to the new one. Other guidelines for using this tool can be found on the [help page](../help/libraries/legacy-importing).
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/img/import_help_02.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/help/img/import_help_02.png" />
 <em>Import Classic libraries into the new ADS</em>
 </div>
 <br>

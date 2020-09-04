@@ -5,7 +5,7 @@ order: 1
 ---
 
 <figure>
-   <img src="/img/orcid-add.gif"  class="img-responsive" alt="a short animated image showing the orcid claiming process">
+   <img src="/help/img/orcid-add.gif"  class="img-responsive" alt="a short animated image showing the orcid claiming process">
 </figure>
 
 

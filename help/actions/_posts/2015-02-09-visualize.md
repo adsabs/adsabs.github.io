@@ -8,7 +8,7 @@ order: 4
 ### Author Network
 The author network detects **groups of authors** and **connections between those groups** within a set of results.
 
-<img src="{{site.baseurl}}/img/author_network.png" alt="author network" class="img-responsive">
+<img src="{{site.baseurl}}/help/img/author_network.png" alt="author network" class="img-responsive">
 <i>An image of the author network for John Huchra with the link overlay activated. </i>
 <br/>
 
@@ -34,7 +34,7 @@ To get an at-a-glance overview of a scientist’s career, search “author:LastN
 ### Paper Network
 The paper network detects **groups of papers** based on **shared references** between those papers. In general, papers with many shared references will tend to have similar topics.
 
-<img src="{{site.baseurl}}/img/paper-network.png" alt="paper network" class="img-responsive">
+<img src="{{site.baseurl}}/help/img/paper-network.png" alt="paper network" class="img-responsive">
 <i>Paper network for John Huchra.</i>
 <br/>
 
@@ -56,7 +56,7 @@ Clicking on a group will also show you in the right pane the most commonly refer
 ### Results Graph
 When you look at a list of ADS search results, you can sort by date published, by citation count, or by recent popularity of the article in ADS, but you cannot see all of these dimensions at once, and you cannot easily see outliers. The results graph is a customizable scatter chart that allows you to assign values to the x and y axes as well as to the radius of the circle representing a paper.
 
-<img src="{{site.baseurl}}/img/scatter-plot.png" class="img-responsive">
+<img src="{{site.baseurl}}/help/img/scatter-plot.png" class="img-responsive">
 
 #### How to use it
 
@@ -71,7 +71,7 @@ The default graph shows the [recent views](../actions/analyze#recent-views) (the
 ### Word Cloud
 The word cloud shows you **frequently appearing** and **unique words** in your search results.
 
-<img src="{{site.baseurl}}/img/word-cloud.png" class="img-responsive">
+<img src="{{site.baseurl}}/help/img/word-cloud.png" class="img-responsive">
 
 #### How the word cloud is made
 The word cloud takes words from the titles and abstracts of your search results, counts their frequencies and compares them to the same word's frequency across the entire ADS corpus.
@@ -83,5 +83,5 @@ The word cloud takes words from the titles and abstracts of your search results,
 ### Instructions on Downloading Graphics as High-Quality PNGS in Chrome
 1. <a href="https://nytimes.github.io/svg-crowbar/"> Install the SVG Crowbar 2 Bookmarklet</a>
 2. Open the graph in ADS (currently the paper and author networks have the best support)
-3. Click the SVG Crowbar icon, you will see something that looks a bit messy, like this: <img src="{{site.baseurl}}/img/svg-crowbar.png" class="img-responsive">
+3. Click the SVG Crowbar icon, you will see something that looks a bit messy, like this: <img src="{{site.baseurl}}/help/img/svg-crowbar.png" class="img-responsive">
 4. Click on the two bottom buttons: <b> #network-viz-main-chart</b> to download the main chart, and <b>#network-viz-time-series</b> to download the accompanying time series graph.

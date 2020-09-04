@@ -10,7 +10,7 @@ There are two ways to create an ADS library:
 
   2. Go the **My Account** drop down and select **ADS Libraries**. Press the **Create a library** button.
 
-<img class="img-responsive" src="/img/library_screenshot.png" alt="a screenshot of the ads search results interface showing the ads libraries button"/>
+<img class="img-responsive" src="/help/img/library_screenshot.png" alt="a screenshot of the ads search results interface showing the ads libraries button"/>
 
 It is possible to modify the name and description of the library you have created. To do this, simply navigate to the ADS Libraries page from the **My Account** drop down, at the top right of the web interface. Once there, you can select your library of interest, and press **edit** on the attribute you would like to modify.
 

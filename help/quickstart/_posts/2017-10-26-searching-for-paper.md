@@ -34,7 +34,7 @@ We recommend that you use the field tags (e.g. *author:*) when searching for a k
 4. Press Return or click the Search button to begin the search.
 
 <figure>
-   <img src="/img/author.gif"  class="img-responsive" alt="a short
+   <img src="/help/img/author.gif"  class="img-responsive" alt="a short
    animated image showing querying by author and year">
 </figure>
 
@@ -44,7 +44,7 @@ Follow the same procedure as for a known author, but to trigger the first-author
 Note: for a first-author search using the ^ operator, you do not have to specify the author tag. Typing *^last_name* is an abbreviation for *author:”^last_name”* and will produce the expected results.
 
 <figure>
-   <img src="/img/caret_firstauthor.gif"  class="img-responsive" alt="a short
+   <img src="/help/img/caret_firstauthor.gif"  class="img-responsive" alt="a short
    animated image showing querying by first author using the caret operator">
 </figure>
 
@@ -52,7 +52,7 @@ Note: for a first-author search using the ^ operator, you do not have to specify
 If your search by author and/or publication year returns too many results, you can use [interactive filtering]({{ site.baseurl }}/help/search/filter) to narrow down the results instead of editing your original search query. Filtering by author or publication is often useful when a paper is known. 
 
 <figure>
-   <img src="/img/filter-facet.png"  class="img-responsive">
+   <img src="/help/img/filter-facet.png"  class="img-responsive">
 </figure>
 
 

@@ -11,11 +11,11 @@ If you have an account in our legacy system, <a href="http://adsabs.harvard.edu"
 
 First login with your normal credentials on the new ADS, and then navigate to the *Customize Settings* page:
 
-<img class="img-responsive" src="/img/import_help_01.png" alt="a screenshot of the location of the Customize Settings button"/>
+<img class="img-responsive" src="/help/img/import_help_01.png" alt="a screenshot of the location of the Customize Settings button"/>
 
 Once there, select **Import Libraries** in the left panel:
 
-<img class="img-responsive" src="/img/import_help_02.png" alt="a screenshot of ADS Classic library import with the form filled in"/>
+<img class="img-responsive" src="/help/img/import_help_02.png" alt="a screenshot of ADS Classic library import with the form filled in"/>
 
 If you are linking an ADS Classic account, you will need to specify your email, your password used for your ADS Classic account, and the mirror at which you have an account. 
 
@@ -27,15 +27,15 @@ If you need to link a different account, then simply press **Sign into a new Cla
 
 Once you have successfully connected your ADS Classic account with the new ADS, you now have the option to import your ADS Classic libraries into the new ADS. 
 
-<img class="img-responsive" src="/img/import_help_03.png" alt="a screenshot after the Import all Classic libraries button has been pressed"/>
+<img class="img-responsive" src="/help/img/import_help_03.png" alt="a screenshot after the Import all Classic libraries button has been pressed"/>
 
 You can see my original ADS Classic library now exists in the new ADS:
 
 **ADS Classic**
-<img class="img-responsive" src="/img/import_help_04.png" alt="a screenshot of the library in ADS Classic"/>
+<img class="img-responsive" src="/help/img/import_help_04.png" alt="a screenshot of the library in ADS Classic"/>
 
 **The new ADS**
-<img class="img-responsive" src="/img/import_help_05.png" alt="a screenshot of the library in the new ADS"/>
+<img class="img-responsive" src="/help/img/import_help_05.png" alt="a screenshot of the library in the new ADS"/>
 
 
 

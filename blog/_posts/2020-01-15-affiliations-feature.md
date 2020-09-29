@@ -35,9 +35,9 @@ In addition to this new field, we've maintained the original search terms for af
 
 * aff: raw affiliation string, searchable word-by-word
 
-* aff_id: a string containing one or more of the affiliation IDs listed in our [mapping of organizations to identifiers](https://github.com/csgrant00/CanonicalAffiliations/blob/master/parent_child.tsv).  This field will soon also accept 9-digit ROR IDs.
+* aff_id: a string containing one or more of the affiliation IDs listed in our [mapping of organizations to identifiers](https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv).  This field will soon also accept 9-digit ROR IDs.
 
-* inst: the abbreviated institution name (e.g. "U Adelaide") listed in our [mapping of organizations to identifers](https://github.com/csgrant00/CanonicalAffiliations/blob/master/parent_child.tsv).
+* inst: the abbreviated institution name (e.g. "U Adelaide") listed in our [mapping of organizations to identifers](https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv).
 
 So, you could search for [aff:Harvard](https://ui.adsabs.harvard.edu/search/fl=identifier&q=aff:"Harvard") and get back all affiliations that contain Harvard in the affiliation string -- including "Harvard Street".  To ensure you get only the University, you could search for [aff:&ldquo;Harvard University"](https://ui.adsabs.harvard.edu/search/fl=identifier&q=aff:"Harvard%20University") but that would return only affiliation strings with that exact phrase, excluding "Harvard Univ.", "Harvard U", etc.  Better would be to use the identifier for Harvard University by searching [aff_id:A00211](https://ui.adsabs.harvard.edu/search/fl=identifier&q=aff_id:A00211).  This returns all affiliations which contain Harvard University at the parent level. Best yet would be to search by institution, [inst:&ldquo;Harvard U"](https://ui.adsabs.harvard.edu/search/fl=identifier&q=inst:"Harvard U")  which returns affiliations which contain Harvard University at the parent level, plus all affiliations for all of Harvard University's children.
 

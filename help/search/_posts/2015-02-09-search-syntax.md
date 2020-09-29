@@ -115,6 +115,22 @@ Synoym expansion also applies to author names, which provide a way to account fo
 
 As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/search/filter).
 
+### Affiliation Searches
+
+Affiliations in ADS have been indexed in several different search fields, with the intention of allowing multiple use cases. We have currently assigned affiliation identifiers allowing for parent/child relationships, such as an academic department within a university. Note that a child may have multiple parents, but we restrict a child from having children of its own.  The list of recognized institutions is available from our <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">Canonical Affiliation repository</a> on Github.
+
+Example&nbsp;Query                        | Results
+--------------------------------------|-------------------------------------------------------------------
+aff:&ldquo;UCLA"                            | Searches the raw affiliation string, searchable word-by-word
+inst:&ldquo;UCLA" | Searches the canonical institution name listed in our mapping of organizations to identifiers, which returns all variations of UCLA (e.g. UCLA; University of California, Los Angeles; University of California - Los Angeles)
+
+For a breakdown to department level:
+- Use the "Institutions" filter in the left panel of search results
+- Use parent/child syntax as defined in our list of Canonical Affiliations linked above (e.g. inst:&ldquo;UCLA/IGPP")
+
+Users are reminded that while affiliation information is largely complete for recent refereed literature, not all records contain an affiliation; therefore, 
+searching by affiliation alone will inherently be incomplete. We strongly recommend combining affiliation searches with author searches for best results.
+
 ### Astronomical Objects and Position Search
 
 The query modifier `object:` in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky ("cone search"). The cone search also makes use of services offered by SIMBAD and NED. 
@@ -159,7 +175,7 @@ Abstract/Title/Keywords     | abs:&ldquo;phrase"                | abs:&ldquo;dar
 Abstract     | abstract:&ldquo;phrase"           | abstract:&ldquo;dark energy"        | search for a word or phrase in an abstract only
 Acknowledgements | ack:&ldquo;phrase"            | ack:&ldquo;ADS"                     | search for a word or phrase in the acknowledgements
 Affiliation  | aff:&ldquo;phrase"                | aff:&ldquo;harvard"           | search for word or phrase in the raw, provided affiliation field
-Affiliation ID | aff_id:ID | aff_id:A00211 | search for an affiliation ID listed in the [Canonical Affiliations list](https://github.com/csgrant00/CanonicalAffiliations/blob/master/parent_child.tsv) in the *child* column. This field will soon also accept 9-digit ROR ids.
+Affiliation ID | aff_id:ID | aff_id:A00211 | search for an affiliation ID listed in the [Canonical Affiliations list](https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv) in the *child* column. This field will soon also accept 9-digit ROR ids.
 Alternate Bibcode | alternate_bibcode:adsbib | alternate_bibcode:2003AJ....125..525J | finds articles that used to (or still have) this bibcode
 Alternate Title | alternate_title:&ldquo;phrase" | alternate_title:&ldquo;Gammablitz" | search for a word or phrase in an articles title if they have more than one, in multiple languages
 arXiv ID     | arXiv:arxivid               | arXiv:1108.0669         | finds a specific record using its arXiv id

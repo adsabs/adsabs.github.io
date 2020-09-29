@@ -2,7 +2,7 @@
 layout: post
 ---
 
-<h2>Welcome to to the ADS Help Pages</h2>
+<h2>Welcome to the ADS Help Pages</h2>
 
 <p>This site is a place to find <b>documentation</b>, <b>tutorials</b>, and other <b>general information</b> about the ADS services. The topics are listed in the <b>left sidebar</b> and the <b>search bar</b> in the upper right can be used to search the entire site.</p>
 

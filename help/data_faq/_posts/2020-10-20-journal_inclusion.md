@@ -51,4 +51,4 @@ Relevance: An article that includes any of the following may be relevant:
 * non-astronomy content of interest to astronomers in different subfields
 * content in related fields that has astronomical relevance
 
-If you have a journal to be evaluated, please feel free to send email to us at adshelp@cfa.harvard.edu
+If you have a journal to be evaluated, please feel free to send email to us at <adshelp@cfa.harvard.edu>.

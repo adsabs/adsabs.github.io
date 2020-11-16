@@ -16,7 +16,8 @@ The ADS personnel are:
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Back-End Development (applications & services)  
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Software Development & Operations Lead
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Ingest and Curation Support  
-- [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ingest, ORCID) & User Support  
+- [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ingest, ORCID) & User Support
+- [Dr. Nemanja Martinovic](../team/team/nmartinovic.html) - DevOps Engineer
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 

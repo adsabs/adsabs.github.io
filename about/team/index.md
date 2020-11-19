@@ -9,7 +9,7 @@ The ADS personnel are:
 - [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist Emeritus
 - [Dr. Pavlos Protopapaps](../team/team/pprotopapas.html) - Interim Project Scientist for Data Science
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingest and Curation  
-- [Edwin Henneken](../team/team/ehenneken.html) - System Development and Operations / Content & Curation Lead
+- [Edwin Henneken](../team/team/ehenneken.html) - System Development and Operations / Content, Curation & Collaborations Lead
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
 - [Dr. Roman Chyla](../team/team/rchyla.html) - System Architecture and Development  
 - [Stephen McDonald](../team/team/smcdonald.html) - System Development and Operations  

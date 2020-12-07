@@ -104,7 +104,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | abs |  | y | n | Combination of the following: abstract, title, keyword |
 | all |  | n | n | this combines the following: author_norm, alternate_title, bibcode, doi, identifier |
 | arxiv |  | y | n | query parser token |
-| citations() | n | y | y | returns list of citations from given papers; use `[citations]` to get the field contents |
+| [citations()](../search/citations-and-references) | n | y | y | returns list of citations from given papers; use `[citations]` to get the field contents |
 | citis() | y | y | - | Different implementation of citation(), less memory but slower |
 | classic_relevance() | n | n | - | Toy-implementation of the ADS Classic relevance score algorithm. You can wrap any query and obtain the hits sorted in the ADS Classic ways (sort of) |
 | full |  | y | n | this combines the following: title^2, abstract^2, body, keyword, ack |
@@ -112,12 +112,13 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | joincitations() | y | y | - | Equivalent of citations() but implemented using lucene block-join |
 | joinreferences() | y | y | - | Equivalent of references() but implemented using lucene block-join |
 | orcid |  | y | n | this combined the following: orcid_pub, orcid_user, orcid_other |
-| pos() | n | y | - | The pos() operator allows you to search for an item within a field by specifying the position in the field. The syntax for this operator is pos(fieldedquery,position,[endposition]). If no endposition is given, then it is assumed to be endposition = position, otherwise this performs a query within the range [position, endposition]. |
-| references() | n | y | y | returns list of references from given papers |
-| reviews() | n | y | - | returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field. |
+| [pos()](../search/positional) | n | y | - | The pos() operator allows you to search for an item within a field by specifying the position in the field. The syntax for this operator is pos(fieldedquery,position,[endposition]). If no endposition is given, then it is assumed to be endposition = position, otherwise this performs a query within the range [position, endposition]. |
+| [references()](../search/citations-and-references) | n | y | y | returns list of references from given papers |
+| [reviews()](../search/second-order) | n | y | - | returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field. |
 | reviews2() | y | - | n | Original implementation of reviews |
-| topn() | n | y | - | Return the top N number of documents |
-| trending() | n | y | - | Trending – returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field. |
-| useful() | n | y | - | Useful – returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field. |
+| [similar()](../search/second-order) | n | y | - | Return similar documents, based on the similarity of the abstract text |
+| [topn()](../search/second-order) | n | y | - | Return the top N number of documents |
+| [trending()](../search/second-order) | n | y | - | Trending – returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field. |
+| [useful() ](../search/second-order) | n | y | - | Useful – returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field. |
 | useful2() | y | y | - | What experts are citing; original implementation of useful()|
 | **Field Name** | **Deprecated** | **Useful for user** | **Show/Give access? [y/n]**

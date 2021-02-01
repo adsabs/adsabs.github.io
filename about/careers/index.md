@@ -11,15 +11,7 @@ The ADS project develops and maintains services to facilitate the discovery and 
 
 ## Who we are looking for 
 
-The ADS project has an opening for  a highly motivated [machine learning engineer](https://www.cfa.harvard.edu/hr/postings/20-60.html) to join its dynamic team of eight software developers and three curators. The ADS has built a highly scalable and feature-rich platform using a modern development stack: a custom build of the open-source search engine Solr, a highly responsive UI engineered on top of React, a high performance distributed brokerage system, and cloud-based hosted services with Kubernetes in Amazon Web Services. The developer will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
-
-We're looking for a machine learning engineer interested in maintaining and enhancing the capabilities of the ADS search engine, enhancing its text processing pipelines, and supporting metadata enhancement, citation analysis, and recommendations based on deep learning and natural language processing techniques. The successful candidate is a highly motivated data scientist (in astronomy or other fields) experienced in designing well-structured software packages and libraries. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/583771200))
-
-A few things to keep in mind:	
-
-* Depending on the candidate's experience and education, we can hire at a variety of seniority levels, which explains the wide salary range advertised in the job postings.	
-* Candidates can qualify for the positions based on either education, experience, or a mixture of both.  If you don't have the academic credentials but have relevant on the job experience, you should apply.	
-* Both US citizens and foreign nationals are welcome to apply.  Our institution is able to sponsor the appropriate work VISA if one is required.
+We don't currently have any job openings! If you'd like to be notified of future postings, [email us](mailto:adshelp@cfa.harvard.edu?Subject=Notify%20me%20of%20future%20job%20postings).
 
 ## What we offer
 

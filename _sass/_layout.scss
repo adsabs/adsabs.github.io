@@ -335,3 +335,14 @@ h1, h2 {
 html, body {
   height: 100%;
 }
+
+summary {
+  color: #2169DA
+}
+
+details {
+  border: 1px solid darkgrey;
+  padding: 1rem;
+  border-radius: 10px;
+}
+

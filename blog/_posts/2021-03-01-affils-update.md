@@ -95,7 +95,7 @@ As of last year, we already had assigned identifiers for a number of Historicall
 
 We have also added affiliation IDs for a partial list of Tribal Colleges and Universities (TCUs), primarily those in the United States that are currently represented in ADS Literature.  The list of included TCUs can be accessed [here](https://github.com/adsabs/CanonicalAffiliations/blob/master/tribal_colleges_universities.tsv); note that this list includes only those institutions designated as tribally-controlled, and does not include those public or private non-Tribal institutions serving a significant Tribal population.  
 
-There are relatively few publications affiliated with these colleges: Salish Kootenai College (Montana), Northwest Indian College (Pacific NW), Dine College (Arizona) and Fond du Lac Tribal College (Minnesota) have the most publications. Papers written by TCU authors and coauthors in ADS primarily focus on topics in Environmental Science and Science Education, which are not currently part of our core literature.  Again, our goal is to ensure contributions to ADS literature by our colleagues at these institutions can be tracked.
+There are relatively few publications affiliated with these colleges: Salish Kootenai College (Montana), Northwest Indian College (Pacific NW), Din&eacute; College (Arizona) and Fond du Lac Tribal College (Minnesota) have the most publications. Papers written by TCU authors and coauthors in ADS primarily focus on topics in Environmental Science and Science Education, which are not currently part of our core literature.  Again, our goal is to ensure contributions to ADS literature by our colleagues at these institutions can be tracked.
 
 ### You can help!
 

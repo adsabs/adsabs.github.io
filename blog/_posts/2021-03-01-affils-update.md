@@ -60,14 +60,14 @@ You can also use affiliations directly as part of your search, just as you can o
 
 ### Curated affiliation metadata: by the numbers
 
-We significantly expanded curated affiliation coverage in ADS over the past twelve months.  In January 2020, ADS contained about 38.6 million individual author-affiliation pairs -- each affiliation of each author of all the papers, articles, and books in ADS.  Today, that number is about 42 million, an increase of 3.2 million (8%).  Of those 42 million strings, 34.7 million (83%) have been matched to identifiers and can be searched via the affiliation filter.  The remaining 7.3 million (17%) have not; they can be searched as a text field, but not via the affiliation filter.
+We significantly expanded curated affiliation coverage in ADS over the past twelve months.  In January 2020, ADS contained about 38.6 million individual author-affiliation pairs -- each affiliation of each author of all the papers, articles, and books in ADS.  Today, that number is about 42 million, an increase of 3.2 million (8%).  Of those 42 million strings, 34.7 million (83%) have been matched to identifiers and can be searched via the affiliation filter.  The remaining 7.3 million (17%) have not; they can be searched as a text field (i.e. with the "aff" keyword), but not via the INSTITUTION filter.
 
 <div class="text-center">
 <img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-03-01_matched.jpg" />
 </div>
 <br>
 
-This is a large increase over last year’s numbers, where only 22 million (57%) of the 38.6 million pairs were matched, and 16.6 million (43%) were not.  We have not only kept up with assigning affiliation identifiers to new publications over the past year, but we have significantly expanded coverage of our existing metadata, meaning that more of our papers can be searched with the affiliation filter.
+This is a large improvement over last year’s numbers, where only 22 million (57%) of the 38.6 million pairs were matched, and 16.6 million (43%) were not.  We have not only kept up with assigning affiliation identifiers to new publications over the past year, but we have significantly expanded coverage of our existing metadata, meaning that more of our papers can be searched using our affiliations tools.
 
 
 <div class="text-center">
@@ -81,7 +81,12 @@ We streamlined the process of matching identifiers in 2020; matching strings to 
 
 Another reason our coverage increased is that we expanded the number of identifiers to nearly 7000 different entities and parent-child relationships, which lets us match more institutions that are easily assignable, and helps us disambiguate entities that may have multiple parents or warrant better subdivision at the department or institution level.
 
-Many of the IDs were added simply to pick up frequently observed affiliations that were not already in the list, including medical research institutes and commercial entities involved in physics-related fields.  But a significant number have targeted specific classes of institutions: more universities and institutions from the developing world; more complete coverage of US federally-recognized Historically Black Colleges and Universities (HBCU); and Tribal Colleges and Universities (mainly in the United States).
+Many of the IDs were added simply to pick up frequently observed affiliations that were not already in the list, including medical research institutes and commercial entities involved in physics-related fields.  But a significant number of our additions have targeted specific classes of institutions: more universities and institutions from the Global South; more complete coverage of US federally-recognized Historically Black Colleges and Universities (HBCU); and Tribal Colleges and Universities (mainly in the United States).
+
+Institutions from the Global South
+
+We've increased coverage of educational and research institutions in the [Global South](https://en.wikipedia.org/wiki/Global_South) to improve the discovery and searchability of work from authors outside of historical centers of research.  Prior to this work, our identifiers covered some of this territory, particularly in regions of the Global South with historical involvement in astronomy (South America, South Africa, India, and China).  Over the past year, we've worked to expand this coverage to include more countries and institutions involved in science that falls outside of our astronomy coverage but may be very active in related fields such as physics and materials science, computer science and engineering, or geology.  Further, researchers from these regions are often involved in collaborative science with researchers from the Global North, and thus including these institutions improves the affiliation coverage of existing literature.  We expect that the fraction of scientific literature from the Global South will increase over time (including in our core literature of Astronomy and Physics) and making these identifiers now will make it easier to keep up with these demographic changes as they happen.
+
 
 Historically Black Colleges and Universities (HBCUs)
 
@@ -93,3 +98,7 @@ We have also added affiliation IDs for a partial list of Tribal Colleges and Uni
 
 There are relatively few publications affiliated with these colleges: Salish Kootenai College (Montana), Northwest Indian College (Pacific NW), Dine College (Arizona) and Fond du Lac Tribal College (Minnesota) have the most publications. Papers written by TCU authors and coauthors in ADS primarily focus on topics in Environmental Science and Science Education, which are not currently part of our core literature.
 
+
+You can help!
+
+Affiliation identification is an ongoing process and always will be.  If you find affiliation IDs that aren't correct, please let us know.  Likewise if there are affiliations that you think should be included or better disambiguated as parents and children, please get in touch.  We would especially welcome help with the assignment and disambiguation of French UMRs and Universities, and Russian and Chinese Academies of Science.

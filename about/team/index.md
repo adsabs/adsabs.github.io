@@ -9,7 +9,7 @@ The ADS personnel are:
 - [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist Emeritus
 - [Dr. Pavlos Protopapaps](../team/team/pprotopapas.html) - Interim Project Scientist for Data Science
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingest and Curation  
-- [Edwin Henneken](../team/team/ehenneken.html) - System Development and Operations / Content, Curation & Collaborations Lead
+- [Edwin Henneken](../team/team/ehenneken.html) - System Development & Operations; Content, Curation & Collaborations Lead
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
 - [Dr. Roman Chyla](../team/team/rchyla.html) - System Architecture and Development  
 - [Stephen McDonald](../team/team/smcdonald.html) - System Development and Operations  
@@ -17,8 +17,10 @@ The ADS personnel are:
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Back-End Development (applications & services)  
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Software Development & Operations Lead
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Ingest and Curation Support  
-- [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ingest, ORCID) & User Support
+- [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ORCID, fulltext) & User Support
 - [Dr. Nemanja Martinovic](../team/team/nmartinovic.html) - DevOps Engineer
+- [Shinyi (Jennifer) Chen](../team/team/schen.html) - User Interface and Front-End Development  
+- [Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing  
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 

@@ -58,21 +58,24 @@ You can also use affiliations directly as part of your search, just as you can o
 
 Some examples:
 
-    inst:"CfA" == inst:"Harvard U/CfA" == inst:"SI/CfA" = aff_id:"CfA"
+* Sometimes, there are multiple ways of obtaining the same affils.  For example, all of the following will return the Center for Astrophysics | Harvard & Smithsonian: inst:"CfA" == inst:"Harvard U/CfA" == inst:"SI/CfA" = aff_id:"CfA".  Conversely, aff_id:"SI" returns only affiliation "Smithsonian Institution"
 
-    aff_id:"SI" returns only affiliation "Smithsonian Institution"
+* Inst is generally more "greedy" in matching than aff_id, so while aff_id:"SI" only returns papers that are identified with only the parent "Smithsonian Institution", inst:"SI" returns affiliation "Smithsonian Institution", plus CfA (Center for Astrophysics), MNH (Museum of Natural History), Air Sp Mus (Air and Space Muserum), which are children of SI.
 
-    inst:"SI" returns affiliation "Smithsonian Institution", plus CfA (Center for Astrophysics), MNH (Museum of Natural History), Air Sp Mus (Air and Space Muserum), which are children of SI.
+* Likewise, 
 
     aff_id:"Inst Phy" returns no results
 
     inst:"Inst Phy" returns results from many Institutes of Physics.
 
+* But you can use inst searches to get specific results, like,
+
     inst:"UNAM/Inst Phy" (National Autonomous University of Mexico's Institute of Physics)
 
     inst:"NTU/Inst Phy" (National Taiwan University's Institute of Physics)
 
-    inst:"U Amsterdam/Inst Phy" (University of Amsterdam's nstitute of Physics)
+    inst:"U Amsterdam/Inst Phy" (University of Amsterdam's Institute of Physics)
+
 
 **Tips for searching:**
 

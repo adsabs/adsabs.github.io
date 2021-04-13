@@ -24,21 +24,21 @@ Authors from a given institution may publish their work in a variety of journals
 The ADS interface enables you to refine your search using filters, located on the left hand side of the default view of search results.  When you search for anything in ADS, your search results also automatically populate all of the search filters which let you refine your results.  There are several filters including: author, collection, keywords, and institutions.  The Institutions filter is where you use the affiliation data to refine your searches.  For example, if you search for "gravitational waves" and "year:2020" you'll get a list of over 3,300 papers published in the year 2020 that contain the phrase "gravitational waves".  If you click *INSTITUTIONS* in the left column, you'll get an abbreviated list of the most-frequently seen affiliations among those 3,300 papers:
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-03-01_affil_drop_1.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_1.jpg" />
 </div>
 <br>
 
 If you select one of those affiliations (by checking the box to the left), you'll see the following:
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-03-01_affil_drop_2.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_2.jpg" />
 </div>
 <br>
 
 Note especially the "limit to" and "exclude" options; if you select "limit to", your original set of results will be refined to just those 155 papers having one or more coauthors from the Max Planck Institute:
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-03-01_affil_drop_3.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_3.jpg" />
 </div>
 <br>
 
@@ -48,13 +48,43 @@ Now, you can use other filters to refine your search, including the institution 
 
 **Searching affiliations**
 
-You can also use affiliations directly as part of your search, just as you can other metadata fields like title, year, and bibstem.  We have a number of different keywords with which to access affiliations:  
+You can also use affiliations directly as part of your search, just as you can other metadata fields like title, year, and bibstem. We have a number of different keywords with which to access affiliations:
 
-* *aff*: This field holds the raw affiliation string -- whatever text is supplied to us by a publisher or author as representing one or more authors' affiliation or host institution. (e.g. aff:"SRON").  Use this if you're looking for a specific string (rather than a specific identifier) in an affiliation; it doesn't use the curated identifiers as part of the search.
+* *aff*: This field holds the raw affiliation string -- whatever text is supplied to us by a publisher or author as representing one or more authors' affiliation or host institution. (e.g. aff:"SRON"). Use this if you're looking for a specific string (rather than a specific identifier) in an affiliation; it does not use the curated identifiers as part of the search.
 
-* *aff_id*: This field gives you access to the affiliation identifications curated by the ADS, including synonyms with other institutional identifier systems like GRiD and ROR.
+* *aff_id*: This field can be used to search for affiliation identifications curated by the ADS, including synonyms with other institutional identifier systems like GRID and ROR.  It requires you to use the controlled dictionary of identifiers specified <here> (https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv).  It does not expand the search to include an institution's children.
 
-* *inst*:
+* *inst*: This field is a shortcut to enable you to search for institutions without requiring you to know their parent.  It also allows you to search the affiliation identifications curated by the ADS, including synonyms with other institutional identifier systems like GRID and ROR.  Unlike aff_id, it expands the search to include an institution's children.  It is convenient for unique institutions such as the "CfA".  However, for an institution that is not unique, such as "Inst Phy", you will want to include the parent to disambiguate.
+
+Some examples:
+
+    inst:"CfA" == inst:"Harvard U/CfA" == inst:"SI/CfA" = aff_id:"CfA"
+
+    aff_id:"SI" returns only affiliation "Smithsonian Institution"
+
+    inst:"SI" returns affiliation "Smithsonian Institution", plus CfA (Center for Astrophysics), MNH (Museum of Natural History), Air Sp Mus (Air and Space Muserum), which are children of SI.
+
+    aff_id:"Inst Phy" returns no results
+
+    inst:"Inst Phy" returns results from many Institutes of Physics.
+
+    inst:"UNAM/Inst Phy" (National Autonomous University of Mexico's Institute of Physics)
+
+    inst:"NTU/Inst Phy" (National Taiwan University's Institute of Physics)
+
+    inst:"U Amsterdam/Inst Phy" (University of Amsterdam's nstitute of Physics)
+
+**Tips for searching:**
+
+If you do not see the results you expect, one or more of the following may help:
+
+- Check the spelling against our controlled list of institutions (we may be using an English equivalent, such as "University of" instead of "Universite de" or "Center" instead of "Centre").
+
+* Sometimes we elevate an institution to a parent level so that it may have children/divisions (e.g. Both "NASA" and "NASA Goddard" are at the parent level so that we can subdivide "NASA Goddard" into units).  
+
+* We may be using a non-standard abbreviation for a university in order to avoid duplication ("USC SC" for University of South Carolina versus "USC CA" for University of Southern California).
+
+* Make the search less constrictive (try to search for a parent institution and use the facet to drill down to the unit level).
 
 
 
@@ -63,7 +93,7 @@ You can also use affiliations directly as part of your search, just as you can o
 We significantly expanded curated affiliation coverage in ADS over the past twelve months.  In January 2020, ADS contained about 38.6 million individual author-affiliation pairs -- each affiliation of each author of all the papers, articles, and books in ADS.  Today, that number is about 42 million, an increase of 3.2 million (8%).  Of those 42 million strings, 34.7 million (83%) have been matched to identifiers and can be searched via the affiliation filter.  The remaining 7.3 million (17%) have not; they can be searched as a text field (i.e. with the "aff" keyword), but not via the *INSTITUTIONS* filter.
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-03-01_matched.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_matched.jpg" />
 </div>
 <br>
 
@@ -71,7 +101,7 @@ This is a large improvement over last year's numbers, where only 22 million (57%
 
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-03-01_unmatched.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_unmatched.jpg" />
 </div>
 <br>
 

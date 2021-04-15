@@ -11,7 +11,9 @@ The ADS project develops and maintains services to facilitate the discovery and 
 
 ## Who we are looking for 
 
-We don't currently have any job openings! If you'd like to be notified of future postings, [email us](mailto:adshelp@cfa.harvard.edu?Subject=Notify%20me%20of%20future%20job%20postings).
+The ADS project has a time-limited, part-time opening for a highly motivated [scientist](https://pweb.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-13) experienced in the astrophysics publication process and familiar with how theoretical and observational papers are typically structured. The scientist will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
+
+We're looking for an astronomer interested in performing statistical analysis and preparing datasets of enriched/tagged full text articles to be used as training and validating material for machine/deep learning models created by ADS developers. The successful candidate is a highly motivated scientist (in astronomy or closely related fields), with experience publishing in astrophysics journals and knowledge of Python programming and data analysis. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/597834300))
 
 ## What we offer
 

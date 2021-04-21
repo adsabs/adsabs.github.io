@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: default_layout
 category: blog
 ---
 
-
 <h2>ADS Blog</h2>
 
-{% assign posts = site.categories[page.category] | sort:"order"  %}
-    {% for post in posts %}
-    <h3><a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a></h3>
-    {{post.excerpt}}
-      {% endfor %}
+{% assign posts = site.categories[page.category] | sort:"order" %} {% for post
+in posts %}
+<h3><a href="{{ site.baseurl }}{{post.url}}">{{post.title}}</a></h3>
+{{post.excerpt}} {% endfor %}

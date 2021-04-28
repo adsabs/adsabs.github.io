@@ -230,6 +230,37 @@ h2 {
   left: 6px;
 }
 
+.navbar-nav .dropdown-toggle,
+.navbar-nav .dropdown {
+  height: 60px;
+}
+
+.navbar-nav .btn-link {
+  color: #c4c4c4;
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+    color: #fff;
+  }
+}
+
+.navbar-nav .dropdown-toggle {
+  &:focus {
+    border-color: white;
+    border-radius: 5px;
+  }
+}
+
+.btn-link:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.nav > .dropdown > .btn-link {
+  font-size: 17px;
+  font-weight: 300;
+}
+
 .dropdown-menu {
   li.no-hover-style {
     &:hover {
@@ -239,8 +270,9 @@ h2 {
 
   li:not(.divider):not(.no-hover-style) {
     border-left: 3px solid $body-bg;
+    font-size: 15px;
     &:hover {
-      background-color: darken($gray-lighter, 2%);
+      background-color: darken(#5d5d5d, 2%);
       cursor: pointer;
       border-left: 3px solid $gray-light;
     }

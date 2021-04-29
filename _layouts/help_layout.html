@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  {% include head_default.html %}
+
+  <body>
+    {% include header_default.html subtitle="help" subpath="help" %}
+
+    <div class="smart-container">
+      <div class="search-bar-container pull-right col-xs-12 col-md-6">
+        {% include search.html %}
+      </div>
+    </div>
+
+    <div class="page-content smart-container">{{ content }}</div>
+
+    {% include footer_default.html %}
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $('body').on('click', 'button[data-toggle="off-canvas"]', function () {
+        $('.row-offcanvas').toggleClass('active');
+      });
+    });
+  </script>
+
+  <!-- for sidebar -->
+  <script>
+    $(document).ready(function () {
+      //ADD THE PROPER HIGHLIGHT
+      try {
+        var category = window.location.pathname.split('/')[2];
+      } catch (e) {
+        console.error("couldn't parse category name");
+      }
+      //this should fail without causing a problem if category can't be found
+      if ($('.help-nav').find('div#' + category + '-items').length === 0)
+        console.log('couldnt find accordion drawer for: ', category);
+      $('.help-nav')
+        .find('div#' + category + '-items')
+        .addClass('in')
+        //set the caret pointing down
+        .parent()
+        .find('.fa')
+        .removeClass('fa-caret-right')
+        .addClass('fa-caret-down');
+
+      //SET LISTENERS FOR CARET OPEN/CLOSED
+      $('.help-nav .collapse')
+        .on('show.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-right')
+            .addClass('fa-caret-down');
+        })
+        .on('hide.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-down')
+            .addClass('fa-caret-right');
+        });
+    });
+  </script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

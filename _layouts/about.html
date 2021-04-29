@@ -1,32 +1,31 @@
 ---
-layout: about_layout
+layout: about_default
 ---
 
-<div class="row row-offcanvas row-offcanvas-left">
-  {% for js in page.jsarr %}
-  <script type="text/javascript">
-    {% include {{ js }} %}
-  </script>
-  {% endfor %}
+  <div class="row row-offcanvas row-offcanvas-left">
 
-  <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
-    {%include about-left-nav.html %}
-  </div>
+    {% for js in page.jsarr %}
+     <script type="text/javascript">
+     {% include {{ js }} %}
+     </script>
+    {% endfor %}
+    
+    <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
+        {%include about-left-nav.html %}
+    </div>
 
-  <div class="post main-content col-xs-12 col-md-9">
-    <button
-      class="btn btn-primary visible-sm-inline-block visible-xs-inline-block"
-      data-toggle="off-canvas"
-    >
-      toggle sidebar
-    </button>
+    <div class="post main-content col-xs-12 col-md-9">
 
-    <header class="post-header">
-      {%unless page.no-header %}
-      <h2 class="post-title">{{ page.title }}</h2>
-      {% endunless %}
-    </header>
+    <button class="btn btn-primary visible-sm-inline-block visible-xs-inline-block" data-toggle="off-canvas">toggle sidebar</button>
 
-    <article class="post-content">{{ content }}</article>
-  </div>
+      <header class="post-header">
+      {%unless page.no-header %} <h2 class="post-title">{{ page.title }}</h2>{% endunless %}
+      </header>
+
+      <article class="post-content">
+        {{ content }}
+      </article>
+
+    </div>
+
 </div>

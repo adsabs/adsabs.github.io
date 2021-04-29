@@ -1,7 +1,5 @@
 ---
 layout: post
-title: 'ADS Help'
-no-header: true
 ---
 
 <h2>Welcome to the ADS Help Pages</h2>
@@ -18,3 +16,5 @@ no-header: true
     <iframe src="https://www.youtube.com/embed/i7O7ylHLniI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 </div>
+
+

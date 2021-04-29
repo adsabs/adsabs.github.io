@@ -1,26 +1,25 @@
 ---
-layout: help_layout
+layout: default
 ---
 
-<div class="row row-offcanvas row-offcanvas-left">
-  <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
-    {%include left-nav.html %}
-  </div>
+  <div class="row row-offcanvas row-offcanvas-left">
 
-  <div class="post main-content col-xs-12 col-md-9">
-    <button
-      class="btn btn-primary visible-sm-inline-block visible-xs-inline-block"
-      data-toggle="off-canvas"
-    >
-      toggle sidebar
-    </button>
+    <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
+        {%include left-nav.html %}
+    </div>
 
-    <header class="post-header">
-      {%unless page.no-header %}
-      <h2 class="post-title">{{ page.title }}</h2>
-      {% endunless %}
-    </header>
+    <div class="post main-content col-xs-12 col-md-9">
 
-    <article class="post-content">{{ content }}</article>
-  </div>
+    <button class="btn btn-primary visible-sm-inline-block visible-xs-inline-block" data-toggle="off-canvas">toggle sidebar</button>
+
+      <header class="post-header">
+      {%unless page.no-header %} <h2 class="post-title">{{ page.title }}</h2>{% endunless %}
+      </header>
+
+      <article class="post-content">
+        {{ content }}
+      </article>
+
+    </div>
+
 </div>

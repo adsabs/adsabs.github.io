@@ -5,15 +5,18 @@ title: "Careers@ADS"
 
 ## Who we are
 
-The NASA Astrophysics Data System (ADS) is the primary digital library portal for researchers in astronomy and astrophysics; it is also used extensively by the physics and geophysics communities. The ADS corpus consists of over 13 million documents and is growing at a rate of several thousand per week. Every astronomy paper ever published and nearly every physics and geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily. 
+The NASA Astrophysics Data System (ADS) is the primary digital library portal for researchers in astronomy, astrophysics, planetary science and heliophysics. The ADS corpus consists of over 15 million documents and is growing at a rate of several thousand per week. Every astronomy paper ever published and nearly every physics and geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily, all over the world.
 
 The ADS project develops and maintains services to facilitate the discovery and access of the scholarly literature published in the relevant fields of research.  The project embraces the spirit of openness long championed by NASA and the astronomy community in general: all the software we are developing is licensed under an open source license model and access to our data holdings is provided via an open API.
 
 ## Who we are looking for 
 
-The ADS project has a time-limited, part-time opening for a highly motivated [scientist](https://pweb.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-13) experienced in the astrophysics publication process and familiar with how theoretical and observational papers are typically structured. The scientist will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
+The ADS project has two openings to join its team of ten developers and three curators. The successful candidates will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
 
-We're looking for an astronomer interested in performing statistical analysis and preparing datasets of enriched/tagged full text articles to be used as training and validating material for machine/deep learning models created by ADS developers. The successful candidate is a highly motivated scientist (in astronomy or closely related fields), with experience publishing in astrophysics journals and knowledge of Python programming and data analysis. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/597834300))
+We're looking for:
+
+* a user-focused [digital technologies and development librarian](https://www.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-14) interested in working both collaboratively and independently to design and implement new tools, technology services, and collaboration infrastructures to support the curation efforts of the ADS. The successful candidate will also be involved in collection management, assisting the ADS curation team with content decisions, documentation, and user support. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/599940000))
+ * a highly motivated [scientist](https://pweb.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-13) interested in performing statistical analysis and preparing datasets of enriched/tagged full text articles to be used as training and validating material for machine/deep learning models created by ADS developers. The successful candidate for this time-limited, part-time opening is a scientist (in astronomy or closely related fields), with experience publishing in astrophysics journals, familiarity with how theoretical and observational papers are typically structured, and knowledge of Python programming and data analysis. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/597834300))
 
 ## What we offer
 

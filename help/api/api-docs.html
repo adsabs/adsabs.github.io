@@ -6,10 +6,19 @@
   </head>
   <body>
     <rapi-doc 
-        spec-url = "https://raw.githubusercontent.com/kelockhart/adsws/openapi/swagger.yaml"
-        sort-endpoints-by = "summary"
-        render-style = "read"
-        schema-style = "table"
-    ></rapi-doc>
+      spec-url = "https://raw.githubusercontent.com/kelockhart/adsws/openapi/swagger.yaml"
+      sort-endpoints-by = "summary"
+      render-style = "read"
+      schema-style = "table"
+      heading-text = "adsAPI"
+      theme = "light"
+      primary-color = #85A7EA
+      schema-description-expanded = true
+      show-header = false 
+    >
+      <div slot="nav-logo" style="display: flex; align-items: center; justify-content: center;">
+        <img src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" style="width: 50px; margin-right: 10px"> <span style="color:#fff; font-size:175%"> <b>ads</b>API </span>
+      </div>  
+    </rapi-doc>
   </body>
 </html>

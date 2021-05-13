@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8"> <!-- Important: rapi-doc uses utf8 charecters -->
+    <title> ADS OpenAPI Docs </title>
+    <link rel="shortcut icon" type="image/jpg" href="https://ui.adsabs.harvard.edu/help/common/images/favicon-32x32.png"/>
     <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
   </head>
   <body>
-    <rapi-doc 
+    <rapi-doc
       spec-url = "https://raw.githubusercontent.com/kelockhart/adsws/openapi/swagger.yaml"
       sort-endpoints-by = "summary"
       render-style = "read"
@@ -14,11 +16,11 @@
       theme = "light"
       primary-color = #85A7EA
       schema-description-expanded = true
-      show-header = false 
+      show-header = false
     >
       <div slot="nav-logo" style="display: flex; align-items: center; justify-content: center;">
         <img src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" style="width: 50px; margin-right: 10px"> <span style="color:#fff; font-size:175%"> <b>ads</b>API </span>
-      </div>  
+      </div>
     </rapi-doc>
   </body>
 </html>

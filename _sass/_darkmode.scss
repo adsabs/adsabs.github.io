@@ -1,0 +1,389 @@
+.darkmode-toggle {
+  background: #100f2c;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  border-radius: 50%;
+  right: 32px;
+  bottom: 32px;
+  left: unset;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+// dark mode colors
+$darkmode-background: #010409;
+$darkmode-background-secondary: #0d1117;
+$darkmode-background-tertiary: #21262d;
+$darkmode-border: #30363d;
+$darkmode-text: #c9d1d9;
+$darkmode-text-strong: #eee;
+$darkmode-text-secondary: #8b949e;
+$darkmode-text-dim: #8b949e;
+$darkmode-text-dimmer: #484f58;
+$darkmode-text-disabled: #30363d;
+$darkmode-link: #58a6ff;
+$darkmode-input-bg: #21262d;
+$darkmode-input-border: #464545;
+$darkmode-input-border-focus: #388bfd;
+$darkmode-dropdown-bg: #21262d;
+$darkmode-dropdown-text: #c9d1d9;
+$darkmode-dropdown-highlight-bg: #0d1117;
+$darkmode-dropdown-highlight-text: #c9d1d9;
+$darkmode-selected-bg: #1f6feb;
+$darkmode-selected-text: #f0f6fc;
+$darkmode-container: #0d1117;
+$darkmode-container-border: #30363d;
+$darkmode-btn-default-text: #c9d1d9;
+$darkmode-btn-hightlight-bg: #388bfd;
+$darkmode-btn-hightlight-border: #388bfd;
+$darkmode-danger: #cc0000;
+$darkmode-info: #0099cc;
+$darkmode-primary: #0d47a1;
+$darkmode-secondary: #444;
+$darkmode-success: #007e33;
+$darkmode-warning: #ff8800;
+$darkmode-light: #adb5bd;
+$darkmode-default: #21262d;
+$darkmode-danger-lighten: lighten($darkmode-danger, 10%);
+$darkmode-info-lighten: lighten($darkmode-info, 10%);
+$darkmode-primary-lighten: lighten($darkmode-primary, 10%);
+$darkmode-secondary-lighten: lighten($darkmode-secondary, 10%);
+$darkmode-success-lighten: lighten($darkmode-success, 10%);
+$darkmode-warning-lighten: lighten($darkmode-warning, 10%);
+$darkmode-light-lighten: lighten($darkmode-light, 10%);
+$darkmode-default-lighten: lighten($darkmode-default, 10%);
+$darkmode-danger-darken: darken($darkmode-danger, 10%);
+$darkmode-info-darken: darken($darkmode-info, 10%);
+$darkmode-primary-darken: darken($darkmode-primary, 10%);
+$darkmode-secondary-darken: darken($darkmode-secondary, 10%);
+$darkmode-success-darken: darken($darkmode-success, 10%);
+$darkmode-warning-darken: darken($darkmode-warning, 10%);
+$darkmode-light-darken: darken($darkmode-light, 10%);
+$darkmode-default-darken: darken($darkmode-default, 10%);
+
+[data-theme='dark'] {
+  background-color: $darkmode-background !important;
+  color: $darkmode-text;
+
+  .darkmode-toggle {
+    background: #fff;
+  }
+
+  // general
+
+  a {
+    color: $darkmode-link;
+  }
+
+  code {
+    background-color: $darkmode-input-bg;
+    color: $darkmode-text;
+  }
+
+  pre {
+    background-color: $darkmode-input-bg;
+    color: $darkmode-text;
+  }
+
+  table {
+    background-color: $darkmode-input-bg;
+    color: $darkmode-text;
+  }
+
+  caption {
+    color: #999999;
+  }
+
+  summary {
+    color: $darkmode-link;
+  }
+
+  // bootstraps
+
+  .table > thead > tr > th,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    border-top: 1px solid $darkmode-input-border;
+  }
+
+  .table > thead > tr > th {
+    border-bottom: 2px solid $darkmode-input-border;
+  }
+
+  .table > tbody + tbody {
+    border-top: 2px solid $darkmode-input-border;
+  }
+
+  .table .table {
+    background-color: $darkmode-input-bg;
+  }
+
+  .table-bordered {
+    border: 1px solid $darkmode-input-border;
+  }
+
+  .table-bordered > thead > tr > th,
+  .table-bordered > tbody > tr > th,
+  .table-bordered > tfoot > tr > th,
+  .table-bordered > thead > tr > td,
+  .table-bordered > tbody > tr > td,
+  .table-bordered > tfoot > tr > td {
+    border: 1px solid $darkmode-input-border;
+  }
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $darkmode-background-secondary;
+  }
+
+  .table-hover > tbody > tr:hover {
+    background-color: $darkmode-input-bg;
+  }
+
+  .table > thead > tr > td.active,
+  .table > tbody > tr > td.active,
+  .table > tfoot > tr > td.active,
+  .table > thead > tr > th.active,
+  .table > tbody > tr > th.active,
+  .table > tfoot > tr > th.active,
+  .table > thead > tr.active > td,
+  .table > tbody > tr.active > td,
+  .table > tfoot > tr.active > td,
+  .table > thead > tr.active > th,
+  .table > tbody > tr.active > th,
+  .table > tfoot > tr.active > th {
+    background-color: $darkmode-background;
+  }
+
+  .table-hover > tbody > tr > td.active:hover,
+  .table-hover > tbody > tr > th.active:hover,
+  .table-hover > tbody > tr.active:hover > td,
+  .table-hover > tbody > tr:hover > .active,
+  .table-hover > tbody > tr.active:hover > th {
+    background-color: $darkmode-background;
+  }
+
+  .table > thead > tr > td.success,
+  .table > tbody > tr > td.success,
+  .table > tfoot > tr > td.success,
+  .table > thead > tr > th.success,
+  .table > tbody > tr > th.success,
+  .table > tfoot > tr > th.success,
+  .table > thead > tr.success > td,
+  .table > tbody > tr.success > td,
+  .table > tfoot > tr.success > td,
+  .table > thead > tr.success > th,
+  .table > tbody > tr.success > th,
+  .table > tfoot > tr.success > th {
+    background-color: $darkmode-success;
+  }
+
+  .table-hover > tbody > tr > td.success:hover,
+  .table-hover > tbody > tr > th.success:hover,
+  .table-hover > tbody > tr.success:hover > td,
+  .table-hover > tbody > tr:hover > .success,
+  .table-hover > tbody > tr.success:hover > th {
+    background-color: $darkmode-success;
+  }
+
+  .table > thead > tr > td.info,
+  .table > tbody > tr > td.info,
+  .table > tfoot > tr > td.info,
+  .table > thead > tr > th.info,
+  .table > tbody > tr > th.info,
+  .table > tfoot > tr > th.info,
+  .table > thead > tr.info > td,
+  .table > tbody > tr.info > td,
+  .table > tfoot > tr.info > td,
+  .table > thead > tr.info > th,
+  .table > tbody > tr.info > th,
+  .table > tfoot > tr.info > th {
+    background-color: $darkmode-info;
+  }
+
+  .table-hover > tbody > tr > td.info:hover,
+  .table-hover > tbody > tr > th.info:hover,
+  .table-hover > tbody > tr.info:hover > td,
+  .table-hover > tbody > tr:hover > .info,
+  .table-hover > tbody > tr.info:hover > th {
+    background-color: $darkmode-info;
+  }
+
+  .table > thead > tr > td.warning,
+  .table > tbody > tr > td.warning,
+  .table > tfoot > tr > td.warning,
+  .table > thead > tr > th.warning,
+  .table > tbody > tr > th.warning,
+  .table > tfoot > tr > th.warning,
+  .table > thead > tr.warning > td,
+  .table > tbody > tr.warning > td,
+  .table > tfoot > tr.warning > td,
+  .table > thead > tr.warning > th,
+  .table > tbody > tr.warning > th,
+  .table > tfoot > tr.warning > th {
+    background-color: $darkmode-warning;
+  }
+
+  .table-hover > tbody > tr > td.warning:hover,
+  .table-hover > tbody > tr > th.warning:hover,
+  .table-hover > tbody > tr.warning:hover > td,
+  .table-hover > tbody > tr:hover > .warning,
+  .table-hover > tbody > tr.warning:hover > th {
+    background-color: $darkmode-warning;
+  }
+
+  .table > thead > tr > td.danger,
+  .table > tbody > tr > td.danger,
+  .table > tfoot > tr > td.danger,
+  .table > thead > tr > th.danger,
+  .table > tbody > tr > th.danger,
+  .table > tfoot > tr > th.danger,
+  .table > thead > tr.danger > td,
+  .table > tbody > tr.danger > td,
+  .table > tfoot > tr.danger > td,
+  .table > thead > tr.danger > th,
+  .table > tbody > tr.danger > th,
+  .table > tfoot > tr.danger > th {
+    background-color: $darkmode-danger;
+  }
+
+  .table-hover > tbody > tr > td.danger:hover,
+  .table-hover > tbody > tr > th.danger:hover,
+  .table-hover > tbody > tr.danger:hover > td,
+  .table-hover > tbody > tr:hover > .danger,
+  .table-hover > tbody > tr.danger:hover > th {
+    background-color: $darkmode-danger;
+  }
+
+  // google search
+
+  .gsc-control-cse {
+    background-color: $darkmode-background;
+    border-color: $darkmode-background;
+  }
+
+  .gsc-search-box {
+    background: transparent !important;
+  }
+
+  .gsc-input-box {
+    background-color: $darkmode-input-bg;
+    border-color: $darkmode-input-border;
+  }
+
+  .gsc-search-button-v2,
+  .gsc-search-button-v2:hover,
+  .gsc-search-button-v2:focus {
+    background-color: $darkmode-primary;
+    border-color: $darkmode-primary;
+
+    &:hover,
+    &:focus {
+      background-color: $darkmode-primary-darken;
+      border-color: $darkmode-primary-darken;
+    }
+  }
+
+  input.gsc-input,
+  .gsc-input-box,
+  .gsc-input-box-hover,
+  .gsc-input-box-focus {
+    background-color: $darkmode-input-bg !important;
+  }
+
+  // ADS
+
+  .dropdown-menu {
+    background-color: $darkmode-dropdown-bg;
+
+    li.no-hover-style {
+      color: $darkmode-dropdown-text;
+      &:hover {
+        background-color: $darkmode-dropdown-bg !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: $darkmode-dropdown-text;
+        &:hover {
+          background-color: $darkmode-dropdown-bg !important;
+        }
+      }
+
+      a,
+      a:hover {
+        color: $darkmode-dropdown-text;
+        background-color: $darkmode-dropdown-bg !important;
+      }
+    }
+
+    li:not(.divider):not(.no-hover-style) {
+      color: $darkmode-dropdown-text;
+      background-color: $darkmode-dropdown-bg;
+      &:hover {
+        color: $darkmode-dropdown-text;
+        background-color: $darkmode-dropdown-highlight-bg;
+      }
+      a {
+        color: $darkmode-dropdown-text;
+        background-color: $darkmode-dropdown-bg;
+      }
+      a:hover {
+        color: $darkmode-dropdown-text;
+        background-color: $darkmode-dropdown-highlight-bg;
+      }
+    }
+  }
+
+  .panel-default,
+  .panel-footer {
+    border-color: $darkmode-input-border;
+    background-color: $darkmode-container;
+  }
+
+  .panel-heading {
+    background-color: $darkmode-input-bg;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $darkmode-text;
+    }
+  }
+
+  .left-nav a {
+    color: $darkmode-text !important;
+  }
+
+  .panel > .list-group:last-child .list-group-item:last-child,
+  .panel
+    > .panel-collapse
+    > .list-group:last-child
+    .list-group-item:last-child {
+    background-color: $darkmode-input-bg;
+  }
+
+  .left-nav li.active.list-group-item {
+    color: $darkmode-text !important;
+    background-color: $darkmode-background-secondary !important;
+    border-color: $darkmode-text !important;
+  }
+
+  .__footer_links a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

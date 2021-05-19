@@ -379,7 +379,7 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
 
   .left-nav li.active.list-group-item {
     color: $darkmode-text !important;
-    background-color: $darkmode-background-secondary !important;
+    background-color: $darkmode-text-dimmer !important;
     border-color: $darkmode-text !important;
   }
 

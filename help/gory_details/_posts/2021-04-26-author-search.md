@@ -7,7 +7,7 @@ The following section describes, in ugly details, the logic of author parsing. T
 
 ## Referenced resources
 
-https://github.com/romanchyla/montysolr/blob/master/contrib/examples/adsabs/server/solr/collection1/conf/schema.xml#L30
+[ADS solr schema](https://github.com/romanchyla/montysolr/blob/master/contrib/examples/adsabs/server/solr/collection1/conf/schema.xml#L30)
 
 
 
@@ -89,15 +89,15 @@ So what started as few characters (one query) is turned behind the scenes into a
 
 If it produces unexpected results, it usually is because of these reasons:
 
-    - there is a bug somewhere in this insanely complex chain -- a bug that was not caught by even the more insanely large suite of unittests (the frequency of this being the case is diminishing rapidly with time, and it happens rarely - but it is really difficult to say with certainty until the whole testsuite is examined; so it should alway be the first option)
-    - the curated knowledge base is too broad or too narrow: i.e. it is missing a connection, or has connection too many -- and joins unrelated names together
-    - haphazard interferences: wrong data indexed, wrong or outdated versions of synonyms/transliterations deployed, parts of the production cluster being down, parts of the backoffice processing pipeline being down....
+- there is a bug somewhere in this insanely complex chain -- a bug that was not caught by even the more insanely large suite of unittests (the frequency of this being the case is diminishing rapidly with time, and it happens rarely - but it is really difficult to say with certainty until the whole testsuite is examined; so it should alway be the first option)
+- the curated knowledge base is too broad or too narrow: i.e. it is missing a connection, or has connection too many -- and joins unrelated names together
+- haphazard interferences: wrong data indexed, wrong or outdated versions of synonyms/transliterations deployed, parts of the production cluster being down, parts of the backoffice processing pipeline being down....
 
 
-Intermezzo #1
+### Intermezzo #1
 
 Parts of the author search logic can be turned on/off; here are some of the most useful options:
 
-    - `=author:"adamzuk, p"` the equal sign will instruct our parser not to look for transliterations/synonyms/variants
-    - `author:/adamzuk,\ p/ -- you can use regular expressions, basically throwing away all the fancy logic; but mind that in the real world people really have many different names; so with this approach you will only find papers that contain just the characters of your pattern
-    - `author:"adamczuk, p"^0.7` -- the funny tilda float number activates a fuzzy search for the similarly sounding names. You'll need to play with the modifier until you get names that work for a particular use case (the range is 0.1-1.0)
+- `=author:"adamzuk, p"` the equal sign will instruct our parser not to look for transliterations/synonyms/variants
+- `author:/adamzuk,\ p/` -- you can use regular expressions, basically throwing away all the fancy logic; but mind that in the real world people really have many different names; so with this approach you will only find papers that contain just the characters of your pattern
+- `author:"adamczuk, p"^0.7` -- the funny tilda float number activates a fuzzy search for the similarly sounding names. You'll need to play with the modifier until you get names that work for a particular use case (the range is 0.1-1.0)

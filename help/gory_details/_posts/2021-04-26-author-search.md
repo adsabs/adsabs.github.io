@@ -16,7 +16,7 @@ The following section describes, in ugly details, the logic of author parsing. T
 OK, so what happens when we search for `author:john paul II`? 
 
 
-First, the query string is turned into an abstract syntax tree (see [search parser] for details) - that is the syntactic (low) level, above it there is the semantic level of parsing and modifications. 
+First, the query string is turned into an abstract syntax tree (see [search parser](./2021-05-23-search-parser.md) for details) - that is the syntactic (low) level, above it there is the semantic level of parsing and modifications. 
 
 The parser will already know we are searching inside field `author` - it will also know the tokenizer chain (rules) that apply to that field(s). So it will run the input through the tokenizer, then it will collect various outputs (tokens - more on that later), and then it will further expand/modify/transform these.
 
@@ -49,7 +49,7 @@ Next comes **transliterations** -- what's that you ask? Well, English is the Lin
 So in the case of `adamczuk, p` at this stage we will discover that ADS database contains `adamčuk, peter` (we'd see also `adamčuk, p` if it was necessary)
 
 
-#### Intermezzo #0 - how are transliterations generated/found?
+### Intermezzo #0 - how are transliterations generated/found?
 
 Periodically, small minions at ADS will wake up every week, read all author names and compile a list of the following form:
 

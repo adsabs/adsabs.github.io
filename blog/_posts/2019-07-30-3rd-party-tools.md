@@ -8,9 +8,6 @@ label: general
 thumbnail: blog/images/blog_2019_07_30_3rd-party-tools.png
 ---
 
-<meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/blog_2019_07_30_3rd-party-tools.png">
-<meta property="og:description" content="User-Developed Tools for ADS">
-
 ADS [was started](https://ui.adsabs.harvard.edu/about/history/) in the late 1980s by astronomers, for astronomers, and has long received public funding via NASA grants. This history has meant that we’ve long been open to community involvement, and we’ve taken this a step further with the new ADS. The new ADS’s [codebase](https://github.com/adsabs) is open-source, which means that the code that makes up our website and data pipelines is available for users to look at, contribute to, or use for their own projects. Also, we’ve made our database more accessible by allowing users to access our holdings via [our API](https://github.com/adsabs/adsabs-dev-api).
 
 The API in particular has enabled users to develop an ecosystem of new tools to keep up with the literature and to maintain professional and personal bibliographies. In this post, we highlight a few of these third-party tools developed by our user community. Note that these tools were all developed independently of ADS, so if you have questions about them, please contact the developers directly.

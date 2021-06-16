@@ -13,6 +13,10 @@
   </title>
   <meta name="description" content="{{ site.description }}" />
 
+  <!-- Disqus tags -->
+  <meta name="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ page.title | strip_html | strip_newlines | truncate: 200 | escape }}{% endif %}">
+  <meta name="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+
   <link
     rel="stylesheet"
     href="{{ site.baseurl }}/help/common/css/styles.css "

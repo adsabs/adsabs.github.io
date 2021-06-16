@@ -158,6 +158,24 @@
       </ul>
     </div>
   </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="policies-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#policies-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Policies </h3>
+      <a>
+    </div>
+    <div id="policies-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="policies-help">
+      <ul class="list-group">
+        {% assign posts = (site.posts | sort:"order") %} {% for post in posts %} {% if post.category == "policies" %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
+          </a>
+        {% endif %} {% endfor %}
+      </ul>
+    </div>
+  </div>
+
 </div>
 
     <h3 class="{% if '/faq/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/whats_new">What's New</a></h3>
@@ -165,9 +183,6 @@
     <h3 class="{% if '/api/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/api">Using the ADS API </a></h3>
     <h3 class="{% if '/legacy/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/legacy">Legacy Services </a></h3>
     <h3 class="{% if '/logos/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/logos">Logos </a></h3>
-    <h3 class="{% if '/privacy/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/privacy">Privacy Policy</a></h3>
-    <h3 class="{% if '/terms/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/terms">Terms of Use</a></h3>
-    <h3 class="{% if '/accessibility/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/accessibility">Accessibility</a></h3>
 
     <hr>
 

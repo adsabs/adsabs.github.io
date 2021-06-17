@@ -11,12 +11,11 @@ The ADS project develops and maintains services to facilitate the discovery and 
 
 ## Who we are looking for
 
-The ADS project has three openings to join its team of ten developers and three curators. The successful candidates will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
+The ADS project has two openings to join its team of ten developers and three curators. The successful candidates will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
 
 We're looking for:
 
 * a back-office [developer and data scientist](https://cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-29) experienced in designing well-structured software, data pipelines and REST APIs. The successful candidate will enhance the ADS back-office architecture, improving the data processing pipelines and the public cloud-based API, as well as develop new functionalities to support the search engine and ADS natural language processing/machine learning plans. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/601130700))
-* a user-focused [digital technologies and development librarian](https://www.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-14) interested in working both collaboratively and independently to design and implement new tools, technology services, and collaboration infrastructures to support the curation efforts of the ADS. The successful candidate will also be involved in collection management, assisting the ADS curation team with content decisions, documentation, and user support. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/599940000))
 * a highly motivated [scientist](https://pweb.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-13) interested in performing statistical analysis and preparing datasets of enriched/tagged full text articles to be used as training and validating material for machine/deep learning models created by ADS developers. The successful candidate for this time-limited, part-time opening is a scientist (in astronomy or closely related fields), with experience publishing in astrophysics journals, familiarity with how theoretical and observational papers are typically structured, and knowledge of Python programming and data analysis. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/597834300))
 
 ## What we offer

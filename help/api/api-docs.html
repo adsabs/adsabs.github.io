@@ -17,8 +17,8 @@
     <style>
       .darkmode-toggle {
         background: #100f2c;
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         position: fixed;
         border-radius: 50%;
         right: 32px;
@@ -32,9 +32,18 @@
         z-index: 100;
       }
 
+      rapi-doc::part(anchor) {
+        color: #4073dd;
+      }
+
       [data-theme='dark'] .darkmode-toggle {
         background: #fff;
       }
+
+      [data-theme='dark'] rapi-doc::part(anchor) {
+        color: #58a6ff;
+      }
+
     </style>
   </head>
   <body>
@@ -44,34 +53,46 @@
       render-style="read"
       schema-style="table"
       heading-text="adsAPI"
-      theme="light"
-      primary-color="#85A7EA"
+      regular-font="Helvetica Neue"
+      bg-color="#FFF";
+      primary-color="#4073DD"
+      text-color="#5D5D5D"
+      nav-bg-color="#EEE"
+      nav-text-color="#5D5D5D"
+      nav-accent-color="#4073DD"
       schema-description-expanded="true"
       show-header="false"
       fill-request-fields-with-example="false"
       font-size="largest"
     >
       <div
+        id="logo-container"
         slot="nav-logo"
-        style="display: flex; align-items: center; justify-content: center"
+        style="display: flex; align-items: center; justify-content: center; background-color: #EEE;"
       >
         <img
-          src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"
+          id="logo"
+          src="/help/img/bbb_assets/ads_partial_logo_dark_background.svg"
           style="width: 50px; margin-right: 10px"
         />
-        <span style="color: #fff; font-size: 175%"> <b>ads</b>API </span>
+        <span id="logo-text" style="color: #000; font-size: 175%"> <b>ads</b>API </span>
       </div>
     </rapi-doc>
-    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
-      🌓
-    </div>
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">🌓</div>
   </body>
   <script>
     let darkSwitch;
 
     const turnOnDarkMode = (save) => {
       document.body.setAttribute('data-theme', 'dark');
-      document.querySelector('rapi-doc').setAttribute('theme', 'dark');
+      const rapidoc = document.querySelector('rapi-doc');
+      rapidoc.setAttribute('bg-color', '#21262d');
+      rapidoc.setAttribute('text-color', '#eee');
+      rapidoc.setAttribute('nav-bg-color', '#0d1117');
+      rapidoc.setAttribute('nav-text-color', '#eee');
+      document.querySelector('#logo').setAttribute('src', src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg")
+      document.querySelector('#logo-container').style.backgroundColor = '#000'
+      document.querySelector('#logo-text').style.color = '#c9d1d9'
       darkSwitch.classList.add('darkModeOn');
       darkSwitch.setAttribute('title', 'Turn off dark mode');
       if (save) localStorage.setItem('darkSwitch', 'on');
@@ -79,7 +100,15 @@
 
     const turnOffDarkMode = (save) => {
       document.body.removeAttribute('data-theme');
-      document.querySelector('rapi-doc').setAttribute('theme', 'light');
+      const rapidoc = document.querySelector('rapi-doc');
+      rapidoc.setAttribute('bg-color', '#FFF');
+      rapidoc.setAttribute('text-color', '#5D5D5D');
+      rapidoc.setAttribute('nav-bg-color', '#EEE');
+      rapidoc.setAttribute('nav-text-color', '#5D5D5D');
+      rapidoc.setAttribute('nav-accent-color', '#4073DD');
+      document.querySelector('#logo').setAttribute('src', src="/help/img/bbb_assets/ads_partial_logo_dark_background.svg")
+      document.querySelector('#logo-container').style.backgroundColor = '#EEE'
+      document.querySelector('#logo-text').style.color = '#5D5D5D'
       darkSwitch.classList.remove('darkModeOn');
       darkSwitch.setAttribute('title', 'Turn on dark mode');
       if (save) localStorage.setItem('darkSwitch', 'off');

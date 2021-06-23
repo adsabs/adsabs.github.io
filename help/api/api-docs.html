@@ -1,28 +1,121 @@
-<!doctype html> <!-- Important: must specify -->
+<!DOCTYPE html>
+<!-- Important: must specify -->
 <html>
   <head>
-    <meta charset="utf-8"> <!-- Important: rapi-doc uses utf8 charecters -->
-    <title> ADS OpenAPI Docs </title>
-    <link rel="shortcut icon" type="image/jpg" href="https://ui.adsabs.harvard.edu/help/common/images/favicon-32x32.png"/>
-    <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
+    <meta charset="utf-8" />
+    <!-- Important: rapi-doc uses utf8 charecters -->
+    <title>ADS OpenAPI Docs</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://ui.adsabs.harvard.edu/help/common/images/favicon-32x32.png"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"
+    ></script>
+    <style>
+      .darkmode-toggle {
+        background: #100f2c;
+        width: 4rem;
+        height: 4rem;
+        position: fixed;
+        border-radius: 50%;
+        right: 32px;
+        bottom: 32px;
+        left: unset;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+      }
+
+      [data-theme='dark'] .darkmode-toggle {
+        background: #fff;
+      }
+    </style>
   </head>
   <body>
     <rapi-doc
-      spec-url = "https://raw.githubusercontent.com/adsabs/adsabs-dev-api/master/openapi/openapi_public.yaml"
-      sort-endpoints-by = "summary"
-      render-style = "read"
-      schema-style = "table"
-      heading-text = "adsAPI"
-      theme = "light"
-      primary-color = #85A7EA
-      schema-description-expanded = true
-      show-header = false
-      fill-request-fields-with-example = false
-      font-size = largest
+      spec-url="https://raw.githubusercontent.com/adsabs/adsabs-dev-api/master/openapi/openapi_public.yaml"
+      sort-endpoints-by="summary"
+      render-style="read"
+      schema-style="table"
+      heading-text="adsAPI"
+      theme="light"
+      primary-color="#85A7EA"
+      schema-description-expanded="true"
+      show-header="false"
+      fill-request-fields-with-example="false"
+      font-size="largest"
     >
-      <div slot="nav-logo" style="display: flex; align-items: center; justify-content: center;">
-        <img src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" style="width: 50px; margin-right: 10px"> <span style="color:#fff; font-size:175%"> <b>ads</b>API </span>
+      <div
+        slot="nav-logo"
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        <img
+          src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"
+          style="width: 50px; margin-right: 10px"
+        />
+        <span style="color: #fff; font-size: 175%"> <b>ads</b>API </span>
       </div>
     </rapi-doc>
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
   </body>
+  <script>
+    let darkSwitch;
+
+    const turnOnDarkMode = (save) => {
+      document.body.setAttribute('data-theme', 'dark');
+      document.querySelector('rapi-doc').setAttribute('theme', 'dark');
+      darkSwitch.classList.add('darkModeOn');
+      darkSwitch.setAttribute('title', 'Turn off dark mode');
+      if (save) localStorage.setItem('darkSwitch', 'on');
+    };
+
+    const turnOffDarkMode = (save) => {
+      document.body.removeAttribute('data-theme');
+      document.querySelector('rapi-doc').setAttribute('theme', 'light');
+      darkSwitch.classList.remove('darkModeOn');
+      darkSwitch.setAttribute('title', 'Turn on dark mode');
+      if (save) localStorage.setItem('darkSwitch', 'off');
+    };
+
+    const toggle = () => {
+      if (darkSwitch.classList.contains('darkModeOn')) {
+        turnOffDarkMode(true);
+      } else {
+        turnOnDarkMode(true);
+      }
+    };
+
+    const init = () => {
+      darkSwitch = document.getElementById('darkSwitch');
+      darkSwitch.classList.remove('hidden');
+
+      // 1. check app setting
+      if (localStorage.getItem('darkSwitch') !== null) {
+        if (localStorage.getItem('darkSwitch') === 'on') {
+          turnOnDarkMode(false);
+        } else {
+          turnOffDarkMode(false);
+        }
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // 2. check system setting
+        turnOnDarkMode(false);
+      } else {
+        // 3. default to light
+        turnOffDarkMode(false);
+      }
+      darkSwitch.addEventListener('click', function () {
+        toggle();
+      });
+    };
+
+    init();
+  </script>
 </html>

@@ -44,6 +44,8 @@ author:&ldquo;huchra, j" abstract:cfa           | papers by J. Huchra which have
 author:&ldquo;huchra, j" OR abstract:&ldquo;great wall" | papers by J. Huchra or which mention "great wall" in their abstract
 author:&ldquo;huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
 author:&ldquo;huchra, j" NOT title:2mass   | same as above
+author:&ldquo;accomazzi, a." author:&ldquo;kurtz, m." | papers authored by both A. Accomazzi and M. Kurtz
+author:("accomazzi, a." "kurtz, m.") | same as above
 
 **Operator precedence in multi-part searches**
 
@@ -128,16 +130,16 @@ For a breakdown to department level:
 - Use the "Institutions" filter in the left panel of search results
 - Use parent/child syntax as defined in our list of Canonical Affiliations linked above (e.g. inst:&ldquo;UCLA/IGPP")
 
-Users are reminded that while affiliation information is largely complete for recent refereed literature, not all records contain an affiliation; therefore, 
+Users are reminded that while affiliation information is largely complete for recent refereed literature, not all records contain an affiliation; therefore,
 searching by affiliation alone will inherently be incomplete. We strongly recommend combining affiliation searches with author searches for best results.
 
 ### Astronomical Objects and Position Search
 
-The query modifier `object:` in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky ("cone search"). The cone search also makes use of services offered by SIMBAD and NED. 
+The query modifier `object:` in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky ("cone search"). The cone search also makes use of services offered by SIMBAD and NED.
 
 Queries for astronomical objects via `object:` queries return publications that have been tagged with the canonical names for these objects. This tagging has been done by the SIMBAD and NED teams. Additionally, the object names (as specified in the query) are also used in an ADS query against abstracts, titles and keywords in the astronomy collection (with synonym replacement switched off). The result set is a combination of all these matches. Object queries that target just one service (e.g. SIMBAD) are not currently supported. The `data` facet can be used to filter the results set.
 
-The syntax for cone searches is: 
+The syntax for cone searches is:
 
 ```
   object:"RA ±Dec:radius"

@@ -17,11 +17,12 @@
 
   const init = () => {
     // 1. check app setting
-    if (
-      localStorage.getItem('darkSwitch') !== null &&
-      localStorage.getItem('darkSwitch') === 'on'
-    ) {
-      turnOnDarkMode(false);
+    if (localStorage.getItem('darkSwitch') !== null) {
+      if (localStorage.getItem('darkSwitch') === 'on') {
+        turnOnDarkMode(false);
+      } else {
+        turnOffDarkMode(false);
+      }
     }
     // 2. check system setting
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {

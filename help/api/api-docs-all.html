@@ -25,7 +25,7 @@
         rapidoc.setAttribute('text-color', '#eee');
         rapidoc.setAttribute('nav-bg-color', '#0d1117');
         rapidoc.setAttribute('nav-text-color', '#eee');
-        rapidoc.setAttribute('nav-accent-color', '#58a6ff');
+        rapidoc.setAttribute('nav-accent-color', '#2e9e5c');
         document.querySelector('#logo').setAttribute('src', src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg")
         document.querySelector('#logo-container').style.backgroundColor = '#000'
         document.querySelector('#logo-text').style.color = '#c9d1d9'
@@ -47,6 +47,7 @@
         rapidoc.setAttribute('text-color', '#5D5D5D');
         rapidoc.setAttribute('nav-bg-color', '#EEE');
         rapidoc.setAttribute('nav-text-color', '#5D5D5D');
+        rapidoc.setAttribute('nav-accent-color', '#2e9e5c');
         document.querySelector('#logo').setAttribute('src', src="/help/img/bbb_assets/ads_partial_logo_dark_background.svg")
         document.querySelector('#logo-container').style.backgroundColor = '#EEE'
         document.querySelector('#logo-text').style.color = '#5D5D5D'
@@ -55,6 +56,7 @@
 
         // Change main content link color
         const style = rapidoc.shadowRoot.querySelector('#custom-style');
+        style.innerHTML = '*,:after,:before{box-sizing:border-box}:host{--green: #40dd81}';
 
         // save to local storage
         if (save) localStorage.setItem('darkSwitch', 'off');
@@ -94,6 +96,7 @@
         darkSwitch = document.getElementById('darkSwitch');
         const style = document.createElement('style');
         style.setAttribute('id', 'custom-style');
+        style.innerHTML = '*,:after,:before{box-sizing:border-box}:host{--green: #40dd81}';
         rapidoc.shadowRoot.appendChild(style);
         initTheme();
 
@@ -142,9 +145,11 @@
       heading-text="adsAPI"
       regular-font="Helvetica Neue"
       bg-color="#FFF";
+      primary-color="#2e9e5c"
       text-color="#5D5D5D"
       nav-bg-color="#EEE"
       nav-text-color="#5D5D5D"
+      nav-accent-color="#2e9e5c"
       schema-description-expanded="true"
       show-header="false"
       fill-request-fields-with-example="false"

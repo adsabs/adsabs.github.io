@@ -14,116 +14,31 @@
       type="module"
       src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"
     ></script>
+    <script src="rapidoc-theme.js"></script>
     <script>
-      let darkSwitch;
-      let rapidoc;
-
-      const turnOnDarkMode = (save) => {
-        document.body.setAttribute('data-theme', 'dark');
-        rapidoc.setAttribute('theme', 'dark');
-        rapidoc.setAttribute('bg-color', '#21262d');
-        rapidoc.setAttribute('text-color', '#eee');
-        rapidoc.setAttribute('nav-bg-color', '#0d1117');
-        rapidoc.setAttribute('nav-text-color', '#eee');
-        document.querySelector('#logo').setAttribute('src', src="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg")
-        document.querySelector('#logo-container').style.backgroundColor = '#000'
-        document.querySelector('#logo-text').style.color = '#c9d1d9'
-        darkSwitch.classList.add('darkModeOn');
-        darkSwitch.setAttribute('title', 'Turn off dark mode');
-
-        // Change main content link color
-        const style = rapidoc.shadowRoot.querySelector('#custom-style');
-        style.innerHTML = '*,:after,:before{box-sizing:border-box}:host{--blue: #58a6ff}';
-
-        // save to local storage
-        if (save) localStorage.setItem('darkSwitch', 'on');
-      };
-
-      const turnOffDarkMode = (save) => {
-        document.body.removeAttribute('data-theme');
-        rapidoc.setAttribute('theme', 'light');
-        rapidoc.setAttribute('bg-color', '#FFF');
-        rapidoc.setAttribute('text-color', '#5D5D5D');
-        rapidoc.setAttribute('nav-bg-color', '#EEE');
-        rapidoc.setAttribute('nav-text-color', '#5D5D5D');
-        document.querySelector('#logo').setAttribute('src', src="/help/img/bbb_assets/ads_partial_logo_dark_background.svg")
-        document.querySelector('#logo-container').style.backgroundColor = '#EEE'
-        document.querySelector('#logo-text').style.color = '#5D5D5D'
-        darkSwitch.classList.remove('darkModeOn');
-        darkSwitch.setAttribute('title', 'Turn on dark mode');
-
-        // Change main content link color
-        const style = rapidoc.shadowRoot.querySelector('#custom-style');
-
-        // save to local storage
-        if (save) localStorage.setItem('darkSwitch', 'off');
-      };
-
-      const toggle = () => {
-        if (darkSwitch.classList.contains('darkModeOn')) {
-          turnOffDarkMode(true);
-        } else {
-          turnOnDarkMode(true);
-        }
-      };
-
-      const initTheme = () => {
-        // 1. check app setting
-        if (localStorage.getItem('darkSwitch') !== null) {
-          if (localStorage.getItem('darkSwitch') === 'on') {
-            turnOnDarkMode(false);
-          } else {
-            turnOffDarkMode(false);
-          }
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          // 2. check system setting
-          turnOnDarkMode(false);
-        } else {
-          // 3. default to light
-          turnOffDarkMode(false);
-        }
-        darkSwitch.addEventListener('click', function () {
-          toggle();
-        });
-      };
-
       // Setup theme and style when DOM is loaded
-      document.addEventListener("DOMContentLoaded", function(){
-        rapidoc = document.querySelector('rapi-doc');
-        darkSwitch = document.getElementById('darkSwitch');
-        const style = document.createElement('style');
-        style.setAttribute('id', 'custom-style');
-        rapidoc.shadowRoot.appendChild(style);
-        initTheme();
-
-        // hide body until theme is set to avoid flashing
-        document.body.style.visibility = 'visible';
-      });
-    </script>
-    <style>
-      .darkmode-toggle {
-        background: #100f2c;
-        width: 3rem;
-        height: 3rem;
-        position: fixed;
-        border-radius: 50%;
-        right: 32px;
-        bottom: 32px;
-        left: unset;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 100;
+      const options = {
+        dark: {
+          bgColor: '#21262d',
+          'text-color': '#eee',
+          'nav-bg-color': '#0d1117',
+          'nav-text-color': '#eee',
+          'nav-accent-color': '#FF791A',
+        },
+        light: {
+          'bg-color': '#fff',
+          'text-color': '#5D5D5D',
+          'nav-bg-color': '#eee',
+          'nav-text-color': '#5D5D5D',
+          'nav-accent-color': '#FF791A',
+        }
       }
-
+      initTheme(options);
+    </script>
+    <link rel="stylesheet" href="rapidoc-styles.css">
+    <style>
       rapi-doc::part(anchor) {
         color: #4073DD;
-      }
-
-      [data-theme='dark'] .darkmode-toggle {
-        background: #fff;
       }
 
       [data-theme='dark'] rapi-doc::part(anchor) {

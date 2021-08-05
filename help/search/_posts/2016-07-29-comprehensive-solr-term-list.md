@@ -82,7 +82,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 | page |  | y | y | First page of a record |
 | page_count |  | y | y | If page_range is present, gives the difference between the first and last page numbers in the range |
 | page_range |  | n | n | Range of page numbers covered by the record |
-| property |  | y | y | an array of miscellaneous flags associated with the record. Possible values include: ARTICLE, REFEREED, NOT_REFEREED, INPROCEEDINGS, OPENACCESS, NONARTICLE, EPRINT, BOOK, PROCEEDINGS, CATALOG, SOFTWARE |
+| property |  | y | y | an array of miscellaneous flags associated with the record. Possible values include: refereed, notrefereed, article, nonarticle,  ads_openaccess, eprint_openaccess, pub_openaccess, openaccess, ocrabstract  |
 | pub |  | y | y | the canonical name of the publication the record appeared in |
 | pub_raw |  | y | y | Name of publisher, but also includes the volume, page, and issue if exists |
 | pubdate |  | y | y | publication date in the form YYYY-MM-DD (DD value will always be "00") - May be interesting for people who want publication month |

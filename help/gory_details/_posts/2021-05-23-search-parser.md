@@ -49,14 +49,14 @@ Yes, many people will not know about it, but you can do stuff like: `dog NEAR5 c
 
 ### There is no in-order proximity operator, but ADS still supports this feature
 
-ADS has a limited support for **in order proximity** - if you make a phrase search like so `abs:"newtonian solar"~3` the work `newtonian` (and its synonyms) will have to be followed by `solar` (and its synonyms) for up to 3 positions away. We do not have a special operator for it though; if what you search for has more than 2 words, we'll decide how far apart they can be if you do `abs:"foo bar baz"^3`
+ADS has a limited support for **in order proximity** - if you make a phrase search like so `abs:"newtonian solar"~3` the word `newtonian` (and its synonyms) will have to be followed by `solar` (and its synonyms) for up to 3 positions away. We do not have a special operator for it though; if what you search for has more than 2 words, we'll decide how far apart they can be if you do `abs:"foo bar baz"^3`
 
 
 ### Syntax Parsing
 
-OK, so back to the syntactic parsing -- ANTLR will be 'eating` input query character by character. It will occassionally veer off to explore a possible branch, to either pursure it further or return back and start branching from some previous position. The input has to be syntactically correct, if we encounter input which is non-conforming, we'll generate an exception and return.
+OK, so back to the syntactic parsing -- how does it actually work? We have a formal grammar which describes the query language. Based on that, we have generated a library (in Java) which is included inside SOLR. When SOLR receives the user input, before it can start searching for documents, the user query (string) will be turned into a query object. And that is the objective of the parser. First comes the syntactic phase during which an ANTLR parser will be 'eating` input character by character. It will occassionally veer off to explore a possible (alternative) branch, to either pursure it further or return back and start branching from some previous position. The input has to be syntactically correct, if we explored all possible readings and there are still some input characters left, it means the input is non-conforming and we'll generate an exception and give up.
 
-This is a feature, but it is border-line feature/bug. The syntax parser is `unforgiving` (that is the actual name of the class in Java). It would be possible (and sensible thing to do) to actually first try to parse the input and on failure try again with some less unforgiving parser; but we have never gotten to it -- so perhaps in the future... just know that if the parser encounters an error, it will generate an exception.
+This is a feature, but it is border-line feature/bug. The syntax parser is `unforgiving` (that is the actual name of the class in Java). It would be possible (and sensible thing to do) to actually first try to parse the input and on failure try again with some less unforgiving parser; but we have never gotten to it -- so perhaps in the future... just know that if the parser encounters an error, it will generate an exception and the exception will actually say why/what has failed.
 
 If the query is correct, however - after the parser finished parsing, we'll have **AST** (Abstract Syntax Tree). A hierarchical datastructure (a tree) instead of the flat chain of characters.
 
@@ -93,7 +93,7 @@ Pro tip: if you add `debugQuery=true` to your search request, you'll see the ser
     }
 
 
-Pro tip (II): If you have access to STDOUT/logging of the SOLR instance, you will see LOTS of details; each and every step in the query pipeline produces and output. Here is an example:
+Pro tip (II): If you have access to STDOUT/logging of the SOLR instance, you will see LOTS of details; each and every step in the query pipeline produces and output. This information is however only printed to STDOUT. Here is an example:
 
 
      57. step class org.apache.lucene.queryparser.flexible.standard.processors.MultiTermRewriteMethodProcessor
@@ -148,8 +148,81 @@ Pro tip (II): If you have access to STDOUT/logging of the SOLR instance, you wil
      Tree changed: NO
 
 
-There is over 60 steps inside the pipeline, some of them extremely complex (see for example [author search](./2021-04-26-author-search.md)) and some simple. We cannot describe here everything that happens there; but we should point out that the pipeline is a like a chain of transducers. Each component will see the `AST`, it will modify it and then processing switches to the next component. There are pre- and post- stages; which would correspond to in-order and post-order traversal of the tree. And in some situations the parser will invoke itself, so it is like a coiled snake eating its own snake -- is it messy? No! The work done by the parser is extremely important, it is a complicated job of transforming, extending, cutting, slicing and re-constructing the query. It is complicated because it has to be, but it is also very powerful. And it keeps evolving with ADS users and their requests.
+There is over 60 steps inside the pipeline, some of them extremely complex (see for example [author search](./2021-04-26-author-search.md)) and some simple. We cannot describe here everything that happens there; but we should point out that the pipeline is a like a chain of transducers. Each component will see the `AST`, it will modify it and then processing switches to the next component. There are pre- and post- stages; which would correspond to in-order and post-order traversal of the tree. And in some situations the parser will invoke itself, so it is like a coiled snake eating its own tail -- is it messy? Perhaps, but we'd add that it is only as messy as it needs to be. The work done by the parser is extremely important, it is a complicated job of transforming, extending, cutting, slicing and re-constructing the query. It is complicated because it has to be, but it is also very powerful. And it keeps evolving with ADS users and their requests.
 
 ## Building Query Object
 
-Once every component had a chance to modify the AST, we practically pruned the tree into almost a flat list of parent/child relationships. This much lighter AST will be passed onto `query builders` whose job is to turn this modified semantic tree into query objects understood by Lucene/SOLR. That `Query` object will be responsible for selecting **and** scoring documents based on the users input and the query parameters that came with it or were presented by default.
+Once every component had a chance to modify the AST, we practically pruned the tree into almost a flat list of parent/child relationships. At the end of those 60 transducers, we will have a much lighter AST. And this object will be passed to [`query builders`](https://github.com/romanchyla/montysolr/blob/master/contrib/adsabs/src/java/org/apache/lucene/queryparser/flexible/aqp/AqpAdsabsQueryTreeBuilder.java). Their job is to turn this modified semantic tree into **query objects** as understood by Lucene/SOLR. That `Query` object will be responsible for selecting **and** scoring documents based on the users input and the query parameters that came with it or were presented by default.
+
+Majority of those query objects are typical Lucene/SOLR citizens such as `BooleanQuery`, `TermQuery` etc. There is fbut we can say that during the life of ADS few more (specialized) categories were added. Some of these will receive a special treatment in here as well:
+
+    - BitSetQuery: allows ADS users to select documents based on the list of IDs (this supports very large number of identifiers; millions of them)
+    - SecondOrderQuery[2021-08-06-second-order-query.md]
+
+
+## Special Parameters Affecting Search
+
+There is plethora of options that will affect how the search is executed, many of them are described directly in the [SOLR documentation](https://solr.apache.org/guide/7_3/common-query-parameters.html)
+
+Here are some ADS specific ones that can be changed:
+
+### aqp.unfielded.tokens.strategy
+
+Possible values: tag, join, add, multiply, **disjuncts**
+
+This controls how we are going to generate additional queries for an unfielded search (i.e. search which omits index information such as `author:huchra nasa`)
+
+Our parser is not smart (slow) enough to see that `nasa` is not a name, so when it see this `unfielded` part of the query, it can do the following:
+
+    - tag: produces no query changes, but the unfielded tokens can be seen/used by other components to generate/modify query object
+    - join: will join the unfielded portion of the query to its prefix effectively saying `author:"huchra nasa"` (especially when **aqp.unfielded.tokens.new.type** is phrase)
+    - add: will construct additional query with the ambiguous part of the query being searched separately, e.g. (`author:"huchra nasa"` OR `+author:huchra +nasa)`
+    - multiply: this is very similar to the `add` strategy but the difference is in how the resulting query gets parsed; in here we are not constructing query objects directly but instead we'll re-parse the newly constructed query from the string up and therefore we can apply the whole query parsing/building logic to just portion of the query; the new parser will start from analyzing `author:huchra nasa author:\"huchra nasa\"`
+    - disjuncts: this is like the `multiply` strategy but instead of adding OR clauses, we will generate a disjunct query which affects scoring. Only the highest scoring portion of the query affects final score, thus if we programmatically added something to the user's input or not, it will not artifically inflate the final score
+
+### aqp.unfielded.tokens.new.type
+
+Can be combined with the parameter above, affects what happens to the identified unfielded portion of the query.
+
+    - simple: tokens are joined together by a white space
+    - phrase: AST tokens are joined together to produce a phrase AST
+    - normal: AST tokens are joined together into an AST group (as if the user typed: `(foo bar baz)` - i.e. with explicit quotes)
+
+### aqp.unfielded.tokens.function.name
+
+A function that will be used to reparse the unfielded portion of the query; only applicable for `multiply` and `disjuncts` strategies. For the list of available functions/operators, see: [query functions](2021-08-07-query-functions.md). The default is `edismax_combined_aqp`
+
+### aqp.defaultOperator
+
+### aqp.fieldMap
+       arxiv identifier;collection database
+###aqp.fieldMapPostAnalysis
+entdate entry_date;pubdate date;author_nosyn author_notrans author_nosyn_notrans author;title_nosyn title;alternate_title_nosyn alternate_title;abstract_nosyn abstract;all_nosyn all;full_nosyn full;body_nosyn body;ack_nosyn ack;keyword_nosyn keyword
+
+
+###aqp.unfieldedSearch
+
+author^1.5 title^1.4 abstract^1.3 all
+
+###aqp.dateFormat
+
+yyyy-MM-dd'T'HH:mm:ss
+
+
+###aqp.timestampFormat
+yyyy-MM-dd'T'HH:mm:ss.SSS
+
+
+###aqp.dateFields
+
+entry_date,date
+
+###aqp.timestampFields
+
+indexstamp,update_timestamp,entry_date,metadata_ctime,metadata_mtime,fulltext_ctime,fulltext_mtime,nonbib_ctime,nonbib_mtime,metrics_ctime,metrics_mtime,orcid_ctime,orcid_mtime
+
+
+
+###aqp.force.fuzzy.phrases
+
+author,first_author,book_author,editor

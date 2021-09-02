@@ -20,9 +20,9 @@ The ADS personnel are:
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ORCID, fulltext) & User Support
 - [Dr. Nemanja Martinovic](../team/team/nmartinovic.html) - DevOps Engineer
 - [Shinyi (Jennifer) Chen](../team/team/schen.html) - User Interface and Front-End Development  
-- [Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing  
+- [Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing
+- [Jennifer Koch](../team/team/jkoch.html) - Librarian (Digital Technologies Development) 
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 
 If you have comments or questions about the ADS, you are welcome to contact any of us directly, although the preferred way to get in touch with ADS staff is through our support email ([adshelp [at] cfa.harvard.edu](mailto:adshelp@cfa.harvard.edu)), which guarantees a timely reply to your inquiry.
-

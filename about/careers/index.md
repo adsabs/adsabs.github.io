@@ -11,9 +11,7 @@ The ADS project develops and maintains services to facilitate the discovery and 
 
 ## Who we are looking for
 
-The ADS project has one opening to join its team of ten developers and three curators. The successful candidate will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group.
-
-We're looking for a back-office [developer and data scientist](https://cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-21-29) experienced in designing well-structured software, data pipelines and REST APIs. The successful candidate will enhance the ADS back-office architecture, improving the data processing pipelines and the public cloud-based API, as well as develop new functionalities to support the search engine and ADS natural language processing/machine learning plans. ([apply here](https://www.usajobs.gov/GetJob/ViewDetails/601130700))
+We don't currently have any job openings! If you'd like to be notified of future postings, [email us](mailto:adshelp@cfa.harvard.edu?Subject=Notify%20me%20of%20future%20job%20postings).
 
 ## What we offer
 

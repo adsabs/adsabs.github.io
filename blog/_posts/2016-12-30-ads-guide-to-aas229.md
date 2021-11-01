@@ -21,18 +21,18 @@ All Abstracts of papers and posters presented at the AAS meeting are indexed in 
 Here is how you get the entire list from ADS's Bumblebee interface:
 [bibstem:AAS...229](https://ui.adsabs.harvard.edu/#search/q=bibstem%3AAAS...229&sort=date%20desc%2C%20bibcode%20desc)
 
-We have also created interactive word clouds which capture some of the topics 
+We have also created interactive word clouds which capture some of the topics
 discussed each day during the meeting for the curious minds:
 [http://ads.harvard.edu/events/AAS229/](http://ads.harvard.edu/events/AAS229/)
 
 ## Meet the ADS Users Group
 
-The ADS has recently constituted a Users Group which will advise the project 
-on a wide range of issues.  Community input to the users group is welcome, 
+The ADS has recently constituted a Users Group which will advise the project
+on a wide range of issues.  Community input to the users group is welcome,
 and anybody can share their thoughts with any group member.  
 
-More information is available on the 
-[Users Group web page](http://adsabs.harvard.edu/adsug.html)
+More information is available on the
+[Users Group web page](../../about/adsug/)
 
 ## Join our Team!
 
@@ -42,18 +42,7 @@ The ADS project still has four openings for software developers in its group:
   * [Back-end developer positions (2)](../jobs/back-end.html)
   * [Dev-Ops engineer position](../jobs/dev-ops.html)
 
-If you are interested in contributing to our mission and working in the 
+If you are interested in contributing to our mission and working in the
 world's largest and most diverse astrophysical institution in the world,
 take a look at the job descriptions and come talk to us to learn more
 about them.
-
-
-
-
-
-
-
-
-
-
-

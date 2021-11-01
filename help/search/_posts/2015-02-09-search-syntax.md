@@ -206,7 +206,7 @@ Institution | inst:&ldquo;abbreviation" | inst:&ldquo;Harvard U" | search the cu
 Issue        | issue:number                | issue:10                | search for papers in a certain issue
 Keywords     | keyword:&ldquo;phrase"            | keyword:sun             | search publisher- or author-supplied keywords
 Language     | lang:&ldquo;language"             | lang:korean             | search for papers with a given language
-Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see [Astronomical Objects and Position Search](http://localhost:4000/help/search/search-syntax/#astronomical-objects-and-position-search) above)
+Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see [Astronomical Objects and Position Search](../search/search-syntax/#astronomical-objects-and-position-search) above)
 ORCiD iDs    | orcid:id                    | orcid:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD
 ORCiD iDs from publishers    | orcid_pub:id                    | orcid_pub:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD specified by a Publisher
 ORCiD iDs from known ADS users    | orcid_user:id                    | orcid_id:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by known ADS users

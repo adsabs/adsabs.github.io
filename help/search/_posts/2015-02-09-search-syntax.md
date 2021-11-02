@@ -241,7 +241,7 @@ ocrabstract      | records with an abstract generated from OCR (may contain typo
 
 ### Bibliographic Groups
 
-The "bibgroup" search field allows restriction of the search results to one of the [ADS bibliographic groups](http://doc.adsabs.harvard.edu/abs_doc/help_pages/search.html#Select_References_From_Group).  These groups are curated by a number of librarians and archivists who maintain either institutional or "telescope" bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.
+The "bibgroup" search field allows restriction of the search results to one of the [ADS bibliographic groups](http://adsabs.harvard.edu/abs_doc/help_pages/search.html#Select_References_From_Group).  These groups are curated by a number of librarians and archivists who maintain either institutional or "telescope" bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.
 
 The list of current Institutional bibgroups is: ARI, CfA, CFHT, Leiden, USNO
 

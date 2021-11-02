@@ -11,7 +11,7 @@ thumbnail: blog/images/blog_2019_10_28_farewell_classic.png
 ADS Classic is officially retiring on October 31, 2019 after more than 25 years in service. Its replacement, the [new ADS](https://ui.adsabs.harvard.edu/), has been in the works for a decade, with the current iteration, originally codenamed Bumblebee, in development since 2015.  We know that most of you use ADS multiple times a week (if not daily) and have done so for much of your careers, so this is a big change which may require some adjustment. We are taking steps to make this transition as smooth as possible and want to reassure all of our users about what this transition entails.
 
 As a system, ADS is made up of two main components: its bibliographic database (Abstract Service) and its full-text archive (Article Service). The changes that will occur on October 31st only affect the operations of the ADS Abstract Service. In particular:
-* All query forms that use the [ADS Classic search engine](http://adsabs.harvard.edu/abstract_service.html) will be redirected to the corresponding pages on the new website
+* ~~All query forms that use the [ADS Classic search engine](http://adsabs.harvard.edu/abstract_service.html) will be redirected to the corresponding pages on the new website~~ *We're slowly removing Classic servers from use and the redirects will stop working in the near future. Please update your bookmarks to point directly to the [new website](https://ui.adsabs.harvard.edu/) (edited 11/2021).*
 * All abstract pages in ADS Classic will be redirected to their corresponding versions in the new interface
 * All links to queries into the ADS search engine will be redirected to the corresponding searches in the new interface
 
@@ -20,7 +20,7 @@ Things that will not (yet) change:
 * Access to the ADS Classic “API” for those applications requesting machine readable content such as RSS feeds, XML or VOTABLE output
 * Access to layered services such as the myADS notification service or the ADS reference resolver
 
-A list of resources and search forms which will remain accessible is listed on the [ADS Legacy Pages page](http://articles.adsabs.harvard.edu/legacy.html). 
+A list of resources and search forms which will remain accessible is listed on the [ADS Legacy Pages page](http://articles.adsabs.harvard.edu/legacy.html).
 
 If you have been bookmarking URLs of records in ADS or even queries into our system, these should be redirected to the proper place on the new website. However, note that personalized content, such as a user account with ADS Classic or private libraries, will not be automatically migrated to the new site. If you had such content you will have received multiple reminders and instructions on how to migrate it.
 
@@ -38,6 +38,4 @@ A: We’ve introduced a basic, HTML-only version of the new ADS. If the site is 
 - Q: I have Classic links embedded in my personal website or bookmarked. Will those still work?  
 A: Yes, your links will continue to work, and will be redirected to the appropriate pages in the new ADS.
 - Q: Will my Classic libraries be available in the new ADS?  
-A: Classic private libraries will not be transferred automatically, but we provide a tool to import them for you. After creating an account in the new ADS, you’ll have access to the [library import tool](../help/libraries/legacy-importing). This tool will be available for several months after Classic is retired. 
-
-
+A: Classic private libraries will not be transferred automatically, but we provide a tool to import them for you. After creating an account in the new ADS, you’ll have access to the [library import tool](../help/libraries/legacy-importing). This tool will be available for several months after Classic is retired.

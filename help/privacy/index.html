@@ -1,9 +1,9 @@
 ---
 layout: post
 category: privacy
+title: Privacy Policy
+no-header: true
 ---
 
-{% assign posts = site.categories[page.category] | sort:"order"  %}
-    {% for post in posts %}
-    {{post.content}}
-      {% endfor %}
+{% assign posts = site.categories[page.category] | sort:"order" %} {% for post
+in posts %} {{post.content}} {% endfor %}

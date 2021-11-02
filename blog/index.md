@@ -56,5 +56,6 @@ layout: blog_page
     {% endif %}
 
 {% endfor %}
+
 </div>
 </div>

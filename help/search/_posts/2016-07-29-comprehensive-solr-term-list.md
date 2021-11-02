@@ -122,7 +122,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
 
 
 
- |  **Functional Operators**   | **Example** | **Explantion** |
+ |  **Functional Operators**   | **Example** | **Explanation** |
  | --------------------------- | - | - |
  |  [citations()](../search/citations-and-references)  | `citations(aff:MIT)` | Returns list of citations for papers matching the inner query; use `fl=[citations]` to retrieve the field contents |
  |  instructive()                                      |  | Synonym of reviews() |

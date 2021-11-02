@@ -7,7 +7,7 @@ order: 6
 
 #### Linking accounts
 
-If you have an account in our legacy system, <a href="http://adsabs.harvard.edu">ADS Classic</a>, it is possible to import libraries from your old account into the new ADS interface. 
+If you have an account in our legacy system, ADS Classic, it is possible to import libraries from your old account into the new ADS interface. 
 
 First login with your normal credentials on the new ADS, and then navigate to the *Customize Settings* page:
 
@@ -17,7 +17,7 @@ Once there, select **Import Libraries** in the left panel:
 
 <img class="img-responsive" src="/help/img/import_help_02.png" alt="a screenshot of ADS Classic library import with the form filled in"/>
 
-If you are linking an ADS Classic account, you will need to specify your email, your password used for your ADS Classic account, and the mirror at which you have an account. 
+If you are linking an ADS Classic account, you will need to specify your email, your password used for your ADS Classic account, and the mirror at which you have an account.
 
 If you need to link a different account, then simply press **Sign into a new Classic account**
 
@@ -25,7 +25,7 @@ If you need to link a different account, then simply press **Sign into a new Cla
 
 #### Importing libraries
 
-Once you have successfully connected your ADS Classic account with the new ADS, you now have the option to import your ADS Classic libraries into the new ADS. 
+Once you have successfully connected your ADS Classic account with the new ADS, you now have the option to import your ADS Classic libraries into the new ADS.
 
 <img class="img-responsive" src="/help/img/import_help_03.png" alt="a screenshot after the Import all Classic libraries button has been pressed"/>
 

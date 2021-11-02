@@ -44,6 +44,8 @@ author:&ldquo;huchra, j" abstract:cfa           | papers by J. Huchra which have
 author:&ldquo;huchra, j" OR abstract:&ldquo;great wall" | papers by J. Huchra or which mention "great wall" in their abstract
 author:&ldquo;huchra, j" -title:2mass      | papers by "J. Huchra" but excludes ones with "2mass" in their title
 author:&ldquo;huchra, j" NOT title:2mass   | same as above
+author:&ldquo;accomazzi, a." author:&ldquo;kurtz, m." | papers authored by both A. Accomazzi and M. Kurtz
+author:("accomazzi, a." "kurtz, m.") | same as above
 
 **Operator precedence in multi-part searches**
 
@@ -128,16 +130,16 @@ For a breakdown to department level:
 - Use the "Institutions" filter in the left panel of search results
 - Use parent/child syntax as defined in our list of Canonical Affiliations linked above (e.g. inst:&ldquo;UCLA/IGPP")
 
-Users are reminded that while affiliation information is largely complete for recent refereed literature, not all records contain an affiliation; therefore, 
+Users are reminded that while affiliation information is largely complete for recent refereed literature, not all records contain an affiliation; therefore,
 searching by affiliation alone will inherently be incomplete. We strongly recommend combining affiliation searches with author searches for best results.
 
 ### Astronomical Objects and Position Search
 
-The query modifier `object:` in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky ("cone search"). The cone search also makes use of services offered by SIMBAD and NED. 
+The query modifier `object:` in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky ("cone search"). The cone search also makes use of services offered by SIMBAD and NED.
 
 Queries for astronomical objects via `object:` queries return publications that have been tagged with the canonical names for these objects. This tagging has been done by the SIMBAD and NED teams. Additionally, the object names (as specified in the query) are also used in an ADS query against abstracts, titles and keywords in the astronomy collection (with synonym replacement switched off). The result set is a combination of all these matches. Object queries that target just one service (e.g. SIMBAD) are not currently supported. The `data` facet can be used to filter the results set.
 
-The syntax for cone searches is: 
+The syntax for cone searches is:
 
 ```
   object:"RA ±Dec:radius"
@@ -204,7 +206,7 @@ Institution | inst:&ldquo;abbreviation" | inst:&ldquo;Harvard U" | search the cu
 Issue        | issue:number                | issue:10                | search for papers in a certain issue
 Keywords     | keyword:&ldquo;phrase"            | keyword:sun             | search publisher- or author-supplied keywords
 Language     | lang:&ldquo;language"             | lang:korean             | search for papers with a given language
-Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see [Astronomical Objects and Position Search](http://localhost:4000/help/search/search-syntax/#astronomical-objects-and-position-search) above)
+Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see [Astronomical Objects and Position Search](../search/search-syntax/#astronomical-objects-and-position-search) above)
 ORCiD iDs    | orcid:id                    | orcid:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD
 ORCiD iDs from publishers    | orcid_pub:id                    | orcid_pub:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD specified by a Publisher
 ORCiD iDs from known ADS users    | orcid_user:id                    | orcid_id:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by known ADS users
@@ -239,7 +241,7 @@ ocrabstract      | records with an abstract generated from OCR (may contain typo
 
 ### Bibliographic Groups
 
-The "bibgroup" search field allows restriction of the search results to one of the [ADS bibliographic groups](http://doc.adsabs.harvard.edu/abs_doc/help_pages/search.html#Select_References_From_Group).  These groups are curated by a number of librarians and archivists who maintain either institutional or "telescope" bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.
+The "bibgroup" search field allows restriction of the search results to one of the [ADS bibliographic groups](http://adsabs.harvard.edu/abs_doc/help_pages/search.html#Select_References_From_Group).  These groups are curated by a number of librarians and archivists who maintain either institutional or "telescope" bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.
 
 The list of current Institutional bibgroups is: ARI, CfA, CFHT, Leiden, USNO
 

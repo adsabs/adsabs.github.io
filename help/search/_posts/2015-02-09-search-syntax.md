@@ -61,6 +61,21 @@ aff:(China OR "Hong Kong" Taiwan) | aff:((China OR "Hong Kong") AND Taiwan)
 aff:(China OR "Hong Kong" NOT Taiwan) |aff:(China OR ("Hong Kong" NOT Taiwan))
 aff:(China OR "Hong Kong" -Taiwan) | aff:((China OR "Hong Kong") NOT Taiwan)
 
+If this simple description is lacking something in confusion, feel free to visit [search parser details](help/gory_details/_posts/2021-05-23-search-parser.md)
+
+
+### Wildcards, Proximity, and Regular expression search
+
+Example Query                        | Explanation
+-------------------------------------------------|------------------------------------------------
+author:&ldquo;huchra, jo*"                | search for papers written by `john`, `johnatan`, `jehovah` and anything inbetween
+author:&ldquo;bol?,"               | question mark replaces exactly one character, in this case we may get back `bolt`, `boln`, `bolm`
+title:(map NEAR5 planar)                          | instead of a phrase search, we can ask the search engine to consider words be close to each other -- the maximum allowed distance is 5; the operator must be written as `NEAR[number]`; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as `a`, `the`, `in`...). **The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title**
+grant:/nag[1-9]+/                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is only useful for fields that contain `string` tokens (as opposed to `text` tokens). So for example, it might be useful for `author`, `grant`, `simbid` search, but it is useless for `body` (fulltext) search. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
+
+
+
+
 ### Synonyms and Acronyms
 
 By default most search terms in ADS are expanded by adding a list of words which are synonyms of the search term.  So for example, a search of "star" in the title field will be expanded to include words such as "stars," "stellar," "starry," "starlike," and so on.  (Notice that this often includes words in foreign languages such as "etoile," "stern," and "stella"). While this feature improves recall, it sometimes compromises the precision of the results.  Our search engine allows one to turn off the synonym expansion feature by simply prepending an "=" sign in front of the search term.
@@ -117,6 +132,8 @@ Synoym expansion also applies to author names, which provide a way to account fo
 
 As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/search/filter).
 
+The logic behind the author search is rather complicated, if you would like to learn more, visit [Author search for masochists](help/gory_details/_posts/2021-04-26-author-search.md)
+
 ### Affiliation Searches
 
 Affiliations in ADS have been indexed in several different search fields, with the intention of allowing multiple use cases. We have currently assigned affiliation identifiers allowing for parent/child relationships, such as an academic department within a university. Note that a child may have multiple parents, but we restrict a child from having children of its own.  The list of recognized institutions is available from our <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">Canonical Affiliation repository</a> on Github.
@@ -169,7 +186,7 @@ is the search `object:"16 +60:0.1"`, followed by exporting the results in the `V
 
 ### Available Fields
 
-This is a list of fields currently recognized by the ADS search engine and the preferred search format:
+This is a list of fields currently recognized by the ADS search engine and the preferred search format - go to [comprehensive list of fields](./2016-07-29-comprehensive-solr-term-list.md) if not saturated yet:
 
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------

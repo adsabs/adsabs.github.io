@@ -192,37 +192,18 @@ Can be combined with the parameter above, affects what happens to the identified
 
 A function that will be used to reparse the unfielded portion of the query; only applicable for `multiply` and `disjuncts` strategies. For the list of available functions/operators, see: [query functions](2021-08-07-query-functions.md). The default is `edismax_combined_aqp`
 
+
 ### aqp.defaultOperator
 
-### aqp.fieldMap
-       arxiv identifier;collection database
-###aqp.fieldMapPostAnalysis
-entdate entry_date;pubdate date;author_nosyn author_notrans author_nosyn_notrans author;title_nosyn title;alternate_title_nosyn alternate_title;abstract_nosyn abstract;all_nosyn all;full_nosyn full;body_nosyn body;ack_nosyn ack;keyword_nosyn keyword
+By default, ADS will search using 'AND' operator. But if modified (the only sensible option is probably 'OR') then this will make the search engine evaluate every search parameters as 'nice to have'. This is actually better than it sounds, because when sorting search results by score, the results are coming with score computed by relevancy (which is the secret sauce that changes so it cannot be described; but users might find the relevancy score to be much better than the ADS defaults)
 
 
-###aqp.unfieldedSearch
+### aqp.unfieldedSearch
 
-author^1.5 title^1.4 abstract^1.3 all
-
-###aqp.dateFormat
-
-yyyy-MM-dd'T'HH:mm:ss
-
-
-###aqp.timestampFormat
-yyyy-MM-dd'T'HH:mm:ss.SSS
-
-
-###aqp.dateFields
-
-entry_date,date
-
-###aqp.timestampFields
-
-indexstamp,update_timestamp,entry_date,metadata_ctime,metadata_mtime,fulltext_ctime,fulltext_mtime,nonbib_ctime,nonbib_mtime,metrics_ctime,metrics_mtime,orcid_ctime,orcid_mtime
+By default, this is the list of fields that get searched when no field is specified: `author^1.5 title^1.4 abstract^1.3 all` -- obviously, one could modify this using a url parameter.
 
 
 
-###aqp.force.fuzzy.phrases
+### aqp.force.fuzzy.phrases
 
 author,first_author,book_author,editor

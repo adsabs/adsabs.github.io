@@ -80,8 +80,8 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                          issue | y | y | Issue number of the journal that includes the article | 
  |                        keyword | y | y | Array of normalized and non-normalized keywords | 
  |                  keyword_facet | y | n | Like `keyword` but used for faceting | 
- |                   keyword_norm | y | y | Controlled keywords, each entry will have a corresponding `keyword_schema` entry | 
- |                 keyword_schema | y | y | Schema for each controlled keyword, i.e., the schema of a `keyword_norm` if it can be assigned | 
+ |                   keyword_norm | y | y | Controlled keywords, if it was identified | 
+ |                 keyword_schema | y | y | Schema for each controlled keyword, i.e., the schema of a `keyword` if it can be assigned | 
  |                           lang | y | y | In ADS this field contains a language of the main title. Currently, this value is present in a very small portion of records | 
  |                     links_data | y | y | Internal data structure with information for generating links to external sources (API users are advised to use link resolver service instead) | 
  |                 metadata_mtime | y | y | Machine readable modification timestamp; corresponds to time when bibliographic metadata was updated | 

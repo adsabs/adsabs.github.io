@@ -22,7 +22,9 @@ The ADS personnel are:
 - [Shinyi (Jennifer) Chen](../team/team/schen.html) - User Interface and Front-End Development  
 - [Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing
 - [Jennifer Koch](../team/team/jkoch.html) - Librarian (Digital Technologies Development)
-- [Dr. Tom Allen](../team/team/tallen.html) - Astrophysicist (machine learning dataset tagging) 
+- [Dr. Tom Allen](../team/team/tallen.html) - Astrophysicist (machine learning dataset tagging)
+- [Taylor Jacovich](../team/team/tjacovich.html) - Back-End Development (pipelines)
+- Tom Fehring - Back-End Development
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 

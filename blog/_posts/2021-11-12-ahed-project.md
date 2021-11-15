@@ -5,49 +5,57 @@ author: "Jennifer Koch"
 position: "ADS"
 category: blog
 label: technical-posts
-thumbnail: 
+thumbnail: blog/images/blog_2021-11-12-ahed_library.png
 ---
 
-Recently NASA has asked the Astrophysics Data System to develop a plan to expand its service from Astrophysics to cover all five scientific disciplines supported by NASA’s Science Mission Directorate (Heliophysics, Planetary Science, Astrophysics, Earth Science, Biophysics). The initial phase of this expansion has now been approved and funded: to begin the expansion into Planetary Science and Heliophysics ([Accomazzi 2021](https://ui.adsabs.harvard.edu/abs/2021AAS...23813203A/abstract)). Over the past year we developed a census to ensure research areas such as Space Science, Astrobiology, Aeronomy and Solar Physics are properly accounted for and represented in our database. The ultimate goal of this effort is to provide the same level of support for these disciplines as ADS currently provides for Astrophysics: current and accurate coverage of both refereed and gray literature, preprints, data and software. We expect that enhanced search capabilities will be developed in due time through collaborations with partners and stakeholders. 
+Recently NASA has asked the Astrophysics Data System to develop a plan to expand its service from Astrophysics to cover all five scientific disciplines supported by NASA’s Science Mission Directorate (Heliophysics, Planetary Science, Astrophysics, Earth Science, Biophysics). The initial phase of this expansion, into Planetary Science and Heliophysics, has now been approved and funded ([Accomazzi 2021](https://ui.adsabs.harvard.edu/abs/2021AAS...23813203A/abstract)). Over the past year we developed a census to ensure research areas such as Space Science, Astrobiology, Aeronomy and Solar Physics are properly accounted for and represented in our database. The ultimate goal of this effort is to provide the same level of support for these disciplines as ADS currently provides for Astrophysics: current and accurate coverage of both refereed and gray literature, preprints, data and software. We expect that enhanced search capabilities will be developed in due time through collaborations with partners and stakeholders. 
 
 The project described in this blog is a collaboration with NASA’s Astrobiology Habitable Environments Database (AHED) to assess the bibliographic holdings of AHED, identify those that have already been included in ADS’s holdings, flag those that are not yet included, and finally curate records and ingest those missing into ADS. This is one example of ADS’s goal to form collaborations with partners and expand access to scientific data and literature. The results of this project will be a first indication of how well the ADS covers the literature relevant for this type of research.
 
-As a recent addition to the ADS Team supporting curation efforts and assisting in collection management, this appealed to my interests as I have recently begun honing my Python skills, and learning new tools such as Jupyter Notebook and OpenRefine. Jupyter Notebook is especially useful for new Python users because it helps break up scripts into more manageable blocks (cells) and I can include my notes, findings, and documentation along the way.
+As a recent addition to the ADS Team supporting curation efforts and assisting in collection management, this appealed to my interests as I have recently begun honing my Python skills and learning new tools such as Jupyter Notebook and OpenRefine. Jupyter Notebook is especially useful for new Python users because it helps break up scripts into more manageable blocks (cells) and notes, findings and documentation can be included along the way.
  
-In this documentation I intend to outline the goals I established, the steps I took to accomplish them, and lessons learned. To accomplish this project, I used a combination of my own knowledge and expertise, I read API Documentation, searched online for solutions as needed, and I also collaborated with team members to debug and learn the ins and outs of the ADS API.
+In this blog post I will outline the goals I established, the steps I took to accomplish them, and lessons learned. To accomplish this project, I used a combination of my own knowledge and expertise, read API documentation, searched online for solutions as needed, and collaborated with team members to debug and learn the ins and outs of the ADS API.
 
 ### Project Outline and Goals
 
-The source data used in this project was an excel spreadsheet provided of AHED’s bibliographic holdings (with metadata for Authors, Org code, Title, Journal information, and DOI if available), which was split up into three sheets by Branch (Astrophysics Branch, the Planetary Systems Branch, and the Exobiology Branch). 
+The source data used in this project was an Excel spreadsheet provided of AHED’s bibliographic holdings (with metadata for authors, 'org code' as a unique identifier of NASA's organizational structure, title, journal information, and DOI if available), which was split up into three sheets by Branch (Astrophysics Branch, the Planetary Systems Branch, and the Exobiology Branch). 
 
-<b>Sample image of original excel file, showing items in three tabs for the AHED Branches</b>
+<div class="text-center">
+    <img class="img-thumbnail" alt="Sample image of original excel file, showing items in three tabs for the AHED Branches" src="{{ site.baseurl }}/blog/images/blog_2021-11-12-ahed_excel.png" />
+<em>Sample image of original Excel file, showing items in three tabs for the AHED Branches</em>
+</div>
+<br>
 
-<img width="1004" alt="Screen Shot 2021-11-04 at 11 44 23 AM" src="https://user-images.githubusercontent.com/31739067/140366721-e2721366-94d7-4651-a06d-17e7a10483e4.png"> 
+The main overall goal was to check if the publication is present in the ADS database, and if so, match it with an ADS bibcode. In order to accomplish this, I used the ADS API to match based on DOIs (for those provided), then reference strings, and then fill in the rest by title. I split up my overall goal into four major tasks, and for each of these phases I created a new Jupyter Notebook and outlined the steps.
+1. [Task 1: Match AHED to ADS Items by DOI](#match-by-doi)
+2. [Task 2: Match AHED to ADS Items by Reference Strings](#match-by-ref)
+3. [Task 3: Match AHED to ADS Items by Title](#match-by-title)
+4. [Task 4: Curate missing items and create ADS Libraries](#ads-libs)
 
-The main overall goal was to match each publication with an ADS bibcode if it exists. In order to accomplish this, my team recommended I use the ADS API to match based on DOIs (for those provided), then reference strings, and then fill in the rest by Title. I split up my overall goal into four major tasks, and for each of these phases I created a new Jupyter Notebook and outlined the steps.
-1. [(Notebook 1): Match AHED to ADS Items by DOI](#match-by-doi)
-2. [(Notebook 2): Match AHED to ADS Items by Reference Strings](#match-by-ref)
-3. [(Notebook 3): Match AHED to ADS Items by Title](#match-by-title)
-4. [(Notebook 4): Curate missing items and create ADS Libraries](#ads-libs)
+## <a name="match-by-doi">Task 1: Match AHED to ADS Items by DOI</a>
 
-## <a name="match-by-doi">Task 1 (Notebook 1): Match AHED to ADS Items by DOI</a>
+Code snippets in this section are taken from [AHED Project Notebook 1](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-1-DOIs%20API.ipynb).
 
-Create a version of the AHED spreadsheet that has a column "bibcode" added to the right of the DOI column. For those publications we are able to match to ADS records, this column will list these bibcodes, otherwise "NA".
+My first goal is to match items in the AHED spreadsheet to ADS records by DOI. I first created a version of the AHED spreadsheet that has a column "bibcode" added to the right of the DOI column. For those publications we are able to match to ADS records, this column will list these bibcodes, otherwise "NA".
 
-<b>Notebook 1 Outline:</b>
-<li>Step 1.1: Data Cleanup and Prep - combine all the excel sheets to one data set
-<li>Step 1.2: Isolate/create list of DOIs
-<li>Step 1.3: API Connection & Query
-<li>Step 1.4: Match list of bibcodes to original data set
+<b>Task 1 Outline:</b>
+* Step 1.1: Data Cleanup and Prep - combine all the Excel sheets to one data set
+* Step 1.2: Isolate/create list of DOIs
+* Step 1.3: API Connection & Query
+* Step 1.4: Match list of bibcodes to original data set
 
+<details>
+ <summary>Task 1 Details</summary>
+ 
 <b>Step 1.1: Data Cleanup and Prep</b>
   
-After opening up a Jupyter notebook, I began by loading the excel spreadsheets and merging them as one comprehensive data frame. I decided this would be easier to handle and more efficient for obtaining results.
+After opening up a Jupyter notebook, I began by loading the Excel spreadsheets and merging them as one comprehensive data frame. I decided this would be easier to handle and more efficient for obtaining results.
   
-```python
+```
+python
 import pandas as pd
 
-# Read excel sheets
+# Read Excel sheets
 astro_pubs = pd.read_excel("AHED/SpaceScienceAndAstrobiologyDivision.xlsx", sheet_name=0)
 planet_pubs = pd.read_excel("AHED/SpaceScienceAndAstrobiologyDivision.xlsx", sheet_name=1)
 exo_pubs = pd.read_excel("AHED/SpaceScienceAndAstrobiologyDivision.xlsx", sheet_name=2)
@@ -59,16 +67,17 @@ ahed_pubs = pd.concat([astro_pubs, planet_pubs, exo_pubs], axis='index', ignore_
 ahed_pubs.to_excel("AHED/ahed_pubs.xlsx", index=False)
 ```
 
-After creating a single data frame, I assessed the data provided and chose to use [OpenRefine](https://openrefine.org/) to clean up, transform, and normalize the data. OpenRefine is an open-source application for working with noisy data. I recently attended training at a [Smithsonian Data Carpentries Workshop](https://datascience.si.edu/carpentries) where I learned about OpenRefine, its uses, and benefits for data cleanup. 
+After creating a single data frame, I used OpenRefine to clean up, transform, and normalize the data. [OpenRefine](https://openrefine.org/) is an open-source application for working with noisy data. I recently attended training at a [Smithsonian Data Carpentries Workshop](https://datascience.si.edu/carpentries) where I learned about OpenRefine, its uses, and benefits for data cleanup. 
 
-Using OpenRefine, I was able to transform the journal data; normalizing publication titles, volume and issue numbers, and standardizing formatting. This also helped me discover additional DOIs in the Journal field. In addition, I made transformations such as trimming whitespace, fixing typos as I caught them, simplifying column headers, and removing duplicate entries. The transformation and deduplication process narrowed down the AHED paper list from 892 to 797 items.
+Using OpenRefine, I was able to transform the journal data, normalizing publication titles, volume and issue numbers and standardizing formatting. This also helped me discover additional DOIs in the Journal field. In addition, I made transformations such as trimming whitespace, fixing typos, simplifying column headers, and removing duplicate entries. The transformation and deduplication process narrowed down the AHED paper list from 892 to 797 items.
 
-  <b>Step 1.2: Isolate the list of DOIs</b>
+<b>Step 1.2: Isolate the list of DOIs</b>
   
-With my cleaned up data, I imported the new excel file and isolated all the existing DOIs to prep for querying them in the ADS API.
+With my cleaned up data, I imported the new Excel file and isolated all the existing DOIs to prep for querying them in the ADS API.
   
-  ```python
-# Import new excel sheet, 'ahed_pubs_refined'
+```
+python
+# Import new Excel sheet, 'ahed_pubs_refined'
 ahed_pubs_refined = pd.read_excel("AHED/ahed_pubs_refined.xlsx")
 
 # Isolate the DOIs and drop all the papers that have no DOIs (drop null values)
@@ -82,11 +91,12 @@ print("Original paper list has", len(ahed_doi_list), "DOIs to search.")
 
     Original paper list has 177 DOIs to search.
 
-  <b>Step 1.3: API Connection & Query</b>
+<b>Step 1.3: API Connection & Query</b>
   
-Ready to search the ADS API with 177 DOIs, I established the API connection and queried my DOIs, returning the bibcodes and DOIs matched of ADS' holdings. At first, I established a basic DOI input query, where I joined all 177 DOIs in a single string, joined by 'OR' so that the ADS API would search them all at once. This worked, however it was not the most efficient due to a character limit in the query. In collaboration with my team, I was able to formulate a loop through my DOI list in batches of 20 and append the response bibcodes and DOIs to a new list ('data = []').
+Ready to search the ADS API with 177 DOIs, I established the API connection and queried my DOIs, returning the bibcodes and DOIs matched to ADS' holdings. At first, I established a basic DOI input query, where I joined all 177 DOIs in a single string, joined by 'OR' so that the ADS API would search them all at once. This worked, however it was not the most efficient due to a character limit in the query. After some iteration, I was able to formulate a loop through my DOI list in batches of 20 and append the response bibcodes and DOIs to a new list ('data = []').
 
-```python
+```
+python
 import requests
 import json
 
@@ -120,11 +130,12 @@ dois_matched.to_excel("AHED/dois_matched.xlsx",
                   index=False)
 ```
   
-  <b>Step 1.4: Match Bibcode/DOI Response Data to Original Paper List</b>
+<b>Step 1.4: Match Bibcode/DOI Response Data to Original Paper List</b>
  
 After the API connection successfully matched 155 existing bibcodes to the DOIs queried, my new step was to join these bibcodes on the DOIs in the AHED paper list. I joined the new data set (consisting of two columns, 'DOI' and 'BIBCODE') to the old as a left join on 'DOI'.
 
-```python
+```
+python
 # Merge/Join new table to original, joined on 'DOI'
 merged = ahed_pubs_refined.merge(dois_matched, on='DOI', how='left')
 
@@ -132,21 +143,28 @@ merged = ahed_pubs_refined.merge(dois_matched, on='DOI', how='left')
 merged.to_excel("AHED/dois_matched.xlsx",
                   index=False)
 ```
+</details>
+ 
+## <a name="match-by-ref">Task 2: Match AHED to ADS Items by Reference Strings</a>
 
-  ## <a name="match-by-ref">Task 2 (Notebook 2): Match AHED to ADS Items by Reference Strings</a>
+Code snippets in this section are taken from [AHED Project Notebook 2](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-2-Ref%20API.ipynb).
 
-My next goal was to match additional papers (without DOIs matched) by reference strings with ADS Reference Service. The [ADS Reference Service]( https://github.com/adsabs/reference_service) is an API endpoint that can take a query string of authors and/or journal info (publication name, volume, issue, year) and return the bibcode if matched to an existing ADS record. 
+My next goal was to match papers not matched by DOI in the previous task using their reference strings instead via the ADS Reference Service. The [ADS Reference Service]( https://github.com/adsabs/reference_service) is an API endpoint that can take a query string of authors and/or journal info (publication name, volume, issue, year) and return the bibcode if matched to an existing ADS record. 
 
-<b>Notebook 2 Outline:</b>
-<li>Step 2.1: Format file of papers into reference strings
-<li>Step 2.2: Query the Reference API with reference strings, return bibcodes
-<li>Step 2.3: Match the bibcodes back to the paper list
+<b>Task 2 Outline:</b>
+* Step 2.1: Format file of papers into reference strings
+* Step 2.2: Query the Reference API with reference strings, return bibcodes
+* Step 2.3: Match the bibcodes back to the paper list
 
+<details>
+ <summary>Task 2 Details</summary>
+ 
 <b>Step 2.1: Format Reference List</b>
   
-First I needed to prep the reference strings. In Goal 1/Notebook 1, I had transformed the data in OpenRefine to normalize the journal titles, volume numbers, and issue/id numbers. The Reference Service takes strings in the following format: [authors],[publication year],[journal name, vol, issue numbers]. For example, “Roser, J. E., Ricca, A., and Allamandola, L. J., 2014, ApJ, 783, 97” would be a typical reference string that the service can query. So I started to formulate these reference strings by joining these metadata fields together into a new column and exporting the column/list to a text file.
+First I needed to prep the reference strings. In Task 1, I had transformed the data in OpenRefine to normalize the journal titles, volume numbers, and issue/id numbers. The Reference Service takes strings in the following format: [authors],[publication year],[journal name, vol, issue numbers]. For example, “Roser, J. E., Ricca, A., and Allamandola, L. J., 2014, ApJ, 783, 97” would be a typical reference string that the service can query. So I started to formulate these reference strings by joining these metadata fields together into a new column and exporting the column/list to a text file.
 
-```python
+```
+python
 import pandas as pd
 import numpy as np
 
@@ -167,7 +185,8 @@ dt['REFS'].to_csv("AHED/ref_list.txt", index=False, header=False, sep='\t')
 
 The next step was to input my reference list to the API, and return the matching bibcodes.
 
-```python
+```
+python
 import sys, os, io
 import requests
 import argparse
@@ -208,7 +227,8 @@ def resolve(references):
     return None, response.status_code
 ```
 
-```python
+```
+python
 # Read my reference strings file
 references = read_file("AHED/ref_list.txt")
 references = [ref.replace('\n','') for ref in references]
@@ -236,7 +256,8 @@ print('Matched',len(bibcodes),'bibcodes')
 
 After the API successfully found 397 bibcodes from the rest of the paper list (~650 papers), my next step was to match these back to the original AHED paper list and include as items matched thus far.
   
-```python
+```
+python
 # Convert my reference results to a data frame and drop null values
 ref_results = pd.DataFrame(total_results)
 ref_results = ref_results.replace('...................', np.nan)
@@ -264,22 +285,30 @@ merged.to_excel("AHED/refs_matched.xlsx", index=False)
 ```
 Now at a running total of approx 550 items matched, my last goal was to match any additional items I could find by Title.
 
-  ## <a name="match-by-title">Task 3 (Notebook 3): Match AHED to ADS Items by Title</a>
+ </details>
+
+## <a name="match-by-title">Task 3: Match AHED to ADS Items by Title</a>
+
+Code snippets in this section are taken from [AHED Project Notebook 3](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-3-Titles%20API.ipynb).
 
 My next goal was to match additional papers (without DOIs matched, nor reference strings matched) this time by Title via the ADS API. This Title matching task was mostly for publications that had incomplete metadata (like missing volume, issue, page numbers, or incorrect journal names). 
  
-For this task, I chose to include the publication year in my query to hopefully match the most accurate results. Therefore, a typical reference string for this task would be '(title: "1-2.4 μm Near-IR Spectrum of the Giant Planet β Pictoris b Obtained with the Gemini Planet Imager" AND year:2017)'. This can be challenging for the ADS API if the Title is not spelled correctly or has special characters. This also proved challenging where the year metadata didn’t match. Therefore, I first formatted a file of these strings (Title + Year) and queried the ADS API to match any additional existing bibcodes. After that, I took a final list of unmatched items, queried the API by individual Titles, and assessed the results manually. 
+For this task, I chose to include the publication year for most accurate results. Therefore, a typical reference string for this task would be `(title: "1-2.4 μm Near-IR Spectrum of the Giant Planet β Pictoris b Obtained with the Gemini Planet Imager" AND year:2017)`. This can be challenging for the ADS API if the Title is not spelled correctly or has special characters. This also proved challenging where the year metadata didn’t match. Therefore, I first formatted a file of these strings (Title + Year) and queried the ADS API to match any additional existing bibcodes. After that, I took a final list of unmatched items, queried the API by individual Titles, and assessed the results manually. 
 
-<b>Notebook 3 Outline:</b>
-<li>Step 3.1: Format titles to query the ADS API
-<li>Step 3.2: Query the ADS API with titles, return bibcodes
-<li>Step 3.3: Match the bibcodes back to the paper list
-
+<b>Task 3 Outline:</b>
+* Step 3.1: Format titles to query the ADS API
+* Step 3.2: Query the ADS API with titles, return bibcodes
+* Step 3.3: Match the bibcodes back to the paper list
+ 
+<details>
+ <summary>Task 3 Details</summary>
+ 
 <b>Step 3.1: Format Titles List</b>
   
 From here I grabbed my running list of papers ('refs_matched' from Task 2), isolated the rows that have no bibcode yet, and formulated query strings of 'Title + Year'.
   
-```python
+```
+python
 import pandas as pd
 import numpy as np
 
@@ -300,7 +329,8 @@ titles = dt['QUERY'].to_list()
   
 With my Titles ready to query, I set up the API connection, and queried the list in chunks of 25 since there were ~250 items to input, and the API could only take so many at a time. From the ADS API response, I created a new data frame with the bibcodes and titles returned.
 
-```python
+```
+python
 # This loops through the titles list in chunks of 25 titles, querying the API, 
 # returning bibcodes and titles matched, and then appending the results as a data frame.
 
@@ -336,7 +366,8 @@ titles_matched = pd.DataFrame(data, columns = ['bibcode','TITLE'])
   
 Finally, I was able to merge the new titles & bibcodes to my running list of matches ('refs_matched').
   
-```python
+```
+python
 # Merge/Join new table to original, joined on 'TITLE'
 merged = df.merge(titles_matched, on='TITLE', how='left')
 
@@ -352,13 +383,21 @@ merged.to_excel("AHED/final_matched_2.xlsx", index=False)
 ```
 With this merge, my total came up to about 692 items matched out of a potential 797. After some analysis of what was left unmatched, I found quite a few discrepancies in the 'Year' metadata, as well as 'Title' mismatches (i.e. typos in the metadata, titles changed during publication, etc.) so when I searched again by Title alone, I ended up finding an additional ~40 or so papers that matched ADS holdings, bringing my final total to 731 items.
 
-  ## <a name="ads-libs">Task 4 (Notebook 4): Curate missing items and create ADS Libraries</a>
+ </details>
+
+## <a name="ads-libs">Task 4: Curate missing items and create ADS Libraries</a>
+
+Code snippets in this section are taken from [AHED Project Notebook 4](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-4-Libraries.ipynb).
 
 After successfully identifying as many bibcodes as I could match between AHED and ADS, I grabbed my full list of bibcodes and I made another ADS Library of them, which can be accessed [here](https://ui.adsabs.harvard.edu/user/libraries/1gM2Y7nVSv-POu2lanjJ6g). 
   
 My final task for this project was to identify, locate, and curate the last ~70 AHED records missing from the ADS holdings. This was a manual process of searching the web with the metadata provided, locating the applicable DOI, and curating ADS records from there. I was able to identify and locate approximately 54 publications, plus records for individual chapters for two I identified as books. As a result, the ADS team ingested these new records and I again created a library of those (102 total), which can be found [here](https://ui.adsabs.harvard.edu/user/libraries/HkCPGwYhSSWpzvJW_gxd3w).
-  
-```python
+
+<details>
+ <summary>Task 4 Details</summary>
+ 
+```
+python
 import requests
 import json
 
@@ -380,11 +419,13 @@ print(response.status_code)
 
     200
 
+ </details>
+ 
 ## Lessons Learned
 - Using OpenRefine to do the bulk of your data prep and cleanup was a great advantage
-- Try to save fewer files; Exporting/importing new csvs/files with small tweaks can disrupt the flow of the script and create a bunch of extra files that will clutter your documents.
-- Look for more Python ways of measuring my progress - how many bibcodes matched, counting duplicates vs non-duplicates
-- Look for ways to measure accuracy of bibcode matching - use 'score' field in ADS API.
+- Try to save fewer files; exporting/importing new CSVs/files with small tweaks can disrupt the flow of the script and create a bunch of extra files that will clutter your documents
+- Look for more quantitative ways of measuring my progress - how many bibcodes matched, counting duplicates vs non-duplicates
+- Look for ways to measure accuracy of bibcode matching - use 'score' field in ADS API
 - Practice using loops and functions for greater efficiency
 
 ## Results and Conclusions

@@ -44,9 +44,6 @@ My first goal is to match items in the AHED spreadsheet to ADS records by DOI. I
 * Step 1.3: API Connection & Query
 * Step 1.4: Match list of bibcodes to original data set
 
-<details>
- <summary>Task 1 Details</summary>
- 
 <b>Step 1.1: Data Cleanup and Prep</b>
   
 After opening up a Jupyter notebook, I began by loading the Excel spreadsheets and merging them as one comprehensive data frame. I decided this would be easier to handle and more efficient for obtaining results.
@@ -143,7 +140,6 @@ merged = ahed_pubs_refined.merge(dois_matched, on='DOI', how='left')
 merged.to_excel("AHED/dois_matched.xlsx",
                   index=False)
 ```
-</details>
  
 ## <a name="match-by-ref">Task 2: Match AHED to ADS Items by Reference Strings</a>
 
@@ -156,9 +152,6 @@ My next goal was to match papers not matched by DOI in the previous task using t
 * Step 2.2: Query the Reference API with reference strings, return bibcodes
 * Step 2.3: Match the bibcodes back to the paper list
 
-<details>
- <summary>Task 2 Details</summary>
- 
 <b>Step 2.1: Format Reference List</b>
   
 First I needed to prep the reference strings. In Task 1, I had transformed the data in OpenRefine to normalize the journal titles, volume numbers, and issue/id numbers. The Reference Service takes strings in the following format: [authors],[publication year],[journal name, vol, issue numbers]. For example, “Roser, J. E., Ricca, A., and Allamandola, L. J., 2014, ApJ, 783, 97” would be a typical reference string that the service can query. So I started to formulate these reference strings by joining these metadata fields together into a new column and exporting the column/list to a text file.
@@ -285,8 +278,6 @@ merged.to_excel("AHED/refs_matched.xlsx", index=False)
 ```
 Now at a running total of approx 550 items matched, my last goal was to match any additional items I could find by Title.
 
- </details>
-
 ## <a name="match-by-title">Task 3: Match AHED to ADS Items by Title</a>
 
 Code snippets in this section are taken from [AHED Project Notebook 3](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-3-Titles%20API.ipynb).
@@ -299,9 +290,6 @@ For this task, I chose to include the publication year for most accurate results
 * Step 3.1: Format titles to query the ADS API
 * Step 3.2: Query the ADS API with titles, return bibcodes
 * Step 3.3: Match the bibcodes back to the paper list
- 
-<details>
- <summary>Task 3 Details</summary>
  
 <b>Step 3.1: Format Titles List</b>
   
@@ -383,8 +371,6 @@ merged.to_excel("AHED/final_matched_2.xlsx", index=False)
 ```
 With this merge, my total came up to about 692 items matched out of a potential 797. After some analysis of what was left unmatched, I found quite a few discrepancies in the 'Year' metadata, as well as 'Title' mismatches (i.e. typos in the metadata, titles changed during publication, etc.) so when I searched again by Title alone, I ended up finding an additional ~40 or so papers that matched ADS holdings, bringing my final total to 731 items.
 
- </details>
-
 ## <a name="ads-libs">Task 4: Curate missing items and create ADS Libraries</a>
 
 Code snippets in this section are taken from [AHED Project Notebook 4](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-4-Libraries.ipynb).
@@ -393,9 +379,6 @@ After successfully identifying as many bibcodes as I could match between AHED an
   
 My final task for this project was to identify, locate, and curate the last ~70 AHED records missing from the ADS holdings. This was a manual process of searching the web with the metadata provided, locating the applicable DOI, and curating ADS records from there. I was able to identify and locate approximately 54 publications, plus records for individual chapters for two I identified as books. As a result, the ADS team ingested these new records and I again created a library of those (102 total), which can be found [here](https://ui.adsabs.harvard.edu/user/libraries/HkCPGwYhSSWpzvJW_gxd3w).
 
-<details>
- <summary>Task 4 Details</summary>
- 
 ```
 python
 import requests
@@ -419,8 +402,6 @@ print(response.status_code)
 
     200
 
- </details>
- 
 ## Lessons Learned
 - Using OpenRefine to do the bulk of your data prep and cleanup was a great advantage
 - Try to save fewer files; exporting/importing new CSVs/files with small tweaks can disrupt the flow of the script and create a bunch of extra files that will clutter your documents

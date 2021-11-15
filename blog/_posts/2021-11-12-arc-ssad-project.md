@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "Identifying ADS Bibliographic Gaps Against NASA Astrobiology Habitable Environments Database (AHED)"
+title: "Identifying ADS Bibliographic Gaps Against NASA Ames Space Sciences and Astrobiology Division (ARC/SSAD)"
 author: "Jennifer Koch"
 position: "ADS"
 category: blog
@@ -10,7 +10,7 @@ thumbnail: blog/images/blog_2021-11-12-ahed_library.png
 
 Recently NASA has asked the Astrophysics Data System to develop a plan to expand its service from Astrophysics to cover all five scientific disciplines supported by NASA’s Science Mission Directorate (Heliophysics, Planetary Science, Astrophysics, Earth Science, Biophysics). The initial phase of this expansion, into Planetary Science and Heliophysics, has now been approved and funded ([Accomazzi 2021](https://ui.adsabs.harvard.edu/abs/2021AAS...23813203A/abstract)). Over the past year we developed a census to ensure research areas such as Space Science, Astrobiology, Aeronomy and Solar Physics are properly accounted for and represented in our database. The ultimate goal of this effort is to provide the same level of support for these disciplines as ADS currently provides for Astrophysics: current and accurate coverage of both refereed and gray literature, preprints, data and software. We expect that enhanced search capabilities will be developed in due time through collaborations with partners and stakeholders. 
 
-The project described in this blog is a collaboration with NASA’s Astrobiology Habitable Environments Database (AHED) to assess the bibliographic holdings of AHED, identify those that have already been included in ADS’s holdings, flag those that are not yet included, and finally curate records and ingest those missing into ADS. This is one example of ADS’s goal to form collaborations with partners and expand access to scientific data and literature. The results of this project will be a first indication of how well the ADS covers the literature relevant for this type of research.
+The project described in this blog is a collaboration with NASA Ames Space Sciences and Astrobiology Division (ARC/SSAD) to assess the bibliographic holdings of ARC/SSAD, identify those that have already been included in ADS’s holdings, flag those that are not yet included, and finally curate records and ingest those missing into ADS. This is one example of ADS’s goal to form collaborations with partners and expand access to scientific data and literature. The results of this project will be a first indication of how well the ADS covers the literature relevant for this type of research.
 
 As a recent addition to the ADS Team supporting curation efforts and assisting in collection management, this appealed to my interests as I have recently begun honing my Python skills and learning new tools such as Jupyter Notebook and OpenRefine. Jupyter Notebook is especially useful for new Python users because it helps break up scripts into more manageable blocks (cells) and notes, findings and documentation can be included along the way.
  
@@ -18,25 +18,25 @@ In this blog post I will outline the goals I established, the steps I took to ac
 
 ### Project Outline and Goals
 
-The source data used in this project was an Excel spreadsheet provided of AHED’s bibliographic holdings (with metadata for authors, 'org code' as a unique identifier of NASA's organizational structure, title, journal information, and DOI if available), which was split up into three sheets by Branch (Astrophysics Branch, the Planetary Systems Branch, and the Exobiology Branch). 
+The source data used in this project was an Excel spreadsheet provided of ARC/SSAD’s bibliographic holdings (with metadata for authors, 'org code' as a unique identifier of NASA's organizational structure, title, journal information, and DOI if available), which was split up into three sheets by Branch (Astrophysics Branch, the Planetary Systems Branch, and the Exobiology Branch). 
 
 <div class="text-center">
-    <img class="img-thumbnail" alt="Sample image of original excel file, showing items in three tabs for the AHED Branches" src="{{ site.baseurl }}/blog/images/blog_2021-11-12-ahed_excel.png" />
-<em>Sample image of original Excel file, showing items in three tabs for the AHED Branches</em>
+    <img class="img-thumbnail" alt="Sample image of original excel file, showing items in three tabs for the ARC/SSAD Branches" src="{{ site.baseurl }}/blog/images/blog_2021-11-12-ahed_excel.png" />
+<em>Sample image of original Excel file, showing items in three tabs for the ARC/SSAD Branches</em>
 </div>
 <br>
 
 The main overall goal was to check if the publication is present in the ADS database, and if so, match it with an ADS bibcode. In order to accomplish this, I used the ADS API to match based on DOIs (for those provided), then reference strings, and then fill in the rest by title. I split up my overall goal into four major tasks, and for each of these phases I created a new Jupyter Notebook and outlined the steps.
-1. [Task 1: Match AHED to ADS Items by DOI](#match-by-doi)
-2. [Task 2: Match AHED to ADS Items by Reference Strings](#match-by-ref)
-3. [Task 3: Match AHED to ADS Items by Title](#match-by-title)
+1. [Task 1: Match ARC/SSAD to ADS Items by DOI](#match-by-doi)
+2. [Task 2: Match ARC/SSAD to ADS Items by Reference Strings](#match-by-ref)
+3. [Task 3: Match ARC/SSAD to ADS Items by Title](#match-by-title)
 4. [Task 4: Curate missing items and create ADS Libraries](#ads-libs)
 
-## <a name="match-by-doi">Task 1: Match AHED to ADS Items by DOI</a>
+## <a name="match-by-doi">Task 1: Match ARC/SSAD to ADS Items by DOI</a>
 
-Code snippets in this section are taken from [AHED Project Notebook 1](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-1-DOIs%20API.ipynb).
+Code snippets in this section are taken from [ARC/SSAD Project Notebook 1](https://github.com/jrkoch127/ahed_ads_project/blob/main/SSAD-1-DOIs%20API.ipynb).
 
-My first goal is to match items in the AHED spreadsheet to ADS records by DOI. I first created a version of the AHED spreadsheet that has a column "bibcode" added to the right of the DOI column. For those publications we are able to match to ADS records, this column will list these bibcodes, otherwise "NA".
+My first goal is to match items in the ARC/SSAD spreadsheet to ADS records by DOI. I first created a version of the ARC/SSAD spreadsheet that has a column "bibcode" added to the right of the DOI column. For those publications we are able to match to ADS records, this column will list these bibcodes, otherwise "NA".
 
 <b>Task 1 Outline:</b>
 * Step 1.1: Data Cleanup and Prep - combine all the Excel sheets to one data set
@@ -53,7 +53,7 @@ python
 import pandas as pd
 
 # Read Excel sheets
-astro_pubs = pd.read_excel("AHED/SpaceScienceAndAstrobiologyDivision.xlsx", sheet_name=0)
+astro_pubs = pd.read_excel("/SpaceScienceAndAstrobiologyDivision.xlsx", sheet_name=0)
 planet_pubs = pd.read_excel("AHED/SpaceScienceAndAstrobiologyDivision.xlsx", sheet_name=1)
 exo_pubs = pd.read_excel("AHED/SpaceScienceAndAstrobiologyDivision.xlsx", sheet_name=2)
 
@@ -66,7 +66,7 @@ ahed_pubs.to_excel("AHED/ahed_pubs.xlsx", index=False)
 
 After creating a single data frame, I used OpenRefine to clean up, transform, and normalize the data. [OpenRefine](https://openrefine.org/) is an open-source application for working with noisy data. I recently attended training at a [Smithsonian Data Carpentries Workshop](https://datascience.si.edu/carpentries) where I learned about OpenRefine, its uses, and benefits for data cleanup. 
 
-Using OpenRefine, I was able to transform the journal data, normalizing publication titles, volume and issue numbers and standardizing formatting. This also helped me discover additional DOIs in the Journal field. In addition, I made transformations such as trimming whitespace, fixing typos, simplifying column headers, and removing duplicate entries. The transformation and deduplication process narrowed down the AHED paper list from 892 to 797 items.
+Using OpenRefine, I was able to transform the journal data, normalizing publication titles, volume and issue numbers and standardizing formatting. This also helped me discover additional DOIs in the Journal field. In addition, I made transformations such as trimming whitespace, fixing typos, simplifying column headers, and removing duplicate entries. The transformation and deduplication process narrowed down the ARC/SSAD paper list from 892 to 797 items.
 
 <b>Step 1.2: Isolate the list of DOIs</b>
   
@@ -129,7 +129,7 @@ dois_matched.to_excel("AHED/dois_matched.xlsx",
   
 <b>Step 1.4: Match Bibcode/DOI Response Data to Original Paper List</b>
  
-After the API connection successfully matched 155 existing bibcodes to the DOIs queried, my new step was to join these bibcodes on the DOIs in the AHED paper list. I joined the new data set (consisting of two columns, 'DOI' and 'BIBCODE') to the old as a left join on 'DOI'.
+After the API connection successfully matched 155 existing bibcodes to the DOIs queried, my new step was to join these bibcodes on the DOIs in the ARC/SSAD paper list. I joined the new data set (consisting of two columns, 'DOI' and 'BIBCODE') to the old as a left join on 'DOI'.
 
 ```
 python
@@ -141,9 +141,9 @@ merged.to_excel("AHED/dois_matched.xlsx",
                   index=False)
 ```
  
-## <a name="match-by-ref">Task 2: Match AHED to ADS Items by Reference Strings</a>
+## <a name="match-by-ref">Task 2: Match ARC/SSAD to ADS Items by Reference Strings</a>
 
-Code snippets in this section are taken from [AHED Project Notebook 2](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-2-Ref%20API.ipynb).
+Code snippets in this section are taken from [ARC/SSAD Project Notebook 2](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-2-Ref%20API.ipynb).
 
 My next goal was to match papers not matched by DOI in the previous task using their reference strings instead via the ADS Reference Service. The [ADS Reference Service]( https://github.com/adsabs/reference_service) is an API endpoint that can take a query string of authors and/or journal info (publication name, volume, issue, year) and return the bibcode if matched to an existing ADS record. 
 
@@ -247,7 +247,7 @@ print('Matched',len(bibcodes),'bibcodes')
 
 <b>Step 2.3: Match Bibcode/Reference Response Data to Original Paper List</b>
 
-After the API successfully found 397 bibcodes from the rest of the paper list (~650 papers), my next step was to match these back to the original AHED paper list and include as items matched thus far.
+After the API successfully found 397 bibcodes from the rest of the paper list (~650 papers), my next step was to match these back to the original ARC/SSAD paper list and include as items matched thus far.
   
 ```
 python
@@ -278,9 +278,9 @@ merged.to_excel("AHED/refs_matched.xlsx", index=False)
 ```
 Now at a running total of approx 550 items matched, my last goal was to match any additional items I could find by Title.
 
-## <a name="match-by-title">Task 3: Match AHED to ADS Items by Title</a>
+## <a name="match-by-title">Task 3: Match ARC/SSAD to ADS Items by Title</a>
 
-Code snippets in this section are taken from [AHED Project Notebook 3](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-3-Titles%20API.ipynb).
+Code snippets in this section are taken from [ARC/SSAD Project Notebook 3](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-3-Titles%20API.ipynb).
 
 My next goal was to match additional papers (without DOIs matched, nor reference strings matched) this time by Title via the ADS API. This Title matching task was mostly for publications that had incomplete metadata (like missing volume, issue, page numbers, or incorrect journal names). 
  
@@ -373,11 +373,11 @@ With this merge, my total came up to about 692 items matched out of a potential 
 
 ## <a name="ads-libs">Task 4: Curate missing items and create ADS Libraries</a>
 
-Code snippets in this section are taken from [AHED Project Notebook 4](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-4-Libraries.ipynb).
+Code snippets in this section are taken from [ARC/SSAD Project Notebook 4](https://github.com/jrkoch127/ahed_ads_project/blob/main/AHED-4-Libraries.ipynb).
 
-After successfully identifying as many bibcodes as I could match between AHED and ADS, I grabbed my full list of bibcodes and I made another ADS Library of them, which can be accessed [here](https://ui.adsabs.harvard.edu/user/libraries/1gM2Y7nVSv-POu2lanjJ6g). 
+After successfully identifying as many bibcodes as I could match between ARC/SSAD and ADS, I grabbed my full list of bibcodes and I made another ADS Library of them, which can be accessed [here](https://ui.adsabs.harvard.edu/user/libraries/1gM2Y7nVSv-POu2lanjJ6g). 
   
-My final task for this project was to identify, locate, and curate the last ~70 AHED records missing from the ADS holdings. This was a manual process of searching the web with the metadata provided, locating the applicable DOI, and curating ADS records from there. I was able to identify and locate approximately 54 publications, plus records for individual chapters for two I identified as books. As a result, the ADS team ingested these new records and I again created a library of those (102 total), which can be found [here](https://ui.adsabs.harvard.edu/user/libraries/HkCPGwYhSSWpzvJW_gxd3w).
+My final task for this project was to identify, locate, and curate the last ~70 ARC/SSAD records missing from the ADS holdings. This was a manual process of searching the web with the metadata provided, locating the applicable DOI, and curating ADS records from there. I was able to identify and locate approximately 54 publications, plus records for individual chapters for two I identified as books. As a result, the ADS team ingested these new records and I again created a library of those (102 total), which can be found [here](https://ui.adsabs.harvard.edu/user/libraries/HkCPGwYhSSWpzvJW_gxd3w).
 
 ```
 python
@@ -389,8 +389,8 @@ token = "<my token here>"
 url = "https://api.adsabs.harvard.edu/v1/biblib/libraries"
     
 data = { 
-    "name":"AHED Library",
-    "description":"Library of records ADS matches of AHED holdings",
+    "name":"ARC/SSAD Library",
+    "description":"Library of records ADS matches of ARC/SSAD holdings",
     "public": True,
     "bibcode": bibs
 }
@@ -411,4 +411,4 @@ print(response.status_code)
 
 ## Results and Conclusions
 
-Overall, I was able to match the majority (about 92%) of publications from the AHED list to bibcodes in ADS. Only a handful of records needed to be further searched and curated for inclusion in the collections. The ADS API was impressively accurate in returning appropriate bibcodes with each task I completed. There were even times when I thought ADS had matched the wrong bibcode, until further investigation showed me that the provided metadata was inconsistent or incomplete (title, journal, or year differences). As such, this project also illustrated the general challenge involved with matching reference data to existing publications. The reference matching software has to be flexible enough to deal with small inaccuracies, but not to be too lenient (which would generate a high probability of false positives). The ADS Reference Service does well in this regard, and includes a ‘score’ quality that can be used to assess the accuracy of matches. This project was an excellent way to put my Python, data, and librarianship skills into practice, and to get acquainted with all of ADS' API services.
+Overall, I was able to match the majority (about 92%) of publications from the ARC/SSAD list to bibcodes in ADS. Only a handful of records needed to be further searched and curated for inclusion in the collections. The ADS API was impressively accurate in returning appropriate bibcodes with each task I completed. There were even times when I thought ADS had matched the wrong bibcode, until further investigation showed me that the provided metadata was inconsistent or incomplete (title, journal, or year differences). As such, this project also illustrated the general challenge involved with matching reference data to existing publications. The reference matching software has to be flexible enough to deal with small inaccuracies, but not to be too lenient (which would generate a high probability of false positives). The ADS Reference Service does well in this regard, and includes a ‘score’ quality that can be used to assess the accuracy of matches. This project was an excellent way to put my Python, data, and librarianship skills into practice, and to get acquainted with all of ADS' API services.

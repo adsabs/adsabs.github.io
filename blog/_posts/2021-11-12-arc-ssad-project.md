@@ -18,7 +18,7 @@ In this blog post I will outline the goals I established, the steps I took to ac
 
 ### Project Outline and Goals
 
-The source data used in this project was an Excel spreadsheet provided of ARC/SSAD’s bibliographic holdings (with metadata for authors, 'org code' as a unique identifier of NASA's organizational structure, title, journal information, and DOI if available), which was split up into three sheets by Branch (Astrophysics Branch, the Planetary Systems Branch, and the Exobiology Branch). 
+The source data used in this project was an Excel spreadsheet provided of ARC/SSAD’s bibliographic holdings (with metadata for authors, 'org code' as a unique identifier of NASA's organizational structure, title, journal information, and DOI if available), which was split up into three sheets by Branch (Astrophysics Branch, the Planetary Systems Branch, and the Exobiology Branch). The data provided was obtained from NASA's Astrobiology Habitable Environments Database (AHED).
 
 <div class="text-center">
     <img class="img-thumbnail" alt="Sample image of original excel file, showing items in three tabs for the ARC/SSAD Branches" src="{{ site.baseurl }}/blog/images/blog_2021-11-12-ahed_excel.png" />

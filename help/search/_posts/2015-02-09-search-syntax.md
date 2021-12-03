@@ -61,17 +61,17 @@ aff:(China OR "Hong Kong" Taiwan) | aff:((China OR "Hong Kong") AND Taiwan)
 aff:(China OR "Hong Kong" NOT Taiwan) |aff:(China OR ("Hong Kong" NOT Taiwan))
 aff:(China OR "Hong Kong" -Taiwan) | aff:((China OR "Hong Kong") NOT Taiwan)
 
-If this simple description is lacking something in confusion, feel free to visit [search parser details](help/gory_details/_posts/2021-05-23-search-parser.md)
+For more heavy handed exploration of the search syntax, feel free to visit [search parser details](help/gory_details/_posts/2021-05-23-search-parser.md)
 
 
 ### Wildcards, Proximity, and Regular expression search
 
 Example Query                        | Explanation
 -------------------------------------------------|------------------------------------------------
-author:&ldquo;huchra, jo*"                | search for papers written by `john`, `johnatan`, `jehovah` and anything inbetween
-author:&ldquo;bol?,"               | question mark replaces exactly one character, in this case we may get back `bolt`, `boln`, `bolm`
+author:&ldquo;huchra, jo*"                | multi-character wildcard; search for papers written by `huchra, john`, `huchra, jonathan`, `huchra, jolie`, and anything in between
+author:&ldquo;bol?,"               | single-character substitution; in this case we may get back `bolt`, `boln`, `bolm`
 title:(map NEAR5 planar)                          | instead of a phrase search, we can ask the search engine to consider words be close to each other -- the maximum allowed distance is 5; the operator must be written as `NEAR[number]`; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as `a`, `the`, `in`...). **The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title**
-grant:/nag[1-9]+/                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is only useful for fields that contain `string` tokens (as opposed to `text` tokens). So for example, it might be useful for `author`, `grant`, `simbid` search, but it is useless for `body` (fulltext) search. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
+grant:/nag[1-9]+/                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is more useful for fields that contain `string` tokens (as opposed to `text` tokens). In practice, this means that a field which contains many words (such as `title`, `abstract`, `body`) is a text field, but a field with only limited number of values is typically defined as a `string` - for example, `author`, `grant`, `simbid`. You can use regex in both `string` and `text` fields but you have to be aware that regular expression is only going to match **indexed tokens**. Do not think that you can search for several token using one regex expression. A little bit or more of experimentation (test queries) should be enough to help you determine your 'adversary'. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
 
 
 
@@ -132,7 +132,7 @@ Synoym expansion also applies to author names, which provide a way to account fo
 
 As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/search/filter).
 
-The logic behind the author search is rather complicated, if you would like to learn more, visit [Author search for masochists](help/gory_details/_posts/2021-04-26-author-search.md)
+The logic behind the author search is rather complicated, if you would like to learn more, visit [Advanced author search](help/gory_details/_posts/2021-04-26-author-search.md)
 
 ### Affiliation Searches
 

@@ -15,27 +15,27 @@ An aggregated list of the fields, operators, and other parameters that are acces
 
  |                     Field Name | Searchable | Retrievable | Explanation |
  |  ----------------------------- | - | - | ----------- |
- |                      _version_ | y | y | Integer (timestamp-like) indicating internal versioning sequence, if it has changed it means the record has been reindexed | 
+ |                    \_version\_ | y | y | Integer (timestamp-like) indicating internal versioning sequence, if it has changed it means the record has been reindexed | 
  |                            abs | y | y | Virtual field to search across `title`, `keyword`, `abstract` fields in one operation | 
  |                       abstract | y | y | Abstract of the record | 
  |                            ack | y | y | Contains acknowledgements extracted from fulltexts (if identified in article). | 
- |                            aff | y | y | Affiliation strings of authors (raw data), values correspond to order of `author` field. Multiple values separated by `;`| 
- |                     aff_abbrev | y | y | List of curated affiliation IDs in a given paper | 
+ |                            aff | y | y | Affiliation strings of authors (raw data), values correspond to order of `author` field. Multiple values separated by `;`. See [canonical data](https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv) for all things `aff_`| 
+ |                     aff_abbrev | y | y | List of curated institution abbreviations for a given paper | 
  |                  aff_canonical | y | y | List of curated institution names | 
  |                 aff_facet_hier | y | y | Hierarchical label consisting of `Level/Parent/Child` - i.e. `1/CSIC Madrid/Inst Phys`. List of values is *not* linked to order/number of authors. | 
  |                         aff_id | y | n | List of curated affiliation IDs in a given paper, values correspond to order of `author` field. Multiple values separated by `;`| 
  |                          affil | y | n | Virtual field searching across `aff_abbrev`, `aff_canonical`, `aff_id`, `institution`, `aff` | 
- |              alternate_bibcode | y | y | List of alternate bibcodes for that document | 
+ |              alternate_bibcode | y | y | List of alternate bibcodes for the document | 
  |                alternate_title | y | y | Alternate title, usually when the original title is not in English | 
  |                    arxiv_class | y | y | arXiv class the paper was submitted to | 
- |                         author | y | y | List of authors on a paper (multivalued field, orderer is preserved; see `aff*` and `orcid*` fields for additional details) | 
- |                   author_count | y | y | (int) Number of authors on a paper | 
+ |                         author | y | y | List of authors on a paper (multivalued field, order is preserved; see `aff*` and `orcid*` fields for additional details) | 
+ |                   author_count | y | y | Number of authors on a paper (integer) | 
  |                   author_facet | y | n | Contains normalized version of the author name, cannot be retrieved but useful for faceting | 
  |              author_facet_hier | y | n | Hierarchical facet for author names, the levels can be used to limit result sets - i.e. `0/Surname` -> `1/Surname/N` or `1/Surname/Name` | 
- |                    author_norm | y | y | List of authors with their first initialized (see `author_facet`) | 
+ |                    author_norm | y | y | List of authors with their first name initialized (see `author_facet`) | 
  |                        bibcode | y | y | ADS identifier of a paper | 
  |                       bibgroup | y | y | Bibliographic group that the bibcode belongs to (curated by staff outside of ADS) | 
- |                 bibgroup_facet | y | n | As above, but can only be searched - faceted on | 
+ |                 bibgroup_facet | y | n | As above, but can only be searched and faceted on | 
  |                        bibstem | y | y | the abbreviated name of the journal or publication, e.g., ApJ. Full lists of bibstems can be found [here](http://adsabs.harvard.edu/abs_doc/journal_abbr.html) | 
  |                  bibstem_facet | y | n | Technical field, used for faceting by publication. It contains only bibstems without volumes (eg. `Sci`) | 
  |                           body | y | n | Contains extracted fulltext minus acknowledgements section | 
@@ -52,7 +52,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                     data_facet | y | n | Data sources for the paper (without counts, but the counts can be retrieved when faceting on the values of this field) | 
  |                       database | y | y | Database (collection) into which the paper was classified, a paper can belong to more than one| 
  |                           date | y | y | Machine readable version of `pubdate`, time format: `YYYY-MM-DD'T'hh:mm:ss.SSS'Z'`| 
- |                        doctype | y | y | Types of document: article, thesis, etc.| 
+ |                        doctype | y | y | Types of document: abstract, article, book, bookreview, catalog, circular, editorial, eprint, erratum, inbook, inproceedings, mastersthesis, misc, newsletter, obituary, phdthesis, pressrelease, proceedings, proposal, software, talk, techreport| 
  |             doctype_facet_hier | y | n | Hierarchical facets consisting of nested document types | 
  |                            doi | y | y | Digital object identifier | 
  |                         editor | y | y | Typically for books or series, similar rules to `book_author` | 
@@ -71,10 +71,10 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |               grant_facet_hier | y | n | Hierarchical facet field which contains grant/grant_id. This field is not suitable for user queries, but rather for UI components. Term frequencies and positions are deactivated. | 
  |                       grant_id | y | y | Index with just the grant ids (e.g. 0618398) | 
  |                             id | y | y | Internal identifier of a record, does not change with reindexing but users are advised to not rely on contents of this field | 
- |                     identifier | y | n | Abstract field that can be used to search an array of alternative identifiers for the record. May contain alternative bibcodes, DOIs and/or arxiv ids. | 
+ |                     identifier | y | n | A field that can be used to search an array of alternative identifiers for the record. May contain alternative bibcodes, DOIs and/or arxiv ids. | 
  |                     indexstamp | y | y | Date at which the record was indexed `YYYY-MM-DD'T'hh:mm:ss.SSS'Z'` | 
  |                           inst | y | n | Virtual field to search across `aff_id`, and `institution` | 
- |                    institution | y | n | List of curated affiliations (institutions) in a given paper | 
+ |                    institution | y | n | List of curated affiliations (institutions) in a given paper. See [institution data](https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv)| 
  |                           isbn | y | y | ISBN of the publication (this applies to books) | 
  |                           issn | y | y | ISSN of the publication (applies to journals - ie. periodical publications) | 
  |                          issue | y | y | Issue number of the journal that includes the article | 
@@ -99,7 +99,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                           page | y | y | First page of a record | 
  |                     page_count | y | y | If page_range is present, gives the difference between the first and last page numbers in the range | 
  |                     page_range | n | n | Range of page numbers covered by the record | 
- |                       property | y | y | Array of miscellaneous flags associated with the record. Possible values include: ARTICLE, REFEREED, NOT_REFEREED, INPROCEEDINGS, OPENACCESS, NONARTICLE, EPRINT, BOOK, PROCEEDINGS, CATALOG, SOFTWARE | 
+ |                       property | y | y | Array of miscellaneous flags associated with the record. Possible values include: adsopenaccess, article, associated, authoropenaccess, data, eprintopenaccess, esource, inspire, librarycatalog, nonarticle, notrefereed, ocrabstract, openaccess, presentation, private, pubopenaccess, refereed, toc | 
  |                            pub | y | y | Canonical name of the publication the record appeared in | 
  |                        pub_raw | y | y | Name of publisher, but also includes the volume, page, and issue if they exist | 
  |                        pubdate | y | y | Publication date in the form `YYYY-MM-DD` (DD value will always be "00") - corresponds to the old version of metadata timestamps (ADS Classic) | 
@@ -129,7 +129,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |  [pos()](../search/positional)                      | `pos(author:accomazzi, 1, 5)` | The pos() operator allows you to search for an item within a field by specifying the position  (range). The syntax for this operator is `pos(fieldedquery,position,[endposition])`. If no endposition is given, then it is assumed to be endposition = position, otherwise this performs a query within the range [position, endposition]. |
  |  [references()](../search/citations-and-references) | `references(author:huchra)` | Returns list of references from papers matching the inner query |
  |  [reviews()](../search/second-order)                |  | returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field. |
- |  [similar()](../search/second-order)                | `similar(title:hubble^2, abstract, 100)` | Find similar documents, either based on their similarity with the documents fromt he inner query or similar to the text that you supplied. Format: `similar(queryOrText, fields, maxQueryTerms, docToSearch, minTermFreq, minDocFreq, percentToMatch)`. - queryOrText: string, this can be a query or input - fields: list of fields separated by spaces, or special token 'input' which means use the query as is, as input - maxQueryTerms: modifies similarity search, only this many terms will be considered during the search (those terms are NOT the first X collected, but they will be the first X terms weighted by TFIDF) - docToSearch: how many documents to collect in the first phase, is ignored when fields='input' - minTermFreq: term is selected only if its frequency is this or higher - minDocFreq: selected term must be present in at least that many documents - percentToMatch: ratio of terms that have to be present in the selected documents, default is 0.0f. For example, if 100 terms was used to discover similar docs, and if the ratio was 0.3f - then 30 terms must be present in the docs that are returned. |
+ |  [similar()](../search/second-order)                | `similar(title:hubble^2, abstract, 100)`<br/>`similar("hubble space telescope", input)` | Find similar documents, either based on their similarity with the documents from the inner query or similar to the text that you supplied. Format: `similar(queryOrText, fields, maxQueryTerms, docToSearch, minTermFreq, minDocFreq, percentToMatch)`. <br/>- queryOrText: string, this can be a query or input <br/>- fields: list of fields separated by spaces, or special token 'input' which means use the query as is, as input <br/>- maxQueryTerms: modifies similarity search, only this many terms will be considered during the search (those terms are NOT the first X collected, but they will be the first X terms weighted by TFIDF - term frequency/inverse document frequency) <br/>- docToSearch: how many documents to collect in the first phase, is ignored when fields='input' <br/>- minTermFreq: term is selected only if its frequency is this or higher - minDocFreq: selected term must be present in at least that many documents - percentToMatch: ratio of terms that have to be present in the selected documents, default is 0.0f. For example, if 100 terms was used to discover similar docs, and if the ratio was 0.3f - then 30 terms must be present in the docs that are returned. |
  |  [topn()](../search/second-order)                   | `topn(200, citations(title:hubble), citation_count desc)` | Limit results to the best top N (by their ranking or sort order); format: `topn(int, query, 'sort order')` |
  |  [trending()](../search/second-order)               | `trending("machine learning")` | Trending – returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field. |
  |  [useful() ](../search/second-order)                | `useful("gradient descent")` | Useful – returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field. |

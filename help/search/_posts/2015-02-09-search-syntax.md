@@ -61,7 +61,7 @@ aff:(China OR "Hong Kong" Taiwan) | aff:((China OR "Hong Kong") AND Taiwan)
 aff:(China OR "Hong Kong" NOT Taiwan) |aff:(China OR ("Hong Kong" NOT Taiwan))
 aff:(China OR "Hong Kong" -Taiwan) | aff:((China OR "Hong Kong") NOT Taiwan)
 
-For more heavy handed exploration of the search syntax, feel free to visit [search parser details](help/gory_details/_posts/2021-05-23-search-parser.md)
+For a more heavy handed exploration of the search syntax, feel free to visit [search parser details](help/gory_details/_posts/2021-05-23-search-parser.md).
 
 
 ### Wildcards, Proximity, and Regular expression search
@@ -69,7 +69,7 @@ For more heavy handed exploration of the search syntax, feel free to visit [sear
 Example Query                        | Explanation
 -------------------------------------------------|------------------------------------------------
 author:&ldquo;huchra, jo*"                | multi-character wildcard; search for papers written by `huchra, john`, `huchra, jonathan`, `huchra, jolie`, and anything in between
-author:&ldquo;bol?,"               | single-character substitution; in this case we may get back `bolt`, `boln`, `bolm`
+author:&ldquo;bol?,"               | single-character wildcard; in this case we may get back `bolt`, `boln`, `bolm`
 title:(map NEAR5 planar)                          | instead of a phrase search, we can ask the search engine to consider words be close to each other -- the maximum allowed distance is 5; the operator must be written as `NEAR[number]`; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as `a`, `the`, `in`...). **The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title**
 grant:/nag[1-9]+/                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is more useful for fields that contain `string` tokens (as opposed to `text` tokens). In practice, this means that a field which contains many words (such as `title`, `abstract`, `body`) is a text field, but a field with only limited number of values is typically defined as a `string` - for example, `author`, `grant`, `simbid`. You can use regex in both `string` and `text` fields but you have to be aware that regular expression is only going to match **indexed tokens**. Do not think that you can search for several token using one regex expression. A little bit or more of experimentation (test queries) should be enough to help you determine your 'adversary'. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
 

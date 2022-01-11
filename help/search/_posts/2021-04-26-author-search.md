@@ -4,7 +4,7 @@ title: "(Advanced) Author Search"
 order: 8
 ---
 
-The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details (or have a bit of sadomasochistic streak in yourself) just run, run away from here, quick!
+The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!
 
 
 ## Referenced resources

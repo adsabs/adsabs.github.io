@@ -44,7 +44,7 @@ Better to illustrate it by way of examples:
 
 **You can modify the default operator**
 
-It can also be changed on demand by adding `q.op=OR` into URL parameters (i.e. NOT inside the search form), in which case the logic will change dramatically. For any given query the results will contain many more results, but if sorted by relevancy score, the top items will be still the ones returned with the default `AND` operator.
+It can also be changed on demand by adding `q.op=OR` into URL parameters (i.e. NOT inside the search form), in which case the logic will change dramatically. For any given query the results will contain many more records, but if sorted by relevancy score, the top items will be still the ones returned with the default `AND` operator.
 
 **ADS supports proximity searches**
 
@@ -153,7 +153,7 @@ Pro tip (II): If you had access to STDOUT/logging of the SOLR instance, you woul
 
 There are over 60 steps inside the pipeline, some of them extremely complex (see for example [author search](author-search)) and some simple. We cannot describe here everything that happens there; but we should point out that the pipeline is like a chain of transducers. Each component will see the `AST`, it will modify it and then processing switches to the next component. There are pre- and post- stages; which would correspond to in-order and post-order traversal of the tree. And in some situations the parser will invoke itself, so it is like a coiled snake eating its own tail -- is it messy? Perhaps, but we'd add that it is only as messy as it needs to be. The work done by the parser is extremely important, it is a complicated job of transforming, extending, cutting, slicing and re-constructing the query. It is complicated because it has to be, but it is also very powerful. And it keeps evolving with ADS users and their requests.
 
-## Building Query Object
+## Building the Query Object
 
 Once every component has finished modifying the AST, we had pruned the tree into almost a flat list of parent/child relationships. At the end of those 60 transducers, we have a much lighter AST. This object is passed to [`query builders`](https://github.com/romanchyla/montysolr/blob/master/contrib/adsabs/src/java/org/apache/lucene/queryparser/flexible/aqp/AqpAdsabsQueryTreeBuilder.java). Their job is to turn this modified semantic tree into **query objects** as understood by Lucene/SOLR. That `Query` object is then responsible for selecting **and** scoring documents based on the users input and the query parameters that came with it or were presented by default.
 

@@ -70,7 +70,7 @@ Example Query                        | Explanation
 -------------------------------------------------|------------------------------------------------
 author:&ldquo;huchra, jo*"                | multi-character wildcard; search for papers written by `huchra, john`, `huchra, jonathan`, `huchra, jolie`, and anything in between
 author:&ldquo;bol?,"               | single-character wildcard; in this case we may get back `bolt`, `boln`, `bolm`
-title:(map NEAR5 planar)                          | instead of a phrase search, we can ask the search engine to consider words be close to each other -- the maximum allowed distance is 5; the operator must be written as `NEAR[number]`; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as `a`, `the`, `in`...). **The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title**
+title:(map NEAR5 planar)                          | instead of a phrase search, we can ask the search engine to consider words be close to each other -- the maximum allowed distance is 5; the operator must be written as `NEAR[number]`; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as `a`, `the`, `in`...). **The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title**. If you are looking for token that appear next to each other, then please use a phrase search. For fields that are not tokenized (such as author names) use semicolon as a separator, e.g. `author:"kurtz, m; accomazzi, a" OR author:"accomazzi, a; kurtz, m"` -- in a phrase search the order is important, so we much try both variants.
 grant:/nag[1-9]+/                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is more useful for fields that contain `string` tokens (as opposed to `text` tokens). In practice, this means that a field which contains many words (such as `title`, `abstract`, `body`) is a text field, but a field with only limited number of values is typically defined as a `string` - for example, `author`, `grant`, `simbid`. You can use regex in both `string` and `text` fields but you have to be aware that regular expression is only going to match **indexed tokens**. Do not think that you can search for several token using one regex expression. A little bit or more of experimentation (test queries) should be enough to help you determine your 'adversary'. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
 
 
@@ -246,15 +246,25 @@ The "properties" search field allows one to restrict the search results to paper
 
 Property flag    | Selection
 ---------------- | ------------------------
-refereed         | refereed papers only
-notrefereed      | non-refereed papers only
+adsopenaccess    | OA version of article is available from ADS
 article          | records corresponding to regular articles
+associated       |
+authoropenaccess | OA version of the author submitted pre-print is available from ADS
+data             | Data available, see `data` field
+eprintopenaccess | OA version of article is available from arXiv
+esource          | Esource available, see `esource` field
+inspire          | 
+librarycatalog   |
 nonarticle       | not regular articles, for instance meeting abstracts, observing proposals, catalog descriptions, etc
-ads_openaccess   | OA version of article is available from ADS
-eprint_openaccess | OA version of article is available from arXiv
-pub_openaccess   | OA version of article is available from publisher
-openaccess       | article has at least one openaccess version available
+notrefereed      | non-refereed papers only
 ocrabstract      | records with an abstract generated from OCR (may contain typos or mistakes)
+openaccess       | article has at least one openaccess version available
+presentation     |
+private          |
+pubopenaccess    | OA version of article is available from publisher
+refereed         | refereed papers only
+toc              |
+
 
 ### Bibliographic Groups
 

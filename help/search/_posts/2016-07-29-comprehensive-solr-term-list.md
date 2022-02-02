@@ -99,7 +99,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                           page | y | y | First page of a record | 
  |                     page_count | y | y | If page_range is present, gives the difference between the first and last page numbers in the range | 
  |                     page_range | n | n | Range of page numbers covered by the record | 
- |                       property | y | y | Array of miscellaneous flags associated with the record. Possible values include: adsopenaccess, article, associated, authoropenaccess, data, eprintopenaccess, esource, inspire, librarycatalog, nonarticle, notrefereed, ocrabstract, openaccess, presentation, private, pubopenaccess, refereed, toc | 
+ |                       property | y | y | Array of miscellaneous flags associated with the record. For possible values see [Properties](./search/search-syntax#properties).| 
  |                            pub | y | y | Canonical name of the publication the record appeared in | 
  |                        pub_raw | y | y | Name of publisher, but also includes the volume, page, and issue if they exist | 
  |                        pubdate | y | y | Publication date in the form `YYYY-MM-DD` (DD value will always be "00") - corresponds to the old version of metadata timestamps (ADS Classic) | 

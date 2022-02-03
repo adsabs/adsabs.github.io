@@ -71,7 +71,7 @@ Example Query                        | Explanation
 author:&ldquo;huchra, jo*"                | multi-character wildcard; search for papers written by `huchra, john`, `huchra, jonathan`, `huchra, jolie`, and anything in between
 author:&ldquo;bol?,"               | single-character wildcard; in this case we may get back `bolt`, `boln`, `bolm`
 title:(map NEAR5 planar)                          | instead of a phrase search, we can ask the search engine to consider words be close to each other -- the maximum allowed distance is 5; the operator must be written as `NEAR[number]`; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as `a`, `the`, `in`...). **The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title**. If you are looking for token that appear next to each other, then please use a phrase search. For fields that are not tokenized (such as author names) use semicolon as a separator, e.g. `author:"kurtz, m; accomazzi, a" OR author:"accomazzi, a; kurtz, m"` -- in a phrase search the order is important, so we much try both variants.
-grant:/nag[1-9]+/                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is more useful for fields that contain `string` tokens (as opposed to `text` tokens). In practice, this means that a field which contains many words (such as `title`, `abstract`, `body`) is a text field, but a field with only limited number of values is typically defined as a `string` - for example, `author`, `grant`, `simbid`. You can use regex in both `string` and `text` fields but you have to be aware that regular expression is only going to match **indexed tokens**. Do not think that you can search for several token using one regex expression. A little bit or more of experimentation (test queries) should be enough to help you determine your 'adversary'. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
+`facility:/magell.*/`                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is more useful for fields that contain `string` tokens (as opposed to `text` tokens). In practice, this means that a field which contains many words (such as `title`, `abstract`, `body`) is a text field, but a field with only limited number of values is typically defined as a `string` - for example, `author`, `facility`, `page`. You can use regex in both `string` and `text` fields but you have to be aware that regular expression is only going to match **indexed tokens**. In the case of `string` fields tokens may be multi-word combinations, depending on the specific field. For example, in the `author` field one token is `huchra, john`, but in fulltext the same content will be indexed as two tokens: `huchra`, `john`. In all cases the tokens are normalized (typically by lowercasing the input data). A little bit or more of experimentation (test queries) should be enough to help you determine your 'adversary'. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
 
 
 
@@ -244,26 +244,25 @@ Year Range   | year:YYYY-YYYY              | year:2000-2005          | require p
 
 The "properties" search field allows one to restrict the search results to papers which belong to a particular class.  The allowed properties currently include:
 
-Property flag    | Selection
----------------- | ------------------------
-adsopenaccess    | OA version of article is available from ADS
-article          | records corresponding to regular articles
-associated       |
-authoropenaccess | OA version of the author submitted pre-print is available from ADS
-data             | Data available, see `data` field
-eprintopenaccess | OA version of article is available from arXiv
-esource          | Esource available, see `esource` field
-inspire          | 
-librarycatalog   |
-nonarticle       | not regular articles, for instance meeting abstracts, observing proposals, catalog descriptions, etc
-notrefereed      | non-refereed papers only
-ocrabstract      | records with an abstract generated from OCR (may contain typos or mistakes)
-openaccess       | article has at least one openaccess version available
-presentation     |
-private          |
-pubopenaccess    | OA version of article is available from publisher
-refereed         | refereed papers only
-toc              |
+Property flag     | Selection
+----------------- | ------------------------
+ads_openaccess    | An OA version of article is available from ADS
+article           | The record corresponds to a regular article
+associated        | The record has associated articles available
+author_openaccess | An author-submitted OA version is available
+data              | One or more data links are available, see `data` field
+eprint_openaccess | An OA version of article is available from a preprint server (e.g. arXiv)
+esource           | An electronic source is available, see `esource` field
+inspire           | A corresponding record is available in the INSPIRE database
+library_catalog   | A corresponding record is available from a library catalog
+nonarticle        | The record is not a regular article; applies to e.g. meeting abstracts, software, catalog descriptions, etc
+notrefereed       | The record is not peer reviewed (refereed)
+ocr_abstract      | The record's abstract was generated from OCR (may contain typos or mistakes)
+openaccess        | The record has at least one openaccess version available
+presentation      | The record has one or more media presentations associated with it
+pub_openaccess    | An OA version of article is available from publisher
+refereed          | The record is peer reviewed (refereed)
+toc               | The record has a Table Of Content (TOC) associated with it
 
 
 ### Bibliographic Groups

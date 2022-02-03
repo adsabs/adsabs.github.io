@@ -15,7 +15,7 @@ The following section describes, in ugly detail, the logic of author parsing. Th
 
 ## Big Picture
 
-OK, so what happens when we search for `author:john paul II`? 
+OK, so what happens when we search for `author:"john paul II"`? 
 
 
 First, the query string is turned into an abstract syntax tree (see [search parser](./2021-05-23-search-parser.md) for details) - that is the syntactic (low) level, above it there is the semantic level of parsing and modifications. 
@@ -30,7 +30,7 @@ If you are still here, let's dive in:
 
 ### Down the Rabbit Hole
 
-Let's take one example author: `Adamczuk, Piotr Gavrilov Eugenyi`. A heraldically attuned audience member will immediately pick up that the guy is probably of Polish or Russian descent, quite likely from a noble family (blue blood runs through his veins so his name may appear next to a honorary title; but who cares? Well, our parser does). 
+Let's take one example `author:"Adamczuk, Piotr Gavrilov Eugenyi"`. A heraldically attuned audience member will immediately pick up that the guy is probably of Polish or Russian descent, quite likely from a noble family (blue blood runs through his veins so his name may appear next to a honorary title; but who cares? Well, our parser does). 
 
 People are unable to remember all his names, not even editors in the scientific publications, and let's face it, they are of different origins themselves. So, some type his name as `Adamcuk`, confuse his name with `Peter`, pay no attention to uncle `Gavrilov` and can't decide whether to spell his name as `Evgenij`, `Eugenij`, `Eugen`, `Evzen` and so on. Fortunately, there aren't that many persons of female gender and name `Piotr`, but we can't be sure about that either (yet people will still claim it is crystal clear...)
 

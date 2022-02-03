@@ -32,7 +32,7 @@ But as a reward for having found this obscure corner of the help, we'll illustra
 
 ### Operators
 
-The search operators have the following precedence (from more important to less): `NEARx -> NOT -> AND -> OR -> " "`
+The search operators have the following precedence (from higher to lower priority): `NEARx -> NOT -> AND -> OR -> " "`
 
 Some details worth mentioning: 
 
@@ -204,7 +204,7 @@ By default, ADS will search using the `AND` operator when two search terms are j
 
 ### aqp.unfieldedSearch
 
-By default, this is the list of fields, with their weights, that get searched when no field is specified: `author^1.5 title^1.4 abstract^1.3 all` -- obviously, one could modify this using a URL parameter.
+By default, this is the list of fields, with their weights, that get searched when no field is specified: `author^1.5 title^1.4 abstract^1.3` -- obviously, one could modify this using a URL parameter.
 
 
 

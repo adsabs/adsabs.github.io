@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "Felix Grezes"
+title: "Dr. Felix Grezes"
 ---
 
 <img src="{{ site.baseurl }}/about/team/img/fgrezes.jpg" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">

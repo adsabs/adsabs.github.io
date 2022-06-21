@@ -19,7 +19,7 @@ The ADS personnel are:
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ORCID, fulltext) & User Support
 - [Dr. Nemanja Martinovic](../team/team/nmartinovic.html) - DevOps Engineer
 - [Shinyi (Jennifer) Chen](../team/team/schen.html) - User Interface and Front-End Development  
-- [Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing
+- [Dr. Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing
 - [Jennifer Koch](../team/team/jkoch.html) - Librarian (Digital Technologies Development)
 - [Dr. Tom Allen](../team/team/tallen.html) - Astrophysicist (machine learning dataset tagging)
 - [Dr. Taylor Jacovich](../team/team/tjacovich.html) - Back-End Development (pipelines)

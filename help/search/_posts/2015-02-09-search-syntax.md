@@ -61,7 +61,7 @@ aff:(China OR "Hong Kong" Taiwan) | aff:((China OR "Hong Kong") AND Taiwan)
 aff:(China OR "Hong Kong" NOT Taiwan) |aff:(China OR ("Hong Kong" NOT Taiwan))
 aff:(China OR "Hong Kong" -Taiwan) | aff:((China OR "Hong Kong") NOT Taiwan)
 
-For a more heavy handed exploration of the search syntax, feel free to visit [search parser details](help/gory_details/_posts/2021-05-23-search-parser.md).
+For a more heavy handed exploration of the search syntax, feel free to visit the [search parser details page](search-parser).
 
 
 ### Wildcards, Proximity, and Regular expression search
@@ -132,7 +132,7 @@ Synoym expansion also applies to author names, which provide a way to account fo
 
 As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/search/filter).
 
-The logic behind the author search is rather complicated, if you would like to learn more, visit [Advanced author search](help/gory_details/_posts/2021-04-26-author-search.md)
+The logic behind the author search is rather complicated, if you would like to learn more, visit the [advanced author search page](author-search).
 
 ### Affiliation Searches
 

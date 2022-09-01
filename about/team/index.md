@@ -11,7 +11,6 @@ The ADS personnel are:
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingest and Curation  
 - [Edwin Henneken](../team/team/ehenneken.html) - System Development & Operations; Content, Curation & Collaborations Lead
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
-- [Dr. Roman Chyla](../team/team/rchyla.html) - System Architecture and Development   
 - [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Back-End Development (applications & services)  
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Software Development & Operations Lead

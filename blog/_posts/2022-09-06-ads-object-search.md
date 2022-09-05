@@ -2,6 +2,7 @@
 layout: blog_post
 title: "The ADS Object Search - How to Find Astronomical Objects in the Literature"
 author: "Edwin Henneken"
+position: "ADS"
 category: blog
 label: general
 thumbnail: blog/images/blog_2022-09-06_objectsearch.png
@@ -44,13 +45,13 @@ Obviously, the ADS cannot maintain a correspondence of all synonyms for all know
 Aldebaran collection:astronomy
 ```
 
-that will cause the ADS search engine to make use of these correspondences provided by SIMBAD and NED. This is the function of the `object:` query field. Whatever is supplied to this query field will be interpreted by the search engine as a Boolean expression of astronomical object names (example: `object:((SMC OR LMC) AND M31)`). Alternatively, one can use the `Object` box in the ADS [Classic Form](https://ui.adsabs.harvard.edu/classic-form) (see figure). Information specified in this form will get translated into an ADS search with query fields.
+that will cause the ADS search engine to make use of these correspondences provided by SIMBAD and NED. This is the function of the `object:` query field. Whatever is supplied to this query field will be interpreted by the search engine as a Boolean expression of astronomical object names (example: `object:((SMC OR LMC) AND M31)`). Alternatively, one can use the `Object` box in the ADS [Classic Form](https://ui.adsabs.harvard.edu/classic-form) (see Figure 2). Information specified in this form will get translated into an ADS search with query fields.
 
 What happens when the `object:` query field is used? Since we cannot assume that a user will specify canonical object names in their queries, we need to make sure that the object names provided are translated into their canonical equivalents. This is because SIMBAD and NED provide us correspondences between publications and canonical names of objects. Both SIMBAD and NED provide a translation service. Having established these canonical equivalents, the ADS search engine is able to find all associated publications, according to the Boolean relationship specified. Additionally, the object names (as specified in the query) are also used in an ADS query against abstracts, titles and keywords in the astronomy collection (with synonym replacement switched off). The result set is a combination of all these matches. Object queries that target just one service (e.g. SIMBAD) are not currently supported.
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads-object-search_f2.png" />
-<em>Figure 1</em>
+<em>Figure 2</em>
 </div>
 <br>
 

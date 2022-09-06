@@ -61,7 +61,7 @@ What difference does the `object:` query field make for our example query? The q
 object:Aldebaran collection:astronomy
 ```
 
-returns ~1,440 results (instead of the ~260 without the query field). The filter on collection is strictly not necessary because the `object:` search will, per definition, return records with SIMNAD/NED links (which all are in the Astronomy collection).
+returns ~1,440 results (instead of the ~260 without the query field). The filter on collection is strictly not necessary because the `object:` search will, per definition, return records with SIMBAD/NED links (which all are in the Astronomy collection).
 
 Caveat: the `object:` search will not return publications not covered by SIMBAD and/or NED and if the object appears with a different name than the one specified in the query. This may be a temporary situation (it takes time for the SIMBAD and NED teams to process publications), unless a publication mentioning the object is not covered by SIMBAD or NED. For example, if an arXiv record mentions Aldebaran using its synonym `HD 29139`, the query above will not find this record.
 

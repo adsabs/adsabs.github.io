@@ -61,6 +61,21 @@ aff:(China OR "Hong Kong" Taiwan) | aff:((China OR "Hong Kong") AND Taiwan)
 aff:(China OR "Hong Kong" NOT Taiwan) |aff:(China OR ("Hong Kong" NOT Taiwan))
 aff:(China OR "Hong Kong" -Taiwan) | aff:((China OR "Hong Kong") NOT Taiwan)
 
+For a more heavy handed exploration of the search syntax, feel free to visit the [search parser details page](search-parser).
+
+
+### Wildcards, Proximity, and Regular expression search
+
+Example Query                        | Explanation
+-------------------------------------------------|------------------------------------------------
+author:&ldquo;huchra, jo*"                | multi-character wildcard; search for papers written by `huchra, john`, `huchra, jonathan`, `huchra, jolie`, and anything in between
+author:&ldquo;bol?,"               | single-character wildcard; in this case we may get back `bolt`, `boln`, `bolm`
+title:(map NEAR5 planar)                          | instead of a phrase search, we can ask the search engine to consider words be close to each other -- the maximum allowed distance is 5; the operator must be written as `NEAR[number]`; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as `a`, `the`, `in`...). **The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title**. If you are looking for token that appear next to each other, then please use a phrase search. For fields that are not tokenized (such as author names) use semicolon as a separator, e.g. `author:"kurtz, m; accomazzi, a" OR author:"accomazzi, a; kurtz, m"` -- in a phrase search the order is important, so we much try both variants.
+`facility:/magell.*/`                    | Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is more useful for fields that contain `string` tokens (as opposed to `text` tokens). In practice, this means that a field which contains many words (such as `title`, `abstract`, `body`) is a text field, but a field with only limited number of values is typically defined as a `string` - for example, `author`, `facility`, `page`. You can use regex in both `string` and `text` fields but you have to be aware that regular expression is only going to match **indexed tokens**. In the case of `string` fields tokens may be multi-word combinations, depending on the specific field. For example, in the `author` field one token is `huchra, john`, but in fulltext the same content will be indexed as two tokens: `huchra`, `john`. In all cases the tokens are normalized (typically by lowercasing the input data). A little bit or more of experimentation (test queries) should be enough to help you determine your 'adversary'. For description of allowed regex patterns, please see: [Lucene documentation](https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html)
+
+
+
+
 ### Synonyms and Acronyms
 
 By default most search terms in ADS are expanded by adding a list of words which are synonyms of the search term.  So for example, a search of "star" in the title field will be expanded to include words such as "stars," "stellar," "starry," "starlike," and so on.  (Notice that this often includes words in foreign languages such as "etoile," "stern," and "stella"). While this feature improves recall, it sometimes compromises the precision of the results.  Our search engine allows one to turn off the synonym expansion feature by simply prepending an "=" sign in front of the search term.
@@ -117,6 +132,8 @@ Synoym expansion also applies to author names, which provide a way to account fo
 
 As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the ["Filter your search" section]({{ site.baseurl }}/help/search/filter).
 
+The logic behind the author search is rather complicated, if you would like to learn more, visit the [advanced author search page](author-search).
+
 ### Affiliation Searches
 
 Affiliations in ADS have been indexed in several different search fields, with the intention of allowing multiple use cases. We have currently assigned affiliation identifiers allowing for parent/child relationships, such as an academic department within a university. Note that a child may have multiple parents, but we restrict a child from having children of its own.  The list of recognized institutions is available from our <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">Canonical Affiliation repository</a> on Github.
@@ -169,7 +186,7 @@ is the search `object:"16 +60:0.1"`, followed by exporting the results in the `V
 
 ### Available Fields
 
-This is a list of fields currently recognized by the ADS search engine and the preferred search format:
+This is a list of fields currently recognized by the ADS search engine and the preferred search format - go to [comprehensive list of fields](./2016-07-29-comprehensive-solr-term-list.md) if not saturated yet:
 
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------
@@ -227,17 +244,26 @@ Year Range   | year:YYYY-YYYY              | year:2000-2005          | require p
 
 The "properties" search field allows one to restrict the search results to papers which belong to a particular class.  The allowed properties currently include:
 
-Property flag    | Selection
----------------- | ------------------------
-refereed         | refereed papers only
-notrefereed      | non-refereed papers only
-article          | records corresponding to regular articles
-nonarticle       | not regular articles, for instance meeting abstracts, observing proposals, catalog descriptions, etc
-ads_openaccess   | OA version of article is available from ADS
-eprint_openaccess | OA version of article is available from arXiv
-pub_openaccess   | OA version of article is available from publisher
-openaccess       | article has at least one openaccess version available
-ocrabstract      | records with an abstract generated from OCR (may contain typos or mistakes)
+Property flag     | Selection
+----------------- | ------------------------
+ads_openaccess    | An OA version of article is available from ADS
+article           | The record corresponds to a regular article
+associated        | The record has associated articles available
+author_openaccess | An author-submitted OA version is available
+data              | One or more data links are available, see `data` field
+eprint_openaccess | An OA version of article is available from a preprint server (e.g. arXiv)
+esource           | An electronic source is available, see `esource` field
+inspire           | A corresponding record is available in the INSPIRE database
+library_catalog   | A corresponding record is available from a library catalog
+nonarticle        | The record is not a regular article; applies to e.g. meeting abstracts, software, catalog descriptions, etc
+notrefereed       | The record is not peer reviewed (refereed)
+ocr_abstract      | The record's abstract was generated from OCR (may contain typos or mistakes)
+openaccess        | The record has at least one openaccess version available
+presentation      | The record has one or more media presentations associated with it
+pub_openaccess    | An OA version of article is available from publisher
+refereed          | The record is peer reviewed (refereed)
+toc               | The record has a Table Of Content (TOC) associated with it
+
 
 ### Bibliographic Groups
 

@@ -45,14 +45,10 @@ Given these goals, ADS set out to develop a new Docmatching pipeline using our c
 4. Based on the similarity scores, Oracle determines if the two records are a match, and gives it a confidence score.
 5. Oracle sends the bibcode results to Docmatcher for curation staff to review and verify.
 
-<p align="center"
 <div class="text-center">
- <img class="img-thumbnail" alt="Flow diagram of Docmatcher Pipeline" src="{{ site.baseurl }}/blog/images/DocmatchingPipeline.jpeg" width=800 align="center" />
+    <img class="img-thumbnail" alt="Flow diagram of Docmatcher Pipeline" src="{{ site.baseurl }}/blog/images/DocmatchingPipeline.jpeg" />
+<em>Diagram of Docmatcher Pipeline</em>
 </div>
-</p> 
-<p align="center">
-           <em>Diagram of Docmatcher Pipeline</em>
-</p>
 <br>
 
 **Score Computation Model**: We trained a deep learning model for computing the similarity scores in the Oracle service, initially experimenting with the number of layers and nodes. We also considered the activation function, introducing non-linear complexities to the model. We experimented with two loss functions: _binary cross-entropy_ (logistic regression) and _MSE_ (linear regression). We also experimented with two optimizer functions: _Adam_ and _RMSprop_. Finally, we created and evaluated models with different parameters, and we were able to identify the best model with the highest accuracy. 

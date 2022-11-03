@@ -4,7 +4,7 @@ title: "Author Affiliations"
 order: 4
 ---
 
-The Author Affiliation report allows you to create a list of all coauthors, and their affiliations, for a given author. This is especially useful to meet the requirements of some grant applications, such as for the NSF.
+The Author Affiliation report allows you to create a list of all coauthors, and their affiliations, for a given author. This is especially useful to meet the requirements of some grant applications, such as for the NSF collaborator form.
 
 To create this report for yourself:
 1. First search for all of your papers using your name, your ORCID ID, or an ADS library of your papers (click the "view library in search results page" button on your library).

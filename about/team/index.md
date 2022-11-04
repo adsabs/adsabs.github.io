@@ -16,7 +16,6 @@ The ADS personnel are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Software Development & Operations Lead
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Ingest and Curation Support  
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Development (ORCID, fulltext) & User Support
-- [Dr. Nemanja Martinovic](../team/team/nmartinovic.html) - DevOps Engineer
 - [Shinyi (Jennifer) Chen](../team/team/schen.html) - User Interface and Front-End Development  
 - [Dr. Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing
 - [Jennifer Koch](../team/team/jkoch.html) - Librarian (Digital Technologies Development)

@@ -186,7 +186,7 @@ is the search `object:"16 +60:0.1"`, followed by exporting the results in the `V
 
 ### Available Fields
 
-This is a list of fields currently recognized by the ADS search engine and the preferred search format - go to [comprehensive list of fields](./2016-07-29-comprehensive-solr-term-list.md) if not saturated yet:
+This is a list of fields currently recognized by the ADS search engine and the preferred search format - go to [comprehensive list of fields](comprehensive-solr-term-list) if not saturated yet:
 
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------

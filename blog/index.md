@@ -38,11 +38,12 @@ layout: blog_page
         </div>
 
         <div class="panel-footer">
-
-            <span class="label label-success">
-                author: {{ post.author }}
-            </span>
+            {% for author in post.author %}
+              <span class="label label-success">
+                  author: {{ author }}
+              </span>
             &nbsp;
+            {% endfor %}
             <span class="label label-primary">
                 category: {{ post.label }}
             </span>

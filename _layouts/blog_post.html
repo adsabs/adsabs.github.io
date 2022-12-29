@@ -9,7 +9,31 @@ layout: blog_layout
     <header class="post-header">
       {%unless page.no-header %}
       <h1 class="post-title">{{ page.title }}</h1>
-      <h3 class="post-author">{{ page.author}}, <b>{{ page.position }}</b></h3>
+      <h3 class="post-author">
+{% assign authorCount = page.author | size %}
+{% assign positionCount = page.position | split: ", " | size %}
+{% if authorCount == 0 %}
+    No author
+{% elsif authorCount == 1 %}
+    {{ page.author | first }}
+{% else %}
+    {% for author in page.author %}
+        {% if forloop.first %}
+            {{ author }}
+              {% if positionCount > 1 %}
+                <b>({{ page.position[forloop.index0] }}),</b>
+              {% endif %}
+        {% elsif forloop.last %}
+            and {{ author }} <b>({{ page.position[forloop.index0] }})</b>
+        {% else %}
+            {{ author }} <b>({{ page.position[forloop.index0] }})</b>,
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{% if positionCount == 1 %}
+    <b>({{ page.position }})</b>
+{% endif %}
+</h3>
       <h3 class="post-date">{{ page.date | date_to_string }}</h3>
 
       {% if page.comment %}

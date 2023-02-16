@@ -15,7 +15,7 @@ layout: blog_page
 
         <div class="panel-body">
 
-            <div class="col-md-2">
+            <div class="col-lg-4">
                 {% if post.thumbnail %}
                     <img src="{{ site.baseurl }}/{{ post.thumbnail }}" style="max-width: 340px;height:auto"/>
                 {% else %}
@@ -23,9 +23,7 @@ layout: blog_page
                 {% endif %}
             </div>
 
-            <div class="col-md-2"></div>
-
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <h2>
                     <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a><br><small>{{ post.date | date_to_string }}</small>
                 </h2>

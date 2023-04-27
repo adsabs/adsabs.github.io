@@ -23,6 +23,6 @@ The ADS personnel are:
 - [Dr. Taylor Jacovich](../team/team/tjacovich.html) - Back-End Development & Data Analysis
 - [Dr. Harry Blom](../team/team/hblom.html) - Senior Publishing Liaison
 
-The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
+The late [Stephen S. Murray]([https://www.cfa.harvard.edu/news/2015-17](https://www.cfa.harvard.edu/news/stephen-s-murray-high-energy-astrophysicist-dies-age-70)) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 
 If you have comments or questions about the ADS, you are welcome to contact any of us directly, although the preferred way to get in touch with ADS staff is through our support email ([adshelp [at] cfa.harvard.edu](mailto:adshelp@cfa.harvard.edu)), which guarantees a timely reply to your inquiry.

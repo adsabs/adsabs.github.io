@@ -7,7 +7,7 @@ order: 5
 The ADS curation model is represented by the diagram below (see [Kurtz et al. 2021](https://ui.adsabs.harvard.edu/abs/2021BAAS...53d.470K/abstract)). 
 
 <figure>
-    <img src="../img/cureation_model.png"  class="img-responsive" alt="ADS Curation Model">
+    <img src="../img/curation_model.png"  class="img-responsive" alt="ADS Curation Model">
     <figcaption><em>ADS's tiered curation model. The core collection represents disciplines where its curation is strongest and its coverage is authoritative. The surrounding tiers are connected to the core via the citation network.</em></figcaption>
 </figure>
 <br>

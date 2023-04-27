@@ -21,6 +21,7 @@ The ADS personnel are:
 - [Jennifer Koch](../team/team/jkoch.html) - Digital Technologies Development Librarian
 - [Dr. Tom Allen](../team/team/tallen.html) - Astrophysics Data Support
 - [Dr. Taylor Jacovich](../team/team/tjacovich.html) - Back-End Development & Data Analysis
+- [Dr. Harry Blom](../team/team/hblom.html) - Senior Publishing Liaison
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/2015-17) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 

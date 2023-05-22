@@ -15,7 +15,7 @@ The ADS personnel are:
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
 - [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Senior Developer, Applications & Services   
-- [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Ingestion and Curation Development   
+- [Dr. Matthew Templeton](../team/team/mtempleton.html) - Senior Data Specialist
 - [Shinyi (Jennifer) Chen](../team/team/schen.html) - User Experience and Front-End Development  
 - [Dr. Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing
 - [Jennifer Koch](../team/team/jkoch.html) - Digital Technologies Development Librarian

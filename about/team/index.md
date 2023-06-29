@@ -10,8 +10,7 @@ The ADS personnel are:
 - [Dr. Pavlos Protopapas](../team/team/pprotopapas.html) - Interim Project Scientist for Data Science
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingestion Lead   
 - [Edwin Henneken](../team/team/ehenneken.html) - Content, Curation & Collaborations Lead
-- [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html) - Technical Lead
-- [Dr. Kelly Lockhart](../team/team/klockhart.html) - Back-End Lead Developer
+- [Dr. Kelly Lockhart](../team/team/klockhart.html) - Technical Lead
 - [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
 - [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Senior Developer, Applications & Services   
@@ -23,6 +22,9 @@ The ADS personnel are:
 - [Dr. Taylor Jacovich](../team/team/tjacovich.html) - Back-End Development & Data Analysis
 - [Dr. Harry Blom](../team/team/hblom.html) - Senior Publishing Liaison
 
-The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/stephen-s-murray-high-energy-astrophysicist-dies-age-70)) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
+ADS research associates are:
+- [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)
+
+The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/stephen-s-murray-high-energy-astrophysicist-dies-age-70) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 
 If you have comments or questions about the ADS, you are welcome to contact any of us directly, although the preferred way to get in touch with ADS staff is through our support email ([adshelp [at] cfa.harvard.edu](mailto:adshelp@cfa.harvard.edu)), which guarantees a timely reply to your inquiry.

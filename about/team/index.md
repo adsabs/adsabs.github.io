@@ -21,6 +21,7 @@ The ADS personnel are:
 - [Dr. Tom Allen](../team/team/tallen.html) - Astrophysics Data Support
 - [Dr. Taylor Jacovich](../team/team/tjacovich.html) - Back-End Development & Data Analysis
 - [Dr. Harry Blom](../team/team/hblom.html) - Senior Publishing Liaison
+- [Daniel Chivvis](../team/team/dchivvis.html) - Digital Technologies Development Librarian
 
 ADS research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

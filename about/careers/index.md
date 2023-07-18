@@ -17,7 +17,6 @@ The ADS has built a highly scalable and feature-rich platform using a modern dev
 
 We have one opening to join our team of about eleven developers and four curators. The successful candidates will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group. We foster a work environment that is inclusive, flexible, and diverse, where team members can be themselves.  We encourage applications from minorities, women, protected veterans, individuals with disabilities, and all other qualified applicants. We're looking for:
 * the [ADS Project Scientist for Earth Science](https://pweb.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-23-96) who will work to establish and maintain the ADS as a world leading information resource for Earth Science. Duties of this job include serving as the principal ADS scientific resource for Earth Science, developing new methods to search, discover, and use research data and publications, and serving as a research scientist at the intersection of Earth and Information Science. The employee will devote 30% of their time to do original research in Earth Science. ([apply here](https://www.usajobs.gov/job/729999800))
-* a [Search/Back-end developer](https://pweb.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-22-63) experienced with search engines (e.g., Solr, Elasticsearch) and designing/building well-structured software (Java and Python), data pipelines, and REST APIs. The primary responsibility of the employee is to maintain and enhance the capabilities of the ADS search engine (Java), maintain its public API (Python), enhance its text processing pipelines (Python), and develop new functionality and services to support metadata enhancement, citation analysis, and recommendations while relying on ADS natural language processing/machine learning/deep learning plans. ([apply here](https://www.usajobs.gov/job/664715400))
 
 ## What we offer
 
@@ -26,7 +25,7 @@ The ADS project is funded by NASA through a cooperative agreement and provides i
 Some of the perks of the jobs include:
 
   * Work with a creative, multitalented team in a first-class academic environment contributing to the expansion of human knowledge
-  * Entry salary typically within the 74-115K range (with yearly revisions) for grades 11/12/13 in the Boston area (see [2022 location-dependent pay scales](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/2022/general-schedule))
+  * Entry salary typically within the 78-125K range (with yearly revisions) for grades 11/12/13 in the Boston area (see [2023 location-dependent pay scales](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/salary-tables/23Tables/html/BOS.aspx))
   * [Generous benefits](https://pweb.cfa.harvard.edu/people/smithsonian-astrophysical-observatory-human-resources/sao-trust-fund-employee-benefits), flexible work hours, and local (to the Cambridge, MA area) telecommuting and hybrid options 
   * Access to the astronomical community and events at the CfA and Harvard University
   * Engage with users at community meetings and present your work at scientific conferences in astronomy and information science

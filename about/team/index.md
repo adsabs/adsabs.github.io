@@ -22,6 +22,8 @@ The ADS personnel are:
 - [Dr. Taylor Jacovich](../team/team/tjacovich.html) - Back-End Development & Data Analysis
 - [Dr. Harry Blom](../team/team/hblom.html) - Senior Publishing Liaison
 - [Daniel Chivvis](../team/team/dchivvis.html) - Digital Technologies Development Librarian
+- [Fernanda de Macedo Alvest](../team/team/fdemacedoalvest.html) - Back-End Development
+- [Jean-Claude Paquin](../team/team/jcpaquin.html) - Back-End Development (search)
 
 ADS research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

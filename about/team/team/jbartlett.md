@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "Jennifer Bartlett"
+title: "Dr. Jennifer Bartlett"
 ---
 
 <img src="{{ site.baseurl }}/about/img/ads_logo.png" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">

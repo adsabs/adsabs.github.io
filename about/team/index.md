@@ -24,6 +24,8 @@ The ADS personnel are:
 - [Daniel Chivvis](../team/team/dchivvis.html) - Digital Technologies Development Librarian
 - [Fernanda de Macedo Alves](../team/team/fdemacedoalves.html) - Back-End Development
 - [Jean-Claude Paquin](../team/team/jcpaquin.html) - Back-End Development (search)
+- [Jennifer Bartlett](../team/team/jbartlett.html) - Astrophysics Project Scientist
+- [Mugdha Polimera](../team/team/mpolimera.html) - Back-End Development
 
 ADS research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

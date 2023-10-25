@@ -3,8 +3,8 @@
 Static web pages that serve the help and blog pages of the NASA/SAO Astrophysics Data System.
 
 #### Current pages
-  * [View the help pages](https://adsabs.github.io/help/)
-  * [View the blog pages](https://adsabs.github.io/blog/)
+  * [View the help pages](https://ui.adsabs.harvard.edu/help/)
+  * [View the blog pages](https://ui.adsabs.harvard.edu/blog/)
 
 #### Updating the help pages
 
@@ -60,27 +60,17 @@ If making a pull request, follow the rules described in `CONTRIBUTING.md`.
 
 #### For development
 
-The help pages are static web pages built using Jekyll (written in Ruby) and taking avantage of GitHub's support of Jekyll. To run locally, first install Ruby, then Jekyll:
+The help pages are static web pages built using Jekyll (written in Ruby) and taking advantage of GitHub's support of Jekyll. To run locally, first install Ruby, then Jekyll, a Ruby Gem. The recommended method is following the instructions on the Jekyll site:
 
-* install GnuPG:  
-`brew install gnupg`
-
-* get the public key:  
-`gpg --keyserver hkp://pgp.mit.edu --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB `
-
-* install the Ruby version manager and the latest stable version of Ruby:  
-`\curl -sSL https://get.rvm.io | bash -s stable --ruby`
-
-* then install jekyll:  
-`gem install jekyll`  
-`gem install jekyll bundler`
+* [Main installation page](https://jekyllrb.com/docs/installation/)
+* [MacOS instructions](https://jekyllrb.com/docs/installation/macos/)
 
 After installing Jekyll, run the following commands to preview the site:
 
 * build with `jekyll build`
 * serve the project with the command `jekyll serve`
 
-You will now be able to access the help pages locally at `http://0.0.0.0:4000/help`  or `localhost:4000` (default configuration). After the website is built for the first time, you should only need to save the file, wait a second or two for it to rebuild automatically (check the terminal window where you ran `jekyll serve`), then refresh the page to see any changes.
+You will now be able to access the help pages locally at `http://0.0.0.0:4000`  or `localhost:4000` (default configuration). After the website is built for the first time, you should only need to save the file, wait a second or two for it to rebuild automatically (check the terminal window where you ran `jekyll serve`), then refresh the page to see any changes.
 
 ### Maintainer
 

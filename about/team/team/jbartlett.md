@@ -3,7 +3,7 @@ layout: about
 title: "Dr. Jennifer Lynn Bartlett"
 ---
 
-<img src="{{ site.baseurl }}/about/eam/img/bartlett.jpg" height="200" width="200" alt="headshot of Jennifer Bartlett" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/about/team/img/bartlett.jpg" height="200" width="200" alt="headshot of Jennifer Bartlett" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
 Jennifer Lynn Bartlett is the ADS project scientist for astrophysics. She joined the team in 2023.  
   

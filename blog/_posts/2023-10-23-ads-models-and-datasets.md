@@ -10,10 +10,10 @@ thumbnail: blog/images/blog_2023-10-23-ads-models-and-datasets.png
 
 ### Introduction
 
-The NASA Astrophysics Data System (ADS) has been developing Natural Language Processing tools and datasets to further enhance its data holdings and services.  As part of this effort, we have been building and curating datasets to train deep learning models. These new tools, and more that will build upon them, will both provide a richer user experience and allow internal processes to be scaled-up.  Further, we expect that these tools will be useful to researchers in a variety of fields.  This post will describe our models and datasets for interested researchers.  We are strong proponents of open science, and we endeavor to make our datasets publicly available and easy to access. This post contains links to our curated datasets and will be updated as more datasets are created. The models are licensed under an [MIT license](https://opensource.org/license/mit/) and the datasets are licensed under a [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).  Briefly, these licenses allow researchers to use, share, modify or build upon these works as long as appropriate attribution is given.  If there are any questions about fair usage, contact us at [ADS help](adshelp@cfa.harvard.edu).
+The NASA Astrophysics Data System (ADS) has been developing Natural Language Processing tools and datasets to further enhance its data holdings and services.  As part of this effort, we have been building and curating datasets to train deep learning models. These new tools, and more that will build upon them, will both provide a richer user experience and allow internal processes to be scaled-up.  Further, we expect that these tools will be useful to researchers in a variety of fields.  This post will describe our models and datasets for interested researchers.  We are strong proponents of open science, and we endeavor to make our datasets publicly available and easy to access. This post contains links to our curated datasets and will be updated as more datasets are created. The models are licensed under an [MIT license](https://opensource.org/license/mit/) and the datasets are licensed under a [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).  Briefly, these licenses allow researchers to use, share, modify or build upon these works as long as appropriate attribution is given.  If there are any questions about fair usage, contact us at [ADS help](mailto:adshelp@cfa.harvard.edu).
 
 
-## astroBERT
+### astroBERT
 
 To support broad community participation in these efforts, we have recently released the [astroBERT](https://huggingface.co/adsabs/astroBERT) astrophysics-specific language model. A language model is a statistical representation of the relationships among words, and even sub-word units called tokens, in a corpus of text.  By creating a model that is astronomy specific, we can better account for the nuances of the language used in the astrophysical literature.
 
@@ -55,7 +55,7 @@ Thirty-three different entities, composed of general and astrophysical entities,
 
 
 
-The DEAL dataset was used as part of a shared task in the [First Workshop on Information Extraction from the Scientific Literature](https://ui.adsabs.harvard.edu/WIESP/2022/) (WIESP 2022) as part of the [AACL-IJCNLP 2022](https://www.aacl2022.org/) conference.  The proceedings of this workshop are part of the [ACL Anthology](https://aclanthology.org/volumes/2022.wiesp-1/).  
+The DEAL dataset was used as part of a shared task in the [First Workshop on Information Extraction from the Scientific Literature](https://ui.adsabs.harvard.edu/WIESP/2022/) (WIESP 2022) as part of the AACL-IJCNLP 2022 conference.  The proceedings of this workshop are part of the [ACL Anthology](https://aclanthology.org/volumes/2022.wiesp-1/).  
 
 
 ### Function Of Citation in Astrophysics Literature (FOCAL)
@@ -88,7 +88,9 @@ We are considering a set of eight potential citation functions.  These are:
 | Extends  | 16 | 
 | Total  | 6023 | 
 
-Table 1: Counts for each citation function category in the FOCAL dataset.
+*Table 1: Counts for each citation function category in the FOCAL dataset.*
+
+<br>
 
 The snippets that contain the citations are obtained from over 25,000 astronomy articles, from the same journals and publication years as the DEAL dataset.  From this set of articles, over 2 million citations and their context are harvested.  Further, only citations with context sizes between 2,000 and 10,000 characters are selected. This is to allow the determination of what portions of the context are most relevant to understanding the citation’s function.  A domain area expert manually examined these text snippets to determine the citation function as well as label the relevant context.  In total there are 6023 instances of annotated citations.  Table 1 shows the number of instances for each citation function category.
 

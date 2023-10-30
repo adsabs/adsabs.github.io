@@ -108,6 +108,10 @@ There are a number of open questions in citation context analysis research that 
 The FOCAL dataset will be used for the [Second Workshop on Information Extraction from the Scientific Literature](https://ui.adsabs.harvard.edu/WIESP/2023/shared_task_1) (WIESP 2023) part of [IJCNLP-AACL 2023](http://www.ijcnlp-aacl2023.org/).
  
 
+### We Want to Hear From You
+
+If you find any of these datasets useful in your research or if you are working on similar efforts, we would like to hear from you.  You can contact the ADS Team at [ADS help](mailto:adshelp@cfa.harvard.edu).
+
 
 
 ### Linked Resources

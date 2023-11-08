@@ -26,6 +26,7 @@ The ADS personnel are:
 - [Jean-Claude Paquin](../team/team/jcpaquin.html) - Back-End Development (search)
 - [Dr. Jennifer Bartlett](../team/team/jbartlett.html) - Astrophysics Project Scientist
 - [Dr. Mugdha Polimera](../team/team/mpolimera.html) - Back-End Development
+- [Dr. Stephanie Jarmak](../team/team/sjarmak.html) - Planetary Science Project Scientist
 
 ADS research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

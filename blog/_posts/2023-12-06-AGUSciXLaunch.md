@@ -1,14 +1,14 @@
 ---
 layout: blog_post
 title: "Join us at the AGU Fall Meeting for the NASA Science Explorer (SciX) Launch"
-author: “Brit Myers”
-position: “SciX Community Engagement Consultant”
+author: "Brit Myers"
+position: "SciX Community Engagement Consultant"
 category: blog
 label: news
 thumbnail: blog/images/blog_2023-12-06_AGUHeader.png
 ---
 
-<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-12-05_ADSHeader"/>
+<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-12-06_AGUHeader.png" alt="American Geophysical Union Meeting Graphic"/>
 
 The American Geophysical Union Fall Meeting is taking place next week (11-15 December) in San Francisco. Join the ADS team as we unveil the much-anticipated NASA Science Explorer (SciX). We will showcase SciX throughout the meeting; here's a detailed breakdown of the events we have lined up:
 
@@ -23,25 +23,25 @@ Join us in the Exhibit Hall at the **SciX Booth #649** for a personal introducti
 
 ## NASA Science Explorer (SciX) Presentation Highlights:
 
-### 1 . Live NASA Science Explorer (SciX) Demonstrations
+### 1. Live NASA Science Explorer (SciX) Demonstrations
 
 Kickstart your SciX journey with a live demonstration. Carolyn, Kelly, and Edwin will guide participants through the features of the new SciX digital library portal, providing a quick and easy start to harnessing the power of SciX for scientific literature exploration.
 
 * #### Demo #1 with Carolyn Grant
 
-**When:** Monday, 11 December, 5:00pm-6:00pm (PDT)
-<br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
+ **When:** Monday, 11 December, 5:00pm-6:00pm (PDT)
+ <br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
 
 *  #### Demo #2 with Kelly Lockhart
  **When:** Tuesday, 12 December, 11:00am-12:00pm (PDT)
  <br>**Where:** Exhibit Hall NASA Booth #531, Demo Kiosk #2
 
 * #### Demo #3 with Edwin A. Henneken
-**When:** Thursday, 14 December, 12:00pm-1:00pm (PDT)
+ **When:** Thursday, 14 December, 12:00pm-1:00pm (PDT)
  <br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
 
 ### 2. Discovering and Accessing Planetary & Earth Science Literature with Edwin A. Henneken
-**When:** Tuesday, 12 December, 1:10pm - 5:30pm (PDT)
+**When:** Tuesday, 12 December, 2:10pm - 6:30pm (PDT)
  <br>**Where:** Poster Hall A-C - South
  <br>[AGU Program Link](https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1290903)
 
@@ -49,7 +49,7 @@ Edwin A. Henneken invites you to delve into the heart of SciX. In his poster pre
 
 ### 3. Building SciX: An Open Access Digital Library Empowering Earth and Space Science Research with Daniel Chivvis
 
-**When:** Tuesday, 12 December, 1:20pm - 1:30pm (PDT)
+**When:** Tuesday, 12 December, 2:20pm - 2:30pm (PDT)
  <br>**Where:** 014 - West (Level 2, West, MC)
  <br>[AGU Program Link](https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1400075)
 
@@ -57,7 +57,7 @@ Join Daniel Chivvis for an in-depth look at the content curation method used in 
 
 ### 4. The NASA Science Explorer (SciX) as a Platform for Open Science with Carolyn Grant
 
-**When:** Wednesday, 13 December, 1:10-5:30pm (PDT)
+**When:** Wednesday, 13 December, 2:10-6:30pm (PDT)
  <br>**Where:** Poster Hall A-C - South
  <br>[AGU Program Link](https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1398709)
 
@@ -73,6 +73,6 @@ Join Alberto Accomazzi for the grand reveal of the SciX digital library at the N
 
 If you're attending AGU and want an exclusive conversation about SciX, reach out to us at [scixcommunity@cfa.harvard.edu](mailto:scixcommunity@cfa.harvard.edu). We're eager to set up one-on-one sessions and discuss how SciX can elevate your scientific exploration.
 
-Additionally, as the NASA SciX team continues to grow, we are very interested in speaking with earth science informatics professionals and others who might be interested in playing an active role in the SciX digital library’s ongoing expansion. We will be hiring new staff, convening a SciX advisory group, and launching a community ambassador program . Please come find us in the exhibit hall to learn more about these opportunities to get more involved! 
+Additionally, as the NASA SciX team continues to grow, we are very interested in speaking with earth science informatics professionals and others who might be interested in playing an active role in the SciX digital library’s ongoing expansion. We will be hiring new staff, convening a SciX advisory group, and launching a community ambassador program. Please come find us in the exhibit hall to learn more about these opportunities to get more involved! 
 
 We're very excited to share the NASA Science Explorer launch with you at AGU and look forward to seeing you soon at **booth #649!**

@@ -16,9 +16,12 @@ The American Geophysical Union Fall Meeting is taking place next week (11-15 Dec
 
 Join us in the Exhibit Hall at the **SciX Booth #649** for a personal introduction to the new SciX platform and to pick up your SciX swag in celebration of the launch. You will find us at the Exhibit Hall:
 
-*  Monday: 3pm-6pm
+*  Monday: 3pm-6pm  
+
 *  Tuesday: 10am-6pm
+
 *  Wednesday: 10am-6pm
+
 *  Thursday: 10am-1pm
 
 ## NASA Science Explorer (SciX) Presentation Highlights:
@@ -28,17 +31,16 @@ Join us in the Exhibit Hall at the **SciX Booth #649** for a personal introducti
 Kickstart your SciX journey with a live demonstration. Carolyn, Kelly, and Edwin will guide participants through the features of the new SciX digital library portal, providing a quick and easy start to harnessing the power of SciX for scientific literature exploration.
 
 * #### Demo #1 with Carolyn Grant
+  **When:** Monday, 11 December, 5:00pm-6:00pm (PDT)
+  <br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
 
- **When:** Monday, 11 December, 5:00pm-6:00pm (PDT)
- <br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
-
-*  #### Demo #2 with Kelly Lockhart
- **When:** Tuesday, 12 December, 11:00am-12:00pm (PDT)
- <br>**Where:** Exhibit Hall NASA Booth #531, Demo Kiosk #2
+* #### Demo #2 with Kelly Lockhart
+   **When:** Tuesday, 12 December, 11:00am-12:00pm (PDT)
+   <br>**Where:** Exhibit Hall NASA Booth #531, Demo Kiosk #2
 
 * #### Demo #3 with Edwin A. Henneken
- **When:** Thursday, 14 December, 12:00pm-1:00pm (PDT)
- <br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
+  **When:** Thursday, 14 December, 12:00pm-1:00pm (PDT)
+  <br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
 
 ### 2. Discovering and Accessing Planetary & Earth Science Literature with Edwin A. Henneken
 **When:** Tuesday, 12 December, 2:10pm - 6:30pm (PDT)

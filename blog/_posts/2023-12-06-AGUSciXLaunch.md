@@ -35,8 +35,8 @@ Kickstart your SciX journey with a live demonstration. Carolyn, Kelly, and Edwin
   <br>**Where:** Exhibit Hall Open Science Pavilion Booth #1415 
 
 * #### Demo #2 with Kelly Lockhart
-   **When:** Tuesday, 12 December, 11:00am-12:00pm (PDT)
-   <br>**Where:** Exhibit Hall NASA Booth #531, Demo Kiosk #2
+  **When:** Tuesday, 12 December, 11:00am-12:00pm (PDT)
+  <br>**Where:** Exhibit Hall NASA Booth #531, Demo Kiosk #2
 
 * #### Demo #3 with Edwin A. Henneken
   **When:** Thursday, 14 December, 12:00pm-1:00pm (PDT)

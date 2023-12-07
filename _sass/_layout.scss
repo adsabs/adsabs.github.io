@@ -157,6 +157,17 @@ h2 {
   background-attachment: fixed;
 }
 
+.s-scix-background-wrapper {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('/help/common/images/scix/bg-earth.jpg');
+  margin: 0 0px;
+  background-attachment: fixed;
+}
+
 .s-logo-header {
   width: 100%;
   font-size: 18px;

@@ -9,7 +9,7 @@ layout: blog_page_scix
 
 {% for post in site.posts %}
 
-    {% if post.category contains 'blog' %}
+    {% if post.category == 'scixblog' %}
 
       <div class="panel panel-default">
 

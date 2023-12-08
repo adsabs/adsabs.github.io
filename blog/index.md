@@ -9,7 +9,7 @@ layout: blog_page
 
 {% for post in site.posts %}
 
-    {% if post.category contains 'blog' %}
+    {% if post.category == 'blog' %}
 
       <div class="panel panel-default">
 

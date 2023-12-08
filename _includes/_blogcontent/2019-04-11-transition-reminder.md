@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "A Reminder About Transitioning to the New ADS"
-author: "Kelly Lockhart"
-position: "ADS"
-category: blog
-label: news
-thumbnail: ../help/img/import_help_02.png
----
 
 ### Update (September 11, 2019)
 *This post has been updated with the latest schedule. Some links have been updated.*

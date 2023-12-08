@@ -1,12 +1,4 @@
----
-layout: blog_post
-title: "Open Access and NASA Astrophysics Data"
-author: "Michael J. Kurtz"
-position: "ADS Project Scientist"
-category: blog
-label: general
-thumbnail: blog/images/blog_2016-03-16_image.png
----
+
 <img src="{{ site.base_url }}/blog/images/blog_2016-03-16_image.png" width="128"><br>
 
 NASA Astrophysics is, and has always been, a leader in providing open access to scientific data.  With small exceptions, all data from  NASA missions are publically available.  Indeed NASA has also been the leader in creating systems to make the access of these data easy and useful.

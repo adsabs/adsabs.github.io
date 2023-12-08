@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Citations to Astronomy Journals 2: Ranking the Journals"
-author: "Michael J. Kurtz and Edwin Henneken"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/citations-journals-pt2_1.png
----
 
 This is the second of a series of blog posts measuring the journals that publish astronomy research articles, using citation statistics with a number of different indices. In this post, we examine the performance of individual journals with respect to each other over time. We use the data described and published in [Part 1](../blog/citations-journals), which looked at some of the integrated properties of the sample, such as citation counts and h-indices. In Part 3, we will look into some of the properties of the indices.
 

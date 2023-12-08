@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "ADS Classic Downtime"
-author: "ADS Team"
-category: blog
-label: news
-thumbnail: blog/images/blog_2016-09-19_adsbumblebee.png
-comment: "ADS Classic off the air on April 13, 4pm-11pm EDT"
----
 
 
 ## ADS Unavalable on April 13, 2017

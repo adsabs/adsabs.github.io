@@ -25,7 +25,7 @@ The same function is available on the abstract page of a single paper.
 The contents of a library can be [exported in a variety of formats]({{ site.baseurl }}/help/actions/export), including BibTeX and AASTeX. This was designed to facilitate the development of an SciX library as a bibliography for a paper in progress, and allow its export into the appropriate format for the journal when ready.
 
 <figure>
-   <img src="/help/img/library-export.png"  class="img-responsive">
+   <img src="/scixhelp/img/library-export.gif"  class="img-responsive">
 </figure>
  
 ### Explore Similar Content

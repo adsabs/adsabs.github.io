@@ -1,14 +1,3 @@
----
-layout: blog_post
-title: "Become an ADS Power User!"
-author: "Alberto Accomazzi and Michael Kurtz"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2017-01-26_title.png
-comment: "<b>A tutorial on basic and advanced use of ADS bumblebee</b>"
----
-
 
 A recording of a tutorial given at the Center for Astrophysics on using the new ADS interface is now available.  Hope you enjoy it!
 

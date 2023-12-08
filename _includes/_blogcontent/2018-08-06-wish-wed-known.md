@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "What We Wish We'd Known: 3 Former Astronomers Turned ADS Staff Share Their Wishlists"
-author: "Kelly Lockhart, Sergi Blanco Cuaresma, and Matt Templeton"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/astro-to-ADS.png
----
 
 Though the vast majority of astronomy researchers, faculty, and students worldwide use ADS on a daily or weekly basis, most stick with searching on a combination of first author name and publication year for a known paper. While this is sufficient for many research purposes, ADS is capable of a lot more! And who better to tell you what you’ve been missing out on than some of ADS’s newer employees, who were all active in astronomy research until they were hired by ADS last year?
 

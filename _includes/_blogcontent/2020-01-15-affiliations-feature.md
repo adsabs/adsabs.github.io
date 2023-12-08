@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Affiliation searches: the Why, What, and How of our Canonical Affiliation Feature"
-author: "Carolyn Stern Grant and Matthew Templeton"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/blog_2020-01-15_example.png
----
 
 One of the features new to ADS since the new interface has launched is search and organization by institutional affiliation.  The 15 million publications in ADS have more than 35 million combined author affiliations.  The ADS has long wanted to have these data in a searchable format, and we introduced a new curated affiliation feature in early 2019. The project involved matching existing publisher-provided affiliation strings to unique, curated affiliation identifiers and institution strings, stored in an internal affiliation database, and constructing a pipeline to match the publisher-provided affiliation strings in incoming new publications to the appropriate entry in this database. Constructing the internal affiliation database took a lot of manual labor -- in fact, much more than the pipeline that resolves the affiliation strings -- and while this database will never be 100 percent complete, we're hoping to use machine learning techniques to reduce the amount of human effort required to match affiliation data to their identifiers.
 

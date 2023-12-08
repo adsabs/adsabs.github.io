@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Affiliation data in the ADS: a work in progress"
-author: "Matthew Templeton and Carolyn Grant"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/affil21_thumb.jpg
----
 
 We publicly introduced our affiliations feature in a [blog post](../blog/affiliations-feature) last year, including a discussion of how the feature was built and maintained, and how you can use it in your literature searches.  We want to reintroduce this feature, especially for those who haven't used it yet, by updating you on the developments and improvements in our affiliation data.
 

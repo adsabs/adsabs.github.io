@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "The New ADS Loses Its Beta Label"
-author: "ADS Team"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2016-09-19_adsbumblebee.png
----
 
 ### Update (April 12, 2019)
 Classic's retirement timeline has been adjusted slightly. We plan to begin disabling searching in Classic in May 2019, with full site retirement slated for Q3 2019. For more on steps to take before that time, see [our post on things to do before the transition](../blog/transition-reminder).

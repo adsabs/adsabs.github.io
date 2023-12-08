@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Ave Atque Vale: ADS Classic (1992-2019)"
-author: "Michael J. Kurtz"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2019_05_30_ave-2.png
----
 
 ADS Classic, a pioneer of the Information Age, died at 3:19 pm EDT on 30 May 2019 after a long period on life support.  Perhaps the last of its generation to succumb to the infirmities of age, Classic is survived by its lineal descendant, the “new” ADS.  
 

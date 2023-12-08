@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Updates to ADS: myADS Notifications, Library Collaborators, and More"
-author: "Kelly Lockhart"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2020-05-01_myads.png
----
 
 A number of changes have come to ADS over the past few months, some of which you may have missed. Read on for an overview of some of the bigger updates to the site. If you want to stay up to date on changes with ADS, [sign up](http://eepurl.com/ggoxhn) for our monthly newsletter or check in occasionally with our [What’s New page]({{ site.baseurl }}/help/whats_new/).
 

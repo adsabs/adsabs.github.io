@@ -1,20 +1,3 @@
----
-layout: blog_post
-title: "Unified Astronomy Thesaurus (UAT) Integration in ADS Search and Discovery"
-author:
-- Alberto Accomazzi
-- Jenny Novacescu
-- Katie Frey
-- Pavlos Protopapas
-position:
-- ADS Principal Investigator
-- Space Telescope Science Institute
-- Center for Astrophysics & UAT Curator
-- Harvard University
-category: blog
-label: general
-thumbnail: blog/images/blog_2022-12-29_UAT2.png
----
 
 The ADS Team is working in collaboration with Pavlos Protopapas and Ben Yuen of Harvard University to pilot the integration of the [Unified Astronomy Thesaurus (UAT)](https://astrothesaurus.org/) into ADS search and discovery for new, future, and legacy literature. ADS users will be able to browse results using left side facets in the query results screen, or conduct an initial search using UAT terms.
 

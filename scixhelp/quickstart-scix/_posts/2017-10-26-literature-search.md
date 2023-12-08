@@ -4,14 +4,14 @@ title: "Beginning a literature search"
 order: 4
 ---
 
-### How do you start a literature search in ADS?
+### How do you start a literature search in SciX?
 
 *Note: the Quick Start series is designed to get you started with the new interface. More advanced information on searching can be found in the [Second Order Queries]({{ site.baseurl }}/help/search/second-order), [Article View]({{ site.baseurl }}/help/actions/article-view), and [Citation Helper]({{ site.baseurl }}/help/libraries/citation-helper) help pages and other pages in the “Making a Query” and “Search Results” sections.*
 
 Starting research on a new topic can be tricky, especially when you
 don’t know which papers you should be reading. How do you make sure
 you’ve covered everything and are fully up to speed on your background
-reading? ADS has some tools to help. We’ve divided this quick start
+reading? SciX has some tools to help. We’ve divided this quick start
 guide into three sections, depending on the starting point: starting
 from an individual paper, from a broad topic or keyword, or from an
 existing library. Read on for more.
@@ -33,13 +33,10 @@ order. To re-sort or filter the results, click the button to view the
 results in a search results page.
 
 <figure>
-   <img src="/scixhelp/img/coreads_1.png"  class="img-responsive" alt="an
-   image showing the Co-Reads links on the abstract page">
+   <img src="/scixhelp/img/coreads_1.gif"  class="img-responsive" alt="a brief screen recording
+   showing how to access the Co-Reads link on an abstract page">
 </figure>
-<figure>
-   <img src="/scixhelp/img/coreads_2.png"  class="img-responsive" alt="an
-   image showing the Co-Reads listing">
-   </figure>
+
    <br>
 *Abstract page and Co-Reads for a canonical WMAP paper. Click “view
    this link in a search results page” to re-sort and filter the
@@ -94,7 +91,7 @@ may be useful for literature searches:
   tools, methods, or data sets relevant to a field.
 
 <figure>
-   <img src="/scixhelp/img/second-order.png"  class="img-responsive" alt="diagram showing use of the second order operators">
+   <img src="/help/img/second-order.png"  class="img-responsive" alt="diagram showing use of the second order operators">
    </figure>
    <br>
 
@@ -126,30 +123,3 @@ list that has been been previously narrowed to a few hundred papers.
    instrument. In this subgroup, containing instrumentation papers,
    the suggested papers at the bottom contain highly relevant
    non-refereed conference proceedings and other papers.*
-
-### Starting from a library
-
-If you’ve started to assemble a library organized around a given topic
-(e.g. for a paper in progress), there are tools available to ensure
-you haven’t forgotten any relevant references. In addition to the
-paper suggestions offered by the in-library
-Paper Network, the
-[Citation Helper]({{site.baseurl}}/help/libraries/citation-helper) is
-designed to find related papers. It finds up to 10 papers that are
-either cited by or that cite the papers in the library, but are not
-contained in the library. Its results are similar to a combination of
-the useful() and reviews() operators above. The suggested papers are
-sorted by score, with the most relevant papers first. If you have
-write access to a library, you can select desired papers and add them
-to your library within this tool.
-
-<figure>
-   <img src="/scixhelp/img/citation-helper.png"  class="img-responsive" alt="an
-   image showing the Citation Helper within a library">
-   </figure>
-   <br>
-*Example of the Citation Helper for the public library containing
-   [refereed papers about ADS](https://ui.adsabs.harvard.edu/#/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ). The
-   top suggested papers are papers about ADS that are closely related
-   to the papers in the library via citations and references.*
-   

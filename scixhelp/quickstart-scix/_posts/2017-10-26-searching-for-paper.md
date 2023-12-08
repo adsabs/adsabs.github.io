@@ -9,7 +9,7 @@ order: 1
 new interface. More advanced information on searching can be found in
 the [Search Syntax help page]({{ site.baseurl }}/help/search/search-syntax) and other pages in the "Making a Query"  and "Search Results" sections.*
 
-A common task in the ADS is locating a specific paper, often for
+A common task in the SciX is locating a specific paper, often for
 download or for retrieval of the bibliographic data. In this case, a
 user usually knows an author name (often the name of the first
 author), plus a publication year. This type of search is simple, but
@@ -18,9 +18,9 @@ and smoothly.
 
 ### Tips
 - Use fielded queries to ensure you receive the expected results.
-- Use the [Classic Form](https://ui.adsabs.harvard.edu/#classic-form) to automatically create fielded queries and replicate the ADS Classic look and feel. (Note: advanced and fulltext search fields are not available in the Classic Form.)
+- Use the [Classic ADS Form](https://ui.adsabs.harvard.edu/#classic-form) to automatically create fielded queries and replicate the ADS Classic look and feel. (Note: advanced and fulltext search fields are not available in the Classic Form.)
 - Make use of tag auto-completion when entering fielded queries to speed up search term entry.
-- It is not generally recommended that you initially search on author affiliation as a number of publishers do not provide this information to ADS. Additionally, variants on institution name may confuse the search results.
+- It is not generally recommended that you initially search on author affiliation as a number of publishers do not provide this information to SciX. Additionally, variants on institution name may confuse the search results.
 
 ### Fielded vs. unfielded queries
 The one-box search field accepts both fielded queries, where the user specifies the field being searched (such as *year:*) along with the search terms, and unfielded queries, where no search fields are explicitly specified. Unfielded queries automatically search all metadata fields; this may not produce the expected results.
@@ -54,7 +54,6 @@ If your search by author and/or publication year returns too many results, you c
 <figure>
    <img src="/scixhelp/img/filter-facet.png"  class="img-responsive">
 </figure>
-
 
 
 

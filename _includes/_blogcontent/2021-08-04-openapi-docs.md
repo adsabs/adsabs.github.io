@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Introducing ADS’s OpenAPI Description and Documentation"
-author: "Kelly Lockhart"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2021-08-04_apidocs.png
----
 
 ADS’s API, or application programming interface, is the service that accepts requests and returns the requested information. For example, when a user searches in ADS, the website sends a search request to the API, which performs the search and returns the results to the website, which formats and displays them to the user.
 

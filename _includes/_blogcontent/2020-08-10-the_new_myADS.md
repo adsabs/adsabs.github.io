@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Introducing the New myADS"
-author: "Sergi Blanco-Cuaresma"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2020-08-10_myADS_email.png
----
 
 *[Sergi Blanco-Cuaresma](https://www.blancocuaresma.com/s/) is an astrophysicist and the Software Development & Operations Lead for the NASA Astrophysics Data System, based at the Harvard-Smithsonian Center for Astrophysics.*
 

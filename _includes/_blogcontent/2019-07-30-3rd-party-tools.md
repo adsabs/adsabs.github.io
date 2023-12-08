@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "User-Developed Tools for ADS"
-author: "Kelly Lockhart"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/blog_2019_07_30_3rd-party-tools.png
----
 
 ADS [was started](https://ui.adsabs.harvard.edu/about/history/) in the late 1980s by astronomers, for astronomers, and has long received public funding via NASA grants. This history has meant that we’ve long been open to community involvement, and we’ve taken this a step further with the new ADS. The new ADS’s [codebase](https://github.com/adsabs) is open-source, which means that the code that makes up our website and data pipelines is available for users to look at, contribute to, or use for their own projects. Also, we’ve made our database more accessible by allowing users to access our holdings via [our API](https://github.com/adsabs/adsabs-dev-api).
 

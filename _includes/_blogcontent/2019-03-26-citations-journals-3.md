@@ -1,12 +1,4 @@
----
-layout: blog_post
-title: "Citations to Astronomy Journals 3: Journal Impact"
-author: "Edwin Henneken and Michael J. Kurtz"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/citations-journals-pt3_1.png
----
+
 
 This is the third of a series of blog posts measuring the journals that publish astronomy research articles, using citation statistics with a number of different indices. In this post we discuss per article citation rates and how these can be used to create impact factors. 
 

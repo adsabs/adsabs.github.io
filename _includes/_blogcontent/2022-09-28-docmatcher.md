@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "ADS Docmatcher"
-author: "Jennifer Koch, Golnaz Shapurian, Carolyn Grant, and Donna Thompson"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/DocmatchingPipeline.jpeg
----
 
 The primary aim of the Docmatcher pipeline is to match arXiv preprints to the peer-reviewed published version, and vice versa. ADS previously used the ADS Classic ingest system to accomplish this, however with recent updates and developments to the ADS Solr search engine, it has become a high priority to migrate Classic processes to use Solr and eliminate Classic dependencies. Therefore, the ADS team has made new updates, tests, and implementations for this new version of the ADS Docmatcher.
 

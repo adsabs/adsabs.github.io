@@ -1,14 +1,3 @@
----
-layout: blog_post
-title: Claiming Papers And Finding People with ORCID
-author:  Alberto Accomazzi
-position: ADS PI
-category: blog
-label: news
-thumbnail: ../help/img/orcid-claiming.gif
-repost: "http://www.astrobetter.com/blog/2016/03/07/claiming-papers-and-finding-people-with-orcid/"
-comment: "Claim your ORCID papers easily in ADS"
----
 
 If you have published a paper recently, you have probably come across the acronym ORCID at some point during the article submission process.  Or you may have seen references to ORCID in your organization’s scientific staff database, AAS membership profile, or research evaluation process.  So what exactly is ORCID?  ORCID is an acronym which stands for "Open Researcher and Contributor ID," designed to uniquely identify people involved in research activities.  The term is used to refer to both the [identifier standard](https://en.wikipedia.org/wiki/ORCID) (a 16-character string) as well as the [organization](http://orcid.org) which creates these ids and maintains their registry.
 

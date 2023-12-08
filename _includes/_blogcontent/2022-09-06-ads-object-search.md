@@ -1,12 +1,4 @@
----
-layout: blog_post
-title: "The ADS Object Search: How to Find Astronomical Objects in the Literature"
-author: "Edwin Henneken"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/blog_2022-09-06_objectsearch.png
----
+
 Searching for publications that mention, in some way, a specific astronomical object is one of the common use cases of the ADS. This blog aims to illustrate some of the caveats associated with these types of queries and provide some pointers.
 
 If a publication mentions an astronomical object in its title or abstract, this object probably plays a significant role in this publication. If the object only appears in the body of the paper, the object most likely appears as part of a catalog or in a less prominent role. If your goal is, for example,  to find publications that focus on the star Aldebaran, you search for mentions in basic metadata (title, keywords or abstract). This is precisely the function of the so-called "unfielded query" in the ADS. Unfielded queries, without query fields[^1], will search the basic metadata of the publications (author, publication year, title, abstract, keywords). In the case of our example, focusing on publications in the astronomy collection, this query is

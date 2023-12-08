@@ -1,12 +1,4 @@
----
-layout: blog_post
-title: "The ADS Curation Model"
-author: "Edwin Henneken"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/ads-curation_model_f1.png
----
+
 # Introduction
 The basic intellectual structure of the ADS can be described using a bullseye model, represented by figure 1. The three rings in this diagram represent different levels of curation applied to the bibliographic content in the ADS. Levels of curation and completeness are different in each ring. The inner region, representing the Core Collection, has the highest level of curation; this segment of the ADS holdings represents that part of scholarly publications where the ADS is considered to be authoritative. In this collection, our users can expect the ADS to be complete, coverage and citation-wise. It is important to keep the following caveat in mind: publications in one ring for one discipline may belong to the other ring in a different discipline. For this reason we implement the following rule: if a journal for any of the disciplines is assigned to the Inner Ring, it should be considered to belong there for all disciplines. In the following sections we consider the following disciplines:
 

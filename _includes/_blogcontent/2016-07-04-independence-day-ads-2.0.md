@@ -1,13 +1,3 @@
----
-layout: blog_post
-title: "ADS 2.0 end of life"
-author: "ADS Team"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2016-07-04_thumb.jpg
-comment: "<b>tl; dr</b>: ADS 2.0 will no longer be accessible"
----
 
 Happy Independence Day!
 

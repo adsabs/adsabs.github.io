@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Citations to Astronomy Journals 1: The growth of interdisciplinarity"
-author: "Michael J. Kurtz and Edwin Henneken"
-position: "ADS"
-category: blog
-label: general
-thumbnail: blog/images/citations-journals-pt1_1.png
----
 
 This is the first of a series of blog posts measuring the journals which publish research astronomy articles, using citation statistics.  In this post we describe the measurement process and the sample.  The tables with the entire data set used are published in a [Zenodo repository (DOI: 10.5281/zenodo.1400692)](https://doi.org/10.5281/zenodo.1400692).
 

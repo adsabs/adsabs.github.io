@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "Classic ADS and the New ADS: A Look Under the Hood"
-author: "ADS Team"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2016-09-19_adsbumblebee.png
----
 
 In this post, we’d like to give you a peek under the hood of both ADS Classic and the new ADS service.
 

@@ -1,12 +1,3 @@
----
-layout: blog_post
-title: "A Final Farewell to ADS Classic"
-author: "ADS Team"
-position: "ADS"
-category: blog
-label: news
-thumbnail: blog/images/blog_2019_10_28_farewell_classic.png
----
 
 ADS Classic is officially retiring on October 31, 2019 after more than 25 years in service. Its replacement, the [new ADS](https://ui.adsabs.harvard.edu/), has been in the works for a decade, with the current iteration, originally codenamed Bumblebee, in development since 2015.  We know that most of you use ADS multiple times a week (if not daily) and have done so for much of your careers, so this is a big change which may require some adjustment. We are taking steps to make this transition as smooth as possible and want to reassure all of our users about what this transition entails.
 

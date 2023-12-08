@@ -1,13 +1,3 @@
----
-layout: blog_post
-title: Super Charge your ADS Searches with Filters
-author:  Alex Holachek
-position: ADS Front End Developer
-category: blog
-label: news
-thumbnail: blog/images/filter_pic.png
-comment:
----
 
 The majority of queries in ADS are searches for authors. Author searches are simple when the author has a unique name, but what happens when the name is a common one? A search "Wu, J" might bring back a huge number of papers from many different authors with the last name "Wu" and the first name starting with “J.”
 

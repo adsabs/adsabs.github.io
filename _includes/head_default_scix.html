@@ -14,8 +14,14 @@
   <meta name="description" content="{{ site.description }}" />
 
   <!-- Disqus tags -->
-  <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ page.title | strip_html | strip_newlines | truncate: 200 | escape }}{% endif %}">
-  <meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+  <meta
+    property="og:description"
+    content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ page.title | strip_html | strip_newlines | truncate: 200 | escape }}{% endif %}"
+  />
+  <meta
+    property="og:image"
+    content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.url }}{% endif %}"
+  />
 
   <link
     rel="stylesheet"
@@ -25,18 +31,6 @@
     rel="apple-touch-icon"
     sizes="180x180"
     href="{{ site.baseurl }}/help/common/images/apple-touch-icon.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="{{ site.baseurl }}/help/common/images/scix/FAVICON-white-frame-32X32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="{{ site.baseurl }}/help/common/images/scix/FAVICON-white-frame-16X16.png"
   />
   <link
     rel="manifest"
@@ -81,6 +75,19 @@
     ga('create', 'UA-37369750-8', 'auto');
     ga('send', 'pageview');
   </script>
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+    } else {
+      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+    }
+  </script>
+
   <style>
     body {
       visibility: hidden;

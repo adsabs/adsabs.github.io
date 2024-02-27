@@ -18,7 +18,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                    \_version\_ | y | y | Integer (timestamp-like) indicating internal versioning sequence, if it has changed it means the record has been reindexed |
  |                            abs | y | y | Virtual field to search across `title`, `keyword`, `abstract` fields in one operation |
  |                       abstract | y | y | Abstract of the record |
- |                            ack | y | y | Contains acknowledgements extracted from fulltexts (if identified in article). |
+ |                            ack | y | n | Contains acknowledgements extracted from fulltexts (if identified in article). |
  |                            aff | y | y | Affiliation strings of authors (raw data), values correspond to order of `author` field. Multiple values separated by `;`. See [canonical data](https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv) for all things `aff_`|
  |                     aff_abbrev | y | y | List of curated institution abbreviations for a given paper |
  |                  aff_canonical | y | y | List of curated institution names |

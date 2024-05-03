@@ -11,6 +11,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 </div>
 <br>
 
+- **Simon Anghel:** In his current position at the Astronomical Institute of the Romanian Academy, Simon primarily focuses on the physical properties and evolutionary processes of minor bodies such as meteoroids, comets, and asteroids
 - **Amirhosein Mousavi:** A Lead Research Data Scientist  committed to leveraging digital technologies for sustainability and climate action, Amir has a strong background in earth science and inspiring new audiences to engage with science. 
 - **Anand “Sunny” Narayanan:** With a rich background in space and medical physiology and a history of NASA collaborations, Sunny brings a unique interdisciplinary approach to the ambassador role and mentoring others interested in human space exploration. 
 - **Chenyue Jiao:** A doctoral student with a focus on the value of research data in earth science, Chenyue's work is pivotal in shaping scientific practices and policies. 
@@ -18,8 +19,8 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 - **Manuel Pichardo Marcano:** Manuel's work in astrophysics at Vanderbilt University highlights his deep commitment to exploring stellar phenomena and contributing to the field of multi-messenger astronomy.
 - **Olivia Harper Wilkins:** An astrochemist at Dickinson College, Olivia's blend of rigorous scientific research and dedication to science communication enriches her role as an ambassador, fostering a deeper public connection with astrochemistry.
 - **Sarah Lamm:** A geologist focusing on Martian analog materials, Sarah's integrative approach combines chemistry, geology, and spectroscopy, enriching our understanding of Martian geology. 
-- **Tieza Mica Santos:** Her interdisciplinary expertise in climate change, sustainability, and public policy drives Tieza's work as a research fellow in Fraunhofer-Institut für System- und Innovationsforschung (Sustainability and Infrastructure Systems), making significant contributions to environmental governance and systems transformation.
-- **Thomas Chaffee:** Through his research at Stanford on planetary science and paleomagnetism, Thomas is bridging important gaps in our understanding of the lunar magnetic field and emphasizing the importance of open science in education. 
+- **Tieza Mica Santos:** Her interdisciplinary expertise in climate change, sustainability, and public policy drives Tieza's work as a research fellow in Dresden Leibniz Graduate School at the Technische Universität Dresden, making significant contributions to environmental governance and systems transformation.
+- **Thom Chaffee:** Through his research at Stanford on planetary science and paleomagnetism, Thom is bridging important gaps in our understanding of the lunar magnetic field and emphasizing the importance of open science in education. 
 - **Vincent Ledvina:** Known for his dedication to public engagement in space weather research, Vincent's work and outreach activities have captivated hundreds of thousands, enhancing public literacy in space phenomena. 
 - **Yueyi Che:** As a glaciologist at Stanford, Yueyi's explorations into glacier dynamics are crucial for understanding climate impacts while she makes her science accessible to a wide audience through music and art.
 

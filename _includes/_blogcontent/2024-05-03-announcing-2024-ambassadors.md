@@ -6,6 +6,11 @@ Welcome to an exciting milestone in the SciX Ambassador Program! We're thrilled 
 
 These diverse leaders from multiple scientific disciplines have been chosen because of their passion for open science and engaging communities. They represent the best of our community and are committed to furthering the mission of NASA SciX in their respective fields. Our first cohort of Lead Ambassadors is
 
+<div class="text-center">
+    <img class="img-thumbnail" alt="Photos of the 12 NASA SciX Lead Ambassadors, arranged in a grid, with the NASA SciX logo above" src="{{ site.baseurl }}/blog/images/leadambassador_gridphoto.png" />
+</div>
+<br>
+
 - **Amirhosein Mousavi:** A Lead Research Data Scientist  committed to leveraging digital technologies for sustainability and climate action, Amir has a strong background in earth science and inspiring new audiences to engage with science. 
 - **Anand “Sunny” Narayanan:** With a rich background in space and medical physiology and a history of NASA collaborations, Sunny brings a unique interdisciplinary approach to the ambassador role and mentoring others interested in human space exploration. 
 - **Chenyue Jiao:** A doctoral student with a focus on the value of research data in earth science, Chenyue's work is pivotal in shaping scientific practices and policies. 
@@ -17,7 +22,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 - **Thomas Chaffee:** Through his research at Stanford on planetary science and paleomagnetism, Thomas is bridging important gaps in our understanding of the lunar magnetic field and emphasizing the importance of open science in education. 
 - **Vincent Ledvina:** Known for his dedication to public engagement in space weather research, Vincent's work and outreach activities have captivated hundreds of thousands, enhancing public literacy in space phenomena. 
 - **Yueyi Che:** As a glaciologist at Stanford, Yueyi's explorations into glacier dynamics are crucial for understanding climate impacts while she makes her science accessible to a wide audience through music and art.
- 
+
 ## Selected Lead Ambassadors for the 2025 - 2027 Cohort 
 
 In addition to the first group of NASA SciX Ambassadors, we have also selected a second cohort of individuals who will join the program from 2025-2027.  The two cohorts will overlap in 2025, allowing for mentorship and information exchange to occur between the two groups. These selected individuals include, 
@@ -33,7 +38,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
  
 Our Lead Ambassadors are gearing up for a dynamic schedule of activities designed to foster collaboration and community growth. Key events include:
  
-- A foundational workshop at the Center for Astrophysics | Harvard & Smithsonian from August 21 - 23, 2024, focused on training to share NASA SciX with their communities, developing our overall Ambassador Program, networking with the NASA SciX team and fellow ambassadors, and producing materials that will aid further community engagement. 
+- A foundational workshop at the Center for Astrophysics \| Harvard & Smithsonian from August 21 - 23, 2024, focused on training to share NASA SciX with their communities, developing our overall Ambassador Program, networking with the NASA SciX team and fellow ambassadors, and producing materials that will aid further community engagement. 
 - Monthly community calls to discuss progress, challenges, and opportunities for collaboration.
 - Engagement in high-visibility events to represent and promote NASA SciX initiatives.
 

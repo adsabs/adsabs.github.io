@@ -1,0 +1,5 @@
+<img src="{{ site.baseurl }}/about/ambassador/img/2025-Long-Fox.png" height="200" width="200" alt="Photograph of Brooke Long-Fox with laboratory bench and shelves in background" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+
+Dr. Brooke Long-Fox is a Data Curation Scientist at Phoenix Bioinformatics (Newark, California) and an ADVANCE Project Coordinator for South Dakota Mines (Rapid City, SD). She received her PhD in Geology and Geological Engineering from South Dakota Mines (2022), an MS degree in Paleontology from South Dakota Mines (2016), and a BS in Geology with a minor in Environmental Science from Texas Christian University (2014). Brooke’s research is in the multidisciplinary field of conservation paleobiology, which intersects ecology and evolutionary biology with aspects of time and space that are more commonly found in paleontology and geology. Dr. Long-Fox is dedicated to FAIR open access biological data and advocating for equity and inclusion in STEM.
+
+[blongfox [at] morphobank.org](mailto:blongfox@morphobank.org)

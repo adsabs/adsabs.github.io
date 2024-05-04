@@ -3,7 +3,7 @@ layout: about
 title: "Ambassador Program"
 ---
 
-The NASA SciX Ambassadors are community advocates working with the [NASA SciX staff]((../team/index.html). Together, we are building a better interdisciplinary digital library system. [NASA SciX](https://scixplorer.org/) makes research in astrophysics, planetary science, heliophysics, and earth science more findable and accessible. An Ambassador's responsibilities include: 
+The NASA SciX Ambassadors are community advocates working with the [NASA SciX staff](../team/index.html). Together, we are building a better interdisciplinary digital library system. [NASA SciX](https://scixplorer.org/) makes research in astrophysics, planetary science, heliophysics, and earth science more findable and accessible. An Ambassador's responsibilities include: 
 
 - Facilitating a robust network among their cohort and the broader NASA SciX community.
 
@@ -13,7 +13,7 @@ The NASA SciX Ambassadors are community advocates working with the [NASA SciX st
 
 The 2024 Lead Ambassadors are getting ready for an exciting lineup of events aimed at promoting collaboration and community development. Key events include:
 
-- A foundational workshop at the [Center for Astrophysics | Harvard & Smithsonian](https://www.cfa.harvard.edu/) from August 21 - 23, 2024. The program will train Ambassadors to share NASA SciX with their communities, improve our Ambassador Program, foster connections with the NASA SciX team and other ambassadors, and create materials to facilitate community engagement.
+- A foundational workshop at the [Center for Astrophysics \| Harvard & Smithsonian](https://www.cfa.harvard.edu/) from August 21 - 23, 2024. The program will train Ambassadors to share NASA SciX with their communities, improve our Ambassador Program, foster connections with the NASA SciX team and other ambassadors, and create materials to facilitate community engagement.
 
 - Monthly community calls to discuss progress, challenges, and opportunities for collaboration.
 
@@ -22,8 +22,8 @@ The 2024 Lead Ambassadors are getting ready for an exciting lineup of events aim
 The 2024 NASA SciX Ambassadors are:
 
 - [Simon Anghel](../ambassador/team/Anghel.html)
-- [Thom Chaffee](../ambassador/team/Anghel.html)
-- [Yueyi Che](../ambassador/team/Anghel.html)
+- [Thom Chaffee](../ambassador/team/Chaffee.html)
+- [Yueyi Che](../ambassador/team/Che.html)
 - [Gwyneth Hutchinson](../ambassador/team/Hutchinson.html)
 - [Chenyue Jiao](../ambassador/team/Jiao.html)
 - [Sarah Lamm](../ambassador/team/Lamm.html)

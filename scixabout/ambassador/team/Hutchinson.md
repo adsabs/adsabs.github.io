@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: about_scix
 title: "Gwyneth Hutchinson"
 ---
 

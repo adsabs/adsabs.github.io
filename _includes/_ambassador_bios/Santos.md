@@ -1,4 +1,4 @@
-<img src="{{ site.baseurl }}/about/ambassador/img/2024-Santos.jpeg" height="200" width="200" alt="Headshot of Tieza Mica Santos" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/about/ambassador/img/2024-Santos.jpeg" height="200" width="175" alt="Headshot of Tieza Mica Santos" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
 Tieza Mica Santos is an “accidental scientist” wearing multiple hats as a researcher, social innovator, development professional, and specialist in the cross-cutting fields of climate change,
 environmental and natural resource governance, sustainability, systems transformation, and

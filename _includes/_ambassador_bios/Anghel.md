@@ -1,4 +1,4 @@
-<img src="{{ site.baseurl }}/about/ambassador/img/2024-Anghel.png" height="200" width="200" alt="Headshot of Simon Anghel" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/about/ambassador/img/2024-Anghel.png" height="225" width="200" alt="Headshot of Simon Anghel" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
 Simon Anghel is a researcher specializing in Astronomy, with an extensive background in Physics, Machine Learning, and Science Communication. His research primarily focuses on the physical properties and evolutionary processes of minor bodies such as meteoroids, comets, and asteroids.
 He completed his PhD at the University of Bucharest and is currently working in the Planetology group at the Astronomical Institute of the Romanian Academy.

@@ -1,6 +1,6 @@
 # Announcing Our New NASA SciX Lead Ambassadors 
  
-Welcome to an exciting milestone in the SciX Ambassador Program! We're thrilled to introduce our newly selected [NASA SciX Lead Ambassadors](.../about/ambassador/index.html) for the 2024-2026 and 2025-2027 cohorts. These exceptional individuals will spearhead community engagement and promote interdisciplinary collaboration within the [NASA SciX](https://scixplorer.org/) community.
+Welcome to an exciting milestone in the SciX Ambassador Program! We're thrilled to introduce our newly selected [NASA SciX Lead Ambassadors](https://scixplorer.org/scixabout/ambassador/) for the 2024-2026 and 2025-2027 cohorts. These exceptional individuals will spearhead community engagement and promote interdisciplinary collaboration within the [NASA SciX](https://scixplorer.org/) community.
  
 ## Selected Lead Ambassadors for the 2024 - 2026 Cohort 
 
@@ -141,51 +141,51 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 <br style="clear:left;"/>
 
 <p>
-- <b><a href=".../about/ambassador/team/Anghel.html">Simon Anghel:</a></b> In his current position at the Astronomical Institute of the Romanian Academy, Simon primarily focuses on the physical properties and evolutionary processes of minor bodies such as meteoroids, comets, and asteroids
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Anghel.html">Simon Anghel:</a></b> In his current position at the Astronomical Institute of the Romanian Academy, Simon primarily focuses on the physical properties and evolutionary processes of minor bodies such as meteoroids, comets, and asteroids
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Chaffee.html">Thom Chaffee:</a></b> Through his research at Stanford on planetary science and paleomagnetism, Thom is bridging important gaps in our understanding of the lunar magnetic field and emphasizing the importance of open science in education.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Chaffee.html">Thom Chaffee:</a></b> Through his research at Stanford on planetary science and paleomagnetism, Thom is bridging important gaps in our understanding of the lunar magnetic field and emphasizing the importance of open science in education.
 </p>
 
 <p>
-- <b><a href="../../../about/ambassador/team/Che.html">Yueyi Che:</a></b> As a glaciologist at Stanford, Yueyi's explorations into glacier dynamics are crucial for understanding climate impacts while she makes her science accessible to a wide audience through music and art.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Che.html">Yueyi Che:</a></b> As a glaciologist at Stanford, Yueyi's explorations into glacier dynamics are crucial for understanding climate impacts while she makes her science accessible to a wide audience through music and art.
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Jiao.html">Chenyue Jiao:</a></b> A doctoral student with a focus on the value of research data in earth science, Chenyue's work is pivotal in shaping scientific practices and policies. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Jiao.html">Chenyue Jiao:</a></b> A doctoral student with a focus on the value of research data in earth science, Chenyue's work is pivotal in shaping scientific practices and policies. 
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Hutchinson.html">Gwyneth Hutchinson:</a></b> Combining her expertise in bioengineering and biosecurity research at UC Berkeley with her active community involvement, Gwyneth is a leader in advancing human health and safety sciences. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Hutchinson.html">Gwyneth Hutchinson:</a></b> Combining her expertise in bioengineering and biosecurity research at UC Berkeley with her active community involvement, Gwyneth is a leader in advancing human health and safety sciences. 
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Lamm.html">Sarah Lamm:</a></b> A geologist focusing on Martian analog materials, Sarah's integrative approach combines chemistry, geology, and spectroscopy, enriching our understanding of Martian geology. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Lamm.html">Sarah Lamm:</a></b> A geologist focusing on Martian analog materials, Sarah's integrative approach combines chemistry, geology, and spectroscopy, enriching our understanding of Martian geology. 
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Ledvina.html">Vincent Ledvina:</a></b> Known for his dedication to public engagement in space weather research, Vincent's work and outreach activities have captivated hundreds of thousands, enhancing public literacy in space phenomena. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Ledvina.html">Vincent Ledvina:</a></b> Known for his dedication to public engagement in space weather research, Vincent's work and outreach activities have captivated hundreds of thousands, enhancing public literacy in space phenomena. 
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/PichardoMarcan.html">Manuel Pichardo Marcano:</a></b> Manuel's work in astrophysics at Vanderbilt University highlights his deep commitment to exploring stellar phenomena and contributing to the field of multi-messenger astronomy.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/PichardoMarcan.html">Manuel Pichardo Marcano:</a></b> Manuel's work in astrophysics at Vanderbilt University highlights his deep commitment to exploring stellar phenomena and contributing to the field of multi-messenger astronomy.
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Mousavi.html">Amirhosein Mousavi:</a></b> A Lead Research Data Scientist  committed to leveraging digital technologies for sustainability and climate action, Amir has a strong background in earth science and inspiring new audiences to engage with science. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Mousavi.html">Amirhosein Mousavi:</a></b> A Lead Research Data Scientist  committed to leveraging digital technologies for sustainability and climate action, Amir has a strong background in earth science and inspiring new audiences to engage with science. 
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Narayanan.html">Anand “Sunny” Narayanan:</a></b> With a rich background in space and medical physiology and a history of NASA collaborations, Sunny brings a unique interdisciplinary approach to the ambassador role and mentoring others interested in human space exploration.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Narayanan.html">Anand “Sunny” Narayanan:</a></b> With a rich background in space and medical physiology and a history of NASA collaborations, Sunny brings a unique interdisciplinary approach to the ambassador role and mentoring others interested in human space exploration.
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Santos.html">Tieza Mica Santos:</a></b> Her interdisciplinary expertise in climate change, sustainability, and public policy drives Tieza's work as a research fellow in Dresden Leibniz Graduate School at the Technische Universität Dresden, making significant contributions to environmental governance and systems transformation.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Santos.html">Tieza Mica Santos:</a></b> Her interdisciplinary expertise in climate change, sustainability, and public policy drives Tieza's work as a research fellow in Dresden Leibniz Graduate School at the Technische Universität Dresden, making significant contributions to environmental governance and systems transformation.
 </p>
 
 <p>
-- <b><a href=".../about/ambassador/team/Wilkins.html">Olivia Wilkins:</a></b> An astrochemist at Dickinson College, Olivia's blend of rigorous scientific research and dedication to science communication enriches her role as an ambassador, fostering a deeper public connection with astrochemistry.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Wilkins.html">Olivia Wilkins:</a></b> An astrochemist at Dickinson College, Olivia's blend of rigorous scientific research and dedication to science communication enriches her role as an ambassador, fostering a deeper public connection with astrochemistry.
 </p>
 
 
@@ -254,19 +254,19 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 <br style="clear:left;"/>
 
 <p>
-- <b><a href=".../about/ambassador/team/Cammaro.html">Anna Cammaro:</a></b> Founder & CEO of a space advocacy firm, dedicated to bridging educational gaps in the global space sector. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Cammaro.html">Anna Cammaro:</a></b> Founder & CEO of a space advocacy firm, dedicated to bridging educational gaps in the global space sector. 
 </p>
 <p>
-- <b><a href=".../about/ambassador/team/Das.html">Saswati Das:</a></b> A scientist specializing in conservation paleobiology, focusing on the intersection of ecology, biology, and geology.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Das.html">Saswati Das:</a></b> A scientist specializing in conservation paleobiology, focusing on the intersection of ecology, biology, and geology.
 </p>
 <p>
-- <b><a href=".../about/ambassador/team/Nauth.html">Murti Nauth:</a></b> A doctoral candidate at the forefront of studying interactions between the solar and Martian magnetic fields to constrain exoplanet habitability. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Nauth.html">Murti Nauth:</a></b> A doctoral candidate at the forefront of studying interactions between the solar and Martian magnetic fields to constrain exoplanet habitability. 
 </p>
 <p>
-- <b><a href=".../about/ambassador/team/Sharkus.html">Cielo Sharkus:</a></b> A doctoral candidate addressing climate change impacts on local and national levels, with a focus on sustainable adaptation strategies.
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Sharkus.html">Cielo Sharkus:</a></b> A doctoral candidate addressing climate change impacts on local and national levels, with a focus on sustainable adaptation strategies.
 </p>
 <p>
-- <b><a href=".../about/ambassador/team/Siew.html">Keith Siew:</a></b> A researcher whose work spans the realms of physiology and innovative technology and which benefits from open science. 
+- <b><a href="{{ site.baseurl }}/about/ambassador/team/Siew.html">Keith Siew:</a></b> A researcher whose work spans the realms of physiology and innovative technology and which benefits from open science. 
 </p>
 
 
@@ -287,5 +287,5 @@ The ambassadors are entrusted with several crucial responsibilities:
 
 ## Engagement Opportunities for the Community
  
-We encourage all members of our community to engage with our Lead Ambassadors. Visit the [ambassador page](.../about/ambassador/index.html) for detailed biographies and contact information, and join us at upcoming events to interact directly with these leaders.
-The selection of these Lead Ambassadors marks a significant step forward in our mission to forge a stronger, more connected NASA SciX community. Their diverse backgrounds and dedicated efforts will undoubtedly lead to a richer, more inclusive environment for our user community. Stay tuned to [our blog](.../scixblog/index.html) and monthly updates to follow their journeys and achievements.
+We encourage all members of our community to engage with our Lead Ambassadors. Visit the [ambassador page](https://scixplorer.org/scixabout/ambassador/) for detailed biographies and contact information, and join us at upcoming events to interact directly with these leaders.
+The selection of these Lead Ambassadors marks a significant step forward in our mission to forge a stronger, more connected NASA SciX community. Their diverse backgrounds and dedicated efforts will undoubtedly lead to a richer, more inclusive environment for our user community. Stay tuned to [our blog](https://scixplorer.org/scixblog/) and monthly updates to follow their journeys and achievements.

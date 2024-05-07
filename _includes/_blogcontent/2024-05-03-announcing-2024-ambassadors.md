@@ -197,7 +197,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
-   <img src="{{ site.baseurl }}/about/ambassador/img/2025-Cammaro.jpg" alt="Photograph of Ann Cammaro in dark room" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+   <img src="{{ site.baseurl }}/about/ambassador/img/2025-Cammaro-square.jpg" alt="Photograph of Ann Cammaro in dark room" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
   </div>
   <div class="textlabel">
     <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Cammaro.html"><B>Ann Cammaro</B></A></p>
@@ -206,7 +206,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
-    <img src="{{ site.baseurl }}/about/ambassador/img/2025-Saswati.jpg" alt="Headshot of Saswati Das" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> 
+    <img src="{{ site.baseurl }}/about/ambassador/img/2025-Das-square.jpg" alt="Headshot of Saswati Das" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> 
   </div>
   <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Das.html"><B>Saswati Das</B></A></p>
@@ -216,7 +216,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
- <img src="{{ site.baseurl }}/about/ambassador/img/2025-Long-Fox.png" alt="Photograph of Brooke Long-Fox with laboratory bench and shelves in background" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  </div>
+ <img src="{{ site.baseurl }}/about/ambassador/img/2025-Long-Fox-square.jpg" alt="Photograph of Brooke Long-Fox with laboratory bench and shelves in background" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  </div>
   <div class="textlabel">
      <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Long-Fox.html"><B>Brooke Long-Fox</B></A></p>
   </div>
@@ -233,7 +233,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
-   <img src="{{ site.baseurl }}/about/ambassador/img/2025-Sharkus.jpg" alt="Headshot of Cielo Sharkus" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+   <img src="{{ site.baseurl }}/about/ambassador/img/2025-Sharkus-square.jpg" alt="Headshot of Cielo Sharkus" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>  
  <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Sharkus.html"><B>Cielo Sharkus</B></A></p>

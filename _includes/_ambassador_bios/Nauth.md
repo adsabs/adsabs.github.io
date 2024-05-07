@@ -1,3 +1,3 @@
-Murti Nauth is a  doctoral candidate at the forefront of studying interactions between the solar and Martian magnetic fields to constrain exoplanet habitability. 
+Murti Nauth is a PhD Candidate at UC Berkeley, where she studies the plasma interactions in the magnetotail region of Mars, as part of the MAVEN mission team. She is a  NASA-FINESST fellow, and a Fisk-Vanderbilt bridge fellow. As a proud first-generation college student, she is an advocate for increasing representation in planetary science. She believes that effective science communication can encourage students of all backgrounds to pursue STEM research. She is also passionate about the outdoors, and spends most weekends climbing or exploring the backcountry. 
 
 [murtinauth [at] berkeley.edu](mailto:murtinauth@berkeley.edu)

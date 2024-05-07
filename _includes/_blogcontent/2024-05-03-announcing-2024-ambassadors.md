@@ -42,7 +42,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 <div style="float:left;">
 
   <div class="floated_img">
-    <img src="{{ site.baseurl }}/about/ambassador/img/2024-Hutchinson.png" alt="Headshot of Gwyneth Hutchinson" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> 
+    <img src="{{ site.baseurl }}/about/ambassador/img/2024-Hutchinson-square.jpg" alt="Headshot of Gwyneth Hutchinson" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;"> 
   </div>
   <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Hutchinson.html"><B>Gwyneth Hutchinson</B></A></p>
@@ -64,7 +64,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 <div style="float:left;">
 
   <div class="floated_img">
-   <img src="{{ site.baseurl }}/about/ambassador/img/2024-Lamm.jpg" alt="Photograph of Sarah Lamm sitting beside brook" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+   <img src="{{ site.baseurl }}/about/ambassador/img/2024-Lamm-square.jpg" alt="Photograph of Sarah Lamm sitting beside brook" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>  
  <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Lamm.html"><B>Sarah Lamm</B></A></p>
@@ -75,7 +75,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 <div style="float:left;">
 
   <div class="floated_img">
- <img src="{{ site.baseurl }}/about/ambassador/img/2024-Ledvina.png" alt="Photograph of Vincent Ledvina standing in snowy landscape with aurora in background" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+ <img src="{{ site.baseurl }}/about/ambassador/img/2024-Ledvina-square.jpg" alt="Photograph of Vincent Ledvina standing in snowy landscape with aurora in background" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>
  <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Ledvina.html"><B>Vincent Ledvina</B></A></p>
@@ -119,7 +119,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 <div style="float:left;">
 
   <div class="floated_img">
-   <img src="{{ site.baseurl }}/about/ambassador/img/2024-Santos.jpeg" alt="Headshot of Tieza Mica Santos" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+   <img src="{{ site.baseurl }}/about/ambassador/img/2024-Santos-square.jpg" alt="Headshot of Tieza Mica Santos" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>  
  <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Santos.html"><B>Tieza Mica Santos</B></A></p>

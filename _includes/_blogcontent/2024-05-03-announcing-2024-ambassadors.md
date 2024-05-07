@@ -224,7 +224,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
-    <img src="{{ site.baseurl }}/about/ambassador/img/FULL COLOR-IsotypeBlackBackground.png" alt="NASA SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+    <img src="{{ site.baseurl }}/about/ambassador/img/2025-Nauth-square.jpeg" alt="NASA SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>
   <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Nauth.html"><B>Murti Nauth</B></A></p>
@@ -242,7 +242,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
-     <img src="{{ site.baseurl }}/about/ambassador/img/FULL COLOR-IsotypeBlackBackground.png" alt="NASA SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+     <img src="{{ site.baseurl }}/about/ambassador/img/2025-Siew-square.jpeg" alt="NASA SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>
   <div class="textlabel">
    <p><a HREF=" {{ site.baseurl }}/about/ambassador/team/Siew.html"><B>Keith Siew</B></A></p>

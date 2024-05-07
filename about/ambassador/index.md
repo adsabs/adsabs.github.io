@@ -3,13 +3,13 @@ layout: about
 title: "Ambassador Program"
 ---
 
-The NASA SciX Ambassadors are community advocates working with the [NASA SciX staff](../team/index.html). Together, we are building a better interdisciplinary digital library system. [NASA SciX](https://scixplorer.org/) makes research in astrophysics, planetary science, heliophysics, and earth science more findable and accessible. An Ambassador's responsibilities include: 
+The NASA SciX Ambassadors are community advocates working with the [NASA SciX staff](https://scixplorer.org/scixabout/team/). Together, we are building a better interdisciplinary digital library system. [NASA SciX](https://scixplorer.org/) makes research in astrophysics, planetary science, heliophysics, and earth science more findable and accessible. An Ambassador's responsibilities include: 
 
 - Facilitating a robust network among their cohort and the broader NASA SciX community.
 
 - Engaging with their local and professional communities to promote the values and goals of NASA SciX.
 
-- Contributing to the [NASA SciX blog](../scixblog/index.html) and online forums, sharing their insights and experiences.
+- Contributing to the [NASA SciX blog](https://scixplorer.org/scixblog/) and online forums, sharing their insights and experiences.
 
 The 2024 Lead Ambassadors are getting ready for an exciting lineup of events aimed at promoting collaboration and community development. Key events include:
 
@@ -35,8 +35,8 @@ The 2024 NASA SciX Ambassadors are:
 - [Olivia Wilkins](../ambassador/team/Wilkins.html) 
 
 The 2025 NASA SciX Ambassadors are:
-- [Saswati Das](../ambassador/team/Das.html)
 - [Anna Cammaro](../ambassador/team/Cammaro.html)
+- [Saswati Das](../ambassador/team/Das.html)
 - [Brooke Long-Fox](../ambassador/team/Long-Fox.html)
 - [Murti Nauth](../ambassador/team/Nauth.html)
 - [Cielo Sharkus](../ambassador/team/Sharkus.html)

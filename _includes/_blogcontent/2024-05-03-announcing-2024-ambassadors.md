@@ -10,7 +10,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 
 <div style="float:left;">
   <div class="floated_img">
-   <img src="{{ site.baseurl }}/about/ambassador/img/2024-Anghel.png" alt="Headshot of Simon Anghel" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+   <img src="{{ site.baseurl }}/about/ambassador/img/2024-Anghel-square.jpg" alt="Headshot of Simon Anghel" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
   </div>
   <div class="textlabel">
     <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Anghel.html"><B>Simon Anghel</B></A></p>

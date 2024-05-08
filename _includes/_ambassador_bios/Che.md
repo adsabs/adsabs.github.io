@@ -12,4 +12,4 @@ research, Yueyi loves to play ukulele and draw sketches.
 [Instagram @IceCutest](https://www.instagram.com/icecutest/)  
 [Twitter/X @YueyiChe](https://twitter.com/YueyiChe)  
 
-[yueyiche [at] alaska.edu](mailto:yueyiche@stanford.edu)
+[yueyiche [at] stanford.edu](mailto:yueyiche@stanford.edu)

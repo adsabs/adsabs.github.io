@@ -4,7 +4,7 @@ title: "Technical Standards for Scanning Legacy Literature"
 order: 6
 ---
 
-NASA SciX contains extensive holdings of historic astronomy and astrophysics literature. As resources permit, we continue to digitize and ingest relevant items recommended by community members. In addition, we accept scans of appropriate material that meet these technical standards. Please contact the NASA SciX curators before beginning your project to ensure we can accommodate your proposal. We will also determine an effective delivery method then.   
+[NASA SciX](https://scixplorer.org/) contains extensive holdings of [historic astronomy and astrophysics literature](https://adsabs.harvard.edu/historical.html). As resources permit, we continue to digitize and ingest [relevant](https://ui.adsabs.harvard.edu/help/data_faq/journal_inclusion) items recommended by community members. In addition, we accept scans of [appropriate](https://ui.adsabs.harvard.edu/help/data_faq/journal_inclusion) material that meet these technical standards. Please contact the [NASA SciX curators](help@scixplorer.org) before beginning your project to ensure we can accommodate your proposal. We will also determine an effective delivery method then.   
   
 We request that each page be scanned and saved as a single TIFF file. In all cases, a journal is scanned cover-to-cover with no pages skipped (even the blank ones). These images will need to comply with the following quality and naming requirements.  
 
@@ -41,7 +41,7 @@ Scanned images should have consistent borders around the text area and should be
 ## Page numbering
 We expect you will take quality assurance measures to guarantee that pages will not be skipped during the scanning process, causing file names to be out of sync with the sequence of pages in the journal.  
   
-We request that each page be scanned and saved as a single TIFF file, named after the journal acronym, volume and page number according to the templates described below; the journal acronym can be provided by the SciX team. If a journal acronym contains an ampersand (&), it needs to be replaced by a plus sign (+). Ideally, file extensions like .tif or .tiff should be omitted.
+We request that each page be scanned and saved as a single TIFF file, named after the journal acronym, volume and page number according to the templates described below; the journal acronym can be provided by the NASA SciX team. If a journal acronym contains an ampersand (&), it needs to be replaced by a plus sign (+). Ideally, file extensions like .tif or .tiff should be omitted.
 
 Typically, a page in a journal is one of the 6 following types: 
 

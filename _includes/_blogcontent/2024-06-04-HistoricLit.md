@@ -34,3 +34,4 @@ If NASA SciX indexes a paper and your institution no longer needs it, consider p
  
 NASA SciX exists to assist scientists in finding and accessing the concentrated knowledge of science, which is distilled and revealed in the scholarly literature, modern and ancient. The research of our predecessors shapes and supports our current efforts. We stand less on the shoulders of giants and more on the piles of their publications. Explore the historic literature in NASA SciX, what you discover will be amazing.  
 
+Note: The authors presented a version of this post as an [iPoster](https://aas244-aas.ipostersessions.com/Default.aspx?s=75-EE-09-5A-22-21-C1-80-50-97-CC-01-8B-FD-0F-13) at the 244th American Astronomical Society meeting during June 2024 in Madison, Wisconsin. 

@@ -19,9 +19,7 @@ SciX has built a highly scalable and feature-rich platform using a modern develo
 
 ## Who we are looking for
 
-We have one opening to join our team of about eleven developers, five curators, and four project scientists. The successful candidates will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group. We foster a work environment that is inclusive, flexible, and diverse, where team members can be themselves. We encourage applications from minorities, women, protected veterans, individuals with disabilities, and all other qualified applicants. We’re looking for:
-
-* the [ADS Project Scientist for Earth Science](https://www.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-24-09) who will work to establish SciX as a world-leading information resource for Earth Science. Duties of this job include serving as the principal SciX scientific resource for Earth Science, developing new methods to search, discover, and use research data and publications, and serving as a research scientist at the intersection of Earth and Information Science. The employee will devote 30% of their time to do original research in Earth Science. [Apply today](https://www.usajobs.gov/job/765453700)!
+We don't currently have any job openings! Please check back later to find new career opportunities.
 
 ## What we offer
 
@@ -44,7 +42,7 @@ For more information, please see:
   * Facebook ([Page](https://www.facebook.com/SciXCommunity), [Group](https://www.facebook.com/groups/scixcommunity))
   * [Instagram](https://www.instagram.com/scixcommunity/suiHmQaZCStjdBQ53vCc/edit)
   * [Threads](https://www.threads.net/@scixcommunity)
-  * [Mastodon](http://@SciXCommunity@mastodon.social)
+  * [Mastodon](https://mastodon.social/@SciXCommunity)
   * YouTube ([SciX](https://youtube.com/@SciXCommunity), [ADS]())
-  * [The CfA website](cfa.harvard.edu)
+  * [The CfA website](https://cfa.harvard.edu/)
 

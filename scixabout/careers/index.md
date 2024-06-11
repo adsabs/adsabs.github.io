@@ -46,5 +46,5 @@ For more information, please see:
   * [Threads](https://www.threads.net/@scixcommunity)
   * [Mastodon](http://@SciXCommunity@mastodon.social)
   * YouTube ([SciX](https://youtube.com/@SciXCommunity), [ADS]())
-  * [The CfA website](cfa.harvard.edu)
+  * [The CfA website](https://cfa.harvard.edu/opportunities/sao-employment-opportunities)
 

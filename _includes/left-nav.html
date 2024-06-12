@@ -176,6 +176,22 @@
     </div>
   </div>
 
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="learn-ads">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#learn-ads-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Learn ADS </h3>
+      <a>
+    </div>
+    <div id="learn-ads-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="learn ADS">
+      <ul class="list-group">
+        {% assign posts = (site.posts | sort:"order") %} {% for post in posts %} {% if post.category == "learn" %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
+          </a>
+        {% endif %} {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
 
     <h3 class="{% if '/faq/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/help/whats_new">What's New</a></h3>

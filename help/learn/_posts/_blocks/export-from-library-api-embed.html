@@ -1,0 +1,38 @@
+<script type="text/javascript" src="//cdn.datacamp.com/dcl-react.js.gz"></script>
+<div data-datacamp-exercise data-lang="python">
+	<code data-type="pre-exercise-code">
+		# This will get executed each time the exercise gets initialized
+	</code>
+	<code data-type="sample-code">
+		import requests
+		import json
+
+		# Add your api token here
+		my_api_token = "FILL_YOUR_API_TOKEN_HERE"
+
+		# Get information about your libraries
+		# GET /biblib/libraries/
+		results = requests.get("https://api.adsabs.harvard.edu/v1/biblib/libraries",
+                       headers={'Authorization': 'Bearer ' + my_api_token})
+		
+		# Print the results
+		print(results.json()['libraries'])
+
+		# Find the library id that you need
+		library_id = "FILL_YOUR_LIBRARY_ID_HERE"
+
+		# Get the bibcodes in that library		
+		# GET /biblib/libraries/{library_id}
+		lib_results = requests.get("https://api.adsabs.harvard.edu/v1/biblib/libraries/"+library_id,
+                       headers={'Authorization': 'Bearer ' + my_api_token})
+		bibcodes = lib_results.json()['documents']
+		
+		# POST /export/bibtex {bibcode:[“bib1”,”bib2”,...]}
+		refs = requests.post("https://api.adsabs.harvard.edu/v1/export/bibtex",
+					   headers={'Authorization': 'Bearer ' + my_api_token},
+					   data=json.dumps({"bibcode":bibcodes}))
+
+		print(refs.json()["export"])
+
+	</code>
+</div>

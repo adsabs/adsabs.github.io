@@ -4,6 +4,7 @@
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_II_f1.png" />
 <br>
 </div>
+<br>
 
 In the [first part](https://scixplorer.org/scixblog/data-linking-I) of this blog series, we provided a general description of the holdings in the [NASA Science Explorer](https://scixplorer.org/) (NASA SciX); in this second part, we highlight a specific aspect of these holdings and place it in the context of the Research Life Cycle. The concept of a Research Life Cycle is not anything new; it represents the way in which scholarly research is done and has, in principle, not changed for a long time, probably centuries. It has fundamentally changed, however, in the way it is expressed. 
 
@@ -19,6 +20,7 @@ Citations are just one form of the linkages we are referring to. Linkages are es
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_II_f2.png" />
 <br>
 </div>
+<br>
 
 The predicate describes the relationship between two entities, one the subject and the other the object. The relationship within the framework of NASA SciX can be one of two: *cites* or *mentions*. Also, within this framework, the subject always refers to a publication and currently the object refers to either a data product or software. At this point it is good to explain the difference between the treatment of these two relationships within the SciX context, in particular the consequences. Table 1 summarizes the difference between the two scenarios in SciX. The row "Form" corresponds to another limitation within SciX: only objects that have a URL associated with them can be considered; objects without URL are per definition not actionable.
 
@@ -28,7 +30,7 @@ The predicate describes the relationship between two entities, one the subject a
 <em>Table 1: Difference between mentions and citations. In the case of cites, only DOIs are in principle actionable because they have harvestable metadata associated with them. Cites with other identifiers are actionable if the cited work is already indexed.
 </em>
 </div>
-
+<br>
 
 In this blog, we focus on the cases where the object is a data product. In the next sections, we discuss the support of data links and data citations, respectively.
 
@@ -40,6 +42,7 @@ One of the distinguishing features of SciX is the presence of links from its rec
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_II_f3.png" />
 <br>
 </div>
+<br>
 
 In their response to the call for Open Science, many publishers have started to incorporate so-called Data Availability Statement sections in the articles they publish. We mine links from these sections for most journals we index from the AGU, Elsevier, Springer and the AAS. Currently we simply mine these links and do little curation. The only part that needs action from the SciX curation team is the fact that we label these links for their display in the ADS user interface (figure 3). At this moment, these labels are based on heuristics. For example, certain DOI prefixes can be associated uniquely with a particular repository, just like some URL patterns. As of the writing of this blog, we have mined about 110k links this way.
 
@@ -65,6 +68,7 @@ To get some insight into the science topics covered by these publications we gen
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_II_f4.png" />
 <br>
 </div>
+<br>
 
 The diagram shows a number of high level science topics. The exploration does not need to end here; if one's particular interest is circumstellar disks and protoplanetary nebulae, the results can be explored further by clicking on the blue segment, clicking on the button "Add to filter" (to the right of the Group 1 header) and hitting the search button. This generates an overview of just the publications in this group. If there are sufficient publications in this group, we can generate another Paper Network. This second network splits the original, larger category up into smaller, more detailed segments, providing more insight into the topics covered (figure 4, right diagram).
 
@@ -79,6 +83,7 @@ Just like before, the Paper Network can be used to indicate the range of topics 
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_II_f5.png" />
 <br>
 </div>
+<br>
 
 The next example is to illustrate how to find publications that may be able to provide us with data products if we are interested in building on existing research in a particular topic. As a topic we select exoplanet atmospheres and we will start our exploration with recent, refereed Open Access publications, with links to data. The following query will generate the publications that correspond to this
 
@@ -90,6 +95,7 @@ The results are shown in figure 6. The diagram on the left shows the results for
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_II_f6.png" />
 <br>
 </div>
+<br>
 
 Finally, the powerful SciX query language allows us to find Open Access, refereed publications, from the period 2010-2023, in the Earth Science collection, which have at least one link to data and cite at least one software product:
 

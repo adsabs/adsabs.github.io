@@ -15,7 +15,8 @@ The ADS has built a highly scalable and feature-rich platform using a modern dev
 
 ## Who we are looking for
 
-We don't currently have any job openings! Please check back later to find new career opportunities.
+We have one opening to join our team of about twelve developers and four curators. The successful candidate will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group. We foster a work environment that is inclusive, flexible, and diverse, where team members can be themselves. We encourage applications from minorities, women, protected veterans, individuals with disabilities, and all other qualified applicants. We're looking for:
+* a [Search/Back-end developer](https://cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-24-49) experienced with search engines (e.g., Solr, Elasticsearch) and designing/building well-structured software (Java and Python), data pipelines, and REST APIs. The primary responsibility of the employee is to maintain and enhance the capabilities of the ADS search engine (Java), maintain its public API (Python), enhance its text processing pipelines (Python), and develop new functionality and services to support metadata enhancement, citation analysis, and recommendations while relying on ADS natural language processing/machine learning/deep learning plans. ([apply here](https://trustcareers.si.edu/en/postings/a7082567-bac9-4cbc-955f-bec97b685c3d))
 
 ## What we offer
 
@@ -24,7 +25,7 @@ The ADS project is funded by NASA through a cooperative agreement and provides i
 Some of the perks of the jobs include:
 
   * Work with a creative, multitalented team in a first-class academic environment contributing to the expansion of human knowledge
-  * Entry salary typically within the 78-125K range (with yearly revisions) for grades 11/12/13 in the Boston area (see [2023 location-dependent pay scales](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/salary-tables/23Tables/html/BOS.aspx))
+  * Entry salary typically within the 82-152K range (with yearly revisions) for grades 11/12/13 in the Boston area (see [2024 location-dependent pay scales](https://www.opm.gov/policy-data-oversight/pay-leave/salaries-wages/salary-tables/24Tables/html/BOS.aspx))
   * [Generous benefits](https://pweb.cfa.harvard.edu/people/smithsonian-astrophysical-observatory-human-resources/sao-trust-fund-employee-benefits), flexible work hours, and local (to the Cambridge, MA area) telecommuting and hybrid options 
   * Access to the astronomical community and events at the CfA and Harvard University
   * Engage with users at community meetings and present your work at scientific conferences in astronomy and information science

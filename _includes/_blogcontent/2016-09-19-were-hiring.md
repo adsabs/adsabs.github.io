@@ -15,7 +15,7 @@ although hiring decisions may be taken before then.  For more information, pleas
 
 ## Who we are
 
-The NASA Astrophysics Data System (ADS) is a digital library portal for researchers in Astronomy and Astrophysics which finds substantial use in the Physics and Geophysics communities. The ADS corpus consists of over ten million documents, and is growing at a rate of several thousand per week. Every Astronomy paper ever published and nearly every Physics and Geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily. 
+The Astrophysics Data System (ADS) is a digital library portal for researchers in Astronomy and Astrophysics which finds substantial use in the Physics and Geophysics communities. The ADS corpus consists of over ten million documents, and is growing at a rate of several thousand per week. Every Astronomy paper ever published and nearly every Physics and Geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily. 
 
 The ADS project develops and maintains services to facilitate the discovery and access of the scholarly literature published in the relevant fields of research.  The project embraces the spirit of openness long championed by NASA and the astronomy community in general: all the software we are developing is licensed to under an open source license model, and access to our data holdings is provided via an open API.
 

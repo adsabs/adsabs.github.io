@@ -1,7 +1,7 @@
 
 <img src="{{ site.base_url }}/blog/images/blog_2016-03-16_image.png" width="128"><br>
 
-NASA Astrophysics is, and has always been, a leader in providing open access to scientific data.  With small exceptions, all data from  NASA missions are publically available.  Indeed NASA has also been the leader in creating systems to make the access of these data easy and useful.
+Astrophysics is, and has always been, a leader in providing open access to scientific data.  With small exceptions, all data from  NASA missions are publically available.  Indeed NASA has also been the leader in creating systems to make the access of these data easy and useful.
 
 The first requirement for providing access to data is that the data be kept.  Historically in astronomy large data collections, such as the Harvard College Observatory Plate Collection (500,000 glass photographic plates), are very rare. Observational data, whether in the form of lab books, photographs, computer tapes, or electronic files, have traditionally been viewed as being the personal property of the observer.
 

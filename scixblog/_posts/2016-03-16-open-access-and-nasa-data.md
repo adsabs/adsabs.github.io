@@ -1,6 +1,6 @@
 ---
 layout: blog_post_scix
-title: "Open Access and NASA Astrophysics Data"
+title: "Open Access and Astrophysics Data"
 author: "Michael J. Kurtz"
 position: "ADS Project Scientist"
 category: scixblog

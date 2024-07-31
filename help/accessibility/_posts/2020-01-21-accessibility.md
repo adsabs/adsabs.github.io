@@ -6,7 +6,7 @@ category: policies
 permalink: /help/policies/accessibility
 ---
 
-# SAO/NASA ADS Web Accessibility Policy
+# ADS Web Accessibility Policy
 
 We at the Astrophysics Data System want our data to be accessible to everyone. We make every effort to be compliant with Section 508 and the W3C accessibility guidelines.
 

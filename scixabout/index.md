@@ -3,9 +3,9 @@ layout: about_scix
 title: 'About SciX'
 ---
 
-The NASA Science Explorer (SciX) is a digital library portal for researchers in astronomy, earth science, heliophysics, physics, and planetary science. The [Smithsonian Astrophysical Observatory (SAO)](https://www.cfa.harvard.edu/sao) operates SciX for the scientific community under a NASA cooperative agreement.
+The Science Explorer (SciX) is a digital library portal for researchers in astronomy, earth science, heliophysics, physics, and planetary science. The [Smithsonian Astrophysical Observatory (SAO)](https://www.cfa.harvard.edu/sao) operates SciX for the scientific community under a NASA cooperative agreement.
 
-SciX is a multidisciplinary library based on the successful NASA Astrophysics Data Service (ADS) that has served astronomers and astrophysicists for more than a quarter century. Because ADS has increased the research efficiency of astronomers by at [least 6%](https://scixplorer.org/abs/2005JASIS..56...36K/abstract), NASA is expanding this valuable resource. By serving a broader range of disciplines, SciX will also foster interdisciplinary studies.  
+SciX is a multidisciplinary library based on the successful Astrophysics Data Service (ADS) that has served astronomers and astrophysicists for more than a quarter century. Because ADS has increased the research efficiency of astronomers by at [least 6%](https://scixplorer.org/abs/2005JASIS..56...36K/abstract), NASA is expanding this valuable resource. By serving a broader range of disciplines, SciX will also foster interdisciplinary studies.  
 
 The four bibliographic collections maintained by SciX cover astronomy (including astrophysics, heliophysics, and planetary science), physics, earth science, and general science. Over all the system contains over 20 million records covering refereed publications plus all arXiv, ESS Open Archive, and EarthArXiv preprints. SciX has bibliographic records for 99% of the refereed literature in astrophysics, in part because of our longevity in the community; SciX earth science collection is continuously expanding, with the goal of 95% completeness by the end of 2024. Abstracts and full-text of publications are indexed and searchable through the new [SciX search form](https://scixplorer.org/) as well as the legacy [ADS search form](https://ui.adsabs.harvard.edu/). 
 
@@ -17,5 +17,5 @@ SciX is committed to the [FAIR (Findable, Accessible, Interoperable, and Reusabl
 
 **Please note that SciX does not hold the copyright for the abstracts and articles, and their use is free for personal use only; open access abstracts and articles may have distinct terms.** For more information, please read our page detailing the Terms and Conditions regulating the use of our resources.
 
-If you wish to acknowledge SciX in a publication, please use a phrase such as: *“This research has made use of NASA’s Science Explorer.”*
+If you wish to acknowledge SciX in a publication, please use a phrase such as: *“This research has made use of the Science Explorer.”*
 

@@ -1,5 +1,5 @@
 
-*[Sergi Blanco-Cuaresma](https://www.blancocuaresma.com/s/) is an astrophysicist and the Software Development & Operations Lead for the NASA Astrophysics Data System, based at the Harvard-Smithsonian Center for Astrophysics.*
+*[Sergi Blanco-Cuaresma](https://www.blancocuaresma.com/s/) is an astrophysicist and the Software Development & Operations Lead for the Astrophysics Data System, based at the Harvard-Smithsonian Center for Astrophysics.*
 
 The Astrophysics Data System (ADS) is pleased to introduce the new myADS email notification system! It is now more powerful than the 20-year-old ADS classic-based service thanks to the new, cutting-edge [ADS infrastructure](https://www.astrobetter.com/blog/2018/05/28/welcome-to-the-new-ads/).
 

@@ -3,7 +3,7 @@
 
 Mugdha received her Ph.D. in Astrophysics from the University of North Carolina at Chapel Hill in August 2023. Her dissertation was focused on building a census of active black holes in ~15,000 nearby galaxies using optical and mid-IR techniques. 
 
-Post graduation, Mugdha joined the NASA ADS back office development team. She is using the pipeline development skills that she cultivated during her Ph.D. to create and improve data pipelines for NASA ADS. She strives to use her experience and background in the Astronomy world to help build a product that will continue to add outsized value to astronomers all around the world. At the CfA, she has also taken on the role of Deputy Chair of the Equity, Diversity, Inclusion, and Belonging Committee. 
+Post graduation, Mugdha joined the ADS back office development team. She is using the pipeline development skills that she cultivated during her Ph.D. to create and improve data pipelines for ADS. She strives to use her experience and background in the Astronomy world to help build a product that will continue to add outsized value to astronomers all around the world. At the CfA, she has also taken on the role of Deputy Chair of the Equity, Diversity, Inclusion, and Belonging Committee. 
 
 Outside of work, she trains medical assistance service dogs, revives plants from the dead, and does a ton of refurbishing and DIY projects.
 

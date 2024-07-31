@@ -1,6 +1,6 @@
 ---
 layout: blog_post_scix
-title: "Historic Observatory Publications in the NASA Science Explorer"
+title: "Historic Observatory Publications in the Science Explorer"
 author: Jennifer Lynn Bartlett & Donna Thompson 
 position: ADS/SciX Astrophysics Project Scientist & Data Curation Librarian
 category: scixblog

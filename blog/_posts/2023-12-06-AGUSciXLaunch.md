@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "Join us at the AGU Fall Meeting for the NASA Science Explorer (SciX) Launch"
+title: "Join us at the AGU Fall Meeting for the Science Explorer (SciX) Launch"
 author: Brit Myers
 position: SciX Community Engagement Consultant
 category: blog

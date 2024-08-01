@@ -1,6 +1,6 @@
 ---
 layout: blog_post_scix
-title: "Introducing the NASA Science Explorer Ambassador Program"
+title: "Introducing the Science Explorer Ambassador Program"
 author: Stephanie Jarmak
 position: ADS/SciX Planetary Science Project Scientist
 category: scixblog

@@ -5,7 +5,7 @@ title: "Careers@SciX"
 
 ## Who we are
 
-The NASA Science Explorer (SciX) is the expansion to the earth sciences of the NASA Astrophysics Data Service (ADS), the primary digital library portal for researchers in astronomy, astrophysics, planetary science and heliophysics.
+The Science Explorer (SciX) is the expansion to the earth sciences of the Astrophysics Data Service (ADS), the primary digital library portal for researchers in astronomy, astrophysics, planetary science and heliophysics.
 
 The SciX corpus consists of over 20 million bibliographic records, including referred papers, preprints, gray literature, software, and datasets. The collection expands at a rate of over ten thousand entries per week. Every astronomy paper ever published and nearly every physics and geophysics article refereed in the past 20 years is fully indexed by SciX. Launched in 2023, the earth science collection should be 95% complete by the end of 2024. Globally, over 50,000 scientists and librarians use SciX daily, all over the world.
 

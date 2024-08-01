@@ -3,7 +3,7 @@ layout: about
 title: "ADS Awards and Recognition"
 ---
 
-This page describes some of the awards presented to the NASA Astrophysics Data System and to individual team members highlighting the importance of the ADS services to the scientific community.
+This page describes some of the awards presented to the Astrophysics Data System and to individual team members highlighting the importance of the ADS services to the scientific community.
 
 The 2023 **ADASS** [Software Prize for an outstanding contribution to Astronomical Software](https://adass.org/softwareprize.html) was awarded to **Alberto Accommazzi and the ADS Team**  in recognition of the outstanding contribution of the ADS to the astronomical software community and the positive impact it has on many astronomy projects and scientists. 
 
@@ -21,7 +21,7 @@ The **Special Libraries Association** awarded the [2016 Physics, Astronomy and M
 
 The **NASA Astrophysics Archival Senior Review Panel** ranked ADS first among 6 projects in its 2008 assessment. "ADS is so extensively used by the entire professional astronomy community that it is hard to imagine existing without it," commented the panel. The [full report is available](https://smd-prod.s3.amazonaws.com/science-red/s3fs-public/atoms/files/ApArchSR-2008_final.pdf).
 
-The **Royal Astronomical Society** has awarded the 2008 Award for Services to Astronomy to G&uuml;nther Eichhorn for his work as "the project manager for the NASA Astrophysics Data System (ADS), the online database that includes the vast majority of astronomical literature. ADS gives open access to astronomical research material and has revolutionised the field, allowing astronomers and others to investigate publications on an equal basis." (See the [press release](http://www.ras.org.uk/news-and-press/news-archive/204-news2008/1384).)
+The **Royal Astronomical Society** has awarded the 2008 Award for Services to Astronomy to G&uuml;nther Eichhorn for his work as "the project manager for the Astrophysics Data System (ADS), the online database that includes the vast majority of astronomical literature. ADS gives open access to astronomical research material and has revolutionised the field, allowing astronomers and others to investigate publications on an equal basis." (See the [press release](http://www.ras.org.uk/news-and-press/news-archive/204-news2008/1384).)
 
 The **United Nations General Assembly** commended the ADS for "the mirror sites of the NASA-funded Astrophysics Data System (ADS). . . had been enthusiastically accepted by the scientific community and had become important assets for developing countries . . ." (Excerpt from the United Nations Committee on the Peaceful Uses of Outer Space, "Report on the United Nations/European Space Agency/National Aeronautics and Space Administration of the United States of America Workshop on the International Heliophysical Year 2007" (Abu Dhabi and Al-Ain, United Arab Emirates, 20-23 November 2005), report number A/AC105_856, available [online](http://www.unoosa.org/pdf/reports/ac105/AC105_856E.pdf).)
 

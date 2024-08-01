@@ -1,6 +1,6 @@
 ---
 layout: blog_post_scix
-title: "Announcing Our New NASA SciX Lead Ambassadors"
+title: "Announcing Our New SciX Lead Ambassadors"
 author: Stephanie Jarmak 
 position: ADS/SciX Planetary Science Project Scientist
 category: scixblog

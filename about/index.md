@@ -3,7 +3,7 @@ layout: about
 title: 'About ADS'
 ---
 
-The SAO/NASA Astrophysics Data System (ADS) is a digital library portal for researchers in astronomy and physics, operated by the [Smithsonian Astrophysical Observatory (SAO)](https://www.cfa.harvard.edu/sao) under a NASA grant.
+The Astrophysics Data System (ADS) is a digital library portal for researchers in astronomy and physics, operated by the [Smithsonian Astrophysical Observatory (SAO)](https://www.cfa.harvard.edu/sao) under a NASA grant.
 
 ADS maintains three bibliographic collections containing more than 15 million records covering publications in astronomy and astrophysics, physics, and general science, including all arXiv e-prints. Abstracts and full-text of major astronomy and physics publications are indexed and searchable through the new ADS [modern search form](https://ui.adsabs.harvard.edu/) as well as a [classic search form](https://ui.adsabs.harvard.edu/#classic-form). A [browsable paper form](https://ui.adsabs.harvard.edu/#paper-form) is also available.
 
@@ -13,4 +13,4 @@ In addition to maintaining its bibliographic corpus, ADS tracks citations and us
 
 The importance of ADS's role in supporting the scientific community [has been recognized by societies and individuals](../about/awards.html).
 
-If you wish to acknowledge us in a publication, kindly use a phrase such as the following: _"This research has made use of NASA's Astrophysics Data System."_
+If you wish to acknowledge us in a publication, kindly use a phrase such as the following: _"This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC21M00561."_

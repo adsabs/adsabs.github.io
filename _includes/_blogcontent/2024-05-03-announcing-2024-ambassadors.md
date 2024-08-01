@@ -1,10 +1,10 @@
-# Announcing Our New NASA SciX Lead Ambassadors 
+# Announcing Our New SciX Lead Ambassadors 
  
-Welcome to an exciting milestone in the SciX Ambassador Program! We're thrilled to introduce our newly selected [NASA SciX Lead Ambassadors](https://scixplorer.org/scixabout/ambassador/) for the 2024-2026 and 2025-2027 cohorts. These exceptional individuals will spearhead community engagement and promote interdisciplinary collaboration within the [NASA SciX](https://scixplorer.org/) community.
+Welcome to an exciting milestone in the SciX Ambassador Program! We're thrilled to introduce our newly selected [SciX Lead Ambassadors](https://scixplorer.org/scixabout/ambassador/) for the 2024-2026 and 2025-2027 cohorts. These exceptional individuals will spearhead community engagement and promote interdisciplinary collaboration within the [SciX](https://scixplorer.org/) community.
  
 ## Selected Lead Ambassadors for the 2024 - 2026 Cohort 
 
-These diverse leaders from multiple scientific disciplines have been chosen because of their passion for open science and engaging communities. They represent the best of our community and are committed to furthering the mission of NASA SciX in their respective fields. Our first cohort of Lead Ambassadors is
+These diverse leaders from multiple scientific disciplines have been chosen because of their passion for open science and engaging communities. They represent the best of our community and are committed to furthering the mission of SciX in their respective fields. Our first cohort of Lead Ambassadors is
 
 <div>
 
@@ -191,7 +191,7 @@ These diverse leaders from multiple scientific disciplines have been chosen beca
 
 ## Selected Lead Ambassadors for the 2025 - 2027 Cohort 
 
-In addition to the first group of NASA SciX Ambassadors, we have also selected a second cohort of individuals who will join the program from 2025-2027.  The two cohorts will overlap in 2025, allowing for mentorship and information exchange to occur between the two groups. These selected individuals include, 
+In addition to the first group of SciX Ambassadors, we have also selected a second cohort of individuals who will join the program from 2025-2027.  The two cohorts will overlap in 2025, allowing for mentorship and information exchange to occur between the two groups. These selected individuals include, 
 
 <div>
 
@@ -224,7 +224,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
-    <img src="{{ site.baseurl }}/about/ambassador/img/2025-Nauth-square.jpeg" alt="NASA SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+    <img src="{{ site.baseurl }}/about/ambassador/img/2025-Nauth-square.jpeg" alt="SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>
   <div class="textlabel">
    <p><a HREF="{{ site.baseurl }}/about/ambassador/team/Nauth.html"><B>Murti Nauth</B></A></p>
@@ -242,7 +242,7 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
 
 <div style="float:left;">
   <div class="floated_img">
-     <img src="{{ site.baseurl }}/about/ambassador/img/2025-Siew-square.jpeg" alt="NASA SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
+     <img src="{{ site.baseurl }}/about/ambassador/img/2025-Siew-square.jpeg" alt="SciX logo" height="200" width="200" alt="Image" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">  
   </div>
   <div class="textlabel">
    <p><a HREF=" {{ site.baseurl }}/about/ambassador/team/Siew.html"><B>Keith Siew</B></A></p>
@@ -275,17 +275,17 @@ In addition to the first group of NASA SciX Ambassadors, we have also selected a
  
 Our Lead Ambassadors are gearing up for a dynamic schedule of activities designed to foster collaboration and community growth. Key events include:
  
-- A foundational workshop at the Center for Astrophysics \| Harvard & Smithsonian from August 21 - 23, 2024, focused on training to share NASA SciX with their communities, developing our overall Ambassador Program, networking with the NASA SciX team and fellow ambassadors, and producing materials that will aid further community engagement. 
+- A foundational workshop at the Center for Astrophysics \| Harvard & Smithsonian from August 21 - 23, 2024, focused on training to share SciX with their communities, developing our overall Ambassador Program, networking with the SciX team and fellow ambassadors, and producing materials that will aid further community engagement. 
 - Monthly community calls to discuss progress, challenges, and opportunities for collaboration.
-- Engagement in high-visibility events to represent and promote NASA SciX initiatives.
+- Engagement in high-visibility events to represent and promote SciX initiatives.
 
 The ambassadors are entrusted with several crucial responsibilities:
 
-- Facilitating a robust network among their cohort and the broader NASA SciX community.
-- Engaging with their local and professional communities to promote the values and goals of NASA SciX.
-- Contributing to the NASA SciX blog and online forums, sharing their insights and experiences.
+- Facilitating a robust network among their cohort and the broader SciX community.
+- Engaging with their local and professional communities to promote the values and goals of SciX.
+- Contributing to the SciX blog and online forums, sharing their insights and experiences.
 
 ## Engagement Opportunities for the Community
  
 We encourage all members of our community to engage with our Lead Ambassadors. Visit the [ambassador page](https://scixplorer.org/scixabout/ambassador/) for detailed biographies and contact information, and join us at upcoming events to interact directly with these leaders.
-The selection of these Lead Ambassadors marks a significant step forward in our mission to forge a stronger, more connected NASA SciX community. Their diverse backgrounds and dedicated efforts will undoubtedly lead to a richer, more inclusive environment for our user community. Stay tuned to [our blog](https://scixplorer.org/scixblog/) and monthly updates to follow their journeys and achievements.
+The selection of these Lead Ambassadors marks a significant step forward in our mission to forge a stronger, more connected SciX community. Their diverse backgrounds and dedicated efforts will undoubtedly lead to a richer, more inclusive environment for our user community. Stay tuned to [our blog](https://scixplorer.org/scixblog/) and monthly updates to follow their journeys and achievements.

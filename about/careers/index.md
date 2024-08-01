@@ -5,7 +5,7 @@ title: "Careers@ADS"
 
 ## Who we are
 
-The NASA Astrophysics Data System (ADS) is the primary digital library portal for researchers in astronomy, astrophysics, planetary science and heliophysics. The ADS corpus consists of over 16 million documents and is growing at a rate of over ten thousand per week. Every astronomy paper ever published and nearly every physics and geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily, all over the world.
+The Astrophysics Data System (ADS) is the primary digital library portal for researchers in astronomy, astrophysics, planetary science and heliophysics. The ADS corpus consists of over 16 million documents and is growing at a rate of over ten thousand per week. Every astronomy paper ever published and nearly every physics and geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily, all over the world.
 
 Recently, the ADS team has been selected by NASA to extend its coverage and services into the fields of earth science and NASA funded research in the biological and physical sciences. This will create new opportunities for engagement between the ADS team and the other NASA science divisions, bringing together space and earth scientists in the pursuit of NASA's Science Mission Directorate goals.
 

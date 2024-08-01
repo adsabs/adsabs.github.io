@@ -13,6 +13,6 @@ The ADS provides the myADS Update Service, a free custom notification service pr
 In 2016 the [ADS Users Group (ADSUG)](../about/adsug/adsug.html) was established to advise the project and to recommend changes and improvements to both its services and procedures in order to maximize the scientific productivity of the community it serves. The ADSUG will advocate for the user community and provide suggestions regarding content curation, technical infrastructure, management, and priority setting. 
 
 The importance of ADS's role in supporting the scientific community has been recognized by societies and individuals. If you wish to acknowledge us in a publication, kindly use a phrase such as the following:
-*"This research has made use of the Astrophysics Data System."*
+*"This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC21M00561."*
 
 

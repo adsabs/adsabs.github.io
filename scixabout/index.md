@@ -17,5 +17,5 @@ SciX is committed to the [FAIR (Findable, Accessible, Interoperable, and Reusabl
 
 **Please note that SciX does not hold the copyright for the abstracts and articles, and their use is free for personal use only; open access abstracts and articles may have distinct terms.** For more information, please read our page detailing the Terms and Conditions regulating the use of our resources.
 
-If you wish to acknowledge SciX in a publication, please use a phrase such as: *“This research has made use of the Science Explorer.”*
+If you wish to acknowledge SciX in a publication, please use a phrase such as: *“This research has made use of the Science Explorer, funded by NASA under Cooperative Agreement 80NSSC21M00561.”*
 

@@ -10,18 +10,18 @@ This blog is the final part in the series on data linking and indexing in the [S
 
 # Cited data products
 
-As mentioned in part I, citations can only be assigned within SciX when the cited work has a corresponding SciX record as well; in other words it has to be "indexed" in the system. In order to be able to index a record, a minimum amount of metadata of sufficient quality has to be available. Most of the indexed content in SciX consists of literature records, but a significant and fairly recent addition to our collection consists of records representing data and software. Software is truly a recent addition, but records representing data products were first introduced quite a while ago. As early as 1995 records were indexed for the data catalogs maintained by the [VizieR database](https://vizier.cds.unistra.fr/viz-bin/VizieR) at CDS. In the early 2000s observing proposals were added for a number of NASA missions and observatories. A decade ago we included NASA Astrophysics funding proposals. In addition to these sources we are also systematically indexing records for datasets in the planetary Data System (PDS) and datasets of the Japan Aerospace Exploration Agency (JAXA).
+As mentioned in part I, citations can only be assigned within SciX when the cited work has a corresponding SciX record as well; in other words it has to be "indexed" in the system. In order to be able to index a record, a minimum amount of metadata of sufficient quality has to be available. Most of the indexed content in SciX consists of literature records, but a significant and fairly recent addition to our collection consists of records representing data and software. Software is truly a [recent addition](https://ui.adsabs.harvard.edu/blog/asclepias), but records representing data products were first introduced quite a while ago. As early as 1995 records were indexed for the data catalogs maintained by the [VizieR database](https://vizier.cds.unistra.fr/viz-bin/VizieR) at CDS. In the early 2000s observing [proposals](https://ui.adsabs.harvard.edu/search/q=doctype%3Aproposal&sort=date%20desc%2C%20bibcode%20desc&p_=0) were added for a number of NASA missions and observatories. A decade ago we included NASA Astrophysics grant funding proposals. In addition to these sources we are also systematically indexing records for datasets in the Planetary Data System (PDS) and datasets of the Japan Aerospace Exploration Agency (JAXA).
 
 SciX is a publication-centric discovery platform, so it supports the discovery of research artifacts as they are linked to the scholarly literature. This informs the strategy for indexing data products: with exception of a certain class of data products, we will only index those that are formally cited in the scholarly literature. While true in principle, this statement needs to be made more explicit and nuanced. For one, we need to specify what we mean by a "certain class". The nuance is needed for the "formally cited" part. 
 
-The "certain class" criterion relates to the fact that not all data products are created equal. There is a type of data product that is usually referred to as a "high-level science product", or a "curated dataset". These data products are almost like publications; in general they go through an extensive reviewing and curation process. It is this class of data products we have in mind for the "certain class" criterion for indexing. The aforementioned PDS datasets are an example of these curated data products. It is not uncommon for high-level science products to be accompanied by data publications; articles in refereed journals describing the data in detail. Often data centers and data authors prefer these articles to be cited, rather than the data product itself. This is typically done by including in a data product landing page a “cite as” statement recommending that a paper citation be used instead. However, reality has shown that these statements are not always followed. It is not clear whether this is the result of an author ignoring this statement or some information being lost during the journal's copy-editing process. Having said this, the official SciX point of view is that when a data paper is available, both the paper and the dataset should be cited; just like with software papers, data papers are insufficient proxies for a particular dataset. The data paper should be included as citation for background information and attribution, while the dataset should be cited separately to support reproducibility and discoverability.
+The "certain class" criterion relates to the fact that not all data products are created equal. There is a type of data product that is usually referred to as a "high-level science product", or a "curated dataset". These data products are almost like publications; in general they go through an extensive reviewing and curation process. It is this class of data products we have in mind for the "certain class" criterion for indexing. The aforementioned PDS datasets are an example of these curated data products. It is not uncommon for high-level science products to be accompanied by data publications: articles in refereed journals describing the data in detail. Often data centers and data authors prefer these articles to be cited, rather than the data product itself. This is typically done by including in a data product landing page a “cite as” statement recommending that a paper citation be used instead. However, reality has shown that these statements are not always followed. It is not clear whether this is the result of an author ignoring this statement or some information being lost during the journal's copy-editing process. Having said this, the official SciX point of view is that when a data paper is available, both the paper and the dataset should be cited; just like with software papers, data papers are insufficient proxies for a particular dataset. The data paper should be included as citation for background information and attribution, while the dataset should be cited separately to support reproducibility and discoverability.
 
 Besides these high-level data products there is a very long tail of custom data products; they are mostly those that were made to support a particular publication. Some data centers support the creation of data bundles based on the selection of parts of larger datasets, often supporting the creation of a DOI for this custom bundle. Creating records for these as they get cited would result in opening the floodgates for indexed data products in SciX. Clearly, that would not be a desirable outcome. This is the part where we need to nuance the indexing criterion. This nuance will come in the form of a "reuse criterion": only when a data product is cited a second time will a record be created. Figure 2 gives an indication of what to expect: it shows the citation count as a function of publication year for dataset records in NASA SciX. These are not the actual counts, currently in the system, but the estimated ones if we were to create a record for every cited DOI corresponding to a dataset. The actual counts are likely to be even higher.
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_III_f2.png" />
 <br>
-<em>Figure 2. Citation count as a function of publication year for dataset records in SciX
+<em>Figure 2. Estimated citation count as a function of publication year for dataset records in SciX
 </em>
 </div>
 <br>
@@ -38,23 +38,17 @@ This minimal set of desired attributes for software and data products is the fol
 4. Publication date
 5. Link to the data
 
-Ideally, having keywords would be great too, especially if they come from a controlled vocabulary or ontology (like the Unified Astronomy Thesaurus). Metadata quality is harder to check; clearly we do not do this for software records.
+Ideally, having keywords would be great too, especially if they come from a controlled vocabulary or ontology (like the [Unified Astronomy Thesaurus](https://ui.adsabs.harvard.edu/blog/uat-integration)). Metadata quality is harder to check; clearly we do not do this for software records.
 
-We can summarize the acceptance criteria for indexing data products as follows
+We can summarize the acceptance criteria for indexing data products as follows:
 
-<ul>
-  <li>Publication contains a link to a dataset in the reference section</li>
-    <ul>
-      <li>SciX already has a record → assign citation</li>
-    </ul>
-  <li>No existing record in NASA SciX</li>
-      <ul>
-      <li>It is a high-level/curated dataset → create record & assign citation</li>
-      <li>It has been cited before → create record & assign citation</li>
-    </ul>
-</ul>
+1. If the citation found is for a dataset already indexed in SciX: assign the new citation
+2. If the citation found is new and for a high-level/curated dataset: create record & assign citation
+3. If the dataset was cited for a second time: create record & assign both citations
 
-As mentioned before, the statement "publication contains a link to a dataset in the reference section" has a specific meaning: the citation must use the DOI of the data product. The simple reason is that any other URIs are not actionable because they do not have metadata associated with them that can be retrieved from a registry; given a DOI, all metadata can be harvested automatically from the repository where the DOI was registered.
+The third criterion is to prevent the floodgates effect, mentioned earlier.
+
+As said earlier, the statement "publication contains a link to a dataset in the reference section" has a specific meaning: the citation must use the DOI of the data product. The simple reason is that any other URIs are not actionable because they do not have metadata associated with them that can be retrieved from a registry; given a DOI, all metadata can be harvested automatically from the repository where the DOI was registered.
 
 # Working with cited data in SciX
 
@@ -67,7 +61,7 @@ Below is a set of questions that be answered for data product records that are i
 3. Where do researchers work who cite my data?
 4. What are the citation and usage metrics for my data?
 
-Questions like these are relevant for individual researchers, but also for data, repository and mission managers. For archival data it will be particularly useful and interesting to use the scholarly network to see the impact it is having and whether it is being used as a stepping stone (Peek ….). It will also allow the study of trends in Open Science.
+Questions like these are relevant for individual researchers, but also for data, repository and mission managers. For archival data it will be particularly useful and interesting to use the scholarly network to see the impact it is having and whether it is being used as a stepping stone ([Peek et al. 2019](https://ui.adsabs.harvard.edu/abs/2019BAAS...51g.105P/abstract)). It will also allow the study of trends in Open Science.
 
 Before going into the specifics of these questions, we will first show some of the more general queries to discover and interact with indexed data products (see table 2).
 
@@ -93,7 +87,8 @@ To illustrate finding answers to questions about individual data products, we lo
 <br>
 
 The collection of indexed data products that is the most suitable to use as an example is that of VizieR data catalogs. In total there are currently 20,432 of these records with 10,361 total citations. VizieR provides the most complete library of published astronomical catalogs (tables and associated data) with verified and enriched data. Given the size of this collection and the limitations of the available analysis tools within SciX, we will explore a subset of these records. 
-Focussing on the [5,000 most recent VizieR data catalogs](https://scixplorer.org/search?q=topn(5000%2C+bibstem%3AyCat%2C+date+desc)&sort=score+desc%2Cdate+desc&p=1), we discover that they have been [cited by just under 800 publications](https://scixplorer.org/search?q=citations(topn(5000%2C+bibstem%3AyCat%2C+date+desc))&sort=citation_count+desc%2Cdate+desc&p=1); [close to 600 of these](https://scixplorer.org/search?q=citations(topn(5000%2C+bibstem%3AyCat%2C+date+desc))+property%3A(openaccess+data)&sort=citation_count+desc%2Cdate+desc&p=1) are Open Access publications with links to data. Figure 4 illustrates the range of topics covered by these publications by creating the Paper Network. The Publications facet for these citations shows that they mostly come from the well-known astronomy publication venues and the Institutions facet (see figure 4, right) indicates that the authors of the citing publications work at a wide range of locations. The citing publications are also represented in many so-called bibliographic groups ("bibgroups"); these are curated lists of publications for institutes, missions or instruments. 
+
+Focusing on the [5,000 most recent VizieR data catalogs](https://scixplorer.org/search?q=topn(5000%2C+bibstem%3AyCat%2C+date+desc)&sort=score+desc%2Cdate+desc&p=1), we discover that they have been [cited by just under 800 publications](https://scixplorer.org/search?q=citations(topn(5000%2C+bibstem%3AyCat%2C+date+desc))&sort=citation_count+desc%2Cdate+desc&p=1); [close to 600 of these](https://scixplorer.org/search?q=citations(topn(5000%2C+bibstem%3AyCat%2C+date+desc))+property%3A(openaccess+data)&sort=citation_count+desc%2Cdate+desc&p=1) are Open Access publications with links to data. Figure 4 illustrates the range of topics covered by these publications by creating the Paper Network. The Publications facet for these citations shows that they mostly come from the well-known astronomy publication venues and the Institutions facet (see figure 4, right) indicates that the authors of the citing publications work at a wide range of locations. The citing publications are also represented in many  bibliographic groups ("bibgroups"); these are curated lists of publications for institutes, missions or instruments. 
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/data_linking_III_f4.png" />
@@ -111,6 +106,7 @@ Data linking
 
 * Data links provided by collaborators and external curators are actively added
 * Data links are mined from full text provided by publishers known to support discoverable data links
+* Data links are not indexed directly in SciX
 
 Data indexing
 
@@ -129,4 +125,4 @@ Re-used data products will be indexed
 
 Naturally, when data products get indexed, any citations for them will get attributed to them.
 
-With all of this in place, will we be any closer to the goal described in the introduction? Will we be able to say that SciX contains accurate representations of research life cycle products? It will definitely be a more complete representation. Besides the scholarly publications, NASA SciX will have records for conference proceedings and abstracts, [proposals](https://ui.adsabs.harvard.edu/search/q=doctype%3Aproposal&sort=date%20desc%2C%20bibcode%20desc&p_=0), [software](https://ui.adsabs.harvard.edu/search/q=doctype%3Asoftware&sort=date%20desc%2C%20bibcode%20desc&p_=0) and [data products](https://ui.adsabs.harvard.edu/search/q=doctype%3Adataset&sort=date%20desc%2C%20bibcode%20desc&p_=0), in addition to [links to data](https://ui.adsabs.harvard.edu/search/q=property%3Adata&sort=date%20desc%2C%20bibcode%20desc&p_=0). But, we will still be missing at least one crucial, contextual ingredient. It is this element that serves as the "glue" to tie everything together that belongs to a specific research life cycle. It would be great if SciX would support filtering on funding information. With the help of the publishers and organizations like Crossref and CHORUS, and the indispensable support of institutional and organizational librarians, this is an achievable goal.
+With all of this in place, we will be able to say that SciX contains accurate representations of research life cycle products. Besides the scholarly publications, SciX will have records for conference proceedings and abstracts, [proposals](https://ui.adsabs.harvard.edu/search/q=doctype%3Aproposal&sort=date%20desc%2C%20bibcode%20desc&p_=0), [software](https://ui.adsabs.harvard.edu/search/q=doctype%3Asoftware&sort=date%20desc%2C%20bibcode%20desc&p_=0) and [data products](https://ui.adsabs.harvard.edu/search/q=doctype%3Adataset&sort=date%20desc%2C%20bibcode%20desc&p_=0), in addition to [links to data](https://ui.adsabs.harvard.edu/search/q=property%3Adata&sort=date%20desc%2C%20bibcode%20desc&p_=0). Next, we will be focussing on indexing grant funding information with the help of the publishers and organizations like Crossref and CHORUS, and the indispensable support of institutional and organizational librarians.

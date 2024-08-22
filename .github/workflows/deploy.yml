@@ -7,10 +7,12 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
+          # Checkout action v4 doesn't seem to be working with fetch-depth: 0, so we use v3, and a big fetch-depth
+          # See https://github.com/actions/checkout/issues/520, https://stackoverflow.com/a/6802238
           # this is so that last-modified-at plugin can use the git history to determine the last modified date
-          fetch-depth: 0
+          fetch-depth: 2147483647
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4
@@ -24,6 +26,7 @@ jobs:
 
       # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.6.0
+        if: ${{ !env.ACT }}
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}

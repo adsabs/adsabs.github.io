@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/help/search/comprehensive-solr-term-list"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2024-02-12 16:20:00 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Comprehensive List of Solr Fields &amp; Operators | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Comprehensive List of Solr Fields &amp; Operators" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is an extensive list of methods of querying the ADS system. It is a technical document and you probably don’t need to read it unless you are interested in performing advanced searches." />
+<meta property="og:description" content="This is an extensive list of methods of querying the ADS system. It is a technical document and you probably don’t need to read it unless you are interested in performing advanced searches." />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/help/search/comprehensive-solr-term-list" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/help/search/comprehensive-solr-term-list" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-07-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="Comprehensive List of Solr Fields &amp; Operators" />
+<meta name="twitter:site" content="@adsabs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-12T16:20:00+00:00","datePublished":"2016-07-29T00:00:00+00:00","description":"This is an extensive list of methods of querying the ADS system. It is a technical document and you probably don’t need to read it unless you are interested in performing advanced searches.","headline":"Comprehensive List of Solr Fields &amp; Operators","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/help/search/comprehensive-solr-term-list"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"}},"url":"https://ui.adsabs.harvard.edu/help/search/comprehensive-solr-term-list"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/help"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>help
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container">
+      <div class="search-bar-container pull-right col-xs-12 col-md-6">
+        <script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+      </div>
+    </div>
+
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
+    <!--googleoff: all-->
+
+<nav class="help-nav">
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="quickstart-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#quickstart-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i>
+    Quick Start</h3>
+        <a>
+    </div>
+    <div id="quickstart-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quickstart-help">
+      <ul class="list-group">
+              
+            <a href="/help/quickstart/searching-for-paper">
+                <li class=" list-group-item">Searching for a specific paper</li>
+            </a>
+              
+            <a href="/help/quickstart/build-library">
+                <li class=" list-group-item">Building a library and calculating metrics</li>
+            </a>
+              
+            <a href="/help/quickstart/literature-search">
+                <li class=" list-group-item">Beginning a literature search</li>
+            </a>
+              
+            <a href="/help/quickstart/common-name">
+                <li class=" list-group-item">Searching for papers by an author with a common name</li>
+            </a>
+             
+        </ul>
+    </div>
+    </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="search-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#search-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Making a Query</h3>
+        <a>
+    </div>
+    <div id="search-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="search-help">
+      <ul class="list-group">
+              
+            <a href="/help/search/search-syntax">
+                <li class=" list-group-item">Search Syntax</li>
+            </a>
+              
+            <a href="/help/search/citations-and-references">
+                <li class=" list-group-item">Citation and Reference Operators</li>
+            </a>
+              
+            <a href="/help/search/second-order">
+                <li class=" list-group-item">Second-Order Queries</li>
+            </a>
+              
+            <a href="/help/search/positional">
+                <li class=" list-group-item">Positional Field Searches</li>
+            </a>
+              
+            <a href="/help/search/filter">
+                <li class=" list-group-item">Filter your search</li>
+            </a>
+              
+            <a href="/help/search/comprehensive-solr-term-list">
+                <li class=" active  list-group-item">Comprehensive List of Solr Fields & Operators</li>
+            </a>
+              
+            <a href="/help/search/search-parser">
+                <li class=" list-group-item">(Advanced) Search Syntax</li>
+            </a>
+              
+            <a href="/help/search/author-search">
+                <li class=" list-group-item">(Advanced) Author Search</li>
+            </a>
+             
+        </ul>
+    </div>
+    </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="actions-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#actions-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""><i class="fa fa-lg fa-caret-right"> </i> Search Results</h3>
+      <a>
+  </div>
+  <div id="actions-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="actions-help">
+    <ul class="list-group">
+          
+        <a href="/help/actions/sort">
+            <li class=" list-group-item">Sort Results</li>
+        </a>
+          
+        <a href="/help/actions/analyze">
+            <li class=" list-group-item">Metrics</li>
+        </a>
+          
+        <a href="/help/actions/export">
+            <li class=" list-group-item">Export Results</li>
+        </a>
+          
+        <a href="/help/actions/author-affiliation">
+            <li class=" list-group-item">Author Affiliations</li>
+        </a>
+          
+        <a href="/help/actions/visualize">
+            <li class=" list-group-item">Visualize Results</li>
+        </a>
+          
+        <a href="/help/actions/quick-links">
+            <li class=" list-group-item">Quick Links</li>
+        </a>
+          
+        <a href="/help/actions/article-view">
+            <li class=" list-group-item">Article View</li>
+        </a>
+          
+        <a href="/help/actions/bibcode">
+            <li class=" list-group-item">ADS Bibcode</li>
+        </a>
+          
+        <a href="/help/actions/journal-macros">
+            <li class=" list-group-item">Journal Macros</li>
+        </a>
+         
+      </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="userpreferences-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#userpreferences-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</h3>
+      <a>
+  </div>
+  <div id="userpreferences-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="userpreferences-help">
+    <ul class="list-group">
+          
+        <a href="/help/userpreferences/library-servers">
+            <li class=" list-group-item">Library Link Server</li>
+        </a>
+          
+        <a href="/help/userpreferences/myads">
+            <li class=" list-group-item">myADS Email Notifications</li>
+        </a>
+         
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="libraries-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#libraries-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> ADS Libraries</h3>
+      <a>
+  </div>
+  <div id="libraries-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="libraries-help">
+      <ul class="list-group">
+            
+          <a href="/help/libraries/creating-libraries">
+              <li class=" list-group-item">Creating and editing a library</li>
+          </a>
+            
+          <a href="/help/libraries/public-libraries">
+              <li class=" list-group-item">Making your library public and managing permissions</li>
+          </a>
+            
+          <a href="/help/libraries/visualisations">
+              <li class=" list-group-item">Visualisations, metrics, and exports</li>
+          </a>
+            
+          <a href="/help/libraries/citation-helper">
+              <li class=" list-group-item">Citation Helper</li>
+          </a>
+            
+          <a href="/help/libraries/set-operations">
+              <li class=" list-group-item">Set operations</li>
+          </a>
+            
+          <a href="/help/libraries/legacy-importing">
+              <li class=" list-group-item">Import from ADS Classic</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="orcid-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#orcid-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> ORCID </h3>
+      <a>
+  </div>
+  <div id="orcid-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="orcid-help">
+      <ul class="list-group">
+            
+          <a href="/help/orcid/claiming-papers">
+              <li class=" list-group-item">Claiming papers in ORCID</li>
+          </a>
+            
+          <a href="/help/orcid/orcid-search">
+              <li class=" list-group-item">Searching for papers in ORCID</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="data_faq-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#data_faq-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Data & Curation </h3>
+      <a>
+  </div>
+  <div id="data_faq-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="data_faq-help">
+      <ul class="list-group">
+            
+          <a href="/help/data_faq/data-faq">
+              <li class=" list-group-item">Data & Curation Frequently Asked Questions (FAQs)</li>
+          </a>
+            
+          <a href="/help/data_faq/conf_proc">
+              <li class=" list-group-item">Instructions to Conference Proceedings Editors</li>
+          </a>
+            
+          <a href="/help/data_faq/tagged-format">
+              <li class=" list-group-item">Submissions Formatting</li>
+          </a>
+            
+          <a href="/help/data_faq/journal_inclusion">
+              <li class=" list-group-item">Journal Inclusion</li>
+          </a>
+            
+          <a href="/help/data_faq/ads_curation_model">
+              <li class=" list-group-item">ADS Curation Model</li>
+          </a>
+            
+          <a href="/help/data_faq/ScanHistLit">
+              <li class=" list-group-item">Technical Standards for Scanning Legacy Literature</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="troubleshooting-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#troubleshooting-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Troubleshooting </h3>
+        <a>
+    </div>
+    <div id="troubleshooting-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tutorials-help">
+      <ul class="list-group">
+          
+        <a href="/help/troubleshooting/exporting">
+          <li class=" list-group-item">How to Export Results</li>
+        </a>
+          
+        <a href="/help/troubleshooting/how-to-export-har-file">
+          <li class=" list-group-item">How to Generate a HAR File</li>
+        </a>
+         
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="video-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#videos-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Videos </h3>
+        <a>
+    </div>
+    <div id="videos-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="videos-help">
+      <ul class="list-group">
+          
+        <a href="/help/videos/welcome">
+          <li class=" list-group-item">Welcome to the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/intro">
+          <li class=" list-group-item">Introduction to the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/personalization">
+          <li class=" list-group-item">Personalization in the New ADS: ORCID and Libraries</li>
+        </a>
+          
+        <a href="/help/videos/infrastructure">
+          <li class=" list-group-item">Modernizing ADS Infrastructure: From 1992 to 2019</li>
+        </a>
+          
+        <a href="/help/videos/affiliations">
+          <li class=" list-group-item">Searching Affiliations in the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/advanced-search">
+          <li class=" list-group-item">What are people thinking about what you want to think about?</li>
+        </a>
+          
+        <a href="/help/videos/fulltext">
+          <li class=" list-group-item">Searchable Full Text in the new ADS</li>
+        </a>
+          
+        <a href="/help/videos/api">
+          <li class=" list-group-item">Advanced Searching with the ADS API</li>
+        </a>
+          
+        <a href="/help/videos/experts">
+          <li class=" list-group-item">How to Use the ADS to Find Experts</li>
+        </a>
+          
+        <a href="/help/videos/libraries">
+          <li class=" list-group-item">Working with ADS Libraries</li>
+        </a>
+         
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="policies-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#policies-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Policies </h3>
+      <a>
+    </div>
+    <div id="policies-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="policies-help">
+      <ul class="list-group">
+                                                                                                                                                                                                                                                              
+          <a href="/help/policies/terms">
+            <li class=" list-group-item">Terms of Use</li>
+          </a>
+                              
+          <a href="/help/policies/privacy">
+            <li class=" list-group-item">Privacy Policy</li>
+          </a>
+              
+          <a href="/help/policies/accessibility">
+            <li class=" list-group-item">Accessibility Policy</li>
+          </a>
+                            
+          <a href="/help/policies/name-changes">
+            <li class=" list-group-item">Name Change Policy</li>
+          </a>
+                      
+          <a href="/help/policies/update">
+            <li class=" list-group-item">ADS Update Policy</li>
+          </a>
+                                                   
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+    <h3 class=""> <a href="/help/whats_new">What's New</a></h3>
+    <h3 class=""> <a href="/help/faq">Frequently Asked Questions </a></h3>
+    <h3 class=""> <a href="/help/api">Using the ADS API </a></h3>
+    <h3 class=""> <a href="/help/twitter">#ADSHelp</a></h3>
+    <h3 class=""> <a href="/help/handouts">Handouts </a></h3>
+    <h3 class=""> <a href="/help/legacy">Legacy Services </a></h3>
+    <h3 class=""> <a href="/help/logos">Logos </a></h3>
+
+    <hr>
+
+    <h3 class><img src="/help/common/images/github.png" width="24"> Edit help pages on <a href="https://github.com/adsabs/help">GitHub</a></h3>
+
+
+</nav>
+
+<!--googleon: all-->
+
+  </div>
+
+  <div class="post main-content col-xs-12 col-md-9">
+    <button
+      class="btn btn-primary visible-sm-inline-block visible-xs-inline-block"
+      data-toggle="off-canvas"
+    >
+      toggle sidebar
+    </button>
+
+    <header class="post-header">
+      
+      <h2 class="post-title">Comprehensive List of Solr Fields & Operators</h2>
+      
+    </header>
+
+    <article class="post-content"><p><strong>This is an extensive list of methods of querying the ADS system.</strong>
+It is a technical document and you probably don’t need to read it unless you are interested in performing advanced searches.</p>
+
+<p><strong>Solr (Virtual) Fields, Operators, and Other Stuff</strong></p>
+
+<p>An aggregated list of the fields, operators, and other parameters that are accessible from Solr. Descriptions of what they are used for, and why or where they should or should not be shown to users.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Searchable</th>
+      <th>Retrievable</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_version_</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Integer (timestamp-like) indicating internal versioning sequence, if it has changed it means the record has been reindexed</td>
+    </tr>
+    <tr>
+      <td>abs</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Virtual field to search across <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">keyword</code>, <code class="language-plaintext highlighter-rouge">abstract</code> fields in one operation</td>
+    </tr>
+    <tr>
+      <td>abstract</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Abstract of the record</td>
+    </tr>
+    <tr>
+      <td>ack</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Contains acknowledgements extracted from fulltexts (if identified in article).</td>
+    </tr>
+    <tr>
+      <td>aff</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Affiliation strings of authors (raw data), values correspond to order of <code class="language-plaintext highlighter-rouge">author</code> field. Multiple values separated by <code class="language-plaintext highlighter-rouge">;</code>. See <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">canonical data</a> for all things <code class="language-plaintext highlighter-rouge">aff_</code></td>
+    </tr>
+    <tr>
+      <td>aff_abbrev</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of curated institution abbreviations for a given paper</td>
+    </tr>
+    <tr>
+      <td>aff_canonical</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of curated institution names</td>
+    </tr>
+    <tr>
+      <td>aff_facet_hier</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Hierarchical label consisting of <code class="language-plaintext highlighter-rouge">Level/Parent/Child</code> - i.e. <code class="language-plaintext highlighter-rouge">1/CSIC Madrid/Inst Phys</code>. List of values is <em>not</em> linked to order/number of authors.</td>
+    </tr>
+    <tr>
+      <td>aff_id</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of curated affiliation IDs in a given paper, values correspond to order of <code class="language-plaintext highlighter-rouge">author</code> field. Multiple values separated by <code class="language-plaintext highlighter-rouge">;</code></td>
+    </tr>
+    <tr>
+      <td>affil</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Virtual field searching across <code class="language-plaintext highlighter-rouge">aff_abbrev</code>, <code class="language-plaintext highlighter-rouge">aff_canonical</code>, <code class="language-plaintext highlighter-rouge">aff_id</code>, <code class="language-plaintext highlighter-rouge">institution</code>, <code class="language-plaintext highlighter-rouge">aff</code></td>
+    </tr>
+    <tr>
+      <td>alternate_bibcode</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of alternate bibcodes for the document</td>
+    </tr>
+    <tr>
+      <td>alternate_title</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Alternate title, usually when the original title is not in English</td>
+    </tr>
+    <tr>
+      <td>arxiv_class</td>
+      <td>y</td>
+      <td>y</td>
+      <td>arXiv class the paper was submitted to</td>
+    </tr>
+    <tr>
+      <td>author</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of authors on a paper (multivalued field, order is preserved; see <code class="language-plaintext highlighter-rouge">aff*</code> and <code class="language-plaintext highlighter-rouge">orcid*</code> fields for additional details)</td>
+    </tr>
+    <tr>
+      <td>author_count</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Number of authors on a paper (integer)</td>
+    </tr>
+    <tr>
+      <td>author_facet</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Contains normalized version of the author name, cannot be retrieved but useful for faceting</td>
+    </tr>
+    <tr>
+      <td>author_facet_hier</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Hierarchical facet for author names, the levels can be used to limit result sets - i.e. <code class="language-plaintext highlighter-rouge">0/Surname</code> -&gt; <code class="language-plaintext highlighter-rouge">1/Surname/N</code> or <code class="language-plaintext highlighter-rouge">1/Surname/Name</code></td>
+    </tr>
+    <tr>
+      <td>author_norm</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of authors with their first name initialized (see <code class="language-plaintext highlighter-rouge">author_facet</code>)</td>
+    </tr>
+    <tr>
+      <td>bibcode</td>
+      <td>y</td>
+      <td>y</td>
+      <td>ADS identifier of a paper</td>
+    </tr>
+    <tr>
+      <td>bibgroup</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Bibliographic group that the bibcode belongs to (curated by staff outside of ADS)</td>
+    </tr>
+    <tr>
+      <td>bibgroup_facet</td>
+      <td>y</td>
+      <td>n</td>
+      <td>As above, but can only be searched and faceted on</td>
+    </tr>
+    <tr>
+      <td>bibstem</td>
+      <td>y</td>
+      <td>y</td>
+      <td>the abbreviated name of the journal or publication, e.g., ApJ. Full lists of bibstems can be found <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html">here</a></td>
+    </tr>
+    <tr>
+      <td>bibstem_facet</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Technical field, used for faceting by publication. It contains only bibstems without volumes (eg. <code class="language-plaintext highlighter-rouge">Sci</code>)</td>
+    </tr>
+    <tr>
+      <td>body</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Contains extracted fulltext minus acknowledgements section</td>
+    </tr>
+    <tr>
+      <td>book_author</td>
+      <td>y</td>
+      <td>y</td>
+      <td>The name will be also in <code class="language-plaintext highlighter-rouge">author</code> field; but not the other way around</td>
+    </tr>
+    <tr>
+      <td>caption</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Captions extracted from illustrations/tables</td>
+    </tr>
+    <tr>
+      <td>citation</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of bibcodes that cite the paper</td>
+    </tr>
+    <tr>
+      <td>citation_count</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Number of citations the item has received</td>
+    </tr>
+    <tr>
+      <td>citation_count_norm</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Number of citations normalized by <code class="language-plaintext highlighter-rouge">author_count</code></td>
+    </tr>
+    <tr>
+      <td>cite_read_boost</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Float values containing normalized (float) boost factors. These can be used with functional queries to modify ranking of results.</td>
+    </tr>
+    <tr>
+      <td>classic_factor</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Integer values containing the boost factor used by ADS Classic. In essence log(1 + cites + norm_reads) where number of citations has been normalized and the whole value is multiplied by 5000 and then cast to Integer.</td>
+    </tr>
+    <tr>
+      <td>comment</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Kitchen sink for holding various bits of information not available elsewhere (probably only useful if you are curating ADS records)</td>
+    </tr>
+    <tr>
+      <td>copyright</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Copyright given by the publisher</td>
+    </tr>
+    <tr>
+      <td>data</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of sources that hold data associated with this paper (record) - format is <code class="language-plaintext highlighter-rouge">name:count</code>, i.e. <code class="language-plaintext highlighter-rouge">Chandra:3</code></td>
+    </tr>
+    <tr>
+      <td>data_facet</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Data sources for the paper (without counts, but the counts can be retrieved when faceting on the values of this field)</td>
+    </tr>
+    <tr>
+      <td>database</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Database (collection) into which the paper was classified, a paper can belong to more than one</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Machine readable version of <code class="language-plaintext highlighter-rouge">pubdate</code>, time format: <code class="language-plaintext highlighter-rouge">YYYY-MM-DD'T'hh:mm:ss.SSS'Z'</code></td>
+    </tr>
+    <tr>
+      <td>doctype</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Types of document: abstract, article, book, bookreview, catalog, circular, editorial, eprint, erratum, inbook, inproceedings, mastersthesis, misc, newsletter, obituary, phdthesis, pressrelease, proceedings, proposal, software, talk, techreport</td>
+    </tr>
+    <tr>
+      <td>doctype_facet_hier</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Hierarchical facets consisting of nested document types</td>
+    </tr>
+    <tr>
+      <td>doi</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Digital object identifier</td>
+    </tr>
+    <tr>
+      <td>editor</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Typically for books or series, similar rules to <code class="language-plaintext highlighter-rouge">book_author</code></td>
+    </tr>
+    <tr>
+      <td>eid</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Electronic id of the paper (equivalent of page number)</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>y</td>
+      <td>n</td>
+      <td>List of e-mails for the authors that included them in the article (is only accessible to users with elevated privileges)</td>
+    </tr>
+    <tr>
+      <td>entdate</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Creation date of ADS record in user-friendly format (YYYY-MM-DD)</td>
+    </tr>
+    <tr>
+      <td>entry_date</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Creation date of ADS record in RFC 3339 (machine-readable) format</td>
+    </tr>
+    <tr>
+      <td>esources</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Types of electronic sources available for a record (e.g. pub_html, eprint_pdf)</td>
+    </tr>
+    <tr>
+      <td>facility</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of facilities declared in paper (low count field for now)</td>
+    </tr>
+    <tr>
+      <td>first_author</td>
+      <td>y</td>
+      <td>y</td>
+      <td>First author of the paper</td>
+    </tr>
+    <tr>
+      <td>first_author_facet_hier</td>
+      <td>y</td>
+      <td>n</td>
+      <td>See <code class="language-plaintext highlighter-rouge">author_facet_hier</code></td>
+    </tr>
+    <tr>
+      <td>first_author_norm</td>
+      <td>y</td>
+      <td>n</td>
+      <td>See <code class="language-plaintext highlighter-rouge">author_norm</code></td>
+    </tr>
+    <tr>
+      <td>fulltext_mtime</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Machine readable modification timestamp; corresponds to time when a fulltext was updated</td>
+    </tr>
+    <tr>
+      <td>grant</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Field that contains both grant ids and grant agencies.</td>
+    </tr>
+    <tr>
+      <td>grant_facet_hier</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Hierarchical facet field which contains grant/grant_id. This field is not suitable for user queries, but rather for UI components. Term frequencies and positions are deactivated.</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Internal identifier of a record, does not change with reindexing but users are advised to not rely on contents of this field</td>
+    </tr>
+    <tr>
+      <td>identifier</td>
+      <td>y</td>
+      <td>n</td>
+      <td>A field that can be used to search an array of alternative identifiers for the record. May contain alternative bibcodes, DOIs and/or arxiv ids.</td>
+    </tr>
+    <tr>
+      <td>indexstamp</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Date at which the record was indexed <code class="language-plaintext highlighter-rouge">YYYY-MM-DD'T'hh:mm:ss.SSS'Z'</code></td>
+    </tr>
+    <tr>
+      <td>inst</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Virtual field to search across <code class="language-plaintext highlighter-rouge">aff_id</code>, and <code class="language-plaintext highlighter-rouge">institution</code></td>
+    </tr>
+    <tr>
+      <td>institution</td>
+      <td>y</td>
+      <td>n</td>
+      <td>List of curated affiliations (institutions) in a given paper. See <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">institution data</a></td>
+    </tr>
+    <tr>
+      <td>isbn</td>
+      <td>y</td>
+      <td>y</td>
+      <td>ISBN of the publication (this applies to books)</td>
+    </tr>
+    <tr>
+      <td>issn</td>
+      <td>y</td>
+      <td>y</td>
+      <td>ISSN of the publication (applies to journals - ie. periodical publications)</td>
+    </tr>
+    <tr>
+      <td>issue</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Issue number of the journal that includes the article</td>
+    </tr>
+    <tr>
+      <td>keyword</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Array of normalized and non-normalized keywords</td>
+    </tr>
+    <tr>
+      <td>keyword_facet</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Like <code class="language-plaintext highlighter-rouge">keyword</code> but used for faceting</td>
+    </tr>
+    <tr>
+      <td>keyword_norm</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Controlled keywords, if it was identified</td>
+    </tr>
+    <tr>
+      <td>keyword_schema</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Schema for each controlled keyword, i.e., the schema of a <code class="language-plaintext highlighter-rouge">keyword</code> if it can be assigned</td>
+    </tr>
+    <tr>
+      <td>lang</td>
+      <td>y</td>
+      <td>y</td>
+      <td>In ADS this field contains a language of the main title. Currently, this value is present in a very small portion of records</td>
+    </tr>
+    <tr>
+      <td>links_data</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Internal data structure with information for generating links to external sources (API users are advised to use link resolver service instead)</td>
+    </tr>
+    <tr>
+      <td>metadata_mtime</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Machine readable modification timestamp; corresponds to time when bibliographic metadata was updated</td>
+    </tr>
+    <tr>
+      <td>metrics_mtime</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Machine readable modification timestamp; corresponds to time when citations metrics were updated</td>
+    </tr>
+    <tr>
+      <td>ned_object_facet_hier</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Hierarchical <code class="language-plaintext highlighter-rouge">Level/Parent/Child</code> entry for NED objects</td>
+    </tr>
+    <tr>
+      <td>nedid</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of NED IDs within a record</td>
+    </tr>
+    <tr>
+      <td>nedtype</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Keywords used to describe the NED type (e.g. galaxy, star)</td>
+    </tr>
+    <tr>
+      <td>nedtype_object_facet_hier</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Hierarchical facet consisting of NED object type and ID</td>
+    </tr>
+    <tr>
+      <td>nonbib_mtime</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Machine readable modification timestamp; corresponds to time when non-bibliographic metadata was updated</td>
+    </tr>
+    <tr>
+      <td>orcid</td>
+      <td>y</td>
+      <td>n</td>
+      <td>Virtual field to search across all orcid fields</td>
+    </tr>
+    <tr>
+      <td>orcid_mtime</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Machine readable modification timestamp; corresponds to time when data were fetched from ORCiD</td>
+    </tr>
+    <tr>
+      <td>orcid_other</td>
+      <td>y</td>
+      <td>y</td>
+      <td>ORCID claims from users who used the ADS claiming interface, but did not give us consent to show their profiles</td>
+    </tr>
+    <tr>
+      <td>orcid_pub</td>
+      <td>y</td>
+      <td>y</td>
+      <td>ORCID IDs supplied by publishers</td>
+    </tr>
+    <tr>
+      <td>orcid_user</td>
+      <td>y</td>
+      <td>y</td>
+      <td>ORCID claims from users who gave ADS consent to expose their public profiles.</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>y</td>
+      <td>y</td>
+      <td>First page of a record</td>
+    </tr>
+    <tr>
+      <td>page_count</td>
+      <td>y</td>
+      <td>y</td>
+      <td>If page_range is present, gives the difference between the first and last page numbers in the range</td>
+    </tr>
+    <tr>
+      <td>property</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Array of miscellaneous flags associated with the record. For possible values see <a href="search-syntax#properties">Properties</a>.</td>
+    </tr>
+    <tr>
+      <td>pub</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Canonical name of the publication the record appeared in</td>
+    </tr>
+    <tr>
+      <td>pub_raw</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Name of publisher, but also includes the volume, page, and issue if they exist</td>
+    </tr>
+    <tr>
+      <td>pubdate</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Publication date in the form <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> (DD value will always be “00”) - corresponds to the old version of metadata timestamps (ADS Classic)</td>
+    </tr>
+    <tr>
+      <td>publisher</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Low frequency field, internal use</td>
+    </tr>
+    <tr>
+      <td>pubnote</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Comments submitted with the arXiv version of the paper</td>
+    </tr>
+    <tr>
+      <td>read_count</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Number of times the record has been viewed in a 90-day windows (by users from ADS and arXiv – aggregate value)</td>
+    </tr>
+    <tr>
+      <td>reader</td>
+      <td>y</td>
+      <td>n</td>
+      <td>List of (anonymized) identifiers for people who have read the article</td>
+    </tr>
+    <tr>
+      <td>recid</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Unique identifier of the document, Integer version of ‘id’ - more efficient for sorting, and range queries</td>
+    </tr>
+    <tr>
+      <td>reference</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of (identified/resolved) references from the paper</td>
+    </tr>
+    <tr>
+      <td>series</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Information about conference series</td>
+    </tr>
+    <tr>
+      <td>simbad_object_facet_hier</td>
+      <td>y</td>
+      <td>y</td>
+      <td>The hierarchical facets consisting of SIMBAD <code class="language-plaintext highlighter-rouge">object_type/object_id</code></td>
+    </tr>
+    <tr>
+      <td>simbid</td>
+      <td>y</td>
+      <td>y</td>
+      <td>List of SIMBAD IDs within the paper</td>
+    </tr>
+    <tr>
+      <td>simbtype</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Keywords used to describe the SIMBAD type</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Title of the record</td>
+    </tr>
+    <tr>
+      <td>update_timestamp</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Machine readable modification timestamp; corresponds to time when the record was reindexed</td>
+    </tr>
+    <tr>
+      <td>vizier</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Keywords, “subject” tags from VizieR</td>
+    </tr>
+    <tr>
+      <td>vizier_facet</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Contains list of VizieR keywords with the number of occurences that keyword has for the search</td>
+    </tr>
+    <tr>
+      <td>volume</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Volume of the journal that the article exists in</td>
+    </tr>
+    <tr>
+      <td>year</td>
+      <td>y</td>
+      <td>y</td>
+      <td>Year of publication</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Functional Operators</strong></th>
+      <th><strong>Example</strong></th>
+      <th><strong>Explanation</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../search/citations-and-references">citations()</a></td>
+      <td><code class="language-plaintext highlighter-rouge">citations(aff:MIT)</code></td>
+      <td>Returns list of citations for papers matching the inner query; use <code class="language-plaintext highlighter-rouge">fl=[citations]</code> to retrieve the field contents</td>
+    </tr>
+    <tr>
+      <td><a href="../search/positional">pos()</a></td>
+      <td><code class="language-plaintext highlighter-rouge">pos(author:accomazzi, 1, 5)</code></td>
+      <td>The pos() operator allows you to search for an item within a field by specifying the position  (range). The syntax for this operator is <code class="language-plaintext highlighter-rouge">pos(fieldedquery,position,[endposition])</code>. If no endposition is given, then it is assumed to be endposition = position, otherwise this performs a query within the range [position, endposition].</td>
+    </tr>
+    <tr>
+      <td><a href="../search/citations-and-references">references()</a></td>
+      <td><code class="language-plaintext highlighter-rouge">references(author:huchra)</code></td>
+      <td>Returns list of references from papers matching the inner query</td>
+    </tr>
+    <tr>
+      <td><a href="../search/second-order">reviews()</a></td>
+      <td><code class="language-plaintext highlighter-rouge">reviews(title:"monte carlo")</code></td>
+      <td>returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field.</td>
+    </tr>
+    <tr>
+      <td><a href="../search/second-order">similar()</a></td>
+      <td><code class="language-plaintext highlighter-rouge">similar(title:hubble^2, abstract, 100)</code><br /><code class="language-plaintext highlighter-rouge">similar("hubble space telescope", input)</code></td>
+      <td>Find similar documents, either based on their similarity with the documents from the inner query or similar to the text that you supplied. <br /><br />Format: <code class="language-plaintext highlighter-rouge">similar(queryOrText, fields, maxQueryTerms, docToSearch, minTermFreq, minDocFreq, percentToMatch)</code>. <br /><br />- <code class="language-plaintext highlighter-rouge">queryOrText</code>: string, this can be a query or input <br />- <code class="language-plaintext highlighter-rouge">fields</code>: list of fields separated by spaces, or special token ‘input’ which means use the query as is, as input <br />- <code class="language-plaintext highlighter-rouge">maxQueryTerms</code>: modifies similarity search, only this many terms will be considered during the search (those terms are NOT the first X collected, but they will be the first X terms weighted by TFIDF - term frequency/inverse document frequency) <br />- <code class="language-plaintext highlighter-rouge">docToSearch</code>: how many documents to collect in the first phase, is ignored when fields=’input’ <br />- <code class="language-plaintext highlighter-rouge">minTermFreq</code>: term is selected only if its frequency is this or higher - minDocFreq: selected term must be present in at least that many documents <br />- <code class="language-plaintext highlighter-rouge">percentToMatch</code>: ratio of terms that have to be present in the selected documents, default is 0.0f. For example, if 100 terms was used to discover similar docs, and if the ratio was 0.3f - then 30 terms must be present in the docs that are returned.</td>
+    </tr>
+    <tr>
+      <td><a href="../search/second-order">topn()</a></td>
+      <td><code class="language-plaintext highlighter-rouge">topn(200, citations(title:hubble), citation_count desc)</code></td>
+      <td>Limit results to the best top N (by their ranking or sort order); format: <code class="language-plaintext highlighter-rouge">topn(int, query, 'sort order')</code>. If the sort order is not specified, the default <code class="language-plaintext highlighter-rouge">score desc</code> will be used.</td>
+    </tr>
+    <tr>
+      <td><a href="../search/second-order">trending()</a></td>
+      <td><code class="language-plaintext highlighter-rouge">trending("machine learning")</code></td>
+      <td>Trending – returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field.</td>
+    </tr>
+    <tr>
+      <td><a href="../search/second-order">useful() </a></td>
+      <td><code class="language-plaintext highlighter-rouge">useful("gradient descent")</code></td>
+      <td>Useful – returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field.</td>
+    </tr>
+    <tr>
+      <td>docs()</td>
+      <td><code class="language-plaintext highlighter-rouge">docs(library/hHGU1Ef-TpacAhicI3J8kQ)</code></td>
+      <td>Retrieve set of documents specified by their IDs. You can think of this as a set operator; it will fill the set with documents that correspond to identifiers that are passed in. And this set can then be combined with other queries (i.e. <code class="language-plaintext highlighter-rouge">docs(A) NOT author:huchra</code>)</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+  </div>
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $('body').on('click', 'button[data-toggle="off-canvas"]', function () {
+        $('.row-offcanvas').toggleClass('active');
+      });
+    });
+  </script>
+
+  <!-- for sidebar -->
+  <script>
+    $(document).ready(function () {
+      //ADD THE PROPER HIGHLIGHT
+      try {
+        var category = window.location.pathname.split('/')[2];
+      } catch (e) {
+        console.error("couldn't parse category name");
+      }
+      //this should fail without causing a problem if category can't be found
+      if ($('.help-nav').find('div#' + category + '-items').length === 0)
+        console.log('couldnt find accordion drawer for: ', category);
+      $('.help-nav')
+        .find('div#' + category + '-items')
+        .addClass('in')
+        //set the caret pointing down
+        .parent()
+        .find('.fa')
+        .removeClass('fa-caret-right')
+        .addClass('fa-caret-down');
+
+      //SET LISTENERS FOR CARET OPEN/CLOSED
+      $('.help-nav .collapse')
+        .on('show.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-right')
+            .addClass('fa-caret-down');
+        })
+        .on('hide.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-down')
+            .addClass('fa-caret-right');
+        });
+    });
+  </script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

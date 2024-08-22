@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/data_linking_II_f1.png">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/blog/data-linking-II"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2024-07-01 18:27:48 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SciX Data Linking and Indexing part II. Linked data | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="SciX Data Linking and Indexing part II. Linked data" />
+<meta name="author" content="Edwin Henneken" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction In the first part of this blog series, we provided a general description of the holdings in the Science Explorer (SciX); in this second part, we highlight a specific aspect of these holdings and place it in the context of the Research Life Cycle. The concept of a Research Life Cycle is not anything new; it represents the way in which scholarly research is done and has, in principle, not changed for a long time, probably centuries. It has fundamentally changed, however, in the way it is expressed. The first of these changes happened in the late 1990s: the introduction of electronic publishing of scholarly articles. In the same era, the discovery of these articles was also revolutionized with the introduction of the World Wide Web. Jumping to the here and the now, there is very little left in the Research Life Cycle that is not or cannot be expressed electronically. Let’s refer to these elements as “research artifacts”; each of these artifacts carries specific knowledge related to a specific stage of this life cycle. With the promotion of Open Science, there is a growing realization that this movement is best supported if these artifacts are accurately and formally represented in the process of exposing scholarly research. Traditionally, scholarly articles were the sole means of exposing scholarly research; however, they just represent one aspect of this research: that of useful outcomes. Everything else that goes into and supports research is important too, especially within the context of preservation, reusability and reproducibility; this context is the purview of the FAIR Principles. Examples of other artifacts include data, software, proposals, and presentations. The overall goal of FAIR is to enhance the sharing, preservation and communication of data-intensive research (like Astronomy, Heliophysics, Earth Science and Space Sciences). In other words, the digital-born, scholarly articles now exist as entities linked to other electronic artifacts; it is up to publishers and discovery platforms, like SciX, to make these linkages possible electronically and discoverable. Perhaps to state the obvious: SciX is a publication-centric discovery platform, so it supports the discovery of research artifacts as they are linked to the scholarly literature. To search directly for specific data or software products a dedicated service will need to be used; the NASA Science Discovery Engine is an example to search for NASA’s science data, documentation, and code. Since the whole of the artifacts referenced by a scholarly article forms the best representation of the science discussed in the article, having a proper coverage of these sources will help in properly representing different aspects and stages of research life cycles. Just capturing citations to other scholarly publications would not only leave out important information, it would also omit proper attribution to researchers who contribute as authors of non-traditional research products. The Science Explorer has implemented a workflow for capturing software citations; this workflow allows the detection and ingestion of citations to software products used in scholarly publications. Since both data and software citations are crucial for the transparency of research results and for the transmission of credit, SciX will implement indexing of high-level and reused data products, in particular those published by NASA Archives, and track their citations. Citations are just one form of the linkages we are referring to. Linkages are essentially so-called semantic triples (figure 2): a triple is a sequence of three entities that codifies a statement about semantic data in the form of subject–predicate–object expressions. The predicate describes the relationship between two entities, one the subject and the other the object. The relationship within the framework of SciX can be one of two: cites or mentions. Also, within this framework, the subject always refers to a publication and currently the object refers to either a data product or software. At this point it is good to explain the difference between the treatment of these two relationships within the SciX context, in particular the consequences. Table 1 summarizes the difference between the two scenarios in SciX. The row “Form” corresponds to another limitation within SciX: only objects that have a URL associated with them can be considered; objects without URL are per definition not actionable. Table 1: Difference between mentions and citations. In the case of cites, only DOIs are in principle actionable because they have harvestable metadata associated with them. Cites with other identifiers are actionable if the cited work is already indexed. In this blog, we focus on the cases where the object is a data product. In the next sections, we discuss the support of data links and data citations, respectively. Linked data products One of the distinguishing features of SciX is the presence of links from its records to research archives and databases. This is particularly significant for the core astronomy journals which work with archive curators to create and maintain rich online resources associated with the articles they publish. As an example, 70% of articles published in the main astronomy journals during 2023 have links to data products. Historically, the links have been created by curators upon the ingestion of datasets published with the article (as is the case for VizieR data tables), cross-referencing of astronomical object measurements (SIMBAD and NED), or telescope bibliographies (Astrophysics Data Archives such as Chandra, MAST, IRSA, HEASARC, etc). The ADS, and now SciX, has been working with collaborators at these institutions to enable links between its records and these datasets on a regular basis, allowing for the curated links to be exposed to the end user. In their response to the call for Open Science, many publishers have started to incorporate so-called Data Availability Statement sections in the articles they publish. We mine links from these sections for most journals we index from the AGU, Elsevier, Springer and the AAS. Currently we simply mine these links and do little curation. The only part that needs action from the SciX curation team is the fact that we label these links for their display in the ADS user interface (figure 3). At this moment, these labels are based on heuristics. For example, certain DOI prefixes can be associated uniquely with a particular repository, just like some URL patterns. As of the writing of this blog, we have mined about 110k links this way. Working with linked data in SciX In general, the only discovery tools at your disposal are the ability to find records that have linked data in general or linked data associated with a particular data source (if you happen to know the abbreviation used in SciX). For any additional filtering you will need to use circumstantial evidence using other SciX search fields. The query property:data will find records that linked data associated with them in general, while the query data:MAST will find records with data products hosted at the Mikulski Archive for Space Telescopes (MAST); some labels used in SciX for data links are obvious (e.g. when they are the same as the acronym of the data center). Whenever we were unable to assign a descriptive label to a data link, we assigned the vanilla label DATASOURCE. A good strategy for finding data sources associated with a particular topic is to do a general search on that topic and filter the results on records that link to data (property:data). For example, if you are interested in carbonaceous chondrites in the context of the Moon, you can query Lunar carbonaceous chondrites and find close to 1,500 records; adding the filter property:data will limit this set to 68 records. Opening the Data facet will show that most records are associated with the label Astromat; this label corresponds to the NASA Astromaterials Data System. A little bit more insight can be obtained by switching on the highlights for this search. Finding records that link a publication to a specific data product is currently not supported. If you happen to know a uniquely identifying string or phrase for that data product, you could try doing a full text search. For example, if you try to find mentions of various versions of the PDS dataset identified by urn:nasa:pds:ast-lightcurve-database, you can run the query full:”urn:nasa:pds:ast-lightcurve-database” Even though SciX does not offer ways to find links to specific data products, the service does provide a powerful discovery environment to explore the context for data associated with or generated in specific missions, by certain instruments, for particular science topics or hosted in a certain repository. For the first example we will explore the science topics covered by refereed Open Access publications, with links to data, that mention the Near Infrared Camera and Multi-Object Spectrometer (NICMOS) in their title, abstract or keywords: NICMOS property:(data refereed openaccess) The Author facet will show you the most prolific authors associated with these publications, one of whom is Marcia Rieke who recently was awarded the Catherine Wolfe Bruce Gold Medal. To get some insight into the science topics covered by these publications we generate the Paper Network. By default, this network is generated for the first 400 publications; some additional details can be generated by increasing this amount (with a maximum of 1,000) and regenerating this network diagram. Figure 4 (left) shows the results. The diagram shows a number of high level science topics. The exploration does not need to end here; if one’s particular interest is circumstellar disks and protoplanetary nebulae, the results can be explored further by clicking on the blue segment, clicking on the button “Add to filter” (to the right of the Group 1 header) and hitting the search button. This generates an overview of just the publications in this group. If there are sufficient publications in this group, we can generate another Paper Network. This second network splits the original, larger category up into smaller, more detailed segments, providing more insight into the topics covered (figure 4, right diagram). In a similar way we can explore the use of data links from a specific data repository. The following query returns all refereed, Open Access publications, published in the period 2020-2024 with a link to data available at the National Oceanic and Atmospheric Administration (NOAA) data:NOAA property:(refereed openaccess) year:2020-2024 Just like before, the Paper Network can be used to indicate the range of topics discussed in the publications returned by the query. Figure 5 shows the results for data hosted at NOAA (left) and data hosted at the Oak Ridge National Laboratory Distributed Active Archive Center, as an additional example (right). The next example is to illustrate how to find publications that may be able to provide us with data products if we are interested in building on existing research in a particular topic. As a topic we select exoplanet atmospheres and we will start our exploration with recent, refereed Open Access publications, with links to data. The following query will generate the publications that correspond to this “exoplanet atmosphere” property:(refereed data openaccess) year:2020-2024 The results are shown in figure 6. The diagram on the left shows the results for the initial query and the diagram on the right shows the results when we generate the paper network for the publications in the orange segment only. Finally, the powerful SciX query language allows us to find Open Access, refereed publications, from the period 2010-2023, in the Earth Science collection, which have at least one link to data and cite at least one software product: property:(refereed openaccess data) year:2010-2023 citations(doctype:software) collection:earthscience" />
+<meta property="og:description" content="Introduction In the first part of this blog series, we provided a general description of the holdings in the Science Explorer (SciX); in this second part, we highlight a specific aspect of these holdings and place it in the context of the Research Life Cycle. The concept of a Research Life Cycle is not anything new; it represents the way in which scholarly research is done and has, in principle, not changed for a long time, probably centuries. It has fundamentally changed, however, in the way it is expressed. The first of these changes happened in the late 1990s: the introduction of electronic publishing of scholarly articles. In the same era, the discovery of these articles was also revolutionized with the introduction of the World Wide Web. Jumping to the here and the now, there is very little left in the Research Life Cycle that is not or cannot be expressed electronically. Let’s refer to these elements as “research artifacts”; each of these artifacts carries specific knowledge related to a specific stage of this life cycle. With the promotion of Open Science, there is a growing realization that this movement is best supported if these artifacts are accurately and formally represented in the process of exposing scholarly research. Traditionally, scholarly articles were the sole means of exposing scholarly research; however, they just represent one aspect of this research: that of useful outcomes. Everything else that goes into and supports research is important too, especially within the context of preservation, reusability and reproducibility; this context is the purview of the FAIR Principles. Examples of other artifacts include data, software, proposals, and presentations. The overall goal of FAIR is to enhance the sharing, preservation and communication of data-intensive research (like Astronomy, Heliophysics, Earth Science and Space Sciences). In other words, the digital-born, scholarly articles now exist as entities linked to other electronic artifacts; it is up to publishers and discovery platforms, like SciX, to make these linkages possible electronically and discoverable. Perhaps to state the obvious: SciX is a publication-centric discovery platform, so it supports the discovery of research artifacts as they are linked to the scholarly literature. To search directly for specific data or software products a dedicated service will need to be used; the NASA Science Discovery Engine is an example to search for NASA’s science data, documentation, and code. Since the whole of the artifacts referenced by a scholarly article forms the best representation of the science discussed in the article, having a proper coverage of these sources will help in properly representing different aspects and stages of research life cycles. Just capturing citations to other scholarly publications would not only leave out important information, it would also omit proper attribution to researchers who contribute as authors of non-traditional research products. The Science Explorer has implemented a workflow for capturing software citations; this workflow allows the detection and ingestion of citations to software products used in scholarly publications. Since both data and software citations are crucial for the transparency of research results and for the transmission of credit, SciX will implement indexing of high-level and reused data products, in particular those published by NASA Archives, and track their citations. Citations are just one form of the linkages we are referring to. Linkages are essentially so-called semantic triples (figure 2): a triple is a sequence of three entities that codifies a statement about semantic data in the form of subject–predicate–object expressions. The predicate describes the relationship between two entities, one the subject and the other the object. The relationship within the framework of SciX can be one of two: cites or mentions. Also, within this framework, the subject always refers to a publication and currently the object refers to either a data product or software. At this point it is good to explain the difference between the treatment of these two relationships within the SciX context, in particular the consequences. Table 1 summarizes the difference between the two scenarios in SciX. The row “Form” corresponds to another limitation within SciX: only objects that have a URL associated with them can be considered; objects without URL are per definition not actionable. Table 1: Difference between mentions and citations. In the case of cites, only DOIs are in principle actionable because they have harvestable metadata associated with them. Cites with other identifiers are actionable if the cited work is already indexed. In this blog, we focus on the cases where the object is a data product. In the next sections, we discuss the support of data links and data citations, respectively. Linked data products One of the distinguishing features of SciX is the presence of links from its records to research archives and databases. This is particularly significant for the core astronomy journals which work with archive curators to create and maintain rich online resources associated with the articles they publish. As an example, 70% of articles published in the main astronomy journals during 2023 have links to data products. Historically, the links have been created by curators upon the ingestion of datasets published with the article (as is the case for VizieR data tables), cross-referencing of astronomical object measurements (SIMBAD and NED), or telescope bibliographies (Astrophysics Data Archives such as Chandra, MAST, IRSA, HEASARC, etc). The ADS, and now SciX, has been working with collaborators at these institutions to enable links between its records and these datasets on a regular basis, allowing for the curated links to be exposed to the end user. In their response to the call for Open Science, many publishers have started to incorporate so-called Data Availability Statement sections in the articles they publish. We mine links from these sections for most journals we index from the AGU, Elsevier, Springer and the AAS. Currently we simply mine these links and do little curation. The only part that needs action from the SciX curation team is the fact that we label these links for their display in the ADS user interface (figure 3). At this moment, these labels are based on heuristics. For example, certain DOI prefixes can be associated uniquely with a particular repository, just like some URL patterns. As of the writing of this blog, we have mined about 110k links this way. Working with linked data in SciX In general, the only discovery tools at your disposal are the ability to find records that have linked data in general or linked data associated with a particular data source (if you happen to know the abbreviation used in SciX). For any additional filtering you will need to use circumstantial evidence using other SciX search fields. The query property:data will find records that linked data associated with them in general, while the query data:MAST will find records with data products hosted at the Mikulski Archive for Space Telescopes (MAST); some labels used in SciX for data links are obvious (e.g. when they are the same as the acronym of the data center). Whenever we were unable to assign a descriptive label to a data link, we assigned the vanilla label DATASOURCE. A good strategy for finding data sources associated with a particular topic is to do a general search on that topic and filter the results on records that link to data (property:data). For example, if you are interested in carbonaceous chondrites in the context of the Moon, you can query Lunar carbonaceous chondrites and find close to 1,500 records; adding the filter property:data will limit this set to 68 records. Opening the Data facet will show that most records are associated with the label Astromat; this label corresponds to the NASA Astromaterials Data System. A little bit more insight can be obtained by switching on the highlights for this search. Finding records that link a publication to a specific data product is currently not supported. If you happen to know a uniquely identifying string or phrase for that data product, you could try doing a full text search. For example, if you try to find mentions of various versions of the PDS dataset identified by urn:nasa:pds:ast-lightcurve-database, you can run the query full:”urn:nasa:pds:ast-lightcurve-database” Even though SciX does not offer ways to find links to specific data products, the service does provide a powerful discovery environment to explore the context for data associated with or generated in specific missions, by certain instruments, for particular science topics or hosted in a certain repository. For the first example we will explore the science topics covered by refereed Open Access publications, with links to data, that mention the Near Infrared Camera and Multi-Object Spectrometer (NICMOS) in their title, abstract or keywords: NICMOS property:(data refereed openaccess) The Author facet will show you the most prolific authors associated with these publications, one of whom is Marcia Rieke who recently was awarded the Catherine Wolfe Bruce Gold Medal. To get some insight into the science topics covered by these publications we generate the Paper Network. By default, this network is generated for the first 400 publications; some additional details can be generated by increasing this amount (with a maximum of 1,000) and regenerating this network diagram. Figure 4 (left) shows the results. The diagram shows a number of high level science topics. The exploration does not need to end here; if one’s particular interest is circumstellar disks and protoplanetary nebulae, the results can be explored further by clicking on the blue segment, clicking on the button “Add to filter” (to the right of the Group 1 header) and hitting the search button. This generates an overview of just the publications in this group. If there are sufficient publications in this group, we can generate another Paper Network. This second network splits the original, larger category up into smaller, more detailed segments, providing more insight into the topics covered (figure 4, right diagram). In a similar way we can explore the use of data links from a specific data repository. The following query returns all refereed, Open Access publications, published in the period 2020-2024 with a link to data available at the National Oceanic and Atmospheric Administration (NOAA) data:NOAA property:(refereed openaccess) year:2020-2024 Just like before, the Paper Network can be used to indicate the range of topics discussed in the publications returned by the query. Figure 5 shows the results for data hosted at NOAA (left) and data hosted at the Oak Ridge National Laboratory Distributed Active Archive Center, as an additional example (right). The next example is to illustrate how to find publications that may be able to provide us with data products if we are interested in building on existing research in a particular topic. As a topic we select exoplanet atmospheres and we will start our exploration with recent, refereed Open Access publications, with links to data. The following query will generate the publications that correspond to this “exoplanet atmosphere” property:(refereed data openaccess) year:2020-2024 The results are shown in figure 6. The diagram on the left shows the results for the initial query and the diagram on the right shows the results when we generate the paper network for the publications in the orange segment only. Finally, the powerful SciX query language allows us to find Open Access, refereed publications, from the period 2010-2023, in the Earth Science collection, which have at least one link to data and cite at least one software product: property:(refereed openaccess data) year:2010-2023 citations(doctype:software) collection:earthscience" />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/blog/data-linking-II" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/blog/data-linking-II" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-07-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="SciX Data Linking and Indexing part II. Linked data" />
+<meta name="twitter:site" content="@adsabs" />
+<meta name="twitter:creator" content="@Edwin Henneken" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Henneken"},"dateModified":"2024-07-01T18:27:48+00:00","datePublished":"2024-07-01T00:00:00+00:00","description":"Introduction In the first part of this blog series, we provided a general description of the holdings in the Science Explorer (SciX); in this second part, we highlight a specific aspect of these holdings and place it in the context of the Research Life Cycle. The concept of a Research Life Cycle is not anything new; it represents the way in which scholarly research is done and has, in principle, not changed for a long time, probably centuries. It has fundamentally changed, however, in the way it is expressed. The first of these changes happened in the late 1990s: the introduction of electronic publishing of scholarly articles. In the same era, the discovery of these articles was also revolutionized with the introduction of the World Wide Web. Jumping to the here and the now, there is very little left in the Research Life Cycle that is not or cannot be expressed electronically. Let’s refer to these elements as “research artifacts”; each of these artifacts carries specific knowledge related to a specific stage of this life cycle. With the promotion of Open Science, there is a growing realization that this movement is best supported if these artifacts are accurately and formally represented in the process of exposing scholarly research. Traditionally, scholarly articles were the sole means of exposing scholarly research; however, they just represent one aspect of this research: that of useful outcomes. Everything else that goes into and supports research is important too, especially within the context of preservation, reusability and reproducibility; this context is the purview of the FAIR Principles. Examples of other artifacts include data, software, proposals, and presentations. The overall goal of FAIR is to enhance the sharing, preservation and communication of data-intensive research (like Astronomy, Heliophysics, Earth Science and Space Sciences). In other words, the digital-born, scholarly articles now exist as entities linked to other electronic artifacts; it is up to publishers and discovery platforms, like SciX, to make these linkages possible electronically and discoverable. Perhaps to state the obvious: SciX is a publication-centric discovery platform, so it supports the discovery of research artifacts as they are linked to the scholarly literature. To search directly for specific data or software products a dedicated service will need to be used; the NASA Science Discovery Engine is an example to search for NASA’s science data, documentation, and code. Since the whole of the artifacts referenced by a scholarly article forms the best representation of the science discussed in the article, having a proper coverage of these sources will help in properly representing different aspects and stages of research life cycles. Just capturing citations to other scholarly publications would not only leave out important information, it would also omit proper attribution to researchers who contribute as authors of non-traditional research products. The Science Explorer has implemented a workflow for capturing software citations; this workflow allows the detection and ingestion of citations to software products used in scholarly publications. Since both data and software citations are crucial for the transparency of research results and for the transmission of credit, SciX will implement indexing of high-level and reused data products, in particular those published by NASA Archives, and track their citations. Citations are just one form of the linkages we are referring to. Linkages are essentially so-called semantic triples (figure 2): a triple is a sequence of three entities that codifies a statement about semantic data in the form of subject–predicate–object expressions. The predicate describes the relationship between two entities, one the subject and the other the object. The relationship within the framework of SciX can be one of two: cites or mentions. Also, within this framework, the subject always refers to a publication and currently the object refers to either a data product or software. At this point it is good to explain the difference between the treatment of these two relationships within the SciX context, in particular the consequences. Table 1 summarizes the difference between the two scenarios in SciX. The row “Form” corresponds to another limitation within SciX: only objects that have a URL associated with them can be considered; objects without URL are per definition not actionable. Table 1: Difference between mentions and citations. In the case of cites, only DOIs are in principle actionable because they have harvestable metadata associated with them. Cites with other identifiers are actionable if the cited work is already indexed. In this blog, we focus on the cases where the object is a data product. In the next sections, we discuss the support of data links and data citations, respectively. Linked data products One of the distinguishing features of SciX is the presence of links from its records to research archives and databases. This is particularly significant for the core astronomy journals which work with archive curators to create and maintain rich online resources associated with the articles they publish. As an example, 70% of articles published in the main astronomy journals during 2023 have links to data products. Historically, the links have been created by curators upon the ingestion of datasets published with the article (as is the case for VizieR data tables), cross-referencing of astronomical object measurements (SIMBAD and NED), or telescope bibliographies (Astrophysics Data Archives such as Chandra, MAST, IRSA, HEASARC, etc). The ADS, and now SciX, has been working with collaborators at these institutions to enable links between its records and these datasets on a regular basis, allowing for the curated links to be exposed to the end user. In their response to the call for Open Science, many publishers have started to incorporate so-called Data Availability Statement sections in the articles they publish. We mine links from these sections for most journals we index from the AGU, Elsevier, Springer and the AAS. Currently we simply mine these links and do little curation. The only part that needs action from the SciX curation team is the fact that we label these links for their display in the ADS user interface (figure 3). At this moment, these labels are based on heuristics. For example, certain DOI prefixes can be associated uniquely with a particular repository, just like some URL patterns. As of the writing of this blog, we have mined about 110k links this way. Working with linked data in SciX In general, the only discovery tools at your disposal are the ability to find records that have linked data in general or linked data associated with a particular data source (if you happen to know the abbreviation used in SciX). For any additional filtering you will need to use circumstantial evidence using other SciX search fields. The query property:data will find records that linked data associated with them in general, while the query data:MAST will find records with data products hosted at the Mikulski Archive for Space Telescopes (MAST); some labels used in SciX for data links are obvious (e.g. when they are the same as the acronym of the data center). Whenever we were unable to assign a descriptive label to a data link, we assigned the vanilla label DATASOURCE. A good strategy for finding data sources associated with a particular topic is to do a general search on that topic and filter the results on records that link to data (property:data). For example, if you are interested in carbonaceous chondrites in the context of the Moon, you can query Lunar carbonaceous chondrites and find close to 1,500 records; adding the filter property:data will limit this set to 68 records. Opening the Data facet will show that most records are associated with the label Astromat; this label corresponds to the NASA Astromaterials Data System. A little bit more insight can be obtained by switching on the highlights for this search. Finding records that link a publication to a specific data product is currently not supported. If you happen to know a uniquely identifying string or phrase for that data product, you could try doing a full text search. For example, if you try to find mentions of various versions of the PDS dataset identified by urn:nasa:pds:ast-lightcurve-database, you can run the query full:”urn:nasa:pds:ast-lightcurve-database” Even though SciX does not offer ways to find links to specific data products, the service does provide a powerful discovery environment to explore the context for data associated with or generated in specific missions, by certain instruments, for particular science topics or hosted in a certain repository. For the first example we will explore the science topics covered by refereed Open Access publications, with links to data, that mention the Near Infrared Camera and Multi-Object Spectrometer (NICMOS) in their title, abstract or keywords: NICMOS property:(data refereed openaccess) The Author facet will show you the most prolific authors associated with these publications, one of whom is Marcia Rieke who recently was awarded the Catherine Wolfe Bruce Gold Medal. To get some insight into the science topics covered by these publications we generate the Paper Network. By default, this network is generated for the first 400 publications; some additional details can be generated by increasing this amount (with a maximum of 1,000) and regenerating this network diagram. Figure 4 (left) shows the results. The diagram shows a number of high level science topics. The exploration does not need to end here; if one’s particular interest is circumstellar disks and protoplanetary nebulae, the results can be explored further by clicking on the blue segment, clicking on the button “Add to filter” (to the right of the Group 1 header) and hitting the search button. This generates an overview of just the publications in this group. If there are sufficient publications in this group, we can generate another Paper Network. This second network splits the original, larger category up into smaller, more detailed segments, providing more insight into the topics covered (figure 4, right diagram). In a similar way we can explore the use of data links from a specific data repository. The following query returns all refereed, Open Access publications, published in the period 2020-2024 with a link to data available at the National Oceanic and Atmospheric Administration (NOAA) data:NOAA property:(refereed openaccess) year:2020-2024 Just like before, the Paper Network can be used to indicate the range of topics discussed in the publications returned by the query. Figure 5 shows the results for data hosted at NOAA (left) and data hosted at the Oak Ridge National Laboratory Distributed Active Archive Center, as an additional example (right). The next example is to illustrate how to find publications that may be able to provide us with data products if we are interested in building on existing research in a particular topic. As a topic we select exoplanet atmospheres and we will start our exploration with recent, refereed Open Access publications, with links to data. The following query will generate the publications that correspond to this “exoplanet atmosphere” property:(refereed data openaccess) year:2020-2024 The results are shown in figure 6. The diagram on the left shows the results for the initial query and the diagram on the right shows the results when we generate the paper network for the publications in the orange segment only. Finally, the powerful SciX query language allows us to find Open Access, refereed publications, from the period 2010-2023, in the Earth Science collection, which have at least one link to data and cite at least one software product: property:(refereed openaccess data) year:2010-2023 citations(doctype:software) collection:earthscience","headline":"SciX Data Linking and Indexing part II. Linked data","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/blog/data-linking-II"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"},"name":"Edwin Henneken"},"url":"https://ui.adsabs.harvard.edu/blog/data-linking-II"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/blog">all blog posts</a> |
+        <a href="/blog/news">news</a> |
+        <a href="/blog/general">general</a> |
+        <a href="/blog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">SciX Data Linking and Indexing part II. Linked data</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Edwin Henneken
+              
+        
+    
+
+
+    <b>(Content Curation & Collaborations Lead)</b>
+
+</h3>
+      <h3 class="post-date">01 Jul 2024</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content"><h1 id="introduction">Introduction</h1>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/data_linking_II_f1.png" />
+<br />
+</div>
+<p><br /></p>
+
+<p>In the <a href="https://scixplorer.org/scixblog/data-linking-I">first part</a> of this blog series, we provided a general description of the holdings in the <a href="https://scixplorer.org/">Science Explorer</a> (SciX); in this second part, we highlight a specific aspect of these holdings and place it in the context of the Research Life Cycle. The concept of a Research Life Cycle is not anything new; it represents the way in which scholarly research is done and has, in principle, not changed for a long time, probably centuries. It has fundamentally changed, however, in the way it is expressed.</p>
+
+<p>The first of these changes happened in the late 1990s: the introduction of electronic publishing of scholarly articles. In the same era, the discovery of these articles was also revolutionized with the introduction of the World Wide Web. Jumping to the here and the now, there is very little left in the Research Life Cycle that is not or cannot be expressed electronically. Let’s refer to these elements as “research artifacts”; each of these artifacts carries specific knowledge related to a specific stage of this life cycle. With the promotion of Open Science, there is a growing realization that this movement is best supported if these artifacts are accurately and formally represented in the process of exposing scholarly research.</p>
+
+<p>Traditionally, scholarly articles were the sole means of exposing scholarly research; however, they just represent one aspect of this research: that of useful outcomes. Everything else that goes into and supports research is important too, especially within the context of preservation, reusability and reproducibility; this context is the purview of the <a href="https://www.go-fair.org/fair-principles/">FAIR Principles</a>. Examples of other artifacts include data, software, proposals, and presentations. The overall goal of FAIR is to enhance the sharing, preservation and communication of data-intensive research (like Astronomy, Heliophysics, Earth Science and Space Sciences). In other words, the digital-born, scholarly articles now exist as entities linked to other electronic artifacts; it is up to publishers and discovery platforms, like SciX, to make these linkages possible electronically and discoverable. Perhaps to state the obvious: SciX is a publication-centric discovery platform, so it supports the discovery of research artifacts as they are linked to the scholarly literature. To search directly for specific data or software products a dedicated service will need to be used; the <a href="https://sciencediscoveryengine.nasa.gov/">NASA Science Discovery Engine</a> is an example to search for NASA’s science data, documentation, and code.</p>
+
+<p>Since the whole of the artifacts referenced by a scholarly article forms the best representation of the science discussed in the article, having a proper coverage of these sources will help in properly representing different aspects and stages of research life cycles. Just capturing citations to other scholarly publications would not only leave out important information, it would also omit proper attribution to researchers who contribute as authors of non-traditional research products. The Science Explorer has implemented a workflow for capturing software citations; this workflow allows the detection and ingestion of citations to software products used in scholarly publications. Since both data and software citations are crucial for the transparency of research results and for the transmission of credit, SciX will implement indexing of high-level and reused data products, in particular those published by NASA Archives, and track their citations.</p>
+
+<p>Citations are just one form of the linkages we are referring to. Linkages are essentially so-called semantic triples (figure 2): a triple is a sequence of three entities that codifies a statement about semantic data in the form of subject–predicate–object expressions.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/data_linking_II_f2.png" />
+<br />
+</div>
+<p><br /></p>
+
+<p>The predicate describes the relationship between two entities, one the subject and the other the object. The relationship within the framework of SciX can be one of two: <em>cites</em> or <em>mentions</em>. Also, within this framework, the subject always refers to a publication and currently the object refers to either a data product or software. At this point it is good to explain the difference between the treatment of these two relationships within the SciX context, in particular the consequences. Table 1 summarizes the difference between the two scenarios in SciX. The row “Form” corresponds to another limitation within SciX: only objects that have a URL associated with them can be considered; objects without URL are per definition not actionable.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/data_linking_II_t1.png" />
+<br />
+<em>Table 1: Difference between mentions and citations. In the case of cites, only DOIs are in principle actionable because they have harvestable metadata associated with them. Cites with other identifiers are actionable if the cited work is already indexed.
+</em>
+</div>
+<p><br /></p>
+
+<p>In this blog, we focus on the cases where the object is a data product. In the next sections, we discuss the support of data links and data citations, respectively.</p>
+
+<h1 id="linked-data-products">Linked data products</h1>
+
+<p>One of the distinguishing features of SciX is the presence of links from its records to research archives and databases. This is particularly significant for the core astronomy journals which work with archive curators to create and maintain rich online resources associated with the articles they publish. As an example, 70% of articles published in the main astronomy journals during 2023 have links to data products. Historically, the links have been created by curators upon the ingestion of datasets published with the article (as is the case for <a href="https://scixplorer.org/search?q=bibstem%3AyCat&amp;sort=score+desc%2Cdate+desc&amp;p=1">VizieR data tables</a>), cross-referencing of astronomical object measurements (SIMBAD and NED), or telescope bibliographies (Astrophysics Data Archives such as Chandra, MAST, IRSA, HEASARC, etc). The ADS, and now SciX, has been working with collaborators at these institutions to enable links between its records and these datasets on a regular basis, allowing for the curated links to be exposed to the end user.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/data_linking_II_f3.png" />
+<br />
+</div>
+<p><br /></p>
+
+<p>In their response to the call for Open Science, many publishers have started to incorporate so-called Data Availability Statement sections in the articles they publish. We mine links from these sections for most journals we index from the AGU, Elsevier, Springer and the AAS. Currently we simply mine these links and do little curation. The only part that needs action from the SciX curation team is the fact that we label these links for their display in the ADS user interface (figure 3). At this moment, these labels are based on heuristics. For example, certain DOI prefixes can be associated uniquely with a particular repository, just like some URL patterns. As of the writing of this blog, we have mined about 110k links this way.</p>
+
+<h1 id="working-with-linked-data-in-scix">Working with linked data in SciX</h1>
+
+<p>In general, the only discovery tools at your disposal are the ability to find records that have linked data in general or linked data associated with a particular data source (if you happen to know the abbreviation used in SciX). For any additional filtering you will need to use circumstantial evidence using other SciX search fields. The query <em>property:data</em> will find records that linked data associated with them in general, while the query <em>data:MAST</em> will find records with data products hosted at the Mikulski Archive for Space Telescopes (MAST); some labels used in SciX for data links are obvious (e.g. when they are the same as the acronym of the data center). Whenever we were unable to assign a descriptive label to a data link, we assigned the vanilla label <em>DATASOURCE</em>.</p>
+
+<p>A good strategy for finding data sources associated with a particular topic is to do a general search on that topic and filter the results on records that link to data (<em>property:data</em>). For example, if you are interested in carbonaceous chondrites in the context of the Moon, you can query <a href="https://scixplorer.org/search?q=Lunar+carbonaceous+chondrites&amp;sort=score+desc%2Cdate+desc&amp;p=1">Lunar carbonaceous chondrites</a> and find close to 1,500 records; <a href="https://scixplorer.org/search?q=Lunar+carbonaceous+chondrites+property%3Adata&amp;sort=score+desc%2Cdate+desc&amp;p=1&amp;n=10">adding the filter property:data</a> will limit this set to 68 records. Opening the <em>Data</em> facet will show that most records are associated with the label <em>Astromat</em>; this label corresponds to the <a href="https://www.astromat.org/">NASA Astromaterials Data System</a>. A little bit more insight can be obtained by switching on the highlights for this search. Finding records that link a publication to a specific data product is currently not supported. If you happen to know a uniquely identifying string or phrase for that data product, you could try doing a full text search. For example, if you try to find mentions of various versions of the PDS dataset identified by <em>urn:nasa:pds:ast-lightcurve-database</em>, you can run the query</p>
+
+<blockquote>
+  <p><a href="https://scixplorer.org/search?q=full%3A%22urn%3Anasa%3Apds%3Aast-lightcurve-database%22&amp;sort=score+desc%2Cdate+desc&amp;p=1&amp;n=10">full:”urn:nasa:pds:ast-lightcurve-database”</a></p>
+</blockquote>
+
+<p>Even though SciX does not offer ways to find links to specific data products, the service does provide a powerful discovery environment to explore the context for data associated with or generated in specific missions, by certain instruments, for particular science topics or hosted in a certain repository.</p>
+
+<p>For the first example we will explore the science topics covered by refereed Open Access publications, with links to data, that mention the <a href="https://www.stsci.edu/hst/instrumentation/legacy/nicmos">Near Infrared Camera and Multi-Object Spectrometer</a> (NICMOS) in their title, abstract or keywords:</p>
+
+<blockquote>
+  <p><a href="https://scixplorer.org/search?q=NICMOS+property%3A(data+refereed+openaccess)+&amp;sort=score+desc%2Cdate+desc&amp;p=1">NICMOS property:(data refereed openaccess)</a></p>
+</blockquote>
+
+<p>The <em>Author</em> facet will show you the most prolific authors associated with these publications, one of whom is Marcia Rieke who recently was awarded the Catherine Wolfe Bruce Gold Medal.</p>
+
+<p>To get some insight into the science topics covered by these publications we generate the <a href="https://scixplorer.org/search/paper_network?q=NICMOS+property%3A%28data+refereed+openaccess%29+&amp;sort=score+desc%2Cdate+desc&amp;p=1">Paper Network</a>. By default, this network is generated for the first 400 publications; some additional details can be generated by increasing this amount (with a maximum of 1,000) and regenerating this network diagram. Figure 4 (left) shows the results.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/data_linking_II_f4.png" />
+<br />
+</div>
+<p><br /></p>
+
+<p>The diagram shows a number of high level science topics. The exploration does not need to end here; if one’s particular interest is circumstellar disks and protoplanetary nebulae, the results can be explored further by clicking on the blue segment, clicking on the button “Add to filter” (to the right of the Group 1 header) and hitting the search button. This generates an overview of just the publications in this group. If there are sufficient publications in this group, we can generate another Paper Network. This second network splits the original, larger category up into smaller, more detailed segments, providing more insight into the topics covered (figure 4, right diagram).</p>
+
+<p>In a similar way we can explore the use of data links from a specific data repository. The following query returns all refereed, Open Access publications, published in the period 2020-2024 with a link to data available at the <a href="https://www.noaa.gov/">National Oceanic and Atmospheric Administration (NOAA)</a></p>
+
+<blockquote>
+  <p><a href="https://scixplorer.org/search?q=data%3ANOAA+property%3A(refereed+openaccess)+year%3A2020-2024&amp;sort=score+desc%2Cdate+desc&amp;p=1">data:NOAA property:(refereed openaccess) year:2020-2024
+</a></p>
+</blockquote>
+
+<p>Just like before, the Paper Network can be used to indicate the range of topics discussed in the publications returned by the query. Figure 5 shows the results for data hosted at NOAA (left) and data hosted at the Oak Ridge National Laboratory Distributed Active Archive Center, as an additional example (right).</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/data_linking_II_f5.png" />
+<br />
+</div>
+<p><br /></p>
+
+<p>The next example is to illustrate how to find publications that may be able to provide us with data products if we are interested in building on existing research in a particular topic. As a topic we select exoplanet atmospheres and we will start our exploration with recent, refereed Open Access publications, with links to data. The following query will generate the publications that correspond to this</p>
+
+<blockquote>
+  <p><a href="https://scixplorer.org/search?q=%22exoplanet+atmosphere%22+property%3A(refereed+data+openaccess)+year%3A2020-2024&amp;sort=score+desc%2Cdate+desc&amp;fq_selection=(docs(cb91d308eb354bbc3a9b0b62b92b79c5))&amp;p=1&amp;fq=%7B%21type%3Daqp+v%3D%24fq_selection%7D">“exoplanet atmosphere” property:(refereed data openaccess) year:2020-2024</a></p>
+</blockquote>
+
+<p>The results are shown in figure 6. The diagram on the left shows the results for the initial query and the diagram on the right shows the results when we generate the paper network for the publications in the orange segment only.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/data_linking_II_f6.png" />
+<br />
+</div>
+<p><br /></p>
+
+<p>Finally, the powerful SciX query language allows us to find Open Access, refereed publications, from the period 2010-2023, in the Earth Science collection, which have at least one link to data and cite at least one software product:</p>
+
+<blockquote>
+  <p>property:(refereed openaccess data) year:2010-2023 citations(doctype:software) collection:earthscience</p>
+</blockquote>
+
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

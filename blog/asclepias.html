@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/blog_2016-09-19_adsbumblebee.png">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/blog/asclepias"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2023-12-08 22:03:10 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Asclepias - Enabling software citation &amp; discovery workflows | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Asclepias - Enabling software citation &amp; discovery workflows" />
+<meta name="author" content="Edwin Henneken" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Soon, if not already, the research lifecycle will be fully digital. Every stage can be captured by one or more digital objects, each of which carries specific knowledge with regards to that stage. The most obvious inhabitant of this digital cosmos is the scholarly publication, but there are many more species, ranging from observation proposals, datasets, software to posters and presentations. With repositories like mission data archives, Figshare and Zenodo, all of these objects can, in principle, be made discoverable and citable. In this blog we focus on one particular digital object: software. Enter Asclepias! Asclepias, “Enabling software citation and discovery workflows”, is a project funded through a grant from the Alfred P. Sloan Foundation to the American Astronomical Society (AAS), and it involves collaboration between the AAS, Zenodo, the ADS and Thomas Robitaille as freelancer. Why this collaboration? It reflects the fact that no one stakeholder can “solve” the problem of software citation. Figure source: &quot;Research Life Cycle&quot; image from UC Irvine [Library Digital Scholarship Services](https://www.lib.uci.edu/dss)     Gus Muench Alberto Accomazzi, Sergi Blanco-Cuaresma, Edwin Henneken Lars Holm Nielsen, Krzysztof Nowak , Alexander Ioannidis Thomas Robitaille What is so special about software citation that it takes so many parties to deal with it properly? This becomes clear when you think about how to move from a position where the curation and preservation of software products has been taken care of, to one where these products are discoverable, together with their links to the scholarly literature (by means of citations or otherwise). One challenge is that currently, there is no established standard or policy for citing software in scholarly publications. Writing a “software paper” may seem like a work-around, but it is not a very good one. It can work if you just write one, static piece of software. You describe how it works, acknowledge contributors and, perhaps, where people can get a copy, and you’re done. In all other cases, even though it is better than nothing, a “software paper” is just a bad proxy for representing all aspects. Software is a highly dynamical object, especially when it evolves from version to version, with different contributors and different characteristics. For this reason, it is important to capture the acknowledgement of actual software products. Since reworking the entire, established process of capturing scholarly acknowledgement (read: “citations”) is extremely hard, to say the least, adapting the existing mechanism of finding citations to include software, will be the next best thing. This is exactly what the Asclepias project focuses on. Its goal is to promote scientific software into an identifiable, citable, and preservable object. The project focuses on the needs of two of the most important roles researchers play in the scholarly ecosystem: authors of scholarly manuscripts and developers of scientific software. This goal can only be reached if the research community participates, and the research community can only be expected to participate if there are tools and workflows in place that make the citation of software products just as easy as citing a publication. What needs to be in place to make this happen? The publisher (AAS) will need to implement practices and tools that will support the integration of software citations into the scholarly publishing workflow. From the viewpoint of bibliographic indexing services (ADS), the implementation means the development of first-class support of a software framework to detect software citations and take all necessary steps to attribute and expose these citations. For repositories (Zenodo), implementation means interoperability with Github and similar codebases (like Bitbucket). The minting of DOIs is one step in this integration, and being able to send out notifications that (astronomy related) software has been released, including version updates, is another. All these steps are only possible if metadata standards for software packages are adopted. Just slapping a DOI on a digital object is not a structural solution, not by a long shot. It may help an object location be persistent, but that is not how you discover something. That is where the metadata is essential! Within the Asclepias project, the development of metadata is guided by the software citation practices put forward by the FORCE11 Software Citation Implementation Group. When all of this is in place, the three stakeholders will have put in place the framework that will provide the research community with simple instructions for how to make software discoverable and how to include software citations in the process of writing a scholarly paper. What does all of this mean in practice? Let’s look at an example. The Python module corner.py (previously known as triangle.py) is widely used in astronomy. Its main developer, Daniel Foreman-Mackey, made it available on Github and published an entry in the Journal of Open Source Software (JOSS). The ADS has a record for this JOSS software paper, and as a result citations are being captured (provided people cite this record properly). As of November 9, 2017, this JOSS paper accumulated 77 citations. Thanks to Zenodo’s interoperability with Github, records were created for both triangle.py and corner.py. Zenodo mints a DOI for each software version and also a so-called concept DOI. The concept DOI is available for when you don’t want to cite a specific software version, but just “the latest”. The crucial step that make this interoperability possible is the authentication within Zenodo, using your Github account, allowing Zenodo to view and retrieve your repositories on Github. For details, see: https://guides.github.com/activities/citable-code/. The next step is to go through the reference data in the ADS holdings and see if we find any evidence of the Zenodo DOIs, corresponding with the different versions of both triangle.py and corner.py. The table below shows the results (as of Feburary 5, 2018).       10.5281/zenodo.10598 triangle 2 10.5281/zenodo.11020 triangle 40 10.5281/zenodo.45906 corner 16 10.5281/zenodo.53155 corner 7 This analysis shows that authors are already citing the different versions of both modules, but also that it results in a significant amount of additional citations! The bottom line is that all of this is great in many ways. From the researcher’s perspective, it provides proper attribution for their role (and impact) as software developer and it provides them with a means to monitor on how their software is being used, specifically with regards to versions. The fact that, in this process, software gets deposited in a repository and proper metadata is attached and registered, is great for the community and science in general. It supports the goals of preservation and reproducibility. In this way, these efforts greatly improve the accurate recording of crucial aspects of the research lifecycle. Of course, none of this goes anywhere if the research community does not participate. There was a special session on software citation during the 231st AAS Meeting in National Harbor (session 307 Astronomy Software Publishing: Community Roles and Services, in National Harbor 2, 10:00 am – 11:30 am). If you are interested to hear more about this project, or software citation in general, please write us (ads@cfa.harvard.edu). More details on the Asclepias project can be found here: Muench, August; Accomazzi, Alberto; Holm Nielsen, Lars (2017), “Asclepias: Enabling software citation &amp; discovery workflows”, poster presented at LISA VIII conference (https://doi.org/10.5281/zenodo.803474) Henneken, Edwin, Accomazzi, Alberto, Blanco-Cuaresma, Sergi, Muench, August, &amp; Nielsen, Lars Holm. (2017). “Asclepias - Capturing Software Citations in Astronomy”, talk given at the Metrics workshop during the 2017 ASIS&amp;T Annual Meeting (http://doi.org/10.5281/zenodo.1011088)" />
+<meta property="og:description" content="Soon, if not already, the research lifecycle will be fully digital. Every stage can be captured by one or more digital objects, each of which carries specific knowledge with regards to that stage. The most obvious inhabitant of this digital cosmos is the scholarly publication, but there are many more species, ranging from observation proposals, datasets, software to posters and presentations. With repositories like mission data archives, Figshare and Zenodo, all of these objects can, in principle, be made discoverable and citable. In this blog we focus on one particular digital object: software. Enter Asclepias! Asclepias, “Enabling software citation and discovery workflows”, is a project funded through a grant from the Alfred P. Sloan Foundation to the American Astronomical Society (AAS), and it involves collaboration between the AAS, Zenodo, the ADS and Thomas Robitaille as freelancer. Why this collaboration? It reflects the fact that no one stakeholder can “solve” the problem of software citation. Figure source: &quot;Research Life Cycle&quot; image from UC Irvine [Library Digital Scholarship Services](https://www.lib.uci.edu/dss)     Gus Muench Alberto Accomazzi, Sergi Blanco-Cuaresma, Edwin Henneken Lars Holm Nielsen, Krzysztof Nowak , Alexander Ioannidis Thomas Robitaille What is so special about software citation that it takes so many parties to deal with it properly? This becomes clear when you think about how to move from a position where the curation and preservation of software products has been taken care of, to one where these products are discoverable, together with their links to the scholarly literature (by means of citations or otherwise). One challenge is that currently, there is no established standard or policy for citing software in scholarly publications. Writing a “software paper” may seem like a work-around, but it is not a very good one. It can work if you just write one, static piece of software. You describe how it works, acknowledge contributors and, perhaps, where people can get a copy, and you’re done. In all other cases, even though it is better than nothing, a “software paper” is just a bad proxy for representing all aspects. Software is a highly dynamical object, especially when it evolves from version to version, with different contributors and different characteristics. For this reason, it is important to capture the acknowledgement of actual software products. Since reworking the entire, established process of capturing scholarly acknowledgement (read: “citations”) is extremely hard, to say the least, adapting the existing mechanism of finding citations to include software, will be the next best thing. This is exactly what the Asclepias project focuses on. Its goal is to promote scientific software into an identifiable, citable, and preservable object. The project focuses on the needs of two of the most important roles researchers play in the scholarly ecosystem: authors of scholarly manuscripts and developers of scientific software. This goal can only be reached if the research community participates, and the research community can only be expected to participate if there are tools and workflows in place that make the citation of software products just as easy as citing a publication. What needs to be in place to make this happen? The publisher (AAS) will need to implement practices and tools that will support the integration of software citations into the scholarly publishing workflow. From the viewpoint of bibliographic indexing services (ADS), the implementation means the development of first-class support of a software framework to detect software citations and take all necessary steps to attribute and expose these citations. For repositories (Zenodo), implementation means interoperability with Github and similar codebases (like Bitbucket). The minting of DOIs is one step in this integration, and being able to send out notifications that (astronomy related) software has been released, including version updates, is another. All these steps are only possible if metadata standards for software packages are adopted. Just slapping a DOI on a digital object is not a structural solution, not by a long shot. It may help an object location be persistent, but that is not how you discover something. That is where the metadata is essential! Within the Asclepias project, the development of metadata is guided by the software citation practices put forward by the FORCE11 Software Citation Implementation Group. When all of this is in place, the three stakeholders will have put in place the framework that will provide the research community with simple instructions for how to make software discoverable and how to include software citations in the process of writing a scholarly paper. What does all of this mean in practice? Let’s look at an example. The Python module corner.py (previously known as triangle.py) is widely used in astronomy. Its main developer, Daniel Foreman-Mackey, made it available on Github and published an entry in the Journal of Open Source Software (JOSS). The ADS has a record for this JOSS software paper, and as a result citations are being captured (provided people cite this record properly). As of November 9, 2017, this JOSS paper accumulated 77 citations. Thanks to Zenodo’s interoperability with Github, records were created for both triangle.py and corner.py. Zenodo mints a DOI for each software version and also a so-called concept DOI. The concept DOI is available for when you don’t want to cite a specific software version, but just “the latest”. The crucial step that make this interoperability possible is the authentication within Zenodo, using your Github account, allowing Zenodo to view and retrieve your repositories on Github. For details, see: https://guides.github.com/activities/citable-code/. The next step is to go through the reference data in the ADS holdings and see if we find any evidence of the Zenodo DOIs, corresponding with the different versions of both triangle.py and corner.py. The table below shows the results (as of Feburary 5, 2018).       10.5281/zenodo.10598 triangle 2 10.5281/zenodo.11020 triangle 40 10.5281/zenodo.45906 corner 16 10.5281/zenodo.53155 corner 7 This analysis shows that authors are already citing the different versions of both modules, but also that it results in a significant amount of additional citations! The bottom line is that all of this is great in many ways. From the researcher’s perspective, it provides proper attribution for their role (and impact) as software developer and it provides them with a means to monitor on how their software is being used, specifically with regards to versions. The fact that, in this process, software gets deposited in a repository and proper metadata is attached and registered, is great for the community and science in general. It supports the goals of preservation and reproducibility. In this way, these efforts greatly improve the accurate recording of crucial aspects of the research lifecycle. Of course, none of this goes anywhere if the research community does not participate. There was a special session on software citation during the 231st AAS Meeting in National Harbor (session 307 Astronomy Software Publishing: Community Roles and Services, in National Harbor 2, 10:00 am – 11:30 am). If you are interested to hear more about this project, or software citation in general, please write us (ads@cfa.harvard.edu). More details on the Asclepias project can be found here: Muench, August; Accomazzi, Alberto; Holm Nielsen, Lars (2017), “Asclepias: Enabling software citation &amp; discovery workflows”, poster presented at LISA VIII conference (https://doi.org/10.5281/zenodo.803474) Henneken, Edwin, Accomazzi, Alberto, Blanco-Cuaresma, Sergi, Muench, August, &amp; Nielsen, Lars Holm. (2017). “Asclepias - Capturing Software Citations in Astronomy”, talk given at the Metrics workshop during the 2017 ASIS&amp;T Annual Meeting (http://doi.org/10.5281/zenodo.1011088)" />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/blog/asclepias" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/blog/asclepias" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-05T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="Asclepias - Enabling software citation &amp; discovery workflows" />
+<meta name="twitter:site" content="@adsabs" />
+<meta name="twitter:creator" content="@Edwin Henneken" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Henneken"},"dateModified":"2023-12-08T22:03:10+00:00","datePublished":"2018-02-05T00:00:00+00:00","description":"Soon, if not already, the research lifecycle will be fully digital. Every stage can be captured by one or more digital objects, each of which carries specific knowledge with regards to that stage. The most obvious inhabitant of this digital cosmos is the scholarly publication, but there are many more species, ranging from observation proposals, datasets, software to posters and presentations. With repositories like mission data archives, Figshare and Zenodo, all of these objects can, in principle, be made discoverable and citable. In this blog we focus on one particular digital object: software. Enter Asclepias! Asclepias, “Enabling software citation and discovery workflows”, is a project funded through a grant from the Alfred P. Sloan Foundation to the American Astronomical Society (AAS), and it involves collaboration between the AAS, Zenodo, the ADS and Thomas Robitaille as freelancer. Why this collaboration? It reflects the fact that no one stakeholder can “solve” the problem of software citation. Figure source: &quot;Research Life Cycle&quot; image from UC Irvine [Library Digital Scholarship Services](https://www.lib.uci.edu/dss)     Gus Muench Alberto Accomazzi, Sergi Blanco-Cuaresma, Edwin Henneken Lars Holm Nielsen, Krzysztof Nowak , Alexander Ioannidis Thomas Robitaille What is so special about software citation that it takes so many parties to deal with it properly? This becomes clear when you think about how to move from a position where the curation and preservation of software products has been taken care of, to one where these products are discoverable, together with their links to the scholarly literature (by means of citations or otherwise). One challenge is that currently, there is no established standard or policy for citing software in scholarly publications. Writing a “software paper” may seem like a work-around, but it is not a very good one. It can work if you just write one, static piece of software. You describe how it works, acknowledge contributors and, perhaps, where people can get a copy, and you’re done. In all other cases, even though it is better than nothing, a “software paper” is just a bad proxy for representing all aspects. Software is a highly dynamical object, especially when it evolves from version to version, with different contributors and different characteristics. For this reason, it is important to capture the acknowledgement of actual software products. Since reworking the entire, established process of capturing scholarly acknowledgement (read: “citations”) is extremely hard, to say the least, adapting the existing mechanism of finding citations to include software, will be the next best thing. This is exactly what the Asclepias project focuses on. Its goal is to promote scientific software into an identifiable, citable, and preservable object. The project focuses on the needs of two of the most important roles researchers play in the scholarly ecosystem: authors of scholarly manuscripts and developers of scientific software. This goal can only be reached if the research community participates, and the research community can only be expected to participate if there are tools and workflows in place that make the citation of software products just as easy as citing a publication. What needs to be in place to make this happen? The publisher (AAS) will need to implement practices and tools that will support the integration of software citations into the scholarly publishing workflow. From the viewpoint of bibliographic indexing services (ADS), the implementation means the development of first-class support of a software framework to detect software citations and take all necessary steps to attribute and expose these citations. For repositories (Zenodo), implementation means interoperability with Github and similar codebases (like Bitbucket). The minting of DOIs is one step in this integration, and being able to send out notifications that (astronomy related) software has been released, including version updates, is another. All these steps are only possible if metadata standards for software packages are adopted. Just slapping a DOI on a digital object is not a structural solution, not by a long shot. It may help an object location be persistent, but that is not how you discover something. That is where the metadata is essential! Within the Asclepias project, the development of metadata is guided by the software citation practices put forward by the FORCE11 Software Citation Implementation Group. When all of this is in place, the three stakeholders will have put in place the framework that will provide the research community with simple instructions for how to make software discoverable and how to include software citations in the process of writing a scholarly paper. What does all of this mean in practice? Let’s look at an example. The Python module corner.py (previously known as triangle.py) is widely used in astronomy. Its main developer, Daniel Foreman-Mackey, made it available on Github and published an entry in the Journal of Open Source Software (JOSS). The ADS has a record for this JOSS software paper, and as a result citations are being captured (provided people cite this record properly). As of November 9, 2017, this JOSS paper accumulated 77 citations. Thanks to Zenodo’s interoperability with Github, records were created for both triangle.py and corner.py. Zenodo mints a DOI for each software version and also a so-called concept DOI. The concept DOI is available for when you don’t want to cite a specific software version, but just “the latest”. The crucial step that make this interoperability possible is the authentication within Zenodo, using your Github account, allowing Zenodo to view and retrieve your repositories on Github. For details, see: https://guides.github.com/activities/citable-code/. The next step is to go through the reference data in the ADS holdings and see if we find any evidence of the Zenodo DOIs, corresponding with the different versions of both triangle.py and corner.py. The table below shows the results (as of Feburary 5, 2018).       10.5281/zenodo.10598 triangle 2 10.5281/zenodo.11020 triangle 40 10.5281/zenodo.45906 corner 16 10.5281/zenodo.53155 corner 7 This analysis shows that authors are already citing the different versions of both modules, but also that it results in a significant amount of additional citations! The bottom line is that all of this is great in many ways. From the researcher’s perspective, it provides proper attribution for their role (and impact) as software developer and it provides them with a means to monitor on how their software is being used, specifically with regards to versions. The fact that, in this process, software gets deposited in a repository and proper metadata is attached and registered, is great for the community and science in general. It supports the goals of preservation and reproducibility. In this way, these efforts greatly improve the accurate recording of crucial aspects of the research lifecycle. Of course, none of this goes anywhere if the research community does not participate. There was a special session on software citation during the 231st AAS Meeting in National Harbor (session 307 Astronomy Software Publishing: Community Roles and Services, in National Harbor 2, 10:00 am – 11:30 am). If you are interested to hear more about this project, or software citation in general, please write us (ads@cfa.harvard.edu). More details on the Asclepias project can be found here: Muench, August; Accomazzi, Alberto; Holm Nielsen, Lars (2017), “Asclepias: Enabling software citation &amp; discovery workflows”, poster presented at LISA VIII conference (https://doi.org/10.5281/zenodo.803474) Henneken, Edwin, Accomazzi, Alberto, Blanco-Cuaresma, Sergi, Muench, August, &amp; Nielsen, Lars Holm. (2017). “Asclepias - Capturing Software Citations in Astronomy”, talk given at the Metrics workshop during the 2017 ASIS&amp;T Annual Meeting (http://doi.org/10.5281/zenodo.1011088)","headline":"Asclepias - Enabling software citation &amp; discovery workflows","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/blog/asclepias"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"},"name":"Edwin Henneken"},"url":"https://ui.adsabs.harvard.edu/blog/asclepias"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/blog">all blog posts</a> |
+        <a href="/blog/news">news</a> |
+        <a href="/blog/general">general</a> |
+        <a href="/blog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Asclepias - Enabling software citation & discovery workflows</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Edwin Henneken
+              
+        
+    
+
+
+    <b>(ADS Developer)</b>
+
+</h3>
+      <h3 class="post-date">05 Feb 2018</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>Soon, if not already, the research lifecycle will be fully digital. Every stage can be captured by one or more digital objects, each of which carries specific knowledge with regards to that stage. The most obvious inhabitant of this digital cosmos is the scholarly publication, but there are many more species, ranging from observation proposals, datasets, software to posters and presentations. With repositories like mission data archives, <a href="https://figshare.com/">Figshare</a> and <a href="https://zenodo.org/">Zenodo</a>, all of these objects can, in principle, be made discoverable and citable. In this blog we focus on one particular digital object: software. Enter <strong><em>Asclepias</em></strong>! Asclepias, “<em>Enabling software citation and discovery workflows</em>”, is a project funded through a grant from the Alfred P. Sloan Foundation to the American Astronomical Society (AAS), and it involves collaboration between the AAS, Zenodo, the ADS and Thomas Robitaille as freelancer. Why this collaboration? It reflects the fact that no one stakeholder can “solve” the problem of software citation.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2018_02_05_lifecycle.jpg" />
+    Figure source: "Research Life Cycle" image from UC Irvine [Library Digital Scholarship Services](https://www.lib.uci.edu/dss)
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><img src="/blog/images/blog_2018_02_05_AAS_logo.png" alt="AAS" class="img-responsive" /></td>
+      <td style="text-align: left">Gus Muench</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="/blog/images/blog_2018_02_05_ADS_logo.png" alt="ADS" class="img-responsive" /></td>
+      <td style="text-align: left">Alberto Accomazzi, Sergi Blanco-Cuaresma, Edwin Henneken</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="/blog/images/blog_2018_02_05_Zenodo_logo.png" alt="Zenodo" class="img-responsive" /></td>
+      <td style="text-align: left">Lars Holm Nielsen, Krzysztof Nowak , Alexander Ioannidis</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><img src="/blog/images/blog_2018_02_05_TR_logo.png" alt="Robitaille" class="img-responsive" /></td>
+      <td style="text-align: left">Thomas Robitaille</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>What is so special about software citation that it takes so many parties to deal with it properly? This becomes clear when you think about how to move from a position where the curation and preservation of software products has been taken care of, to one where these products are discoverable, together with their links to the scholarly literature (by means of citations or otherwise). One challenge is that currently, there is no established standard or policy for citing software in scholarly publications. Writing a “software paper” may seem like a work-around, but it is not a very good one. It can work if you just write one, static piece of software. You describe how it works, acknowledge contributors and, perhaps, where people can get a copy, and you’re done. In all other cases, even though it is better than nothing, a “software paper” is just a bad proxy for representing all aspects. Software is a highly dynamical object, especially when it evolves from version to version, with different contributors and different characteristics. For this reason, it is important to capture the acknowledgement of actual software products. Since reworking the entire, established process of capturing scholarly acknowledgement (read: “citations”) is extremely hard, to say the least, adapting the existing mechanism of finding citations to include software, will be the next best thing.</p>
+
+<p>This is exactly what the Asclepias project focuses on. Its goal is to <strong>promote scientific software</strong> into an identifiable, citable, and preservable object. The project focuses on the needs of two of the most important roles researchers play in the scholarly ecosystem: <strong>authors</strong> of scholarly manuscripts and <strong>developers</strong> of scientific software. This goal can only be reached if the research community participates, and the research community can only be expected to participate if there are tools and workflows in place that make the citation of software products just as easy as citing a publication. What needs to be in place to make this happen? The publisher (AAS) will need to implement practices and tools that will support the integration of software citations into the scholarly publishing workflow. From the viewpoint of bibliographic indexing services (ADS), the implementation means the development of first-class support of a software framework to detect software citations and take all necessary steps to attribute and expose these citations. For repositories (Zenodo), implementation means interoperability with Github and similar codebases (like Bitbucket). The minting of DOIs is one step in this integration, and being able to send out notifications that (astronomy related) software has been released, including version updates, is another. All these steps are only possible if <strong>metadata standards</strong> for software packages are adopted. Just slapping a DOI on a digital object is not a structural solution, not by a long shot. It may help an object location be persistent, but that is not how you discover something. That is where the metadata is essential! Within the Asclepias project, the development of metadata is guided by the software citation practices put forward by the FORCE11 Software Citation Implementation Group. When all of this is in place, the three stakeholders will have put in place the framework that will provide the research community with simple instructions for how to make software discoverable and how to include software citations in the process of writing a scholarly paper.</p>
+
+<p>What does all of this mean in practice? Let’s look at an example. The Python module <em>corner.py</em> (previously known as <em>triangle.py</em>) is widely used in astronomy. Its main developer, Daniel Foreman-Mackey, made it available on <a href="https://github.com/dfm/corner.py">Github</a> and published an <a href="http://joss.theoj.org/papers/10.21105/joss.00024">entry</a> in the Journal of Open Source Software (JOSS). The ADS has a <a href="http://ui.adsabs.harvard.edu/#abs/2016JOSS.2016...24F/abstract">record</a> for this JOSS software paper, and as a result citations are being captured (provided people cite this record properly). As of November 9, 2017, this JOSS paper accumulated 77 citations.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2018_02_05_JOSS_corner.png" />
+</div>
+
+<p>Thanks to Zenodo’s interoperability with Github, records were created for both <em>triangle.py</em> and <em><a href="https://doi.org/10.5281/zenodo.53155">corner.py</a></em>. Zenodo mints a DOI for each software version and also a so-called concept DOI. The concept DOI is available for when you don’t want to cite a specific software version, but just “the latest”. The crucial step that make this interoperability possible is the authentication within Zenodo, using your Github account, allowing Zenodo to view and retrieve your repositories on Github. For details, see: https://guides.github.com/activities/citable-code/.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2018_02_05_zenodo.png" />
+</div>
+
+<p>The next step is to go through the reference data in the ADS holdings and see if we find any evidence of the Zenodo DOIs, corresponding with the different versions of both <em>triangle.py</em> and <em>corner.py</em>. The table below shows the results (as of Feburary 5, 2018).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: right"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10.5281/zenodo.10598</td>
+      <td style="text-align: center">triangle</td>
+      <td style="text-align: right">2</td>
+    </tr>
+    <tr>
+      <td>10.5281/zenodo.11020</td>
+      <td style="text-align: center">triangle</td>
+      <td style="text-align: right">40</td>
+    </tr>
+    <tr>
+      <td>10.5281/zenodo.45906</td>
+      <td style="text-align: center">corner</td>
+      <td style="text-align: right">16</td>
+    </tr>
+    <tr>
+      <td>10.5281/zenodo.53155</td>
+      <td style="text-align: center">corner</td>
+      <td style="text-align: right">7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This analysis shows that authors are already citing the different versions of both modules, but also that it results in a significant amount of additional citations!</p>
+
+<p>The bottom line is that all of this is great in many ways. From the researcher’s perspective, it provides proper attribution for their role (and impact) as software developer and it provides them with a means to monitor on how their software is being used, specifically with regards to versions. The fact that, in this process, software gets deposited in a repository and proper metadata is attached and registered, is great for the community and science in general. It supports the goals of preservation and reproducibility. In this way, these efforts greatly improve the accurate recording of crucial aspects of the research lifecycle. Of course, none of this goes anywhere if the research community does not participate. There was a special session on software citation during the 231st AAS Meeting in National Harbor (session 307 Astronomy Software Publishing: Community Roles and Services, in National Harbor 2, 10:00 am – 11:30 am). If you are interested to hear more about this project, or software citation in general, please write us (<a href="ads@cfa.harvard.edu">ads@cfa.harvard.edu</a>). More details on the Asclepias project can be found here:</p>
+
+<ul>
+  <li>Muench, August; Accomazzi, Alberto; Holm Nielsen, Lars (2017), “Asclepias: Enabling software citation &amp; discovery workflows”, poster presented at LISA VIII conference (https://doi.org/10.5281/zenodo.803474)</li>
+  <li>Henneken, Edwin, Accomazzi, Alberto, Blanco-Cuaresma, Sergi, Muench, August, &amp; Nielsen, Lars Holm. (2017). “Asclepias - Capturing Software Citations in Astronomy”, talk given at the Metrics workshop during the 2017 ASIS&amp;T Annual Meeting (http://doi.org/10.5281/zenodo.1011088)</li>
+</ul>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

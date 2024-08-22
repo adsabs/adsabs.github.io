@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <title>
+    SciX Models and Datasets
+  </title>
+  <meta name="description" content="All your questions will be answered here." />
+
+  <!-- Disqus tags -->
+  <meta
+    property="og:description"
+    content="SciX Models and Datasets"
+  />
+  <meta
+    property="og:image"
+    content="https://ui.adsabs.harvard.edu/blog/images/blog_2023-10-23-ads-models-and-datasets.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/scixblog/ads-models-and-datasets"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+    } else {
+      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+    }
+  </script>
+
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+          alt="scix icon"
+        />
+        <b>&nbsp;SciX</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/scixabout/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About SciX
+              </a>
+            </li>
+            <li>
+              <a href="/scixblog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/scixhelp/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                SciX Help Pages
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-scix-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://scixplorer.org/">
+          <img
+            src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+            alt="The SciX Logo"
+          />
+          Science Explorer
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/scixblog">all blog posts</a> |
+        <a href="/scixblog/news">news</a> |
+        <a href="/scixblog/general">general</a> |
+        <a href="/scixblog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">SciX Models and Datasets</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Thomas Allen
+              
+        
+    
+
+
+    <b>(ADS Backend Developer)</b>
+
+</h3>
+      <h3 class="post-date">23 Oct 2023</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<h3 id="introduction">Introduction</h3>
+
+<p>The Astrophysics Data System (ADS) has been developing Natural Language Processing tools and datasets to further enhance its data holdings and services.  As part of this effort, we have been building and curating datasets to train deep learning models. These new tools, and more that will build upon them, will both provide a richer user experience and allow internal processes to be scaled-up.  Further, we expect that these tools will be useful to researchers in a variety of fields.  This post will describe our models and datasets for interested researchers.  We are strong proponents of open science, and we endeavor to make our datasets publicly available and easy to access. This post contains links to our curated datasets and will be updated as more datasets are created. The models are licensed under an <a href="https://opensource.org/license/mit/">MIT license</a> and the datasets are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 license</a>.  Briefly, these licenses allow researchers to use, share, modify or build upon these works as long as appropriate attribution is given.  If there are any questions about fair usage, contact us at <a href="mailto:adshelp@cfa.harvard.edu">ADS help</a>.</p>
+
+<h3 id="astrobert">astroBERT</h3>
+
+<p>To support broad community participation in these efforts, we have recently released the <a href="https://huggingface.co/adsabs/astroBERT">astroBERT</a> astrophysics-specific language model. A language model is a statistical representation of the relationships among words, and even sub-word units called tokens, in a corpus of text.  By creating a model that is astronomy specific, we can better account for the nuances of the language used in the astrophysical literature.</p>
+
+<p>astroBERT is built using a proven deep learning architecture.  Specifically it is an <a href="https://ui.adsabs.harvard.edu/abs/2018arXiv181004805D/abstract">encoder</a> based <a href="https://ui.adsabs.harvard.edu/abs/2017arXiv170603762V/abstract">transformer</a> model (these blogs discuss <a href="https://medium.com/@yulemoon/detailed-explanations-of-transformer-step-by-step-dc32d90b3a98">transformer models</a> and their <a href="https://medium.com/@yulemoon/an-in-depth-look-at-the-transformer-based-models-22e5f5d17b6b">variations</a>) that was trained on ~400k astrophysics articles (3.8 billion tokens).  The training took about 50 days on dual Nvidia V100 GPUs.  All technologies used to build the model are open source.</p>
+
+<p>astroBERT was trained using <a href="https://huggingface.co/docs/transformers/main/tasks/masked_language_modeling">Masked Language Model</a> (MLM) and <a href="https://www.geeksforgeeks.org/next-sentence-prediction-using-bert/#">Next Sentence Prediction</a> (NSP) tasks.  For the MLM tasks, a word within a sentence is removed, and the model tries to predict what that word is.  For example: The [MASK] medium is the gas and dust between stars. For the NSP task, two sentences are presented and the model tries to determine if the second sentence follows the first.  Publicly available versions of astroBERT include:</p>
+
+<ul>
+  <li>Base astroBERT - version trained using MLM + NSP</li>
+  <li>NER-DEAL - fine-tuned version of astroBert for NER task</li>
+  <li>SciX Categorizer - fine-tuned version of astroBERT for classification task</li>
+</ul>
+
+<p>Further technical details about astroBERT can be found in the following <a href="https://arxiv.org/abs/2112.00590">paper</a>. The astroBERT page on Hugging Face includes documentation about how to access and utilize the model, as well as all publicly available versions.</p>
+
+<h3 id="detecting-entities-in-the-astrophysical-literature-deal">Detecting Entities in the Astrophysical Literature (DEAL)</h3>
+
+<p>The <a href="https://huggingface.co/datasets/adsabs/WIESP2022-NER">Detecting Entities in the Astrophysical Literature</a> (DEAL) dataset is a curated dataset for Named Entity Recognition.  This task involves identifying predetermined entities in text, such as Organization or Location.  The dataset consists of text fragments obtained from the astrophysical literature. The journals that the text fragments were obtained from are the Astrophysical Journal, Astronomy &amp; Astrophysics, and the Monthly Notices of the Royal Astronomical Society. All text fragments are from recent publications, between the years of 2015 and 2021. Each text fragment is roughly a paragraph in length, and originates from one of two parts of an article. The first are fragments from the fulltext, consisting of all sections of the body of the article, excluding the abstract and acknowledgments sections. The second are fragments from the acknowledgments section of the article.  Roughly 6000 text snippets were labeled, containing over 147,000 labeled entities. Figure 1 shows an example of a manually labeled text snippet.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2023-10-23-DEAL-example.png" />
+<br />
+<em>Figure 1: Example of a manually labeled full text snippet.
+</em>
+</div>
+<p><br /></p>
+
+<p>Thirty-three different entities, composed of general and astrophysical entities, were manually labeled in each text fragment by a domain expert. The entities that were labeled cover a number of broad categories. One category contains common NER entities, such as Person, Organization, and Location. A second category contains entities related to astrophysical facilities, such as Observatory, Telescope and Instrument. A third category contains entities related to research funding and proposals, such as Grant or Proposal. A fourth category contains entities relating to astronomical objects and regions of the sky. Finally there is a category that contains various entities that are found in the literature, such as URLs and citations.  A full list of the named entities with examples can be found <a href="https://ui.adsabs.harvard.edu/WIESP/2022/LabelDefinitions">here</a>.  Figure 2 shows the counts for the categories of entities, color coded by source with the full text in blue and acknowledgments in red.  It is worth noting two points about this distribution.  First, the categories are highly unbalanced, with some categories having orders of magnitude more counts than others.  Second, the distribution of categories is different for the full text and the acknowledgements.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2023-10-23-DEAL-counts.png" />
+<br />
+<em>Figure 2: Counts of labeled entities.  Red denotes entities labeled in the Acknowledgments section of a paper, and blue denotes entities labeled in the body of a paper.
+</em>
+</div>
+<p><br /></p>
+
+<p>The DEAL dataset was used as part of a shared task in the <a href="https://ui.adsabs.harvard.edu/WIESP/2022/">First Workshop on Information Extraction from the Scientific Literature</a> (WIESP 2022) as part of the AACL-IJCNLP 2022 conference.  The proceedings of this workshop are part of the <a href="https://aclanthology.org/volumes/2022.wiesp-1/">ACL Anthology</a>.</p>
+
+<h3 id="function-of-citation-in-astrophysics-literature-focal">Function Of Citation in Astrophysics Literature (FOCAL)</h3>
+
+<p>The <a href="https://huggingface.co/datasets/adsabs/FOCAL">Function Of Citation in Astrophysics Literature</a> (FOCAL) dataset is a curated dataset for citation context analysis.  Citation context analysis  “facilitates the syntactic and semantic analysis of the contents of the citation context to understand how and why authors discuss others research work” (<a href="https://direct.mit.edu/qss/article/2/4/1170/107610/A-meta-analysis-of-semantic-classification-of">Kunnath et al. 2021</a>).  Citation context analysis includes the determination of citation function, or the reason an author is including a particular citation; citation polarity, or the author’s sentiment towards the cited work, either positive or negative; and citation impact, or the importance of a cited work to the citing work.</p>
+
+<p>We are considering a set of eight potential citation functions.  These are:</p>
+
+<ul>
+  <li>Background: The cited work provides background information needed to understand the citing work</li>
+  <li>Motivation: The cited work is motivating the citing work</li>
+  <li>Uses: The citing work used a result from the cited work</li>
+  <li>Extends: The citing work extends a result from the cited work.</li>
+  <li>Similarities: Results from the cited work are similar to results from the citing (or another) work.</li>
+  <li>Differences: Results from the cited work are different to results from the citing (or another) work.</li>
+  <li>Compare/Contrast: Results are being compared in a neutral manner between the cited and he citing (or another) work.</li>
+  <li>Future Work: Citing work contains implications for future research that are often beyond the scope of the citing work.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Background</td>
+      <td>2435</td>
+    </tr>
+    <tr>
+      <td>Uses</td>
+      <td>1637</td>
+    </tr>
+    <tr>
+      <td>Compare/Contrast</td>
+      <td>933</td>
+    </tr>
+    <tr>
+      <td>Similarities</td>
+      <td>401</td>
+    </tr>
+    <tr>
+      <td>Motivations</td>
+      <td>359</td>
+    </tr>
+    <tr>
+      <td>Diferences</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <td>Future Work</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>Extends</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>6023</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Table 1: Counts for each citation function category in the FOCAL dataset.</em></p>
+
+<p><br /></p>
+
+<p>The snippets that contain the citations are obtained from over 25,000 astronomy articles, from the same journals and publication years as the DEAL dataset.  From this set of articles, over 2 million citations and their context are harvested.  Further, only citations with context sizes between 2,000 and 10,000 characters are selected. This is to allow the determination of what portions of the context are most relevant to understanding the citation’s function.  A domain area expert manually examined these text snippets to determine the citation function as well as label the relevant context.  In total there are 6023 instances of annotated citations.  Table 1 shows the number of instances for each citation function category.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2023-10-23-FOCAL_example.png" />
+<br />
+<em>Figure 3: An example of a manually labeled citation context text snippet.
+</em>
+</div>
+<p><br /></p>
+
+<p>There are a number of open questions in citation context analysis research that we hope this dataset will help address.  These include determining what the necessary text is to understand a citation’s function, as well as addressing multiple functions for a given cited work.  Figure 3 shows an example of a manually labeled citation context.  In this example the same work is cited a number of times within the text snippet, and these citation instances serve different functions.</p>
+
+<p>The FOCAL dataset will be used for the <a href="https://ui.adsabs.harvard.edu/WIESP/2023/shared_task_1">Second Workshop on Information Extraction from the Scientific Literature</a> (WIESP 2023) part of <a href="http://www.ijcnlp-aacl2023.org/">IJCNLP-AACL 2023</a>.</p>
+
+<h3 id="we-want-to-hear-from-you">We Want to Hear From You</h3>
+
+<p>If you find any of these datasets useful in your research or if you are working on similar efforts, we would like to hear from you.  You can contact the ADS Team at <a href="mailto:adshelp@cfa.harvard.edu">ADS help</a>.</p>
+
+<h3 id="linked-resources">Linked Resources</h3>
+
+<p>astroBERT model: <a href="https://huggingface.co/adsabs/astroBERT">https://huggingface.co/adsabs/astroBERT</a></p>
+
+<p>astroBERT paper: <a href="https://arxiv.org/abs/2112.00590">https://arxiv.org/abs/2112.00590</a></p>
+
+<p>WEISP 2022 Workshop: <a href="https://ui.adsabs.harvard.edu/WIESP/2022/">https://ui.adsabs.harvard.edu/WIESP/2022/</a></p>
+
+<p>WEISP Proceedings: <a href="https://aclanthology.org/volumes/2022.wiesp-1/">https://aclanthology.org/volumes/2022.wiesp-1/</a></p>
+
+<p>DEAL Dataset: <a href="https://huggingface.co/datasets/adsabs/WIESP2022-NER">https://huggingface.co/datasets/adsabs/WIESP2022-NER</a></p>
+
+<p>FOCAL Dataset <a href="https://huggingface.co/datasets/adsabs/FOCAL">https://huggingface.co/datasets/adsabs/FOCAL</a></p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          help[at]scixplorer.org
+        </p>
+        <p>
+          SciX is a project created by the Astrophysics Data System (ADS), which
+          is operated by the Smithsonian Astrophysical Observatory under NASA
+          Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/scixabout/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About SciX
+          </a>
+        </li>
+        <li>
+          <a href="/scixhelp/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> SciX Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/scixabout/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@SciX
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/scixcommunity"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @scixcommunity
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

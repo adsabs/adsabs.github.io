@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/ads-curation_model_f1.png">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/blog/curation-model"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2023-12-08 22:03:10 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The ADS Curation Model | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="The ADS Curation Model" />
+<meta name="author" content="Edwin Henneken" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction The basic intellectual structure of the ADS can be described using a bullseye model, represented by figure 1. The three rings in this diagram represent different levels of curation applied to the bibliographic content in the ADS. Levels of curation and completeness are different in each ring. The inner region, representing the Core Collection, has the highest level of curation; this segment of the ADS holdings represents that part of scholarly publications where the ADS is considered to be authoritative. In this collection, our users can expect the ADS to be complete, coverage and citation-wise. It is important to keep the following caveat in mind: publications in one ring for one discipline may belong to the other ring in a different discipline. For this reason we implement the following rule: if a journal for any of the disciplines is assigned to the Inner Ring, it should be considered to belong there for all disciplines. In the following sections we consider the following disciplines: Astronomy &amp; Astrophysics Heliophysics (Solar Physics, Space Weather &amp; Aeronomy) Planetary Science Figure 1: ADS&#39;s tiered curation model. The core collection represents disciplines where its curation is strongest and its coverage is authoritative. The surrounding tiers are connected to the core via the citation network. Most of our curation efforts for the core collection go into maintaining a high level of accuracy, quality and completeness, ranging from the main refereed literature to conference proceedings, theses, gray literature, software, and links to data products. We also nurture all important collaborations necessary for this Core Collection. The Inner Ring consists of publications citing/cited by those in the Core Collection and the Outer Ring consists of publications citing/cited by those in the Inner Ring. These rules are augmented with an additional filter that guarantees that the material added to this ring cites the publications in the Core Collection “with a sufficiently high frequency, in a certain time frame”. Since this is a qualitative statement, we will need heuristics to translate this into a quantitative statement. For example, one contribution to the Inner Ring in Astronomy are those journals being cited by the core astronomy journals, but are not any of the core astronomy journals. The Core Collection Historically, the ADS maintained a separate core collections for astronomy, but now that we are expanding our coverage, we are merging the additional disciplines into one definitive Core Collection. For astronomy, we considered the following journals to be the ones that constitute the Core Collection for the Astronomy database: The Astrophysical Journal (including Letters and Supplement Series) The Astronomical Journal Monthly Notices of the R.A.S. Astronomy &amp; Astrophysics (including Supplement) Annual Reviews of Astronomy &amp; Astrophysics Publications of the Astronomical Soviety of the Pacific Physical Review D (astronomy content) The reasoning behind this is mostly qualitative. One of the takeaways in our blog series Citations to Astronomy Journals (parts 1, 2 and 3) is the fact that the publication venues with the most influential research articles are not an immutable set of journals. How can we approach this in a more quantitative way? Any quantitative selection criteria are unavoidably based on journal metrics and just like any metric, journal metrics are not without controversy. We touched on this in our blog Citations to Astronomy Journals 3: Journal Impact. To identify journals to go into our Core Collection, we decided to use the so-called Journal Eigenfactor as the main indicator for journal importance. The Journal Eigenfactor Imagine ourselves in a library with actual stacks. This library has an android librarian with an energy source that never needs to be recharged and is completely failsafe, so the android librarian can keep working infinitely long. Being an android, this librarian is equipped with a perfect random generator which will allow it to truly, randomly select a journal volume from the stacks. Next, from all journal articles cited in this particular journal volume, the librarian randomly selects one. In the following step, the librarian walks over to the shelf with the journal volume that holds this cited article, takes this volume, and again selects a random citation. Rinse and repeat, ad infinitum. So, what happens when the android librarian draws a citation pointing to a journal that is not in our library? At each time step, with probability α our android librarian proceeds as before. With probability 1-α, it teleports to a node completely at random; it’s in the android’s programming to know how to do this. This way we prevent the possibility of our android librarian getting stuck on a dangling node. In terms of the graph, this means that each so-called dangling node is replaced by one that connects back to the graph using this teleportation mechanism. So, what happens during the journey of the android librarian? The android keeps records, specifically of how often a certain journal is visited. These notes will show, after a while, that most of the time is spent in nodes representing journals that are highly cited by journals that are also highly cited. For each journal, a number is calculated representing how often it is seen. These numbers are stored as a vector in the positronic brain, in which each position corresponds to a specific journal. It turns out that the numbers in this vector start to change much more slowly over time, in fact, they converge to a vector that is stationary. Each entry in this stationary vector corresponds with the so-called Eigenfactor for the journal corresponding to the position in the vector. Without going into the mathematical details, the Eigenfactor of any journal can be interpreted as follows: “the Eigenfactor calculates the percentage of time you would spend at each journal” (West, 2008). There are some compelling reasons to favor the Eigenfactor. Some of them are the fact that it weights citations with the importance of the citing journals, the fact that it exploits the entire citation network and ignores self-citations and that it has a solid mathematical underpinning and an intuitive stochastic interpretation. Another reason for favoring the Eigenfactor is the fact that it uses a 5-year window to gather citations. This allows, in general, a broader evaluation of journal citations, in particular for disciplines with longer citing half lives. Figure 2: Directed network based on citation relationship between journals. The nodes represent journals. This is a fictitious network, for illustration purposes only. At its core, the algorithm that calculates the Eigenfactor values is the well-known PageRank algorithm, which properly deals with the fact that journals are all interconnected in a citation network (see figure 2, showing a fictitious network). The Journal Citation Reports (JCR), published by Clarivate Analytics on the Web of Science platform, provides the Journal Eigenfactor on an annual basis. However, we prefer not to have to depend on an external data source for our decisions. That is why we made a comparison between Journal Eigenfactors calculated using ADS citation data and those listed in the JCR for a number of years. The results are shown in figure 3. The fact that values are not equal is no surprise, because the citation networks in the ADS and Web of Science are different. The encouraging result is that the values have a very strong correlation. Figure 3: Comparison between Eigenfactors calculated from ADS data and provided in the JCR. The categorization is based on journal assignments provided in the JCR. Next, we compare journal ranking using Eigenfactor values. In other words, if we create a ranked list of journals, how does, say, the top 100 compare with one based on JCR values? In the end, this is what we are looking for. The actual Eigenfactor values are not relevant, since we are only interested in relative values. It is the ranked list that will provide us with the candidates for the Core Collection. We generated and compared the top 100 for the period 2010 thru 2021. For the first decade the top 100 lists are identical; for 2020 and 2021 they only differ in the very tail. For 2020 the ADS list contains the Bulgarian Astronomical Journal (bibstem BlgAJ), where the JCR has Astrophysics (bibstem Ap). For 2021 the ADS list contains Contributions of the Astronomical Observatory Skalnate Pleso (bibstem CoSka), where the JCR has again Astrophysics (bibstem Ap). For both journals, present in the ADS list, Web of Science is highly incomplete. The ADS Core Collection For the Core Collection we add the filter that these journals are the top N of the ranked list, such that these journals represent at least 95% of the total sum of Eigenfactor values. This is a meaningful filter, since Eigenfactor values are additive. The next question is whether it will be sufficient to just accept these lists “as is”? Obviously, these lists need curation. The ADS curation team needs to assess the lists generated. The most likely scenario is that the team feels that a particular journal belongs in the Core Collection, even though the algorithm did not select it. For example, it is possible that a journal with a lot of cross-disciplinary content did not get included. While the ADS citation network is the best one available for core astronomy disciplines, it has known gaps (sometimes significant) for disciplines in the “outskirts” of astronomy and astrophysics (like astrochemistry, astrobiology, astrophotonics, archaeoastronomy and astroinformatics). It is not uncommon for articles in a journal like Astrobiology to have reference lists in the ADS that are only 50% complete. The ADS is also aware that IEEE content is very important for many of its users; by identifying IEEE content as belonging to the Core Collection we can assure completeness will become a top priority. Another possibility is that a journal is too “young” to have acquired a position in the citation network to get a sufficiently large Eigenfactor value; in this case it is purely a qualitative argument to still include it in the Core Collection, assuming that eventually it will position itself as an influential journal within the citation network. The algorithm, in combination with additional curation work, has resulted in a list of 207 journals. We will reevaluate this list on a regular basis. We still have to determine what the cadence of this reevaluation will be. The stage of research fields and publication venues is a dynamic one; boundaries between disciplines become less distinct, multimessenger science becomes more prolific and techniques from one discipline turn out to be highly applicable to other ones (like e.g. one developed in astrophysics to cancer research)." />
+<meta property="og:description" content="Introduction The basic intellectual structure of the ADS can be described using a bullseye model, represented by figure 1. The three rings in this diagram represent different levels of curation applied to the bibliographic content in the ADS. Levels of curation and completeness are different in each ring. The inner region, representing the Core Collection, has the highest level of curation; this segment of the ADS holdings represents that part of scholarly publications where the ADS is considered to be authoritative. In this collection, our users can expect the ADS to be complete, coverage and citation-wise. It is important to keep the following caveat in mind: publications in one ring for one discipline may belong to the other ring in a different discipline. For this reason we implement the following rule: if a journal for any of the disciplines is assigned to the Inner Ring, it should be considered to belong there for all disciplines. In the following sections we consider the following disciplines: Astronomy &amp; Astrophysics Heliophysics (Solar Physics, Space Weather &amp; Aeronomy) Planetary Science Figure 1: ADS&#39;s tiered curation model. The core collection represents disciplines where its curation is strongest and its coverage is authoritative. The surrounding tiers are connected to the core via the citation network. Most of our curation efforts for the core collection go into maintaining a high level of accuracy, quality and completeness, ranging from the main refereed literature to conference proceedings, theses, gray literature, software, and links to data products. We also nurture all important collaborations necessary for this Core Collection. The Inner Ring consists of publications citing/cited by those in the Core Collection and the Outer Ring consists of publications citing/cited by those in the Inner Ring. These rules are augmented with an additional filter that guarantees that the material added to this ring cites the publications in the Core Collection “with a sufficiently high frequency, in a certain time frame”. Since this is a qualitative statement, we will need heuristics to translate this into a quantitative statement. For example, one contribution to the Inner Ring in Astronomy are those journals being cited by the core astronomy journals, but are not any of the core astronomy journals. The Core Collection Historically, the ADS maintained a separate core collections for astronomy, but now that we are expanding our coverage, we are merging the additional disciplines into one definitive Core Collection. For astronomy, we considered the following journals to be the ones that constitute the Core Collection for the Astronomy database: The Astrophysical Journal (including Letters and Supplement Series) The Astronomical Journal Monthly Notices of the R.A.S. Astronomy &amp; Astrophysics (including Supplement) Annual Reviews of Astronomy &amp; Astrophysics Publications of the Astronomical Soviety of the Pacific Physical Review D (astronomy content) The reasoning behind this is mostly qualitative. One of the takeaways in our blog series Citations to Astronomy Journals (parts 1, 2 and 3) is the fact that the publication venues with the most influential research articles are not an immutable set of journals. How can we approach this in a more quantitative way? Any quantitative selection criteria are unavoidably based on journal metrics and just like any metric, journal metrics are not without controversy. We touched on this in our blog Citations to Astronomy Journals 3: Journal Impact. To identify journals to go into our Core Collection, we decided to use the so-called Journal Eigenfactor as the main indicator for journal importance. The Journal Eigenfactor Imagine ourselves in a library with actual stacks. This library has an android librarian with an energy source that never needs to be recharged and is completely failsafe, so the android librarian can keep working infinitely long. Being an android, this librarian is equipped with a perfect random generator which will allow it to truly, randomly select a journal volume from the stacks. Next, from all journal articles cited in this particular journal volume, the librarian randomly selects one. In the following step, the librarian walks over to the shelf with the journal volume that holds this cited article, takes this volume, and again selects a random citation. Rinse and repeat, ad infinitum. So, what happens when the android librarian draws a citation pointing to a journal that is not in our library? At each time step, with probability α our android librarian proceeds as before. With probability 1-α, it teleports to a node completely at random; it’s in the android’s programming to know how to do this. This way we prevent the possibility of our android librarian getting stuck on a dangling node. In terms of the graph, this means that each so-called dangling node is replaced by one that connects back to the graph using this teleportation mechanism. So, what happens during the journey of the android librarian? The android keeps records, specifically of how often a certain journal is visited. These notes will show, after a while, that most of the time is spent in nodes representing journals that are highly cited by journals that are also highly cited. For each journal, a number is calculated representing how often it is seen. These numbers are stored as a vector in the positronic brain, in which each position corresponds to a specific journal. It turns out that the numbers in this vector start to change much more slowly over time, in fact, they converge to a vector that is stationary. Each entry in this stationary vector corresponds with the so-called Eigenfactor for the journal corresponding to the position in the vector. Without going into the mathematical details, the Eigenfactor of any journal can be interpreted as follows: “the Eigenfactor calculates the percentage of time you would spend at each journal” (West, 2008). There are some compelling reasons to favor the Eigenfactor. Some of them are the fact that it weights citations with the importance of the citing journals, the fact that it exploits the entire citation network and ignores self-citations and that it has a solid mathematical underpinning and an intuitive stochastic interpretation. Another reason for favoring the Eigenfactor is the fact that it uses a 5-year window to gather citations. This allows, in general, a broader evaluation of journal citations, in particular for disciplines with longer citing half lives. Figure 2: Directed network based on citation relationship between journals. The nodes represent journals. This is a fictitious network, for illustration purposes only. At its core, the algorithm that calculates the Eigenfactor values is the well-known PageRank algorithm, which properly deals with the fact that journals are all interconnected in a citation network (see figure 2, showing a fictitious network). The Journal Citation Reports (JCR), published by Clarivate Analytics on the Web of Science platform, provides the Journal Eigenfactor on an annual basis. However, we prefer not to have to depend on an external data source for our decisions. That is why we made a comparison between Journal Eigenfactors calculated using ADS citation data and those listed in the JCR for a number of years. The results are shown in figure 3. The fact that values are not equal is no surprise, because the citation networks in the ADS and Web of Science are different. The encouraging result is that the values have a very strong correlation. Figure 3: Comparison between Eigenfactors calculated from ADS data and provided in the JCR. The categorization is based on journal assignments provided in the JCR. Next, we compare journal ranking using Eigenfactor values. In other words, if we create a ranked list of journals, how does, say, the top 100 compare with one based on JCR values? In the end, this is what we are looking for. The actual Eigenfactor values are not relevant, since we are only interested in relative values. It is the ranked list that will provide us with the candidates for the Core Collection. We generated and compared the top 100 for the period 2010 thru 2021. For the first decade the top 100 lists are identical; for 2020 and 2021 they only differ in the very tail. For 2020 the ADS list contains the Bulgarian Astronomical Journal (bibstem BlgAJ), where the JCR has Astrophysics (bibstem Ap). For 2021 the ADS list contains Contributions of the Astronomical Observatory Skalnate Pleso (bibstem CoSka), where the JCR has again Astrophysics (bibstem Ap). For both journals, present in the ADS list, Web of Science is highly incomplete. The ADS Core Collection For the Core Collection we add the filter that these journals are the top N of the ranked list, such that these journals represent at least 95% of the total sum of Eigenfactor values. This is a meaningful filter, since Eigenfactor values are additive. The next question is whether it will be sufficient to just accept these lists “as is”? Obviously, these lists need curation. The ADS curation team needs to assess the lists generated. The most likely scenario is that the team feels that a particular journal belongs in the Core Collection, even though the algorithm did not select it. For example, it is possible that a journal with a lot of cross-disciplinary content did not get included. While the ADS citation network is the best one available for core astronomy disciplines, it has known gaps (sometimes significant) for disciplines in the “outskirts” of astronomy and astrophysics (like astrochemistry, astrobiology, astrophotonics, archaeoastronomy and astroinformatics). It is not uncommon for articles in a journal like Astrobiology to have reference lists in the ADS that are only 50% complete. The ADS is also aware that IEEE content is very important for many of its users; by identifying IEEE content as belonging to the Core Collection we can assure completeness will become a top priority. Another possibility is that a journal is too “young” to have acquired a position in the citation network to get a sufficiently large Eigenfactor value; in this case it is purely a qualitative argument to still include it in the Core Collection, assuming that eventually it will position itself as an influential journal within the citation network. The algorithm, in combination with additional curation work, has resulted in a list of 207 journals. We will reevaluate this list on a regular basis. We still have to determine what the cadence of this reevaluation will be. The stage of research fields and publication venues is a dynamic one; boundaries between disciplines become less distinct, multimessenger science becomes more prolific and techniques from one discipline turn out to be highly applicable to other ones (like e.g. one developed in astrophysics to cancer research)." />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/blog/curation-model" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/blog/curation-model" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="The ADS Curation Model" />
+<meta name="twitter:site" content="@adsabs" />
+<meta name="twitter:creator" content="@Edwin Henneken" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Edwin Henneken"},"dateModified":"2023-12-08T22:03:10+00:00","datePublished":"2023-03-20T00:00:00+00:00","description":"Introduction The basic intellectual structure of the ADS can be described using a bullseye model, represented by figure 1. The three rings in this diagram represent different levels of curation applied to the bibliographic content in the ADS. Levels of curation and completeness are different in each ring. The inner region, representing the Core Collection, has the highest level of curation; this segment of the ADS holdings represents that part of scholarly publications where the ADS is considered to be authoritative. In this collection, our users can expect the ADS to be complete, coverage and citation-wise. It is important to keep the following caveat in mind: publications in one ring for one discipline may belong to the other ring in a different discipline. For this reason we implement the following rule: if a journal for any of the disciplines is assigned to the Inner Ring, it should be considered to belong there for all disciplines. In the following sections we consider the following disciplines: Astronomy &amp; Astrophysics Heliophysics (Solar Physics, Space Weather &amp; Aeronomy) Planetary Science Figure 1: ADS&#39;s tiered curation model. The core collection represents disciplines where its curation is strongest and its coverage is authoritative. The surrounding tiers are connected to the core via the citation network. Most of our curation efforts for the core collection go into maintaining a high level of accuracy, quality and completeness, ranging from the main refereed literature to conference proceedings, theses, gray literature, software, and links to data products. We also nurture all important collaborations necessary for this Core Collection. The Inner Ring consists of publications citing/cited by those in the Core Collection and the Outer Ring consists of publications citing/cited by those in the Inner Ring. These rules are augmented with an additional filter that guarantees that the material added to this ring cites the publications in the Core Collection “with a sufficiently high frequency, in a certain time frame”. Since this is a qualitative statement, we will need heuristics to translate this into a quantitative statement. For example, one contribution to the Inner Ring in Astronomy are those journals being cited by the core astronomy journals, but are not any of the core astronomy journals. The Core Collection Historically, the ADS maintained a separate core collections for astronomy, but now that we are expanding our coverage, we are merging the additional disciplines into one definitive Core Collection. For astronomy, we considered the following journals to be the ones that constitute the Core Collection for the Astronomy database: The Astrophysical Journal (including Letters and Supplement Series) The Astronomical Journal Monthly Notices of the R.A.S. Astronomy &amp; Astrophysics (including Supplement) Annual Reviews of Astronomy &amp; Astrophysics Publications of the Astronomical Soviety of the Pacific Physical Review D (astronomy content) The reasoning behind this is mostly qualitative. One of the takeaways in our blog series Citations to Astronomy Journals (parts 1, 2 and 3) is the fact that the publication venues with the most influential research articles are not an immutable set of journals. How can we approach this in a more quantitative way? Any quantitative selection criteria are unavoidably based on journal metrics and just like any metric, journal metrics are not without controversy. We touched on this in our blog Citations to Astronomy Journals 3: Journal Impact. To identify journals to go into our Core Collection, we decided to use the so-called Journal Eigenfactor as the main indicator for journal importance. The Journal Eigenfactor Imagine ourselves in a library with actual stacks. This library has an android librarian with an energy source that never needs to be recharged and is completely failsafe, so the android librarian can keep working infinitely long. Being an android, this librarian is equipped with a perfect random generator which will allow it to truly, randomly select a journal volume from the stacks. Next, from all journal articles cited in this particular journal volume, the librarian randomly selects one. In the following step, the librarian walks over to the shelf with the journal volume that holds this cited article, takes this volume, and again selects a random citation. Rinse and repeat, ad infinitum. So, what happens when the android librarian draws a citation pointing to a journal that is not in our library? At each time step, with probability α our android librarian proceeds as before. With probability 1-α, it teleports to a node completely at random; it’s in the android’s programming to know how to do this. This way we prevent the possibility of our android librarian getting stuck on a dangling node. In terms of the graph, this means that each so-called dangling node is replaced by one that connects back to the graph using this teleportation mechanism. So, what happens during the journey of the android librarian? The android keeps records, specifically of how often a certain journal is visited. These notes will show, after a while, that most of the time is spent in nodes representing journals that are highly cited by journals that are also highly cited. For each journal, a number is calculated representing how often it is seen. These numbers are stored as a vector in the positronic brain, in which each position corresponds to a specific journal. It turns out that the numbers in this vector start to change much more slowly over time, in fact, they converge to a vector that is stationary. Each entry in this stationary vector corresponds with the so-called Eigenfactor for the journal corresponding to the position in the vector. Without going into the mathematical details, the Eigenfactor of any journal can be interpreted as follows: “the Eigenfactor calculates the percentage of time you would spend at each journal” (West, 2008). There are some compelling reasons to favor the Eigenfactor. Some of them are the fact that it weights citations with the importance of the citing journals, the fact that it exploits the entire citation network and ignores self-citations and that it has a solid mathematical underpinning and an intuitive stochastic interpretation. Another reason for favoring the Eigenfactor is the fact that it uses a 5-year window to gather citations. This allows, in general, a broader evaluation of journal citations, in particular for disciplines with longer citing half lives. Figure 2: Directed network based on citation relationship between journals. The nodes represent journals. This is a fictitious network, for illustration purposes only. At its core, the algorithm that calculates the Eigenfactor values is the well-known PageRank algorithm, which properly deals with the fact that journals are all interconnected in a citation network (see figure 2, showing a fictitious network). The Journal Citation Reports (JCR), published by Clarivate Analytics on the Web of Science platform, provides the Journal Eigenfactor on an annual basis. However, we prefer not to have to depend on an external data source for our decisions. That is why we made a comparison between Journal Eigenfactors calculated using ADS citation data and those listed in the JCR for a number of years. The results are shown in figure 3. The fact that values are not equal is no surprise, because the citation networks in the ADS and Web of Science are different. The encouraging result is that the values have a very strong correlation. Figure 3: Comparison between Eigenfactors calculated from ADS data and provided in the JCR. The categorization is based on journal assignments provided in the JCR. Next, we compare journal ranking using Eigenfactor values. In other words, if we create a ranked list of journals, how does, say, the top 100 compare with one based on JCR values? In the end, this is what we are looking for. The actual Eigenfactor values are not relevant, since we are only interested in relative values. It is the ranked list that will provide us with the candidates for the Core Collection. We generated and compared the top 100 for the period 2010 thru 2021. For the first decade the top 100 lists are identical; for 2020 and 2021 they only differ in the very tail. For 2020 the ADS list contains the Bulgarian Astronomical Journal (bibstem BlgAJ), where the JCR has Astrophysics (bibstem Ap). For 2021 the ADS list contains Contributions of the Astronomical Observatory Skalnate Pleso (bibstem CoSka), where the JCR has again Astrophysics (bibstem Ap). For both journals, present in the ADS list, Web of Science is highly incomplete. The ADS Core Collection For the Core Collection we add the filter that these journals are the top N of the ranked list, such that these journals represent at least 95% of the total sum of Eigenfactor values. This is a meaningful filter, since Eigenfactor values are additive. The next question is whether it will be sufficient to just accept these lists “as is”? Obviously, these lists need curation. The ADS curation team needs to assess the lists generated. The most likely scenario is that the team feels that a particular journal belongs in the Core Collection, even though the algorithm did not select it. For example, it is possible that a journal with a lot of cross-disciplinary content did not get included. While the ADS citation network is the best one available for core astronomy disciplines, it has known gaps (sometimes significant) for disciplines in the “outskirts” of astronomy and astrophysics (like astrochemistry, astrobiology, astrophotonics, archaeoastronomy and astroinformatics). It is not uncommon for articles in a journal like Astrobiology to have reference lists in the ADS that are only 50% complete. The ADS is also aware that IEEE content is very important for many of its users; by identifying IEEE content as belonging to the Core Collection we can assure completeness will become a top priority. Another possibility is that a journal is too “young” to have acquired a position in the citation network to get a sufficiently large Eigenfactor value; in this case it is purely a qualitative argument to still include it in the Core Collection, assuming that eventually it will position itself as an influential journal within the citation network. The algorithm, in combination with additional curation work, has resulted in a list of 207 journals. We will reevaluate this list on a regular basis. We still have to determine what the cadence of this reevaluation will be. The stage of research fields and publication venues is a dynamic one; boundaries between disciplines become less distinct, multimessenger science becomes more prolific and techniques from one discipline turn out to be highly applicable to other ones (like e.g. one developed in astrophysics to cancer research).","headline":"The ADS Curation Model","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/blog/curation-model"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"},"name":"Edwin Henneken"},"url":"https://ui.adsabs.harvard.edu/blog/curation-model"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/blog">all blog posts</a> |
+        <a href="/blog/news">news</a> |
+        <a href="/blog/general">general</a> |
+        <a href="/blog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">The ADS Curation Model</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Edwin Henneken
+              
+        
+    
+
+
+    <b>(ADS)</b>
+
+</h3>
+      <h3 class="post-date">20 Mar 2023</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<h1 id="introduction">Introduction</h1>
+<p>The basic intellectual structure of the ADS can be described using a bullseye model, represented by figure 1. The three rings in this diagram represent different levels of curation applied to the bibliographic content in the ADS. Levels of curation and completeness are different in each ring. The inner region, representing the Core Collection, has the highest level of curation; this segment of the ADS holdings represents that part of scholarly publications where the ADS is considered to be authoritative. In this collection, our users can expect the ADS to be complete, coverage and citation-wise. It is important to keep the following caveat in mind: publications in one ring for one discipline may belong to the other ring in a different discipline. For this reason we implement the following rule: if a journal for any of the disciplines is assigned to the Inner Ring, it should be considered to belong there for all disciplines. In the following sections we consider the following disciplines:</p>
+
+<ul>
+  <li>Astronomy &amp; Astrophysics</li>
+  <li>Heliophysics (Solar Physics, Space Weather &amp; Aeronomy)</li>
+  <li>Planetary Science</li>
+</ul>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/ads-curation_model_f1.png" />
+<br />
+<em>Figure 1: ADS's tiered curation model. The core collection represents disciplines where its curation is strongest and its coverage is authoritative. The surrounding tiers are connected to the core via the citation network.
+</em>
+</div>
+<p><br /></p>
+
+<p>Most of our curation efforts for the core collection go into maintaining a high level of accuracy, quality and completeness, ranging from the main refereed literature to conference proceedings, theses, gray literature, software, and links to data products. We also nurture all important collaborations necessary for this Core Collection. The Inner Ring consists of publications citing/cited by those in the Core Collection and the Outer Ring consists of publications citing/cited by those in the Inner Ring. These rules are augmented with an additional filter that guarantees that the material added to this ring cites the publications in the Core Collection “with a sufficiently high frequency, in a certain time frame”. Since this is a qualitative statement, we will need heuristics to translate this into a quantitative statement. For example, one contribution to the Inner Ring in Astronomy are those journals being cited by the core astronomy journals, but are not any of the core astronomy journals.</p>
+
+<h1 id="the-core-collection">The Core Collection</h1>
+<p>Historically, the ADS maintained a separate core collections for astronomy, but now that we are expanding our coverage, we are merging the additional disciplines into one definitive Core Collection. For astronomy, we considered the following journals to be the ones that constitute the Core Collection for the Astronomy database:</p>
+
+<ul>
+  <li>The Astrophysical Journal (including Letters and Supplement Series)</li>
+  <li>The Astronomical Journal</li>
+  <li>Monthly Notices of the R.A.S.</li>
+  <li>Astronomy &amp; Astrophysics (including Supplement)</li>
+  <li>Annual Reviews of Astronomy &amp; Astrophysics</li>
+  <li>Publications of the Astronomical Soviety of the Pacific</li>
+  <li>Physical Review D (astronomy content)</li>
+</ul>
+
+<p>The reasoning behind this is mostly qualitative. One of the takeaways in our blog series Citations to Astronomy Journals (parts <a href="/blog/citations-journals">1</a>, <a href="/blog/citations-journals-2">2</a> and <a href="/blog/citations-journals-3">3</a>) is the fact that the publication venues with the most influential research articles are not an immutable set of journals. How can we approach this in a more quantitative way? Any quantitative selection criteria are unavoidably based on journal metrics and just like any metric, journal metrics are not without controversy. We touched on this in our blog <a href="/blog/citations-journals-3">Citations to Astronomy Journals 3: Journal Impact</a>. To identify journals to go into our Core Collection, we decided to use the so-called <a href="https://en.wikipedia.org/wiki/Eigenfactor">Journal Eigenfactor</a> as the main indicator for journal importance.</p>
+
+<h1 id="the-journal-eigenfactor">The Journal Eigenfactor</h1>
+<p>Imagine ourselves in a library with actual stacks. This library has an android librarian with an energy source that never needs to be recharged and is completely failsafe, so the android librarian can keep working infinitely long. Being an android, this librarian is equipped with a perfect random generator which will allow it to truly, randomly select a journal volume from the stacks.</p>
+<div class="text-center">
+    <img class="img-thumbnail" alt="The Android Librarian" src="/blog/images/ads-curation_model_android.png" /></div>
+<p><br />
+Next, from all journal articles cited in this particular journal volume, the librarian randomly selects one.</p>
+
+<p>In the following step, the librarian walks over to the shelf with the journal volume that holds this cited article, takes this volume, and again selects a random citation. Rinse and repeat, ad infinitum. So, what happens when the android librarian draws a citation pointing to a journal that is not in our library? At each time step, with probability α our android librarian proceeds as before. With probability <em>1-α</em>, it teleports to a node completely at random; it’s in the android’s programming to know how to do this. This way we prevent the possibility of our android librarian getting stuck on a dangling node. In terms of the graph, this means that each so-called dangling node is replaced by one that connects back to the graph using this teleportation mechanism. So, what happens during the journey of the android librarian? The android keeps records, specifically of how often a certain journal is visited. These notes will show, after a while, that <em>most of the time is spent in nodes representing journals that are highly cited by journals that are also highly cited</em>. For each journal, a number is calculated representing how often it is seen. These numbers are stored as a vector in the positronic brain, in which each position corresponds to a specific journal. It turns out that the numbers in this vector start to change much more slowly over time, in fact, they converge to a vector that is stationary. Each entry in this stationary vector corresponds with the so-called Eigenfactor for the journal corresponding to the position in the vector. Without going into the mathematical details, the Eigenfactor of any journal can be interpreted as follows: “<em>the Eigenfactor calculates the percentage of time you would spend at each journal</em>” (<a href="https://www.researchtrends.com/cgi/viewcontent.cgi?article=1332&amp;context=researchtrends">West, 2008</a>).</p>
+
+<p>There are some compelling reasons to favor the Eigenfactor. Some of them are the fact that it weights citations with the importance of the citing journals, the fact that it exploits the entire citation network and ignores self-citations and that it has a solid mathematical underpinning and an intuitive stochastic interpretation. Another reason for favoring the Eigenfactor is the fact that it uses a 5-year window to gather citations. This allows, in general, a broader evaluation of journal citations, in particular for disciplines with longer citing half lives.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/ads-curation_model_f2.png" />
+<em>Figure 2: Directed network based on citation relationship between journals. The nodes represent journals. This is a fictitious network, for illustration purposes only.
+</em>
+</div>
+<p><br /></p>
+
+<p>At its core, the algorithm that calculates the Eigenfactor values is the well-known <a href="https://en.wikipedia.org/wiki/PageRank">PageRank</a> algorithm, which properly deals with the fact that journals are all interconnected in a citation network (see figure 2, showing a fictitious network). The <a href="https://en.wikipedia.org/wiki/Journal_Citation_Reports">Journal Citation Reports</a> (JCR), published by Clarivate Analytics on the Web of Science platform, provides the Journal Eigenfactor on an annual basis. However, we prefer not to have to depend on an external data source for our decisions. That is why we made a comparison between Journal Eigenfactors calculated using ADS citation data and those listed in the JCR for a number of years.</p>
+
+<p>The results are shown in figure 3. The fact that values are not equal is no surprise, because the citation networks in the ADS and Web of Science are different. The encouraging result is that the values have a very strong correlation.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/ads-curation_model_f3.png" />
+<em>Figure 3: Comparison between Eigenfactors calculated from ADS data and provided in the JCR. The categorization is based on journal assignments provided in the JCR.
+</em>
+</div>
+<p><br /></p>
+
+<p>Next, we compare journal ranking using Eigenfactor values. In other words, if we create a ranked list of journals, how does, say, the top 100 compare with one based on JCR values? In the end, this is what we are looking for. The actual Eigenfactor values are not relevant, since we are only interested in relative values. It is the ranked list that will provide us with the candidates for the Core Collection. We generated and compared the top 100 for the period 2010 thru 2021. For the first decade the top 100 lists are identical; for 2020 and 2021 they only differ in the very tail. For 2020 the ADS list contains the <a href="https://www.astro.bas.bg/AIJ/">Bulgarian Astronomical Journal</a> (bibstem BlgAJ), where the JCR has <a href="https://www.springer.com/journal/10511">Astrophysics</a> (bibstem Ap). For 2021 the ADS list contains <a href="https://www.ta3.sk/caosp/">Contributions of the Astronomical Observatory Skalnate Pleso</a> (bibstem CoSka), where the JCR has again <a href="https://www.springer.com/journal/10511">Astrophysics</a> (bibstem Ap). For both journals, present in the ADS list, Web of Science is highly incomplete.</p>
+
+<h1 id="the-ads-core-collection">The ADS Core Collection</h1>
+<p>For the Core Collection we add the filter that these journals are the top N of the ranked list, such that these journals represent at least 95% of the total sum of Eigenfactor values. This is a meaningful filter, since Eigenfactor values are additive.</p>
+
+<p>The next question is whether it will be sufficient to just accept these lists “as is”? Obviously, these lists need curation. The ADS curation team needs to assess the lists generated. The most likely scenario is that the team feels that a particular journal belongs in the Core Collection, even though the algorithm did not select it. For example, it is possible that a journal with a lot of cross-disciplinary content did not get included. While the ADS citation network is the best one available for core astronomy disciplines, it has known gaps (sometimes significant) for disciplines in the “outskirts” of astronomy and astrophysics (like astrochemistry, astrobiology, astrophotonics, archaeoastronomy and astroinformatics). It is not uncommon for articles in a journal like Astrobiology to have reference lists in the ADS that are only 50% complete. The ADS is also aware that IEEE content is very important for many of its users; by identifying IEEE content as belonging to the Core Collection we can assure completeness will become a top priority. Another possibility is that a journal is too “young” to have acquired a position in the citation network to get a sufficiently large Eigenfactor value; in this case it is purely a qualitative argument to still include it in the Core Collection, assuming that eventually it will position itself as an influential journal within the citation network.</p>
+
+<p>The algorithm, in combination with additional curation work, has resulted in a list of 207 journals.</p>
+
+<p>We will reevaluate this list on a regular basis. We still have to determine what the cadence of this reevaluation will be. The stage of research fields and publication venues is a dynamic one; boundaries between disciplines become less distinct, multimessenger science becomes more prolific and techniques from one discipline turn out to be highly applicable to other ones (like e.g. <a href="https://ui.adsabs.harvard.edu/abs/2021IOIns...2..247T/abstract">one developed in astrophysics to cancer research</a>).</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

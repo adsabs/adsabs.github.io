@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <title>
+    Claiming Papers And Finding People with ORCID
+  </title>
+  <meta name="description" content="All your questions will be answered here." />
+
+  <!-- Disqus tags -->
+  <meta
+    property="og:description"
+    content="Claiming Papers And Finding People with ORCID"
+  />
+  <meta
+    property="og:image"
+    content="https://ui.adsabs.harvard.edu/../help/img/orcid-claiming.gif"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/scixblog/orcid-claims"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+    } else {
+      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+    }
+  </script>
+
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+          alt="scix icon"
+        />
+        <b>&nbsp;SciX</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/scixabout/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About SciX
+              </a>
+            </li>
+            <li>
+              <a href="/scixblog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/scixhelp/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                SciX Help Pages
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-scix-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://scixplorer.org/">
+          <img
+            src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+            alt="The SciX Logo"
+          />
+          Science Explorer
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/scixblog">all blog posts</a> |
+        <a href="/scixblog/news">news</a> |
+        <a href="/scixblog/general">general</a> |
+        <a href="/scixblog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Claiming Papers And Finding People with ORCID</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Alberto Accomazzi
+              
+        
+    
+
+
+    <b>(ADS PI)</b>
+
+</h3>
+      <h3 class="post-date">10 Mar 2016</h3>
+
+      
+      <hr />
+      Claim your ORCID papers easily in ADS 
+
+      <hr />
+
+      
+    </header>
+
+    
+    <small>
+      <blockquote>
+        <p class="text-info">
+          This post was originally published elsewhere and has been put here
+          with the authors permission. You can see where it was originally
+          published <a href="http://www.astrobetter.com/blog/2016/03/07/claiming-papers-and-finding-people-with-orcid/">here</a>.
+        </p>
+      </blockquote>
+    </small>
+    
+
+    <article class="post-content">
+<p>If you have published a paper recently, you have probably come across the acronym ORCID at some point during the article submission process.  Or you may have seen references to ORCID in your organization’s scientific staff database, AAS membership profile, or research evaluation process.  So what exactly is ORCID?  ORCID is an acronym which stands for “Open Researcher and Contributor ID,” designed to uniquely identify people involved in research activities.  The term is used to refer to both the <a href="https://en.wikipedia.org/wiki/ORCID">identifier standard</a> (a 16-character string) as well as the <a href="http://orcid.org">organization</a> which creates these ids and maintains their registry.</p>
+
+<p>For researchers, ORCID identifiers are useful in a couple of ways:</p>
+
+<ul>
+  <li>
+    <p>they provide a unique way to identify you as an individual, removing ambiguity among people who have similar names</p>
+  </li>
+  <li>
+    <p>they provide a global identifier recognized by an increasingly large number of organizations, including publishers, funding agencies, and information systems</p>
+  </li>
+</ul>
+
+<p>Getting your ORCID is simple!  All you have to do is <a href="http://orcid.org">go to the ORCID website</a> and register to obtain a unique identifier which you can use immediately.  My own id is 0000-0002-4110-3511, and I have used it in <a href="http://arxiv.org/a/accomazzi_a_1.html">my arXiv user profile</a>, my AAS membership profile, my Elsevier profile, my Zenodo account, and during the submission of a few papers I published recently.  One of the features of ORCID’s registry is the ability for a user to manage his or her profile by adding information about one’s employment, funding, or publications, which can then be shared publicly.  As an example, here is my public ORCID profile: <a href="http://orcid.org/0000-0002-4110-3511">http://orcid.org/0000-0002-4110-3511</a></p>
+
+<p><img class="img-responsive" src="./../help/img/orcid_image_0.png" alt="orcid page 1" />
+<img class="img-responsive" src="./../help/img/orcid_image_1.png" alt="orcid page 2" /></p>
+
+<p><em>Fig 1: Private and public views of Alberto Accomazzi’s ORCID profile.  Some records in the “Works” section are not visible in the public view since they are marked as private.</em></p>
+
+<p>So how is ADS collaborating with ORCID?</p>
+
+<ul>
+  <li>
+    <p>We’re facilitating the claiming process: You can use the custom ADS ORCID-claiming interface to easily claim all of your papers.</p>
+  </li>
+  <li>
+    <p>We’re leveraging ORCID data in our search results: By  indexing ORCID identifiers, we can help remove name ambiguity in a set of papers.</p>
+  </li>
+</ul>
+
+<p>The two goals are connected: claimed papers in ADS become not only part of a user’s ORCID profile, but are indexed in ADS as well, supporting the disambiguation of people at search time.</p>
+
+<p>We’re pleased to announce that the <a href="https://ui.adsabs.harvard.edu">new ADS interface</a> (code named “Bumblebee”) includes the capability of claiming papers through as well as searching by ORCID identifier.  Claiming of papers is accomplished starting from the ADS interface through <a href="https://ui.adsabs.harvard.edu/#orcid-instructions">a set of simple steps</a>:</p>
+
+<ul>
+  <li>
+    <p>Authenticate with ORCID by selecting the proper option in the ORCID pull-down menu on the top bar (this will establish the connection through which claims are sent from ADS to your ORCID profile)</p>
+  </li>
+  <li>
+    <p>Update your ADS user profile to ensure that all your name variations are properly displayed (this will help you find and claim all your papers)</p>
+  </li>
+  <li>
+    <p>View your existing claims (in case any have been made through other systems)</p>
+  </li>
+  <li>
+    <p>Search ADS for your papers and add to the list (by claiming records using the “Claim in ORCID” button)</p>
+  </li>
+</ul>
+
+<p><img src="./../help/img/orcid-claiming.gif" alt="an animated gif of the orcid claiming process" class="img-responsive" style="margin:auto" /></p>
+
+<ul>
+  <li>Fig. 2: Claiming records is simple: activate ORCID mode, then click on “Claim in ORCID”*</li>
+</ul>
+
+<p>Claims made using this process are sent to your ORCID profile and indexed in ADS within 24 hours.  We should point out that ORCID allows users to control a variety of privacy settings, including the ability to keep one’s publication claims private.  By default, ADS marks claims made using our interface as public, since its main purpose is to help people find more accurately the papers you have published.  Keeping these claims public ensures that ADS and other systems are able to discover and index them, and keeps people making the claims honest.</p>
+
+<p>Once ORCID data has been indexed, other people can search for a researcher’s papers using his or her ORCID identifier.  You can do this by specifying the search field “orcid” followed by the person’s id.  For example, this is what you would use to find my papers: <a href="https://ui.adsabs.harvard.edu/#search/q=orcid%3A0000-0002-4110-3511&amp;sort=date%20desc">orcid:0000-0002-4110-3511</a>.  This list will include papers which a user has claimed as well as papers for which ORCIDs were collected during the manuscript submission process.  As more and more publishers start requiring ORCIDs for papers they publish and as ADS enriches its metadata with ORCIDs aggregated from collaborators such as arXiv, the need for individual users to keep claiming new papers should eventually subside.</p>
+
+<p>ORCID integration in ADS started in 2015 with support from the AAS and is still work in progress.  During 2016 we intend to make the claiming system more robust and enhance the interface to allow a user-friendly way to search for an author’s publications without requiring users to know that author’s ORCID id.  An additional enhancement we are considering is sending alerts to registered users when papers matching their names appear in ADS, prompting them to claim the papers if no ORCID data is available.  To find out more about our plans, please take a look at a <a href="https://docs.google.com/presentation/d/1SCTL7z45ROYSCQstu6aqwaxQ0-m7RRWE-1Fdz5M5j5U/edit?usp=sharing">recent presentation</a> we gave at the AAS Jan 2016 meeting.  We would love to hear your feedback and ideas on this topic!</p>
+
+<p>Please Note: You may also want to read a nice <a href="http://www.eso.org/sci/libraries/edocs/ESO/ADS-ORCID_StepByStep.pdf">step-by-step guide</a> of the claiming process created by the ESO Library.</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          help[at]scixplorer.org
+        </p>
+        <p>
+          SciX is a project created by the Astrophysics Data System (ADS), which
+          is operated by the Smithsonian Astrophysical Observatory under NASA
+          Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/scixabout/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About SciX
+          </a>
+        </li>
+        <li>
+          <a href="/scixhelp/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> SciX Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/scixabout/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@SciX
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/scixcommunity"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @scixcommunity
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

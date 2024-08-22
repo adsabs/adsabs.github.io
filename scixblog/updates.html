@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <title>
+    Bumblebee Updates: Metadata-Only Searches and More
+  </title>
+  <meta name="description" content="All your questions will be answered here." />
+
+  <!-- Disqus tags -->
+  <meta
+    property="og:description"
+    content="Bumblebee Updates: Metadata-Only Searches and More"
+  />
+  <meta
+    property="og:image"
+    content="https://ui.adsabs.harvard.edu/blog/images/blog_2016-09-19_adsbumblebee.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/scixblog/updates"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+    } else {
+      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+    }
+  </script>
+
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+          alt="scix icon"
+        />
+        <b>&nbsp;SciX</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/scixabout/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About SciX
+              </a>
+            </li>
+            <li>
+              <a href="/scixblog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/scixhelp/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                SciX Help Pages
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-scix-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://scixplorer.org/">
+          <img
+            src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+            alt="The SciX Logo"
+          />
+          Science Explorer
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/scixblog">all blog posts</a> |
+        <a href="/scixblog/news">news</a> |
+        <a href="/scixblog/general">general</a> |
+        <a href="/scixblog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Bumblebee Updates: Metadata-Only Searches and More</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Kelly Lockhart
+              
+        
+    
+
+
+    <b>(ADS Developer)</b>
+
+</h3>
+      <h3 class="post-date">11 Apr 2018</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>We’ve released a major update to the new <a href="https://ui.adsabs.harvard.edu/">ADS Bumblebee</a> interface this week! Some changes, such as the inclusion of a wider range of export formats, incorporate functionality from ADS Classic, while others improve  the user’s site experience. Read on for more.</p>
+
+<h3 id="unfielded-searches-now-metadata-only">Unfielded searches: now metadata-only</h3>
+<p>In response to user feedback about differences in searching between Classic and Bumblebee, we’ve made some changes to the search functionality. Previously, searches made without the use of search terms, such as <em>author:</em> or <em>year:</em>, automatically searched both the metadata and full text (available for more than 4 million records, including most recent journal articles).</p>
+
+<p>However, searching the full text by default is non-intuitive for many users and can impede some common searches. For example, if a user is searching for an author name and a publication year without using search terms, such as <em>accomazzi 2001</em>, the default full text search will include matches based on references and other information within the text. Depending on the search terms, the full text search will generally return many more matches than searches based strictly on record metadata.</p>
+
+<p>Based on user feedback, we’ve adjusted the behavior of unfielded searches. (Note that fielded searches, using search terms, are unaffected.) Unfielded searches will now search only the metadata fields: author; publication year; title; abstract; identifier, such as bibcodes and DOIs; and bibstem, or the shortened form of publication names (e.g. ApJ, SPIE, AAS).</p>
+
+<p>It’s still possible to search the full text, for those records that have it available. To do so, use one of the full text search terms with your search term. <em>Body:</em> searches the body of the paper, while <em>full:</em> searches the body, title, abstract, keywords, and acknowledgements sections. Example full text searches include <em>body:“hubble space telescope”</em> or <em>full:“hubble space telescope”</em>.</p>
+
+<h3 id="sort-options">Sort options</h3>
+<p>The sort buttons have been revamped, with the sort field selection now separated from a button that switches between descending and ascending order. New sort options are also available. While the default sort is based on publication date, two sort options may be useful for users interested in sorting based on relevance.</p>
+
+<p><strong>Score</strong></p>
+
+<p>Behind the scenes, some fields are weighted to prioritize more commonly searched fields, such as first author and publication year. Sorting by score applies these weights. This option may be especially useful in unfielded searches.</p>
+
+<p><strong>Classic factor</strong></p>
+
+<p>The classic factor sorts based on a prestige score, designed to more highly rank papers that are relevant and popular now. The classic factor is calculated via an age-normalized combination of reads and citations; it is very similar to the ranking applied to results from <a href="http://adsabs.harvard.edu/">Classic’s one-box search</a>.</p>
+
+<h3 id="author-affiliation-form">Author Affiliation form</h3>
+<p>The author affiliation form, found on the <strong>Export</strong> menu at the top right on the search results page, is designed to assist users supply a list of co-authors for grants and other applications.</p>
+
+<p><img src="/blog/images/author-affiliation-1.png" alt="author affiliation link on export menu" class="img-responsive" /></p>
+
+<p>Users seeking to create such a list should begin with an author search and then apply any necessary filters in the left-hand column to narrow the search to the relevant papers. Select <strong>Author Affiliation</strong> from the <strong>Export</strong> menu. On the Author Affiliation form, use the <strong>Authors</strong> and <strong>Years</strong> dropdowns to select the required first N authors and number of years back, both generally specified by the grant agency. Use the author listing in the lower part of the form to clean up the returned data: co-authors who are not relevant can be deselected, and correct affiliations and last-active-dates can be chosen. Use the <strong>Export</strong> dropdown at the top of the form to export the cleaned data to a variety of formats.</p>
+
+<p><img src="/blog/images/author-affiliation-2.png" alt="author affiliation form" class="img-responsive" /></p>
+
+<h3 id="export-formats">Export formats</h3>
+<p>More export formats have been added, covering a range of formats required by astrophysics journals. From the <strong>Export</strong> menu, select <strong>Other Formats</strong> to be taken to the export page. Select the appropriate export format from the menu and click Apply to see the results displayed. The formatted records can be copied to the clipboard or saved to file.</p>
+
+<h3 id="orcid-improvements">ORCID improvements</h3>
+<p>Several improvements have been made to our ORCID system, including an upgrade to use the ORCID v.2 API. Users are now able to claim and delete multiple records at a time. After <a href="../help/orcid/claiming-papers">signing into ORCID in ADS</a>, select the relevant records in the search results and use the ORCID Bulk Actions box on the right-hand side to claim or delete the selected records. In addition, improvements have been made for speed and efficiency, which will especially affect users with many claimed records.</p>
+
+<p><img src="/blog/images/orcid-bulk-action.png" alt="ORCID bulk action selection in the righthand column of the search results page" class="img-responsive" /></p>
+
+<h3 id="speed-and-efficiency-improvements">Speed and efficiency improvements</h3>
+<p>Several adjustments have been made to the user interface to improve page loading speeds. Overall, Bumblebee should load faster to start and navigate between pages more quickly.</p>
+
+<h3 id="about-page">About page</h3>
+<p>An <a href="https://ui.adsabs.harvard.edu/about/">About page</a> is now available from the top navigation bar. Read about <a href="https://ui.adsabs.harvard.edu/about/team/">our team</a>, <a href="https://ui.adsabs.harvard.edu/about/history/">the history of ADS</a>, and more.</p>
+
+<p><br /></p>
+
+<p>With these updates, Bumblebee is very near parity with Classic and will officially exit beta status later this spring. For more information about our plans over the coming months, check out our <a href="../blog/roadmap">2018 roadmap</a>. If you have any suggestions or questions about the new system, <a href="mailto:adshelp@cfa.harvard.edu">drop us a line</a>.</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          help[at]scixplorer.org
+        </p>
+        <p>
+          SciX is a project created by the Astrophysics Data System (ADS), which
+          is operated by the Smithsonian Astrophysical Observatory under NASA
+          Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/scixabout/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About SciX
+          </a>
+        </li>
+        <li>
+          <a href="/scixhelp/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> SciX Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/scixabout/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@SciX
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/scixcommunity"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @scixcommunity
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

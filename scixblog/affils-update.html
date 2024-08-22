@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <title>
+    Affiliation data in the ADS: a work in progress
+  </title>
+  <meta name="description" content="All your questions will be answered here." />
+
+  <!-- Disqus tags -->
+  <meta
+    property="og:description"
+    content="Affiliation data in the ADS: a work in progress"
+  />
+  <meta
+    property="og:image"
+    content="https://ui.adsabs.harvard.edu/blog/images/affil21_thumb.jpg"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/scixblog/affils-update"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+    } else {
+      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+    }
+  </script>
+
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+          alt="scix icon"
+        />
+        <b>&nbsp;SciX</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/scixabout/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About SciX
+              </a>
+            </li>
+            <li>
+              <a href="/scixblog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/scixhelp/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                SciX Help Pages
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-scix-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://scixplorer.org/">
+          <img
+            src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+            alt="The SciX Logo"
+          />
+          Science Explorer
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/scixblog">all blog posts</a> |
+        <a href="/scixblog/news">news</a> |
+        <a href="/scixblog/general">general</a> |
+        <a href="/scixblog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Affiliation data in the ADS: a work in progress</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Matthew Templeton and Carolyn Grant
+              
+        
+    
+
+
+    <b>(ADS)</b>
+
+</h3>
+      <h3 class="post-date">15 Apr 2021</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>We publicly introduced our affiliations feature in a <a href="../blog/affiliations-feature">blog post</a> last year, including a discussion of how the feature was built and maintained, and how you can use it in your literature searches.  We want to reintroduce this feature, especially for those who haven’t used it yet, by updating you on the developments and improvements in our affiliation data.</p>
+
+<p>Users should note that while affiliation information is more than 80% complete across all literature, not all records contain an affiliation. We strongly recommend combining affiliation searches with author searches for best results.</p>
+
+<h3 id="what-are-affiliations">What are Affiliations?</h3>
+
+<p>An affiliation is whatever metadata a bibliographic record contains listing a contributing author’s institutional location and/or membership(s).  In nearly all modern literature, affiliation metadata is specifically fielded as such by publishers, and can be extracted, tagged, and made available for search.  The ADS has always maintained affiliation data as a separate field within records and we encourage authors and publishers to include this with their author metadata. What has changed has been the inclusion of affiliation as a searchable field, and the assignment of unique identifiers to individual affiliation strings to improve their discoverability.</p>
+
+<p>Authors from a given institution may publish their work in a variety of journals and other venues, all of which may have separate editorial requirements.  Likewise, publication in a less formal venue such as a conference proceeding may have no restrictions on formatting or fielding (or even inclusion) of affiliations, and authors are free to use whatever identifier they choose.  This is (sometimes) straightforward for a human being to interpret, but there is enough variation in how departmental and institutional affiliations are given by different authors over time that searching them as a simple text field will produce incomplete and sometimes inaccurate results.</p>
+
+<p>The ADS has developed a curated database of affiliation identifiers where we have collected all of the various text representations of a given affiliation and assigned them <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">an affiliation identifier</a> where it is possible to do so unambiguously.  These identifiers include the institution name, as well as heirarchical information where it is useful to do so, using <em>parents</em> and <em>children</em>.  For example, the California Institute of Technology (CalTech) is assigned an identifier “A01093”, and any paper with an author at CalTech will have that identifier in its heirarchy.  But A01093 is a parent identifier, and its heirarchy is also broken out into several children at the department or research unit level including (for example) the Departments of Chemistry (A01094), Geological and Planetary Science (A01095), and Physics/Math/Astronomy (A01098), as well as affiliated units like JPL (A01099) or Big Bear Solar Observatory (A11037).  And crucially, we also assign multiple parents to some children where it is appropriate to do so.  For example, A11037 (BBSO) has A01093 (CalTech) as a parent as well as the New Jersey Institute of Technology (A00972) because it is a collaborative project between those two schools.</p>
+
+<p>These identifiers power our affiliation search feature, allowing you to search and select literature on the basis of affiliation data.  With the ADS, you have two ways to use affiliation data in your searches: through the affiliation search filter, and directly in your search queries.  We show you how below.</p>
+
+<h3 id="using-affiliations-in-your-literature-search">Using affiliations in your literature search</h3>
+
+<p><strong>Affiliation filtering</strong></p>
+
+<p>The ADS interface enables you to refine your search using filters, located on the left hand side of the default view of search results.  When you search for anything in the ADS, your search results also automatically populate all of the search filters which let you refine your results.  There are several filters including: author, collection, keywords, and institutions.  The Institutions filter is where you use the affiliation data to refine your searches.  For example, if you search for “gravitational waves” and “year:2020” you’ll get a list of over 3,300 papers published in the year 2020 that contain the phrase “gravitational waves”.  If you click <em>INSTITUTIONS</em> in the left column, you’ll get an abbreviated list of the most-frequently seen affiliations among those 3,300 papers:</p>
+
+<div class="text-center">
+<img class="img-thumbnail" src=" /blog/images/blog_2021-04-15_affil_drop_1.jpg" />
+</div>
+<p><br /></p>
+
+<p>If you select one of those affiliations (by checking the box to the left), you’ll see the following:</p>
+
+<div class="text-center">
+<img class="img-thumbnail" src=" /blog/images/blog_2021-04-15_affil_drop_2.jpg" />
+</div>
+<p><br /></p>
+
+<p>Note especially the “limit to” and “exclude” options; if you select “limit to”, your original set of results will be refined to just those 155 papers having one or more coauthors from the Max Planck Institute:</p>
+
+<div class="text-center">
+<img class="img-thumbnail" src=" /blog/images/blog_2021-04-15_affil_drop_3.jpg" />
+</div>
+<p><br /></p>
+
+<p>Now, you can use other filters to refine your search, including the institution filter itself.  Clicking <em>INSTITUTIONS</em> again will give you a list of affiliations seen among the new result set, the list of 155 papers with an MPI coauthor.  In this way, you could (for example) search for papers with collaborators from two specific institutions, or determine which institutions collaborated most often on gravitational waves in 2020.</p>
+
+<p><strong>Searching affiliations</strong></p>
+
+<p>You can also use affiliations directly as part of your search, just as you can other metadata fields like title, year, and bibstem. We have a number of different keywords with which to access affiliations:</p>
+
+<ul>
+  <li>
+    <p><em>aff</em>: This field holds the raw affiliation string – whatever text is supplied to us by a publisher or author as representing one or more authors’ affiliation or host institution. (e.g. aff:“SRON”). Use this if you’re looking for a specific string (rather than a specific identifier) in an affiliation; it does not use the curated identifiers as part of the search.</p>
+  </li>
+  <li>
+    <p><em>aff_id</em>: This field can be used to search for affiliation identifications curated by the ADS, including synonyms with other institutional identifier systems like GRID and ROR.  It requires you to use the controlled dictionary of identifiers specified <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">here</a>.  It does not expand the search to include an institution’s children.</p>
+  </li>
+  <li>
+    <p><em>inst</em>: This field is a shortcut to enable you to search for institutions without requiring you to know their parent.  It also allows you to search the affiliation identifications curated by the ADS, including synonyms with other institutional identifier systems like GRID and ROR.  Unlike aff_id, it expands the search to include an institution’s children.  It is convenient for unique institutions such as the “CfA”.  However, for an institution that is not unique, such as “Inst Phy”, you will want to include the parent to disambiguate.</p>
+  </li>
+</ul>
+
+<p>Some examples:</p>
+
+<ul>
+  <li>
+    <p>Sometimes, there are multiple ways of obtaining the same affils.  For example, all of the following will return the Center for Astrophysics: inst:“CfA” == inst:“Harvard U/CfA” == inst:“SI/CfA” = aff_id:“CfA”.  Conversely, aff_id:“SI” returns only affiliation “Smithsonian Institution”</p>
+  </li>
+  <li>
+    <p>Inst is generally more “greedy” in matching than aff_id, so while aff_id:“SI” only returns papers that are identified with only the parent “Smithsonian Institution”, inst:“SI” returns affiliation “Smithsonian Institution”, plus CfA (Center for Astrophysics), MNH (Museum of Natural History), Air Sp Mus (Air and Space Museum), which are children of SI.</p>
+  </li>
+  <li>
+    <p>Likewise,</p>
+
+    <p>aff_id:“Inst Phy” returns no results</p>
+
+    <p>inst:“Inst Phy” returns results from many Institutes of Physics.</p>
+  </li>
+  <li>
+    <p>But you can use inst searches to get specific results, like,</p>
+
+    <p>inst:“UNAM/Inst Phy” (National Autonomous University of Mexico’s Institute of Physics)</p>
+
+    <p>inst:“NTU/Inst Phy” (National Taiwan University’s Institute of Physics)</p>
+
+    <p>inst:“U Amsterdam/Inst Phy” (University of Amsterdam’s Institute of Physics)</p>
+  </li>
+</ul>
+
+<p><strong>Tips for searching:</strong></p>
+
+<p>If you do not see the results you expect, one or more of the following may help:</p>
+
+<ul>
+  <li>
+    <p>Check the spelling against our <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">controlled list of institutions</a>; we may be using an American English equivalent, such as “University of” instead of “Universite de” or “Center” instead of “Centre”.</p>
+  </li>
+  <li>
+    <p>Sometimes we elevate an institution to a parent level so that it may have children/divisions (e.g. Both “NASA” and “NASA Goddard” are at the parent level so that we can subdivide “NASA Goddard” into units).</p>
+  </li>
+  <li>
+    <p>We may be using a non-standard abbreviation for a university in order to avoid duplication (“USC SC” for University of South Carolina versus “USC CA” for University of Southern California).</p>
+  </li>
+  <li>
+    <p>Make the search less constrictive (try to search for a parent institution and use the facet to drill down to the unit level).</p>
+  </li>
+</ul>
+
+<h3 id="curated-affiliation-metadata-by-the-numbers">Curated affiliation metadata: by the numbers</h3>
+
+<p>We significantly expanded curated affiliation coverage in the ADS over the past twelve months.  In January 2020, the ADS contained about 38.6 million individual author-affiliation pairs – each affiliation of each author of all the papers, articles, and books in the ADS.  Today, that number is about 42 million, an increase of 3.2 million (8%).  Of those 42 million strings, 34.7 million (83%) have been matched to identifiers and can be searched via the affiliation filter.  The remaining 7.3 million (17%) have not; they can be searched as a text field (i.e. with the “aff” keyword), but not via the <em>INSTITUTIONS</em> filter.</p>
+
+<div class="text-center">
+<img class="img-thumbnail" src=" /blog/images/blog_2021-04-15_matched.jpg" />
+</div>
+<p><br /></p>
+
+<p>This is a large improvement over last year’s numbers, where only 22 million (57%) of the 38.6 million pairs were matched, and 16.6 million (43%) were not.  We have not only kept up with assigning affiliation identifiers to new publications over the past year, but we have significantly expanded coverage of our existing metadata, meaning that more of our papers can be searched using our affiliations tools.</p>
+
+<div class="text-center">
+<img class="img-thumbnail" src=" /blog/images/blog_2021-04-15_unmatched.jpg" />
+</div>
+<p><br /></p>
+
+<p>We streamlined the process of matching identifiers in 2020; matching strings to identifiers is still done by hand but we sped up the process by scripting aspects of the text manipulation and extraction process, searching for substrings common to different affiliation strings, and then using simple text processing and human analysis to confirm identifications.  We placed particular emphasis on looking for substrings that appeared thousands of times, even if the individual affiliations containing those substrings may be less common.  Many affiliations fell into this category, particularly individual universities represented in multiple categories in the ADS, such as physics, astronomy, chemistry, computer science and engineering.  By targeting those substrings that occur most frequently, we can generate more matches overall, and we added them more quickly – it was easier to disambiguate among departments and laboratories in a single university than across multiple institutions.  This work is still in progress, and we are shifting focus to the country-level to ensure more complete international coverage.</p>
+
+<h3 id="improvements-and-additions-over-the-past-year">Improvements and additions over the past year</h3>
+
+<p>Another reason our coverage increased is that we expanded the number of identifiers to nearly 7000 different entities and parent-child relationships, which lets us match more institutions that are easily assignable, and helps us disambiguate entities that may have multiple parents or warrant better subdivision at the department or institution level.</p>
+
+<p>Many of the IDs were added simply to pick up frequently observed affiliations that were not already in the list, including (for example) medical research institutes and commercial entities involved in physics-related fields.  But a significant number of our additions have targeted specific classes of institutions: more universities and institutions from the Global South; more complete coverage of US federally-recognized Historically Black Colleges and Universities (HBCU); and Tribal Colleges and Universities (mainly in the United States).</p>
+
+<p><strong>Institutions in the Global South</strong></p>
+
+<p>We’ve increased coverage of educational and research institutions in the <a href="https://en.wikipedia.org/wiki/Global_South">Global South</a> to improve the discovery and searchability of work from authors outside of historical centers of research.  Prior to this past year, our identifiers covered some of this territory, particularly in regions of the Global South with historical involvement in astronomy (South America, South Africa, India, and China).  Over the past year, we’ve worked to expand this coverage to include more countries and institutions involved in science that falls outside of our astronomy coverage but may be very active in related fields such as physics and materials science, computer science and engineering, or geology.  Further, researchers from these regions are often involved in collaborative science with researchers from the Global North, and thus including these institutions improves the affiliation coverage of existing literature.  We expect that the fraction of scientific literature from the Global South will increase over time (including among our core literature of Astronomy and Physics) and making these identifiers now will make it easier to keep up with these demographic changes as they happen.  Astronomy and allied sciences are used as formal means of outreach worldwide, including the Global South, with global initiatives by organizations like the IAU’s <a href="http://www.astro4dev.org/">Office of Astronomy for Development (OAD)</a> being a prominent example.  An additional goal for us in improving global coverage of affiliations is that the ADS can be a resource for these outreach efforts.  We hope that this improved coverage will assist both research and outreach by our colleagues world-wide.</p>
+
+<p><strong>Historically Black Colleges and Universities (HBCUs)</strong></p>
+
+<p>As of last year, we already had assigned identifiers for a number of Historically Black Colleges and Universities (HBCUs) in the United States, particularly those with historically strong programs in science and engineering (most notably: Hampton University in Virginia, and Howard University in Washington, DC.)  During the past year, we have expanded our coverage to include all federally-recognized HBCUs represented in the ADS literature.  The list of HBCUs and their affiliation IDs can be accessed <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/historically_black_colleges_universities.tsv">here</a>.  Note that we have not assigned IDs to the entire list of federally designated schools; we excluded those not represented in literature and whose focus mostly lies outside the scope of the ADS, including business, law, and divinity schools.</p>
+
+<p><strong>Tribal Colleges and Universities (TCUs)</strong></p>
+
+<p>We have also added affiliation IDs for a partial list of Tribal Colleges and Universities (TCUs), primarily those in the United States that are currently represented in the ADS Literature.  The list of identified TCUs can be accessed <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/tribal_colleges_universities.tsv">here</a>.  Note that this list includes only those institutions designated as tribally-controlled, and does not include those public or private non-Tribal institutions having significant Native American populations.  A number of those public colleges and universities are already present in <a href="https://github.com/adsabs/CanonicalAffiliations/blog/master/parent_child.tsv">the primary list</a>, mainly those that have science and engineering programs.  Examples are Fort Lewis College (CO), University of North Carolina-Pembroke, University of Alaska-Fairbanks and -Southeast, and the University of New Mexico.</p>
+
+<p>There are comparatively few publications by authors affiliated with Tribal Colleges and Universities, and the papers written by TCU authors and coauthors in the ADS primarily focus on topics in Environmental Science and Science Education, which are not currently part of our core literature.  Of those schools represented, Salish Kootenai College (Montana), Northwest Indian College (Pacific NW), Diné College (Arizona) and Fond du Lac Tribal College (Minnesota) have the most publications.  TCUs may become more frequently represented if our scope widens to include more related sciences (e.g. planetary science and allied literature).  We also want to ensure that their contributions are noted in existing literature, and that their contributions will be more easily tracked if researchers from these institutions increase their participation in the ADS core fields of astronomy and physics.</p>
+
+<h3 id="improving-affiliation-metadata-you-can-help">Improving Affiliation Metadata: You Can Help!</h3>
+
+<p>Affiliation identification is an ongoing process and always will be.  One of our tasks over the past year has been to fix errors in our affiliations metadata, including badly-parsed affiliations; we focused on papers having either the longest author list or the highest citations, but we know there are still some data that needs to be fixed.  Likewise, there are many cases where an author has multiple affiliations and our representation is correct but can’t be cleanly split into independent entities – think of an author who lists “Departments of Chemistry and Physics, University of…” where we assigned IDs to both departments.  We may identify such strings as one or the other, depending on which department we searched for first.  In these cases, our ID is technically correct, but incomplete.</p>
+
+<p>If you find affiliation IDs that aren’t correct, or if there are affiliations that you think should be included or better disambiguated as parents and children, please <a href="mailto:adshelp@cfa.harvard.edu">get in touch</a>!  We would especially welcome help with the assignment and disambiguation of French UMRs and Universities, the Russian and Chinese Academies of Science, and any institutions from the Global South especially if they conduct published research in the ADS core fields of Astronomy and Physics.</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          help[at]scixplorer.org
+        </p>
+        <p>
+          SciX is a project created by the Astrophysics Data System (ADS), which
+          is operated by the Smithsonian Astrophysical Observatory under NASA
+          Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/scixabout/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About SciX
+          </a>
+        </li>
+        <li>
+          <a href="/scixhelp/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> SciX Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/scixabout/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@SciX
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/scixcommunity"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @scixcommunity
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

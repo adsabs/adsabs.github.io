@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/citations-journals-pt1_1.png">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/blog/citations-journals"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2023-12-08 22:03:10 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Citations to Astronomy Journals 1: The growth of interdisciplinarity | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Citations to Astronomy Journals 1: The growth of interdisciplinarity" />
+<meta name="author" content="Michael J. Kurtz and Edwin Henneken" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is the first of a series of blog posts measuring the journals which publish research astronomy articles, using citation statistics. In this post we describe the measurement process and the sample. The tables with the entire data set used are published in a Zenodo repository (DOI: 10.5281/zenodo.1400692). ADS pioneered the use of citation indices on the WWW (Kurtz, et al, 1996) and they remain the third most used feature of the ADS (after the abstracts and full text). While various so-called alt-metrics have become popular, in particular forms of download measures (e.g. Kurtz and Eichhorn 1998, Henneken and Kurtz 2017), they are not yet widely accepted or used; citations remain the gold standard for scholarly measurement, particularly of journals. Although the ADS has two main classifications for papers, astronomy and physics, simply choosing papers in the astronomy database is not a bibliometrically coherent method for choosing astronomy research papers. The database is designed to be useful to astronomers, not bibliometricians, and thus contains non-astronomy papers useful to astronomers. This biases the sample toward well-cited physics papers, and becomes more biased with time. We have chosen to define an astronomy (or perhaps astronomy-relevant) paper as one which cites a paper from one of the main astronomy research journals. This should capture most of the breadth of the field. The data were obtained via a series of ADS queries submitted via Python scripts to the API, one query for each year and journal pair. For example, this query returns astronomy papers published in Physical Review D in the year 2010: bibstem:PhRvD year:2010 citations(bibstem:(ApJ OR ApJL OR ApJS OR AJ OR MNRAS OR A&amp;A OR JCAP OR Icar OR E&amp;PSL OR SoPh)) By this definition 38% of PhRvD papers are astronomy papers. We ran these queries in the middle of July 2018 for each of the 20 years 1997-2016, and for each of the about 50 journals in the study (table 1). Some sets of journals were treated as a single entity, notably Physica (A,B,C,…), JGR(A,B,C,…) and the Physical Review, except for PhRvD and PhRvL, which were treated individually. For each list of papers we obtained a set of five measures: number of papers, number of citations to those papers, h index, number of papers with 10 or more citations, and number of papers with 100 or more citations. Table 2 gives the data in the format: year, bibstem, measure, type of measure (e.g. num, cites, h, i10 or i100). Note that we have removed the ampersand (&amp;) from the bibstems to aid the scripting. We have also run the query on all refereed articles in the ADS; table 3 gives these results. In the next blog posts we will examine individual journals; here we look at the behavior of the sample as a whole. Figure 1 Figure 1 shows the growth in the number of papers over the 20 years of the study, for all refereed articles, those in the 50 journal sample, and the rest. The journals in the main sample (the In Sample set) are all major international journals; all astronomy journals which have published at least fifty papers with 100 or more citations in the last 20 years are included in this sample. The journals outside the sample (the Out of Sample set) are of two basic types: smaller, mostly national, astronomy journals, such as ARep, AstL, MmSAI, BASI, ChA&amp;A, BaltA, etc., and journals which are not normally considered “astronomy” journals but which sometimes publish astronomy-related articles. There are more than 350 different journals which have published one or more astronomy-related articles which have received 100 or more citations in the last 20 years. The In Sample group shows a steady 4% yearly increase in number of papers published, fully consistent with the growth of the scholarly literature over the last 350 years (de Solla Price, 1961). The Out of Sample group, with 6.7% growth, indicates the growing sphere of influence of astronomy. Most of the Out of Sample journal articles are not from small astronomy journals (this has been steadily declining from about 10% to about 3% now); instead, they are from nearby physics/geophysics related disciplines. Assuming these fields are not growing any faster than the 4% rate of astronomy (or all science) we can conclude that the interdisciplinary reach of astronomy is growing by about 2.7% per year, a 25 year doubling period. As a percentage, the Out of Sample papers grew from 25% to 40% of the total during the 20 year period. Figure 2 Figure 2 shows the total citations to the two sets (plus the sum) of articles as measured in July 2018. From the plot one can see that it takes about a decade before the increase in the number of citations over time is overtaken by the increase in the number of articles over time, creating a broad peak with a slow decline as we go back in time. The asymptotic growth rate of 3% per year for the older In Sample journals citation counts is below the 4% growth rate for the number of articles published by these journals. Were the situation static this would imply that the number of citations per article is decreasing at about 1% per year. The situation is not static, and the mean number of citations per article is actually increasing. While the probability of a 20 year old article receiving a citation is only about 10% the probability that a recent article receives the citation (Kurtz, et al 2005), the number of available citations increases with the 4% yearly increase in number of articles and the 3% yearly increase of the number of references per article (Henneken, et al 2012), so after 20 years the total citation rate is still 40% of the initial peak rate. This, plus the fact that citations accumulate with age tends to flatten out this form of citation curve. The Out of Sample articles present a different picture; the growth rate for citations is greater than for articles. Assuming that the same effects which affect the the In Sample articles also affect these articles, we are left with an unexplained residual growth in the Out of Sample citations similar to the additional growth in the number of articles due to increased interdisciplinarity. We suggest there are a few factors at play here. The interdisciplinarity goes both ways, in that these articles not only cite core astronomy articles more often, they are also cited by astronomy articles more often. Second: articles in astronomy are substantially more cited than articles in related fields, such as geophysics; this is a function of the differing scholarly cultures, and tends to enhance the citations to geophysics articles which are of interest to astronomers. Finally the ADS data have a strong pro-astronomy bias (see the appendix to our recent white paper), which also tends to enhance this effect. In this blog post we have presented the data which we will use to evaluate and rank the main international journals which publish astronomy research. We have shown that astronomy articles in these journals, as a whole, are increasing consistent with the centuries long trends in scholarship, and that the interdisciplinary aspect of astronomy research is steadily expanding. COMING UP NEXT: We will publish and discuss 20 years of yearly rankings for the 50 In Sample journals for each of our five measures (number of articles, citations, h, i10, i100)." />
+<meta property="og:description" content="This is the first of a series of blog posts measuring the journals which publish research astronomy articles, using citation statistics. In this post we describe the measurement process and the sample. The tables with the entire data set used are published in a Zenodo repository (DOI: 10.5281/zenodo.1400692). ADS pioneered the use of citation indices on the WWW (Kurtz, et al, 1996) and they remain the third most used feature of the ADS (after the abstracts and full text). While various so-called alt-metrics have become popular, in particular forms of download measures (e.g. Kurtz and Eichhorn 1998, Henneken and Kurtz 2017), they are not yet widely accepted or used; citations remain the gold standard for scholarly measurement, particularly of journals. Although the ADS has two main classifications for papers, astronomy and physics, simply choosing papers in the astronomy database is not a bibliometrically coherent method for choosing astronomy research papers. The database is designed to be useful to astronomers, not bibliometricians, and thus contains non-astronomy papers useful to astronomers. This biases the sample toward well-cited physics papers, and becomes more biased with time. We have chosen to define an astronomy (or perhaps astronomy-relevant) paper as one which cites a paper from one of the main astronomy research journals. This should capture most of the breadth of the field. The data were obtained via a series of ADS queries submitted via Python scripts to the API, one query for each year and journal pair. For example, this query returns astronomy papers published in Physical Review D in the year 2010: bibstem:PhRvD year:2010 citations(bibstem:(ApJ OR ApJL OR ApJS OR AJ OR MNRAS OR A&amp;A OR JCAP OR Icar OR E&amp;PSL OR SoPh)) By this definition 38% of PhRvD papers are astronomy papers. We ran these queries in the middle of July 2018 for each of the 20 years 1997-2016, and for each of the about 50 journals in the study (table 1). Some sets of journals were treated as a single entity, notably Physica (A,B,C,…), JGR(A,B,C,…) and the Physical Review, except for PhRvD and PhRvL, which were treated individually. For each list of papers we obtained a set of five measures: number of papers, number of citations to those papers, h index, number of papers with 10 or more citations, and number of papers with 100 or more citations. Table 2 gives the data in the format: year, bibstem, measure, type of measure (e.g. num, cites, h, i10 or i100). Note that we have removed the ampersand (&amp;) from the bibstems to aid the scripting. We have also run the query on all refereed articles in the ADS; table 3 gives these results. In the next blog posts we will examine individual journals; here we look at the behavior of the sample as a whole. Figure 1 Figure 1 shows the growth in the number of papers over the 20 years of the study, for all refereed articles, those in the 50 journal sample, and the rest. The journals in the main sample (the In Sample set) are all major international journals; all astronomy journals which have published at least fifty papers with 100 or more citations in the last 20 years are included in this sample. The journals outside the sample (the Out of Sample set) are of two basic types: smaller, mostly national, astronomy journals, such as ARep, AstL, MmSAI, BASI, ChA&amp;A, BaltA, etc., and journals which are not normally considered “astronomy” journals but which sometimes publish astronomy-related articles. There are more than 350 different journals which have published one or more astronomy-related articles which have received 100 or more citations in the last 20 years. The In Sample group shows a steady 4% yearly increase in number of papers published, fully consistent with the growth of the scholarly literature over the last 350 years (de Solla Price, 1961). The Out of Sample group, with 6.7% growth, indicates the growing sphere of influence of astronomy. Most of the Out of Sample journal articles are not from small astronomy journals (this has been steadily declining from about 10% to about 3% now); instead, they are from nearby physics/geophysics related disciplines. Assuming these fields are not growing any faster than the 4% rate of astronomy (or all science) we can conclude that the interdisciplinary reach of astronomy is growing by about 2.7% per year, a 25 year doubling period. As a percentage, the Out of Sample papers grew from 25% to 40% of the total during the 20 year period. Figure 2 Figure 2 shows the total citations to the two sets (plus the sum) of articles as measured in July 2018. From the plot one can see that it takes about a decade before the increase in the number of citations over time is overtaken by the increase in the number of articles over time, creating a broad peak with a slow decline as we go back in time. The asymptotic growth rate of 3% per year for the older In Sample journals citation counts is below the 4% growth rate for the number of articles published by these journals. Were the situation static this would imply that the number of citations per article is decreasing at about 1% per year. The situation is not static, and the mean number of citations per article is actually increasing. While the probability of a 20 year old article receiving a citation is only about 10% the probability that a recent article receives the citation (Kurtz, et al 2005), the number of available citations increases with the 4% yearly increase in number of articles and the 3% yearly increase of the number of references per article (Henneken, et al 2012), so after 20 years the total citation rate is still 40% of the initial peak rate. This, plus the fact that citations accumulate with age tends to flatten out this form of citation curve. The Out of Sample articles present a different picture; the growth rate for citations is greater than for articles. Assuming that the same effects which affect the the In Sample articles also affect these articles, we are left with an unexplained residual growth in the Out of Sample citations similar to the additional growth in the number of articles due to increased interdisciplinarity. We suggest there are a few factors at play here. The interdisciplinarity goes both ways, in that these articles not only cite core astronomy articles more often, they are also cited by astronomy articles more often. Second: articles in astronomy are substantially more cited than articles in related fields, such as geophysics; this is a function of the differing scholarly cultures, and tends to enhance the citations to geophysics articles which are of interest to astronomers. Finally the ADS data have a strong pro-astronomy bias (see the appendix to our recent white paper), which also tends to enhance this effect. In this blog post we have presented the data which we will use to evaluate and rank the main international journals which publish astronomy research. We have shown that astronomy articles in these journals, as a whole, are increasing consistent with the centuries long trends in scholarship, and that the interdisciplinary aspect of astronomy research is steadily expanding. COMING UP NEXT: We will publish and discuss 20 years of yearly rankings for the 50 In Sample journals for each of our five measures (number of articles, citations, h, i10, i100)." />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/blog/citations-journals" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/blog/citations-journals" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="Citations to Astronomy Journals 1: The growth of interdisciplinarity" />
+<meta name="twitter:site" content="@adsabs" />
+<meta name="twitter:creator" content="@Michael J. Kurtz and Edwin Henneken" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Michael J. Kurtz and Edwin Henneken"},"dateModified":"2023-12-08T22:03:10+00:00","datePublished":"2018-08-20T00:00:00+00:00","description":"This is the first of a series of blog posts measuring the journals which publish research astronomy articles, using citation statistics. In this post we describe the measurement process and the sample. The tables with the entire data set used are published in a Zenodo repository (DOI: 10.5281/zenodo.1400692). ADS pioneered the use of citation indices on the WWW (Kurtz, et al, 1996) and they remain the third most used feature of the ADS (after the abstracts and full text). While various so-called alt-metrics have become popular, in particular forms of download measures (e.g. Kurtz and Eichhorn 1998, Henneken and Kurtz 2017), they are not yet widely accepted or used; citations remain the gold standard for scholarly measurement, particularly of journals. Although the ADS has two main classifications for papers, astronomy and physics, simply choosing papers in the astronomy database is not a bibliometrically coherent method for choosing astronomy research papers. The database is designed to be useful to astronomers, not bibliometricians, and thus contains non-astronomy papers useful to astronomers. This biases the sample toward well-cited physics papers, and becomes more biased with time. We have chosen to define an astronomy (or perhaps astronomy-relevant) paper as one which cites a paper from one of the main astronomy research journals. This should capture most of the breadth of the field. The data were obtained via a series of ADS queries submitted via Python scripts to the API, one query for each year and journal pair. For example, this query returns astronomy papers published in Physical Review D in the year 2010: bibstem:PhRvD year:2010 citations(bibstem:(ApJ OR ApJL OR ApJS OR AJ OR MNRAS OR A&amp;A OR JCAP OR Icar OR E&amp;PSL OR SoPh)) By this definition 38% of PhRvD papers are astronomy papers. We ran these queries in the middle of July 2018 for each of the 20 years 1997-2016, and for each of the about 50 journals in the study (table 1). Some sets of journals were treated as a single entity, notably Physica (A,B,C,…), JGR(A,B,C,…) and the Physical Review, except for PhRvD and PhRvL, which were treated individually. For each list of papers we obtained a set of five measures: number of papers, number of citations to those papers, h index, number of papers with 10 or more citations, and number of papers with 100 or more citations. Table 2 gives the data in the format: year, bibstem, measure, type of measure (e.g. num, cites, h, i10 or i100). Note that we have removed the ampersand (&amp;) from the bibstems to aid the scripting. We have also run the query on all refereed articles in the ADS; table 3 gives these results. In the next blog posts we will examine individual journals; here we look at the behavior of the sample as a whole. Figure 1 Figure 1 shows the growth in the number of papers over the 20 years of the study, for all refereed articles, those in the 50 journal sample, and the rest. The journals in the main sample (the In Sample set) are all major international journals; all astronomy journals which have published at least fifty papers with 100 or more citations in the last 20 years are included in this sample. The journals outside the sample (the Out of Sample set) are of two basic types: smaller, mostly national, astronomy journals, such as ARep, AstL, MmSAI, BASI, ChA&amp;A, BaltA, etc., and journals which are not normally considered “astronomy” journals but which sometimes publish astronomy-related articles. There are more than 350 different journals which have published one or more astronomy-related articles which have received 100 or more citations in the last 20 years. The In Sample group shows a steady 4% yearly increase in number of papers published, fully consistent with the growth of the scholarly literature over the last 350 years (de Solla Price, 1961). The Out of Sample group, with 6.7% growth, indicates the growing sphere of influence of astronomy. Most of the Out of Sample journal articles are not from small astronomy journals (this has been steadily declining from about 10% to about 3% now); instead, they are from nearby physics/geophysics related disciplines. Assuming these fields are not growing any faster than the 4% rate of astronomy (or all science) we can conclude that the interdisciplinary reach of astronomy is growing by about 2.7% per year, a 25 year doubling period. As a percentage, the Out of Sample papers grew from 25% to 40% of the total during the 20 year period. Figure 2 Figure 2 shows the total citations to the two sets (plus the sum) of articles as measured in July 2018. From the plot one can see that it takes about a decade before the increase in the number of citations over time is overtaken by the increase in the number of articles over time, creating a broad peak with a slow decline as we go back in time. The asymptotic growth rate of 3% per year for the older In Sample journals citation counts is below the 4% growth rate for the number of articles published by these journals. Were the situation static this would imply that the number of citations per article is decreasing at about 1% per year. The situation is not static, and the mean number of citations per article is actually increasing. While the probability of a 20 year old article receiving a citation is only about 10% the probability that a recent article receives the citation (Kurtz, et al 2005), the number of available citations increases with the 4% yearly increase in number of articles and the 3% yearly increase of the number of references per article (Henneken, et al 2012), so after 20 years the total citation rate is still 40% of the initial peak rate. This, plus the fact that citations accumulate with age tends to flatten out this form of citation curve. The Out of Sample articles present a different picture; the growth rate for citations is greater than for articles. Assuming that the same effects which affect the the In Sample articles also affect these articles, we are left with an unexplained residual growth in the Out of Sample citations similar to the additional growth in the number of articles due to increased interdisciplinarity. We suggest there are a few factors at play here. The interdisciplinarity goes both ways, in that these articles not only cite core astronomy articles more often, they are also cited by astronomy articles more often. Second: articles in astronomy are substantially more cited than articles in related fields, such as geophysics; this is a function of the differing scholarly cultures, and tends to enhance the citations to geophysics articles which are of interest to astronomers. Finally the ADS data have a strong pro-astronomy bias (see the appendix to our recent white paper), which also tends to enhance this effect. In this blog post we have presented the data which we will use to evaluate and rank the main international journals which publish astronomy research. We have shown that astronomy articles in these journals, as a whole, are increasing consistent with the centuries long trends in scholarship, and that the interdisciplinary aspect of astronomy research is steadily expanding. COMING UP NEXT: We will publish and discuss 20 years of yearly rankings for the 50 In Sample journals for each of our five measures (number of articles, citations, h, i10, i100).","headline":"Citations to Astronomy Journals 1: The growth of interdisciplinarity","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/blog/citations-journals"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"},"name":"Michael J. Kurtz and Edwin Henneken"},"url":"https://ui.adsabs.harvard.edu/blog/citations-journals"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/blog">all blog posts</a> |
+        <a href="/blog/news">news</a> |
+        <a href="/blog/general">general</a> |
+        <a href="/blog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Citations to Astronomy Journals 1: The growth of interdisciplinarity</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Michael J. Kurtz and Edwin Henneken
+              
+        
+    
+
+
+    <b>(ADS)</b>
+
+</h3>
+      <h3 class="post-date">20 Aug 2018</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>This is the first of a series of blog posts measuring the journals which publish research astronomy articles, using citation statistics.  In this post we describe the measurement process and the sample.  The tables with the entire data set used are published in a <a href="https://doi.org/10.5281/zenodo.1400692">Zenodo repository (DOI: 10.5281/zenodo.1400692)</a>.</p>
+
+<p>ADS pioneered the use of citation indices on the WWW (<a href="https://ui.adsabs.harvard.edu/#abs/1996AAS...189.0607K/abstract">Kurtz, et al, 1996</a>) and they remain the third most used feature of the ADS (after the abstracts and full text).  While various so-called alt-metrics have become popular, in particular forms of download measures (e.g. <a href="https://ui.adsabs.harvard.edu/#abs/1998ASPC..153..293K">Kurtz and Eichhorn 1998</a>, <a href="https://ui.adsabs.harvard.edu/#abs/2017arXiv170602153H/">Henneken and Kurtz 2017</a>), they are not yet widely accepted or used; citations remain the gold standard for scholarly measurement, particularly of journals.</p>
+
+<p>Although the ADS has two main classifications for papers, astronomy and physics, simply choosing papers in the astronomy database is not a bibliometrically coherent method for choosing astronomy research papers.  The database is designed to be useful to astronomers, not bibliometricians, and thus contains non-astronomy papers useful to astronomers.  This biases the sample toward well-cited physics papers, and becomes more biased with time.</p>
+
+<p>We have chosen to define an astronomy (or perhaps astronomy-relevant) paper as one which cites a paper from one of the main astronomy research journals.  This should capture most of the breadth of the field.</p>
+
+<p>The data were obtained via a series of ADS queries submitted via Python scripts to the API, one query for each year and journal pair.  For example, this query returns astronomy papers published in Physical Review D in the year 2010:</p>
+
+<p><em>bibstem:PhRvD year:2010 citations(bibstem:(ApJ OR ApJL OR ApJS OR AJ OR MNRAS OR A&amp;A OR JCAP OR Icar OR E&amp;PSL OR SoPh))</em></p>
+
+<p>By this definition 38% of PhRvD papers are astronomy papers.</p>
+
+<p>We ran these queries in the middle of July 2018 for each of the 20 years 1997-2016, and for each of the about 50 journals in the study (<a href="https://zenodo.org/record/1400693/files/BlogOne.table1.txt?download=1" download="">table 1</a>).  Some sets of journals were treated as a single entity, notably Physica (A,B,C,…), JGR(A,B,C,…) and the Physical Review, except for PhRvD and PhRvL, which were treated individually.</p>
+
+<p>For each list of papers we obtained a set of five measures: number of papers, number of citations to those papers, h index, number of papers with 10 or more citations, and number of papers with 100 or more citations.  <a href="https://zenodo.org/record/1400693/files/BlogOne.table2.txt?download=1" download="">Table 2</a> gives the data in the format: year, bibstem, measure, type of measure (e.g. num, cites, h, i10 or i100).  Note that we have removed the ampersand (&amp;) from the bibstems to aid the scripting.</p>
+
+<p>We have also run the query on all refereed articles in the ADS; <a href="https://zenodo.org/record/1400693/files/BlogOne.table3.txt?download=1" download="">table 3</a> gives these results.</p>
+
+<p>In the next blog posts we will examine individual journals; here we look at the behavior of the sample as a whole.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/citations-journals-pt1_1.png" />
+<em>Figure 1</em>
+</div>
+<p><br /></p>
+
+<p>Figure 1 shows the growth in the number of papers over the 20 years of the study, for all refereed articles, those in the 50 journal sample, and the rest.  The journals in the main sample (the In Sample set) are all major international journals; all astronomy journals which have published at least fifty papers with 100 or more citations in the last 20 years are included in this sample.  The journals outside the sample (the Out of Sample set) are of two basic types: smaller, mostly national, astronomy journals, such as ARep, AstL, MmSAI, BASI, ChA&amp;A, BaltA, etc., and journals which are not normally considered “astronomy” journals but which sometimes publish astronomy-related articles.  There are more than 350 different journals which have published one or more astronomy-related articles which have received 100 or more citations in the last 20 years.</p>
+
+<p>The In Sample group shows a steady 4% yearly increase in number of papers published, fully consistent with the growth of the scholarly literature over the last 350 years (<a href="http://derekdesollaprice.org/science-since-babylon/">de Solla Price, 1961</a>).  The Out of Sample group, with 6.7% growth, indicates the growing sphere of influence of astronomy.</p>
+
+<p>Most of the Out of Sample journal articles  are not from small astronomy journals (this has been steadily declining from about 10% to about 3% now); instead, they are from nearby physics/geophysics related disciplines.  Assuming these fields are not growing any faster than the 4% rate of astronomy (or all science) we can conclude that the interdisciplinary reach of astronomy is growing by about 2.7% per year, a 25 year doubling period.  As a percentage, the Out of Sample papers grew from 25% to 40% of the total during the 20 year period.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/citations-journals-pt1_2.png" />
+<em>Figure 2</em>
+</div>
+<p><br /></p>
+
+<p>Figure 2 shows the total citations to the two sets (plus the sum) of articles as measured in July 2018.  From the plot one can see that it takes about a decade before the increase in the number of citations over time is overtaken by the increase in the number of articles over time, creating a broad peak with a slow decline as we go back in time.</p>
+
+<p>The asymptotic growth rate of 3% per year for the older In Sample journals citation counts is below the 4% growth rate for the number of articles published by these journals.  Were the situation static this would imply that the number of citations per article is decreasing at about 1% per year.  The situation is not static, and the mean number of citations per article is actually increasing.  While the probability of a 20 year old article receiving a citation is only about 10% the probability that a recent article receives the citation (<a href="https://ui.adsabs.harvard.edu/#abs/2005JASIS..56..111K/">Kurtz, et al 2005</a>), the number of available citations increases with the 4% yearly increase in number of articles and the 3% yearly increase of the number of references per article (<a href="https://ui.adsabs.harvard.edu/#abs/2012opsa.book..253H/">Henneken, et al 2012</a>),  so after 20 years the total citation rate is still 40% of the initial peak rate.  This, plus the fact that citations accumulate with age tends to flatten out this form of citation curve.</p>
+
+<p>The Out of Sample articles present a different picture; the growth rate for citations is greater than for articles.  Assuming that the same effects which affect the the In Sample articles also affect these articles, we are left with an unexplained  residual growth in the Out of Sample citations similar to the additional growth in the number of articles due to increased interdisciplinarity.</p>
+
+<p>We suggest there are a few factors at play here.  The interdisciplinarity goes both ways, in that these articles not only cite core astronomy articles more often, they are also cited by astronomy articles more often.  Second: articles in astronomy are substantially more cited than articles in related fields, such as geophysics; this is a function of the differing scholarly cultures, and tends to enhance the citations to geophysics articles which are of interest to astronomers.  Finally the ADS data have a strong pro-astronomy bias (see the appendix to our recent <a href="https://ui.adsabs.harvard.edu/#abs/2018arXiv180303598K">white paper</a>), which also tends to enhance this effect.</p>
+
+<p>In this blog post we have presented the data which we will use to evaluate and rank the main international journals which publish astronomy research.  We have shown that astronomy articles in these journals, as a whole, are increasing consistent with the centuries long trends in scholarship, and that the interdisciplinary aspect of astronomy research is steadily expanding.</p>
+
+<p><br />
+COMING UP NEXT: We will publish and discuss 20 years of yearly rankings for the 50 In Sample journals for each of our five measures (number of articles, citations, h, i10, i100).</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

@@ -1,0 +1,105 @@
+<h1 id="frequently-asked-questions-faqs">Frequently Asked Questions (FAQs)</h1>
+
+<p><a href="#searching">Searching</a> •
+<a href="#submitting-grant-applications">Submitting Grant Applications</a> •
+<a href="#transitioning-from-classic">Transitioning from Classic</a> •
+<a href="#ads-libraries">ADS Libraries</a> •
+<a href="#orcid">ORCID</a> •
+<a href="#data-and-curation">Data and Curation</a> •
+<a href="#database-coverage">Database Coverage</a> •
+<a href="#other">Other</a></p>
+
+<h2 id="searching">Searching</h2>
+
+<h5 id="q-typing-a-fielded-query-for-an-author-query-eg-authorhuchra-j-or-authorhuchra-j-or-clicking-on-the-search-term-dropdown-is-a-lot-of-work">Q: Typing a fielded query for an author query (e.g. author:“huchra, j.” or author:“^huchra, j.”) or clicking on the search term dropdown is a lot of work.</h5>
+<p>There are two options. First, a first-author query can usually be entered as <em>^huchra, j.</em>—the <em>author:</em> tag is not necessary for first-author searches (note, though, that this format does not work well for authors with multi-part last names). Second, many search tags will autocomplete in the search box. Begin typing the search tag, such as <em>author:</em>, and either press the return key or the right arrow key when the tag autocompletes to accept it.</p>
+
+<h5 id="q-is-it-possible-to-search-using-the-second-author-of-a-paper">Q: Is it possible to search using the second author of a paper?</h5>
+<p>Positional searches are supported. To search for a second author, use <em>pos(author:“huchra,j.”,2)</em>. See the Help page for <a href="../search/positional">positional field searches</a> for more info.</p>
+
+<h5 id="q-how-do-i-exclude-a-term-from-my-search">Q: How do I exclude a term from my search?</h5>
+<p>Either prepend a negative sign (e.g. <em>-doctype:“proposal”</em>) or use the Boolean operator NOT (e.g. <em>NOT doctype:“proposal”</em>) while searching. See the Help page for <a href="../search/search-syntax#combining-search-terms-to-make-a-compound-query">Boolean queries</a> for more info, paying special attention to the note on when differences in behavior between NOT and the negative sign may arise.</p>
+
+<h5 id="q-records-are-missed-when-searching-from-the-1st-of-one-month-to-the-end-of-the-current-month-eg-pubdate2016-01-01-to-2016-06-30">Q: Records are missed when searching from the 1st of one month to the end of the current month, e.g. pubdate:[2016-01-01 TO 2016-06-30].</h5>
+<p>Records do not generally have a publication day, just a month and year. The missing day is set to 00 (e.g. January 2016 is set to 2016-01-00). Searches starting on the 1st of a given month will exclude all records with publication days of 00. It is preferable to not use a day when searching over a publication date range; specifying only a month will include records with publication days of 00. This is similarly true for the small number of records missing publication months. Searches beginning in January of a given year may miss records with publication months of 00. To search for records from the first half of the year, employ a search term such as <em>pubdate:[2016 TO 2016-06]</em>.</p>
+
+<h5 id="q-how-can-i-search-for-an-acronym-that-is-the-same-as-a-common-word">Q: How can I search for an acronym that is the same as a common word?</h5>
+<p>ADS treats search terms entered in all caps as acronyms and will only return records that contain the all caps acronym form, not the lowercase common word form. In addition, some acronyms will auto-expand in the search (e.g. searching for “ADS” will find both “ADS” and “Astrophysics Data System” but will ignore “ads”).</p>
+
+<h5 id="q-my-new-paper-is-not-appearing-in-ads">Q: My new paper is not appearing in ADS.</h5>
+<p>New papers appearing on arXiv are ingested daily, though there may be a delay of one day for them to appear in the new ADS. Published articles are ingested as the publisher provides them on a weekly basis, generally over the weekend.</p>
+
+<h5 id="q-searching-for-an-authors-name-plus-their-affiliation-doesnt-give-a-complete-list-of-results">Q: Searching for an author’s name plus their affiliation doesn’t give a complete list of results.</h5>
+<p>Not all publishers provide authors’ affiliations for search indexing, even if the affiliations are listed in the PDF or HTML form of the article itself. Also, note that searching using the <em>aff:</em> search tag searches the raw affiliation text provided by the publisher, such that searching for “Harvard-Smithsonian Center for Astrophysics” or for “CfA” will give different results. Use the <em>inst:</em> search tag to search the canonical affiliations; more information is available on the <a href="../search/search-syntax">Search Syntax help page</a>.</p>
+
+<h5 id="q-how-do-i-build-a-url-using-a-known-identifier-of-a-paper">Q: How do I build a URL using a known identifier of a paper?</h5>
+<p>You can access the abstract page of a known paper by inserting an identifier (bibcode, DOI, arXiv ID) into a URL, following a set pattern. The base URL is <code class="language-plaintext highlighter-rouge">https://ui.adsabs.harvard.edu/abs/&lt;identifier&gt;</code>, where <code class="language-plaintext highlighter-rouge">&lt;identifier&gt;</code> can be one of the following:</p>
+<ul>
+  <li>bibcode, e.g. <a href="https://ui.adsabs.harvard.edu/abs/2008ApJ...689.1044G">https://ui.adsabs.harvard.edu/abs/2008ApJ…689.1044G</a></li>
+  <li>DOI, e.g. <a href="https://ui.adsabs.harvard.edu/abs/10.1086/592738">https://ui.adsabs.harvard.edu/abs/10.1086/592738</a></li>
+  <li>arXiv ID in two ways, e.g.:
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/arXiv:0808.2870">https://ui.adsabs.harvard.edu/abs/arXiv:0808.2870</a></li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/0808.2870">https://ui.adsabs.harvard.edu/abs/0808.2870</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="submitting-grant-applications">Submitting Grant Applications</h2>
+<h5 id="q-my-nsf-grant-application-requires-that-i-provide-a-list-of-all-of-my-recent-co-authors-can-ads-provide-that-list">Q: My NSF grant application requires that I provide a list of all of my recent co-authors. Can ADS provide that list?</h5>
+<p>We have a tool specifically for this purpose: the “Author Affiliation” report option on the Export menu (accessible from the search results page). For more, see the <a href="../actions/author-affiliation">Author Affiliation help page</a>.</p>
+
+<h5 id="q-my-nsf-application-requires-i-build-a-cv-via-sciencv-can-ads-help-with-that">Q: My NSF application requires I build a CV via SciENcv. Can ADS help with that?</h5>
+<p>There are two options to use ADS to help build your SciENcv:</p>
+<ol>
+  <li>The first option is to export your publications from ADS in the <a href="../actions/export">RIS format</a>. The SciENcv citations manager will then allow you to import your citations in this format.</li>
+  <li>The second option is to link your ORCID account with SciENcv and import your citations from there. You can use ADS to <a href="../orcid/claiming-papers">add citations to your ORCID profile</a>, then link your updated ORCID profile to your account in SciENcv.</li>
+</ol>
+
+<h2 id="transitioning-from-classic">Transitioning from Classic</h2>
+<h5 id="q-how-do-i-transfer-a-private-library-from-classic-to-the-new-ads">Q: How do I transfer a private library from Classic to the new ADS?</h5>
+<p>Link your Classic account to your the new ADS account and <a href="../libraries/legacy-importing#importing-libraries">use our import tool to transfer your library</a>.</p>
+
+<h5 id="q-i-have-some-links-to-classic-pages-on-my-website---do-i-need-to-update-all-of-these-to-the-new-ads-links">Q: I have some links to Classic pages on my website - do I need to update all of these to the new ADS links?</h5>
+<p>Nope! Existing Classic URLs now redirect to the corresponding URLs in the new ADS.</p>
+
+<h5 id="q-where-do-i-find-the-utility-get-citation-lists-for-selected-articles-and-similar-second-order-queries">Q: Where do I find the utility <strong><em>Get citation lists for selected articles</em></strong> and similar second order queries?</h5>
+<p>In general, the function <strong>Reviews</strong> in the <strong>Explore</strong> menu will generate the same list of publications as selecting all records in Classic and clicking on the button <em>Get citation lists for selected articles</em>. The only difference is the fact that the new ADS does not show the frequency, but the results are sorted by the number of cites to the original set (when sorted by score).</p>
+
+<p>The new function <strong>Useful</strong> can be used in a similar way to generate the same results you would get the with button <em>Get reference lists for selected articles</em> in the old ADS. When “score” is selected for sorting, the records are sorted by the number of cites by the original set.</p>
+
+<p>The <strong>Co-reads</strong> function corresponds with <em>Get also-read lists for selected articles</em>.</p>
+
+<h2 id="ads-libraries">ADS Libraries</h2>
+<h5 id="q-the-number-of-papers-listed-in-the-header-of-my-library-differs-from-the-actual-number-in-the-library">Q: The number of papers listed in the header of my library differs from the actual number in the library.</h5>
+<p>When you create or update your library, the bibcodes of the new records are stored in a database. Currently this list does not get updated when records are merged or deleted within the ADS index, rather these changes get reflected at display time of the contents of an ADS Library.</p>
+
+<h2 id="orcid">ORCID</h2>
+<h5 id="q-i-just-claimed-some-papers-using-my-orcid-id-but-theyre-not-showing-up-in-the-public-search">Q: I just claimed some papers using my ORCID ID but they’re not showing up in the public search.</h5>
+<p>ORCID claims can take up to 24 hours to be processed and approved in our system. Please check the search again tomorrow.</p>
+
+<h5 id="q-i-have-records-on-my-orcid-profile-that-do-not-appear-in-ads">Q: I have records on my ORCID profile that do not appear in ADS.</h5>
+<p>First, if you haven’t yet, you’ll need to log into ORCID in ADS, using the ORCID dropdown menu in the top bar. If you’ve published under multiple names, you’ll need to enter these on your <a href="https://ui.adsabs.harvard.edu/user/settings/orcid">ORCID settings page</a>. Papers on your ORCID profile also need to exist in ADS and need to have an identifier we recognize (generally a bibcode, arXiv ID, or DOI). Finally, if you’ve recently entered or updated these records, note that it can take up to 24 hours for them to be registered in our system.</p>
+
+<h2 id="data-and-curation">Data and Curation</h2>
+<p>For data and curation questions, see our <a href="../data_faq/data-faq">data and curation FAQs</a>.</p>
+
+<h2 id="database-coverage">Database Coverage</h2>
+<h5 id="q-how-complete-is-ads">Q: How complete is ADS?</h5>
+<p>ADS aims to be the complete and authoritative source for the astrophysics literature. This includes not only published refereed articles and arXiv e-prints, but also the gray literature, comprised of conference proceedings, books, proposals, etc. We aim to not only index these resources but also enrich them with links to data or other resources when available. We also index published refereed papers and conferences that are likely to be cited by the core astrophysics literature, such as papers from physics, geophysics, and planetary science. If a record is missing, please let us know via our <a href="https://ui.adsabs.harvard.edu/feedback/correctabstract">Submit Abstract Form</a>.</p>
+
+<h5 id="q-why-are-citations-from-an-arxiv-record-missing-why-is-an-arxiv-record-missing-its-references">Q: Why are citations from an arXiv record missing? Why is an arXiv record missing its references?</h5>
+<p>For arXiv sources, we attempt to extract references from the full text and from there create citations. However, as papers can be submitted to the arXiv with a bibliography in a non-standard format, this process is not always successful. When the published version of an arXiv paper becomes available, we will use the publisher-provided reference list and disregard the arXiv reference list.</p>
+
+<h5 id="q-for-how-many-records-is-the-full-text-available-for-searching">Q: For how many records is the full text available for searching?</h5>
+<p>The full text is available for searching for over 4 million records, including most recent publications. Note that the searchable full text resides in our database and is separate from the links to publisher or arXiv sources; not all records with source links have searchable full text.</p>
+
+<h2 id="other">Other</h2>
+<h5 id="q-im-trying-to-use-the-new-interface-but-im-getting-a-message-about-javascript--its-stuck-on-a-loading-screen">Q: I’m trying to use the new interface but I’m getting a message about JavaScript / it’s stuck on a loading screen.</h5>
+<p>This issue is commonly seen when users have JavaScript turned off in their browser, or they’re using security software or browser plugins (such as NoScript) that block JavaScript, or are accessing the site from a network that blocks content from certain domains (e.g. google.com).  The full version of the new ADS requires JavaScript in order to function (note: the basic HTML version, linked from the bottom of the search page or from the loading page when JavaScript is not detected, offers limited functionality without requiring JavaScript).  At an absolute minimum you must have JavaScript turned on.  Further, if you have any security settings or plugins that require sites to be whitelisted before running JavaScript, you must whitelist two domains for basic functionality: harvard.edu, and google.com.</p>
+
+<h5 id="q-what-internet-browsers-are-supported-by-ads">Q: What internet browsers are supported by ADS?</h5>
+<p>We support all current versions (within the last 5 years) of Chrome, Firefox, Safari, and Edge. We also support Internet Explorer 11. This includes Firefox ESR (extended service release) versions, but does not include versions of any browser newer than 5 years old that have been officially retired.</p>
+
+<h5 id="q-how-should-i-acknowledge-ads">Q: How should I acknowledge ADS?</h5>
+<p>If you wish to acknowledge us in a publication, kindly use a phrase such as the following: “This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC21M00561.” If you are using the ADS as a tool for bibliometric studies, please make sure you have an in-depth understanding of the system, its features and limitations, by reading and citing as appropriate the relevant published literature about ADS (<a href="https://ui.adsabs.harvard.edu/#/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ">refereed</a>, <a href="https://ui.adsabs.harvard.edu/#/public-libraries/iETdWs2pSGajhFBI30X3UQ">non-refereed</a>).</p>

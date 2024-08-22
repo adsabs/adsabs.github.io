@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/blog_2016-09-19_adsbumblebee.png">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/blog/adsug"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2023-12-08 22:03:10 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ADS Welcomes Its Users Group for Their Second Annual Meeting | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="ADS Welcomes Its Users Group for Their Second Annual Meeting" />
+<meta name="author" content="Kelly Lockhart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The ADS team was pleased to welcome our Users Group (ADSUG) to our home base here at the CfA for their second visit on 2-3 November. The ADSUG meets roughly once per year to hear about the status of ongoing and upcoming projects and to advise the ADS team on our operations and potential system enhancements. The group is comprised of members from the greater astronomy community, including scientists and librarians. Several of our members are also involved in digital archives or other computing-intensive projects. Their advice and insights are quite valuable in determining the direction of ADS development. One of the ADSUG members is Erick Peirson, lead system architect at arXiv. Erick spent an extra day with us before the official ADSUG meeting to discuss our ongoing projects. ADS and arXiv have a long history of collaboration, including a special daily ingest into ADS of arXiv papers, ADS’s use of arXiv read statistics, and arXiv’s use of the ADS linkage of the arXiv and published versions of a given paper. Similarly to ADS, arXiv is also in the process of upgrading their infrastructure to meet their 21st century needs; the two teams have independently selected similar technology stacks and architectures, which opens the door to closer future collaboration. Presentations and discussions at the main ADSUG meeting covered a lot of ground quickly over the two-day meeting. A full report is expected from the committee in the next month or so, but in the meantime, an overview of the major topics covered is given below, or check out the online program. Removing the Beta from ADS Beta (a.k.a. Bumblebee) The ADS development team has been hard at work on ADS Beta, codenamed Bumblebee, since 2015, an outgrowth of earlier efforts (ADS Labs, ADS 2.0) to modernize the interface, infrastructure, and search capabilities of ADS Classic. These development efforts are paying off and Bumblebee is now rapidly approaching feature and content parity with ADS Classic, a nearly 25-year-old system. In addition, Bumblebee provides a much richer search experience, including full-text searching for most recent publications, on-the-fly search filtering, and integration with systems such as ORCID. Full parity with Classic is expected to be reached in early 2018, and ADS Classic will be slowly phased out over the 6-12 months following that milestone. System architecture improvements System architecture development in Bumblebee is multi-pronged. The development team reported on recent architecture development in several areas. First, Bumblebee is cloud-based, unlike ADS Classic, which is hosted in locally maintained servers and mirror servers. Scaling up the system to ensure a snappy response time thus requires different solutions, including testing Kubernetes as a scalable deployment technology and other speed improvements. Second, ingesting data into the ADS databases relies on a series of pipelines to transform raw data from publishers and other sources into appropriately formatted and fielded metadata, to calculate citation data and other metrics, and to append other related information to a publication record. These pipelines are in the process of being re-engineered to improve speed and reliability. Third, the front-end interface of Bumblebee has been improved in a number of ways under-the-hood, including improved error handling. Finally, the dev team outlined future areas for improvements to the system architecture, all targeted at improving speed and reliability for users. Planetary sciences After the previous ADSUG meeting, the committee recommended that ADS investigate the effort involved in more thoroughly covering the planetary sciences literature. While much of the planetary sciences corpus is currently included in ADS, it’s technically out of the scope of ADS’s holdings and little effort has been expended to ensure its completeness. ADS reported on a preliminary study to explore what would be required to move the planetary sciences literature into our core holdings. While the study indicated that the move would be welcomed by the planetary sciences community, many of whom have astronomy backgrounds and are already familiar with ADS, it would require a good deal of effort on the part of ADS. The ADSUG is expected to make a recommendation on how ADS should follow up on this preliminary study. Software citations (Project Asclepias) ADS, in collaboration with AAS and Zenodo, is working to improve citations to software products. Project Asclepias allows developers of astronomy-related software to upload their versioned code to an online repository such as Github, publish a released version in Zenodo, and receive a DOI for their code. The Zenodo DOI enables researchers to cite the appropriate version of the code directly, without resorting to hacks such as citing a published article describing the software. ADS will soon track the citations to these Zenodo DOIs, allowing researchers with a focus on software development to properly receive credit for their work. Asclepias will be reported on more thoroughly in an upcoming blog post. Affiliations and collaborations Author affiliations have long been included in ADS but successfully searching for an author by including their affiliation as a search term is non-trivial. This is in large part due to lack of consistency in how affiliations are recorded. To take ADS’s home institution as an example, an author could record their affiliation as “Center for Astrophysics,” “Harvard-Smithsonian Center for Astrophysics,” “CfA,” or one of many other variants. Mapping these variants to each other is a complex problem that we are solving by incorporating machine learning techniques. The implementation of this new feature is still underway, but will eventually allow users to more confidently search using author affiliations as a search term. A related issue is that of large collaborations, such as LIGO. For arXiv e-prints and conference proceedings, few authors explicitly list all members of large collaborations, instead generally listing the name of the collaboration itself and perhaps a small number of authors. (Published journal articles do generally include the full author lists.) Searching for a member of a given collaboration will thus fail to find any publications that are “authored” by the collaboration. In addition, similarly to author affiliation, there are many published variants of a given collaboration’s name (e.g. LIGO Scientific Collaboration vs. LIGO Collaboration). With the rise of more and larger collaborations and their prominence, ADS is exploring how best to resolve this issue. ORCID ORCID is a non-profit organization that issues ORCID IDs, a method of disambiguating authors, especially those with common names. ADS has incorporated ORCID functionality into Bumblebee, allowing authors to claim their papers. Papers with approved claims are then discoverable when searching by an author’s ORCID ID, allowing authors to maintain a personal bibliography. ADS is exploring methods for improving and expanding ORCID functionality within the system. Future directions We wrapped up the ADSUG meeting by discussing future directions with the committee, including some long-term possibilities for ADS. Based on our presentations and their own discussions, the ADSUG is currently preparing a report with their suggestions for current and future development; that report will be available on the ADSUG page when ready. We also welcome community input—if you’re interested in contributing to or serving on the ADSUG, contact the ADSUG chair or your nearest member!" />
+<meta property="og:description" content="The ADS team was pleased to welcome our Users Group (ADSUG) to our home base here at the CfA for their second visit on 2-3 November. The ADSUG meets roughly once per year to hear about the status of ongoing and upcoming projects and to advise the ADS team on our operations and potential system enhancements. The group is comprised of members from the greater astronomy community, including scientists and librarians. Several of our members are also involved in digital archives or other computing-intensive projects. Their advice and insights are quite valuable in determining the direction of ADS development. One of the ADSUG members is Erick Peirson, lead system architect at arXiv. Erick spent an extra day with us before the official ADSUG meeting to discuss our ongoing projects. ADS and arXiv have a long history of collaboration, including a special daily ingest into ADS of arXiv papers, ADS’s use of arXiv read statistics, and arXiv’s use of the ADS linkage of the arXiv and published versions of a given paper. Similarly to ADS, arXiv is also in the process of upgrading their infrastructure to meet their 21st century needs; the two teams have independently selected similar technology stacks and architectures, which opens the door to closer future collaboration. Presentations and discussions at the main ADSUG meeting covered a lot of ground quickly over the two-day meeting. A full report is expected from the committee in the next month or so, but in the meantime, an overview of the major topics covered is given below, or check out the online program. Removing the Beta from ADS Beta (a.k.a. Bumblebee) The ADS development team has been hard at work on ADS Beta, codenamed Bumblebee, since 2015, an outgrowth of earlier efforts (ADS Labs, ADS 2.0) to modernize the interface, infrastructure, and search capabilities of ADS Classic. These development efforts are paying off and Bumblebee is now rapidly approaching feature and content parity with ADS Classic, a nearly 25-year-old system. In addition, Bumblebee provides a much richer search experience, including full-text searching for most recent publications, on-the-fly search filtering, and integration with systems such as ORCID. Full parity with Classic is expected to be reached in early 2018, and ADS Classic will be slowly phased out over the 6-12 months following that milestone. System architecture improvements System architecture development in Bumblebee is multi-pronged. The development team reported on recent architecture development in several areas. First, Bumblebee is cloud-based, unlike ADS Classic, which is hosted in locally maintained servers and mirror servers. Scaling up the system to ensure a snappy response time thus requires different solutions, including testing Kubernetes as a scalable deployment technology and other speed improvements. Second, ingesting data into the ADS databases relies on a series of pipelines to transform raw data from publishers and other sources into appropriately formatted and fielded metadata, to calculate citation data and other metrics, and to append other related information to a publication record. These pipelines are in the process of being re-engineered to improve speed and reliability. Third, the front-end interface of Bumblebee has been improved in a number of ways under-the-hood, including improved error handling. Finally, the dev team outlined future areas for improvements to the system architecture, all targeted at improving speed and reliability for users. Planetary sciences After the previous ADSUG meeting, the committee recommended that ADS investigate the effort involved in more thoroughly covering the planetary sciences literature. While much of the planetary sciences corpus is currently included in ADS, it’s technically out of the scope of ADS’s holdings and little effort has been expended to ensure its completeness. ADS reported on a preliminary study to explore what would be required to move the planetary sciences literature into our core holdings. While the study indicated that the move would be welcomed by the planetary sciences community, many of whom have astronomy backgrounds and are already familiar with ADS, it would require a good deal of effort on the part of ADS. The ADSUG is expected to make a recommendation on how ADS should follow up on this preliminary study. Software citations (Project Asclepias) ADS, in collaboration with AAS and Zenodo, is working to improve citations to software products. Project Asclepias allows developers of astronomy-related software to upload their versioned code to an online repository such as Github, publish a released version in Zenodo, and receive a DOI for their code. The Zenodo DOI enables researchers to cite the appropriate version of the code directly, without resorting to hacks such as citing a published article describing the software. ADS will soon track the citations to these Zenodo DOIs, allowing researchers with a focus on software development to properly receive credit for their work. Asclepias will be reported on more thoroughly in an upcoming blog post. Affiliations and collaborations Author affiliations have long been included in ADS but successfully searching for an author by including their affiliation as a search term is non-trivial. This is in large part due to lack of consistency in how affiliations are recorded. To take ADS’s home institution as an example, an author could record their affiliation as “Center for Astrophysics,” “Harvard-Smithsonian Center for Astrophysics,” “CfA,” or one of many other variants. Mapping these variants to each other is a complex problem that we are solving by incorporating machine learning techniques. The implementation of this new feature is still underway, but will eventually allow users to more confidently search using author affiliations as a search term. A related issue is that of large collaborations, such as LIGO. For arXiv e-prints and conference proceedings, few authors explicitly list all members of large collaborations, instead generally listing the name of the collaboration itself and perhaps a small number of authors. (Published journal articles do generally include the full author lists.) Searching for a member of a given collaboration will thus fail to find any publications that are “authored” by the collaboration. In addition, similarly to author affiliation, there are many published variants of a given collaboration’s name (e.g. LIGO Scientific Collaboration vs. LIGO Collaboration). With the rise of more and larger collaborations and their prominence, ADS is exploring how best to resolve this issue. ORCID ORCID is a non-profit organization that issues ORCID IDs, a method of disambiguating authors, especially those with common names. ADS has incorporated ORCID functionality into Bumblebee, allowing authors to claim their papers. Papers with approved claims are then discoverable when searching by an author’s ORCID ID, allowing authors to maintain a personal bibliography. ADS is exploring methods for improving and expanding ORCID functionality within the system. Future directions We wrapped up the ADSUG meeting by discussing future directions with the committee, including some long-term possibilities for ADS. Based on our presentations and their own discussions, the ADSUG is currently preparing a report with their suggestions for current and future development; that report will be available on the ADSUG page when ready. We also welcome community input—if you’re interested in contributing to or serving on the ADSUG, contact the ADSUG chair or your nearest member!" />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/blog/adsug" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/blog/adsug" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-12-12T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="ADS Welcomes Its Users Group for Their Second Annual Meeting" />
+<meta name="twitter:site" content="@adsabs" />
+<meta name="twitter:creator" content="@Kelly Lockhart" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kelly Lockhart"},"dateModified":"2023-12-08T22:03:10+00:00","datePublished":"2017-12-12T00:00:00+00:00","description":"The ADS team was pleased to welcome our Users Group (ADSUG) to our home base here at the CfA for their second visit on 2-3 November. The ADSUG meets roughly once per year to hear about the status of ongoing and upcoming projects and to advise the ADS team on our operations and potential system enhancements. The group is comprised of members from the greater astronomy community, including scientists and librarians. Several of our members are also involved in digital archives or other computing-intensive projects. Their advice and insights are quite valuable in determining the direction of ADS development. One of the ADSUG members is Erick Peirson, lead system architect at arXiv. Erick spent an extra day with us before the official ADSUG meeting to discuss our ongoing projects. ADS and arXiv have a long history of collaboration, including a special daily ingest into ADS of arXiv papers, ADS’s use of arXiv read statistics, and arXiv’s use of the ADS linkage of the arXiv and published versions of a given paper. Similarly to ADS, arXiv is also in the process of upgrading their infrastructure to meet their 21st century needs; the two teams have independently selected similar technology stacks and architectures, which opens the door to closer future collaboration. Presentations and discussions at the main ADSUG meeting covered a lot of ground quickly over the two-day meeting. A full report is expected from the committee in the next month or so, but in the meantime, an overview of the major topics covered is given below, or check out the online program. Removing the Beta from ADS Beta (a.k.a. Bumblebee) The ADS development team has been hard at work on ADS Beta, codenamed Bumblebee, since 2015, an outgrowth of earlier efforts (ADS Labs, ADS 2.0) to modernize the interface, infrastructure, and search capabilities of ADS Classic. These development efforts are paying off and Bumblebee is now rapidly approaching feature and content parity with ADS Classic, a nearly 25-year-old system. In addition, Bumblebee provides a much richer search experience, including full-text searching for most recent publications, on-the-fly search filtering, and integration with systems such as ORCID. Full parity with Classic is expected to be reached in early 2018, and ADS Classic will be slowly phased out over the 6-12 months following that milestone. System architecture improvements System architecture development in Bumblebee is multi-pronged. The development team reported on recent architecture development in several areas. First, Bumblebee is cloud-based, unlike ADS Classic, which is hosted in locally maintained servers and mirror servers. Scaling up the system to ensure a snappy response time thus requires different solutions, including testing Kubernetes as a scalable deployment technology and other speed improvements. Second, ingesting data into the ADS databases relies on a series of pipelines to transform raw data from publishers and other sources into appropriately formatted and fielded metadata, to calculate citation data and other metrics, and to append other related information to a publication record. These pipelines are in the process of being re-engineered to improve speed and reliability. Third, the front-end interface of Bumblebee has been improved in a number of ways under-the-hood, including improved error handling. Finally, the dev team outlined future areas for improvements to the system architecture, all targeted at improving speed and reliability for users. Planetary sciences After the previous ADSUG meeting, the committee recommended that ADS investigate the effort involved in more thoroughly covering the planetary sciences literature. While much of the planetary sciences corpus is currently included in ADS, it’s technically out of the scope of ADS’s holdings and little effort has been expended to ensure its completeness. ADS reported on a preliminary study to explore what would be required to move the planetary sciences literature into our core holdings. While the study indicated that the move would be welcomed by the planetary sciences community, many of whom have astronomy backgrounds and are already familiar with ADS, it would require a good deal of effort on the part of ADS. The ADSUG is expected to make a recommendation on how ADS should follow up on this preliminary study. Software citations (Project Asclepias) ADS, in collaboration with AAS and Zenodo, is working to improve citations to software products. Project Asclepias allows developers of astronomy-related software to upload their versioned code to an online repository such as Github, publish a released version in Zenodo, and receive a DOI for their code. The Zenodo DOI enables researchers to cite the appropriate version of the code directly, without resorting to hacks such as citing a published article describing the software. ADS will soon track the citations to these Zenodo DOIs, allowing researchers with a focus on software development to properly receive credit for their work. Asclepias will be reported on more thoroughly in an upcoming blog post. Affiliations and collaborations Author affiliations have long been included in ADS but successfully searching for an author by including their affiliation as a search term is non-trivial. This is in large part due to lack of consistency in how affiliations are recorded. To take ADS’s home institution as an example, an author could record their affiliation as “Center for Astrophysics,” “Harvard-Smithsonian Center for Astrophysics,” “CfA,” or one of many other variants. Mapping these variants to each other is a complex problem that we are solving by incorporating machine learning techniques. The implementation of this new feature is still underway, but will eventually allow users to more confidently search using author affiliations as a search term. A related issue is that of large collaborations, such as LIGO. For arXiv e-prints and conference proceedings, few authors explicitly list all members of large collaborations, instead generally listing the name of the collaboration itself and perhaps a small number of authors. (Published journal articles do generally include the full author lists.) Searching for a member of a given collaboration will thus fail to find any publications that are “authored” by the collaboration. In addition, similarly to author affiliation, there are many published variants of a given collaboration’s name (e.g. LIGO Scientific Collaboration vs. LIGO Collaboration). With the rise of more and larger collaborations and their prominence, ADS is exploring how best to resolve this issue. ORCID ORCID is a non-profit organization that issues ORCID IDs, a method of disambiguating authors, especially those with common names. ADS has incorporated ORCID functionality into Bumblebee, allowing authors to claim their papers. Papers with approved claims are then discoverable when searching by an author’s ORCID ID, allowing authors to maintain a personal bibliography. ADS is exploring methods for improving and expanding ORCID functionality within the system. Future directions We wrapped up the ADSUG meeting by discussing future directions with the committee, including some long-term possibilities for ADS. Based on our presentations and their own discussions, the ADSUG is currently preparing a report with their suggestions for current and future development; that report will be available on the ADSUG page when ready. We also welcome community input—if you’re interested in contributing to or serving on the ADSUG, contact the ADSUG chair or your nearest member!","headline":"ADS Welcomes Its Users Group for Their Second Annual Meeting","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/blog/adsug"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"},"name":"Kelly Lockhart"},"url":"https://ui.adsabs.harvard.edu/blog/adsug"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/blog">all blog posts</a> |
+        <a href="/blog/news">news</a> |
+        <a href="/blog/general">general</a> |
+        <a href="/blog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">ADS Welcomes Its Users Group for Their Second Annual Meeting</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Kelly Lockhart
+              
+        
+    
+
+
+    <b>(ADS Developer)</b>
+
+</h3>
+      <h3 class="post-date">12 Dec 2017</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>The ADS team was pleased to welcome our <a href="../../about/adsug">Users Group</a> (ADSUG) to our home base here at the <a href="https://www.cfa.harvard.edu/">CfA</a> for their <a href="../../about/adsug/past_meetings/2018-01-01-201711-program">second visit</a> on 2-3 November. The ADSUG meets roughly once per year to hear about the status of ongoing and upcoming projects and to advise the ADS team on our operations and potential system enhancements. The group is comprised of members from the greater astronomy community, including scientists and librarians. Several of our members are also involved in digital archives or other computing-intensive projects. Their advice and insights are quite valuable in determining the direction of ADS development.</p>
+
+<p>One of the ADSUG members is Erick Peirson, lead system architect at arXiv. Erick spent an extra day with us before the official ADSUG meeting to discuss our ongoing projects. ADS and arXiv have a long history of collaboration, including a special daily ingest into ADS of arXiv papers, ADS’s use of arXiv read statistics, and arXiv’s use of the ADS linkage of the arXiv and published versions of a given paper. Similarly to ADS, arXiv is also in the process of upgrading their infrastructure to meet their 21st century needs; the two teams have independently selected <a href="https://blogs.cornell.edu/arxiv/2017/11/16/visit-to-astrophysics-data-system/">similar technology stacks and architectures</a>, which opens the door to closer future collaboration.</p>
+
+<p>Presentations and discussions at the main ADSUG meeting covered a lot of ground quickly over the two-day meeting. A full report is expected from the committee in the next month or so, but in the meantime, an overview of the major topics covered is given below, or check out the <a href="../../about/adsug/past_meetings/2018-01-01-201711-program">online program</a>.</p>
+
+<h3 id="removing-the-beta-from-ads-beta-aka-bumblebee">Removing the Beta from ADS Beta (a.k.a. Bumblebee)</h3>
+<p>The ADS development team has been hard at work on <a href="https://ui.adsabs.harvard.edu/">ADS Beta</a>, codenamed Bumblebee, since 2015, an outgrowth of earlier efforts (ADS Labs, ADS 2.0) to modernize the interface, infrastructure, and search capabilities of ADS Classic. These development efforts are paying off and Bumblebee is now rapidly approaching feature and content parity with ADS Classic, a nearly 25-year-old system. In addition, Bumblebee provides a much richer search experience, including full-text searching for most recent publications, on-the-fly search filtering, and integration with systems such as ORCID. Full parity with Classic is expected to be reached in early 2018, and ADS Classic will be slowly phased out over the 6-12 months following that milestone.</p>
+
+<h3 id="system-architecture-improvements">System architecture improvements</h3>
+<p>System architecture development in Bumblebee is multi-pronged. The development team reported on recent architecture development in several areas. First, Bumblebee is cloud-based, unlike ADS Classic, which is hosted in locally maintained servers and mirror servers. Scaling up the system to ensure a snappy response time thus requires different solutions, including testing <a href="https://kubernetes.io/">Kubernetes</a> as a scalable deployment technology and other speed improvements. Second, ingesting data into the ADS databases relies on a series of pipelines to transform raw data from publishers and other sources into appropriately formatted and fielded metadata, to calculate citation data and other metrics, and to append other related information to a publication record. These pipelines are in the process of being re-engineered to improve speed and reliability. Third, the front-end interface of Bumblebee has been improved in a number of ways under-the-hood, including improved error handling. Finally, the dev team outlined future areas for improvements to the system architecture, all targeted at improving speed and reliability for users.</p>
+
+<h3 id="planetary-sciences">Planetary sciences</h3>
+<p>After the <a href="../../about/adsug/past_meetings/2018-01-01-201701-program">previous ADSUG meeting</a>, the <a href="http://ads.harvard.edu/adsug/2017/ADSUG_Report.pdf">committee recommended</a> that ADS investigate the effort involved in more thoroughly covering the planetary sciences literature. While much of the planetary sciences corpus is currently included in ADS, it’s technically out of the scope of ADS’s holdings and little effort has been expended to ensure its completeness. ADS reported on a preliminary study to explore what would be required to move the planetary sciences literature into our core holdings. While the study indicated that the move would be welcomed by the planetary sciences community, many of whom have astronomy backgrounds and are already familiar with ADS, it would require a good deal of effort on the part of ADS. The ADSUG is expected to make a recommendation on how ADS should follow up on this preliminary study.</p>
+
+<h3 id="software-citations-project-asclepias">Software citations (Project Asclepias)</h3>
+<p>ADS, in collaboration with AAS and <a href="https://zenodo.org">Zenodo</a>, is working to improve citations to software products. Project <a href="https://github.com/asclepias/">Asclepias</a> allows developers of astronomy-related software to upload their versioned code to an online repository such as Github, publish a released version in Zenodo, and receive a DOI for their code. The Zenodo DOI enables researchers to cite the appropriate version of the code directly, without resorting to hacks such as citing a published article describing the software. ADS will soon track the citations to these Zenodo DOIs, allowing researchers with a focus on software development to properly receive credit for their work. Asclepias will be reported on more thoroughly in an upcoming blog post.</p>
+
+<h3 id="affiliations-and-collaborations">Affiliations and collaborations</h3>
+<p>Author affiliations have long been included in ADS but successfully searching for an author by including their affiliation as a search term is non-trivial. This is in large part due to lack of consistency in how affiliations are recorded. To take ADS’s home institution as an example, an author could record their affiliation as “Center for Astrophysics,” “Harvard-Smithsonian Center for Astrophysics,” “CfA,” or one of many other variants. Mapping these variants to each other is a complex problem that we are solving by incorporating machine learning techniques. The implementation of this new feature is still underway, but will eventually allow users to more confidently search using author affiliations as a search term.</p>
+
+<p>A related issue is that of large collaborations, such as LIGO. For arXiv e-prints and conference proceedings, few authors explicitly list all members of large collaborations, instead generally listing the name of the collaboration itself and perhaps a small number of authors. (Published journal articles do generally include the full author lists.) Searching for a member of a given collaboration will thus fail to find any publications that are “authored” by the collaboration. In addition, similarly to author affiliation, there are many published variants of a given collaboration’s name (e.g. LIGO Scientific Collaboration vs. LIGO Collaboration). With the rise of more and larger collaborations and their prominence, ADS is exploring how best to resolve this issue.</p>
+
+<h3 id="orcid">ORCID</h3>
+<p>ORCID is a non-profit organization that issues ORCID IDs, a method of disambiguating authors, especially those with common names. <a href="../blog/orcid-claims">ADS has incorporated ORCID functionality into Bumblebee</a>, allowing authors to claim their papers. Papers with approved claims are then discoverable when searching by an author’s ORCID ID, allowing authors to maintain a personal bibliography. ADS is exploring methods for improving and expanding ORCID functionality within the system.</p>
+
+<h3 id="future-directions">Future directions</h3>
+<p>We wrapped up the ADSUG meeting by discussing future directions with the committee, including some long-term possibilities for ADS.</p>
+
+<p>Based on our presentations and their own discussions, the ADSUG is currently preparing a report with their suggestions for current and future development; that report will be available on the <a href="../../about/adsug">ADSUG page</a> when ready. We also welcome community input—if you’re interested in contributing to or serving on the ADSUG, contact the ADSUG chair or your nearest member!</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

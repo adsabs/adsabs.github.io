@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <title>
+    Wrecipe for Simple ADS Apps
+  </title>
+  <meta name="description" content="All your questions will be answered here." />
+
+  <!-- Disqus tags -->
+  <meta
+    property="og:description"
+    content="Wrecipe for Simple ADS Apps"
+  />
+  <meta
+    property="og:image"
+    content="https://ui.adsabs.harvard.edu/blog/images/blog_2016-02-17_thumb.jpg"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/scixblog/building-an-app"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+    } else {
+      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+    }
+  </script>
+
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+          alt="scix icon"
+        />
+        <b>&nbsp;SciX</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/scixabout/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About SciX
+              </a>
+            </li>
+            <li>
+              <a href="/scixblog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/scixhelp/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                SciX Help Pages
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-scix-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://scixplorer.org/">
+          <img
+            src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+            alt="The SciX Logo"
+          />
+          Science Explorer
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/scixblog">all blog posts</a> |
+        <a href="/scixblog/news">news</a> |
+        <a href="/scixblog/general">general</a> |
+        <a href="/scixblog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Wrecipe for Simple ADS Apps</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Jonny Elliott, Alex Holachek
+              
+        
+    
+
+
+    <b>(ADS Developers)</b>
+
+</h3>
+      <h3 class="post-date">17 Feb 2016</h3>
+
+      
+      <hr />
+      <b>tl; dr</b>: who is a better author, you or your colleague? Find out <a href="http://authorsmackdown.herokuapp.com/">here</a>. 
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>Underneath the new user interface of the ADS, ADS Beta (or Bumblebee), there is the rebuilt infrastructure of the ADS platform that serves the application layer of the ADS. At the start of last year, we made these services accessible to the community via an API, for personal use, to build apps for themselves, their departments, or even the community as a whole. During the recent 227th Meeting of the American Astronomical Society, we decided to build a simple application for the Hack Day to demonstrate the ease at which you can create and deploy an application that makes use of the data available at the ADS.</p>
+
+<p><em>FYI: this is more technical, and repetitively uses a cooking/Wrestling theme.</em></p>
+
+<h3 id="ingredients">Ingredients</h3>
+<p>The following is needed for the wrecipe:</p>
+
+<ol>
+  <li>An ADS account and an ADS API key (make an account <a href="https://ui.adsabs.harvard.edu/#user/account/register">here</a>, and then go to User Settings -&gt; Customize -&gt; API Token)</li>
+  <li>A <a href="http://herokuapp.com">Heroku account</a></li>
+  <li>Python “unofficial ADS client” by Andy Casey (https://github.com/andycasey/ads)</li>
+</ol>
+
+<h3 id="step-1-decide-what-your-application-should-do">Step 1: Decide what your application should do</h3>
+
+<p>First, we decided to create an application that pits two authors against one another by comparing their publication metrics against each other. Second, apply the 90s-00s WWE/WWF theme.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2016-02-17_image01.jpg" />
+</div>
+
+<h3 id="step-2-obtain-the-information-you-need-from-the-ads">Step 2: Obtain the information you need from the ADS</h3>
+
+<p>We wanted to compare two authors against each other, <em>reasonably</em> fairly. One possible approach is to just compare total citations of one author to another, but obviously this can lead to biases given that someone who works longer should have more citations, people who have more papers from collaborations will have more citations, etc. To get around this, we chose to use the RIQ, a metric that is meant to <em>fairly</em> compare two authors. You can read more about this metric <a href="https://ui.adsabs.harvard.edu/#abs/2012PLoSO...746428P/abstract">here</a>. Of course, there are problems with this metric too, but…..</p>
+
+<p>Before we work with the unofficial Python API client, we need to set the development API token (instructions to obtain an API key are explained <a href="https://github.com/adsabs/adsabs-dev-api">here</a>), in the current environment or in your <em>~/.bashrc</em>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">ADS_DEV_TOKEN</span><span class="o">=</span><span class="s2">"adsf1234ADSF1234"</span>
+</code></pre></div></div>
+
+<p>To obtain the RIQ for authors, first we need to get the list of bibcodes of a specific author:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="n">ads</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">search_query</span> <span class="o">=</span> <span class="n">ads</span><span class="p">.</span><span class="nc">SearchQuery</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="sh">'</span><span class="s">Elliott, J.</span><span class="sh">'</span><span class="p">,</span> <span class="n">fl</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">id</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">bibcode</span><span class="sh">'</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">bibcodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">paper</span><span class="p">.</span><span class="n">bibcode</span> <span class="k">for</span> <span class="n">paper</span> <span class="ow">in</span> <span class="n">search_query</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>This gives us all the bibcodes for author “J. Elliott”, and requests for the field items “id” and “bibcode” to be returned, which ensures that no lengthy requests are carried out by our search engine. For example, if you request <em>fl=[‘citation’]</em>, this will increase the time taken to respond as it serves more data.</p>
+
+<p>Once you have the relevant bibcodes, we need to ask the metrics end point for the metrics for the list of papers:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">metrics_query</span> <span class="o">=</span> <span class="n">ads</span><span class="p">.</span><span class="nc">MetricsQuery</span><span class="p">(</span><span class="n">bibcodes</span><span class="o">=</span><span class="n">bibcodes</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">metrics_response</span> <span class="o">=</span> <span class="n">metrics_query</span><span class="p">.</span><span class="nf">execute</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">riq</span> <span class="o">=</span> <span class="n">metrics_response</span><span class="p">[</span><span class="sh">'</span><span class="s">indicators</span><span class="sh">'</span><span class="p">][</span><span class="sh">'</span><span class="s">riq</span><span class="sh">'</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">riq</span>
+<span class="mi">40</span>
+</code></pre></div></div>
+
+<p>The above is fairly simple, and so you could do it via curl requests as outlined in our <a href="https://github.com/adsabs/adsabs-dev-api">API help pages</a>, or write your own client in the language of your choice.</p>
+
+<h3 id="step-3-dish-out-your-logic-in-a-web-app">Step 3: Dish out your logic in a web app</h3>
+
+<p>Our application will receive two authors names, and return the RIQs of each author, which will then display the winner (and loser) on the front-end application. To do this, we built a back-end application using Python-Flask, and a front-end application written in JavaScript. If you want to see the full code, you can see the Flask backend <a href="https://github.com/jonnybazookatone/authorsmackdown">here</a> and the JavaScript frontend <a href="https://github.com/aholachek/smackdown">here</a>. At this stage you can utilise your favourite web application, cgi-bins, ruby on rails, go-lang, etc.</p>
+
+<h3 id="step-4-decide-how-to-deliver-your-app-to-the-public">Step 4: Decide how to deliver your app to the public</h3>
+
+<p>You can opt to host your application locally if you prefer, and there are a plethora of free options on the internet. To get things running quickly, we chose to host our application on Heroku app (http://herokuapp.com). You only need to do two things:</p>
+
+<ol>
+  <li>Configure your heroku app as outlined on <a href="https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app">Heroku</a></li>
+  <li>Supply your <strong>API_DEV_KEY</strong> via the <a href="https://devcenter.heroku.com/articles/config-vars">Heroku config command</a></li>
+</ol>
+
+<p><em>Note</em> If you use your own API token for an application that is available to other users, your rate limits will be consumed as normal, and may run out during a 24 hour period. If you believe your application deserves its own rate limits then feel free to tweet us <a href="http://twitter.com/adsabs">@adsabs</a> or <a href="adshelp@cfa.harvard.edu">contact us directly</a>.</p>
+
+<h3 id="step-5-leave-to-cool-for-5-mins-and-add-a-cliché-title">Step 5: Leave to cool for 5 mins and add a cliché title</h3>
+
+<div class="text-center">
+     <a href="http://authorsmackdown.herokuapp.com/">
+         <img class="img-thumbnail" src="/blog/images/blog_2016-02-17_image02.png" />
+     </a>
+</div>
+
+<p>Click here: <a href="http://authorsmackdown.herokuapp.com/">Author Smackdown</a></p>
+
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          help[at]scixplorer.org
+        </p>
+        <p>
+          SciX is a project created by the Astrophysics Data System (ADS), which
+          is operated by the Smithsonian Astrophysical Observatory under NASA
+          Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/scixabout/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About SciX
+          </a>
+        </li>
+        <li>
+          <a href="/scixhelp/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> SciX Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/scixabout/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@SciX
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/scixcommunity"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @scixcommunity
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

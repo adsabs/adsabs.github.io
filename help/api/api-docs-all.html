@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Important: must specify -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Important: rapi-doc uses utf8 charecters -->
+    <title>ADS OpenAPI Docs (internal)</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://ui.adsabs.harvard.edu/help/common/images/favicon-32x32.png"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"
+    ></script>
+    <script src="rapidoc-theme.js"></script>
+    <script>
+      // Setup theme and style when DOM is loaded
+      const options = {
+        dark: {
+          bgColor: '#21262d',
+          'text-color': '#eee',
+          'nav-bg-color': '#0d1117',
+          'nav-text-color': '#eee',
+          'nav-accent-color': '#2e9e5c',
+          'main-link': '--blue: #58a6ff',
+        },
+        light: {
+          'bg-color': '#fff',
+          'text-color': '#5D5D5D',
+          'nav-bg-color': '#eee',
+          'nav-text-color': '#5D5D5D',
+          'nav-accent-color': '#2e9e5c',
+          'main-link': '--green: #40dd81',
+        }
+      }
+      initTheme(options);
+    </script>
+    <link rel="stylesheet" href="rapidoc-styles.css">
+    <style>
+      rapi-doc::part(anchor) {
+        color: #4073DD;
+      }
+
+      [data-theme='dark'] rapi-doc::part(anchor) {
+        color: #58a6ff;
+      }
+    </style>
+  </head>
+  <body style="visibility: hidden;">
+    <rapi-doc
+      spec-url="https://raw.githubusercontent.com/adsabs/adsabs-dev-api/master/openapi/openapi.yaml"
+      sort-endpoints-by="summary"
+      render-style="read"
+      schema-style="table"
+      heading-text="adsAPI"
+      regular-font="Helvetica Neue"
+      bg-color="#FFF";
+      primary-color="#2e9e5c"
+      text-color="#5D5D5D"
+      nav-bg-color="#EEE"
+      nav-text-color="#5D5D5D"
+      nav-accent-color="#2e9e5c"
+      schema-description-expanded="true"
+      show-header="false"
+      fill-request-fields-with-example="false"
+      font-size="largest"
+    >
+      <div
+        id="logo-container"
+        slot="nav-logo"
+        style="display: flex; align-items: center; justify-content: center; background-color: #EEE;"
+      >
+        <img
+          id="logo"
+          src="/help/img/bbb_assets/ads_partial_logo_dark_background.svg"
+          style="width: 50px; margin-right: 10px"
+        />
+        <span id="logo-text" style="color: #000; font-size: 175%"> <b>ads</b>API </span>
+      </div>
+    </rapi-doc>
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">🌓</div>
+  </body>
+</html>

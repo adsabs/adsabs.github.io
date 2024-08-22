@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/help/search/author-search"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2022-02-03 21:58:32 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>(Advanced) Author Search | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="(Advanced) Author Search" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!" />
+<meta property="og:description" content="The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!" />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/help/search/author-search" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/help/search/author-search" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-26T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="(Advanced) Author Search" />
+<meta name="twitter:site" content="@adsabs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-02-03T21:58:32+00:00","datePublished":"2021-04-26T00:00:00+00:00","description":"The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!","headline":"(Advanced) Author Search","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/help/search/author-search"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"}},"url":"https://ui.adsabs.harvard.edu/help/search/author-search"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/help"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>help
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container">
+      <div class="search-bar-container pull-right col-xs-12 col-md-6">
+        <script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+      </div>
+    </div>
+
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
+    <!--googleoff: all-->
+
+<nav class="help-nav">
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="quickstart-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#quickstart-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i>
+    Quick Start</h3>
+        <a>
+    </div>
+    <div id="quickstart-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quickstart-help">
+      <ul class="list-group">
+              
+            <a href="/help/quickstart/searching-for-paper">
+                <li class=" list-group-item">Searching for a specific paper</li>
+            </a>
+              
+            <a href="/help/quickstart/build-library">
+                <li class=" list-group-item">Building a library and calculating metrics</li>
+            </a>
+              
+            <a href="/help/quickstart/literature-search">
+                <li class=" list-group-item">Beginning a literature search</li>
+            </a>
+              
+            <a href="/help/quickstart/common-name">
+                <li class=" list-group-item">Searching for papers by an author with a common name</li>
+            </a>
+             
+        </ul>
+    </div>
+    </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="search-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#search-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Making a Query</h3>
+        <a>
+    </div>
+    <div id="search-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="search-help">
+      <ul class="list-group">
+              
+            <a href="/help/search/search-syntax">
+                <li class=" list-group-item">Search Syntax</li>
+            </a>
+              
+            <a href="/help/search/citations-and-references">
+                <li class=" list-group-item">Citation and Reference Operators</li>
+            </a>
+              
+            <a href="/help/search/second-order">
+                <li class=" list-group-item">Second-Order Queries</li>
+            </a>
+              
+            <a href="/help/search/positional">
+                <li class=" list-group-item">Positional Field Searches</li>
+            </a>
+              
+            <a href="/help/search/filter">
+                <li class=" list-group-item">Filter your search</li>
+            </a>
+              
+            <a href="/help/search/comprehensive-solr-term-list">
+                <li class=" list-group-item">Comprehensive List of Solr Fields & Operators</li>
+            </a>
+              
+            <a href="/help/search/search-parser">
+                <li class=" list-group-item">(Advanced) Search Syntax</li>
+            </a>
+              
+            <a href="/help/search/author-search">
+                <li class=" active  list-group-item">(Advanced) Author Search</li>
+            </a>
+             
+        </ul>
+    </div>
+    </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="actions-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#actions-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""><i class="fa fa-lg fa-caret-right"> </i> Search Results</h3>
+      <a>
+  </div>
+  <div id="actions-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="actions-help">
+    <ul class="list-group">
+          
+        <a href="/help/actions/sort">
+            <li class=" list-group-item">Sort Results</li>
+        </a>
+          
+        <a href="/help/actions/analyze">
+            <li class=" list-group-item">Metrics</li>
+        </a>
+          
+        <a href="/help/actions/export">
+            <li class=" list-group-item">Export Results</li>
+        </a>
+          
+        <a href="/help/actions/author-affiliation">
+            <li class=" list-group-item">Author Affiliations</li>
+        </a>
+          
+        <a href="/help/actions/visualize">
+            <li class=" list-group-item">Visualize Results</li>
+        </a>
+          
+        <a href="/help/actions/quick-links">
+            <li class=" list-group-item">Quick Links</li>
+        </a>
+          
+        <a href="/help/actions/article-view">
+            <li class=" list-group-item">Article View</li>
+        </a>
+          
+        <a href="/help/actions/bibcode">
+            <li class=" list-group-item">ADS Bibcode</li>
+        </a>
+          
+        <a href="/help/actions/journal-macros">
+            <li class=" list-group-item">Journal Macros</li>
+        </a>
+         
+      </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="userpreferences-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#userpreferences-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</h3>
+      <a>
+  </div>
+  <div id="userpreferences-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="userpreferences-help">
+    <ul class="list-group">
+          
+        <a href="/help/userpreferences/library-servers">
+            <li class=" list-group-item">Library Link Server</li>
+        </a>
+          
+        <a href="/help/userpreferences/myads">
+            <li class=" list-group-item">myADS Email Notifications</li>
+        </a>
+         
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="libraries-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#libraries-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> ADS Libraries</h3>
+      <a>
+  </div>
+  <div id="libraries-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="libraries-help">
+      <ul class="list-group">
+            
+          <a href="/help/libraries/creating-libraries">
+              <li class=" list-group-item">Creating and editing a library</li>
+          </a>
+            
+          <a href="/help/libraries/public-libraries">
+              <li class=" list-group-item">Making your library public and managing permissions</li>
+          </a>
+            
+          <a href="/help/libraries/visualisations">
+              <li class=" list-group-item">Visualisations, metrics, and exports</li>
+          </a>
+            
+          <a href="/help/libraries/citation-helper">
+              <li class=" list-group-item">Citation Helper</li>
+          </a>
+            
+          <a href="/help/libraries/set-operations">
+              <li class=" list-group-item">Set operations</li>
+          </a>
+            
+          <a href="/help/libraries/legacy-importing">
+              <li class=" list-group-item">Import from ADS Classic</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="orcid-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#orcid-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> ORCID </h3>
+      <a>
+  </div>
+  <div id="orcid-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="orcid-help">
+      <ul class="list-group">
+            
+          <a href="/help/orcid/claiming-papers">
+              <li class=" list-group-item">Claiming papers in ORCID</li>
+          </a>
+            
+          <a href="/help/orcid/orcid-search">
+              <li class=" list-group-item">Searching for papers in ORCID</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="data_faq-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#data_faq-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Data & Curation </h3>
+      <a>
+  </div>
+  <div id="data_faq-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="data_faq-help">
+      <ul class="list-group">
+            
+          <a href="/help/data_faq/data-faq">
+              <li class=" list-group-item">Data & Curation Frequently Asked Questions (FAQs)</li>
+          </a>
+            
+          <a href="/help/data_faq/conf_proc">
+              <li class=" list-group-item">Instructions to Conference Proceedings Editors</li>
+          </a>
+            
+          <a href="/help/data_faq/tagged-format">
+              <li class=" list-group-item">Submissions Formatting</li>
+          </a>
+            
+          <a href="/help/data_faq/journal_inclusion">
+              <li class=" list-group-item">Journal Inclusion</li>
+          </a>
+            
+          <a href="/help/data_faq/ads_curation_model">
+              <li class=" list-group-item">ADS Curation Model</li>
+          </a>
+            
+          <a href="/help/data_faq/ScanHistLit">
+              <li class=" list-group-item">Technical Standards for Scanning Legacy Literature</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="troubleshooting-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#troubleshooting-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Troubleshooting </h3>
+        <a>
+    </div>
+    <div id="troubleshooting-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tutorials-help">
+      <ul class="list-group">
+          
+        <a href="/help/troubleshooting/exporting">
+          <li class=" list-group-item">How to Export Results</li>
+        </a>
+          
+        <a href="/help/troubleshooting/how-to-export-har-file">
+          <li class=" list-group-item">How to Generate a HAR File</li>
+        </a>
+         
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="video-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#videos-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Videos </h3>
+        <a>
+    </div>
+    <div id="videos-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="videos-help">
+      <ul class="list-group">
+          
+        <a href="/help/videos/welcome">
+          <li class=" list-group-item">Welcome to the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/intro">
+          <li class=" list-group-item">Introduction to the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/personalization">
+          <li class=" list-group-item">Personalization in the New ADS: ORCID and Libraries</li>
+        </a>
+          
+        <a href="/help/videos/infrastructure">
+          <li class=" list-group-item">Modernizing ADS Infrastructure: From 1992 to 2019</li>
+        </a>
+          
+        <a href="/help/videos/affiliations">
+          <li class=" list-group-item">Searching Affiliations in the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/advanced-search">
+          <li class=" list-group-item">What are people thinking about what you want to think about?</li>
+        </a>
+          
+        <a href="/help/videos/fulltext">
+          <li class=" list-group-item">Searchable Full Text in the new ADS</li>
+        </a>
+          
+        <a href="/help/videos/api">
+          <li class=" list-group-item">Advanced Searching with the ADS API</li>
+        </a>
+          
+        <a href="/help/videos/experts">
+          <li class=" list-group-item">How to Use the ADS to Find Experts</li>
+        </a>
+          
+        <a href="/help/videos/libraries">
+          <li class=" list-group-item">Working with ADS Libraries</li>
+        </a>
+         
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="policies-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#policies-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Policies </h3>
+      <a>
+    </div>
+    <div id="policies-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="policies-help">
+      <ul class="list-group">
+                                                                                                                                                                                                                                                              
+          <a href="/help/policies/terms">
+            <li class=" list-group-item">Terms of Use</li>
+          </a>
+                              
+          <a href="/help/policies/privacy">
+            <li class=" list-group-item">Privacy Policy</li>
+          </a>
+              
+          <a href="/help/policies/accessibility">
+            <li class=" list-group-item">Accessibility Policy</li>
+          </a>
+                            
+          <a href="/help/policies/name-changes">
+            <li class=" list-group-item">Name Change Policy</li>
+          </a>
+                      
+          <a href="/help/policies/update">
+            <li class=" list-group-item">ADS Update Policy</li>
+          </a>
+                                                   
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+    <h3 class=""> <a href="/help/whats_new">What's New</a></h3>
+    <h3 class=""> <a href="/help/faq">Frequently Asked Questions </a></h3>
+    <h3 class=""> <a href="/help/api">Using the ADS API </a></h3>
+    <h3 class=""> <a href="/help/twitter">#ADSHelp</a></h3>
+    <h3 class=""> <a href="/help/handouts">Handouts </a></h3>
+    <h3 class=""> <a href="/help/legacy">Legacy Services </a></h3>
+    <h3 class=""> <a href="/help/logos">Logos </a></h3>
+
+    <hr>
+
+    <h3 class><img src="/help/common/images/github.png" width="24"> Edit help pages on <a href="https://github.com/adsabs/help">GitHub</a></h3>
+
+
+</nav>
+
+<!--googleon: all-->
+
+  </div>
+
+  <div class="post main-content col-xs-12 col-md-9">
+    <button
+      class="btn btn-primary visible-sm-inline-block visible-xs-inline-block"
+      data-toggle="off-canvas"
+    >
+      toggle sidebar
+    </button>
+
+    <header class="post-header">
+      
+      <h2 class="post-title">(Advanced) Author Search</h2>
+      
+    </header>
+
+    <article class="post-content"><p>The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!</p>
+
+<h2 id="referenced-resources">Referenced resources</h2>
+
+<p><a href="https://github.com/romanchyla/montysolr/blob/master/contrib/examples/adsabs/server/solr/collection1/conf/schema.xml#L30">ADS solr schema</a></p>
+
+<h2 id="big-picture">Big Picture</h2>
+
+<p>OK, so what happens when we search for <code class="language-plaintext highlighter-rouge">author:"john paul II"</code>?</p>
+
+<p>First, the query string is turned into an abstract syntax tree (see <a href="./2021-05-23-search-parser.md">search parser</a> for details) - that is the syntactic (low) level, above it there is the semantic level of parsing and modifications.</p>
+
+<p>The parser will already know we are searching inside field <code class="language-plaintext highlighter-rouge">author</code> - it will also know the tokenizer chain (rules) that apply to that field(s). So it will run the input through the tokenizer, then it will collect various outputs (tokens - more on that later), and then it will further expand/modify/transform these.</p>
+
+<p>Oh, and by the way: there is a slight difference between what we do at <strong>index</strong> time, and at the <strong>search</strong> time. So pay attention to it.</p>
+
+<p>If you are still here, let’s dive in:</p>
+
+<h3 id="down-the-rabbit-hole">Down the Rabbit Hole</h3>
+
+<p>Let’s take one example <code class="language-plaintext highlighter-rouge">author:"Adamczuk, Piotr Gavrilov Eugenyi"</code>. A heraldically attuned audience member will immediately pick up that the guy is probably of Polish or Russian descent, quite likely from a noble family (blue blood runs through his veins so his name may appear next to a honorary title; but who cares? Well, our parser does).</p>
+
+<p>People are unable to remember all his names, not even editors in the scientific publications, and let’s face it, they are of different origins themselves. So, some type his name as <code class="language-plaintext highlighter-rouge">Adamcuk</code>, confuse his name with <code class="language-plaintext highlighter-rouge">Peter</code>, pay no attention to uncle <code class="language-plaintext highlighter-rouge">Gavrilov</code> and can’t decide whether to spell his name as <code class="language-plaintext highlighter-rouge">Evgenij</code>, <code class="language-plaintext highlighter-rouge">Eugenij</code>, <code class="language-plaintext highlighter-rouge">Eugen</code>, <code class="language-plaintext highlighter-rouge">Evzen</code> and so on. Fortunately, there aren’t that many persons of female gender and name <code class="language-plaintext highlighter-rouge">Piotr</code>, but we can’t be sure about that either (yet people will still claim it is crystal clear…)</p>
+
+<p>Anyways, it is complicated - so let’s start. Somebody (fortunately) for us, remembers spelling of the surname and types:</p>
+
+<p><code class="language-plaintext highlighter-rouge">author:peter adamczuk</code></p>
+
+<p>Our <em>search</em> tokenizer is going to take the input in its entirety (i.e. <strong>NO</strong> tokenization into <code class="language-plaintext highlighter-rouge">peter</code> and <code class="language-plaintext highlighter-rouge">adamzuk</code>) and will pass the input to a <a href="https://pypi.org/project/nameparser/">Python library</a>. Since the search engine is written in Java, in reality the library will be executed by Jython - so we are calling Java which looks like Python, but as you can see, I’m sparing you no details…</p>
+
+<p>The library will recognize <code class="language-plaintext highlighter-rouge">surname</code> and <code class="language-plaintext highlighter-rouge">first name</code> correctly most of the time. So <code class="language-plaintext highlighter-rouge">Pope John Paul the II</code> would lose all his titles and become <code class="language-plaintext highlighter-rouge">Paul, John</code> – but we don’t know anything besides the characters. We are not consulting Wikipedia to find out the real name of the Pope, nor the author (at least not yet). And our <code class="language-plaintext highlighter-rouge">Peter</code> is recognized as the first name, and <code class="language-plaintext highlighter-rouge">Adamczuk</code> as the last name.</p>
+
+<p>Next are some boring filters: one of them normalizes the names. <code class="language-plaintext highlighter-rouge">Adamczuk  ,               P </code> becomes <code class="language-plaintext highlighter-rouge">Adamczuk, P</code>, and <code class="language-plaintext highlighter-rouge">Lao'tzu</code> becomes <code class="language-plaintext highlighter-rouge">Lao tzu,</code>. And we also reject any search with 6 or more names. Why? Well, because it can lead to 6^n combinations (in the worst case) in the later stages.</p>
+
+<p>Next comes <strong>transliterations</strong> – what’s that you ask? Well, English is the Lingua Franca of scientific discourse - but only for the past two hundred years. The dominance of English alphabet in all things electronic is also a thing of the past, but humans are forever lazy (or intelligent) and when confronted with <code class="language-plaintext highlighter-rouge">e</code>, <code class="language-plaintext highlighter-rouge">é</code>, <code class="language-plaintext highlighter-rouge">e</code> …. characters, they say ‘Aha! That’s <code class="language-plaintext highlighter-rouge">e</code>’. All accents lost. So naturally, they want to be able to search for <code class="language-plaintext highlighter-rouge">jonas</code> and find <code class="language-plaintext highlighter-rouge">jonáš</code> as well. And so we oblige. Internally at ADS we use <code class="language-plaintext highlighter-rouge">UTF-8</code> character encoding but we don’t force the English-centric writers to think in more than 26 characters of English alphabet. Also by convention, scientific publications oftentimes insist on transliterating native author names into ASCII.</p>
+
+<p>So in the case of <code class="language-plaintext highlighter-rouge">adamczuk, p</code> at this stage we will discover that ADS database contains <code class="language-plaintext highlighter-rouge">adamčuk, peter</code> (we’d see also <code class="language-plaintext highlighter-rouge">adamčuk, p</code> if it was necessary)</p>
+
+<p><strong>Intermezzo #0 - how are transliterations generated/found?</strong></p>
+
+<p>Periodically, small minions at ADS will wake up every week, read all author names and compile a list of the following form:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adamczuk, p =&gt; adamčuk, p
+adamczuk, peter =&gt; adamčuk, peter
+adamczuk, pavel =&gt; adamčuk, pavel
+</code></pre></div></div>
+
+<p>That is, we have a set of rules - some of them custom to ADS, but the majority stemming from Java Unidecode library (the industry convention) which will transform any non-ASCII input into ASCII <strong>transliterations</strong>. The generated vocabulary of names has at this point millions of entries (2024917 and counting) and contains every non-Latin character that has ever appeared in the ADS database. The dictionary is then used (at search time) to lookup <code class="language-plaintext highlighter-rouge">UTF-8</code> variants when users give us an <code class="language-plaintext highlighter-rouge">ASCII</code> name.</p>
+
+<p>Technical note: the lookup is done via suffix trie (a search tree built by a finite state machine). So even though the dictionary has over 2M distinct entries, the cost of lookup is just the length of the input and the space occupied by the internal datastructure which is a fraction of the original size - if we were counting characters. Our 2M dictionary of names seems large, but still a far cry from the theoretical limit of 2B nodes. For details see <a href="http://blog.mikemccandless.com/2010/12/using-finite-state-transducers-in.html">this nice blogpost</a>.</p>
+
+<p>Another option to solve this problem would be to index the transliterated names alongside with their <code class="language-plaintext highlighter-rouge">UTF-8</code> originals (as ADS Classic used to do – because it could not think in <code class="language-plaintext highlighter-rouge">UTF-8</code>) but as you will see, if you continue reading, the transliterated versions are also used to discover potential synonyms of the author’s names – so either we index all potential variants and derived synonyms, or we do all of that work at search time. There’s no free lunch.</p>
+
+<p><strong>– end of intermezzo #0 —</strong></p>
+
+<p>Back to the rabbit hole: so we got the original input <code class="language-plaintext highlighter-rouge">peter adamzuk</code> -&gt; <code class="language-plaintext highlighter-rouge">adamczuk, peter</code>, we have discovered the transliteration (<code class="language-plaintext highlighter-rouge">adamčuk, peter</code>). Next we proceed to discover all other names of this guy/gal. Maybe he/she got married, divorced, changed gender, remarried … whatever the reason, the world is changing. ADS curators are being notified by authors or readers all the time and update our ‘knowledge base’ of author names. That is what gets consulted in this step. We’ll discover that <code class="language-plaintext highlighter-rouge">adamčuk, peter</code> was previously <code class="language-plaintext highlighter-rouge">adamčuková, petra</code> (the name is made up, but such situations will exist).</p>
+
+<p>Next, we’ll use all of the name variants discovered so far, and take one step further – we’ll generate possible name variations, so for example authors with more than 2 names <code class="language-plaintext highlighter-rouge">zeta john jones</code> – they could be known in the scientific literature as <code class="language-plaintext highlighter-rouge">zeta, j</code>, <code class="language-plaintext highlighter-rouge">zeta john, j</code>, and even <code class="language-plaintext highlighter-rouge">zeta, j j</code> (well, and possibly <code class="language-plaintext highlighter-rouge">john jones, zeta</code> – if we can’t tell what is the first and last name, you get the idea…)</p>
+
+<p>So the parser will tentatively generate a multitude of possible names and spellings and will use them all to search for other ‘real’ people. If it finds anybody new, it will sigh deeply, discard the temporary variants and then proceed to generate new <code class="language-plaintext highlighter-rouge">transliterations</code> and new <code class="language-plaintext highlighter-rouge">synonyms</code> of any new (real) person that was found in ADS database. As a way of example, this is what we’ll get:</p>
+
+<ul>
+  <li>adamzuk, peter</li>
+  <li>adamčuk, peter</li>
+  <li>adamčuková, petra</li>
+  <li>stoklasová, petra</li>
+  <li>stoklasova, petra</li>
+</ul>
+
+<p>All these names were added because our parser consulted the knowledge base of author names. Our parser doesn’t know this is one and the same person; but it has a way of seeing/discovering the chain of name changes. If the knowledge database is correct, which is most of the time, it will be able to start from the user input and arrive at other names.</p>
+
+<p>In the next stages, we’ll deduplicate entries and normalize them once again. We’ll also generate a few other different queries to account for idiosynracies in how ADS stores/searches/curates data. For example, oftentimes the papers are given to ADS without full author names and will only contain initials, so even though you may want to search for the full name, we’ll also (automatically) expand the search to include the initials (or vice versa - you are searching for initials but we’ll insist to expand your search – be less precise, more comprehensive). It depends on the input. If for example user typed <code class="language-plaintext highlighter-rouge">acamczuk, p</code> then our parser will assume they are fine with <code class="language-plaintext highlighter-rouge">adamczuk, p*</code> (and give them all peters, piotrs, pauls, pans and pons), but if the user typed <code class="language-plaintext highlighter-rouge">adamczuk, peter</code> then the search engine will take care not to search for <code class="language-plaintext highlighter-rouge">adamczuk, p*</code>, instead it will return <code class="language-plaintext highlighter-rouge">adamczuk, p</code>, <code class="language-plaintext highlighter-rouge">adamczuk, p &lt;some other name&gt;</code> and all of the synonyms thereof (<code class="language-plaintext highlighter-rouge">adamčuková, p</code>, <code class="language-plaintext highlighter-rouge">adamčuková, p *</code>, <code class="language-plaintext highlighter-rouge">stoklasová, p</code>…)</p>
+
+<p>So what started as a few characters (one query) is turned behind the scenes into a massive and very complicated query. There is a constant battle between the desire to be precise, and the desire to include everybody who should be there (recall). Yet all of this without really knowing much about the person, all we have is just a bunch of characters. The logic is complex, it takes advantage of what ADS knows about the authors and includes a knowledge base (plus business logic) but it is far from being able to understand the ‘intentions’ of the user; and it has no real model of a person (and their relationships).</p>
+
+<p>If it produces unexpected results, it usually is because of these reasons:</p>
+
+<ul>
+  <li>there is a bug somewhere in this insanely complex chain – a bug that was not caught by even the more insanely large suite of unittests (the frequency of this being the case is diminishing rapidly with time, and it happens rarely - but it is really difficult to say with certainty until the whole testsuite is examined; so it should always be the first option)</li>
+  <li>the curated knowledge base is too broad or too narrow: i.e. it is missing a connection, or has connection too many – and joins unrelated names together</li>
+  <li>haphazard interferences: wrong data indexed, wrong or outdated versions of synonyms/transliterations deployed, parts of the production cluster being down, parts of the backoffice processing pipeline being down….</li>
+</ul>
+
+<p><strong>Intermezzo #1</strong></p>
+
+<p>Parts of the author search logic can be turned on/off; here are some of the most useful options:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">=author:"adamzuk, p"</code> the equal sign will instruct our parser not to look for transliterations/synonyms/variants</li>
+  <li><code class="language-plaintext highlighter-rouge">author:/adamzuk,\ p/</code> – you can use regular expressions, basically throwing away all the fancy logic; but mind that in the real world people really have many different names; so with this approach you will only find papers that contain just the characters of your pattern</li>
+  <li><code class="language-plaintext highlighter-rouge">author:"adamczuk, p"~0.7</code> – the funny tilde float number activates a fuzzy search for the similarly sounding names. You’ll need to play with the modifier until you get names that work for a particular use case (the range is 0.1-1.0). See <a href="./2021-05-23-search-parser.md">search parser</a> for details.</li>
+</ul>
+
+<p><strong>– end of intermezzo #1 —</strong></p>
+</article>
+  </div>
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $('body').on('click', 'button[data-toggle="off-canvas"]', function () {
+        $('.row-offcanvas').toggleClass('active');
+      });
+    });
+  </script>
+
+  <!-- for sidebar -->
+  <script>
+    $(document).ready(function () {
+      //ADD THE PROPER HIGHLIGHT
+      try {
+        var category = window.location.pathname.split('/')[2];
+      } catch (e) {
+        console.error("couldn't parse category name");
+      }
+      //this should fail without causing a problem if category can't be found
+      if ($('.help-nav').find('div#' + category + '-items').length === 0)
+        console.log('couldnt find accordion drawer for: ', category);
+      $('.help-nav')
+        .find('div#' + category + '-items')
+        .addClass('in')
+        //set the caret pointing down
+        .parent()
+        .find('.fa')
+        .removeClass('fa-caret-right')
+        .addClass('fa-caret-down');
+
+      //SET LISTENERS FOR CARET OPEN/CLOSED
+      $('.help-nav .collapse')
+        .on('show.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-right')
+            .addClass('fa-caret-down');
+        })
+        .on('hide.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-down')
+            .addClass('fa-caret-right');
+        });
+    });
+  </script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

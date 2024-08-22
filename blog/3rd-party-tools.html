@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/blog_2019_07_30_3rd-party-tools.png">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/blog/3rd-party-tools"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2023-12-08 22:03:10 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>User-Developed Tools for ADS | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="User-Developed Tools for ADS" />
+<meta name="author" content="Kelly Lockhart" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ADS was started in the late 1980s by astronomers, for astronomers, and has long received public funding via NASA grants. This history has meant that we’ve long been open to community involvement, and we’ve taken this a step further with the new ADS. The new ADS’s codebase is open-source, which means that the code that makes up our website and data pipelines is available for users to look at, contribute to, or use for their own projects. Also, we’ve made our database more accessible by allowing users to access our holdings via our API. The API in particular has enabled users to develop an ecosystem of new tools to keep up with the literature and to maintain professional and personal bibliographies. In this post, we highlight a few of these third-party tools developed by our user community. Note that these tools were all developed independently of ADS, so if you have questions about them, please contact the developers directly. The ADS Python library (Github, Read the Docs, PyPI) was developed by Andy Casey and collaborators. While the API can be accessed via Python without using this library, the library provides a more user-friendly interface and more efficient memory usage. The Kepler Guest Observer Office’s publications list is maintained with their kpub tool (Github), using the ADS Python library highlighted above. Casual browsers can view mission publication lists and statistics on the KeplerGO website, while astronomers involved in the mission can add relevant publications to the Kepler bibliography with the kpub tool. Astropy’s astroquery (Github, Read the Docs) package is a standardized interface for querying various astronomical databases. A module for querying ADS via our API is included in the larger package. Ads2gephi (Github), written by Theodor Costea for a project run by historian of science Karin Pelte, is a package that queries ADS and returns the results in a format compatible with Gephi, a popular network visualization tool. In these networks, individual papers serve as graph nodes, while citations and references serve as the edges connecting them. The ads2gephi tool enables this data extraction and readies the extracted data for visualization. Several users have created bibliography management tools to make it easier for astronomers to manage their reference lists: ADS to BibDesk (Github, PyPI), written by Rui Xue for MacOS, is based on an older version of a package by the same name (Github) originally developed for Classic by Jonathan Sick but updated by Xue to use the new ADS’s API. Like the older package, ADS to BibDesk uses ADS to update and maintain the user’s local BibDesk database. Bibmanager (Github, Read the Docs, PyPI), written by Patricio Cubillos, is a combination bibliography manager, LaTeX .bib file generator, and ADS query tool. With bibmanager, at the command line you can search ADS for new or updated papers, add them to your main bibliography database, and generate the bibliography file for a LaTeX document that already contains citations. Adstex (Github, PyPI), written by Yao-Yuan Mao, allows you to bypass downloading BibTeX or other paper metadata to a master local database. Instead, you write your paper using TeX and cite commands as normal, then run adstex on the TeX document. The tool checks your paper for any cite commands, queries ADS, and downloads the necessary BibTeX entries to a .bib file for the paper. Let us know if you’ve written or if you use any other tools that use our API! We may include them in an updated version of this post in the future. And if you haven’t yet tried out our API for your own projects, find our Jupyter notebooks with instructions and example code on our Github repo." />
+<meta property="og:description" content="ADS was started in the late 1980s by astronomers, for astronomers, and has long received public funding via NASA grants. This history has meant that we’ve long been open to community involvement, and we’ve taken this a step further with the new ADS. The new ADS’s codebase is open-source, which means that the code that makes up our website and data pipelines is available for users to look at, contribute to, or use for their own projects. Also, we’ve made our database more accessible by allowing users to access our holdings via our API. The API in particular has enabled users to develop an ecosystem of new tools to keep up with the literature and to maintain professional and personal bibliographies. In this post, we highlight a few of these third-party tools developed by our user community. Note that these tools were all developed independently of ADS, so if you have questions about them, please contact the developers directly. The ADS Python library (Github, Read the Docs, PyPI) was developed by Andy Casey and collaborators. While the API can be accessed via Python without using this library, the library provides a more user-friendly interface and more efficient memory usage. The Kepler Guest Observer Office’s publications list is maintained with their kpub tool (Github), using the ADS Python library highlighted above. Casual browsers can view mission publication lists and statistics on the KeplerGO website, while astronomers involved in the mission can add relevant publications to the Kepler bibliography with the kpub tool. Astropy’s astroquery (Github, Read the Docs) package is a standardized interface for querying various astronomical databases. A module for querying ADS via our API is included in the larger package. Ads2gephi (Github), written by Theodor Costea for a project run by historian of science Karin Pelte, is a package that queries ADS and returns the results in a format compatible with Gephi, a popular network visualization tool. In these networks, individual papers serve as graph nodes, while citations and references serve as the edges connecting them. The ads2gephi tool enables this data extraction and readies the extracted data for visualization. Several users have created bibliography management tools to make it easier for astronomers to manage their reference lists: ADS to BibDesk (Github, PyPI), written by Rui Xue for MacOS, is based on an older version of a package by the same name (Github) originally developed for Classic by Jonathan Sick but updated by Xue to use the new ADS’s API. Like the older package, ADS to BibDesk uses ADS to update and maintain the user’s local BibDesk database. Bibmanager (Github, Read the Docs, PyPI), written by Patricio Cubillos, is a combination bibliography manager, LaTeX .bib file generator, and ADS query tool. With bibmanager, at the command line you can search ADS for new or updated papers, add them to your main bibliography database, and generate the bibliography file for a LaTeX document that already contains citations. Adstex (Github, PyPI), written by Yao-Yuan Mao, allows you to bypass downloading BibTeX or other paper metadata to a master local database. Instead, you write your paper using TeX and cite commands as normal, then run adstex on the TeX document. The tool checks your paper for any cite commands, queries ADS, and downloads the necessary BibTeX entries to a .bib file for the paper. Let us know if you’ve written or if you use any other tools that use our API! We may include them in an updated version of this post in the future. And if you haven’t yet tried out our API for your own projects, find our Jupyter notebooks with instructions and example code on our Github repo." />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/blog/3rd-party-tools" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/blog/3rd-party-tools" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-30T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="User-Developed Tools for ADS" />
+<meta name="twitter:site" content="@adsabs" />
+<meta name="twitter:creator" content="@Kelly Lockhart" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kelly Lockhart"},"dateModified":"2023-12-08T22:03:10+00:00","datePublished":"2019-07-30T00:00:00+00:00","description":"ADS was started in the late 1980s by astronomers, for astronomers, and has long received public funding via NASA grants. This history has meant that we’ve long been open to community involvement, and we’ve taken this a step further with the new ADS. The new ADS’s codebase is open-source, which means that the code that makes up our website and data pipelines is available for users to look at, contribute to, or use for their own projects. Also, we’ve made our database more accessible by allowing users to access our holdings via our API. The API in particular has enabled users to develop an ecosystem of new tools to keep up with the literature and to maintain professional and personal bibliographies. In this post, we highlight a few of these third-party tools developed by our user community. Note that these tools were all developed independently of ADS, so if you have questions about them, please contact the developers directly. The ADS Python library (Github, Read the Docs, PyPI) was developed by Andy Casey and collaborators. While the API can be accessed via Python without using this library, the library provides a more user-friendly interface and more efficient memory usage. The Kepler Guest Observer Office’s publications list is maintained with their kpub tool (Github), using the ADS Python library highlighted above. Casual browsers can view mission publication lists and statistics on the KeplerGO website, while astronomers involved in the mission can add relevant publications to the Kepler bibliography with the kpub tool. Astropy’s astroquery (Github, Read the Docs) package is a standardized interface for querying various astronomical databases. A module for querying ADS via our API is included in the larger package. Ads2gephi (Github), written by Theodor Costea for a project run by historian of science Karin Pelte, is a package that queries ADS and returns the results in a format compatible with Gephi, a popular network visualization tool. In these networks, individual papers serve as graph nodes, while citations and references serve as the edges connecting them. The ads2gephi tool enables this data extraction and readies the extracted data for visualization. Several users have created bibliography management tools to make it easier for astronomers to manage their reference lists: ADS to BibDesk (Github, PyPI), written by Rui Xue for MacOS, is based on an older version of a package by the same name (Github) originally developed for Classic by Jonathan Sick but updated by Xue to use the new ADS’s API. Like the older package, ADS to BibDesk uses ADS to update and maintain the user’s local BibDesk database. Bibmanager (Github, Read the Docs, PyPI), written by Patricio Cubillos, is a combination bibliography manager, LaTeX .bib file generator, and ADS query tool. With bibmanager, at the command line you can search ADS for new or updated papers, add them to your main bibliography database, and generate the bibliography file for a LaTeX document that already contains citations. Adstex (Github, PyPI), written by Yao-Yuan Mao, allows you to bypass downloading BibTeX or other paper metadata to a master local database. Instead, you write your paper using TeX and cite commands as normal, then run adstex on the TeX document. The tool checks your paper for any cite commands, queries ADS, and downloads the necessary BibTeX entries to a .bib file for the paper. Let us know if you’ve written or if you use any other tools that use our API! We may include them in an updated version of this post in the future. And if you haven’t yet tried out our API for your own projects, find our Jupyter notebooks with instructions and example code on our Github repo.","headline":"User-Developed Tools for ADS","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/blog/3rd-party-tools"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"},"name":"Kelly Lockhart"},"url":"https://ui.adsabs.harvard.edu/blog/3rd-party-tools"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/blog">all blog posts</a> |
+        <a href="/blog/news">news</a> |
+        <a href="/blog/general">general</a> |
+        <a href="/blog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">User-Developed Tools for ADS</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Kelly Lockhart
+              
+        
+    
+
+
+    <b>(ADS)</b>
+
+</h3>
+      <h3 class="post-date">30 Jul 2019</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>ADS <a href="https://ui.adsabs.harvard.edu/about/history/">was started</a> in the late 1980s by astronomers, for astronomers, and has long received public funding via NASA grants. This history has meant that we’ve long been open to community involvement, and we’ve taken this a step further with the new ADS. The new ADS’s <a href="https://github.com/adsabs">codebase</a> is open-source, which means that the code that makes up our website and data pipelines is available for users to look at, contribute to, or use for their own projects. Also, we’ve made our database more accessible by allowing users to access our holdings via <a href="https://github.com/adsabs/adsabs-dev-api">our API</a>.</p>
+
+<p>The API in particular has enabled users to develop an ecosystem of new tools to keep up with the literature and to maintain professional and personal bibliographies. In this post, we highlight a few of these third-party tools developed by our user community. Note that these tools were all developed independently of ADS, so if you have questions about them, please contact the developers directly.</p>
+
+<p>The <strong>ADS Python library</strong> (<a href="https://github.com/andycasey/ads">Github</a>, <a href="https://ads.readthedocs.io/en/latest/">Read the Docs</a>, <a href="https://pypi.org/project/ads/">PyPI</a>) was developed by <a href="https://ads.readthedocs.io/en/latest/#authors">Andy Casey and collaborators</a>. While the API can be <a href="https://github.com/adsabs/adsabs-dev-api/blob/master/Converting_curl_to_python.ipynb">accessed via Python</a> without using this library, the library provides a more user-friendly interface and more efficient memory usage.</p>
+
+<p>The Kepler Guest Observer Office’s <a href="https://keplerscience.arc.nasa.gov/publications.html">publications list</a> is maintained with their <strong>kpub</strong> tool  (<a href="https://github.com/KeplerGO/kpub">Github</a>), using the ADS Python library highlighted above. Casual browsers can view mission publication lists and statistics on the KeplerGO website, while astronomers involved in the mission can add relevant publications to the Kepler bibliography with the kpub tool.</p>
+
+<p><a href="https://www.astropy.org/">Astropy</a>’s <strong>astroquery</strong> (<a href="https://github.com/astropy/astroquery">Github</a>, <a href="https://astroquery.readthedocs.io/en/latest/">Read the Docs</a>) package is a standardized interface for querying various astronomical databases. A module for querying ADS via our API is included in the larger package.</p>
+
+<p><strong>Ads2gephi</strong> (<a href="https://github.com/03b8/ads2gephi">Github</a>), written by Theodor Costea for <a href="../blog/concepts-at-work">a project</a> run by historian of science Karin Pelte, is a package that queries ADS and returns the results in a format compatible with Gephi, a popular network visualization tool. In these networks, individual papers serve as graph nodes, while citations and references serve as the edges connecting them. The ads2gephi tool enables this data extraction and readies the extracted data for visualization.</p>
+
+<p>Several users have created bibliography management tools to make it easier for astronomers to manage their reference lists:</p>
+<ul>
+  <li><strong>ADS to BibDesk</strong> (<a href="https://github.com/r-xue/ads2bibdesk">Github</a>, <a href="https://pypi.org/project/ads2bibdesk/">PyPI</a>), written by Rui Xue for MacOS, is based on an older version of a package by the same name (<a href="https://github.com/jonathansick/ads_bibdesk">Github</a>) originally developed for Classic by Jonathan Sick but updated by Xue to use the new ADS’s API. Like the older package, ADS to BibDesk uses ADS to update and maintain the user’s local <a href="https://bibdesk.sourceforge.io/">BibDesk</a> database.</li>
+  <li><strong>Bibmanager</strong> (<a href="https://github.com/pcubillos/bibmanager">Github</a>, <a href="https://bibmanager.readthedocs.io/en/latest/">Read the Docs</a>, <a href="https://pypi.org/project/bibmanager/">PyPI</a>), written by Patricio Cubillos, is a combination bibliography manager, LaTeX .bib file generator, and ADS query tool. With bibmanager, at the command line you can search ADS for new or updated papers, add them to your main bibliography database, and generate the bibliography file for a LaTeX document that already contains citations.</li>
+  <li><strong>Adstex</strong> (<a href="https://github.com/yymao/adstex">Github</a>, <a href="https://pypi.org/project/adstex/">PyPI</a>), written by Yao-Yuan Mao, allows you to bypass downloading BibTeX or other paper metadata to a master local database. Instead, you write your paper using TeX and cite commands as normal, then run adstex on the TeX document. The tool checks your paper for any cite commands, queries ADS, and downloads the necessary BibTeX entries to a .bib file for the paper.</li>
+</ul>
+
+<p>Let us know if you’ve written or if you use any other tools that use our API! We may include them in an updated version of this post in the future. And if you haven’t yet tried out our API for your own projects, find our Jupyter notebooks with instructions and example code on our <a href="https://github.com/adsabs/adsabs-dev-api">Github repo</a>.</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

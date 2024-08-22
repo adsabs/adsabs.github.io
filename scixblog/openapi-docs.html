@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <title>
+    Introducing ADS’s OpenAPI Description and Documentation
+  </title>
+  <meta name="description" content="All your questions will be answered here." />
+
+  <!-- Disqus tags -->
+  <meta
+    property="og:description"
+    content="Introducing ADS’s OpenAPI Description and Documentation"
+  />
+  <meta
+    property="og:image"
+    content="https://ui.adsabs.harvard.edu/blog/images/blog_2021-08-04_apidocs.png"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/scixblog/openapi-docs"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+    } else {
+      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+    }
+  </script>
+
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+          alt="scix icon"
+        />
+        <b>&nbsp;SciX</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/scixabout/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About SciX
+              </a>
+            </li>
+            <li>
+              <a href="/scixblog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/scixhelp/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                SciX Help Pages
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-scix-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://scixplorer.org/">
+          <img
+            src="/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg"
+            alt="The SciX Logo"
+          />
+          Science Explorer
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/scixblog">all blog posts</a> |
+        <a href="/scixblog/news">news</a> |
+        <a href="/scixblog/general">general</a> |
+        <a href="/scixblog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Introducing ADS’s OpenAPI Description and Documentation</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Kelly Lockhart
+              
+        
+    
+
+
+    <b>(ADS)</b>
+
+</h3>
+      <h3 class="post-date">04 Aug 2021</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>ADS’s API, or application programming interface, is the service that accepts requests and returns the requested information. For example, when a user searches in ADS, the website sends a search request to the API, which performs the search and returns the results to the website, which formats and displays them to the user.</p>
+
+<p>Early in the development of the new ADS, we decided to make its API more easily accessible and usable for our users, for development of your own tools and scripts. To that end, we’ve created documentation on API usage and examples in the form of <a href="https://github.com/adsabs/adsabs-dev-api">Jupyter notebooks</a>, provided support for users writing their own API scripts, and <a href="../blog/3rd-party-tools">advertised third-party tools</a> our users have created for our API. Users have responded by building tools to more easily <a href="https://ads.readthedocs.io/en/latest/">search ADS within Python</a>, <a href="https://github.com/yymao/adstex">maintain</a> <a href="https://github.com/pcubillos/bibmanager">external</a> <a href="https://github.com/r-xue/ads2bibdesk">bibliographies</a>, and <a href="https://github.com/03b8/ads2gephi">visualize results</a>.</p>
+
+<p>However, while our existing API documentation covered the most widely used features, such as searching ADS and using libraries, there were a number of useful features that we’ve never documented for our user base. And that doesn’t even touch all of the new features we’ve added over the last few years! Instead of updating our existing docs in a piecemeal manner, we decided to document our full API using the <a href="https://swagger.io/specification/">OpenAPI</a> specification<sup><a href="#footnote1">1</a></sup>.</p>
+
+<p>The OpenAPI spec is a language-agnostic, widely adopted industry standard for documenting APIs in a machine-readable way. We spent weeks documenting and describing 80+ user-facing (and, for internal use, 70+ data pipeline and internal) API operations, resulting in a comprehensive document that combines descriptions, examples, and schema for each operation. This document is now available to explore visually using our new <a href="../../help/api/api-docs.html">beautiful, easy to use documentation</a><sup><a href="#footnote1">2</a></sup>.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_apidocs.png" />
+<em>New API help documentation</em>
+</div>
+<p><br /></p>
+
+<p>Our <a href="../../help/api/api-docs.html">new API documentation</a> looks a little overwhelming at first, but it’s easy to use once you get the hang of it. First, all of the available operations, or types of API requests, are organized by function in the sidebar on the left. Click on one to see the full description of that operation. To find a specific operation, you can also use the Search bar at the top, scroll through the page (all operations are listed in one long, scrollable list), or use your browser’s “find in page” function. The documentation for each operation includes the endpoint, or operation, itself (e.g. <code class="language-plaintext highlighter-rouge">/search/query</code>), the <a href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP method</a> to use (e.g. GET), a description of the operation, any required and optional parameters and request bodies, and the possible responses.</p>
+
+<p>This is all very useful already, if similar to the existing Jupyter notebook documentation. Where these docs really shine, though, are with the built-in try-me functionality. To use this, first <a href="https://ui.adsabs.harvard.edu/user/settings/token">get your API key</a> and copy it into the box in the <a href="../../help/api/api-docs.html#auth">Authentication section</a> and click Set. Now you can try out the API directly from this documentation! Let’s look at an example.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_auth.png" />
+<em>API token authentication box</em>
+</div>
+<p><br /></p>
+
+<p>We’ll start with a basic search, using the operation labeled <a href="../../help/api/api-docs.html#get-/search/query">Search ADS</a>. This operation uses the GET method and the endpoint <code class="language-plaintext highlighter-rouge">/search/query</code>. A longer description, with examples, is also provided in the documentation.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_searchADS.png" />
+<em>Search ADS operation</em>
+</div>
+<p><br /></p>
+
+<p>Scroll past the description and examples to the Request section. Here, you’ll find a list of required (marked with an asterisk) and optional parameters, each with a short helpful description. For this operation, the only required parameter is the “q” parameter; enter your search terms here. In this example, shown below, we’re searching for papers containing the word “star.” There are also some optional parameters available; here, we’re using the “fl” parameters to specify that we want the bibcode, title, author, and publication date returned for each search result.</p>
+
+<p>Some other things to note about the request parameters section:</p>
+<ul>
+  <li>Generally, parameters need to be URL-encoded in an API request, but when running requests via these docs, the page will automatically do the encoding for you. You can use spaces and special characters in your search terms here just as you would when searching on the ADS website, without needing to encode them.</li>
+  <li>Below some of the parameters, there’s an example shown; click on the example to fill it in. You can also use the “fill example” button at the bottom of the list of parameters to fill all available examples.</li>
+</ul>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_searchADS-request.png" />
+<em>Search ADS request parameters</em>
+</div>
+<p><br /></p>
+
+<p>Once you’ve filled in the parameters you’d like, scroll to the end of the parameter list and click Try. This will format your request, send it, and return the results. The request response is shown in the “Response” tab, in JSON format. The “responseHeader” section contains some information about the request, while the “response” section (shown below) contains the actual request results. In this example, 556,985 total results were found, and the page is displaying the first 10 in the Response box.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_searchADS-response.png" />
+<em>Search ADS response</em>
+</div>
+<p><br /></p>
+
+<p>You can scroll through the search results here, or you can click on the “curl” tab to copy the request formatted using your input parameters to use in your own scripts.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_searchADS-curl.png" />
+<em>Search ADS curl command: copy this into your terminal to run the query as formatted</em>
+</div>
+<p><br /></p>
+
+<p>This works similarly for operations that have the POST HTTP request method, but there is a slight difference. Let’s look at one more example. The <a href="../../help/api/api-docs.html#post-/export/bibtex">BibTeX export for multiple bibcodes</a> uses the POST method. You can see that while this operation doesn’t have any parameters (though some POST operations do), it does have a request body, which is used to pass in the bibcodes you want to export. The default view for a request body is the “schema” tab, which shows the information you can pass in via the body (again, the fields marked with an asterisk are required).</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_bibtex-post.png" />
+<em>BibTeX export for multiple bibcodes</em>
+</div>
+<p><br /></p>
+
+<p>To test this operation, click on the “example” tab. It defaults to an empty box; click on “fill example” to fill in the placeholder text that demonstrates the proper formatting.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_bibtex-post-body.png" />
+<em>Request body; click on the Example tab, then "fill example" to show the proper request body formatting</em>
+</div>
+<p><br /></p>
+
+<p>Fill in your bibcodes in the placeholder text:</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" src="/blog/images/blog_2021-08-04_bibtex-post-body-2.png" />
+<em>Edit the placeholder request body as necessary</em>
+</div>
+<p><br /></p>
+
+<p>Then click the Try button to send the request and receive your results. The response and curl sections are similar to those for the search example above.</p>
+
+<p>And that’s it! If you can follow these two examples, you’re ready to take on anything else in the <a href="../../help/api/api-docs.html">documentation</a>. You can find links to this and to the rest of our API documentation <a href="../../help/api/">here</a>. And we’re not done with our <a href="https://github.com/adsabs/adsabs-dev-api">collection of Jupyter notebooks</a>; we’re working on adding more notebooks with more in depth API examples. As always, email us if you have any questions.</p>
+
+<p><br />
+<a name="footnote1">1</a>: This work was inspired by an ADS Hack Day project by Diab Jerius (<a href="https://github.com/djerius">Github</a>).<br />
+<a name="footnote2">2</a>: This documentation is powered by <a href="https://mrin9.github.io/RapiDoc/index.html">RapiDoc</a>.</p>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          help[at]scixplorer.org
+        </p>
+        <p>
+          SciX is a project created by the Astrophysics Data System (ADS), which
+          is operated by the Smithsonian Astrophysical Observatory under NASA
+          Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/scixabout/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About SciX
+          </a>
+        </li>
+        <li>
+          <a href="/scixhelp/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> SciX Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/scixabout/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@SciX
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/scixcommunity"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @scixcommunity
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="https://ui.adsabs.harvard.edu/blog/images/blog_2022-12-29_UAT2.png">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/blog/uat-integration"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2023-12-08 22:03:10 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unified Astronomy Thesaurus (UAT) Integration in ADS Search and Discovery | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Unified Astronomy Thesaurus (UAT) Integration in ADS Search and Discovery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The ADS Team is working in collaboration with Pavlos Protopapas and Ben Yuen of Harvard University to pilot the integration of the Unified Astronomy Thesaurus (UAT) into ADS search and discovery for new, future, and legacy literature. ADS users will be able to browse results using left side facets in the query results screen, or conduct an initial search using UAT terms. An example search query in ADS. Example search results from ADS, showing UAT concepts as a facet query on the left side. An example search query in ADS, including filtering on a UAT concept. While it is currently possible to search ADS by keywords provided by publishers, there is no single vocabulary that has been consistently used throughout the indexed literature in ADS. The Astronomical Subject Keywords that had been in use by leading astronomy journals since the 1970s hasn’t been updated since 2013, and may not cover the latest topics in the field. The “Keywords” also do not include definitions or relationships between concepts. For this reason, the American Astronomical Society (AAS) journals and the Publications of the Astronomical Society of the Pacific (PASP) elected to adopt the Unified Astronomy Thesaurus as its keyword system of choice in 2019 and 2020, respectively. The UAT is an open, interoperable, and community-supported project which formalizes astronomical concepts and their inter-relationships into a well-curated, freely available open resource. It reconciled divergent and isolated vocabularies from the fields of astronomy and astrophysics, such as the IAU Thesaurus, the Physics and Astronomy Classification Scheme, the Astronomy Subject Keywords, and others. The UAT’s primary mission is to support semantic enrichment of the literature, thereby enabling greater search and discovery across the astrophysics literature. In addition, the UAT is being used as a taxonomy with which to label other astronomical research products, such as software and datasets. The ADS Team’s goal is to promote the use of UAT concepts as a standard way to describe and discover records in its astronomy collection. Ben Yuen, working under the supervision of Protopapas, is using machine learning techniques to automatically assign UAT terms to the majority of records in ADS which do not have them, such as the legacy literature. In order to produce accurate results, the system is being trained on the corpus of AAS articles which currently have UAT concepts associated with them. Validation of the results through editorial input and user feedback will be used to improve the automated process. This pilot program is beneficial to all of ADS, as it provides a single, up-to-date set of concepts that can be used to identify all current research topics of interest to astronomers. The team intends to extend the system to use concepts drawn from other controlled vocabularies for subject areas outside the core astronomy collection. (To learn more about ADS’ recent expansion, which encompasses Planetary Science and Heliophysics literature, and will in future include Earth Science, and Biological &amp; Physical Sciences, view our earlier blog post.) Development and testing of this prototype are ongoing. The ADS Team expects to release this capability in production by December 2023. As ADS adopts use of the UAT across its astronomy collection, we encourage all astronomy and astrophysics publishers to use the thesaurus as its article keyword system to facilitate integration of this content into future ADS search and discovery. As more journals and research products, such as datasets, software, and proposals, are tagged with UAT terms, the ability to search, browse, and crosslink all of these resources by science topic will increase. While the AAS has assumed formal ownership of the UAT, the thesaurus remains available under a Creative Commons License, ensuring its widest use while protecting the intellectual property of its contributors. Development and maintenance are stewarded by a broad group of parties with a direct stake in the UAT; this includes professional associations (IVOA, IAU), learned societies (AAS, RAS), publishers (IOP, AIP), software developers, librarians, and other curators working for major astronomy institutes and data archives. The UAT has been implemented by an increasing number of journals, research organizations, and systems1. Current adoptees include: American Astronomical Society journals, including The Astronomical Journal (AJ), The Astrophysical Journal (ApJ), ApJS, ApJL, The Planetary Science Journal (PSJ), and Research Notes of the AAS (RNAAS) Astrophysics Data System (ADS) Publications of the Astronomical Society of the Pacific (PASP) International Virtual Observatory Alliance (IVOA) Space Telescope Science Institute (STScI) for the Hubble Space Telescope (HST) and James Webb Space Telescope (JWST) proposal systems Icarus - in formulation for 2023 &#8617;" />
+<meta property="og:description" content="The ADS Team is working in collaboration with Pavlos Protopapas and Ben Yuen of Harvard University to pilot the integration of the Unified Astronomy Thesaurus (UAT) into ADS search and discovery for new, future, and legacy literature. ADS users will be able to browse results using left side facets in the query results screen, or conduct an initial search using UAT terms. An example search query in ADS. Example search results from ADS, showing UAT concepts as a facet query on the left side. An example search query in ADS, including filtering on a UAT concept. While it is currently possible to search ADS by keywords provided by publishers, there is no single vocabulary that has been consistently used throughout the indexed literature in ADS. The Astronomical Subject Keywords that had been in use by leading astronomy journals since the 1970s hasn’t been updated since 2013, and may not cover the latest topics in the field. The “Keywords” also do not include definitions or relationships between concepts. For this reason, the American Astronomical Society (AAS) journals and the Publications of the Astronomical Society of the Pacific (PASP) elected to adopt the Unified Astronomy Thesaurus as its keyword system of choice in 2019 and 2020, respectively. The UAT is an open, interoperable, and community-supported project which formalizes astronomical concepts and their inter-relationships into a well-curated, freely available open resource. It reconciled divergent and isolated vocabularies from the fields of astronomy and astrophysics, such as the IAU Thesaurus, the Physics and Astronomy Classification Scheme, the Astronomy Subject Keywords, and others. The UAT’s primary mission is to support semantic enrichment of the literature, thereby enabling greater search and discovery across the astrophysics literature. In addition, the UAT is being used as a taxonomy with which to label other astronomical research products, such as software and datasets. The ADS Team’s goal is to promote the use of UAT concepts as a standard way to describe and discover records in its astronomy collection. Ben Yuen, working under the supervision of Protopapas, is using machine learning techniques to automatically assign UAT terms to the majority of records in ADS which do not have them, such as the legacy literature. In order to produce accurate results, the system is being trained on the corpus of AAS articles which currently have UAT concepts associated with them. Validation of the results through editorial input and user feedback will be used to improve the automated process. This pilot program is beneficial to all of ADS, as it provides a single, up-to-date set of concepts that can be used to identify all current research topics of interest to astronomers. The team intends to extend the system to use concepts drawn from other controlled vocabularies for subject areas outside the core astronomy collection. (To learn more about ADS’ recent expansion, which encompasses Planetary Science and Heliophysics literature, and will in future include Earth Science, and Biological &amp; Physical Sciences, view our earlier blog post.) Development and testing of this prototype are ongoing. The ADS Team expects to release this capability in production by December 2023. As ADS adopts use of the UAT across its astronomy collection, we encourage all astronomy and astrophysics publishers to use the thesaurus as its article keyword system to facilitate integration of this content into future ADS search and discovery. As more journals and research products, such as datasets, software, and proposals, are tagged with UAT terms, the ability to search, browse, and crosslink all of these resources by science topic will increase. While the AAS has assumed formal ownership of the UAT, the thesaurus remains available under a Creative Commons License, ensuring its widest use while protecting the intellectual property of its contributors. Development and maintenance are stewarded by a broad group of parties with a direct stake in the UAT; this includes professional associations (IVOA, IAU), learned societies (AAS, RAS), publishers (IOP, AIP), software developers, librarians, and other curators working for major astronomy institutes and data archives. The UAT has been implemented by an increasing number of journals, research organizations, and systems1. Current adoptees include: American Astronomical Society journals, including The Astronomical Journal (AJ), The Astrophysical Journal (ApJ), ApJS, ApJL, The Planetary Science Journal (PSJ), and Research Notes of the AAS (RNAAS) Astrophysics Data System (ADS) Publications of the Astronomical Society of the Pacific (PASP) International Virtual Observatory Alliance (IVOA) Space Telescope Science Institute (STScI) for the Hubble Space Telescope (HST) and James Webb Space Telescope (JWST) proposal systems Icarus - in formulation for 2023 &#8617;" />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/blog/uat-integration" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/blog/uat-integration" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-29T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="Unified Astronomy Thesaurus (UAT) Integration in ADS Search and Discovery" />
+<meta name="twitter:site" content="@adsabs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-08T22:03:10+00:00","datePublished":"2022-12-29T00:00:00+00:00","description":"The ADS Team is working in collaboration with Pavlos Protopapas and Ben Yuen of Harvard University to pilot the integration of the Unified Astronomy Thesaurus (UAT) into ADS search and discovery for new, future, and legacy literature. ADS users will be able to browse results using left side facets in the query results screen, or conduct an initial search using UAT terms. An example search query in ADS. Example search results from ADS, showing UAT concepts as a facet query on the left side. An example search query in ADS, including filtering on a UAT concept. While it is currently possible to search ADS by keywords provided by publishers, there is no single vocabulary that has been consistently used throughout the indexed literature in ADS. The Astronomical Subject Keywords that had been in use by leading astronomy journals since the 1970s hasn’t been updated since 2013, and may not cover the latest topics in the field. The “Keywords” also do not include definitions or relationships between concepts. For this reason, the American Astronomical Society (AAS) journals and the Publications of the Astronomical Society of the Pacific (PASP) elected to adopt the Unified Astronomy Thesaurus as its keyword system of choice in 2019 and 2020, respectively. The UAT is an open, interoperable, and community-supported project which formalizes astronomical concepts and their inter-relationships into a well-curated, freely available open resource. It reconciled divergent and isolated vocabularies from the fields of astronomy and astrophysics, such as the IAU Thesaurus, the Physics and Astronomy Classification Scheme, the Astronomy Subject Keywords, and others. The UAT’s primary mission is to support semantic enrichment of the literature, thereby enabling greater search and discovery across the astrophysics literature. In addition, the UAT is being used as a taxonomy with which to label other astronomical research products, such as software and datasets. The ADS Team’s goal is to promote the use of UAT concepts as a standard way to describe and discover records in its astronomy collection. Ben Yuen, working under the supervision of Protopapas, is using machine learning techniques to automatically assign UAT terms to the majority of records in ADS which do not have them, such as the legacy literature. In order to produce accurate results, the system is being trained on the corpus of AAS articles which currently have UAT concepts associated with them. Validation of the results through editorial input and user feedback will be used to improve the automated process. This pilot program is beneficial to all of ADS, as it provides a single, up-to-date set of concepts that can be used to identify all current research topics of interest to astronomers. The team intends to extend the system to use concepts drawn from other controlled vocabularies for subject areas outside the core astronomy collection. (To learn more about ADS’ recent expansion, which encompasses Planetary Science and Heliophysics literature, and will in future include Earth Science, and Biological &amp; Physical Sciences, view our earlier blog post.) Development and testing of this prototype are ongoing. The ADS Team expects to release this capability in production by December 2023. As ADS adopts use of the UAT across its astronomy collection, we encourage all astronomy and astrophysics publishers to use the thesaurus as its article keyword system to facilitate integration of this content into future ADS search and discovery. As more journals and research products, such as datasets, software, and proposals, are tagged with UAT terms, the ability to search, browse, and crosslink all of these resources by science topic will increase. While the AAS has assumed formal ownership of the UAT, the thesaurus remains available under a Creative Commons License, ensuring its widest use while protecting the intellectual property of its contributors. Development and maintenance are stewarded by a broad group of parties with a direct stake in the UAT; this includes professional associations (IVOA, IAU), learned societies (AAS, RAS), publishers (IOP, AIP), software developers, librarians, and other curators working for major astronomy institutes and data archives. The UAT has been implemented by an increasing number of journals, research organizations, and systems1. Current adoptees include: American Astronomical Society journals, including The Astronomical Journal (AJ), The Astrophysical Journal (ApJ), ApJS, ApJL, The Planetary Science Journal (PSJ), and Research Notes of the AAS (RNAAS) Astrophysics Data System (ADS) Publications of the Astronomical Society of the Pacific (PASP) International Virtual Observatory Alliance (IVOA) Space Telescope Science Institute (STScI) for the Hubble Space Telescope (HST) and James Webb Space Telescope (JWST) proposal systems Icarus - in formulation for 2023 &#8617;","headline":"Unified Astronomy Thesaurus (UAT) Integration in ADS Search and Discovery","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/blog/uat-integration"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"}},"url":"https://ui.adsabs.harvard.edu/blog/uat-integration"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/blog"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>blog
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container row">
+      <div class="col-xs-4 col-md-2 rss-container">
+        <a href="/help/common/feed.xml"
+          ><i class="fa fa-rss"></i> RSS Feed</a
+        >
+      </div>
+      <div class="blog-links col-xs-8 col-md-4">
+        <a href="/blog">all blog posts</a> |
+        <a href="/blog/news">news</a> |
+        <a href="/blog/general">general</a> |
+        <a href="/blog/technical-posts">technical</a>
+      </div>
+
+      <div class="search-bar-container col-xs-12 col-md-6">
+        <div class="pull-right"><script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+      </div>
+    </div>
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div
+    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+  >
+    <header class="post-header">
+      
+      <h1 class="post-title">Unified Astronomy Thesaurus (UAT) Integration in ADS Search and Discovery</h1>
+      <h3 class="post-author">
+
+
+
+    
+        
+            Alberto Accomazzi
+              
+                <b>(ADS Principal Investigator),</b>
+              
+        
+    
+        
+            Jenny Novacescu <b>(Space Telescope Science Institute)</b>,
+        
+    
+        
+            Katie Frey <b>(Center for Astrophysics & UAT Curator)</b>,
+        
+    
+        
+            and Pavlos Protopapas <b>(Harvard University)</b>
+        
+    
+
+
+</h3>
+      <h3 class="post-date">29 Dec 2022</h3>
+
+      
+
+      <hr />
+
+      
+    </header>
+
+    
+
+    <article class="post-content">
+<p>The ADS Team is working in collaboration with Pavlos Protopapas and Ben Yuen of Harvard University to pilot the integration of the <a href="https://astrothesaurus.org/">Unified Astronomy Thesaurus (UAT)</a> into ADS search and discovery for new, future, and legacy literature. ADS users will be able to browse results using left side facets in the query results screen, or conduct an initial search using UAT terms.</p>
+
+<div class="text-center">
+    <img class="img-thumbnail" alt="An example search query in ADS. The example query is: full:&quot;super Earth&quot; property:refereed" src="/blog/images/blog_2022-12-29_UAT1.png" />
+<em>An example search query in ADS.</em>
+</div>
+<p><br /></p>
+
+<div class="text-center">
+    <img class="img-thumbnail" alt="Example search results from ADS, showing UAT concepts as a facet query on the left side." src="/blog/images/blog_2022-12-29_UAT2.png" />
+<em>Example search results from ADS, showing UAT concepts as a facet query on the left side.</em>
+</div>
+<p><br /></p>
+
+<div class="text-center">
+    <img class="img-thumbnail" alt="The same example search query in ADS as before, but now it includes filtering on a UAT concept. The example query is: full:&quot;super Earth&quot; property:refereed uat:&quot;high contrast techniques&quot;" src="/blog/images/blog_2022-12-29_UAT3.png" />
+<em>An example search query in ADS, including filtering on a UAT concept.</em>
+</div>
+<p><br /></p>
+
+<p>While it is currently possible to search ADS by keywords provided by publishers, there is no single vocabulary that has been consistently used throughout the indexed literature in ADS. The Astronomical Subject Keywords that had been in use by leading astronomy journals since the 1970s hasn’t been updated since 2013, and may not cover the latest topics in the field. The “Keywords” also do not include definitions or relationships between concepts. For this reason, the American Astronomical Society (AAS) journals and the Publications of the Astronomical Society of the Pacific (PASP) elected to adopt the Unified Astronomy Thesaurus as its keyword system of choice in 2019 and 2020, respectively.</p>
+
+<p>The UAT is an open, interoperable, and community-supported project which formalizes astronomical concepts and their inter-relationships into a well-curated, freely available open resource. It reconciled divergent and isolated vocabularies from the fields of astronomy and astrophysics, such as the IAU Thesaurus, the Physics and Astronomy Classification Scheme, the Astronomy Subject Keywords, and others. The UAT’s primary mission is to support semantic enrichment of the literature, thereby enabling greater search and discovery across the astrophysics literature. In addition, the UAT is being used as a taxonomy with which to label other astronomical research products, such as software and datasets.</p>
+
+<p>The ADS Team’s goal is to promote the use of UAT concepts as a standard way to describe and discover records in its astronomy collection. Ben Yuen, working under the supervision of Protopapas, is using machine learning techniques to automatically assign UAT terms to the majority of records in ADS which do not have them, such as the legacy literature. In order to produce accurate results, the system is being trained on the corpus of AAS articles which currently have UAT concepts associated with them. Validation of the results through editorial input and user feedback will be used to improve the automated process.</p>
+
+<p>This pilot program is beneficial to all of ADS, as it provides a single, up-to-date set of concepts that can be used to identify all current research topics of interest to astronomers. The team intends to extend the system to use concepts drawn from other controlled vocabularies for subject areas outside the core astronomy collection. (To learn more about ADS’ recent expansion, which encompasses Planetary Science and Heliophysics literature, and will in future include Earth Science, and Biological &amp; Physical Sciences, view <a href="arc-ssad-project">our earlier blog post</a>.) Development and testing of this prototype are ongoing. The ADS Team expects to release this capability in production by December 2023.</p>
+
+<p>As ADS adopts use of the UAT across its astronomy collection, we encourage all astronomy and astrophysics publishers to use the thesaurus as its article keyword system to facilitate integration of this content into future ADS search and discovery. As more journals and research products, such as datasets, software, and proposals, are tagged with UAT terms, the ability to search, browse, and crosslink all of these resources by science topic will increase.</p>
+
+<p>While the AAS has assumed formal ownership of the UAT, the thesaurus remains available under a Creative Commons License, ensuring its widest use while protecting the intellectual property of its contributors. Development and maintenance are stewarded by a broad group of parties with a direct stake in the UAT; this includes professional associations (IVOA, IAU), learned societies (AAS, RAS), publishers (IOP, AIP), software developers, librarians, and other curators working for major astronomy institutes and data archives.</p>
+
+<p>The UAT has been implemented by an increasing number of journals, research organizations, and systems<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Current adoptees include:</p>
+      <ul>
+        <li>American Astronomical Society journals, including The Astronomical Journal (AJ), The Astrophysical Journal (ApJ), ApJS, ApJL, The Planetary Science Journal (PSJ), and Research Notes of the AAS (RNAAS)</li>
+        <li>Astrophysics Data System (ADS)</li>
+        <li>Publications of the Astronomical Society of the Pacific (PASP)</li>
+        <li>International Virtual Observatory Alliance (IVOA)</li>
+        <li>Space Telescope Science Institute (STScI) for the Hubble Space Telescope (HST) and James Webb Space Telescope (JWST) proposal systems</li>
+        <li>Icarus - in formulation for 2023</li>
+      </ul>
+      <p><a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</article>
+  </div>
+</div>
+<div class="row">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'adsabsblog';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (
+        document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]
+      ).appendChild(dsq);
+    })();
+  </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

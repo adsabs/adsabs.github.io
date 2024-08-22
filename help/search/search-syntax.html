@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="google-site-verification"
+    content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
+  />
+
+  <!-- Disqus tags -->
+  <meta property="og:image" content="">
+
+  <link
+    rel="stylesheet"
+    href="/help/common/css/styles.css "
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/help/common/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/help/common/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/help/common/images/favicon-16x16.png"
+  />
+  <link
+    rel="manifest"
+    href="/help/common/images/manifest.json"
+  />
+  <link
+    rel="mask-icon"
+    href="/help/common/images/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="canonical"
+    href="https://ui.adsabs.harvard.edu/help/search/search-syntax"
+  />
+
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+  />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      'https://www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <noscript>
+    <style>
+      body {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </noscript>
+  <meta http-equiv="Last-Modified" content="2022-11-21 15:40:37 +0000" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Search Syntax | ADS news, blogs, and help pages</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Search Syntax" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Search Basics" />
+<meta property="og:description" content="Search Basics" />
+<link rel="canonical" href="https://ui.adsabs.harvard.edu/help/search/search-syntax" />
+<meta property="og:url" content="https://ui.adsabs.harvard.edu/help/search/search-syntax" />
+<meta property="og:site_name" content="ADS news, blogs, and help pages" />
+<meta property="og:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-02-09T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg" />
+<meta property="twitter:title" content="Search Syntax" />
+<meta name="twitter:site" content="@adsabs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-21T15:40:37+00:00","datePublished":"2015-02-09T00:00:00+00:00","description":"Search Basics","headline":"Search Syntax","image":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg","mainEntityOfPage":{"@type":"WebPage","@id":"https://ui.adsabs.harvard.edu/help/search/search-syntax"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://ui.adsabs.harvard.edu/help/common/images/transparent_logo.svg"}},"url":"https://ui.adsabs.harvard.edu/help/search/search-syntax"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+    <div>
+  <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand s-navbar-brand" href="/help"
+        ><img
+          class="s-ads-icon"
+          src="/help/common/images/transparent_logo.svg"
+          alt="ads icon"
+        />
+        <b>&nbsp;ads</b>help
+      </a>
+    </div>
+
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <button
+            type="button"
+            class="btn btn-link dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i
+              class="fa fa-question-circle about-page-icon"
+              aria-hidden="true"
+            ></i>
+            About <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="/about/">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                About ADS
+              </a>
+            </li>
+            <li>
+              <a href="/help/whats_new/">
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                What's New
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                ADS Blog
+              </a>
+            </li>
+            <li>
+              <a href="/help/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                ADS Help Pages
+              </a>
+            </li>
+            <li>
+              <a href="/help/legacy/">
+                <i class="fa fa-archive" aria-hidden="true"></i> ADS Legacy
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about/careers/">
+                <i class="fa fa-group" aria-hidden="true"></i>
+                Careers@ADS
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="s-starry-background-wrapper">
+    <section class="s-logo-header">
+      <div>
+        <a href="https://ui.adsabs.harvard.edu/">
+          <img
+            src="/help/common/images/transparent_logo.svg"
+            alt="The Astrophysics Data System Logo"
+          />
+          <b>astrophysics</b>&nbsp;data system
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+    <div class="smart-container">
+      <div class="search-bar-container pull-right col-xs-12 col-md-6">
+        <script>
+  (function () {
+    var cx = '016381517138775266827:j_b8wqloe18';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+      </div>
+    </div>
+
+    <div class="page-content smart-container"><div class="row row-offcanvas row-offcanvas-left">
+  <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
+    <!--googleoff: all-->
+
+<nav class="help-nav">
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="quickstart-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#quickstart-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i>
+    Quick Start</h3>
+        <a>
+    </div>
+    <div id="quickstart-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quickstart-help">
+      <ul class="list-group">
+              
+            <a href="/help/quickstart/searching-for-paper">
+                <li class=" list-group-item">Searching for a specific paper</li>
+            </a>
+              
+            <a href="/help/quickstart/build-library">
+                <li class=" list-group-item">Building a library and calculating metrics</li>
+            </a>
+              
+            <a href="/help/quickstart/literature-search">
+                <li class=" list-group-item">Beginning a literature search</li>
+            </a>
+              
+            <a href="/help/quickstart/common-name">
+                <li class=" list-group-item">Searching for papers by an author with a common name</li>
+            </a>
+             
+        </ul>
+    </div>
+    </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="search-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#search-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Making a Query</h3>
+        <a>
+    </div>
+    <div id="search-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="search-help">
+      <ul class="list-group">
+              
+            <a href="/help/search/search-syntax">
+                <li class=" active  list-group-item">Search Syntax</li>
+            </a>
+              
+            <a href="/help/search/citations-and-references">
+                <li class=" list-group-item">Citation and Reference Operators</li>
+            </a>
+              
+            <a href="/help/search/second-order">
+                <li class=" list-group-item">Second-Order Queries</li>
+            </a>
+              
+            <a href="/help/search/positional">
+                <li class=" list-group-item">Positional Field Searches</li>
+            </a>
+              
+            <a href="/help/search/filter">
+                <li class=" list-group-item">Filter your search</li>
+            </a>
+              
+            <a href="/help/search/comprehensive-solr-term-list">
+                <li class=" list-group-item">Comprehensive List of Solr Fields & Operators</li>
+            </a>
+              
+            <a href="/help/search/search-parser">
+                <li class=" list-group-item">(Advanced) Search Syntax</li>
+            </a>
+              
+            <a href="/help/search/author-search">
+                <li class=" list-group-item">(Advanced) Author Search</li>
+            </a>
+             
+        </ul>
+    </div>
+    </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="actions-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#actions-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""><i class="fa fa-lg fa-caret-right"> </i> Search Results</h3>
+      <a>
+  </div>
+  <div id="actions-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="actions-help">
+    <ul class="list-group">
+          
+        <a href="/help/actions/sort">
+            <li class=" list-group-item">Sort Results</li>
+        </a>
+          
+        <a href="/help/actions/analyze">
+            <li class=" list-group-item">Metrics</li>
+        </a>
+          
+        <a href="/help/actions/export">
+            <li class=" list-group-item">Export Results</li>
+        </a>
+          
+        <a href="/help/actions/author-affiliation">
+            <li class=" list-group-item">Author Affiliations</li>
+        </a>
+          
+        <a href="/help/actions/visualize">
+            <li class=" list-group-item">Visualize Results</li>
+        </a>
+          
+        <a href="/help/actions/quick-links">
+            <li class=" list-group-item">Quick Links</li>
+        </a>
+          
+        <a href="/help/actions/article-view">
+            <li class=" list-group-item">Article View</li>
+        </a>
+          
+        <a href="/help/actions/bibcode">
+            <li class=" list-group-item">ADS Bibcode</li>
+        </a>
+          
+        <a href="/help/actions/journal-macros">
+            <li class=" list-group-item">Journal Macros</li>
+        </a>
+         
+      </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="userpreferences-help">
+      <a class="collapsed" role="button" data-toggle="collapse" href="#userpreferences-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</h3>
+      <a>
+  </div>
+  <div id="userpreferences-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="userpreferences-help">
+    <ul class="list-group">
+          
+        <a href="/help/userpreferences/library-servers">
+            <li class=" list-group-item">Library Link Server</li>
+        </a>
+          
+        <a href="/help/userpreferences/myads">
+            <li class=" list-group-item">myADS Email Notifications</li>
+        </a>
+         
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="libraries-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#libraries-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> ADS Libraries</h3>
+      <a>
+  </div>
+  <div id="libraries-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="libraries-help">
+      <ul class="list-group">
+            
+          <a href="/help/libraries/creating-libraries">
+              <li class=" list-group-item">Creating and editing a library</li>
+          </a>
+            
+          <a href="/help/libraries/public-libraries">
+              <li class=" list-group-item">Making your library public and managing permissions</li>
+          </a>
+            
+          <a href="/help/libraries/visualisations">
+              <li class=" list-group-item">Visualisations, metrics, and exports</li>
+          </a>
+            
+          <a href="/help/libraries/citation-helper">
+              <li class=" list-group-item">Citation Helper</li>
+          </a>
+            
+          <a href="/help/libraries/set-operations">
+              <li class=" list-group-item">Set operations</li>
+          </a>
+            
+          <a href="/help/libraries/legacy-importing">
+              <li class=" list-group-item">Import from ADS Classic</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="orcid-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#orcid-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> ORCID </h3>
+      <a>
+  </div>
+  <div id="orcid-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="orcid-help">
+      <ul class="list-group">
+            
+          <a href="/help/orcid/claiming-papers">
+              <li class=" list-group-item">Claiming papers in ORCID</li>
+          </a>
+            
+          <a href="/help/orcid/orcid-search">
+              <li class=" list-group-item">Searching for papers in ORCID</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="data_faq-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#data_faq-items" aria-expanded="false" aria-controls="collapseThree">
+          <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Data & Curation </h3>
+      <a>
+  </div>
+  <div id="data_faq-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="data_faq-help">
+      <ul class="list-group">
+            
+          <a href="/help/data_faq/data-faq">
+              <li class=" list-group-item">Data & Curation Frequently Asked Questions (FAQs)</li>
+          </a>
+            
+          <a href="/help/data_faq/conf_proc">
+              <li class=" list-group-item">Instructions to Conference Proceedings Editors</li>
+          </a>
+            
+          <a href="/help/data_faq/tagged-format">
+              <li class=" list-group-item">Submissions Formatting</li>
+          </a>
+            
+          <a href="/help/data_faq/journal_inclusion">
+              <li class=" list-group-item">Journal Inclusion</li>
+          </a>
+            
+          <a href="/help/data_faq/ads_curation_model">
+              <li class=" list-group-item">ADS Curation Model</li>
+          </a>
+            
+          <a href="/help/data_faq/ScanHistLit">
+              <li class=" list-group-item">Technical Standards for Scanning Legacy Literature</li>
+          </a>
+           
+      </ul>
+  </div>
+</div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="troubleshooting-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#troubleshooting-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Troubleshooting </h3>
+        <a>
+    </div>
+    <div id="troubleshooting-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tutorials-help">
+      <ul class="list-group">
+          
+        <a href="/help/troubleshooting/exporting">
+          <li class=" list-group-item">How to Export Results</li>
+        </a>
+          
+        <a href="/help/troubleshooting/how-to-export-har-file">
+          <li class=" list-group-item">How to Generate a HAR File</li>
+        </a>
+         
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="video-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#videos-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Videos </h3>
+        <a>
+    </div>
+    <div id="videos-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="videos-help">
+      <ul class="list-group">
+          
+        <a href="/help/videos/welcome">
+          <li class=" list-group-item">Welcome to the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/intro">
+          <li class=" list-group-item">Introduction to the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/personalization">
+          <li class=" list-group-item">Personalization in the New ADS: ORCID and Libraries</li>
+        </a>
+          
+        <a href="/help/videos/infrastructure">
+          <li class=" list-group-item">Modernizing ADS Infrastructure: From 1992 to 2019</li>
+        </a>
+          
+        <a href="/help/videos/affiliations">
+          <li class=" list-group-item">Searching Affiliations in the New ADS</li>
+        </a>
+          
+        <a href="/help/videos/advanced-search">
+          <li class=" list-group-item">What are people thinking about what you want to think about?</li>
+        </a>
+          
+        <a href="/help/videos/fulltext">
+          <li class=" list-group-item">Searchable Full Text in the new ADS</li>
+        </a>
+          
+        <a href="/help/videos/api">
+          <li class=" list-group-item">Advanced Searching with the ADS API</li>
+        </a>
+          
+        <a href="/help/videos/experts">
+          <li class=" list-group-item">How to Use the ADS to Find Experts</li>
+        </a>
+          
+        <a href="/help/videos/libraries">
+          <li class=" list-group-item">Working with ADS Libraries</li>
+        </a>
+         
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="policies-help">
+      <a class="collapsed" role="button" data-toggle="collapse"  href="#policies-items" aria-expanded="false" aria-controls="collapseThree">
+        <h3 class=""> <i class="fa fa-lg fa-caret-right"> </i> Policies </h3>
+      <a>
+    </div>
+    <div id="policies-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="policies-help">
+      <ul class="list-group">
+                                                                                                                                                                                                                                                              
+          <a href="/help/policies/terms">
+            <li class=" list-group-item">Terms of Use</li>
+          </a>
+                              
+          <a href="/help/policies/privacy">
+            <li class=" list-group-item">Privacy Policy</li>
+          </a>
+              
+          <a href="/help/policies/accessibility">
+            <li class=" list-group-item">Accessibility Policy</li>
+          </a>
+                            
+          <a href="/help/policies/name-changes">
+            <li class=" list-group-item">Name Change Policy</li>
+          </a>
+                      
+          <a href="/help/policies/update">
+            <li class=" list-group-item">ADS Update Policy</li>
+          </a>
+                                                   
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+    <h3 class=""> <a href="/help/whats_new">What's New</a></h3>
+    <h3 class=""> <a href="/help/faq">Frequently Asked Questions </a></h3>
+    <h3 class=""> <a href="/help/api">Using the ADS API </a></h3>
+    <h3 class=""> <a href="/help/twitter">#ADSHelp</a></h3>
+    <h3 class=""> <a href="/help/handouts">Handouts </a></h3>
+    <h3 class=""> <a href="/help/legacy">Legacy Services </a></h3>
+    <h3 class=""> <a href="/help/logos">Logos </a></h3>
+
+    <hr>
+
+    <h3 class><img src="/help/common/images/github.png" width="24"> Edit help pages on <a href="https://github.com/adsabs/help">GitHub</a></h3>
+
+
+</nav>
+
+<!--googleon: all-->
+
+  </div>
+
+  <div class="post main-content col-xs-12 col-md-9">
+    <button
+      class="btn btn-primary visible-sm-inline-block visible-xs-inline-block"
+      data-toggle="off-canvas"
+    >
+      toggle sidebar
+    </button>
+
+    <header class="post-header">
+      
+      <h2 class="post-title">Search Syntax</h2>
+      
+    </header>
+
+    <article class="post-content"><h3 id="search-basics">Search Basics</h3>
+
+<p>ADS’s one box search form supports both fielded and unfielded queries.  Unfielded queries without search terms will search the metadata of the publications, including author, publication year, title, abstract, identifiers, and bibstem, which may not produce the expected results.  For instance, if you are searching for papers by the author Marc Mars, you want to search for <strong>author:“Mars, Marc”</strong> instead of <strong>Marc Mars</strong> to make sure that you don’t return papers that simply have the words “Marc” and “Mars” somewhere in the article metadata.</p>
+
+<h3 id="fielded-searches">Fielded Searches</h3>
+
+<p>Above the search box we supply shortcuts to frequently used search fields.  Simply click on the field that you wish to search and enter your search term in the provided location (generally between the supplied quotation marks).  Alternatively, if you start entering the name of a field an autocomplete feature will suggest a list of possible search fields.  You may string several search terms or use the filters provided with your results to help narrow the search selection.  For instance if you want to find articles published between 1980 and 1990 by John Huchra, you can use:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>author:"Huchra, John" year:1980-1990
+</code></pre></div></div>
+
+<p>To get you started, here is a list of search examples for commonly used fields:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Query</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>author:“huchra, john”</td>
+      <td>search for papers written by an author</td>
+    </tr>
+    <tr>
+      <td>author:“^huchra, john”</td>
+      <td>limit search to first-author papers</td>
+    </tr>
+    <tr>
+      <td>^huchra, john</td>
+      <td>limit search to first-author papers</td>
+    </tr>
+    <tr>
+      <td>abs:“dark energy”</td>
+      <td>search for the phrase “dark energy” in abstract, title and keywords</td>
+    </tr>
+    <tr>
+      <td>year:2000</td>
+      <td>search for publications written in 2000</td>
+    </tr>
+    <tr>
+      <td>year:2000-2005</td>
+      <td>search for publications written between 2000 and 2005 (inclusive)</td>
+    </tr>
+    <tr>
+      <td>body:“gravitational waves”</td>
+      <td>search for papers containing the phrase “gravitational waves” in the body of an article</td>
+    </tr>
+    <tr>
+      <td>full:“gravitational waves”</td>
+      <td>search for papers containing the phrase “gravitational waves” in a number of fields (title, abstract, body, acknowledgements and keywords)</td>
+    </tr>
+    <tr>
+      <td>bibstem:ApJ</td>
+      <td>select papers published in a particular publication</td>
+    </tr>
+    <tr>
+      <td>object:((SMC OR LMC) AND M31)</td>
+      <td>using the SIMBAD and NED object search, find papers tagged with either SMC or LMC and M31</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The rest of this page goes over the search syntax and fields indexed in our database.</p>
+
+<h3 id="combining-search-terms-to-make-a-compound-query">Combining Search Terms to Make a Compound Query</h3>
+
+<p>You can string together any number of search terms to develop a query.  By default search terms will be combined using AND as the default boolean operator, but this can be changed by explicitly specifying OR beween them.  Similarly one can exclude a term by prepending a “-“ sign to it (or using the boolean “NOT”).  Multiple search words or phrases may be grouped in a fielded query by enclosing them in parenthesis.  Some examples:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Query</th>
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>abstract:(QSO “dark energy”)</td>
+      <td>papers containing both “QSO” and “dark energy” in their abstract</td>
+    </tr>
+    <tr>
+      <td>abstract:(QSO OR “dark energy”)</td>
+      <td>papers containing either “QSO” or “dark energy in their abstract</td>
+    </tr>
+    <tr>
+      <td>author:“huchra, j” abstract:cfa</td>
+      <td>papers by J. Huchra which have “cfa” in their abstract</td>
+    </tr>
+    <tr>
+      <td>author:“huchra, j” OR abstract:“great wall”</td>
+      <td>papers by J. Huchra or which mention “great wall” in their abstract</td>
+    </tr>
+    <tr>
+      <td>author:“huchra, j” -title:2mass</td>
+      <td>papers by “J. Huchra” but excludes ones with “2mass” in their title</td>
+    </tr>
+    <tr>
+      <td>author:“huchra, j” NOT title:2mass</td>
+      <td>same as above</td>
+    </tr>
+    <tr>
+      <td>author:“accomazzi, a.” author:“kurtz, m.”</td>
+      <td>papers authored by both A. Accomazzi and M. Kurtz</td>
+    </tr>
+    <tr>
+      <td>author:(“accomazzi, a.” “kurtz, m.”)</td>
+      <td>same as above</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Operator precedence in multi-part searches</strong></p>
+
+<p>Searches involving only two search terms, as shown above, are straightforward to parse. However, for searches with multiple search terms and multiple operators, understanding how operators take precendence over each other is important. For the most control, use parentheses around terms and operators that should be executed first. Otherwise, operators follow these general rules:</p>
+<ul>
+  <li>AND, OR, and NOT are set operators, operating on the search terms on either side. AND takes the intersection of the result set of the two search terms, OR takes the union, and NOT takes the difference. NOT takes precendence over AND, which takes precendence over OR.</li>
+  <li>The default AND (i.e., not typing out AND but using just a blank space between the two terms, as in the first example above) has lower precedence than any of the Boolean operators above.</li>
+  <li>The negative sign (-) is read as “prohibit”; results containing this term are completely excluded. In multi-part queries, its behavior can differ from that of NOT, because of the precedence rules.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Query</th>
+      <th>Parsed as</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>aff:(China OR “Hong Kong” AND Taiwan)</td>
+      <td>aff:(China OR (“Hong Kong” AND Taiwan))</td>
+    </tr>
+    <tr>
+      <td>aff:(China OR “Hong Kong” Taiwan)</td>
+      <td>aff:((China OR “Hong Kong”) AND Taiwan)</td>
+    </tr>
+    <tr>
+      <td>aff:(China OR “Hong Kong” NOT Taiwan)</td>
+      <td>aff:(China OR (“Hong Kong” NOT Taiwan))</td>
+    </tr>
+    <tr>
+      <td>aff:(China OR “Hong Kong” -Taiwan)</td>
+      <td>aff:((China OR “Hong Kong”) NOT Taiwan)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For a more heavy handed exploration of the search syntax, feel free to visit the <a href="search-parser">search parser details page</a>.</p>
+
+<h3 id="wildcards-proximity-and-regular-expression-search">Wildcards, Proximity, and Regular expression search</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Query</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>author:“huchra, jo*”</td>
+      <td>multi-character wildcard; search for papers written by <code class="language-plaintext highlighter-rouge">huchra, john</code>, <code class="language-plaintext highlighter-rouge">huchra, jonathan</code>, <code class="language-plaintext highlighter-rouge">huchra, jolie</code>, and anything in between</td>
+    </tr>
+    <tr>
+      <td>author:“bol?,”</td>
+      <td>single-character wildcard; in this case we may get back <code class="language-plaintext highlighter-rouge">bolt</code>, <code class="language-plaintext highlighter-rouge">boln</code>, <code class="language-plaintext highlighter-rouge">bolm</code></td>
+    </tr>
+    <tr>
+      <td>title:(map NEAR5 planar)</td>
+      <td>instead of a phrase search, we can ask the search engine to consider words be close to each other – the maximum allowed distance is 5; the operator must be written as <code class="language-plaintext highlighter-rouge">NEAR[number]</code>; in this example the search terms can appear in any order but there will be at most 5 other terms between (not counting stopwords such as <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">the</code>, <code class="language-plaintext highlighter-rouge">in</code>…). <strong>The proximity search must be used only against fielded search, i.e. inside one index. You cannot use proximity search to find an author name next to a title</strong>. If you are looking for token that appear next to each other, then please use a phrase search. For fields that are not tokenized (such as author names) use semicolon as a separator, e.g. <code class="language-plaintext highlighter-rouge">author:"kurtz, m; accomazzi, a" OR author:"accomazzi, a; kurtz, m"</code> – in a phrase search the order is important, so we much try both variants.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">facility:/magell.*/</code></td>
+      <td>Regular expression searches are possible but are less useful than you might expect. Firstly, the regex can match only against indexed tokens - i.e. it is not possible to search for multiple words next to each other. So in practice, this type of search is more useful for fields that contain <code class="language-plaintext highlighter-rouge">string</code> tokens (as opposed to <code class="language-plaintext highlighter-rouge">text</code> tokens). In practice, this means that a field which contains many words (such as <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">abstract</code>, <code class="language-plaintext highlighter-rouge">body</code>) is a text field, but a field with only limited number of values is typically defined as a <code class="language-plaintext highlighter-rouge">string</code> - for example, <code class="language-plaintext highlighter-rouge">author</code>, <code class="language-plaintext highlighter-rouge">facility</code>, <code class="language-plaintext highlighter-rouge">page</code>. You can use regex in both <code class="language-plaintext highlighter-rouge">string</code> and <code class="language-plaintext highlighter-rouge">text</code> fields but you have to be aware that regular expression is only going to match <strong>indexed tokens</strong>. In the case of <code class="language-plaintext highlighter-rouge">string</code> fields tokens may be multi-word combinations, depending on the specific field. For example, in the <code class="language-plaintext highlighter-rouge">author</code> field one token is <code class="language-plaintext highlighter-rouge">huchra, john</code>, but in fulltext the same content will be indexed as two tokens: <code class="language-plaintext highlighter-rouge">huchra</code>, <code class="language-plaintext highlighter-rouge">john</code>. In all cases the tokens are normalized (typically by lowercasing the input data). A little bit or more of experimentation (test queries) should be enough to help you determine your ‘adversary’. For description of allowed regex patterns, please see: <a href="https://lucene.apache.org/core/7_0_1/core/org/apache/lucene/util/automaton/RegExp.html">Lucene documentation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="synonyms-and-acronyms">Synonyms and Acronyms</h3>
+
+<p>By default most search terms in ADS are expanded by adding a list of words which are synonyms of the search term.  So for example, a search of “star” in the title field will be expanded to include words such as “stars,” “stellar,” “starry,” “starlike,” and so on.  (Notice that this often includes words in foreign languages such as “etoile,” “stern,” and “stella”). While this feature improves recall, it sometimes compromises the precision of the results.  Our search engine allows one to turn off the synonym expansion feature by simply prepending an “=” sign in front of the search term.</p>
+
+<p>Our search engine also identifies acronyms during indexing and searching (defined as words consisting entirely of uppercase characters).  A search for an uppercase word will only match documents which contain that acronym, whereas a search for a lowercase word will match documents which contain any variation of the word, irregardless of its case.  Acronyms can themselves have synonyms (for example “ADS” and “Astrophysics Data System” are synonyms), so one should be aware that there is an interaction between case-sensitiveness and synonym expansion.  The examples below illustrate these effects:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Query</th>
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title:star</td>
+      <td>title contains “star”, any of its synonyms, or the acronym “STAR”</td>
+    </tr>
+    <tr>
+      <td>title:etoile</td>
+      <td>title contains “star” or any of its synonyms (etoile being a synonym of star); <br />the results differ from above since “STAR” is not searched for</td>
+    </tr>
+    <tr>
+      <td>=title:star</td>
+      <td>title contains “star” or the acronym “STAR”</td>
+    </tr>
+    <tr>
+      <td>=title:etoile</td>
+      <td>title contains “etoile”</td>
+    </tr>
+    <tr>
+      <td>title:STAR</td>
+      <td>title contains the acronym “STAR”</td>
+    </tr>
+    <tr>
+      <td>title:(=star -STAR)</td>
+      <td>title contains “star” but not the acronym “STAR”</td>
+    </tr>
+    <tr>
+      <td>fuse</td>
+      <td>the word “fuse” or acronym “FUSE” appear anywhere in the paper</td>
+    </tr>
+    <tr>
+      <td>FUSE</td>
+      <td>the acronym “FUSE” appears anywhere in paper</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="author-searches">Author Searches</h3>
+
+<p>Synoym expansion also applies to author names, which provide a way to account for changes in a person’s name and/or different spellings due to transliterations.  In addition to this, the default author search in ADS is “greedy” in the sense that it will return all documents in which an author signature may match the input search string.  This allows, for instance, to have an author search for “Huchra, John” to return papers where the author name appears as “Huchra, John” or “Huchra, J.”  By prepending the “=” character to the author search one can disable this feature (as well as any additional synonym expansion) and require an exact match on the author name.  Some examples:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>Example Query</th>
+      <th>Results</th>
+    </tr>
+    <tr>
+        <td>author:"murray, s"</td>
+        <td>Least precise variations: finds records authored by any of the following:<ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S. </li><li>Murray, S.</li><li>Murray, Stephen D.</li><li>Murray, S. D.</li><li>Murray, Sarah S.</li><li>Murray, Scott</li><li>...</li></ul> (any possible combination with last name "murray" and first name starting with S) </td>
+    </tr>
+    <tr>
+        <td>author:"murray, stephen"</td>
+        <td>More precise variations: finds record authored by any of the following: <ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S.</li><li>Murray, S.</li><li>Murray, Stephen D.</li><li>Murray, S. D.</li><li>...</li></ul>(any possible variation of "Murray, Stephen" with or without middle name)</td>
+    </tr>
+    <tr>
+        <td>author:"murray, stephen s"</td>
+        <td>Most precise variations: finds record authored by any of the following: <ul><li>Murray, Stephen S.</li><li>Murray, Stephen</li><li>Murray, S. S.</li><li>Murray, S.</li></ul>(any possible variation of "Murray, Stephen S" but no others)</td>
+    </tr>
+    <tr>
+        <td>=author:"murray, s"</td>
+        <td>Matches only records authored by "Murray, S."</td>
+    </tr>
+    <tr>
+        <td>=author:"murray, stephen"</td>
+        <td>Matches only records authored by "Murray, Stephen"</td>
+    </tr>
+    <tr>
+        <td>=author:"murray, stephen s"</td>
+        <td>Matches only records authored by "Murray, Stephen S."</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>As a general rule we recommend to use the full name of the person for author searches since as can be seen above the matching rules in ADS are designed to find the maximal set of records consistent with the author specification given by the user.  Rather than disabling the name-variation algorithm described above, we recommend performing refinement of search results via the user interface filters for author names as described in the <a href="/help/search/filter">“Filter your search” section</a>.</p>
+
+<p>The logic behind the author search is rather complicated, if you would like to learn more, visit the <a href="author-search">advanced author search page</a>.</p>
+
+<h3 id="affiliation-searches">Affiliation Searches</h3>
+
+<p>Affiliations in ADS have been indexed in several different search fields, with the intention of allowing multiple use cases. We have currently assigned affiliation identifiers allowing for parent/child relationships, such as an academic department within a university. Note that a child may have multiple parents, but we restrict a child from having children of its own.  The list of recognized institutions is available from our <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">Canonical Affiliation repository</a> on Github.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Example Query</th>
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>aff:“UCLA”</td>
+      <td>Searches the raw affiliation string, searchable word-by-word</td>
+    </tr>
+    <tr>
+      <td>inst:“UCLA”</td>
+      <td>Searches the canonical institution name listed in our mapping of organizations to identifiers, which returns all variations of UCLA (e.g. UCLA; University of California, Los Angeles; University of California - Los Angeles)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For a breakdown to department level:</p>
+<ul>
+  <li>Use the “Institutions” filter in the left panel of search results</li>
+  <li>Use parent/child syntax as defined in our list of Canonical Affiliations linked above (e.g. inst:“UCLA/IGPP”)</li>
+</ul>
+
+<p>Users are reminded that while affiliation information is largely complete for recent refereed literature, not all records contain an affiliation; therefore,
+searching by affiliation alone will inherently be incomplete. We strongly recommend combining affiliation searches with author searches for best results.</p>
+
+<h3 id="astronomical-objects-and-position-search">Astronomical Objects and Position Search</h3>
+
+<p>The query modifier <code class="language-plaintext highlighter-rouge">object:</code> in fielded searches allows users to search the literature for bibliographic records that have been tagged with astronomical objects by SIMBAD and NED, or for a specified position on the sky (“cone search”). The cone search also makes use of services offered by SIMBAD and NED.</p>
+
+<p>Queries for astronomical objects via <code class="language-plaintext highlighter-rouge">object:</code> queries return publications that have been tagged with the canonical names for these objects. This tagging has been done by the SIMBAD and NED teams. Additionally, the object names (as specified in the query) are also used in an ADS query against abstracts, titles and keywords in the astronomy collection (with synonym replacement switched off). The result set is a combination of all these matches. Object queries that target just one service (e.g. SIMBAD) are not currently supported. The <code class="language-plaintext highlighter-rouge">data</code> facet can be used to filter the results set.</p>
+
+<p>The syntax for cone searches is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  object:"RA ±Dec:radius"
+</code></pre></div></div>
+
+<p>where RA and Dec are right ascention and declination J2000 positions, expressed in decimal degrees or in sexagesimal notation (hours minutes seconds and degrees arcmin and arcsec). The plus or minus sign before the declination is <strong><em>mandatory</em></strong>. The search radius may be given in arcmin, decimal or sexagesimal degrees (The default search radius is 2’, and the maximum is 60’). Examples:</p>
+
+<ul>
+  <li>A 10’ radius may be written as 0.1667 or 0 10</li>
+  <li>The following 3 notations are equivalent:
+    <ol>
+      <li>05h23m34.6s -69d45m22s</li>
+      <li>05 23 34.6 -69 45 22</li>
+      <li>80.894167 -69.756111</li>
+    </ol>
+  </li>
+</ul>
+
+<p>Searching for publications tagged with objects returned by the coordinates in the example above, with a search radius of 10’ is done as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>object:"05h23m34.6s -69d45m22s:0.1667"
+</code></pre></div></div>
+
+<p>The equivalent of (see <a href="https://ui.adsabs.harvard.edu/abs/2007ASPC..382..495K/abstract">2007ASPC..382..495K</a>)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://adsabs.harvard.edu/cgi-bin/abs_connect?data_type=VOTABLE&amp;DEC=60&amp;RA=16&amp;SR=.1
+</code></pre></div></div>
+
+<p>is the search <code class="language-plaintext highlighter-rouge">object:"16 +60:0.1"</code>, followed by exporting the results in the <code class="language-plaintext highlighter-rouge">VOTable</code> export format. Currently there is no equivalent of the ADS Classic URL shown above.</p>
+
+<h3 id="available-fields">Available Fields</h3>
+
+<p>This is a list of fields currently recognized by the ADS search engine and the preferred search format - go to <a href="comprehensive-solr-term-list">comprehensive list of fields</a> if not saturated yet:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Syntax</th>
+      <th>Example</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abstract/Title/Keywords</td>
+      <td>abs:“phrase”</td>
+      <td>abs:“dark energy”</td>
+      <td>search for word or phrase in abstract, title and keywords</td>
+    </tr>
+    <tr>
+      <td>Abstract</td>
+      <td>abstract:“phrase”</td>
+      <td>abstract:“dark energy”</td>
+      <td>search for a word or phrase in an abstract only</td>
+    </tr>
+    <tr>
+      <td>Acknowledgements</td>
+      <td>ack:“phrase”</td>
+      <td>ack:“ADS”</td>
+      <td>search for a word or phrase in the acknowledgements</td>
+    </tr>
+    <tr>
+      <td>Affiliation</td>
+      <td>aff:“phrase”</td>
+      <td>aff:“harvard”</td>
+      <td>search for word or phrase in the raw, provided affiliation field</td>
+    </tr>
+    <tr>
+      <td>Affiliation ID</td>
+      <td>aff_id:ID</td>
+      <td>aff_id:A00211</td>
+      <td>search for an affiliation ID listed in the <a href="https://github.com/adsabs/CanonicalAffiliations/blob/master/parent_child.tsv">Canonical Affiliations list</a> in the <em>child</em> column. This field will soon also accept 9-digit ROR ids.</td>
+    </tr>
+    <tr>
+      <td>Alternate Bibcode</td>
+      <td>alternate_bibcode:adsbib</td>
+      <td>alternate_bibcode:2003AJ….125..525J</td>
+      <td>finds articles that used to (or still have) this bibcode</td>
+    </tr>
+    <tr>
+      <td>Alternate Title</td>
+      <td>alternate_title:“phrase”</td>
+      <td>alternate_title:“Gammablitz”</td>
+      <td>search for a word or phrase in an articles title if they have more than one, in multiple languages</td>
+    </tr>
+    <tr>
+      <td>arXiv ID</td>
+      <td>arXiv:arxivid</td>
+      <td>arXiv:1108.0669</td>
+      <td>finds a specific record using its arXiv id</td>
+    </tr>
+    <tr>
+      <td>arXiv Class</td>
+      <td>arxiv_class:arxivclass</td>
+      <td>arxiv_class:“High Energy Physics - Experiment”</td>
+      <td>finds all arXiv pre-prints in the class specified</td>
+    </tr>
+    <tr>
+      <td>Author</td>
+      <td>author:“Last, F”</td>
+      <td>author:“huchra, j”</td>
+      <td>author name may include just lastname and initial</td>
+    </tr>
+    <tr>
+      <td>Author (cont.)</td>
+      <td>author:“Last, First […]”</td>
+      <td>author:“huchra, john p”</td>
+      <td>an example of stricter author search (recommended)</td>
+    </tr>
+    <tr>
+      <td>Author count</td>
+      <td>author_count:count</td>
+      <td>author_count:40</td>
+      <td>find records that have a specific number of authors</td>
+    </tr>
+    <tr>
+      <td>Author count (cont.)</td>
+      <td>author_count:[min_count TO max_count]</td>
+      <td>author_count:[10 TO 100]</td>
+      <td>find records that have a range of author counts</td>
+    </tr>
+    <tr>
+      <td>Bibcode</td>
+      <td>bibcode:adsbib</td>
+      <td>bibcode:2003AJ….125..525J</td>
+      <td>finds a specific record using the <a href="/help/actions/bibcode">ADS bibcode</a></td>
+    </tr>
+    <tr>
+      <td>Bibliographic groups</td>
+      <td>bibgroup:name</td>
+      <td>bibgroup:HST</td>
+      <td>limit search to papers in HST bibliography (*)</td>
+    </tr>
+    <tr>
+      <td>Bibliographic stem</td>
+      <td>bibstem:adsbibstem</td>
+      <td>bibstem:ApJ</td>
+      <td>find records that contain a specific bibstem in their bibcode</td>
+    </tr>
+    <tr>
+      <td>Body</td>
+      <td>body:“phrase”</td>
+      <td>body:“gravitational waves”</td>
+      <td>search for a word or phrase in (only) the full text</td>
+    </tr>
+    <tr>
+      <td>Citation count</td>
+      <td>citation_count:count</td>
+      <td>citation_count:40</td>
+      <td>find records that have a specific number of citations</td>
+    </tr>
+    <tr>
+      <td>Citation count (cont.)</td>
+      <td>citation_count:[min_count TO max_count]</td>
+      <td>citation_count:[10 TO 100]</td>
+      <td>find records that have a range of citation counts</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>copyright:copyright</td>
+      <td>copyright:2012</td>
+      <td>search for articles with certain copyrights</td>
+    </tr>
+    <tr>
+      <td>Data links</td>
+      <td>data:archive</td>
+      <td>data:NED</td>
+      <td>limit search to papers with data from NED (*)</td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td>database:DB</td>
+      <td>database:astronomy</td>
+      <td>limit search to either astronomy or physics or general</td>
+    </tr>
+    <tr>
+      <td>Date Range</td>
+      <td>pubdate:[YYYY-MM TO YYYY-MM]</td>
+      <td>pubdate:[2005-10 TO 2006-09]</td>
+      <td>use fine-grained dates for publication range</td>
+    </tr>
+    <tr>
+      <td>Document type</td>
+      <td>doctype:type</td>
+      <td>doctype:catalog</td>
+      <td>limit search to records corresponding to data catalogs (*)</td>
+    </tr>
+    <tr>
+      <td>DOI</td>
+      <td>doi:DOI</td>
+      <td>doi:10.1086/345794</td>
+      <td>finds a specific record using its digital object id</td>
+    </tr>
+    <tr>
+      <td>First Author</td>
+      <td>^Last, F   <br />      author:“^Last, F”</td>
+      <td>^huchra, j   <br />author:“^huchra, j”</td>
+      <td>limit the search to first-author papers</td>
+    </tr>
+    <tr>
+      <td>Fulltext</td>
+      <td>full:“phrase”</td>
+      <td>full:“gravitational waves”</td>
+      <td>search for word or phrase in fulltext, acknowledgements, abstract, title and keywords</td>
+    </tr>
+    <tr>
+      <td>Grant</td>
+      <td>grant:grant</td>
+      <td>grant:NASA</td>
+      <td>finds papers with specific grants listed in them</td>
+    </tr>
+    <tr>
+      <td>Identifiers</td>
+      <td>identifier:bibcode</td>
+      <td>identifier:2003AJ….125..525J</td>
+      <td>finds a paper using any of its identifiers, arXiv, bibcode, doi, etc.</td>
+    </tr>
+    <tr>
+      <td>Institution</td>
+      <td>inst:“abbreviation”</td>
+      <td>inst:“Harvard U”</td>
+      <td>search the curated list of affiliations (e.g. STScI and “Space Telescope Science Institute” have been matched); the full list is in the <em>Abbrev</em> column in the <a href="https://github.com/csgrant00/CanonicalAffiliations/blob/master/parent_child.tsv">Canonical Affiliations list</a></td>
+    </tr>
+    <tr>
+      <td>Issue</td>
+      <td>issue:number</td>
+      <td>issue:10</td>
+      <td>search for papers in a certain issue</td>
+    </tr>
+    <tr>
+      <td>Keywords</td>
+      <td>keyword:“phrase”</td>
+      <td>keyword:sun</td>
+      <td>search publisher- or author-supplied keywords</td>
+    </tr>
+    <tr>
+      <td>Language</td>
+      <td>lang:“language”</td>
+      <td>lang:korean</td>
+      <td>search for papers with a given language</td>
+    </tr>
+    <tr>
+      <td>Object</td>
+      <td>object:“object”</td>
+      <td>object:Andromeda</td>
+      <td>search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see <a href="../search/search-syntax/#astronomical-objects-and-position-search">Astronomical Objects and Position Search</a> above)</td>
+    </tr>
+    <tr>
+      <td>ORCiD iDs</td>
+      <td>orcid:id</td>
+      <td>orcid:0000-0000-0000-0000</td>
+      <td>search for papers that are associated with a specific ORCiD iD</td>
+    </tr>
+    <tr>
+      <td>ORCiD iDs from publishers</td>
+      <td>orcid_pub:id</td>
+      <td>orcid_pub:0000-0000-0000-0000</td>
+      <td>search for papers that are associated with a specific ORCiD iD specified by a Publisher</td>
+    </tr>
+    <tr>
+      <td>ORCiD iDs from known ADS users</td>
+      <td>orcid_user:id</td>
+      <td>orcid_id:0000-0000-0000-0000</td>
+      <td>search for papers that are associated with a specific ORCiD iD claimed by known ADS users</td>
+    </tr>
+    <tr>
+      <td>ORCiD iDs from uknknown ADS users</td>
+      <td>orcid_other:id</td>
+      <td>orcid_other:0000-0000-0000-0000</td>
+      <td>search for papers that are associated with a specific ORCiD iD claimed by unknown ADS users</td>
+    </tr>
+    <tr>
+      <td>Page</td>
+      <td>page:number</td>
+      <td>page:410</td>
+      <td>search for papers with a given page number</td>
+    </tr>
+    <tr>
+      <td>Publication</td>
+      <td>bibstem:“abbrev”</td>
+      <td>bibstem:ApJ</td>
+      <td>limit search to a <a href="http://adsabs.harvard.edu/abs_doc/journal_abbr.html" target="_blank">specific publication</a></td>
+    </tr>
+    <tr>
+      <td>Properties</td>
+      <td>property:type</td>
+      <td>property:openaccess</td>
+      <td>limit search to article with specific attributes (*)</td>
+    </tr>
+    <tr>
+      <td>Read count</td>
+      <td>read_count:count</td>
+      <td>read_count:10</td>
+      <td>search for papers with a given number of reads</td>
+    </tr>
+    <tr>
+      <td>Title</td>
+      <td>title:“phrase”</td>
+      <td>title:“weak lensing”</td>
+      <td>search for word or phrase in title field</td>
+    </tr>
+    <tr>
+      <td>VizieR keywords</td>
+      <td>vizier:“phrase”</td>
+      <td>vizier:“Optical”</td>
+      <td>search for papers with a given set of VizieR keywords</td>
+    </tr>
+    <tr>
+      <td>Volume</td>
+      <td>volume:volume</td>
+      <td>volume:10</td>
+      <td>search for papers with a given volume</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td>year:YYYY</td>
+      <td>year:2000</td>
+      <td>require specific publication year</td>
+    </tr>
+    <tr>
+      <td>Year Range</td>
+      <td>year:YYYY-YYYY</td>
+      <td>year:2000-2005</td>
+      <td>require publication date range</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(*) See below for details on these filters.  In most cases, filtering of results based on these fields is available in the user interface.</p>
+
+<h3 id="properties">Properties</h3>
+
+<p>The “properties” search field allows one to restrict the search results to papers which belong to a particular class.  The allowed properties currently include:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property flag</th>
+      <th>Selection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ads_openaccess</td>
+      <td>An OA version of article is available from ADS</td>
+    </tr>
+    <tr>
+      <td>article</td>
+      <td>The record corresponds to a regular article</td>
+    </tr>
+    <tr>
+      <td>associated</td>
+      <td>The record has associated articles available</td>
+    </tr>
+    <tr>
+      <td>author_openaccess</td>
+      <td>An author-submitted OA version is available</td>
+    </tr>
+    <tr>
+      <td>data</td>
+      <td>One or more data links are available, see <code class="language-plaintext highlighter-rouge">data</code> field</td>
+    </tr>
+    <tr>
+      <td>eprint_openaccess</td>
+      <td>An OA version of article is available from a preprint server (e.g. arXiv)</td>
+    </tr>
+    <tr>
+      <td>esource</td>
+      <td>An electronic source is available, see <code class="language-plaintext highlighter-rouge">esource</code> field</td>
+    </tr>
+    <tr>
+      <td>inspire</td>
+      <td>A corresponding record is available in the INSPIRE database</td>
+    </tr>
+    <tr>
+      <td>library_catalog</td>
+      <td>A corresponding record is available from a library catalog</td>
+    </tr>
+    <tr>
+      <td>nonarticle</td>
+      <td>The record is not a regular article; applies to e.g. meeting abstracts, software, catalog descriptions, etc</td>
+    </tr>
+    <tr>
+      <td>notrefereed</td>
+      <td>The record is not peer reviewed (refereed)</td>
+    </tr>
+    <tr>
+      <td>ocr_abstract</td>
+      <td>The record’s abstract was generated from OCR (may contain typos or mistakes)</td>
+    </tr>
+    <tr>
+      <td>openaccess</td>
+      <td>The record has at least one openaccess version available</td>
+    </tr>
+    <tr>
+      <td>presentation</td>
+      <td>The record has one or more media presentations associated with it</td>
+    </tr>
+    <tr>
+      <td>pub_openaccess</td>
+      <td>An OA version of article is available from publisher</td>
+    </tr>
+    <tr>
+      <td>refereed</td>
+      <td>The record is peer reviewed (refereed)</td>
+    </tr>
+    <tr>
+      <td>toc</td>
+      <td>The record has a Table Of Content (TOC) associated with it</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="bibliographic-groups">Bibliographic Groups</h3>
+
+<p>The “bibgroup” search field allows restriction of the search results to one of the <a href="http://adsabs.harvard.edu/abs_doc/help_pages/search.html#Select_References_From_Group">ADS bibliographic groups</a>.  These groups are curated by a number of librarians and archivists who maintain either institutional or “telescope” bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.</p>
+
+<p>The list of current Institutional bibgroups is: ARI, CfA, CFHT, Leiden, USNO</p>
+
+<p>The list of current Telescope bibgroups is: ALMA, CXC, ESO, Gemini, Herschel, HST, ISO, IUE, JCMT, Keck, Magellan, NOAO, NRAO, ROSAT, SDO, SMA, Spitzer, Subaru, Swift, UKIRT, XMM</p>
+
+<h3 id="data-links">Data Links</h3>
+
+<p>The “data” search field can be used to select papers which have data links associated to them.  The list of archives which ADS links to can be seen under the “Data” filter selection.  To generate a list of all records which have data links one can issue a simple wildcard query: <a href="https://ui.adsabs.harvard.edu/#search/q=data%3A*&amp;sort=date+desc">data:* </a>.  Using the data search field allows one to focus on data-rich papers, for example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>data:(CXO OR XMM) AND data:HST
+</code></pre></div></div>
+
+<p>Finds multi-wavelength papers which have observations both in the X-ray spectrum (from Chandra or XMM) and in the optical (HST).  Of course additional search terms can be used to further refine the selection criteria.</p>
+
+<h3 id="document-type">Document Type</h3>
+
+<p>Records in ADS are assigned a document type which is indexed in the “doctype” search field, the contents of which are an extension of the <a href="https://en.wikipedia.org/wiki/BibTeX">BibTeX</a> entry types.  Currently these are the document types indexed by ADS:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Document Type</th>
+      <th>Resource associated with record</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>article</td>
+      <td>journal article</td>
+    </tr>
+    <tr>
+      <td>eprint</td>
+      <td>article preprinted in arXiv</td>
+    </tr>
+    <tr>
+      <td>inproceedings</td>
+      <td>article appearing in a conference proceedings</td>
+    </tr>
+    <tr>
+      <td>inbook</td>
+      <td>article appearing in a book</td>
+    </tr>
+    <tr>
+      <td>abstract</td>
+      <td>meeting abstract</td>
+    </tr>
+    <tr>
+      <td>book</td>
+      <td>book (monograph)</td>
+    </tr>
+    <tr>
+      <td>bookreview</td>
+      <td>published book review</td>
+    </tr>
+    <tr>
+      <td>catalog</td>
+      <td>data catalog (or other high-level data product)</td>
+    </tr>
+    <tr>
+      <td>circular</td>
+      <td>printed or electronic circular</td>
+    </tr>
+    <tr>
+      <td>erratum</td>
+      <td>erratum to a journal article</td>
+    </tr>
+    <tr>
+      <td>mastersthesis</td>
+      <td>Masters thesis</td>
+    </tr>
+    <tr>
+      <td>newsletter</td>
+      <td>printed or electronic newsletter</td>
+    </tr>
+    <tr>
+      <td>obituary</td>
+      <td>obituary (article containing “obituary” in its title)</td>
+    </tr>
+    <tr>
+      <td>phdthesis</td>
+      <td>PhD thesis</td>
+    </tr>
+    <tr>
+      <td>pressrelease</td>
+      <td>press release</td>
+    </tr>
+    <tr>
+      <td>proceedings</td>
+      <td>conference proceedings book</td>
+    </tr>
+    <tr>
+      <td>proposal</td>
+      <td>observing or funding proposal</td>
+    </tr>
+    <tr>
+      <td>software</td>
+      <td>software package</td>
+    </tr>
+    <tr>
+      <td>talk</td>
+      <td>research talk given at a scholarly venue</td>
+    </tr>
+    <tr>
+      <td>techreport</td>
+      <td>technical report</td>
+    </tr>
+    <tr>
+      <td>misc</td>
+      <td>anything not found in the above list</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+  </div>
+</div>
+</div>
+
+    <footer>
+  <div class="__footer_wrapper">
+    <div class="__footer_brand">
+      &copy; The SAO Astrophysics Data System
+      <div class="__footer_brand_extra">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          adshelp[at]cfa.harvard.edu
+        </p>
+        <p>
+          The ADS is operated by the Smithsonian Astrophysical Observatory under
+          NASA Cooperative Agreement <em>80NSSC21M0056</em>
+        </p>
+      </div>
+      <div class="__footer_brand_logos">
+        <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener">
+          <img
+            id="smithsonian-logo"
+            src="/help/common/images/smithsonian.svg"
+            alt="Smithsonian logo"
+          />
+        </a>
+        <a
+          href="https://www.cfa.harvard.edu/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="/help/common/images/cfa.png"
+            alt="Harvard Center for Astrophysics logo"
+            id="cfa-logo"
+          />
+        </a>
+        <a href="http://www.nasa.gov" target="_blank" rel="noreferrer noopener">
+          <img
+            src="/help/common/images/nasa-partner.svg"
+            alt="NASA logo"
+            id="nasa-logo"
+          />
+        </a>
+      </div>
+      <div class="footer-disclaimer">
+        *The material contained in this document is based upon work supported by
+        a National Aeronautics and Space Administration (NASA) grant or
+        cooperative agreement. Any opinions, findings, conclusions or
+        recommendations expressed in this material are those of the author and
+        do not necessarily reflect the views of NASA.
+      </div>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Resources</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/about/">
+            <i class="fa fa-question-circle" aria-hidden="true"></i> About ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> ADS Help
+          </a>
+        </li>
+        <li>
+          <a href="/help/whats_new/">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i> What's New
+          </a>
+        </li>
+        <li>
+          <a href="/about/careers/">
+            <i class="fa fa-group" aria-hidden="true"></i> Careers@ADS
+          </a>
+        </li>
+        <li>
+          <a href="/help/accessibility/">
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Social</div>
+      <ul class="__footer_links">
+        <li>
+          <a
+            href="//twitter.com/adsabs"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fa fa-twitter" aria-hidden="true"></i> @adsabs
+          </a>
+        </li>
+        <li>
+          <a href="/blog/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> ADS Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="__footer_list">
+      <div class="__footer_list_title">Project</div>
+      <ul class="__footer_links">
+        <li>
+          <a href="/core">Switch to basic HTML</a>
+        </li>
+        <li>
+          <a href="/help/privacy/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/help/terms">Terms of Use</a>
+        </li>
+        <li>
+          <a
+            href="http://www.cfa.harvard.edu/sao"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Smithsonian Astrophysical Observatory</a
+          >
+        </li>
+        <li>
+          <a href="http://www.si.edu" target="_blank" rel="noreferrer noopener"
+            >Smithsonian Institution</a
+          >
+        </li>
+        <li>
+          <a
+            href="http://www.nasa.gov"
+            target="_blank"
+            rel="noreferrer noopener"
+            >NASA</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $('body').on('click', 'button[data-toggle="off-canvas"]', function () {
+        $('.row-offcanvas').toggleClass('active');
+      });
+    });
+  </script>
+
+  <!-- for sidebar -->
+  <script>
+    $(document).ready(function () {
+      //ADD THE PROPER HIGHLIGHT
+      try {
+        var category = window.location.pathname.split('/')[2];
+      } catch (e) {
+        console.error("couldn't parse category name");
+      }
+      //this should fail without causing a problem if category can't be found
+      if ($('.help-nav').find('div#' + category + '-items').length === 0)
+        console.log('couldnt find accordion drawer for: ', category);
+      $('.help-nav')
+        .find('div#' + category + '-items')
+        .addClass('in')
+        //set the caret pointing down
+        .parent()
+        .find('.fa')
+        .removeClass('fa-caret-right')
+        .addClass('fa-caret-down');
+
+      //SET LISTENERS FOR CARET OPEN/CLOSED
+      $('.help-nav .collapse')
+        .on('show.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-right')
+            .addClass('fa-caret-down');
+        })
+        .on('hide.bs.collapse', function () {
+          $(this)
+            .parent()
+            .find('.fa')
+            .removeClass('fa-caret-down')
+            .addClass('fa-caret-right');
+        });
+    });
+  </script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

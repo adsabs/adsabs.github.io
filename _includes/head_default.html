@@ -7,14 +7,7 @@
     content="q68EGUOrG2HGZ62jIdD4ILfyPYZtDK6amNJbkrav_DA"
   />
 
-  <title>
-    {% if page.title %}{{ page.title }}{% else %} ADS {{ include.subtitle }} {%
-    endif %}
-  </title>
-  <meta name="description" content="{{ site.description }}" />
-
   <!-- Disqus tags -->
-  <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ page.title | strip_html | strip_newlines | truncate: 200 | escape }}{% endif %}">
   <meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
   <link
@@ -95,4 +88,6 @@
       }
     </style>
   </noscript>
+  <meta http-equiv="Last-Modified" content="{{ page.last_modified_at }}" />
+  {% seo %}
 </head>

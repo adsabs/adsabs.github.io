@@ -9,11 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # The checkout action doesn't provide a way to get all commit history for a single branch
-          # So we use the magic number 2147483647 here which means infinite depth for git fetch
-          # See https://github.com/actions/checkout/issues/520, https://stackoverflow.com/a/6802238
           # this is so that last-modified-at plugin can use the git history to determine the last modified date
-          fetch-depth: 2147483647
+          fetch-depth: 0
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v4

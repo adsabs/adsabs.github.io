@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bibgoups"
+title: "Bibgroups"
 order: 8
 ---
 

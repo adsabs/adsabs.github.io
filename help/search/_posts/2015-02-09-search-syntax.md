@@ -271,7 +271,7 @@ The "bibgroup" search field allows restriction of the search results to one of t
 
 The list of current Institutional bibgroups is: ARI, CfA, CFHT, Leiden, USNO
 
-The list of current Telescope bibgroups is: ALMA, CXC, ESO, Gemini, Herschel, HST, ISO, IUE, JCMT, Keck, Magellan, NOAO, NRAO, ROSAT, SDO, SMA, Spitzer, Subaru, Swift, UKIRT, XMM
+The list of current Telescope bibgroups is: ALMA, CXC, ESO, Gemini, Herschel, HST, ISO, IUE, JCMT, Keck, Magellan, NOIRLab, NRAO, ROSAT, SDO, SMA, Spitzer, Subaru, Swift, UKIRT, XMM
 
 ### Data Links
 

@@ -11,7 +11,6 @@ The Science Explorer (SciX) personnel are:
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingestion Lead   
 - [Edwin Henneken](../team/team/ehenneken.html) - Content, Curation & Collaborations Lead
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Technical Lead
-- [Donna Thompson](../team/team/dthompson.html) - Data Curation Librarian  
 - [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
 - [Golnaz Shapurian](../team/team/gshapurian.html) - Senior Developer, Applications & Services   
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Senior Data Specialist
@@ -27,6 +26,8 @@ The Science Explorer (SciX) personnel are:
 - [Dr. Jennifer Bartlett](../team/team/jbartlett.html) - Astrophysics Project Scientist
 - [Dr. Mugdha Polimera](../team/team/mpolimera.html) - Back-End Development
 - [Dr. Stephanie Jarmak](../team/team/sjarmak.html) - Planetary Science Project Scientist
+- [Dr. Anna Kelbert](../team/team/akelbert.html) - Earth Science Project Scientist
+- Paul Di Re - Project Manager
 
 SciX research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

@@ -27,7 +27,7 @@ The Science Explorer (SciX) personnel are:
 - [Dr. Mugdha Polimera](../team/team/mpolimera.html) - Back-End Development
 - [Dr. Stephanie Jarmak](../team/team/sjarmak.html) - Planetary Science Project Scientist
 - [Dr. Anna Kelbert](../team/team/akelbert.html) - Earth Science Project Scientist
-- Paul Di Re - Project Manager
+- [Paul Di Re](../team/team/pdire.html) - Project Manager
 
 SciX research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

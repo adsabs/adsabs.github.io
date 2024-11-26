@@ -5,4 +5,4 @@ Anand “Sunny” Narayanan, PhD, is a Research Faculty at Florida State Univers
 
 [LinkedIn](https://www.linkedin.com/in/sunny-narayanan-69684136/)
 
-[anarayanan [at] fsu.edu](mailto: anarayanan@fsu.edu)
+[anarayan09 [at] gmail.com](mailto: anarayan09@gmail.com)

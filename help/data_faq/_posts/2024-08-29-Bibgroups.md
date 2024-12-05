@@ -49,3 +49,9 @@ ADS Library of refereed publications for the ESA/NASA SOHO mission, starting in 
 
 ### Solar Orbiter
 ADS Library of refereed publications for the ESA/NASA Solar Orbiter mission, starting in 2020. This library is maintained by ESA Deputy Solar Orbiter Project Scientist Yannis Zouganelis (<Ioannis.Zouganelis@esa.int>) and updated every two months. Solar Orbiter data is publicly available from the ESA Solar Orbiter Archive, SunPy, and the Virtual Solar Observatory.
+
+### STEREO
+ADS Library of refereed publications using data from NASA’s STEREO mission or describing the mission and its instrumentation from 2002 to the present. This library is maintained by STEREO Project Scientist, Terry Kucera (<therese.a.kucera@nasa.gov>) and updated about once a year. STEREO data is publicly available from the [STEREO Science Center](https://stereo-ssc.nascom.nasa.gov/), the [Virtual Solar Observatory](https://sdac.virtualsolar.org/cgi/search), and the [Space Physics Data Facility](https://spdf.gsfc.nasa.gov/).
+
+
+

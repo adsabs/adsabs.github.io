@@ -3,6 +3,104 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## January 2025
+* Announcements:
+   + **SciX at the 2025 AAS Winter Meeting**<br>
+   The [American Astronomical Society’s (AAS) winter meeting](https://aas.org/meetings/aas245) will take place in National Harbor, MD, from January 12-16, 2025, and SciX is pleased to contribute to this important event. With a variety of panels, presentations, and demonstrations, SciX will share insights and tools aimed at advancing astronomical research, education, and outreach.<br>
+   
+      Sunday, January 12: SciX’s Jennifer Lynn Bartlett, PMP, will participate as a panelist in the [“Effective Project Management for Everyone: How to Get Things Done” conference workshop](https://submissions.mirasmart.com/AAS245/Itinerary/EventDetail.aspx?evt=28) (8:00 AM - 12:00 PM) in Chesapeake D/E supported by the AAS Committee on Employment. Later that day, Bartlett will lead the annual meeting of the [Working Group on the Preservation of Astronomical Heritage](https://submissions.mirasmart.com/AAS245/Itinerary/EventDetail.aspx?evt=94) (5:30-6:30 PM) in Chesapeake A/B. This session will focus on strategies for preserving astronomical structures, instruments, and records for future research and public engagement.<br>
+   
+      Monday, January 13: An ADS/SciX demo at the NASA Exhibit Hall Booth High Top Table 2 from 9:00 - 11:00 AM as well as a presentation by Bartlett and Malynda R. Chizek Frouard, titled [“What if it Rains on Your Eclipse: Planning Ahead for August 2045”](https://submissions.mirasmart.com/AAS245/Itinerary/PresentationDetail.aspx?evdid=238) (9:00-10:00 AM). This iPoster session will take place in the Prince George Exhibit Hall at Terminal 50 and will explore public outreach strategies and observational projects for future solar eclipses. That evening, Bartlett and collaborators will present the [iPoster “Beyond Astronomy Content: Communication Skills for All Our Students”](https://submissions.mirasmart.com/AAS245/itinerary/PresentationDetail.aspx?evdid=2612) (5:30-6:30 PM) at Terminal 140 in the Prince George’s Pre-Function Room CD. This session will discuss integrating communication skills into astronomy education to benefit students’ learning and career readiness.<br>
+   
+      Tuesday, January 14: SciX staff will host office hours as part of the [AAS Working Group on the Unified Astronomy Thesaurus (UAT)](https://aas.org/comms/working-group-unified-astronomy-thesaurus-wguat) at Table 3 in the Exhibit Hall at AAS Booth #325 from 9:00-10:00 AM. Bartlett and colleagues will answer questions about using the UAT and how it can support researchers, educators, and publishers.<br>
+   
+      Wednesday, January 15: NASA Hyperwall Talk at Booth 505 at 9:45 AM, where Alberto Accomazzi will present “Science Explorer: Accelerating the Discovery of NASA Science.” Later that day, Jennifer Lynn Bartlett, Kelly Lockhart, and SciX Ambassador Manuel Pichardo Marcano will present “Not Your Advisor’s ADS” (5:30-6:00 PM) on the Exhibit Hall stage, highlighting the modern capabilities of the Astrophysics Data System (ADS).<br>
+   
+      Thursday, January 16: SciX Ambassador Manuel Pichardo Marcano will present his talk [“Seeing the Most Massive White Dwarf Mergers with LILA”](https://submissions.mirasmart.com/AAS245/Itinerary/PresentationDetail.aspx?evdid=299) (10:40-10:50 AM). An ADS/SciX Demo will take place at High Top Table 1 in the NASA Booth from 9:00-11:00 AM. Bartlett will also present [“ADS and SciX: Pioneering the Next Generation of Interdisciplinary Research Discovery”](https://submissions.mirasmart.com/AAS245/itinerary/PresentationDetail.aspx?evdid=987) in the Potomac Room 5-6 (2:30-2:40 PM) as part of Session 442: Technology Developments in Outreach, Education, and Research.<br>
+   
+      In addition to the busy schedule of events at the AAS meeting, the ADS/SciX team will be available all week at the Center for Astrophysics Booth #705 to answer questions, provide demonstrations, and discuss tools and resources. Concurrently, ADS/SciX staff will also be exhibiting at Booth #545 for the [American Meteorological Society](https://www.ametsoc.org/index.cfm/ams/meetings-events/upcoming-meetings/annual-meeting/) meeting (12-16 Jan in New Orleans, LA), further showcasing SciX’s interdisciplinary contributions to scientific research and education.<br>
+   
+      We look forward to engaging with the scientific community at these upcoming events! For further details, we invite you to visit the respective event links or stop by our booth locations at each conference. 
+
+
+* Development and data holdings updates as of January 1st:
+  * Website and API
+    + **[new]** Added [SciX Handouts](../../scixhelp/handouts-scix/) to Help pages
+    + **[new]** Export Service: Set a default for authors to 200, and added three new export formats: `agu`, `gsa`, `ams`
+    + **[improved]** Added [‘What’s New’ to SciX](../../scixhelp/whats_new) Help pages
+    + **[improved]** Journals Database: added new `/browse/<bibstem>` endpoint which provides a simpler output than the `/summary` endpoint
+    + Bumblebee changes:
+       - **[new]** added ‘Duplicate’ as an option for the Associated Articles Feedback Form
+       - **[improved]** Updates to autocomplete and quickfields to make first author queries use the `first_author:""` syntax instead of `author:"^"`
+       - **[fixed]** ORCiD deletion, token refreshing, missing related materials section, and ORCiD profiles with undefined last name
+       - **[ops]** Updates to the API Gateway, bearer strings, login fields, item-view events and analytics improvements, expiration reformat, email changing, authentication, email verifications, sentry sdk setup, and dark mode text contrast
+    + Solr changes:
+       - **[new]** Schema additions with Planetary Names fields, UAT fields, two new fields, and added renamed versions of the gpn family of fields as part of their deprecation
+       - **[improved]** Implemented negative positional field search
+       - **[ops]** Completed a major infrastructure overhaul to bring the codebase from Solr 7 to Solr 9
+    + Introducing Nectar as our SciX server-side rendering:
+       - **[new]** Added SciX carousel
+       - **[improved]** Replaced `gpn_id` with `planetary_feature_id`, updated planetary facet fields, and one click export
+       - **[improved]** Allow facet author searches to have lowercase initial letter
+       - **[improved]** Allow URL and DOI for related papers in the Associated Articles Feedback Form
+       - **[fixed]** Visualization issue, highlights toggle, and change first author fields added from autocomplete or quick fields to use the `first_author:""` syntax instead of `author:"^"`
+       - **[ops]** Updates on barrels, eslint speed and action runners, volume content menu, analytics improvements, upgrade Sentry, updated journals `/summary` endpoint
+
+  * Data holdings and pipelines
+    + 450k new records, and 13.9M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-8">v1.5.7-hotfix-8</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-8">v1.5.7-hotfix-7</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.6.7">v1.6.7</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.6.6">v1.6.6</a></li>
+</ul>
+
+<li>Export Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.7">v3.1.7</a></li>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.6">v3.1.6</a></li>
+</ul>
+
+<li>Journals Database Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/ADSJournalsDB/releases/tag/v1.3.1">v1.3.1</a></li>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.88">v0.19.88</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.87">v0.19.87</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.86">v0.19.86</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.85">v0.19.85</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.81">v0.19.81</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.79-hotfix-1">v0.19.79-hotfix-1</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.79">v0.19.79</a></li>
+</ul>
+
+<li>Oracle Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/oracle_service/releases/tag/v2.0.33">v2.0.33</a></li>
+</ul>
+
+<li>Solr Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.1">v96.1.1</a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.0">v96.1.0</a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.0.0">v96.0.0</a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v77.2.4.1">v77.2.4.1</a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v77.2.4">v77.2.4/a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v77.2.3">v77.2.3</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## December 2024
 * Announcements:
   

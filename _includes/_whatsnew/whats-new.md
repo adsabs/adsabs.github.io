@@ -56,9 +56,9 @@ To receive this listing via monthly email newsletter, along with announcements a
 <li>Bumblebee Releases</li>
 <ul>
 <li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-8">v1.5.7-hotfix-8</a></li>
-<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-8">v1.5.7-hotfix-7</a></li>
-<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.6.7">v1.6.7</a></li>
-<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.6.6">v1.6.6</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-7">v1.5.7-hotfix-7</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v.1.6.7">v1.6.7</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v.1.6.6">v1.6.6</a></li>
 </ul>
 
 <li>Export Service Releases</li>
@@ -94,7 +94,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.0">v96.1.0</a></li>
 <li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.0.0">v96.0.0</a></li>
 <li><a href="https://github.com/adsabs/montysolr/releases/tag/v77.2.4.1">v77.2.4.1</a></li>
-<li><a href="https://github.com/adsabs/montysolr/releases/tag/v77.2.4">v77.2.4/a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v77.2.4">v77.2.4</a></li>
 <li><a href="https://github.com/adsabs/montysolr/releases/tag/v77.2.3">v77.2.3</a></li>
 </ul>
   

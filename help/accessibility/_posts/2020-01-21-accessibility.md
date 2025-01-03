@@ -3,7 +3,7 @@ layout: post
 title: "Accessibility Policy"
 order: 3
 category: policies
-permalink: /help/policies/accessibility
+permalink: /help/policies/accessibility/
 ---
 
 # ADS Web Accessibility Policy

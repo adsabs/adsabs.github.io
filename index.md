@@ -14,7 +14,7 @@ layout: post
 </p>
 
 <p>
-To see the latest releases to our website, API, and data holdings, see our <a href="{{ site.baseurl }}/help/whats_new">What's New</a> page.
+To see the latest releases to our website, API, and data holdings, see our <a href="{{ site.baseurl }}/help/whats_new/">What's New</a> page.
 </p>
 
 <p>

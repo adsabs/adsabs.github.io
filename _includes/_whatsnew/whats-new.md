@@ -3,6 +3,77 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## February 2025
+* Announcements:<br>
+
+   **SciX Chat Assistant**<br>
+   The SciX Team is pleased to introduce three new chatbot assistants designed to enhance your Science Explorer user experience! These AI-powered tools seamlessly integrate with the expanded SciX digital library platform, making it easier than ever to find scientific literature, navigate help resources, and automate API queries.<br>
+   
+   Want to explore the latest research? The SciX Chat Assistant helps you search for papers by topic, author, or keyword, keeping you updated on cutting-edge discoveries across planetary science, astrophysics, heliophysics, and Earth science. [Try it out here](https://chatgpt.com/g/g-673166051bec8190be6b0454fbdf5aef-scix-chat-assistant).<br>
+
+   Need guidance on using SciX? The SciX Help Desk Assistant quickly directs you to FAQs, tutorials, and troubleshooting resources, so you can find answers fast. [Check it out here](https://chatgpt.com/g/g-eB6GcoxPu-ads-help-pages).<br>
+
+   Looking to streamline your workflow? The SciX Script Generator creates custom scripts for querying the SciX API, perfect for automating searches and integrating SciX data into your projects. [Generate your script here](https://chatgpt.com/g/g-j6N0Wpd0M-ads-api-code-generator).<br>
+
+   We invite you to test these new resources and let us know what you think at adshelp@cfa.harvard.edu.<br>
+
+  **Spotlight on SciX Project Scientist Dr. Jennifer Lynn Bartlett**<br>
+   The Women In Astronomy blog recently featured Dr. Jennifer Lynn Bartlett, SciX Project Scientist, in their latest career profile: ["Have Sextant, Will Travel."](https://womeninastronomy.blogspot.com/2025/01/career-profile-have-sextant-will-travel.html)<br>
+   
+   In this insightful piece, Dr. Bartlett shares her career journey, from navigating the worlds of astrometry and timekeeping to her current work advancing research accessibility with SciX. Her story highlights the importance of interdisciplinary expertise, adaptability, and a passion for both historical and cutting-edge science.<br>
+
+   [Read the full post](https://womeninastronomy.blogspot.com/2025/01/career-profile-have-sextant-will-travel.html) to learn more about Dr. Bartlett’s path and her contributions to the astronomical community!<br>
+
+  **Now Available: SciX Posters from the AAS Winter Meeting**<br>
+   Missed the SciX presentations at the American Astronomical Society’s (AAS) winter meeting? You can now explore the posters online!<br>
+   
+   SciX contributed to several engaging sessions, sharing insights into project management, public outreach for solar eclipses, and innovations in astronomy education. SciX iposters from the meeting include:<br>
+
+   + **"[What if it Rains on Your Eclipse: Planning Ahead for August 2045](https://aas245-aas.ipostersessions.com/?s=99-5B-5B-42-B7-DB-FB-60-E9-5D-8A-F0-AE-97-F2-4A)"** – A look at strategies for public engagement and observational planning for future eclipses.
+   + **"[Beyond Astronomy Content: Communication Skills for All Our Students](https://aas245-aas.ipostersessions.com/?s=4F-B3-0B-3E-80-05-98-47-C3-B7-DC-E9-DF-A6-07-52)"** – Exploring the role of communication skills in astronomy education and career development.
+   + **"[Astro-3: Restoring Space Astronomy Flight Hardware for Public Education](https://aas245-aas.ipostersessions.com/?s=B7-68-27-2C-AC-BE-6A-75-E8-A6-57-B3-03-D4-91-31)"** – Showcasing the Astro Restoration Project’s efforts to preserve and restore the SpaceLab Astro science payload, creating the largest flown space science observatory available for public display to inspire future generations in STEM.
+   + **"[ADS and SciX: Pioneering the Next Generation of Interdisciplinary Research Discover](https://zenodo.org/records/14811310)"** – Highlighting how SciX builds on the Astrophysics Data System (ADS) to create a unified, AI-powered platform integrating literature, data, and software across NASA’s Science Mission Directorate, supporting open science and interdisciplinary research.
+   + **"[Science Explorer: Not Your Adviser's ADS](https://zenodo.org/records/14811559)"** – A look at how SciX expands the Astrophysics Data System (ADS) with AI-powered tools, semantic search, and interdisciplinary connections to enhance scientific discovery.
+
+   Thank you to everyone who joined us at AAS—we look forward to seeing you again soon!<br>
+
+* Development and data holdings updates as of February 1st:
+  * Website and API
+    + **[improved]** Help pages: updated permalinks to have trailing forward slashes
+    + Nectar changes include:
+    	+ **[improved]** Updated abstract metadata in UI to support UAT implementation; added UAT keywords to abstract page, and UAT facet
+     	+ **[improved]** Added bulk citation fetching in the export interface
+        + **[fixed]** html in abstract metadata
+        + **[fixed]** ‘Query Canceled’ error behavior
+        + **[ops]** Updated login step to show message about needing to reset password
+        + **[ops]** Updated packages for code formatting and system monitoring
+        + **[ops]** Gateway and dependency upgrades
+    + **[fixed]** Oracle: bug where a bibcode match was returned if either the ‘source’ or ‘match’ bibcode matched the computed one. Now only ‘source’ is returned if matched.
+
+  * Data holdings and pipelines
+    + 106.6k new records, and 8M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.100">v0.19.100</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.96">v0.19.96</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.93">v0.19.93</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.92">v0.19.92</a></li>
+</ul>
+
+<li>Oracle Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/oracle_service/releases/tag/v2.0.35">v2.0.35</a></li>
+<li><a href="https://github.com/adsabs/oracle_service/releases/tag/v2.0.34">v2.0.34</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## January 2025
 * Announcements:
    + **SciX at the 2025 AAS Winter Meeting**<br>

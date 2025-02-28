@@ -14,11 +14,7 @@ The ADS project develops and maintains services to facilitate the discovery and 
 The ADS has built a highly scalable and feature-rich platform using a modern development stack: a custom build of the open-source search engine Solr, a highly responsive UI engineered on top of React, a high performance distributed brokerage system, and cloud-based hosted services with Kubernetes in Amazon Web Services. The primary programming languages are Python, Java, and JavaScript/TypeScript.
 
 ## Who we are looking for
-
-We have two openings to join our team of about twelve developers and four curators. The successful candidates will be part of a small, agile team of talented, like-minded individuals who are solving difficult problems as a group. We foster a work environment that is inclusive, flexible, and diverse, where team members can be themselves. We encourage applications from minorities, women, protected veterans, individuals with disabilities, and all other qualified applicants. We're looking for:
-
-* a [Digital Technologies Development Librarian](https://www.cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-24-75) who will support the team by designing and implementing new tools, technology and services, and will be involved in collection management, assisting with content decisions, documentation and user support. ([apply here](https://trustcareers.si.edu/en/postings/48bc36f4-09d3-4054-b0d7-0f90bdf4584a) by September 27, 2024)
-* a [Search/Back-end developer](https://cfa.harvard.edu/opportunities/sao-employment-opportunities/posting-24-49) experienced with search engines (e.g., Solr, Elasticsearch) and designing/building well-structured software (Java and Python), data pipelines, and REST APIs. The primary responsibility of the employee is to maintain and enhance the capabilities of the ADS search engine (Java), maintain its public API (Python), enhance its text processing pipelines (Python), and develop new functionality and services to support metadata enhancement, citation analysis, and recommendations while relying on ADS natural language processing/machine learning/deep learning plans. ([apply here](https://trustcareers.si.edu/en/postings/a7082567-bac9-4cbc-955f-bec97b685c3d) by September 30, 2024)
+We currently do not have any job openings. 
 
 ## What we offer
 

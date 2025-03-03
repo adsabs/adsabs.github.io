@@ -18,7 +18,8 @@ SciX Lead Ambassadors and SciX staff at the end of the workshop in Cambridge, MA
 The workshop received highly positive feedback from ambassadors, who emphasized the value of in-person networking and structured activities. Many felt the **panel discussions, blue sky projects, and disciplinary focus groups** were the most beneficial. Some suggested expanding future workshops to allow more time for technical deep dives and collaborative project development.
 
 Ambassadors left the workshop **better equipped to engage their communities**, with personal work plans outlining how they will integrate SciX into their outreach efforts. Their contributions will continue to shape SciX’s development, making it more user-aware and accessible to a broad research community.
-Next Steps
+
+## Next Steps
 Moving forward, SciX will focus on **expanding the ambassador program, developing an online community platform, and increasing interdisciplinary engagement**. The inaugural cohort will help onboard the next group of ambassadors, ensuring continuity and mentorship. Additionally, efforts will be made to create virtual events, strengthen SciX’s presence on social media, and explore new avenues for community collaboration.
 
 We are excited to continue this journey and build an even stronger SciX ambassador network. Stay tuned for updates and ambassador highlights throughout the year!

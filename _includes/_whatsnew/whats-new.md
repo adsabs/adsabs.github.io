@@ -3,6 +3,73 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## March 2025
+* Announcements:<br>
+
+   **New Blog Posts on Literature Searches & Ambassador Workshop**<br>
+   Two new blog posts explore how SciX enhances scientific research through advanced literature search tools and a growing community of engaged researchers.<br>
+
+   The first post, [How Earth and Planetary Science Graduate Students Can Use SciX to Conduct Literature Searches](../../blog/scix-earth-science-literature-review), by SciX Ambassador Yueyi Che, provides graduate students with practical strategies for streamlining their literature review process. Che highlights key SciX features such as keyword searches in abstracts, author filtering, and citation mapping, demonstrating how these tools can improve research efficiency and discovery.<br>
+
+   The second post, the [2024 SciX Ambassador Workshop Report](../../blog/scix-ambassador-workshop), offers an in-depth look at the recent SciX Lead Ambassador Workshop. This gathering brought together researchers from diverse fields to strengthen community connections, develop engagement strategies, and explore new ways to promote SciX. The report highlights the program’s mission, the selection of ambassadors, and key outcomes, including the development of community guidelines and outreach initiatives.<br>
+
+   These blog posts underscore SciX’s commitment to supporting researchers with powerful search capabilities and fostering collaboration across disciplines. Read the full articles on the SciX website to learn more about how the platform is transforming scientific research and engagement.<br>
+
+  **Join the SciX Team: Now Hiring a Community Coordinator**<br>
+  
+   SciX, the next-generation scientific research platform expanding the Astrophysics Data System (ADS), is seeking a dynamic Community Coordinator to help grow and engage its research community. This part-time, remote contract role is offered through ScienceBetter Consulting and provides the opportunity to lead outreach efforts, develop engagement strategies, and support the SciX Ambassador Program—all while connecting scientists with cutting-edge literature search tools.<br><br>
+   About the Role: The SciX Community Coordinator will play a key role in user engagement, marketing, and science communication, ensuring that researchers in Astrophysics, Earth Science, Planetary Science, Heliophysics, and NASA-supported Biological & Physical Sciences discover and utilize SciX. Responsibilities include:
+   - Building relationships with researchers and institutions
+   - Managing social media, newsletters, and blog content
+   - Organizing workshops and conference participation
+   - Supporting and growing the SciX Ambassador Program
+   
+   Who Should Apply? We are looking for a skilled communicator with experience in scientific outreach, community engagement, and digital marketing. Ideal candidates will have connections within NASA’s Science Mission Directorate (SMD) research communities—especially in Earth Sciences—and a passion for advancing open science.<br>
+
+   Learn more and apply: [SciX Community Coordinator Position](https://docs.google.com/document/d/13JKjxm-1YKBc6GBGMK5SzWyQNg0Y0sDyjLHDn0jJp3E/edit?tab=t.0#heading=h.ny8wblmgjijp)<br>
+
+  **SciX Seeking Heliophysicist for Lead Ambassador Program**<br>
+  
+   SciX has one available spot for a heliophysicist to join our Lead Ambassador Program. We are seeking a heliophysics researcher who is enthusiastic about science communication and community engagement. We especially encourage early career researchers (including graduate students) and members of underrepresented groups in STEM to apply. We accept international applications as well.<br><br>
+   About the Role: The SciX Lead Ambassadors play a pivotal role in bridging the gap between SciX and their respective communities. Key highlights of this program include:
+   - Two-year term including monthly online cohort/SciX meetings (must attend at least 4 meetings per year). Time commitment is estimated at 2-8 hours per month.
+   - Recognition on our SciX website ambassador page and opportunities to showcase your work and community engagement on our blogs.
+   - A 2.5-day workshop at the Harvard & Smithsonian Center for Astrophysics **(TBD in July or August 2025)** where you will network with peers, learn community engagement skills, and receive training on the SciX platform to share with your communities.
+   - Inform strategies to enhance the platform’s reach and benefit for your communities, grow an online space for ambassadors to share resources, connect with the SciX team, and collaborate with peers worldwide.
+   - Present on SciX in whichever ways are impactful and accessible for you (locally at your institute, virtually at a meeting, in person at a workshop, etc.)
+   - **Travel reimbursement up to $2500 for the workshop and reimbursement up to $2500 to a conference of your choice to present on your work and SciX.**
+   
+   Learn more and apply: [SciX Lead Ambassador for Heliophysics](https://docs.google.com/forms/d/e/1FAIpQLSc6BI-iVvIHF9j5DApIAbuI-_-d-jg-mCp6eD5gdoqaW-GgOA/viewform)<br>
+
+* Development and data holdings updates as of March 1st:
+  * Website and API
+    + **[new]** Blog posts: [Earth Science Literatire Review](../../blog/scix-earth-science-literature-review), and [2024 Ambassador Workshop](../../blog/scix-ambassador-workshop)
+    + **[new]** Help page: Additional policy describing [Mirror Links](../../help/policies/mirrors)
+    + **[improved]** Bumblebee changes:
+        + Changed wording of footer links for accessibility
+        + Improvements made to loader script to be more robust, in hopes to mitigate module timeouts for some users
+        + Updated classic form to handle first_author style queries
+        + General bugfixes and improvements, specifically targeting long-standing errors
+
+  * Data holdings and pipelines
+    + 356.8k new records, and 4.9M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-13">v1.5.7-hotfix-13</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-12">v1.5.7-hotfix-12</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-11">v1.5.7-hotfix-11</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-10">v1.5.7-hotfix-10</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-9">v1.5.7-hotfix-9</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## February 2025
 * Announcements:<br>
 

@@ -1,7 +1,7 @@
 ---
 layout: blog_post
 title: "From ADS to SciX: What I wish I knew about ADS/SciX during my Ph.D."
-author: "Manuel P Marcano"
+author: "Manuel Pichardo Marcano"
 position: "SciX Ambassador"
 category: blog
 label: general

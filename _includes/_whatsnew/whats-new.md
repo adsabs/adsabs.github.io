@@ -25,7 +25,7 @@ To receive this listing via monthly email newsletter, along with announcements a
   One of our Lead Ambassadors, Manuel Pichardo Marcano, shares his insights as an astronomer transitioning from using ADS to SciX. Discover why Manuel believes SciX is the future for accessing the literature, especially if you're working in interdisciplinary fields like astrochemistry. Learn about his favorite SciX features and how they can benefit your research! Read Manuel's [full blog post here](../../blog/what-i-wish-i-knew-about-ads-scix-during-my-phd).<br>
 
    **2024 ADS Users Group Report**<br>
-  The [2024 ADS Users Group](../../about/adsug/adsug) met last December to assess the services ADS provides to the astronomical community and evaluate the progress of SciX. At the end of March, [they released their report](../../about/adsug/past_meetings/24-12-05-202411-program.html), which offers strategic advice that will assist us as SciX prepares to exit its beta phase. In particular, the Users Group recommends that ADS:
+  The [2024 ADS Users Group](../../about/adsug/adsug) met last December to assess the services ADS provides to the astronomical community and evaluate the progress of SciX. At the end of March, [they released their report](../../about/adsug/meetings.html), which offers strategic advice that will assist us as SciX prepares to exit its beta phase. In particular, the Users Group recommends that ADS:
   - prioritize SciX development
   - raise awareness among astronomers about SciX
   - focus AI/ML efforts on data enrichment and discovery

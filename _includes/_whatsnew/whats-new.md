@@ -3,6 +3,81 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## April 2025
+* Announcements:<br>
+
+   **APS Global Physics Summit 2025**<br>
+   Last month, project scientists Michael Kurtz and Jennifer Lynn Bartlett demonstrated the power of SciX to more than 200 physicists. They also presented two posters at this meeting of the American Physical Society, which are now on Zenodo:<br>
+   - [The Physics in the Astrophysics Data System](https://doi.org/10.5281/zenodo.15054921)
+   - [Science Explorer: ADS for All NASA Science](https://doi.org/10.5281/zenodo.15054991)
+   
+   The SciX physics collection contains over 13 million journal articles, preprints, conference proceedings, and books, making it one of the most comprehensive open-science tools available to physicists world-wide. It boasts over [2.5 million open-access items](https://scixplorer.org/search?q=collection%3Aphysics+property%3Aopenaccess&sort=score+desc&sort=date+desc&p=1) as well as over [170,000 physics education resources](https://scixplorer.org/search?q=bibgroup%3Aphysed&sort=score+desc&sort=date+desc&p=1). Our broad support for NASA science includes indexing:
+   - <i>Physical Review ABCDEFMPRSX</i>
+   - <i>Physica ABCD</i>
+   - <i>Journal of Physics ABCDEFG CS</i>
+   - <i>Physics Letters AB</i>
+   - <i>Nuclear Physics AB</i>
+   - <i>Journal of High Energy Physics</i>
+
+   In addition, we receive APS meeting abstracts annually; we have already processed the 2024 materials. Taking advantage of SciX enables physicists to find and access the literature and to reuse the software and data they need for 21st century science.<br>
+
+  **New Blog Post, "From ADS to SciX: What I wish I knew about ADS/SciX during my Ph.D."**<br>
+  One of our Lead Ambassadors, Manuel Pichardo Marcano, shares his insights as an astronomer transitioning from using ADS to SciX. Discover why Manuel believes SciX is the future for accessing the literature, especially if you're working in interdisciplinary fields like astrochemistry. Learn about his favorite SciX features and how they can benefit your research! Read Manuel's [full blog post here](../../blog/what-i-wish-i-knew-about-ads-scix-during-my-phd).<br>
+
+   **2024 ADS Users Group Report**<br>
+  The [2024 ADS Users Group](../../about/adsug/adsug) met last December to assess the services ADS provides to the astronomical community and evaluate the progress of SciX. At the end of March, [they released their report](../../about/adsug/past_meetings/24-12-05-202411-program.html), which offers strategic advice that will assist us as SciX prepares to exit its beta phase. In particular, the Users Group recommends that ADS:
+  - prioritize SciX development
+  - raise awareness among astronomers about SciX
+  - focus AI/ML efforts on data enrichment and discovery
+  - continue developing chatbot tools accompanied by training materials to ensure appropriate use
+  
+  The ADS and SciX team thanks the ADS Users Group, especially its chair Matthew J. Graham, for their thoughtful program review. We will implement their recommendations over the rest of this year along with those from the SciX Advisory Board, which is focused on the SciX expansion.
+
+  The ADS Users Group meets annually in accordance with [its charter](../../about/adsug/charter.html). If you are interested in participating in the 2025 meeting, please let the chair or project scientist, [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), know.
+
+* Development and data holdings updates as of April 1st:
+  * Website and API
+    + **[new]** Blog post: ["From ADS to SciX: What I wish I knew about ADS/SciX during my Ph.D.](../../blog/what-i-wish-i-knew-about-ads-scix-during-my-phd)
+    + **[new]** [2024 ADSUG report](../../about/adsug/past_meetings/24-12-05-202411-program.html)
+    + Bumblebee changes:
+        + **[improved]** Removes unused menu item on abstract page navbar and some general cleanup and refactoring
+        + **[fixed]** Bug on classic form so that it handles user-specified default database properly
+    + Nectar changes:
+      	+ **[new]** Added ability to download word clouds and facet lists for easier data sharing and analysis
+      	+ **[new]** Enabled abstract graphics and made abstract display optional in record feedback
+      	+ **[new]** Introduced public sharing links for libraries to make collaboration easier
+      	+ **[new]** Added Earth Science as a collection option in the feedback form
+      	+ **[new]** Added an export menu to the library section for better data management
+      	+ **[improved]** Quick citation display and restored first-author functionality in the classic form
+      	+ **[improved]** Updated the author list to show affiliations as HTML
+      	+ **[improved]** search behavior, including left arrow key handling and query history updates.
+      	+ **[improved]** Standardized pagination UI for a more consistent experienc
+      	+ **[improved]** Updated footer accessibility link text
+      	+ **[fixed]** bugs in the feedback form and improved overall feedback handling
+      	+ **[ops]** Upgraded internal packages and made general code and test maintenance improvements
+
+  * Data holdings and pipelines
+    + Xk new records, and XM new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-16">v1.5.7-hotfix-16</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-15">v1.5.7-hotfix-15</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-14">v1.5.7-hotfix-14</a></li>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.125">v0.19.125</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## March 2025
 * Announcements:<br>
 

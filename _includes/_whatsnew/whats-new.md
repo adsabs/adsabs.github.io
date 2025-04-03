@@ -44,17 +44,17 @@ To receive this listing via monthly email newsletter, along with announcements a
         + **[fixed]** Bug on classic form so that it handles user-specified default database properly
     + Nectar changes:
         + **[new]** Added ability to download word clouds and facet lists for easier data sharing and analysis
-      	+ **[new]** Enabled abstract graphics and made abstract display optional in record feedback
-      	+ **[new]** Introduced public sharing links for libraries to make collaboration easier
-      	+ **[new]** Added Earth Science as a collection option in the feedback form
-      	+ **[new]** Added an export menu to the library section for better data management
-      	+ **[improved]** Quick citation display and restored first-author functionality in the classic form
-      	+ **[improved]** Updated the author list to show affiliations as HTML
-      	+ **[improved]** search behavior, including left arrow key handling and query history updates.
-      	+ **[improved]** Standardized pagination UI for a more consistent experienc
-      	+ **[improved]** Updated footer accessibility link text
-      	+ **[fixed]** bugs in the feedback form and improved overall feedback handling
-      	+ **[ops]** Upgraded internal packages and made general code and test maintenance improvements
+        + **[new]** Enabled abstract graphics and made abstract display optional in record feedback
+        + **[new]** Introduced public sharing links for libraries to make collaboration easier
+        + **[new]** Added Earth Science as a collection option in the feedback form
+        + **[new]** Added an export menu to the library section for better data management
+        + **[improved]** Quick citation display and restored first-author functionality in the classic form
+        + **[improved]** Updated the author list to show affiliations as HTML
+        + **[improved]** search behavior, including left arrow key handling and query history updates.
+        + **[improved]** Standardized pagination UI for a more consistent experienc
+        + **[improved]** Updated footer accessibility link text
+        + **[fixed]** bugs in the feedback form and improved overall feedback handling
+        + **[ops]** Upgraded internal packages and made general code and test maintenance improvements
 
   * Data holdings and pipelines
     + 614k new records, and 2.16M new citations

@@ -43,7 +43,7 @@ To receive this listing via monthly email newsletter, along with announcements a
         + **[improved]** Removes unused menu item on abstract page navbar and some general cleanup and refactoring
         + **[fixed]** Bug on classic form so that it handles user-specified default database properly
     + Nectar changes:
-      	+ **[new]** Added ability to download word clouds and facet lists for easier data sharing and analysis
+        + **[new]** Added ability to download word clouds and facet lists for easier data sharing and analysis
       	+ **[new]** Enabled abstract graphics and made abstract display optional in record feedback
       	+ **[new]** Introduced public sharing links for libraries to make collaboration easier
       	+ **[new]** Added Earth Science as a collection option in the feedback form

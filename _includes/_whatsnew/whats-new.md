@@ -57,7 +57,7 @@ To receive this listing via monthly email newsletter, along with announcements a
       	+ **[ops]** Upgraded internal packages and made general code and test maintenance improvements
 
   * Data holdings and pipelines
-    + Xk new records, and XM new citations
+    + 614k new records, and 2.16M new citations
 
 <details>
 <summary>Development details</summary>

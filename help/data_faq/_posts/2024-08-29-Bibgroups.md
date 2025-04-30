@@ -32,6 +32,9 @@ This group contains refereed articles using James Webb Space Telescope data, whi
 
 This group contains articles where Chandra data contributes significantly to the science in the article, also known as Chandra Science Papers. Those articles that present specific Chandra observations are linked to the data in the [Chandra Data Archive](https://cxc.cfa.harvard.edu/cda) on which they are based. The database is maintained by the Chandra Data Archive and can be queried in more detail with our [search tool](https://cxc.harvard.edu/cgi-gen/cda/bibliography). For publication statistics, please visit the [Chandra Bibliography Statistics page](https://cxc.harvard.edu/cda/bibstats/bibstats.html). 
 
+### Chandra/CSC
+This group contains both refereed and non-refereed articles published from 2009-present that are related to the Chandra Source Catalog, is updated monthly, and includes papers that perform scientific analysis on data from the Chandra Source Catalog. The database is maintained by the Chandra Data Archive, but CSC metadata is not currently accessible using their search tool.
+
 ### Chandra/Technical
 Chandra/Technical - This group contains articles pertaining to the Chandra mission and includes articles about Chandra instruments, software, and operations. The [Chandra Data Archive](https://cxc.cfa.harvard.edu/cda) maintains a [repository](https://cxc.harvard.edu/cda/cxo_papers/cxo_papers.html) of these papers grouped by individual instrument, operations, and software.
 

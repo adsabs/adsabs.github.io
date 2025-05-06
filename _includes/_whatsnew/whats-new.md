@@ -3,6 +3,86 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## May 2025
+* Announcements:<br>
+
+   **EGU 2025**<br>
+   [Mike Kurtz](../../about/team/team/mkurtz.html), project scientist emeritus, and [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), project scientist for astrophysics, presented the advantages of searching the literature using SciX to over 500 earth scientists at the European Geosciences Union meeting in Vienna, Austria last month.  Mike explained [“Enhancing Geoscience Collaboration and Discovery: Leveraging the Science Explorer (SciX) for Efficient Literature Review and Interdisciplinary Research”](https://meetingorganizer.copernicus.org/EGU25/EGU25-10379.html) and gave a live demonstration during an oral session on April 30.  In addition, they gave multiple presentations of [“Science Explorer:  Accelerating the Discovery of NASA Science”](https://doi.org/10.5281/zenodo.15353298) on the NASA hyperwall. We are grateful to NASA for allowing us this opportunity to participate in their EGU booth.<br>
+
+   **Astronomy Genealogy Project**<br>
+  On May 11, [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), project scientist for astrophysics, will become director of the [Astronomy Genealogy Project (AstroGen)](https://astrogen.aas.org/front/index.php), which traces academic lineages of astronomers worldwide.  Building on earlier collaborations between AstroGen and ADS (now SciX), Jennifer would like to make the full-text of more [dissertations findable](https://scixplorer.org/search?q=doctype%3Aphdthesis&sort=score+desc&sort=date+desc&p=1&n=10) and accessible through both platforms. Based on the successful [Mathematics Genealogy Project](https://www.mathgenealogy.org/), AstroGen is a project of the [Historical Astronomy Division](https://had.aas.org/) of the [American Astronomical Society](https://aas.org/). The current director, [Joe Tenn (Sonoma State)](https://www.sonoma.edu/joseph-s-tenn), who founded the AstroGen in 2013, is retiring on his 85th birthday.<br>
+
+   **Missing Links**<br>
+  We have identified around 1,000 broken links to LPI-hosted content associated with LPSC abstracts, possibly due to targeted removal or other technical issues. If you discover a broken link in your LPI abstract or other scientific publication, please contact us at help@scixplorer.org so we can investigate and, if possible, restore access to the content.<br>
+
+* Development and data holdings updates as of May 1st:
+  * Website and API
+    + **[new]** About pages: Added [Jeffery Pomerantz](../../about/team/team/jpomerantz.html) to Team page
+    + **[new]** Replaced `adsws` with `api-gateway` as the core API module for ADS and SciX
+    + **[improved]** Nectar: Moved facet buttons to the side and added view_item event
+    + **[improved]** Export: added POST option for a formatted response
+    + **[ops]** Nectar: Updated abstract and search page tests, reset-password endpoint, and requirements
+    + **[ops]** Export: completed some of incomplete doctypes for AASTeX CLS format
+    + **[ops]** Upgraded requirements for the Journals Database
+    + **[ops]** Vault service updates on the header
+    + **[ops]** Biblib: API gateway changes; Added check for mirrored host when sending emails
+    + Bumblebee changes:
+        + **[improved]** Support for new Gateway API: Updated authentication handling, token formats, and API endpoints to align with ADS’s new Gateway infrastructure.
+        + **[fixed]** Code Refactoring: Several fixes related to Sentry detected errors and other general code cleanup
+        + **[ops]** Continuous Integration Improvements: Improvements to the CI/CD scripts
+
+  * Data holdings and pipelines
+    + 414k new records, and 3.86M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>API Gateway Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/api_gateway/releases/tag/v1.2.0">v1.2.0</a></li>
+</ul>
+
+<li>Biblib Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/biblib-service/releases/tag/v1.4.1">v1.4.1</a></li>
+<li><a href="https://github.com/adsabs/biblib-service/releases/tag/v1.4.0">v1.4.0</a></li>
+</ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.9.0">v1.9.0</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.8.0">v1.8.0</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.7.2">v1.7.2</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.7.1">v1.7.1</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.7.0">v1.7.0</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.5.7-hotfix-17">v1.5.7-hotfix-17</a></li>
+</ul>
+
+<li>Export Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.9">v3.1.9</a></li>
+</ul>
+
+<li>Journals Database Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/ADSJournalsDB/releases/tag/v1.3.2">v1.3.2</a></li>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.131">v0.19.131</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.130">v0.19.130</a></li>
+</ul>
+
+<li>Vault Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.0">v1.1.0</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## April 2025
 * Announcements:<br>
 

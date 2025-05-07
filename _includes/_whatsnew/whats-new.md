@@ -17,7 +17,6 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 * Development and data holdings updates as of May 1st:
   * Website and API
-    + **[new]** About pages: Added [Jeffery Pomerantz](../../about/team/team/jpomerantz.html) to Team page
     + **[new]** Replaced `adsws` with `api-gateway` as the core API module for ADS and SciX
     + **[improved]** Nectar: Moved facet buttons to the side and added view_item event
     + **[improved]** Export: added POST option for a formatted response

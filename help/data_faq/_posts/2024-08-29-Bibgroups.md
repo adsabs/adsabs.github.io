@@ -11,8 +11,8 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 - [(CFHT) Canada-France-Hawaiʻi Telescope](#cfht-canada-france-hawaiʻi-telescope)
 - [(ESO) European Southern Observatory Telescopes](#eso-european-southern-observatory-telescopes)
 - [(HST) Hubble Space Telescope](#hst-hubble-space-telescope)
-- [(JWST) International Gemini Observatory](#jwst-international-gemini-observatory)
-- [James Webb Space Telescope](#james-webb-space-telescope)
+- [International Gemini Observatory](#international-gemini-observatory)
+- [(JWST) James Webb Space Telescope](#jwst-james-webb-space-telescope)
 - [Chandra Science Papers](#chandra-science-papers)
 - [Chandra Source Catalog](#chandra-source-catalog)
 - [Chandra Technical Papers](#chandra-technical-papers)
@@ -30,10 +30,10 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 ### HST (Hubble Space Telescope)
 `bibgroup:HST`  This group primarily contains refereed articles that made scientific use of data from the NASA/ESA Hubble Space Telescope (HST) since 1991, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). Papers are added continuously and may lag up to one year from date of publication. Articles are linked to the program IDs and observational data on which they are based whenever feasible. Note that matching HST proposal IDs to published papers is an ongoing project and never completely up to date. Some non-refereed articles and conference proceedings may also be included when use of the telescope's data is noted. Key papers (refereed and non-refereed) which address instrumentation or engineering systems are also included. For further information, visit the [STScI Library and Institutional Archive](https://www.stsci.edu/scientific-community/stsci-library-and-institutional-archive/missions-publications) or contact metrics@stsci.edu.
 
-### JWST (International Gemini Observatory)
+### International Gemini Observatory
 `bibgroup:Gemini`  This group contains refereed articles based on observations (including observatory archive) made at the International Gemini Observatory, NSF NOIRLab. The coverage is from 2000 to present and the group is updated monthly. The Gemini Publications by Users webpage contains more information such as instruments and observation program IDs used for the publication.
 
-### James Webb Space Telescope
+### JWST (James Webb Space Telescope)
 `bibgroup:JWST`  This group primarily contains refereed articles that made scientific use of data from the NASA/ESA/CSA James Webb Space Telescope (JWST) since 2022, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). Papers are added continuously and may lag up to one year from date of publication. Articles are linked to the program IDs and observational data on which they are based whenever feasible. Note that matching JWST proposal IDs to published papers is an ongoing project and never completely up to date. Some non-refereed articles and conference proceedings may also be included when use of the telescope's data is noted. Key papers (refereed and non-refereed) which address instrumentation or engineering systems are included; these non-data papers may precede 2022. For further information, visit the [STScI Library and Institutional Archive](https://www.stsci.edu/scientific-community/stsci-library-and-institutional-archive/missions-publications) or contact metrics@stsci.edu.
 
 ### Chandra Science Papers

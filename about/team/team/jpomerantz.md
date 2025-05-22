@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "Jeffrey Pomerantz"
+title: "Dr. Jeffrey Pomerantz"
 ---
 
 {% include _teambios/jpomerantz.md %}

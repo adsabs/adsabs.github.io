@@ -1,6 +1,6 @@
 ---
 layout: about_scix
-title: "Jeffrey Pomerantz"
+title: "Dr. Jeffrey Pomerantz"
 ---
 
 {% include _teambios/jpomerantz.md %}

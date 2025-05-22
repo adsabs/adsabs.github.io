@@ -27,7 +27,7 @@ The Science Explorer (SciX) personnel are:
 - [Dr. Stephanie Jarmak](../team/team/sjarmak.html) - Planetary Science Project Scientist
 - [Dr. Anna Kelbert](../team/team/akelbert.html) - Earth Science Project Scientist
 - [Paul Di Re](../team/team/pdire.html) - Project Manager
-- [Jeffrey Pomerantz](../team/team/jpomerantz.html) - Digital Technologies Development Librarian
+- [Dr. Jeffrey Pomerantz](../team/team/jpomerantz.html) - Digital Technologies Development Librarian
 
 SciX research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

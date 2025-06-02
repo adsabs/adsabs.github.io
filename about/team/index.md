@@ -11,8 +11,7 @@ The ADS personnel are:
 - [Carolyn Stern Grant](../team/team/csterngrant.html) - Data Ingestion Lead   
 - [Edwin Henneken](../team/team/ehenneken.html) - Content, Curation & Collaborations Lead
 - [Dr. Kelly Lockhart](../team/team/klockhart.html) - Technical Lead
-- [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development  
-- [Golnaz Shapurian](../team/team/gshapurian.html) - Senior Developer, Applications & Services   
+- [Tim Hostetler](../team/team/thostetler.html) - User Interface and Front-End Development   
 - [Dr. Matthew Templeton](../team/team/mtempleton.html) - Data Integration Manager
 - [Shinyi (Jennifer) Chen](../team/team/schen.html) - User Experience and Front-End Development  
 - [Dr. Felix Grezes](../team/team/fgrezes.html) - Machine Learning and Natural Language Processing
@@ -28,6 +27,7 @@ The ADS personnel are:
 - [Dr. Stephanie Jarmak](../team/team/sjarmak.html) - Planetary Science Project Scientist
 - [Dr. Anna Kelbert](../team/team/akelbert.html) - Earth Science Project Scientist
 - [Paul Di Re](../team/team/pdire.html) - Project Manager
+- [Dr. Jeffrey Pomerantz](../team/team/jpomerantz.html) - Digital Technologies Development Librarian
 
 ADS research associates are:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)

@@ -3,6 +3,49 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## June 2025
+* Announcements:<br>
+
+   **NSF Awards Indexed**<br>
+   We have added records for 466,730 awards awarded by the [National Science Foundation](https://www.nsf.gov/awardsearch/simpleSearch.jsp) across all [directorates and divisions](https://www.nsf.gov/about/directorates-offices). Most of these records contain the project title, PI name and affiliation, award number, project start date, proposal abstract, and project outcomes report. These records are searchable by using [doctype:proposal pub:"NSF Award"](https://scixplorer.org/search?q=doctype%3Aproposal+pub%3A%22NSF+Award%22&sort=score+desc&sort=date+desc&p=1).<br>
+
+   In addition, we are currently working on linking existing publications to these award records. It is common practice to acknowledge when the research that produced a publication was supported by a funder, and to provide the award number. Taking this into account, we have identified over 98k publications that were supported by one or more NSF awards.<br>
+
+   **NASA DAACs Datasets Indexed**<br>
+   We now have [about 10k datasets](https://scixplorer.org/search?q=doctype%3Adataset+pub%3A%22Distributed+Active+Archive+Center%22&sort=score+desc&sort=date+desc&p=1) from the NASA Distributed Active Archive Centers (DAACs) indexed, with about 5k citations. Discover more by searching [ddoctype:dataset pub:"Distributed Active Archive Center"](https://scixplorer.org/search?q=doctype%3Adataset+pub%3A%22Distributed+Active+Archive+Center%22&sort=score+desc&sort=date+desc&p=1).<br>
+
+   **Meet us at AAS 246!** <br>
+   Will you be at the [American Astronomical Society meeting](https://aas.org/meetings/aas246) this month? Stop by iPoster #104.02 (terminal 7) on Monday, June 9 from 9 AM to 10 AM AKDT and talk to [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), SciX project scientist for astrophysics. She is presenting “[A Plate in Her Hand](https://submissions.mirasmart.com/AAS246/ViewSubmissionFile.aspx?sbmID=577&mode=html&validate=false)”, which begins to connect the female computers working in Harvard’s “great library of glass” by the astronomical photographic plates they used.  Such plates were the only mechanical detector available to astronomers before the 1970s. As these archives are digitized, SciX would like to connect these valuable datasets to the corresponding literature.<br> 
+
+   **Got Images? Graphs? Video?** <br>
+   The [Sixteenth Biennial History of Astronomy Workshop](https://www3.nd.edu/~histast/workshops/2025ndxvi/index.shtml) will explore visual practices in the production and transmission of astronomical knowledge this month. In SciX, we see the evolution of visualizations in the scholarly literature. For instance, [E.E. Barnard (1894)](https://scixplorer.org/abs/1894PA......2..151B/abstract) provided a sketch of stars in “Great Photographic Nebula in Orion”. Today, [Monthly Notices of the Royal Astronomical Society](https://scixplorer.org/search?q=bibstem%3AMNRAS+&sort=score+desc&sort=date+desc&p=1&n=10) provides graphics files that can be previewed by [clicking “Graphics”](https://scixplorer.org/abs/2025MNRAS.538.1921M/graphics) on the menu on the left side of the abstract view.<br>
+   
+  In addition, you can add an author video to your paper or iPoster link to your conference abstract in SciX.  Submit your link through the “Associated Articles” option on the “Feedback” dropdown menu and, then, choose “Other Relationship Type.” <br>
+  
+  At the Workshop, SciX project scientist for astrophysics [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html) will be presenting “Astronomical Photographic Plates: More than a Century of Service”, which describes the modern [scientific, historical, and cultural roles](https://scixplorer.org/abs/2024ISTL..106....1W/abstract) of astronomical photographic plates. <br> 
+
+* Development and data holdings updates as of June 1st:
+  * Website and API
+    + **[fixed]** Export service journal format bug
+    + **[fixed]** Fixed URL for NASA SMD whitepaper blog post
+    + **[fixed]** Help pages: Fixed contact name to Alberto for permissions
+    + **[improved]** Help pages: Updated the Bibgroups page and added some new descriptions
+
+  * Data holdings and pipelines
+    + 524k new records, and 10.3M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Export Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.10">v3.1.10</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## May 2025
 * Announcements:<br>
 

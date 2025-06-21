@@ -1,25 +1,12 @@
 ---
 layout: blog_post
-title: "ADS/SciX Campaign Boilerplate"
+title: "ADS/SciX Funding Update"
 author: "Dr. Alberto Accomazzi"
 position: "Director of ADS and SciX"
 category: blog
 label: general
 thumbnail: blog/images/ads_scix.jpg
 ---
-
-## Objective
-
-A long-form and short-form boilerplate to clarify messaging around the future of ADS and SciX, to be used to inform members of the research community and empower them to advocate for future funding for the platform.
-
-## Uses
-
-- Advocacy
-- Social media
-- Conference talks
-- Informal discussions
-
-## Long Form
 
 It is with a heavy heart that we confirm that the team and infrastructure behind the Astrophysics Data System (ADS) and Science Explorer (SciX) will be subjected to significant funding cuts, as the latest victim of the widely reported budget restrictions being placed upon NASA.
 
@@ -32,7 +19,3 @@ The team behind both projects is working hard to find a way to save these platfo
 We understand that this news will come as a shock to our user communities. We hope that with your continued support we will find a way to secure a bright and sustainable future for ADS and its even more powerful successor, SciX.
 
 Once we have a clearer path ahead of us, we will share more information. Please join the [ADS/SciX mailing list](https://harvard.us20.list-manage.com/subscribe?u=ed0cf26186d0cdd7bad11ed29&id=2c6299b24b) to be the first to hear of any good news. And until then, please continue to use the platforms in your work, and let us know of any ADS/SciX related research success stories. Our platforms are built by scientists, for scientists. In spite of the current budgetary challenges, we believe in the value and the future of open science. We will try our hardest to continue supporting you with authoritative and reliable information, as we have been doing for 30 years and counting. Thank you for continuing to be part of our community.
-
-## Short Version
-
-Unfortunately ADS and SciX are the latest victims of the budget restrictions being placed on NASA. The significant 60% obliteration of funding in the next financial year threatens the existence of both platforms. The ADS/SciX team is working hard to find alternative sources of funding to secure the future of platforms, and hope that the community will help support a case to potential future platform partners by sharing the impact that ADS and SciX have had on their research careers. Sign up to the ADS/SciX newsletter to keep up to date on our progress. Our platforms are built by scientists, for scientists. In spite of the current budgetary challenges, we believe in the value and the future of science, and will try our hardest to continue supporting it with authoritative and reliable information, as we have been doing for 30 years and counting. Thank you for continuing to be part of our community.

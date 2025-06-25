@@ -16,11 +16,13 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 - [Chandra Science Papers](#chandra-science-papers)
 - [Chandra Source Catalog](#chandra-source-catalog)
 - [Chandra Technical Papers](#chandra-technical-papers)
+- [NASA PubSpace](#nasa-pubspace)
 - [(NOIRLab) National Optical-Infrared Astronomy Research Laboratory](#noirlab-national-optical-infrared-astronomy-research-laboratory)
 - [(Pan-STARRS) Panoramic Survey Telescope and Rapid Response System](#pan-starrs-panoramic-survey-telescope-and-rapid-response-system)
 - [SETI Institute](#seti-institute)
 - [(SOHO) NASA-ESA Solar and Heliospheric Observatory](#soho-nasa-esa-solar-and-heliospheric-observatory)
 - [(STEREO) Solar TErrestrial RElations Observatory](#stereo-solar-terrestrial-relations-observatory)
+- [(USGS) United States Geological Survey](#usgs-united-states-geological-survey)
 - [Copernicus, EUVE, FUSE, GALEX, IUE, K2, Kepler, and TESS](#copernicus-euve-fuse-galex-iue-k2-kepler-and-tess)
 
 ### CFHT (Canada-France-Hawaiʻi Telescope)
@@ -47,6 +49,9 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 ### Chandra Technical Papers
 `bibgroup:Chandra/Technical`  This group contains articles pertaining to the Chandra mission and includes articles about Chandra instruments, software, and operations. The [Chandra Data Archive](https://cxc.cfa.harvard.edu/cda) maintains a [repository](https://cxc.harvard.edu/cda/cxo_papers/cxo_papers.html) of these papers grouped by individual instrument, operations, and software.
 
+### NASA PubSpace
+`bibgroup:NASA PubSpace` This bibgroup contains publications made available via NASA’s designated public access repository, [PubSpace](https://ntrs.nasa.gov/collections/pubspace), a collection of NASA-funded scholarly publications, primarily accepted manuscripts and peer-reviewed publisher version of record. The bibgroup is maintained by ADS/SciX and is sourced from the [NASA STI Repository (NTRS)](https://sti.nasa.gov/public-access/) collections.
+
 ### NOIRLab (National Optical-Infrared Astronomy Research Laboratory)
 `bibgroup:NOIRLab`  The NOIRLab bibgroup is a curated list of the U.S. National Science Foundation National Optical-Infrared Astronomy Research Laboratory (NSF NOIRLab / NOIRLab). The bibgroup comprises refereed science data publications in a core set of journals that use NOIRLab telescope data and/or NOIRLab data products & services. The bibgroup includes publications relating to the International Gemini Observatory from 2000 to present and publications relating to NOIRLab data products & services and the other NOIRLab telescopes from 1990 to present. Telescopes included are the NOIRLab Mid-Scale Observatories (MSO) telescopes: Nicholas U. Mayall 4-meter Telescope; WIYN 3.5-meter Telescope; and WIYN 0.9-meter Telescope, located at Kitt Peak National Observatory, Tucson, Arizona, USA; the Víctor M. Blanco 4-meter Telescope and SMARTS Consortium telescopes, located at Cerro Tololo Inter-American Observatory, La Serena, Chile; and the SOAR telescope, located at Cerro Pachón, Chile; and the International Gemini Observatory Gemini North and Gemini South telescopes. The bibgroup also includes publications that make use of NOIRLab-granted community-access time on non-NOIRLab telescopes. NOIRLab data products and provided by the NOIRLab Community Science and Data Center include the Astro Data Archive, Astro Data Lab, NOIRLab Source Catalog, ANTARES, and NOIRLab IRAF. The bibgroup is updated weekly.
 
@@ -61,6 +66,9 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 
 ### STEREO (Solar TErrestrial RElations Observatory)
 `bibgroup:STEREO`  ADS Library of refereed publications using data from NASA's STEREO mission or describing the mission and its instrumentation from 2002 to the present. This library is maintained by STEREO Project Scientist, Terry Kucera (<therese.a.kucera@nasa.gov>) and updated about once a year. STEREO data is publicly available from the [STEREO Science Center](https://stereo-ssc.nascom.nasa.gov/), the [Virtual Solar Observatory](https://sdac.virtualsolar.org/cgi/search), and the [Space Physics Data Facility](https://spdf.gsfc.nasa.gov/).
+
+### (USGS) United States Geological Survey
+`bibgroup:USGS` The USGS bibgroup contains publications authored by USGS scientists over the entire century-plus history of the bureau. Publications available include USGS-authored journal articles, series reports, book chapters, other government publications, and more. This bibgroup is maintained by ADS/SciX and is sourced from the [USGS Publications Warehouse](https://www.usgs.gov/products/publications).
 
 ### Copernicus, EUVE, FUSE, GALEX, IUE, K2, Kepler, and TESS
 These groups contain refereed articles that made scientific use of data from the respective NASA mission, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). The data were obtained during the entire in-service period of the mission. Papers are added continuously but may lag up to one year from date of publication. For further information contact the MAST HelpDesk (archive@stsci.edu).

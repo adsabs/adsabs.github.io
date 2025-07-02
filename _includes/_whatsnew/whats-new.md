@@ -3,6 +3,72 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## July 2025
+* Announcements:<br>
+
+* Development and data holdings updates as of July 1st:
+  * Website and API
+    + **[new]** Blog post on visualizations
+    + **[new]** Blog post introducing the SciX Advisory Board
+    + **[new]** Export Service: Added AASTeX (PSJ), and added new table of contents endpoint to list all export endpoints and their types
+    + **[improved]** Help pages: Added Pubspace and USGS bibgroup descriptions
+    + **[improved]** Nectar:
+       +  Support for Unified Astronomy Thesaurus (UAT): Added keyword auto-complete for terms, enhanced dropdown with related UAT keywords including parents and children, and improved accessibility and responsiveness of the UAT keyword dropdown
+       +  Improved support for quoted and partial keyword searches
+       +  Fixed issue with trending queries showing incorrect results
+       +  Added internal API support to improve keyword search reliability
+       +  Updated default sort order for more consistent results
+       +  Adjusted link behavior for better compatibility
+       +  Updated README with a new project banner
+    + **[improved]** Solr:
+       +  Bumped the max clause count to re-enable first author searches
+       +  Added a 10 second timeout to queries to improve service reliability
+       +  Enforced highlight length caps set by publishers
+    + **[fixed]** API Gateway:
+       + Fixed Feedback Email Subject Format
+       + Fixed bug caused by behavior change in ‘urljoin’ that broke https link resolution
+       + Added more descriptive error message when users query the API with ‘Bearer:$TOKEN’ instead of ‘Bearer $TOKEN’
+    + **[fixed]** Bumblebee: fixed signup form error messages 
+  
+  * Data holdings and pipelines
+    + 524k new records, and 10.3M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>API Gateway Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/api_gateway/releases/tag/v1.2.3">v1.2.3</a></li>
+<li><a href="https://github.com/adsabs/api_gateway/releases/tag/v1.2.2">v1.2.2</a></li>
+<li><a href="https://github.com/adsabs/api_gateway/releases/tag/v1.2.1">v1.2.1</a></li>
+</ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.0">v1.10.0</a></li>
+</ul>
+
+<li>Export Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.11">v3.1.11</a></li>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.141">v0.19.141</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.135">v0.19.135</a></li>
+</ul>
+
+<li>Solr Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.3">v96.1.3</a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.2">v96.1.2</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## June 2025
 * Announcements:<br>
 

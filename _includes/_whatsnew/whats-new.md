@@ -5,6 +5,22 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 ## July 2025
 * Announcements:<br>
+  * **“[The Power of Visualizations](../../blog/scix-visualizations)”, New Blog Post by SciX Ambassador, Sarah Lamm**
+    In this blog post, SciX Ambassador Sarah Lamm explores the powerful visualization features that SciX offers. Lamm highlights the varied options and how this expands their interdisciplinary research capabilities. Read along to learn more about how Lamm utilises the powerful SciX visualizations like the author network, concept cloud, and metrics to enhance and focus their queries.
+    
+  * **Filling in our Navigation Conferences**: Did you, or someone you know present, at:
+      - [High Precision Navigation](https://scixplorer.org/search?q=bibstem%3Ahpn+year%3A1989&sort=score+desc&sort=date+desc&p=1&n=10), 1989 International Workshop
+      - [Nav ‘89 Satellite Navigation](https://scixplorer.org/search?q=bibstem%3Asana+year%3A1989&sort=score+desc&sort=date+desc&p=1&n=10), Royal Institute of Navigation
+      - [Viking Navigation](https://scixplorer.org/search?q=bibstem%3Avina&sort=score+desc&sort=date+desc&p=1), 1979, NASA
+      - [International Conference on Maritime and Aeronautical Satellite Communication and Navigation](https://scixplorer.org/search?q=bibstem%3Amasc+year%3A1978&sort=score+desc&sort=date+desc&p=1&n=10), 1978<br>
+
+      If so, we would like to include their paper in SciX. Anyone can submit a missing abstract, conference proceeding, or article using the “Feedback” dropdown menu at the upper left of the SciX website. Select “Missing/Incorrect Record” and provide us with as much detail as you can. Every addition makes the system better for everyone.
+
+  * **Share Your iPoster**<br>
+    Did you present an iPoster at the June meeting of the [American Astronomical Society](https://aas.org/meetings/aas246)? Your abstract is already available in SciX. However, you can add a link to your iPoster for those who were unable to attend your session. From the “Feedback” dropdown menu at the upper left of the SciX website, select “Associated Articles..” After providing your contact information in case we have any questions, select “Other” from the “Relation Type” dropdown menu. For the free form “Custom Relation Type” field, type “iPoster link” or something similar. Then, provide the bibcode from your iPoster abstract listing; use the copy button when you look it up. Finally, provide the link to your iPoster. <br>
+
+  * **Has Sextant. Is Traveling**.<br>
+    Even in our modern era of satellite navigation, [celestial navigation](https://scixplorer.org/search?q=bibstem%3Ahcn&sort=score+desc&sort=date+desc&p=1) remains a critical back-up system. During July, [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), project scientist for astrophysics, will be on the [Pacific](https://scixplorer.org/search?q=keyword%3APacific&sort=score+desc&sort=date+desc&p=1) ocean assisting with the training of Coast Guard cadets using [traditional instruments](https://dictionary.obspm.fr/?formSearchTextfield=sextant&formSubmit=Search&showAll=1) and [visual observations](https://scixplorer.org/search?q=uat%3A%22Optical+observation%22&sort=score+desc&sort=date+desc&p=1). <br>
 
 * Development and data holdings updates as of July 1st:
   * Website and API

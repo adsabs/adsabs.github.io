@@ -11,7 +11,7 @@ To receive this listing via monthly email newsletter, along with announcements a
   * **“[The Power of Visualizations](../../blog/scix-visualizations)”, New Blog Post by SciX Ambassador, Sarah Lamm**<br>
     In this blog post, SciX Ambassador Sarah Lamm explores the powerful visualization features that SciX offers. Lamm highlights the varied options and how this expands their interdisciplinary research capabilities. Read along to learn more about how Lamm utilises the powerful SciX visualizations like the author network, concept cloud, and metrics to enhance and focus their queries.
     
-  * **Filling in our Navigation Conferences**<br>
+  * **Enriching Navigation Conference Information**<br>
     Did you, or someone you know present, at:
       - [High Precision Navigation](https://scixplorer.org/search?q=bibstem%3Ahpn+year%3A1989&sort=score+desc&sort=date+desc&p=1&n=10), 1989 International Workshop
       - [Nav ‘89 Satellite Navigation](https://scixplorer.org/search?q=bibstem%3Asana+year%3A1989&sort=score+desc&sort=date+desc&p=1&n=10), Royal Institute of Navigation

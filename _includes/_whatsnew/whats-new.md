@@ -5,16 +5,20 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 ## July 2025
 * Announcements:<br>
-  * **“[The Power of Visualizations](../../blog/scix-visualizations)”, New Blog Post by SciX Ambassador, Sarah Lamm**
+  * **Reflecting on the first in-person meeting of the SciX Advisory Board**<br>
+    In June, members of the SciX Advisory Board and the SciX Team met in person for the first time. Following two successful remote meetings, those that were able to travel convened at the Harvard Smithsonian Center for Astrophysics with other participants joining online for two days of discussion and workshopping on the capabilities, coverage and community engagement aspects of the SciX platform, ahead of the full launch later this year. It wasn’t all work though - the team were also treated to a tour of the Great Refractor, once the most powerful telescope in the United States, right here in the department. This historic in-house telescope is a reminder of the deep roots the department has in space-related research, and while the team discussed the future of the field and how SciX can best support it, the highlight for many was getting to sit in the astronomer’s seat of the telescope! You can find out more about the Advisory Board’s members here.
+    
+  * **“[The Power of Visualizations](../../blog/scix-visualizations)”, New Blog Post by SciX Ambassador, Sarah Lamm**<br>
     In this blog post, SciX Ambassador Sarah Lamm explores the powerful visualization features that SciX offers. Lamm highlights the varied options and how this expands their interdisciplinary research capabilities. Read along to learn more about how Lamm utilises the powerful SciX visualizations like the author network, concept cloud, and metrics to enhance and focus their queries.
     
-  * **Filling in our Navigation Conferences**: Did you, or someone you know present, at:
+  * **Filling in our Navigation Conferences**<br>
+    Did you, or someone you know present, at:
       - [High Precision Navigation](https://scixplorer.org/search?q=bibstem%3Ahpn+year%3A1989&sort=score+desc&sort=date+desc&p=1&n=10), 1989 International Workshop
       - [Nav ‘89 Satellite Navigation](https://scixplorer.org/search?q=bibstem%3Asana+year%3A1989&sort=score+desc&sort=date+desc&p=1&n=10), Royal Institute of Navigation
       - [Viking Navigation](https://scixplorer.org/search?q=bibstem%3Avina&sort=score+desc&sort=date+desc&p=1), 1979, NASA
       - [International Conference on Maritime and Aeronautical Satellite Communication and Navigation](https://scixplorer.org/search?q=bibstem%3Amasc+year%3A1978&sort=score+desc&sort=date+desc&p=1&n=10), 1978<br>
 
-      If so, we would like to include their paper in SciX. Anyone can submit a missing abstract, conference proceeding, or article using the “Feedback” dropdown menu at the upper left of the SciX website. Select “Missing/Incorrect Record” and provide us with as much detail as you can. Every addition makes the system better for everyone.
+    If so, we would like to include their paper in SciX. Anyone can submit a missing abstract, conference proceeding, or article using the “Feedback” dropdown menu at the upper left of the SciX website. Select “Missing/Incorrect Record” and provide us with as much detail as you can. Every addition makes the system better for everyone.
 
   * **Share Your iPoster**<br>
     Did you present an iPoster at the June meeting of the [American Astronomical Society](https://aas.org/meetings/aas246)? Your abstract is already available in SciX. However, you can add a link to your iPoster for those who were unable to attend your session. From the “Feedback” dropdown menu at the upper left of the SciX website, select “Associated Articles..” After providing your contact information in case we have any questions, select “Other” from the “Relation Type” dropdown menu. For the free form “Custom Relation Type” field, type “iPoster link” or something similar. Then, provide the bibcode from your iPoster abstract listing; use the copy button when you look it up. Finally, provide the link to your iPoster. <br>
@@ -24,8 +28,8 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 * Development and data holdings updates as of July 1st:
   * Website and API
-    + **[new]** Blog post on visualizations
-    + **[new]** Blog post introducing the SciX Advisory Board
+    + **[new]** Blog post: "[The Power of Visualizations](../../blog/scix-visualizations)" by Sarah Lamm
+    + **[new]** Blog post: "[Introducing the SciX Advisory Board](../../blog/scix-advisory-board)" by Anna Kelbert
     + **[new]** Export Service: Added AASTeX (PSJ), and added new table of contents endpoint to list all export endpoints and their types
     + **[improved]** Help pages: Added Pubspace and USGS bibgroup descriptions
     + **[improved]** Nectar:
@@ -47,7 +51,7 @@ To receive this listing via monthly email newsletter, along with announcements a
     + **[fixed]** Bumblebee: fixed signup form error messages 
   
   * Data holdings and pipelines
-    + 524k new records, and 10.3M new citations
+    + 287k new records, and 9.24M new citations
 
 <details>
 <summary>Development details</summary>

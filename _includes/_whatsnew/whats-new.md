@@ -3,6 +3,58 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## August 2025
+* Announcements:<br>
+  * **Professional Development Training - Register Your Interest!**<br>
+    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.
+    
+  * **Getting Resources Ready for a New Year**<br>
+    SciX has over 175,000 [physics](https://scixplorer.org/search?q=abs%3A%22physics+education+research%22&sort=score+desc&sort=date+desc&p=1) and [astronomy education research](https://scixplorer.org/search?q=bibstem%3AAEdRv&sort=score+desc&sort=date+desc&p=1) articles; most are available in the [PhysEd bibgroup](https://scixplorer.org/search?q=bibgroup%3APhysEd&sort=score+desc&sort=date+desc&p=1). By submitting feedback, you can help us link the written descriptions to the associated supplementary materials that make these resources most useful:
+    - Go to the "Feedback" dropdown menu at the upper right of the SciX web interface, and select the “Associated Articles” option.
+    - On the “[Submit Associated Articles for the SciX Abstract Service](https://scixplorer.org/feedback/associatedarticles?from=%2F)” form, choose “Other” from the “Relation Type” dropdown menu.
+    - Describe the resource relationship briefly in the “Custom Relation Type” text box.
+    - Then, input the bibcode of the article and a link to the resource.<br>
+    
+    If we are missing something you use, let us know by selecting the “Missing/Incorrect Record” option on the “Feedback” dropdown. Sharing supplemental materials through SciX ensures these resources remain findable and accessible and continue to be reused.
+    
+  * **Astrometry: the "Old Astronomy"**<br>
+    In the late 19th century, a debate raged over whether astronomy was properly the study of the positions and motions of celestial bodies (astrometry) or could include techniques from the physics and chemistry laboratories ([astrophysics](https://scixplorer.org/abs/2025PhP....27....3B/abstract)). Project Scientist for Astrophysics [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html) is an astrometrist by training. She is going way back to basics and teaching [naked-eye astronomy](https://scixplorer.org/search?q=abs%3A%22naked-eye+astronomy%22&sort=score+desc&sort=date+desc&p=1) and [constellation identification](https://scixplorer.org/search?q=uat%3A%22Cultural+astronomy%22&sort=score+desc&sort=date+desc&p=1) for the first half of this month. Lucky for us, she plans to rejoin the [21st century](https://scixplorer.org/search?q=identifier%3A%222005ASPC..338%2A%22&sort=score+desc&sort=date+desc&p=1) for the fall.<br>
+
+* Development and data holdings updates as of August 1st:
+  * Website and API
+    + Nectar releases:
+       +  **[new]** Support of PubMed Central links in Full Text Sources
+       +  **[improved]** Show download button to all facet modals
+       +  **[improved]** Added system status page link in footer
+       +  **[improved]** Added banner for system wide message
+       +  **[fixed]** Improved search input, fixed bug that caused input to clear unexpectedly
+       +  **[fixed]** Deduplicate incoming esource URLs
+       +  **[ops]** Added key alias entry in search filter tuple (quadruple)
+    + Journals Database releases:
+       +  **[improved]** Added `journals.master.deprecated` column to squash unused bibstems
+       +  **[improved]** Updated pubtype sort in journal searches
+       +  **[improved]** Updated summary display to convert `completeness_details` from text to JSON 
+  * Data holdings and pipelines
+    + 1M new records, and 7.86M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Journals Database Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/ADSJournalsDB/releases/tag/v1.3.3">v1.3.3</a></li>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.149">v0.19.149</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.19.146">v0.19.146</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## July 2025
 * Announcements:<br>
   * **Reflecting on the first in-person meeting of the SciX Advisory Board**<br>
@@ -46,9 +98,9 @@ To receive this listing via monthly email newsletter, along with announcements a
        +  Enforced highlight length caps set by publishers
     + **[fixed]** API Gateway:
        + Fixed Feedback Email Subject Format
-       + Fixed bug caused by behavior change in ‘urljoin’ that broke https link resolution
-       + Added more descriptive error message when users query the API with ‘Bearer:$TOKEN’ instead of ‘Bearer $TOKEN’
-    + **[fixed]** Bumblebee: fixed signup form error messages 
+       + Fixed bug caused by behavior change in `urljoin` that broke https link resolution
+       + Added more descriptive error message when users query the API with `Bearer:$TOKEN` instead of `Bearer $TOKEN`
+    + **[fixed]** Bumblebee: fixed signup form error messages
   
   * Data holdings and pipelines
     + 287k new records, and 9.24M new citations

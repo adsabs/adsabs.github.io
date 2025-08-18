@@ -1,0 +1,26 @@
+Once you have a results list from an initial query you can use our filters to further refine your search.  Your results list will change each time you apply a limit.
+
+
+Clicking on any of the listed terms within a filter will automatically apply that term as a filter. If you choose a single term from a given filter, you will be prompted to **limit to** or **exclude** the search term from the list of results; if you choose more than one term from within a single filter, you will be prompted to select **and** (results must contain all of the selected terms), **or** (results must contain at least one of the selected terms), or **exclude** (results must not contain the selected terms).
+
+### Available filters
+  * *Authors*: filter individual authors in the results list
+  * *Collections*: include or exclude results from the astronomy, physics, and general collections. Note that all collections are included by default in searches using the Modern Form, but searches using the Classic Form may have a collection selected on the search form
+  * *Refereed status*: include or exclude refereed or non-refereed publications
+  * *Institutions*: include or exclude results from the curated [canonical affiliations](../../blog/affiliations-feature) that were found in the results of your original query
+  * *Keywords*: include or exclude keywords that were found in the results of your original query
+  * *Publications*: include or exclude journals that were found in the results of your original query
+  * *Bib Groups*: include or exclude results from curated [bibliographic groups](../search/search-syntax#bibliographic-groups)
+  * *SIMBAD Objects*: include or exclude results that contain [SIMBAD](http://simbad.u-strasbg.fr/simbad/) object types or individual objects
+  * *NED Objects*: include or exclude results that contain [NED](https://ned.ipac.caltech.edu/) object types or individual objects
+  * *Data*: include or exclude results that contain data in various archives (e.g. CDS, HEASARC, CXO, NED)
+  * *Vizier Tables*: include or exclude results that have [Vizier](https://vizier.u-strasbg.fr/viz-bin/VizieR) tables or catalogs
+  * *Publication Type*: include or exclude records based on the document type
+
+
+### Example
+
+1. Search for *author:&ldquo;Huchra, John"*.
+2. Open the author filter; you will get a list that includes "Geller, M" and "Illingworth, G." If you want the articles in which "Geller, M." is a coauthor with "Huchra, John" you would click on the name "Geller, M." in the list.
+3. If you want the articles in which either "Geller, M." or "Illingworth, G" were coauthors you would click the boxes next to both of their names and choose "or" from the selection box.
+If you want the articles in which both "Geller, M." and "Illingworth, G" were coauthors you would click the boxes next to both of their names and choose "and" from the selection box. (There should be zero results for this query!)

@@ -9,8 +9,8 @@ For researchers, ORCID identifiers are useful in a couple of ways:
 
 Getting your ORCID is simple!  All you have to do is [go to the ORCID website](http://orcid.org) and register to obtain a unique identifier which you can use immediately.  My own id is 0000-0002-4110-3511, and I have used it in [my arXiv user profile](http://arxiv.org/a/accomazzi_a_1.html), my AAS membership profile, my Elsevier profile, my Zenodo account, and during the submission of a few papers I published recently.  One of the features of ORCID’s registry is the ability for a user to manage his or her profile by adding information about one’s employment, funding, or publications, which can then be shared publicly.  As an example, here is my public ORCID profile: [http://orcid.org/0000-0002-4110-3511](http://orcid.org/0000-0002-4110-3511)
 
-<img class="img-responsive" src="./../help/img/orcid_image_0.png" alt="orcid page 1"/>
-<img class="img-responsive" src="./../help/img/orcid_image_1.png" alt="orcid page 2"/>
+<img class="img-responsive" src="{{ site.baseurl }}/help/img/orcid_image_0.png" alt="orcid page 1"/>
+<img class="img-responsive" src="{{ site.baseurl }}/help/img/orcid_image_1.png" alt="orcid page 2"/>
 
 *Fig 1: Private and public views of Alberto Accomazzi’s ORCID profile.  Some records in the "Works" section are not visible in the public view since they are marked as private.*
 
@@ -32,7 +32,7 @@ We’re pleased to announce that the [new ADS interface](https://ui.adsabs.harva
 
 * Search ADS for your papers and add to the list (by claiming records using the "Claim in ORCID" button)
 
-<img src="./../help/img/orcid-claiming.gif" alt="an animated gif of the orcid claiming process" class="img-responsive" style="margin:auto">
+<img src="{{ site.baseurl }}/help/img/orcid-claiming.gif" alt="an animated gif of the orcid claiming process" class="img-responsive" style="margin:auto">
 
 *	Fig. 2: Claiming records is simple: activate ORCID mode, then click on "Claim in ORCID"*
 

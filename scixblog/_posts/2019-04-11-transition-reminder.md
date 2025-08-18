@@ -5,7 +5,7 @@ author: "Kelly Lockhart"
 position: "ADS"
 category: scixblog
 label: news
-thumbnail: ../help/img/import_help_02.png
+thumbnail: ../scixhelp/img/import_help_02.png
 ---
 
 {% include _blogcontent/2019-04-11-transition-reminder.md %}

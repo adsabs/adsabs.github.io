@@ -1,6 +1,7 @@
 ---
 layout: post_scix
 title: "Searching for papers by an author with a common name"
+category: quickstart_scix
 order: 5
 ---
 
@@ -18,7 +19,7 @@ By default, SciX returns all relevant matches when searching for author names. F
 This can be especially helpful when a given author often uses their middle initial. For example, compare the number of results for author Y. Wang:
 
 <figure>
-   <img src="/help/img/exact-name-1.png"  class="img-responsive" alt="Exact
+   <img src="{{ site.baseurl }}/help/img/exact-name-1.png"  class="img-responsive" alt="Exact
    name matching query with full family name and given name
    initial. 5732 total search results.">
    </figure>
@@ -27,7 +28,7 @@ This can be especially helpful when a given author often uses their middle initi
 With those for author Y. S. Wang:
 
 <figure>
-   <img src="/help/img/exact-name-2.png"  class="img-responsive" alt="Exact
+   <img src="{{ site.baseurl }}/help/img/exact-name-2.png"  class="img-responsive" alt="Exact
    name matching query with full family name and given name and middle name
    initials. 233 total search results.">
 </figure>
@@ -45,7 +46,7 @@ The facets are useful when trying to narrow down a large list of search results.
 - SIMBAD and NED Objects: filter based on a specific object 
 
 <figure>
-   <img src="/help/img/filter-facets.png"  class="img-responsive"
+   <img src="{{ site.baseurl }}/help/img/filter-facets.png"  class="img-responsive"
    alt="Search results with filter facets highlighted.">
    </figure>
 

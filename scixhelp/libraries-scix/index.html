@@ -1,0 +1,14 @@
+---
+layout: post_scix
+category: libraries-scix
+---
+
+<h1> SciX Libraries </h1>
+
+The SciX Libraries are intended to be the place for creating and curating collections of bibliographic records. whether it is for an article you are writing, a CV, or for sharing with colleagues. The libraries are much like the shopping basket found in services such as Amazon, and the features currently available are outlined below. The SciX Libraries are only available to users who have a SciX account, so head over to the <a href="https://ui.scixplorer.org/#user/account/register">sign up page</a> first.
+
+{% assign posts = site.categories.libraries-scix | sort:"order"  %}
+    {% for post in posts %}
+        <h3>{{post.title}}</h3>
+        {{post.content}}
+    {% endfor %}

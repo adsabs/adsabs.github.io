@@ -5,7 +5,7 @@ author:  Alberto Accomazzi
 position: ADS PI
 category: scixblog
 label: news
-thumbnail: ../help/img/orcid-claiming.gif
+thumbnail: ../scixhelp/img/orcid-claiming.gif
 repost: "http://www.astrobetter.com/blog/2016/03/07/claiming-papers-and-finding-people-with-orcid/"
 comment: "Claim your ORCID papers easily in ADS"
 ---

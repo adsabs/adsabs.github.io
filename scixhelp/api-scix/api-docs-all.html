@@ -1,0 +1,28 @@
+---
+layout: post_scix
+title: SciX API Documentation
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SciX API Documentation</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/scixhelp/api-scix/rapidoc-styles.css">
+</head>
+<body>
+    <rapi-doc 
+        spec-url="https://api.scixplorer.org/openapi.json"
+        theme="light"
+        show-header="false"
+        allow-authentication="true"
+        allow-api-list-style-selection="true"
+        allow-server-selection="true"
+        server-url="https://api.scixplorer.org"
+        api-key-name="Authorization"
+        api-key-value="Bearer YOUR_API_TOKEN"
+        api-key-location="header">
+    </rapi-doc>
+    <script src="{{ site.baseurl }}/scixhelp/api-scix/rapidoc-theme.js"></script>
+</body>
+</html>

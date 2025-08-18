@@ -25,12 +25,12 @@
 
   <link
     rel="stylesheet"
-    href="{{ site.baseurl }}/help/common/css/styles.css "
+    href="{{ site.baseurl }}/help/common/css/styles.css"
   />
   <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href="{{ site.baseurl }}/help/common/images/apple-touch-icon.png"
+    href="{{ site.baseurl }}/help/img/apple-touch-icon.png"
   />
   <link
     rel="manifest"
@@ -38,7 +38,7 @@
   />
   <link
     rel="mask-icon"
-    href="{{ site.baseurl }}/help/common/images/safari-pinned-tab.svg"
+    href="{{ site.baseurl }}/help/img/safari-pinned-tab.svg"
     color="#5bbad5"
   />
   <meta name="theme-color" content="#ffffff" />
@@ -82,9 +82,9 @@
     document.head.appendChild(link);
 
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      link.href = '/help/common/images/scix/FAVICON-white-frame-32X32.png';
+      link.href = '{{ site.baseurl }}/help/common/images/scix/FAVICON-white-frame-32X32.png';
     } else {
-      link.href = '/help/common/images/scix/FAVICON-black-frame-32X32.png';
+      link.href = '{{ site.baseurl }}/help/common/images/scix/FAVICON-black-frame-32X32.png';
     }
   </script>
 

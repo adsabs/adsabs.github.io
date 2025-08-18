@@ -4,12 +4,16 @@ url: https://ui.adsabs.harvard.edu
 email: adshelp@cfa.harvard.edu
 description: All your questions will be answered here.
 
+# Base URLs for different sites
+ads_base_url: https://ui.adsabs.harvard.edu
+scix_base_url: https://scixplorer.org
+
 # Social
 twitter:
   username: adsabs
 github:
   username: adsabs
-logo: /help/common/images/transparent_logo.svg
+logo: /help/img/bbb_assets/transparent_logo.svg
 
 permalink: /:categories/:title
 # Build settings
@@ -35,4 +39,4 @@ defaults:
   - scope:
       path: ''
     values:
-      image: /help/common/images/transparent_logo.svg
+                        image: /help/img/bbb_assets/transparent_logo.svg

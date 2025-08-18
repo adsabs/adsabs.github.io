@@ -1,0 +1,9 @@
+---
+layout: post_scix
+category: data_faq-scix
+---
+
+{% assign posts = site.categories.data_faq-scix | sort:"order"  %}
+    {% for post in posts %}
+    {{post.content}}
+      {% endfor %}

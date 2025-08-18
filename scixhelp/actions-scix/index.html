@@ -1,0 +1,12 @@
+---
+layout: post_scix
+category: actions-scix
+---
+
+<h2>All Entries in the Category "Working with Search Results"</h2>
+
+{% assign posts = site.categories.actions-scix | sort:"order"  %}
+    {% for post in posts %}
+    <h3>{{post.title}}</h3>
+    {{post.content}}
+      {% endfor %}

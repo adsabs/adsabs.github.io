@@ -26,16 +26,16 @@ With the advent of electronic publishing and the adoption of FAIR principles, mo
 
 In general, any given data collection may be composed by aggregating records which are curated by data managers collaborating with SciX, and records which are mined from the literature by the indexing pipelines implemented by SciX. As our full-text holdings in SciX increase and our ability to incorporate robust AI/ML methods in our pipelines improves, we expect to reduce the amount of human efforts needed to curate these collections long-term.
 
-### Citations and Mentions
+### Citations and Credits
 
 One distinctive feature of SciX is to track citations between research works. While this has traditionally meant providing links between papers based on the list of formal citations found in their bibliography, it has now made it possible to also track citations between a paper and a data product or software records. This information is exposed in SciX via the “Citations” tab available in the left menu for each record, as shown in figure 2.
 
-However, thanks to our text mining efforts, we are now able to supplement this information with additional links between papers and datasets or software mined from the papers’ full-text (typically the so-called “data availability statement” sections). This provides an additional set of linkages between papers and data products which will be exposed as formal mentions in SciX, and will become an additional metric that we will track going forward.
+However, thanks to our text mining efforts, we are now able to supplement this information with additional links between papers and datasets or software mined from the papers’ full-text (typically the so-called “data availability statement” sections). This provides an additional set of linkages between papers and data products mentioned in them which are named credits in SciX. This will become an additional impact metric that we will track for an increasingly larger number of research products such as data and software going forward.
 
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixdatacollections2.png" />
 <em>
-Figure 2: The [SciX record](https://scixplorer.org/abs/2016ornl.data.1328T/abstract) for a dataset hosted by the ORNL DAAC. As of 8/25/2025, SciX has identified 139 citations and 2 credits from mentions for the dataset. Insert: the corresponding citation metrics for the record in question.
+Figure 2: The <a href="https://scixplorer.org/abs/2016ornl.data.1328T/abstract">SciX record</a> for a dataset hosted by the ORNL DAAC. As of 8/25/2025, SciX has identified 139 citations and 2 credits from mentions for the dataset. Insert: the corresponding citation metrics for the record in question.
 </em>
 </div>
 <br>
@@ -44,4 +44,4 @@ Figure 2: The [SciX record](https://scixplorer.org/abs/2016ornl.data.1328T/abstr
 
 Tracking the use of research data and software in the scientific literature is one of the primary goals of SciX. This not only helps reproducibility of scientific results, but it also allows greater discoverability of all the research artifacts involved: papers, software, and datasets. An additional benefit of enhancing the FAIRness of this content is the ability for researchers, data managers, and funders alike to evaluate the scientific impact of people, projects and institutions.
 
-For more information on our efforts in capturing citations and mentions to dataset and for practical examples of how to leverage SciX’s features further, please see our 2024 blog post by Edwin Henneken on SciX Data Linking and Indexing.
+For more information on our efforts in capturing citations and credits to datasets and for practical examples of how to leverage SciX’s features further, please see our [2024 blog post](data-linking-III) by Edwin Henneken on SciX Data Linking and Indexing.

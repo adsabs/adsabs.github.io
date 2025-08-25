@@ -1,9 +1,9 @@
 ---
-layout: blog_post
+layout: blog_post_scix
 title: "SciX Data Collections"
 author: "Alberto Accomazzi & Edwin Henneken"
 position: "SciX Team"
-category: blog
+category: scixblog
 label: general, news
 thumbnail: blog/images/scixdatacollections2.png
 ---

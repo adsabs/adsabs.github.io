@@ -3,6 +3,99 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## September 2025
+* Announcements:<br>
+  * **Professional Development Training - Register Your Interest!**<br>
+    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.
+    
+  * **“SciX Data Collections” Blog Post**<br>
+    We have published a [new blog post](../../blog/scix-data-collections) about data collections in ADS/SciX! Tracking the use of research data and software in the scientific literature is one of the primary goals of SciX, and maintaining data collections is the primary way for users to discover them. This blog post describes how SciX curators generate and maintain these resources and how users benefit from having them integrated into the system. Please see [the blog post](../../blog/scix-data-collections) for more details.<br>
+    
+  * **SciX at the NASA Open Source Science Data Repositories Workshop**<br>
+    The Science Explorer was featured at the NASA Open Source Science Data Repositories Workshop, which was held in Huntsville, AL, August 25-27. The workshop brings together NASA data officers, repository data stewards, NASA-funded data producers, and NASA Office of the Chief Science Data Officer (OCSDO) leadership to discuss current issues collaboratively and identify potential scientific data and information solutions that can be developed and implemented across NASA Science Mission Directorate (SMD) repositories. [Alberto Accomazzi](../../about/team/team/aaccomazzi.html), the SciX PI, gave two presentations: “What’s new with SciX” and “Metrics that Count with SciX,” in addition to a demo of the system.<br>
+
+  * **NASA Awards Indexed**<br>
+    We have added records for [NASA Awards](https://scixplorer.org/search?n=10&p=1&q=doctype%3Aproposal+pub%3A%22NASA%22&sort=score+desc&sort=date+desc) in astrophysics and heliophysics projects in an ongoing effort to index NASA science proposals and awards. In addition, we are enriching the records with respective award information from [USASpending.gov](http://USASpending.gov), which supports [searching by grant numbers](https://scixplorer.org/search?n=10&p=1&q=grant%3A80NSSC25K7169&sort=score+desc&sort=date+desc).<br>
+
+  * **SciX at Sea**<br>
+    In July, [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), project scientist for astrophysics, sailed from Victoria, British Columbia, to San Francisco, California, on the Coast Guard Academy training ship, a three-masted barque, to assist with celestial navigation [instruction](https://scixplorer.org/search?n=10&p=1&q=bibgroup%3APhysEd+abs%3Asextant+-abs%3A%22Solar+Disk+Sextant+Experiment%22&sort=score+desc&sort=date+desc). Despite global GPS coverage, sailors still need to know [how to operate without it](https://scixplorer.org/search?n=10&p=1&q=abs%3A(%22GPS+denial%22+OR+%22GPS+vulnerability%22+OR+%22GPS+spoof%22+OR+%22GPS+alternative%22)&sort=score+desc&sort=date+desc). With the cadets, she enjoyed drawing the connections that [join sky and ocean](https://scixplorer.org/abs/2007soj..book.....D/abstract). If you are more a sea enthusiast, then you should also appreciate SciX’s coverage of [oceanography](https://scixplorer.org/search?n=10&p=1&q=abs%3A(oceanography)&sort=score+desc&sort=date+desc), including more than [15,000 open-access](https://scixplorer.org/search?n=10&p=1&q=abs%3A(oceanography)+has%3Adata&sort=score+desc&sort=date+desc), refereed articles. For more than 500 oceanographic publications, we have linked them directly to their [associated datasets](https://scixplorer.org/search?n=10&p=1&q=abs%3A(oceanography)+has%3Adata&sort=score+desc&sort=date+desc). From [Polaris](https://scixplorer.org/search?n=10&p=1&q=abs%3A(Polaris)+collection%3Aastronomy&sort=score+desc&sort=date+desc) to the [Pacific](https://scixplorer.org/search?n=10&p=1&q=abs%3A(Pacific)+collection%3Aearthscience&sort=score+desc&sort=date+desc), SciX is your guide to the scientific literature. <br>
+
+* Development and data holdings updates as of September 1st:
+  * Website and API
+    + **[new]** [SciX Data Collections](../../blog/scix-data-collections) blog post
+    + Export Service releases:
+       +  **[improved]** Added support of new doctypes (`instrument` and `service`)
+       +  **[improved]** Edited manifest endpoint to update file extensions
+       +  **[improved]** Added handling for MathML markup
+    + Nectar releases:
+       +  **[new]** Added "Credits" and "Mentions" to left menu bar on abstracts’ pages
+       +  **[improved]** Removed `[citations]` usages
+       +  **[improved]** Added `boostType` parameter to search based on the App Mode
+       +  **[improved]** Added warning message on potentially incomplete search results
+       +  **[fixed]** Fixed issue with email input
+       +  **[fixed]** Fixed an autocomplete menu behavior ensuring the menu closes when the first suggested item matches exactly the search input
+       +  **[fixed]** Text overlap issue
+       +  **[fixed]** Issue with alpha sorting in facets modal
+       +  **[fixed]** Library pagination bug
+       +  **[ops]** Removed beta labels and updated logo
+    + Solr releases:
+       +  **[new]** Added software mentions schema fields: `mention`, `mention_count`, `credit`, `credit_count`
+       +  **[improved]** Updated the schema to include `reference_count`
+    + Vault releases:
+       +  **[improved]** Allow auto-updating of user library link servers
+       +  **[fixed]** Vault requests failed if payload was empty
+       +  **[fixed]** Fixed foreign key assignment for library link servers in user table
+       +  **[fixed]** Updated alembic upgrade
+       +  **[fixed]** Fixed bug in notifications
+       +  **[ops]** Allow users to remove arxiv papers coming from `get other papers` for email notification
+       +  **[ops]** Allow for separate banners on ADS and SciX
+       +  **[ops]** Added logic to detect email notification updates coming from SciX
+       +  **[ops]** Allow for myADSPipeline to send emails using SciX urls
+  * Data holdings and pipelines
+    + 289K new records, and 2.99M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Export Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.14">v3.1.14</a></li>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.13">v3.1.13</a></li>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.12">v3.1.12</a></li>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.8">v0.22.8</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.6">v0.22.6</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.3">v0.22.3</a></li>
+</ul>
+
+<li>Solr Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.5.1">v96.1.5.1</a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.5">v96.1.5</a></li>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.1.4">v96.1.4</a></li>
+</ul>
+
+<li>Vault Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.2.0">v1.2.0</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.9">v1.1.9</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.8">v1.1.8</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.7">v1.1.7</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.6">v1.1.6</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.5">v1.1.5</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.4">v1.1.4</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.3">v1.1.3</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.2">v1.1.2</a></li>
+<li><a href="https://github.com/adsabs/vault/releases/tag/v1.1.1">v1.1.1</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## August 2025
 * Announcements:<br>
   * **Professional Development Training - Register Your Interest!**<br>

@@ -5,8 +5,13 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 ## September 2025
 * Announcements:<br>
+  * **SciX is Out of Beta and Ready for Take-Off!**<br>
+    Help us gear up for launch! Science Explorer's Beta label has officially been removed, and momentum is building as we prepare for our full launch of the platform on 30th September. This is an exciting milestone for the community, and we’d love your help in spreading the word. Keep an eye out for SciX launch content across our social media channels, and please share it with your networks, colleagues, and collaborators. Together, we can make sure that more researchers discover the power of SciX.<br>
+
+    If you're already a SciX user and would like to be part of our launch, we are collecting stories from our users about how the tool has revolutionized their research. If you would like to share your own story, either by text or in a short video, [follow this link to complete the form](https://docs.google.com/forms/d/e/1FAIpQLSdm9JYp8fFm1UwtR4Nman_s60FTGnDitW7dcsBZoYcrsdLQig/viewform?usp=header).<br>
+    
   * **Professional Development Training - Register Your Interest!**<br>
-    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.
+    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.<br>
     
   * **“SciX Data Collections” Blog Post**<br>
     We have published a [new blog post](../../blog/scix-data-collections) about data collections in ADS/SciX! Tracking the use of research data and software in the scientific literature is one of the primary goals of SciX, and maintaining data collections is the primary way for users to discover them. This blog post describes how SciX curators generate and maintain these resources and how users benefit from having them integrated into the system. Please see [the blog post](../../blog/scix-data-collections) for more details.<br>
@@ -28,8 +33,7 @@ To receive this listing via monthly email newsletter, along with announcements a
        +  **[improved]** Edited manifest endpoint to update file extensions
        +  **[improved]** Added handling for MathML markup
     + Nectar releases:
-       +  **[new]** Added "Credits" and "Mentions" to left menu bar on abstracts’ pages
-       +  **[improved]** Removed `[citations]` usages
+       +  **[new]** Added "Credits" and "Mentions" to left menu bar on abstracts’ pages, which display the software and datasets mentioned by a given paper or any papers that credit a given software package or dataset
        +  **[improved]** Added `boostType` parameter to search based on the App Mode
        +  **[improved]** Added warning message on potentially incomplete search results
        +  **[fixed]** Fixed issue with email input
@@ -37,20 +41,15 @@ To receive this listing via monthly email newsletter, along with announcements a
        +  **[fixed]** Text overlap issue
        +  **[fixed]** Issue with alpha sorting in facets modal
        +  **[fixed]** Library pagination bug
-       +  **[ops]** Removed beta labels and updated logo
+       +  **[ops]** Updated logo
     + Solr releases:
        +  **[new]** Added software mentions schema fields: `mention`, `mention_count`, `credit`, `credit_count`
        +  **[improved]** Updated the schema to include `reference_count`
     + Vault releases:
+       +  **[new]** Added logic to convert myADS emails to SciX email notifications if notifications are created or edited in SciX 
        +  **[improved]** Allow auto-updating of user library link servers
-       +  **[fixed]** Vault requests failed if payload was empty
-       +  **[fixed]** Fixed foreign key assignment for library link servers in user table
-       +  **[fixed]** Updated alembic upgrade
-       +  **[fixed]** Fixed bug in notifications
        +  **[ops]** Allow users to remove arxiv papers coming from `get other papers` for email notification
        +  **[ops]** Allow for separate banners on ADS and SciX
-       +  **[ops]** Added logic to detect email notification updates coming from SciX
-       +  **[ops]** Allow for myADSPipeline to send emails using SciX urls
   * Data holdings and pipelines
     + 289K new records, and 2.99M new citations
 

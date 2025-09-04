@@ -3,8 +3,7 @@ layout: about_scix
 title: "Team"
 ---
 
-The Science Explorer (SciX) personnel are:
-
+Science Explorer (SciX) Personnel:
 - [Dr. Alberto Accomazzi](../team/team/aaccomazzi.html) - PI & Program Manager  
 - [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist Emeritus
 - [Dr. Pavlos Protopapas](../team/team/pprotopapas.html) - Interim Project Scientist for Data Science
@@ -29,7 +28,10 @@ The Science Explorer (SciX) personnel are:
 - [Dr. Jeffrey Pomerantz](../team/team/jpomerantz.html) - Digital Technologies Development Librarian
 - [Dr. Atilla Kaan Alkan](../team/team/aalkan.html) - Postdoctoral Research Fellow
 
-SciX research associates are:
+Community Engagement Coordinator: 
+- [Dr. Suze Kundu](../team/team/skundu.html)
+
+SciX Research Associates:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)
 - [Dr. Stephanie Jarmak](../team/team/sjarmak.html)
 

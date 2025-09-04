@@ -3,8 +3,6 @@
 
 Stephanie Jarmak is the former ADS project scientist for planetary science and is now a Research Associate for ADS and SciX. 
 
-Dr. Jarmak studies asteroids, planetary rings, and grainflow processes on planetary bodies and contributes to the planetary community through her committee and social media group leadership roles. 
-
 Dr. Jarmak obtained a Ph.D. in Physics - Planetary Sciences from the University of Central Florida in 2020, a Master’s in Physics from Texas A&M-Commerce in 2015, and a Bachelor of Science in Earth, Atmospheric and Planetary Sciences from MIT in 2013. 
 
 [stephanie.jarmak [at] cfa.harvard.edu](mailto:stephanie.jarmak@cfa.harvard.edu)

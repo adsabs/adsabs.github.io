@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: about_scix
 title: "Dr. Atilla Kaan Alkan"
 ---
 

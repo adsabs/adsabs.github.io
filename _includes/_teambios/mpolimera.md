@@ -7,4 +7,6 @@ Post graduation, Mugdha joined the ADS back office development team. She is usin
 
 Outside of work, she trains medical assistance service dogs, revives plants from the dead, and does a ton of refurbishing and DIY projects.
 
+You can find about more about Mugdha at [www.mugdhapolimera.com](www.mugdhapolimera.com).
+
 [mugdha.polimera [at] cfa.harvard.edu](mailto:mugdha.polimera@cfa.harvard.edu)

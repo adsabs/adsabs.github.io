@@ -518,7 +518,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 
    Looking to streamline your workflow? The SciX Script Generator creates custom scripts for querying the SciX API, perfect for automating searches and integrating SciX data into your projects. [Generate your script here](https://chatgpt.com/g/g-j6N0Wpd0M-ads-api-code-generator).<br>
 
-   We invite you to test these new resources and let us know what you think at adshelp@cfa.harvard.edu.<br>
+   We invite you to test these new resources and let us know what you think at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}<br>
 
   **Spotlight on SciX Project Scientist Dr. Jennifer Lynn Bartlett**<br>
    The Women In Astronomy blog recently featured Dr. Jennifer Lynn Bartlett, SciX Project Scientist, in their latest career profile: ["Have Sextant, Will Travel."](https://womeninastronomy.blogspot.com/2025/01/career-profile-have-sextant-will-travel.html)<br>
@@ -1756,7 +1756,7 @@ Apply now and become a leader in the SciX community! [Learn more and submit your
 ## November 2022
 * Announcements:
   + ADS has an opening for the Project Scientist for Astrophysics, who will work to establish and maintain the ADS as a world leading information resource for astrophysics and related disciplines. The employee will devote 30% of their time to do original research in astrophysics. The project also has two developer positions still open. Find out more and apply [here](../../about/careers).
-  + The ADS team will be hosting the 2022 [ADS Users Group](../../about/adsug/adsug) meeting November 9 and 10. Do you have a request, suggestion, or general feedback about the ADS project? You're welcome to submit it to the advisory panel by [emailing us](mailto:adshelp@cfa.harvard.edu) with “ADSUG” in the subject line.
+  + The ADS team will be hosting the 2022 [ADS Users Group](../../about/adsug/adsug) meeting November 9 and 10. Do you have a request, suggestion, or general feedback about the ADS project? You're welcome to submit it to the advisory panel by emailing us at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %} with “ADSUG” in the subject line.
   + ADS maintains a database of summary information about the publications we index---the Journals database (JournalsDB). It includes information that the ADS uses for internal content management, but that is also useful for librarians and other content managers to know about how specific titles are classified and what the ADS' holdings are for individual titles and volumes. More information is available on our [API documentation](../../help/api/api-docs.html) and in our [example Jupyter notebook](https://github.com/adsabs/adsabs-dev-api/blob/master/API_documentation_Python/Journals_API_Python.ipynb).
   + ADS pipelines have been updated to calculate metrics for software records ingested from Zenodo. Metrics for these records can be examined individually or in aggregate with any other records.
 * Development and data holdings updates as of November 1st:
@@ -2149,7 +2149,7 @@ Apply now and become a leader in the SciX community! [Learn more and submit your
 ## November 2021
 * Announcements:
   + We've given our homepage search examples a refresh: the selection of search examples has been updated based on user feedback, and the author names in the examples now reflect recent prize winners.
-  + The ADS team will be hosting the 2021 [ADS Users Group](../../about/adsug/adsug) meeting November 15-16. Do you have a request, suggestion, or general feedback about the ADS project? You are welcome to submit it to the advisory panel by [emailing us](mailto:adshelp@cfa.harvard.edu) with “ADSUG” in the subject line.
+  + The ADS team will be hosting the 2021 [ADS Users Group](../../about/adsug/adsug) meeting November 15-16. Do you have a request, suggestion, or general feedback about the ADS project? You are welcome to submit it to the advisory panel by emailing us at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %} with “ADSUG” in the subject line.
 
 * Development and data holdings updates as of November 1st:
   * Website and API
@@ -2180,7 +2180,7 @@ Apply now and become a leader in the SciX community! [Learn more and submit your
 
 ## October 2021
 * Announcements:
-  + The 2021 ADS Users Group (ADSUG) Meeting will take place virtually on November 15-16. ADS users are welcome to submit feedback or questions to the panel by sending an email to adshelp@cfa.harvard.edu with “ADSUG” in the subject line.  The meeting program and presentations will be posted on the [ADSUG website](../../about/adsug/adsug).
+  + The 2021 ADS Users Group (ADSUG) Meeting will take place virtually on November 15-16. ADS users are welcome to submit feedback or questions to the panel by sending an email to <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %} with “ADSUG” in the subject line.  The meeting program and presentations will be posted on the [ADSUG website](../../about/adsug/adsug).
 
 * Development and data holdings updates as of October 1st:
   * Website and API

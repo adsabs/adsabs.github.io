@@ -5,4 +5,4 @@ Dr Suze Kundu is a nanochemist, science communicator, and Research Community Eng
 
 Beyond her current role, Suze has spent almost two decades bridging the gap between research and public understanding, as an academic, TV presenter, writer, and speaker. She is passionate about creating equitable spaces for discovery and ensuring that innovation benefits the communities it serves.
 
-[suzekundu [at] gmail.com](mailto:suzekundu@gmail.com)
+[Suze's LinkedIn](https://www.linkedin.com/in/suzekundu/)

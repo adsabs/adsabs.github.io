@@ -3,7 +3,7 @@ layout: about
 title: "Team"
 ---
 
-The ADS personnel are:
+Astrophysics Data Systems (ADS) Personnel:
 
 - [Dr. Alberto Accomazzi](../team/team/aaccomazzi.html) - PI & Program Manager  
 - [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist Emeritus
@@ -29,7 +29,10 @@ The ADS personnel are:
 - [Dr. Jeffrey Pomerantz](../team/team/jpomerantz.html) - Digital Technologies Development Librarian
 - [Dr. Atilla Kaan Alkan](../team/team/aalkan.html) - Postdoctoral Research Fellow
 
-ADS research associates are:
+Community Engagement Coordinator: 
+- [Dr. Suze Kundu](../team/team/skundu.html)
+
+SciX Research Associates:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)
 - [Dr. Stephanie Jarmak](../team/team/sjarmak.html)
 

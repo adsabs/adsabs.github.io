@@ -32,7 +32,7 @@ Astrophysics Data Systems (ADS) Personnel:
 Community Engagement Coordinator: 
 - [Dr. Suze Kundu](../team/team/skundu.html)
 
-SciX Research Associates:
+ADS Research Associates:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)
 - [Dr. Stephanie Jarmak](../team/team/sjarmak.html)
 

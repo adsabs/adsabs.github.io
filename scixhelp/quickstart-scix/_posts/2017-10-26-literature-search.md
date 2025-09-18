@@ -1,6 +1,7 @@
 ---
 layout: post_scix
 title: "Beginning a literature search"
+category: quickstart_scix
 order: 4
 ---
 
@@ -33,7 +34,7 @@ order. To re-sort or filter the results, click the button to view the
 results in a search results page.
 
 <figure>
-   <img src="/scixhelp/img/coreads_1.gif"  class="img-responsive" alt="a brief screen recording
+   <img src="/help/img/coreads_1.gif"  class="img-responsive" alt="a brief screen recording
    showing how to access the Co-Reads link on an abstract page">
 </figure>
 
@@ -91,7 +92,7 @@ may be useful for literature searches:
   tools, methods, or data sets relevant to a field.
 
 <figure>
-   <img src="/help/img/second-order.png"  class="img-responsive" alt="diagram showing use of the second order operators">
+   <img src="{{ site.baseurl }}/help/img/second-order.png"  class="img-responsive" alt="diagram showing use of the second order operators">
    </figure>
    <br>
 
@@ -115,7 +116,7 @@ papers in a list of results and can only be extended to include up to
 list that has been been previously narrowed to a few hundred papers.
 
 <figure>
-   <img src="/scixhelp/img/paper-network-suggested-papers.png"  class="img-responsive" alt="an
+   <img src="/help/img/paper-network-suggested-papers.png"  class="img-responsive" alt="an
    image showing Paper Network with suggested papers">
    </figure>
    <br>

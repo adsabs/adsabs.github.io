@@ -9,8 +9,7 @@ no-header: true
 
 <p>Your comprehensive guide to discovering and managing scientific research. Get started in minutes with our quick start guide below, or use the search bar in the upper right to search the entire site.</p>
 
-
-<!-- Hero Section -->
+<!-- Hero Section
 <div class="hero-section">
   <h3> What Can SciX Do? </h3>
   <div class="hero-features">
@@ -45,11 +44,15 @@ no-header: true
       <p>Global researchers</p>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Tabbed Interface -->
 <div class="tabbed-interface">
   <div class="tab-navigation">
+    <button class="tab-button" onclick="openTab(event, 'what-does-scix')">
+      <span class="tab-icon">🌟</span>
+      What does SciX do?
+    </button>
     <button class="tab-button active" onclick="openTab(event, 'quickstart')">
       <span class="tab-icon">🚀</span>
       Quick Start
@@ -74,6 +77,47 @@ no-header: true
       <span class="tab-icon">🛠️</span>
       Troubleshooting
     </button>
+  </div>
+
+  <!-- What does SciX do? Tab -->
+  <div id="what-does-scix" class="tab-content">
+    <div class="tab-header">
+      <h2>What does SciX do?</h2>
+      <p>Discover the powerful features that make SciX the premier platform for scientific research discovery and management.</p>
+    </div>
+
+    <div class="hero-features">
+      <div class="hero-feature-card">
+        <div class="hero-feature-icon">🔍</div>
+        <h4>Powerful Search</h4>
+        <p>Advanced syntax & filters</p>
+      </div>
+      <div class="hero-feature-card">
+        <div class="hero-feature-icon">📚</div>
+        <h4>Library Management</h4>
+        <p>Organize & collaborate</p>
+      </div>
+      <div class="hero-feature-card">
+        <div class="hero-feature-icon">📊</div>
+        <h4>Analytics</h4>
+        <p>Track citations & trends</p>
+      </div>
+      <div class="hero-feature-card">
+        <div class="hero-feature-icon">⚡</div>
+        <h4>API Access</h4>
+        <p>Integrate workflows</p>
+      </div>
+      <div class="hero-feature-card">
+        <div class="hero-feature-icon">🌐</div>
+        <h4>Open & Free</h4>
+        <p>No restrictions</p>
+      </div>
+      <div class="hero-feature-card">
+        <div class="hero-feature-icon">👥</div>
+        <h4>Community</h4>
+        <p>Global researchers</p>
+      </div>
+    </div>
   </div>
 
   <!-- Quick Start Tab (Default Active) -->
@@ -789,6 +833,75 @@ no-header: true
   display: block;
 }
 
+/* Hero Features within Tabs */
+.hero-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.hero-feature-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(4, 157, 217, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.hero-feature-card:hover::before {
+  left: 100%;
+}
+
+.hero-feature-card:hover {
+  transform: translateY(-8px);
+  border-color: #049DD9;
+  box-shadow: 0 15px 30px rgba(4, 157, 217, 0.2);
+}
+
+.hero-feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.hero-feature-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-feature-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
 .tab-header {
   text-align: center;
   margin-bottom: 15px;
@@ -947,6 +1060,24 @@ no-header: true
 [data-theme='dark'] .tab-navigation {
   background: #404040;
   border-bottom-color: #666;
+}
+
+[data-theme='dark'] .hero-feature-card {
+  background: linear-gradient(135deg, #2c2c2c 0%, #404040 100%);
+  border-color: #404040;
+}
+
+[data-theme='dark'] .hero-feature-card:hover {
+  border-color: #049DD9;
+  box-shadow: 0 15px 30px rgba(4, 157, 217, 0.3);
+}
+
+[data-theme='dark'] .hero-feature-card h4 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .hero-feature-card p {
+  color: #cccccc;
 }
 
 [data-theme='dark'] .tab-button {

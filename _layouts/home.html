@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  {% include head_default_scix.html %}
+
+  <body>
+    <!-- Custom Home Page Header -->
+    <div class="home-header">
+      <nav class="navbar fluid navbar-inverse" aria-label="main navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand s-navbar-brand" href="/">
+            <img
+              class="s-ads-icon"
+              src="{{ site.baseurl }}/help/common/images/scix/scix-discipline-backdrop.png"
+              alt="scix icon"
+            />
+            <b>&nbsp;SciX</b>
+          </a>
+        </div>
+        <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <button
+                type="button"
+                class="btn btn-link dropdown-toggle"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i
+                  class="fa fa-question-circle about-page-icon"
+                  aria-hidden="true"
+                ></i>
+                About <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/scixabout/">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    About SciX
+                  </a>
+                </li>
+                <li>
+                  <a href="/scixblog/">
+                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="/scixhelp/">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    SciX Help Pages
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <div class="home-page-content">{{ content }}</div>
+
+    <!-- Only include the dark mode toggle -->
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch-scix.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>

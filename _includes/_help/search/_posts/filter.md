@@ -5,12 +5,12 @@ Clicking on any of the listed terms within a filter will automatically apply tha
 
 ### Available filters
   * *Authors*: filter individual authors in the results list
-  * *Collections*: include or exclude results from the astronomy, physics, and general collections. Note that all collections are included by default in searches using the Modern Form, but searches using the Classic Form may have a collection selected on the search form
+  * *Collections*: include or exclude results from the astronomy, physics, earth science, and general collections
   * *Refereed status*: include or exclude refereed or non-refereed publications
-  * *Institutions*: include or exclude results from the curated [canonical affiliations](../../blog/affiliations-feature) that were found in the results of your original query
+  * *Institutions*: include or exclude results from the curated [canonical affiliations]({% if include.ads %}../../blog/affiliations-feature{% else %}../../scixblog/affiliations-feature{% endif %}) that were found in the results of your original query
   * *Keywords*: include or exclude keywords that were found in the results of your original query
   * *Publications*: include or exclude journals that were found in the results of your original query
-  * *Bib Groups*: include or exclude results from curated [bibliographic groups](../search/search-syntax#bibliographic-groups)
+  * *Bib Groups*: include or exclude results from curated [bibliographic groups]({% if include.ads %}../search/search-syntax#bibliographic-groups{% else %}../search-scix/search-syntax#bibliographic-groups{% endif %})
   * *SIMBAD Objects*: include or exclude results that contain [SIMBAD](http://simbad.u-strasbg.fr/simbad/) object types or individual objects
   * *NED Objects*: include or exclude results that contain [NED](https://ned.ipac.caltech.edu/) object types or individual objects
   * *Data*: include or exclude results that contain data in various archives (e.g. CDS, HEASARC, CXO, NED)

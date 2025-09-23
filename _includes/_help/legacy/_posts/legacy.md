@@ -5,7 +5,7 @@
 ## Article Service
 The following query pages provide access to articles that have been scanned by the ADS. If you want to access the fulltext of every article from a particular journal (including the recent electronic articles available from publisher's web sites), please use the [Journal/Volume/Page]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/paper-form) Query Page.
 
-Please note that all articles are copyrighted by the publisher of the article. They can only be downloaded for personal use. Any commercial use or large-scale downloading is prohibited. Please see the [Conditions of Use](../../help/terms/) for more details.
+Please note that all articles are copyrighted by the publisher of the article. They can only be downloaded for personal use. Any commercial use or large-scale downloading is prohibited. Please see the [Conditions of Use]({% if include.ads %}../../help/terms/{% else %}../../scixhelp/terms-scix/{% endif %}) for more details.
 
 We would like to acknowledge the many people and organizations that have helped with this project by donating extra volumes and by giving the ADS permission to scan their copyrighted material.
 
@@ -152,7 +152,7 @@ whether the publication has been paginated (blue) or not (red).
 
 **Please note that these files can be viewed and downloaded for personal
 use only. Any commercial use or large-scale harvesting is prohibited.
-For more information, see our [Conditions of Use](../../help/terms/) page.**
+For more information, see our [Conditions of Use]({% if include.ads %}../../help/terms/{% else %}../../scixhelp/terms-scix/{% endif %}) page.**
 
 
 <details>

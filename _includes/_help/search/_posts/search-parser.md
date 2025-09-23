@@ -1,4 +1,4 @@
-The following page describes extra details about the search syntax not found in the otherwise comprehensive [search syntax help](search-syntax).
+{% if include.ads %}The following page describes extra details about the search syntax not found in the otherwise comprehensive [search syntax help](search-syntax).
 
 
 ## Big Picture
@@ -17,7 +17,7 @@ The first phase is what we are going to discuss here. We'll break it down furthe
 
 ## Parsing text into AST
 
-The [Search Grammar](https://github.com/romanchyla/montysolr/blob/master/contrib/adsabs/grammars/ADS.g) defines the search language of {{ include.site }}. It is a context-free grammar and it is used to generate a client library ([by ANTLR](https://www.antlr.org/)).
+The [Search Grammar](https://github.com/adsabs/montysolr/blob/main/montysolr/src/main/antlr/ADS.g) defines the search language of {{ include.site }}. It is a context-free grammar and it is used to generate a client library ([by ANTLR](https://www.antlr.org/)).
 
 If you don't like reading context-free computer grammars (who does?) you'll find a good explanation of {{ include.site }} syntax here: [search syntax help](search-syntax).
 
@@ -75,7 +75,7 @@ This tree will be further modified in the next phase.
 
 ### Semantic Parsing
 
-There is a lot of magic that happens in this next phase. All of it is defined inside the [pipeline](https://github.com/romanchyla/montysolr/blob/master/contrib/adsabs/src/java/org/apache/lucene/queryparser/flexible/aqp/AqpAdsabsNodeProcessorPipeline.java).
+There is a lot of magic that happens in this next phase. All of it is defined inside the [pipeline](https://github.com/adsabs/montysolr/blob/main/montysolr/src/main/java/org/apache/lucene/queryparser/flexible/aqp/AqpAdsabsNodeProcessorPipeline.java).
 
 Pro tip: if you add `debugQuery=true` to your search request URL parameters (and look at the data as returned by our API), you'll see the serialized version of the query as parsed by SOLR. For example 
 
@@ -89,4 +89,4 @@ Pro tip: if you add `debugQuery=true` to your search request URL parameters (and
     }
 
 
-Pro tip (II): If you had access to STDOUT/logging of the SOLR instance, you would see LOTS of details; each and every step in the query pipeline produces output. This information is however only printed to STDOUT - and so only {{ include.site }} engineers can really see it. Here is an example:
+Pro tip (II): If you had access to STDOUT/logging of the SOLR instance, you would see LOTS of details; each and every step in the query pipeline produces output. This information is however only printed to STDOUT - and so only {{ include.site }} engineers can really see it.{% endif %}

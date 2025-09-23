@@ -175,11 +175,11 @@ The equivalent of (see [2007ASPC..382..495K]({% if include.ads %}{{ site.ads_bas
 http://adsabs.harvard.edu/cgi-bin/abs_connect?data_type=VOTABLE&DEC=60&RA=16&SR=.1
 ```
 
-is the search `object:"16 +60:0.1"`, followed by exporting the results in the `VOTable` export format. Currently there is no equivalent of the {{ include.site }} Classic URL shown above.
+is the search `object:"16 +60:0.1"`, followed by exporting the results in the `VOTable` export format. Currently there is no equivalent of {{ include.site }} Classic URL shown above.
 
 ### Available Fields
 
-This is a list of fields currently recognized by the {{ include.site }} search engine and the preferred search format - go to [comprehensive list of fields](comprehensive-solr-term-list) if not saturated yet:
+This is a list of fields currently recognized by {{ include.site }} search engine and the preferred search format - go to [comprehensive list of fields](comprehensive-solr-term-list) if not saturated yet:
 
 Field Name   | Syntax                      | Example                 | Notes
 ------------ | --------------------------- | ----------------------- | --------------
@@ -203,7 +203,7 @@ Body         | body:&ldquo;phrase"               | body:&ldquo;gravitational wav
 Citation count | citation_count:count | citation_count:40 | find records that have a specific number of citations
 Citation count (cont.) | citation_count:[min_count TO max_count]      | citation_count:[10 TO 100]       | find records that have a range of citation counts
 Copyright | copyright:copyright            | copyright:2012          | search for articles with certain copyrights
-Data links   | data:archive                | data:NED                | limit search to papers with data from NED (*)
+Data links   | property:data               | property:data           | limit search to papers with data links (*)
 Database     | database:DB                 | database:astronomy      | limit search to either astronomy or physics or general
 Date Range   | pubdate:[YYYY-MM TO YYYY-MM] | pubdate:[2005-10 TO 2006-09] | use fine-grained dates for publication range
 Document type | doctype:type               | doctype:catalog         | limit search to records corresponding to data catalogs (*)
@@ -216,13 +216,13 @@ Institution | inst:&ldquo;abbreviation" | inst:&ldquo;Harvard U" | search the cu
 Issue        | issue:number                | issue:10                | search for papers in a certain issue
 Keywords     | keyword:&ldquo;phrase"            | keyword:sun             | search publisher- or author-supplied keywords
 Language     | lang:&ldquo;language"             | lang:korean             | search for papers with a given language
-Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see [Astronomical Objects and Position Search](../search/search-syntax/#astronomical-objects-and-position-search) above)
+Object       | object:&ldquo;object"             | object:Andromeda        | search for papers tagged with a specific astronomical object (as shown here) or at or near a set of coordinates (see [Astronomical Objects and Position Search]({% if include.ads %}../search/search-syntax/#astronomical-objects-and-position-search{% else %}../search-scix/search-syntax/#astronomical-objects-and-position-search{% endif %}) above)
 ORCiD iDs    | orcid:id                    | orcid:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD
 ORCiD iDs from publishers    | orcid_pub:id                    | orcid_pub:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD specified by a Publisher
 ORCiD iDs from known {{ include.site }} users    | orcid_user:id                    | orcid_id:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by known {{ include.site }} users
 ORCiD iDs from uknknown {{ include.site }} users   | orcid_other:id                    | orcid_other:0000-0000-0000-0000 | search for papers that are associated with a specific ORCiD iD claimed by unknown {{ include.site }} users
 Page         | page:number                 | page:410                | search for papers with a given page number
-Publication  | bibstem:&ldquo;abbrev"            | bibstem:ApJ             | limit search to a <a href="{% if include.ads %}http://adsabs.harvard.edu/abs_doc/journal_abbr.html{% else %}{{ site.scix_base_url }}/help{% endif %}" target="_blank">specific publication</a>
+Publication  | bibstem:&ldquo;abbrev"            | bibstem:ApJ             | limit search to a <a href="{% if include.ads %}http://adsabs.harvard.edu/abs_doc/journal_abbr.html{% else %}{{ site.scix_base_url }}/journalsdb{% endif %}" target="_blank">specific publication</a>
 Properties   | property:type               | property:openaccess     | limit search to article with specific attributes (*)
 Read count   | read_count:count            | read_count:10           | search for papers with a given number of reads
 Title        | title:&ldquo;phrase"              | title:&ldquo;weak lensing"    | search for word or phrase in title field
@@ -260,7 +260,7 @@ toc               | The record has a Table Of Content (TOC) associated with it
 
 ### Bibliographic Groups
 
-The "bibgroup" search field allows restriction of the search results to one of the [{{ include.site }} bibliographic groups]({% if include.ads %}http://adsabs.harvard.edu/abs_doc/help_pages/search.html#Select_References_From_Group{% else %}{{ site.scix_base_url }}/help{% endif %}).  These groups are curated by a number of librarians and archivists who maintain either institutional or "telescope" bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.
+The "bibgroup" search field allows restriction of the search results to one of the [{{ include.site }} bibliographic groups]({% if include.ads %}../data_faq/bibgroups{% else %}../data_faq-scix/bibgroups{% endif %}).  These groups are curated by a number of librarians and archivists who maintain either institutional or "telescope" bibliographies on behalf of their projects.  Here is a partial list.  For more information on the criteria behind the curation of these groups, please see the link above.
 
 The list of current Institutional bibgroups is: ARI, CfA, CFHT, Leiden, USNO
 
@@ -268,9 +268,9 @@ The list of current Telescope bibgroups is: ALMA, CXC, ESO, Gemini, Herschel, HS
 
 ### Data Links
 
-The "data" search field can be used to select papers which have data links associated to them.  The list of archives which {{ include.site }} links to can be seen under the "Data" filter selection.  To generate a list of all records which have data links one can issue a simple wildcard query: [data:* ]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/#search/q=data%3A*&sort=date+desc).  Using the data search field allows one to focus on data-rich papers, for example:
+The "property:data" search field can be used to select papers which have data links associated to them.  The list of archives which {{ include.site }} links to can be seen under the "Data" filter selection.  To generate a list of all records which have data links one can issue a simple query: [property:data]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}{% if include.ads %}/#search/q={% else %}/search?q={% endif %}property%3Adata&sort=date+desc).  Using the property:data search field allows one to focus on data-rich papers, for example:
 
-    data:(CXO OR XMM) AND data:HST
+    property:data AND (CXO OR XMM) AND HST
 
 Finds multi-wavelength papers which have observations both in the X-ray spectrum (from Chandra or XMM) and in the optical (HST).  Of course additional search terms can be used to further refine the selection criteria.
 

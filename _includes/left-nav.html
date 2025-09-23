@@ -7,10 +7,10 @@
 <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="quickstart-help">
         <a class="collapsed" role="button" data-toggle="collapse" href="#quickstart-items" aria-expanded="false" aria-controls="collapseThree">
-            <h3 class="{% if '/search/index.html' == page.url %}
+            <h3 class="{% if page.url contains '/quickstart/' %}
     active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i>
     Quick Start</h3>
-        <a>
+        </a>
     </div>
     <div id="quickstart-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quickstart-help">
       <ul class="list-group">
@@ -26,8 +26,8 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="search-help">
         <a class="collapsed" role="button" data-toggle="collapse" href="#search-items" aria-expanded="false" aria-controls="collapseThree">
-            <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Making a Query</h3>
-        <a>
+            <h3 class="{% if page.url contains '/search/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Making a Query</h3>
+        </a>
     </div>
     <div id="search-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="search-help">
       <ul class="list-group">
@@ -43,8 +43,8 @@
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="actions-help">
       <a class="collapsed" role="button" data-toggle="collapse" href="#actions-items" aria-expanded="false" aria-controls="collapseThree">
-          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"><i class="fa fa-lg fa-caret-right"> </i> Search Results</h3>
-      <a>
+          <h3 class="{% if page.url contains '/actions/' %} active {% endif %}"><i class="fa fa-lg fa-caret-right"> </i> Search Results</h3>
+      </a>
   </div>
   <div id="actions-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="actions-help">
     <ul class="list-group">
@@ -60,8 +60,8 @@
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="userpreferences-help">
       <a class="collapsed" role="button" data-toggle="collapse" href="#userpreferences-items" aria-expanded="false" aria-controls="collapseThree">
-          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</h3>
-      <a>
+          <h3 class="{% if page.url contains '/userpreferences/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</h3>
+      </a>
   </div>
   <div id="userpreferences-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="userpreferences-help">
     <ul class="list-group">
@@ -77,8 +77,8 @@
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="libraries-help">
       <a class="collapsed" role="button" data-toggle="collapse"  href="#libraries-items" aria-expanded="false" aria-controls="collapseThree">
-          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ADS Libraries</h3>
-      <a>
+          <h3 class="{% if page.url contains '/libraries/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ADS Libraries</h3>
+      </a>
   </div>
   <div id="libraries-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="libraries-help">
       <ul class="list-group">
@@ -94,8 +94,8 @@
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="orcid-help">
       <a class="collapsed" role="button" data-toggle="collapse"  href="#orcid-items" aria-expanded="false" aria-controls="collapseThree">
-          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ORCID </h3>
-      <a>
+          <h3 class="{% if page.url contains '/orcid/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ORCID </h3>
+      </a>
   </div>
   <div id="orcid-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="orcid-help">
       <ul class="list-group">
@@ -111,8 +111,8 @@
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="data_faq-help">
       <a class="collapsed" role="button" data-toggle="collapse"  href="#data_faq-items" aria-expanded="false" aria-controls="collapseThree">
-          <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Data & Curation </h3>
-      <a>
+          <h3 class="{% if page.url contains '/data_faq/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Data & Curation </h3>
+      </a>
   </div>
   <div id="data_faq-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="data_faq-help">
       <ul class="list-group">
@@ -128,8 +128,8 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="troubleshooting-help">
       <a class="collapsed" role="button" data-toggle="collapse"  href="#troubleshooting-items" aria-expanded="false" aria-controls="collapseThree">
-        <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Troubleshooting </h3>
-        <a>
+        <h3 class="{% if page.url contains '/troubleshooting/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Troubleshooting </h3>
+        </a>
     </div>
     <div id="troubleshooting-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tutorials-help">
       <ul class="list-group">
@@ -145,16 +145,16 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="video-help">
       <a class="collapsed" role="button" data-toggle="collapse"  href="#videos-items" aria-expanded="false" aria-controls="collapseThree">
-        <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Videos </h3>
-        <a>
+        <h3 class="{% if page.url contains '/videos/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Videos </h3>
+        </a>
     </div>
     <div id="videos-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="videos-help">
       <ul class="list-group">
-        {% assign posts = (site.categories.videos | sort:"order") %} {% for post in posts %} {% if post.url %}
+        {% assign posts = site.categories.videos %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
         <a href="{{ site.baseurl }}{{ post.url }}">
           <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
         </a>
-        {% endif %} {% endfor %}
+        {% endif %} {% endfor %} {% endif %}
       </ul>
     </div>
   </div>
@@ -162,8 +162,8 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="policies-help">
       <a class="collapsed" role="button" data-toggle="collapse"  href="#policies-items" aria-expanded="false" aria-controls="collapseThree">
-        <h3 class="{% if '/search/index.html' == page.url %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Policies </h3>
-      <a>
+        <h3 class="{% if page.url contains '/policies/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Policies </h3>
+      </a>
     </div>
     <div id="policies-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="policies-help">
       <ul class="list-group">

@@ -6,7 +6,7 @@ Clicking on the title of an individual article will bring you to a page showing 
    * Graphics in the article
 
 Export functions will allow you to export the article metadata in
-available formats (see [Export Results]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/actions/export) for a full list of formats)
+available formats (see [Export Results](../actions/export) for a full list of formats)
 
 You can also generate the metrics for the individual article by selecting metrics from the Analyze list.
 

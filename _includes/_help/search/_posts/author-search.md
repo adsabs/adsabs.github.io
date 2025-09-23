@@ -1,9 +1,9 @@
-The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!
+{% if include.ads %}The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!
 
 
 ## Referenced resources
 
-[{{ include.site }} solr schema](https://github.com/romanchyla/montysolr/blob/master/contrib/examples/adsabs/server/solr/collection1/conf/schema.xml#L30)
+[{{ include.site }} solr schema](https://github.com/adsabs/montysolr/blob/main/deploy/adsabs/server/solr/collection1/conf/schema.xml#L30)
 
 
 
@@ -12,7 +12,7 @@ The following section describes, in ugly detail, the logic of author parsing. Th
 OK, so what happens when we search for `author:"john paul II"`? 
 
 
-First, the query string is turned into an abstract syntax tree (see [search parser](./2021-05-23-search-parser.md) for details) - that is the syntactic (low) level, above it there is the semantic level of parsing and modifications. 
+First, the query string is turned into an abstract syntax tree (see [search parser](./search-parser) for details) - that is the syntactic (low) level, above it there is the semantic level of parsing and modifications. 
 
 The parser will already know we are searching inside field `author` - it will also know the tokenizer chain (rules) that apply to that field(s). So it will run the input through the tokenizer, then it will collect various outputs (tokens - more on that later), and then it will further expand/modify/transform these.
 
@@ -90,4 +90,4 @@ If it produces unexpected results, it usually is because of these reasons:
 - haphazard interferences: wrong data indexed, wrong or outdated versions of synonyms/transliterations deployed, parts of the production cluster being down, parts of the backoffice processing pipeline being down....
 
 
-**Intermezzo #1**
+**Intermezzo #1**{% endif %}

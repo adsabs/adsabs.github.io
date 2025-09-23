@@ -4,4 +4,4 @@ title: "(Advanced) Author Search"
 order: 8
 ---
 
-{% include _help/search/_posts/author-search.md site="SciX" %}
+{% include _help/search/_posts/author-search.md site="SciX" ads=false %}

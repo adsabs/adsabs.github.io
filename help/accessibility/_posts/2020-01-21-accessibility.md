@@ -6,4 +6,4 @@ category: policies
 permalink: /help/policies/accessibility/
 ---
 
-{% include _help/accessibility/_posts/accessibility.md site="ADS" %}
+{% include _help/accessibility/_posts/accessibility.md site="ADS" ads=true %}

@@ -6,4 +6,4 @@ category: policies-scix
 permalink: /scixhelp/policies-scix/accessibility/
 ---
 
-{% include _help/accessibility/_posts/accessibility.md site="SciX" %}
+{% include _help/accessibility/_posts/accessibility.md site="SciX" ads=false %}

@@ -5,6 +5,7 @@ The current update schedule is:
 - daily for **arXiv** collection
 - weekly on the weekends for **astronomy** collection
 - weekly mid-week for **physics** collection
+{% if include.ads %}{% else %}- weekly on the weekends for **earth science** collection{% endif %}
 - **general** records not included in these subjects are ingested as needed, usually monthly 
 
 The schedule may vary from time to time due to holidays or scheduled maintenance.  In addition, the updating of citations can often lag a few days behind corrections and submissions.

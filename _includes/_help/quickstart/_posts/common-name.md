@@ -1,7 +1,7 @@
 ### How do you find a paper by an author with a common name?
 *Note: the Quick Start series is designed to get you started with the
 new interface. More advanced information on searching can be found in
-the [Search Syntax help page]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/search/search-syntax) and other pages in the "Making a Query"  and "Search Results" sections.*
+the [Search Syntax help page]({% if include.ads %}../search/search-syntax{% else %}../search-scix/search-syntax{% endif %}) and other pages in the "Making a Query"  and "Search Results" sections.*
 
 Finding a paper by an author with a common name, especially if you have little else to go on, can be like finding a needle in a haystack. However, there are some strategies that can help.
 
@@ -54,9 +54,9 @@ If you're an author with a common name, there are some strategies you can follow
 
 ### ORCID
 
-Create an [ORCID ID](https://orcid.org/). After obtaining your ID, [claim your papers in {{ include.site }}]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/orcid/claiming-papers). We'll do some basic checks to make sure you haven't claimed someone else's papers by mistake and link your ORCID ID to your papers within 24 hours. As part of this process, the papers you claim within {{ include.site }} will automatically be pushed to your ORCID record on [orcid.org](https://orcid.org/). For current and future publications, many journals (such as ApJ) now accept ORCID IDs upon submission; ORCID IDs submitted this way will automatically populate in {{ include.site }} after paper publication.
+Create an [ORCID ID](https://orcid.org/). After obtaining your ID, [claim your papers in {{ include.site }}]({% if include.ads %}../orcid/claiming-papers{% else %}../orcid-scix/claiming-papers{% endif %}). We'll do some basic checks to make sure you haven't claimed someone else's papers by mistake and link your ORCID ID to your papers within 24 hours. As part of this process, the papers you claim within {{ include.site }} will automatically be pushed to your ORCID record on [orcid.org](https://orcid.org/). For current and future publications, many journals (such as ApJ) now accept ORCID IDs upon submission; ORCID IDs submitted this way will automatically populate in {{ include.site }} after paper publication.
 
-After linking your ORCID ID with your publications, users will be able to search for your papers using the syntax *orcid:XXXX-XXXX-XXXX-XXXX*. You may link to the search results using this syntax: {% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/#search/q=orcid%3AXXXX-XXXX-XXXX-XXXX
+After linking your ORCID ID with your publications, users will be able to search for your papers using the syntax *orcid:XXXX-XXXX-XXXX-XXXX*. You may link to the search results using this syntax: {% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}{% if include.ads %}/#search/q={% else %}/search?q={% endif %}orcid%3AXXXX-XXXX-XXXX-XXXX
 
 ### Public library
-In some situations, [creating a library]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/libraries/creating-libraries), [making it public]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/libraries/public-libraries), and sharing the link may be useful.
+In some situations, [creating a library]({% if include.ads %}../libraries/creating-libraries{% else %}../libraries-scix/creating-libraries{% endif %}), [making it public]({% if include.ads %}../libraries/public-libraries{% else %}../libraries-scix/public-libraries{% endif %}), and sharing the link may be useful.

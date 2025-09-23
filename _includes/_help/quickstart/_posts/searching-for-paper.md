@@ -1,7 +1,7 @@
 ### How do you search for a specific paper?
 *Note: the Quick Start series is designed to get you started with the
 new interface. More advanced information on searching can be found in
-the [Search Syntax help page]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/search/search-syntax) and other pages in the "Making a Query"  and "Search Results" sections.*
+the [Search Syntax help page]({% if include.ads %}../search/search-syntax{% else %}../search-scix/search-syntax{% endif %}) and other pages in the "Making a Query"  and "Search Results" sections.*
 
 A common task in {{ include.site }} is locating a specific paper, often for
 download or for retrieval of the bibliographic data. In this case, a
@@ -43,7 +43,7 @@ Note: for a first-author search using the ^ operator, you do not have to specify
 </figure>
 
 ### Filtering
-If your search by author and/or publication year returns too many results, you can use [interactive filtering]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/search/filter) to narrow down the results instead of editing your original search query. Filtering by author or publication is often useful when a paper is known. 
+If your search by author and/or publication year returns too many results, you can use [interactive filtering]({% if include.ads %}../search/filter{% else %}../search-scix/filter{% endif %}) to narrow down the results instead of editing your original search query. Filtering by author or publication is often useful when a paper is known. 
 
 <figure>
    <img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/filter-facet.png"  class="img-responsive">

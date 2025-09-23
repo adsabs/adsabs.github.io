@@ -1,10 +1,3 @@
----
-layout: post
-category: adshelp
-title: '#adshelp'
-no-header: true
----
-
 <h1>#ADSHelp</h1>
 <a href="#curation">Curation</a> • <a href="#search">Search</a> •
 <a href="#export">Export</a> • <a href="#viz">Visualizations</a>

@@ -33,7 +33,7 @@ Detailed descriptions of each field follow.
 
 ### Bibliographic Code
 
-The bibliographic code is a 19 digit code (see [Bibcodes]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/actions/bibcode))
+The bibliographic code is a 19 digit code (see [Bibcodes]({% if include.ads %}../actions/bibcode{% else %}../actions-scix/bibcode{% endif %}))
 
 ### Author List
 

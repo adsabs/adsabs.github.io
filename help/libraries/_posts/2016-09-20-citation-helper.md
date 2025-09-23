@@ -4,4 +4,4 @@ title: "Citation Helper"
 order: 4
 ---
 
-{% include _help/libraries/_posts/citation-helper.md site="ADS" %}
+{% include _help/libraries/_posts/citation-helper.md site="ADS" ads=true %}

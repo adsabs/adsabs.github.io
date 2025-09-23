@@ -4,4 +4,4 @@ title: "Positional Field Searches"
 order: 4
 ---
 
-{% include _help/search/_posts/positional.md site="SciX" %}
+{% include _help/search/_posts/positional.md site="SciX" ads=false %}

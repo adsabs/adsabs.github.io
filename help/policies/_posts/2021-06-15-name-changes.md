@@ -5,4 +5,4 @@ order: 4
 category: policies
 ---
 
-{% include _help/policies/_posts/name-changes.md site="ADS" %}
+{% include _help/policies/_posts/name-changes.md site="ADS" ads=true %}

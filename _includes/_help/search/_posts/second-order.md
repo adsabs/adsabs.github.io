@@ -1,6 +1,6 @@
 We provide five second-order operators which modify the query results by performing second-order operations on the original query. To invoke the operators, enter the corresponding operator before your search terms (enclosing your search terms in parentheses) in the search box. The search terms enclosed by parentheses are considered the first-order query.
 
-**Similar** - The *similar* operator takes the text of the abstracts of the papers in the first-order query, combines them into a single "document," then ranks all the abstracts in the {{ include.site }} by their text-based similarity to this combined document, and returns the ranked list. The returned results exclude the articles returned by the first-order query. The documents returned are the most similar, as determined via text analysis, to the topic being researched, while excluding the original documents. For example:
+**Similar** - The *similar* operator takes the text of the abstracts of the papers in the first-order query, combines them into a single "document," then ranks all the abstracts in {{ include.site }} by their text-based similarity to this combined document, and returns the ranked list. The returned results exclude the articles returned by the first-order query. The documents returned are the most similar, as determined via text analysis, to the topic being researched, while excluding the original documents. For example:
 
 	similar(bibcode:2000A&AS..143...41K)
 

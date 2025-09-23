@@ -5,4 +5,4 @@ order: 4
 category: policies-scix
 ---
 
-{% include _help/policies/_posts/name-changes.md site="SciX" %}
+{% include _help/policies/_posts/name-changes.md site="SciX" ads=false %}

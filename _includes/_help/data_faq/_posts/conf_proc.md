@@ -1,12 +1,12 @@
 This section is intended to be a guideline for editors and authors wishing to submit conference proceedings for inclusion in the {{ include.site }} Abstract and Scanned Literature Services. Any questions about the procedure should be directed to <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}.
 
-The {{ include.site }} is pleased to include any conference proceedings volume, as well as individual conference proceedings abstracts. This includes both electronic and printed conference proceedings. We have a set of naming conventions detailed below, but are flexible if there is a different naming scheme which is more appropriate for your particular conference. If you would like to have your conference proceedings included in our database before your conference, we request that you submit them to us one month in advance of the start of your conference.
+{{ include.site }} is pleased to include any conference proceedings volume, as well as individual conference proceedings abstracts. This includes both electronic and printed conference proceedings. We have a set of naming conventions detailed below, but are flexible if there is a different naming scheme which is more appropriate for your particular conference. If you would like to have your conference proceedings included in our database before your conference, we request that you submit them to us one month in advance of the start of your conference.
 
-## Submitting Bibliographic Records for the {{ include.site }} Abstract Service
+## Submitting Bibliographic Records for {{ include.site }} Abstract Service
 
 Please send us an email at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %} with the information to make a conference entry in the {{ include.site }}. 
 
-In addition a file containing the following should be sent to the {{ include.site }}. Individual Article Entries should include the following tags ( ( * ) items are required.)
+In addition a file containing the following should be sent to {{ include.site }}. Individual Article Entries should include the following tags ( ( * ) items are required.)
 
 ( * ) %T Title  
 ( * ) %A Author List  
@@ -19,19 +19,19 @@ In addition a file containing the following should be sent to the {{ include.sit
 %K Keywords
 
 
-Please note that there are many more details that you can add but these are the required minimum tags. A complete list of {{ include.site }} tagged fields can be found [here](../data_faq/tagged-format). Please note that references containing TeX/LaTeX formatting, AASTeX macros and HTML entities are acceptable.
+Please note that there are many more details that you can add but these are the required minimum tags. A complete list of {{ include.site }} tagged fields can be found [here]({% if include.ads %}../data_faq/tagged-format{% else %}../data_faq-scix/tagged-format{% endif %}). Please note that references containing TeX/LaTeX formatting, AASTeX macros and HTML entities are acceptable.
 
-A long entry should continue on the next line(s) with no repetition of the percent sign and keying letter. All entries should be in ascii and there should be no tabs or control characters. Blank lines can delimit paragraphs in the abstract, but should not otherwise be present within a record. A title, author list, and page number are required. Other information such as author affiliation, links to online full-text, abstract text and references are strongly recommended as well. The more information that you can provide for each article, the better. This additional information will aid in searching and using advanced features in the {{ include.site }}.
+A long entry should continue on the next line(s) with no repetition of the percent sign and keying letter. All entries should be in ascii and there should be no tabs or control characters. Blank lines can delimit paragraphs in the abstract, but should not otherwise be present within a record. A title, author list, and page number are required. Other information such as author affiliation, links to online full-text, abstract text and references are strongly recommended as well. The more information that you can provide for each article, the better. This additional information will aid in searching and using advanced features in {{ include.site }}.
 
-This information can be submitted via email to [ads@cfa.harvard.edu](mailto:ads@cfa.harvard.edu) or placed on our anonymous ftp site, under [ftp://adsftp.harvard.edu/pub/Conf](ftp://adsftp.harvard.edu/pub/Conf). Please send us an email indicating when you have transferred things to us, so that we can include it in our database as soon as possible.
+This information can be submitted via email to {% if include.ads %}[ads@cfa.harvard.edu](mailto:ads@cfa.harvard.edu){% else %}[help@scixplorer.org](mailto:help@scixplorer.org) or placed on our anonymous ftp site, under [ftp://adsftp.harvard.edu/pub/Conf](ftp://adsftp.harvard.edu/pub/Conf). Please send us an email indicating when you have transferred things to us, so that we can include it in our database as soon as possible. Please send us an email so that we can include it in our database as soon as possible.{% endif %}
 
-## Including Full-text Papers in the {{ include.site }}
+## Including Full-text Papers in {{ include.site }}
 
-It is possible for us to make the full-text of articles published in conference proceedings available via the {{ include.site }} Article Service. This section describes the requirements and procedures to be followed in order to do that.
+It is possible for us to make the full-text of articles published in conference proceedings available via {{ include.site }} Article Service. This section describes the requirements and procedures to be followed in order to do that.ou arti
 
 **Note**: We do **not** publish original material that is not published elsewhere, since we are not a publisher.
 
-Provide written permission from the copyright holder allowing the {{ include.site }} to publish electronically the papers in the conference proceedings. The relevant letter should state something along the following lines:
+Provide written permission from the copyright holder allowing {{ include.site }} to publish electronically the papers in the conference proceedings. The relevant letter should state something along the following lines:
 
     The <full description of the copyright holder> grants permission to the Astrophysics Data System at the Smithsonian Astrophysical Observatory to:
 
@@ -62,7 +62,7 @@ To submit the full-text files with the necessary information for us to process t
 
 * A file named PUBLICATION, containing the full name of the conference or book (you should use the same name given in the journal field above).
 
-* A file named COPYRIGHT, containing the copyright string that needs to be displayed at the bottom of each page that the {{ include.site }} creates and places online in its article service (please do not try to include the copyright symbol © since we already do this for you).
+* A file named COPYRIGHT, containing the copyright string that needs to be displayed at the bottom of each page that {{ include.site }} creates and places online in its article service (please do not try to include the copyright symbol © since we already do this for you).
 
 * A file named BIBSTEM, containing the bibliographic abbreviation for the publication (e.g. *ASPC..117* or *2000immm.proc*). This should be the same abbreviation that has been used to create the bibliographic entries described above.
 
@@ -76,13 +76,13 @@ To submit the full-text files with the necessary information for us to process t
 
 When in doubt, please contact us for help.
 
-Create a compressed tar or zip archive containing of all the full-text files, the README file, and name of the file using (if possible) the standard acronym adopted by the {{ include.site }} in naming bibliographic entries for the conference. For example, the archive file containing papers submitted to the ASP Conference Proceedings n.117 should be named *ASPC117.tar.gz* or *ASPC..117.tar.gz*. The archive for files containing the conference *2000immm.proc* should be named *2000immm.proc.tar.gz*.
+Create a compressed tar or zip archive containing of all the full-text files, the README file, and name of the file using (if possible) the standard acronym adopted by {{ include.site }} in naming bibliographic entries for the conference. For example, the archive file containing papers submitted to the ASP Conference Proceedings n.117 should be named *ASPC117.tar.gz* or *ASPC..117.tar.gz*. The archive for files containing the conference *2000immm.proc* should be named *2000immm.proc.tar.gz*.
 
 Deposit the tar archive on our anonymous ftp server under the URL ftp://adsftp.harvard.edu/pub/Conf and notify us. We will contact you with any questions regarding the full-text processing of the files.
 
-## Archiving Conference Proceedings in the {{ include.site }}
+## Archiving Conference Proceedings in {{ include.site }}
 
-As more conferences are published electronically, editors are turning to the {{ include.site }} for long-term archiving of their full text proceedings. We can agree to this under the following conditions:
+As more conferences are published electronically, editors are turning to {{ include.site }} for long-term archiving of their full text proceedings. We can agree to this under the following conditions:
 
 * The conference is originally published elswhere (e.g. through a university or observatory publication, or through another publisher).
 * We receive the pdf or postscript files as described above.

@@ -1,3 +1,19 @@
+### How to Export Results
+
+{{ include.site }} provides the ability to export results into various formats. There are two options:
+
+1. **Export All Results**
+![export-all-results]({% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/export-all-results.gif){:width="800px"}
+
+From the results page, find the **{% if include.ads %}Export{% else %}Bulk Actions{% endif %}** dropdown menu in the top right of the page. From there, you can select a format.
+
+2. **Export Selected Results**
+![export-selected-results]({% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/export-selected-results.gif){:width="800px"}
+
+From the results page, find the **{% if include.ads %}Export{% else %}Bulk Actions{% endif %}** dropdown menu in the top right of the page. From there, you will see **selected papers** checked, and you can select a format.
+
+When the tool is opened, you will have the opportunity to review the export result and either download or copy to clipboard.
+
 ### Export Formats
 
 Use this button to export your search results in different formats.  Currently available options are:
@@ -168,7 +184,7 @@ Specifier | Field  | Comments
 **d** | DOI | outputs the Digital Object Identifier of the article if available
 **F** | Author Affiliation | prints out the Author affiliation if available
 **J** | Journal | prints out the journal name
-**j** | Journal | prints out the journal name if available; if an [AASTeX macro]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/actions/journal-macros) for the journal is available, the macro is printed instead
+**j** | Journal | prints out the journal name if available; if an [AASTeX macro]({% if include.ads %}../actions/journal-macros{% else %}../actions-scix/journal-macros{% endif %}) for the journal is available, the macro is printed instead
 **Q** | Journal | prints out the full journal information if available
 **q** | Journal | prints out the journal abbreviation
 **K** | Keywords | prints out the keywords if available

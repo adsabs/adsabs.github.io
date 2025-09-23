@@ -29,7 +29,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                        bibcode | y | y | {{ include.site }} identifier of a paper |
  |                       bibgroup | y | y | Bibliographic group that the bibcode belongs to (curated by staff outside of {{ include.site }}) |
  |                 bibgroup_facet | y | n | As above, but can only be searched and faceted on |
- |                        bibstem | y | y | the abbreviated name of the journal or publication, e.g., ApJ. Full lists of bibstems can be found [here]({% if include.ads %}http://adsabs.harvard.edu/abs_doc/journal_abbr.html{% else %}{{ site.scix_base_url }}/help{% endif %}) |
+ |                        bibstem | y | y | the abbreviated name of the journal or publication, e.g., ApJ. Full lists of bibstems can be found [here]({% if include.ads %}http://adsabs.harvard.edu/abs_doc/journal_abbr.html{% else %}{{ site.scix_base_url }}/journalsdb{% endif %}) |
  |                  bibstem_facet | y | n | Technical field, used for faceting by publication. It contains only bibstems without volumes (eg. `Sci`) |
  |                           body | y | n | Contains extracted fulltext minus acknowledgements section |
  |                    book_author | y | y | The name will be also in `author` field; but not the other way around |
@@ -38,7 +38,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                 citation_count | y | y | Number of citations the item has received |
  |            citation_count_norm | y | y | Number of citations normalized by `author_count` |
  |                cite_read_boost | y | y | Float values containing normalized (float) boost factors. These can be used with functional queries to modify ranking of results. |
- |                 classic_factor | y | y | Integer values containing the boost factor used by {{ include.site }} Classic. In essence log(1 + cites + norm_reads) where number of citations has been normalized and the whole value is multiplied by 5000 and then cast to Integer. |
+ |                 classic_factor | y | y | Integer value containing a popularity boost factor, of the form log(1 + cites + norm_reads), where number of citations has been normalized and the whole value is multiplied by 5000 and then cast to Integer. |
  |                        comment | y | y | Kitchen sink for holding various bits of information not available elsewhere (probably only useful if you are curating {{ include.site }} records) |
  |                      copyright | y | y | Copyright given by the publisher |
  |                           data | y | y | List of sources that hold data associated with this paper (record) - format is `name:count`, i.e. `Chandra:3` |

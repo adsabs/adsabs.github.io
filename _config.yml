@@ -13,7 +13,7 @@ twitter:
   username: adsabs
 github:
   username: adsabs
-logo: /help/img/bbb_assets/transparent_logo.svg
+logo: /help/common/images/transparent_logo.svg
 
 permalink: /:categories/:title
 # Build settings
@@ -39,4 +39,4 @@ defaults:
   - scope:
       path: ''
     values:
-                        image: /help/img/bbb_assets/transparent_logo.svg
+                        image: /help/common/images/transparent_logo.svg

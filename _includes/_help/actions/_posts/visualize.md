@@ -58,20 +58,20 @@ Mouse over a circle to read information about the paper, or drag a square around
 
 
 * **Find newly popular papers**
-The default graph shows the [recent views]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/help/actions/analyze#recent-views) (the number of times a paper has been accessed in the {{ include.site }} in the last 90 days) as the y-axis value. In general, graphs will show a trend of decreasing reads over time as an article ages. If any paper has a higher read count than predicted by the general trend, it might be worth investigating further.
+The default graph shows the [recent views]({% if include.ads %}../actions/analyze#recent-views{% else %}../actions-scix/analyze#recent-views{% endif %}) (the number of times a paper has been accessed in the {{ include.site }} in the last 90 days) as the y-axis value. In general, graphs will show a trend of decreasing reads over time as an article ages. If any paper has a higher read count than predicted by the general trend, it might be worth investigating further.
 
 
-### Word Cloud
-The word cloud shows you **frequently appearing** and **unique words** in your search results.
+### Concept Cloud
+The concept cloud shows you **frequently appearing** and **unique words** in your search results.
 
 <img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/word-cloud.png" class="img-responsive">
 
-#### How the word cloud is made
-The word cloud takes words from the titles and abstracts of your search results, counts their frequencies and compares them to the same word's frequency across the entire {{ include.site }} corpus.
+#### How the concept cloud is made
+The concept cloud takes words from the titles and abstracts of your search results, counts their frequencies and compares them to the same word's frequency across the entire {{ include.site }} corpus.
 
 #### How to use it
-* Move the slider to the left of the word cloud towards "unique" to see those words that appeared relatively frequently in your results but rarely in the rest of {{ include.site }}.
-* Move the slider to the left of the word cloud towards "frequent" to see those words that appear frequently in your results, regardless of how often they appear in the rest of {{ include.site }}.
+* Move the slider to the left of the concept cloud towards "unique" to see those words that appeared relatively frequently in your results but rarely in the rest of {{ include.site }}.
+* Move the slider to the left of the concept cloud towards "frequent" to see those words that appear frequently in your results, regardless of how often they appear in the rest of {{ include.site }}.
 
 ### Instructions on Downloading Graphics as High-Quality PNGS in Chrome
 1. <a href="https://nytimes.github.io/svg-crowbar/"> Install the SVG Crowbar 2 Bookmarklet</a>

@@ -52,13 +52,13 @@ The citations notifications provide a list of papers citing the articles written
 
 Things to note during setup:
 * During setup, you can provide multiple name variations and/or your ORCID ID to identify your papers. Notifications include any papers added since the last update citing work by any of the given author name(s) or ORCID IDs
-* Weekly emails are no longer split into astronomy, physics, and arXiv collections notifications, but are instead condensed into a single email that queries all collections. If your papers cannot be uniquely specified via your name or name variations, consider setting up an ORCID ID and claiming the papers you wish to receive citations notifications for. Alternatively, you can set up a general notification that includes the desired collection. The syntax for this would be, for example, *citations(author:"Huchra, J.") collection:astronomy*
+* Weekly emails are condensed into a single email that queries all collections. If your papers cannot be uniquely specified via your name or name variations, consider setting up an ORCID ID and claiming the papers you wish to receive citations notifications for. Alternatively, you can set up a general notification that includes the desired collection. The syntax for this would be, for example, *citations(author:"Huchra, J.") collection:astronomy*
 
 ### Authors
-The authors notifications are generated weekly over the weekend and notify you of up to 5 new papers by any of the given authors. Only papers added since the last update will be shown. The setup interface is similar to that of the citations notifications and either author names or ORCID IDs can be provided. Again, as for the citations notifications, the astronomy, physics, and weekly arXiv emails are now combined. Use name variations or ORCID IDs to disambiguate, or set up a general notification that includes the desired collection.
+The authors notifications are generated weekly over the weekend and notify you of up to 5 new papers by any of the given authors. Only papers added since the last update will be shown. The setup interface is similar to that of the citations notifications and either author names or ORCID IDs can be provided. Use name variations or ORCID IDs to disambiguate, or set up a general notification that includes the desired collection.
 
 ### Keywords
-The keywords notifications are generated weekly over the weekend and notify you of newly added papers about a given set of keywords or other query. Three queries are constructed for the given search term(s): recent papers, trending papers, and useful papers. Recent papers shows the 5 most recent papers matching the given query, while trending papers shows the 5 papers that best match the query *[trending](../search/second-order)(query)*. Useful papers shows the 5 papers that best match the query *[useful](../search/second-order)(query)*.
+The keywords notifications are generated weekly over the weekend and notify you of newly added papers about a given set of keywords or other query. Three queries are constructed for the given search term(s): recent papers, trending papers, and useful papers. Recent papers shows the 5 most recent papers matching the given query, while trending papers shows the 5 papers that best match the query *[trending]({% if include.ads %}../search/second-order{% else %}../search-scix/second-order{% endif %})(query)*. Useful papers shows the 5 papers that best match the query *[useful]({% if include.ads %}../search/second-order{% else %}../search-scix/second-order{% endif %})(query)*.
 
 <figure>
    <img src="{{ site.baseurl }}/help/img/myads_keywords.png"  class="img-responsive">
@@ -70,7 +70,7 @@ Things to note during setup:
 * If multiple keywords are given, by default the search assumes all keywords are necessary for a match. This can be overridden by explicitly combining multiple keywords with OR. Other operators, such as AND, NOT, plus (+), and minus (-) are also allowed, as in regular searching
 
 ### General
-The general notifications are new and did not have an equivalent in the Classic notification system. They allow users to create a notification out of almost any {{ include.site }} query. To set one up, execute a search that you'd like to receive notifications for, including any desired filters from the left sidebar. On the search results page, click on the bar labeled **Create Email Notification** in the right sidebar.
+The general notifications are new and did not have an equivalent in the Classic notification system. They allow users to create a notification out of almost any {{ include.site }} query. To set one up, execute a search that you'd like to receive notifications for, including any desired filters from the left sidebar. On the search results page,{% if include.ads %} click on the bar labeled **Create Email Notification** in the right sidebar.{% else %} click the bell/notification icon above the search results.{% endif %}
 
 <figure>
    <img src="{{ site.baseurl }}/help/img/myads_general.png"  class="img-responsive">
@@ -110,7 +110,7 @@ After logging into your Classic account in the new {{ include.site }} successful
 
 A message will be displayed after import with the number of successfully imported settings. If the import has been run previously, only notifications that do not exist in your account in the new {{ include.site }} will be imported. The displayed message will indicate the number of new vs. existing notifications that were found in your Classic account.
 
-## FAQs
+{% if include.ads %}## FAQs
 ### My imported keywords (or other imported setup) are formatted differently in the new {{ include.site }} than they were in Classic.
 The import tool attempts to correct formatting issues that will cause queries to fail in the new {{ include.site }}, including removing new line characters, extra parentheses, and other non-standard special characters. Also, in Classic, keywords that were not explicitly combined with Boolean operators (AND, OR, NOT) were assumed to be combined with OR, while in the new {{ include.site }} the implied operator is AND. The import tool converts between these as necessary. If you think your query was not translated correctly during testing, you can edit the imported query as necessary to match your original logic after the import is finished.
 
@@ -118,4 +118,4 @@ The import tool attempts to correct formatting issues that will cause queries to
 In Classic, my{{ include.site }} weekly emails were generated separately for astronomy, physics, and arXiv papers. However, in the new {{ include.site }}, weekly my{{ include.site }} notifications are consolidated into a single email. If your search terms are generating too many results without this separation by collection, try narrowing your search terms (see guidance for each notification type, [above](#setup)) or using a general notification with a collection specified.
 
 ### I've imported my settings from Classic but am not receiving emails.
-The import tool checks to see whether you had email notifications enabled. If you weren't receiving emails in Classic, they've also been disabled here. To enable emails again, see the [Editing](#editing) section above.
+The import tool checks to see whether you had email notifications enabled. If you weren't receiving emails in Classic, they've also been disabled here. To enable emails again, see the [Editing](#editing) section above.{% endif %}

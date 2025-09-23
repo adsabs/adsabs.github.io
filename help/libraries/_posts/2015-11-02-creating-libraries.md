@@ -4,4 +4,4 @@ title: "Creating and editing a library"
 order: 1
 ---
 
-{% include _help/libraries/_posts/creating-libraries.md site="ADS" %}
+{% include _help/libraries/_posts/creating-libraries.md site="ADS" ads=true %}

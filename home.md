@@ -12,9 +12,6 @@ no-header: true
     <div class="hero-gradient"></div>
   </div>
   <div class="hero-content">
-    <div class="hero-badge">
-      <span class="badge-text">Welcome to the Future of Scientific Discovery</span>
-    </div>
     <div class="hero-title-wrapper">
       <img src="{{ site.baseurl }}/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg" alt="The SciX Logo" class="hero-logo-inline" />
       <h1 class="hero-title">
@@ -22,28 +19,33 @@ no-header: true
         <span class="title-line gradient-text">Explorer</span>
       </h1>
     </div>
-    <p class="hero-subtitle">The premier digital library for discovering and managing scientific research across NASA's Science Mission Directorate disciplines</p>
+    <p class="hero-subtitle">A comprehensive search engine and discovery platform that connects scientific literature to datasets, software, and products for researchers across the Earth and space sciences.</p>
     
     <div class="hero-stats">
       <div class="stat-card">
-        <div class="stat-number">28M+</div>
-        <div class="stat-label">Research Records</div>
-        <div class="stat-icon">📚</div>
+        <div class="stat-number">30M+</div>
+        <div class="stat-label">Scientific Documents</div>
+        <div class="stat-icon"><i class="fa fa-database"></i></div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">50K+</div>
-        <div class="stat-label">Daily Users</div>
-        <div class="stat-icon">👥</div>
+        <div class="stat-number">16M+</div>
+        <div class="stat-label">Annual Users</div>
+        <div class="stat-icon"><i class="fa fa-users"></i></div>
       </div>
       <div class="stat-card">
         <div class="stat-number">30+</div>
-        <div class="stat-label">Years Experience</div>
-        <div class="stat-icon">⭐</div>
+        <div class="stat-label">Years of NASA funding</div>
+        <div class="stat-icon"><i class="fa fa-star"></i></div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">5</div>
-        <div class="stat-label">SMD Disciplines</div>
-        <div class="stat-icon">🌍</div>
+        <div class="stat-number">8000</div>
+        <div class="stat-label">Peer Reviewed Journals</div>
+        <div class="stat-icon"><i class="fa fa-book"></i></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Free</div>
+        <div class="stat-label">Open Access<br>& Open Source</div>
+        <div class="stat-icon"><i class="fa fa-unlock"></i></div>
       </div>
     </div>
     
@@ -55,7 +57,7 @@ no-header: true
         </svg>
       </a>
       <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary">
-        <span>Learn More</span>
+        <span>Quick Start Guide</span>
       </a>
     </div>
   </div>
@@ -65,7 +67,8 @@ no-header: true
 <div class="mission-section">
   <div class="container">
     <h2>Our Mission</h2>
-    <p class="mission-text">SciX serves as the authoritative digital library portal for researchers across astronomy, Earth science, heliophysics, physics, and planetary science. We combine three decades of expertise from the Astrophysics Data Service (ADS) with cutting-edge technology to accelerate scientific discovery and foster cross-disciplinary research.</p>
+    <p class="mission-tagline">By scientists, for scientists</p>
+    <p class="mission-text"> Our mission is to facilitate and increase the efficiency of research of the global community interested in Earth and Space Science scholarship through collecting, curating, connecting, and enriching scientific literature and associated research products and making them discoverable across disciplines.</p>
   </div>
 </div>
 
@@ -73,17 +76,13 @@ no-header: true
 <div class="discipline-showcase">
   <div class="container">
     <h2>Scientific Disciplines We Serve</h2>
-    <p class="discipline-intro">Explore the vast scope of scientific research across NASA's Science Mission Directorate disciplines</p>
+    <!-- <p class="discipline-intro">Explore the vast scope of scientific research across NASA's Science Mission Directorate disciplines</p> -->
     
     <div class="discipline-grid">
       <div class="discipline-card earth-science" data-discipline="earth">
         <div class="discipline-overlay">
           <h3 class="discipline-title">Earth Science</h3>
           <p class="discipline-description">Atmospheric, oceanic, and terrestrial research including climate studies, weather patterns, and environmental monitoring</p>
-          <div class="discipline-stats">
-            <span class="stat">2M+ Papers</span>
-            <span class="stat">15K+ Authors</span>
-          </div>
         </div>
       </div>
       
@@ -91,21 +90,6 @@ no-header: true
         <div class="discipline-overlay">
           <h3 class="discipline-title">Astrophysics</h3>
           <p class="discipline-description">Stars, galaxies, and cosmic phenomena including stellar evolution, galactic dynamics, and cosmological research</p>
-          <div class="discipline-stats">
-            <span class="stat">8M+ Papers</span>
-            <span class="stat">25K+ Authors</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="discipline-card biology" data-discipline="bio">
-        <div class="discipline-overlay">
-          <h3 class="discipline-title">Life Sciences</h3>
-          <p class="discipline-description">Biological research including astrobiology, extremophiles, and life detection in space environments</p>
-          <div class="discipline-stats">
-            <span class="stat">500K+ Papers</span>
-            <span class="stat">8K+ Authors</span>
-          </div>
         </div>
       </div>
       
@@ -113,10 +97,6 @@ no-header: true
         <div class="discipline-overlay">
           <h3 class="discipline-title">Planetary Science</h3>
           <p class="discipline-description">Solar system exploration including planetary atmospheres, geology, and comparative planetology</p>
-          <div class="discipline-stats">
-            <span class="stat">1.5M+ Papers</span>
-            <span class="stat">12K+ Authors</span>
-          </div>
         </div>
       </div>
       
@@ -124,161 +104,77 @@ no-header: true
         <div class="discipline-overlay">
           <h3 class="discipline-title">Heliophysics</h3>
           <p class="discipline-description">Solar and space physics including solar wind, magnetic fields, and space weather phenomena</p>
-          <div class="discipline-stats">
-            <span class="stat">800K+ Papers</span>
-            <span class="stat">6K+ Authors</span>
-          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- Expertise Section -->
-<div class="expertise-section">
-  <div class="container">
-    <h2>Our Expertise</h2>
-    <div class="expertise-grid">
-      <div class="expertise-card">
-        <div class="expertise-icon">🔬</div>
-        <h3>Discipline-Specific Knowledge</h3>
-        <p>Deep subject matter expertise across all NASA SMD disciplines, with specialized curation teams for each field</p>
+      
+      <div class="discipline-card biology" data-discipline="bio">
+        <div class="discipline-overlay">
+            <h3 class="discipline-title">Biological and Physical Sciences</h3>
+            <p class="discipline-description">Space-based research in life sciences, fundamental physics, and materials science including microgravity studies, space biology, and physical phenomena in space environments</p>
+        </div>
       </div>
-      <div class="expertise-card">
-        <div class="expertise-icon">🤖</div>
-        <h3>AI & Machine Learning</h3>
-        <p>Advanced text mining, natural language processing, and intelligent content enrichment using cutting-edge ML techniques</p>
+      
+      <!-- Physics Banner Row -->
+      <div class="discipline-banner-card">
+        <div class="discipline-banner-content">
+          <h3>Physics, Engineering, and General Sciences</h3>
+          <p>Research spanning various fields in connection to our core disciplines.</p>
+        </div>
       </div>
-      <div class="expertise-card">
-        <div class="expertise-icon">🔗</div>
-        <h3>Data Integration</h3>
-        <p>Seamless connections between publications, datasets, software, and research artifacts across multiple domains</p>
-      </div>
-      <div class="expertise-card">
-        <div class="expertise-icon">📊</div>
-        <h3>Analytics & Metrics</h3>
-        <p>Comprehensive citation tracking, usage analytics, and research impact assessment tools</p>
-      </div>
-      <div class="expertise-card">
-        <div class="expertise-icon">🌐</div>
-        <h3>Open Science</h3>
-        <p>Commitment to open access, open source development, and FAIR principles for maximum research impact</p>
-      </div>
-      <div class="expertise-card">
-        <div class="expertise-icon">⚡</div>
-        <h3>Scalable Infrastructure</h3>
-        <p>Cloud-based, high-performance systems built on modern technologies to serve the global research community</p>
-      </div>
+      
+      <!-- Background Spacer Row -->
+      <div class="discipline-background-spacer"></div>
     </div>
   </div>
 </div>
 
 <!-- What We Do Section -->
-<div class="work-section">
+<div class="what-we-do-section">
   <div class="container">
-    <h2>What We Do</h2>
-    <div class="work-grid">
-      <div class="work-item">
-        <div class="work-icon">📚</div>
+    <div class="what-we-do-header">
+      <div class="search-bar-container">
+        <div class="search-bar">
+          <div class="search-input">
+            <span class="search-text">SciX: More than a Search Engine</span>
+            <div class="search-cursor"></div>
+          </div>
+          <button class="search-button">
+            <img src="{{ site.baseurl }}/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg" alt="SciX Logo" class="search-logo" />
+          </button>
+        </div>
+      </div>
+      <p class="what-we-do-subtitle">Empowering researchers by mapping the Earth and space sciences research ecosystem</p>
+    </div>
+    <div class="what-we-do-grid">
+      <div class="what-we-do-card literature-card">
+        <div class="card-background-icon literature-bg"></div>
         <h3>Literature Discovery</h3>
         <p>Comprehensive indexing and search across 28+ million research records, including refereed papers, preprints, conference proceedings, and gray literature</p>
       </div>
-      <div class="work-item">
-        <div class="work-icon">🔍</div>
+      <div class="what-we-do-card search-card">
+        <div class="card-background-icon search-bg"></div>
         <h3>Advanced Search</h3>
-        <p>Powerful search capabilities with discipline-specific term normalization, synonym expansion, and intelligent query interpretation</p>
+        <p>Powerful search capabilities with discipline-specific term normalization, synonym expansion, and intelligent query interpretation. Discover literature based on a graph network of 300M+ citations </p>
       </div>
-      <div class="work-item">
-        <div class="work-icon">📈</div>
+      <div class="what-we-do-card analytics-card">
+        <div class="card-background-icon analytics-bg"></div>
         <h3>Research Analytics</h3>
         <p>Citation networks, co-authorship analysis, trending topics, and research impact metrics to understand scientific progress</p>
       </div>
-      <div class="work-item">
-        <div class="work-icon">🔗</div>
+      <div class="what-we-do-card linking-card">
+        <div class="card-background-icon linking-bg"></div>
         <h3>Data Linking</h3>
         <p>Connections to 26+ million external resources including datasets, software, astronomical objects, and funding information</p>
       </div>
-      <div class="work-item">
-        <div class="work-icon">👥</div>
+      <div class="what-we-do-card community-card">
+        <div class="card-background-icon community-bg"></div>
         <h3>Community Support</h3>
         <p>Responsive user support, training programs, and collaborative partnerships with research institutions worldwide</p>
       </div>
-      <div class="work-item">
-        <div class="work-icon">🛠️</div>
+      <div class="what-we-do-card api-card">
+        <div class="card-background-icon api-bg"></div>
         <h3>API Development</h3>
         <p>Open APIs and tools for integrating SciX capabilities into research workflows and third-party applications</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 5 Pillars Section -->
-<div class="pillars-section">
-  <div class="container">
-    <h2>Five Interconnected Pillars</h2>
-    <p class="pillars-intro">A dynamic web where feedback, data, and innovation travel constantly between each pillar</p>
-    
-    <!-- Pillars Grid -->
-    <div class="pillars-grid">
-      <div class="pillar-card" data-pillar="1" onclick="togglePillar(1)">
-        <div class="pillar-number">1</div>
-        <h3>Core Infrastructure</h3>
-        <p class="pillar-subtitle">ADS & SciX</p>
-      </div>
-      
-      <div class="pillar-card" data-pillar="2" onclick="togglePillar(2)">
-        <div class="pillar-number">2</div>
-        <h3>AI/NLP Data Mining</h3>
-        <p class="pillar-subtitle">& Enrichment</p>
-      </div>
-      
-      <div class="pillar-card" data-pillar="3" onclick="togglePillar(3)">
-        <div class="pillar-number">3</div>
-        <h3>Curatorial Sciences</h3>
-        <p class="pillar-subtitle">Quality & Governance</p>
-      </div>
-      
-      <div class="pillar-card" data-pillar="4" onclick="togglePillar(4)">
-        <div class="pillar-number">4</div>
-        <h3>Research Intelligence</h3>
-        <p class="pillar-subtitle">& User Tools</p>
-      </div>
-      
-      <div class="pillar-card" data-pillar="5" onclick="togglePillar(5)">
-        <div class="pillar-number">5</div>
-        <h3>Scientific Community</h3>
-        <p class="pillar-subtitle">& Outreach</p>
-      </div>
-    </div>
-    
-    <!-- Selected Pillar Details -->
-    <div id="pillar-details" class="pillar-details-card" style="display: none;">
-      <div class="pillar-details-content">
-        <div class="pillar-details-left">
-          <div class="pillar-badge" id="pillar-badge">Pillar 1</div>
-          <h3 class="pillar-details-title" id="pillar-details-title">Core Infrastructure</h3>
-          
-          <div class="pillar-info-section">
-            <h4 class="pillar-info-label">Purpose</h4>
-            <p class="pillar-info-text" id="pillar-purpose">Provide the authoritative backbone—a unified search and data repository integrating 20M+ records across NASA's science disciplines.</p>
-          </div>
-          
-          <div class="pillar-info-section">
-            <h4 class="pillar-info-label">Role in the Web</h4>
-            <p class="pillar-info-text" id="pillar-role">Serves as foundational 'raw material' for all other pillars. Feedback drives constant updates to the data index.</p>
-          </div>
-        </div>
-        
-        <div class="pillar-details-right">
-          <h4 class="pillar-info-label">Key Products & Capabilities</h4>
-          <ul class="pillar-products-list" id="pillar-products">
-            <li>Unified Data Index & Full-Text Search</li>
-            <li>ADS (Bumblebee) & SciX (Nectar) Front-Ends</li>
-            <li>Authoritative Metadata & Persistent IDs</li>
-            <li>APIs & Data Services</li>
-            <li>Scalable Architecture</li>
-          </ul>
-        </div>
       </div>
     </div>
   </div>
@@ -289,61 +185,188 @@ no-header: true
   <div class="container">
     <h2>Why Choose SciX?</h2>
     <div class="value-props">
-      <div class="value-prop">
-        <div class="value-icon">🎯</div>
+      <div class="value-prop coverage-card">
+        <div class="card-background-icon coverage-bg"></div>
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88 16.24,7.76"/>
+          </svg>
+        </div>
         <h3>Authoritative Coverage</h3>
-        <p>99% coverage of refereed literature in astrophysics, with rapidly expanding Earth science collections nearing the same level of completeness</p>
+        <p>Complete coverage of refereed literature in astrophysics, with rapidly expanding Earth science collections nearing the same level of completeness -- curated by experts in the field</p>
+        <div class="value-stat">Authoritative & Curated</div>
       </div>
-      <div class="value-prop">
-        <div class="value-icon">⚡</div>
+      <div class="value-prop impact-card">
+        <div class="card-background-icon impact-bg"></div>
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+          </svg>
+        </div>
         <h3>Proven Impact</h3>
-        <p>ADS has increased research efficiency by at least 6%, and SciX builds on this success with enhanced capabilities</p>
+        <p>Our platform has proven to increase research efficiency by at least 5%, and SciX builds on this success with enhanced capabilities</p>
+        <div class="value-stat">5%+ Efficiency Gain</div>
       </div>
-      <div class="value-prop">
-        <div class="value-icon">🌍</div>
+      <div class="value-prop global-card">
+        <div class="card-background-icon global-bg"></div>
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
         <h3>Global Reach</h3>
         <p>Serving 50,000+ scientists and librarians daily across 100+ countries, supporting the worldwide research community</p>
+        <div class="value-stat">50K+ Daily Users</div>
       </div>
-      <div class="value-prop">
-        <div class="value-icon">🔬</div>
+      <div class="value-prop discovery-card">
+        <div class="card-background-icon discovery-bg"></div>
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+            <path d="M20.2 20.2l-4.5-4.5m-7.4-7.4L3.8 3.8"/>
+          </svg>
+        </div>
         <h3>Interdisciplinary Discovery</h3>
-        <p>Foster cross-disciplinary connections through citation networks and co-readership analysis across all SMD disciplines</p>
+        <p>Foster cross-disciplinary connections through citation networks and co-readership analysis across all Earth and space science disciplines</p>
+        <div class="value-stat">Cross-Disciplinary</div>
       </div>
-      <div class="value-prop">
-        <div class="value-icon">🆓</div>
+      <div class="value-prop open-card">
+        <div class="card-background-icon open-bg"></div>
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+            <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
+            <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
+          </svg>
+        </div>
         <h3>Open & Free</h3>
         <p>Completely free access to all users, with open source software and open APIs following NASA's Open Source Science initiative</p>
+        <div class="value-stat">100% Free</div>
       </div>
-      <div class="value-prop">
-        <div class="value-icon">🚀</div>
+      <div class="value-prop innovation-card">
+        <div class="card-background-icon innovation-bg"></div>
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
         <h3>Innovation Focus</h3>
         <p>Continuous improvement with new features, AI capabilities, and community-driven enhancements to serve evolving research needs</p>
+        <div class="value-stat">AI/ML Augmented</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Team Section -->
+<!-- Who is behind SciX? Section -->
 <div class="team-section">
   <div class="container">
-    <h2>Our Team</h2>
-    <p class="team-intro">Led by experienced researchers and technologists from the Smithsonian Astrophysical Observatory, our diverse team combines deep domain expertise with cutting-edge technical skills.</p>
-    <div class="team-highlights">
-      <div class="team-highlight">
-        <h4>Project Leadership</h4>
-        <p>Dr. Alberto Accomazzi (PI), Dr. Michael Kurtz (Project Scientist Emeritus), and Dr. Pavlos Protopapas (Interim Project Scientist for Data Science)</p>
-      </div>
-      <div class="team-highlight">
-        <h4>Technical Excellence</h4>
-        <p>Expert developers in Python, Java, JavaScript/TypeScript, with expertise in Solr, React, Kubernetes, and cloud technologies</p>
-      </div>
-      <div class="team-highlight">
-        <h4>Domain Specialists</h4>
-        <p>Project scientists and specialists across astrophysics, Earth science, heliophysics, and planetary science</p>
+    <h2>Who is the team behind SciX?</h2>
+    <p class="team-intro">Led by experienced researchers, engineers, and curators from the Center for Astrophysics | Harvard & Smithsonian. Built by the team that has created and developed the <a href="https://ui.adsabs.harvard.edu/about/" target="_blank">NASA-funded Astrophysics Data Systems</a> for the last 30+ years.</p>
+    
+    <!-- Values & Ethos Combined -->
+    <div class="values-ethos-section">
+      <div class="values-ethos-content">
+        <!-- Values Graphic -->
+        <div class="values-graphic">
+          <div class="values-bubbles">
+            <div class="bubble bubble-1">Open</div>
+            <div class="bubble bubble-2">FAIR</div>
+            <div class="bubble bubble-3">Ethical</div>
+            <div class="bubble bubble-4">Trusted</div>
+            <div class="bubble bubble-5">Innovative</div>
+            <div class="bubble bubble-6">Complete</div>
+            <div class="bubble bubble-7">Free</div>
+          </div>
+        </div>
+        
+        <!-- Ethos Text -->
+        <div class="ethos-content">
+          <h3>Our Ethos</h3>
+          <p class="ethos-text">For scientists, by scientists. We are complete, interdisciplinary, and innovative in our approach to scientific discovery and research support.</p>
+        </div>
       </div>
     </div>
-    <div class="team-cta">
-      <a href="{{ site.baseurl }}/scixabout/team/" class="btn-primary">Meet Our Team</a>
+
+    <!-- Meet the Team -->
+    <div class="team-content">
+      <div class="team-highlights">
+        <div class="team-highlight">
+          <h4>Scientists & Domain Specialists</h4>
+          <p>Project scientists and specialists across astrophysics, Earth science, heliophysics, and planetary science</p>
+        </div>
+        <div class="team-highlight">
+          <h4>Technical Excellence</h4>
+          <p>Expert developers in backend and frontend systems, search engines, and cloud technologies</p>
+        </div>
+        <div class="team-highlight">
+          <h4>Expert Curators</h4>
+          <p>Team trained in curatorial and library sciences</p>
+        </div>
+      </div>
+      <div class="team-cta">
+        <a href="{{ site.baseurl }}/scixabout/team/" class="btn-primary">Meet Our Team</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- What People Say Section -->
+<div class="testimonials-section">
+  <div class="container">
+    <h2>What People Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="quote-marks">"</div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">What sets it apart from other digital platforms right now are a <span class="highlight-phrase">ton of features and services that aren't available in other research platforms</span>, but also the domain specificity and the ability to discover and access resources across all these geosciences... <br> <span class="highlight-phrase">SciX has curated content, so the accuracy of the result sets is higher</span> than some of the other platforms available to our community.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+                    <img src="{{ site.baseurl }}/about/img/scixab/7.png" alt="Danie Kinkade" class="author-photo" />
+            </div>
+            <div class="author-info">
+              <strong>Danie Kinkade</strong><br>
+              <span>Director of BCO-DMO repository | Information System Specialist, Woods Hole Oceanographic Institution | SciX Advisory Board member</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-marks">"</div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">ADS is the <span class="highlight-phrase">secret sauce that has made astronomical research possible for the last 30 years.</span>. As well as bringing new communities this valuable tool, this expansion recognises the increasingly interdisciplinary nature of our subject, connecting the astronomical literature with that of our sister subjects. In a world in which climate models developed for Earth can be tested on Mars, and where our knowledge of distant planets depends on models of solar activity, it makes no sense to stay in our own walled garden, but instead <span class="highlight-phrase">SciX throws the gates open.</span></p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+                    <img src="{{ site.baseurl }}/about/img/adsug/clintott.png" alt="Professor Chris Lintott" class="author-photo" />
+            </div>
+            <div class="author-info">
+              <strong>Professor Chris Lintott</strong><br>
+              <span>Long term ADS user | former Chair of the ADS User Group | Professor of Astrophysics, University of Oxford</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-marks">"</div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">Big scientific challenges - from the search for life in the universe to understanding solar activity and its impact on our planet - require researchers to work across traditional boundaries. SciX enables this by providing an <span class="highlight-phrase">open, connected platform that brings communities together and accelerates discovery.</span></p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+                    <img src="{{ site.baseurl }}/about/team/img/accomazzi.jpg" alt="Dr. Alberto Accomazzi" class="author-photo" />
+            </div>
+            <div class="author-info">
+              <strong>Dr. Alberto Accomazzi</strong><br>
+              <span>Director & Principal Investigator of ADS and SciX</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -351,13 +374,34 @@ no-header: true
 <!-- CTA Section -->
 <div class="cta-section">
   <div class="container">
-    <h2>Ready to Explore Science?</h2>
-    <p>Join thousands of researchers who rely on SciX for their daily research needs</p>
+    <h2>Are you ready to be a Science Explorer?</h2>
+    <p>Join millions of researchers already using SciX to accelerate discoveries, analyze trends, and connect with the global scientific community.</p>
     <div class="cta-buttons">
       <a href="https://scixplorer.org/" class="btn-primary">Start Searching</a>
-      <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary">Get Help</a>
+      <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary">Learn to Navigate SciX</a>
     </div>
   </div>
+    
+    <!-- Newsletter Card within CTA Section -->
+    <div class="newsletter-card">
+      <div class="newsletter-content">
+        <div class="newsletter-icon">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="newsletter-text">
+          <h3>Stay Updated with SciX</h3>
+          <p>Get the latest news, updates, and scientific discoveries delivered to your inbox monthly.</p>
+        </div>
+        <div class="newsletter-action">
+          <a href="https://harvard.us20.list-manage.com/subscribe?u=ed0cf26186d0cdd7bad11ed29&id=2c6299b24b" 
+             target="_blank" 
+             class="newsletter-btn">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            Subscribe to Newsletter
+          </a>
+        </div>
+      </div>
+    </div>
 </div>
 </div>
 
@@ -379,15 +423,66 @@ no-header: true
   padding: 0;
 }
 
+/* Header Text Overlay */
+.header-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.header-welcome-text {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  margin: 0;
+  line-height: 1.1;
+  animation: fadeInUp 1.5s ease-out 0.5s both, floatText 6s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-8px) translateX(5px);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-3px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(2px);
+  }
+}
+
 /* Custom Home Header */
 .home-header {
   position: relative;
   background-image: 
     linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),
     url('/help/common/images/scix/scix-discipline-backdrop.png');
-  background-size: cover, cover;
-  background-position: center, center;
-  background-attachment: fixed, fixed;
+  background-size: 120% auto, cover !important;
+  background-position: center center, center;
+  background-attachment: scroll, scroll;
   height: 40vh;
   min-height: 40vh;
   width: 100%;
@@ -414,14 +509,34 @@ no-header: true
   margin-bottom: 0 !important;
   line-height: 62px;
   height: 62px;
-  background-color: transparent;
+  background-color: #1a1a1a;
   border-radius: 0px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1000;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+/* Navbar Header - Extreme Left */
+.home-header .navbar-header {
+  flex: 0 0 auto;
+  z-index: 1001;
+  position: relative;
+}
+
+/* Navbar Collapse - Extreme Right */
+.home-header .navbar-collapse {
+  flex: 0 0 auto;
+  z-index: 1001;
+  position: relative;
+  display: flex !important;
+  align-items: center;
 }
 
 .home-header .navbar-brand {
@@ -468,16 +583,354 @@ no-header: true
   color: #fff;
 }
 
+/* Ensure navbar-collapse doesn't interfere with search */
+.navbar-collapse {
+  display: flex !important;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.navbar-collapse .nav {
+  margin: 0;
+}
+
+.navbar-header {
+  flex: 0 0 auto;
+  z-index: 1;
+}
+
+/* Force search bar to be visible and functional */
+.header-search-container * {
+  pointer-events: auto !important;
+}
+
+.header-search-input:focus {
+  outline: 2px solid #049DD9 !important;
+  outline-offset: 2px;
+}
+
+/* Navbar Search Bar Styles */
+.navbar-search-container {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-search-form {
+  width: 100%;
+}
+
+.navbar-search-input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-search-input-group:focus-within {
+  border-color: #049DD9;
+  box-shadow: 0 6px 25px rgba(4, 157, 217, 0.3);
+  transform: translateY(-1px);
+}
+
+.navbar-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  font-size: 1.3rem;
+  background: transparent;
+  color: #333;
+  font-weight: 500;
+  cursor: text;
+  pointer-events: auto;
+  width: 100%;
+  min-width: 150px;
+}
+
+.navbar-search-input::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+.navbar-search-button {
+  background: linear-gradient(135deg, #049DD9, #5FBFAE);
+  border: none;
+  padding: 10px 14px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  flex-shrink: 0;
+}
+
+.navbar-search-button:hover {
+  background: linear-gradient(135deg, #038BC4, #4FAE9E);
+  transform: scale(1.05);
+}
+
+.navbar-search-button:active {
+  transform: scale(0.95);
+}
+
+.navbar-search-button i {
+  font-size: 1.3rem;
+}
+
+/* Navbar Dropdown Fixes */
+.navbar-nav .dropdown {
+  position: relative;
+  z-index: 1001;
+}
+
+.navbar-nav .dropdown-toggle {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  z-index: 1002;
+  position: relative;
+  background: transparent !important;
+  border: none !important;
+  color: #9d9d9d !important;
+}
+
+.navbar-nav .dropdown-toggle:hover {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+.navbar-nav .dropdown-menu {
+  z-index: 1003;
+  position: absolute;
+  pointer-events: auto !important;
+  display: none;
+}
+
+.navbar-nav .dropdown.open .dropdown-menu {
+  display: block !important;
+}
+
+.navbar-nav .dropdown-menu li a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  color: #333 !important;
+}
+
+.navbar-nav .dropdown-menu li a:hover {
+  background: #f5f5f5 !important;
+  color: #333 !important;
+}
+
+/* Header Search Bar Styles (Legacy - keeping for compatibility) */
+.header-search-container {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20px;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header-search-form {
+  width: 100%;
+  position: relative;
+}
+
+.header-search-input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-search-input-group:focus-within {
+  border-color: #049DD9;
+  box-shadow: 0 4px 20px rgba(4, 157, 217, 0.3);
+  transform: translateY(-1px);
+}
+
+.header-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 1.4rem;
+  background: transparent;
+  color: #333;
+  font-weight: 500;
+  cursor: text;
+  pointer-events: auto;
+  z-index: 1001;
+  position: relative;
+  width: 100%;
+  min-width: 200px;
+}
+
+.header-search-input::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+.header-search-button {
+  background: linear-gradient(135deg, #049DD9, #5FBFAE);
+  border: none;
+  padding: 12px 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  z-index: 1001;
+  position: relative;
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+
+.header-search-button:hover {
+  background: linear-gradient(135deg, #038BC4, #4FAE9E);
+  transform: scale(1.05);
+}
+
+.header-search-button:active {
+  transform: scale(0.95);
+}
+
+.header-search-button i {
+  font-size: 1.4rem;
+}
+
+/* Responsive Navbar Layout */
+@media (max-width: 768px) {
+  .home-header .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 15px;
+  }
+  
+  .home-header .navbar-header {
+    order: 1;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .navbar-search-container {
+    order: 2;
+    max-width: 100%;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .home-header .navbar-collapse {
+    order: 3;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .navbar-search-input {
+    font-size: 1.2rem;
+    padding: 8px 14px;
+  }
+  
+  .navbar-search-button {
+    padding: 8px 12px;
+    min-width: 40px;
+  }
+  
+  .navbar-search-button i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-search-container {
+    margin: 8px 0;
+  }
+  
+  .navbar-search-input {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+  }
+  
+  .navbar-search-button {
+    padding: 6px 10px;
+    min-width: 35px;
+  }
+  
+  .navbar-search-button i {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive Header Search (Legacy) */
+@media (max-width: 768px) {
+  .header-search-container {
+    max-width: 100%;
+    margin: 10px 0;
+    order: 2;
+    width: 100%;
+  }
+  
+  .header-search-input {
+    font-size: 1.2rem;
+    padding: 10px 16px;
+  }
+  
+  .header-search-button {
+    padding: 10px 14px;
+    min-width: 45px;
+  }
+  
+  .header-search-button i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-search-container {
+    margin: 8px 0;
+  }
+  
+  .header-search-input {
+    font-size: 1.1rem;
+    padding: 8px 14px;
+  }
+  
+  .header-search-button {
+    padding: 8px 12px;
+    min-width: 40px;
+  }
+}
+
 /* Hero Section with Dynamic Background */
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: #0a0a0a;
   color: white;
+  padding-bottom: 80px;
 }
 
 
@@ -543,8 +996,9 @@ no-header: true
   position: relative;
   z-index: 3;
   text-align: center;
-  max-width: 1200px;
+  max-width: 1600px;
   padding: 0 20px;
+  margin-top: 60px;
 }
 
 .hero-badge {
@@ -559,7 +1013,7 @@ no-header: true
 }
 
 .badge-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #ffffff;
   letter-spacing: 0.5px;
@@ -634,10 +1088,10 @@ no-header: true
 }
 
 .hero-subtitle {
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin-bottom: 60px;
   opacity: 0.9;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
@@ -651,21 +1105,29 @@ no-header: true
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 0.8fr);
   gap: 30px;
   margin-bottom: 60px;
   animation: slideInUp 1s ease-out 0.8s both;
+  justify-content: center;
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(74, 144, 226, 0.3);
+  border-radius: 50px 20px 50px 20px;
   padding: 30px 20px;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  transform: translateY(0);
+  clip-path: polygon(0% 0%, 85% 0%, 100% 15%, 100% 100%, 15% 100%, 0% 85%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
 }
 
 .stat-card::before {
@@ -684,32 +1146,39 @@ no-header: true
 }
 
 .stat-card:hover {
-  transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-12px) scale(1.02);
+  background: rgba(74, 144, 226, 0.1);
+  border-color: rgba(74, 144, 226, 0.6);
+  box-shadow: 0 20px 40px rgba(74, 144, 226, 0.2), 0 0 20px rgba(74, 144, 226, 0.3);
 }
 
 .stat-icon {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  opacity: 0.8;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  margin-top: auto;
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(74, 144, 226, 0.4));
+  transition: all 0.3s ease;
+  align-self: center;
+  text-align: center;
 }
 
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 900;
   margin-bottom: 8px;
-  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+  background: linear-gradient(135deg, #4a90e2, #5fb3ff, #97bf41);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .stat-label {
-  font-size: 1rem;
-  opacity: 0.8;
-  font-weight: 500;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .hero-actions {
@@ -728,7 +1197,7 @@ no-header: true
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -771,7 +1240,7 @@ no-header: true
 
 /* Container */
 .container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -791,12 +1260,21 @@ no-header: true
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23049DD9" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-  opacity: 0.3;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(4, 157, 217, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(95, 191, 174, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(151, 191, 65, 0.05) 0%, transparent 50%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23049DD9" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  animation: missionBackground 15s ease-in-out infinite;
+}
+
+@keyframes missionBackground {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
 }
 
 .mission-section h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   margin-bottom: 40px;
   color: #ffffff;
@@ -805,20 +1283,50 @@ no-header: true
   z-index: 2;
 }
 
+.mission-tagline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #049DD9;
+  text-align: center;
+  margin: 0 0 30px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-tagline::before,
+.mission-tagline::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #049DD9, transparent);
+}
+
+.mission-tagline::before {
+  left: -80px;
+}
+
+.mission-tagline::after {
+  right: -80px;
+}
+
 .mission-text {
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
   color: #cccccc;
-  line-height: 1.8;
+  line-height: 1.6;
   position: relative;
   z-index: 2;
 }
 
 /* Discipline Showcase Section */
 .discipline-showcase {
-  padding: 120px 0;
+  padding: 120px 0 30px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
   overflow: hidden;
@@ -834,8 +1342,15 @@ no-header: true
   background: 
     radial-gradient(circle at 20% 20%, rgba(4, 157, 217, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(95, 191, 174, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(151, 191, 65, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 50% 50%, rgba(151, 191, 65, 0.05) 0%, transparent 50%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><pattern id="sciNetwork" width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="3" fill="%23049DD9" opacity="0.4"/><circle cx="0" cy="0" r="2" fill="%235FBFAE" opacity="0.3"/><circle cx="60" cy="60" r="2" fill="%2397BF41" opacity="0.3"/><circle cx="0" cy="60" r="1.5" fill="%23049DD9" opacity="0.2"/><circle cx="60" cy="0" r="1.5" fill="%235FBFAE" opacity="0.2"/><circle cx="30" cy="0" r="1" fill="%2397BF41" opacity="0.15"/><circle cx="0" cy="30" r="1" fill="%23049DD9" opacity="0.15"/><circle cx="60" cy="30" r="1" fill="%235FBFAE" opacity="0.15"/><circle cx="30" cy="60" r="1" fill="%2397BF41" opacity="0.15"/><line x1="0" y1="0" x2="30" y2="30" stroke="%23049DD9" stroke-width="1" opacity="0.2"/><line x1="30" y1="30" x2="60" y2="60" stroke="%235FBFAE" stroke-width="1" opacity="0.2"/><line x1="0" y1="60" x2="30" y2="30" stroke="%2397BF41" stroke-width="0.8" opacity="0.15"/><line x1="60" y1="0" x2="30" y2="30" stroke="%23049DD9" stroke-width="0.8" opacity="0.15"/><line x1="0" y1="30" x2="30" y2="30" stroke="%235FBFAE" stroke-width="0.6" opacity="0.1"/><line x1="30" y1="0" x2="30" y2="30" stroke="%2397BF41" stroke-width="0.6" opacity="0.1"/><line x1="60" y1="30" x2="30" y2="30" stroke="%23049DD9" stroke-width="0.6" opacity="0.1"/><line x1="30" y1="60" x2="30" y2="30" stroke="%235FBFAE" stroke-width="0.6" opacity="0.1"/></pattern></defs><rect width="300" height="300" fill="url(%23sciNetwork)"/></svg>');
   opacity: 0.8;
+  animation: disciplineBackground 25s ease-in-out infinite;
+}
+
+@keyframes disciplineBackground {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.9; }
 }
 
 .discipline-showcase h2 {
@@ -849,7 +1364,7 @@ no-header: true
 }
 
 .discipline-intro {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 800px;
   margin: 0 auto 80px;
@@ -860,54 +1375,77 @@ no-header: true
 }
 
 .discipline-grid {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 3fr auto 1fr;
   position: relative;
   z-index: 2;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(4, 157, 217, 0.3) transparent;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: 900px;
+  gap: 0;
 }
 
-.discipline-grid::-webkit-scrollbar {
-  height: 8px;
-}
-
-.discipline-grid::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.discipline-grid::-webkit-scrollbar-thumb {
-  background: rgba(4, 157, 217, 0.3);
-  border-radius: 4px;
-}
-
-.discipline-grid::-webkit-scrollbar-thumb:hover {
-  background: rgba(4, 157, 217, 0.5);
-}
 
 .discipline-card {
-  height: 300px;
-  width: 280px;
-  min-width: 280px;
-  border-radius: 20px;
+  height: 100%;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  box-shadow: none;
   transition: all 0.4s ease;
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  flex-shrink: 0;
 }
 
 .discipline-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+  z-index: 10;
 }
+
+/* Physics Banner Card */
+.discipline-banner-card {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  background-color: #000000;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('/help/common/images/scix/scix-bg-general.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Background Spacer */
+.discipline-background-spacer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  background: transparent;
+}
+
+.discipline-banner-content h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  letter-spacing: 0.5px;
+}
+
+.discipline-banner-content p {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
 
 /* Earth Science - Individual backdrop image */
 .discipline-card.earth-science {
@@ -974,29 +1512,47 @@ no-header: true
 }
 
 .discipline-title {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2.2rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: #ffffff;
   text-shadow: 0 3px 6px rgba(0,0,0,0.8);
   letter-spacing: 0.5px;
+  text-align: center;
+  width: 100%;
 }
 
 .discipline-description {
-  font-size: 1.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
   font-weight: 500;
   color: #ffffff;
   line-height: 1.6;
-  margin-bottom: 25px;
+  margin: 5;
   text-shadow: 0 2px 4px rgba(0,0,0,0.8);
   max-width: 280px;
+  text-align: center;
+  width: 100%;
 }
 
 .discipline-stats {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .discipline-stats .stat {
@@ -1004,12 +1560,34 @@ no-header: true
   color: #333;
   padding: 10px 18px;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.discipline-stats .stat-link {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.discipline-stats .stat-link:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
 
 /* Expertise Section */
 .expertise-section {
@@ -1109,62 +1687,331 @@ no-header: true
 .expertise-card p {
   color: #666;
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
-/* Work Section */
-.work-section {
-  padding: 80px 0;
-  background: #F8F9FA;
+/* What We Do Section */
+.what-we-do-section {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.work-section h2 {
-  font-size: 2.5rem;
+.what-we-do-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="network" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="2" fill="%23ffffff" opacity="0.3"/><circle cx="0" cy="0" r="1.5" fill="%23ffffff" opacity="0.2"/><circle cx="40" cy="40" r="1.5" fill="%23ffffff" opacity="0.2"/><circle cx="0" cy="40" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="40" cy="0" r="1" fill="%23ffffff" opacity="0.1"/><line x1="0" y1="0" x2="20" y2="20" stroke="%23ffffff" stroke-width="0.5" opacity="0.2"/><line x1="20" y1="20" x2="40" y2="40" stroke="%23ffffff" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="40" x2="20" y2="20" stroke="%23ffffff" stroke-width="0.3" opacity="0.15"/><line x1="40" y1="0" x2="20" y2="20" stroke="%23ffffff" stroke-width="0.3" opacity="0.15"/></pattern></defs><rect width="200" height="200" fill="url(%23network)"/></svg>');
+  animation: whatWeDoBackground 20s ease-in-out infinite;
+}
+
+@keyframes whatWeDoBackground {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+.what-we-do-header {
   text-align: center;
-  margin-bottom: 60px;
-  color: #333;
-  font-weight: 700;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
 }
 
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-
-.work-item {
+/* Search Bar Container */
+.search-bar-container {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 30px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  justify-content: center;
+  margin-bottom: 30px;
+  animation: slideInDown 1s ease-out;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border: 3px solid #049DD9;
+  border-radius: 50px;
+  padding: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  max-width: 600px;
+  width: 100%;
 }
 
-.work-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+.search-bar:hover {
+  border-color: #5FBFAE;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
-.work-icon {
+.search-input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-text {
   font-size: 2.5rem;
-  flex-shrink: 0;
-  margin-top: 5px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 2;
 }
 
-.work-item h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+.search-cursor {
+  width: 3px;
+  height: 40px;
+  background: linear-gradient(135deg, #049DD9, #5FBFAE, #97BF41);
+  margin-left: 8px;
+  border-radius: 2px;
+  animation: cursorBlink 1.5s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes cursorBlink {
+  0%, 50% { 
+    opacity: 1; 
+    transform: scaleY(1);
+  }
+  51%, 100% { 
+    opacity: 0.3; 
+    transform: scaleY(0.8);
+  }
+}
+
+.search-button {
+  background: linear-gradient(135deg, #049DD9, #5FBFAE);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(4, 157, 217, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.search-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.search-button:hover::before {
+  left: 100%;
+}
+
+.search-button:hover {
+  transform: scale(1.05) rotate(5deg);
+  box-shadow: 0 8px 25px rgba(4, 157, 217, 0.4);
+}
+
+.search-logo {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.search-button:hover .search-logo {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.what-we-do-subtitle {
+  font-size: 2.5rem;
   color: #333;
-  font-weight: 600;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 500;
+  animation: slideInUp 1s ease-out 0.3s both;
 }
 
-.work-item p {
-  color: #666;
-  line-height: 1.6;
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.what-we-do-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.what-we-do-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: left;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: cardSlideIn 0.8s ease-out;
+}
+
+.what-we-do-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.what-we-do-card:hover::before {
+  left: 100%;
+}
+
+.what-we-do-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.98);
+}
+
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Artistic Background Line Drawings */
+.card-background-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.literature-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23049DD9" opacity="0.3"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>') no-repeat center 25%;
+  background-size: 70% 70%;
+  transform: rotate(-2deg);
+}
+
+.search-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231E40AF" opacity="0.3"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>') no-repeat center 75%;
+  background-size: 70% 70%;
+  transform: rotate(1deg);
+}
+
+.analytics-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237C3AED" opacity="0.3"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>') no-repeat center 30%;
+  background-size: 70% 70%;
+  transform: rotate(-1deg);
+}
+
+.linking-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2320B2AA" opacity="0.3"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>') no-repeat center 80%;
+  background-size: 70% 70%;
+  transform: rotate(2deg);
+}
+
+.community-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%237C3AED" opacity="0.3"><path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 7H17c-.8 0-1.54.37-2.01.99L14 9l-1.5-1.5c-.47-.62-1.21-.99-2.01-.99H9.46c-.8 0-1.54.37-2.01.99L6 9l-1.5-1.5C4.03 6.37 3.29 6 2.5 6H1v2h1.5l2.54 7.63A1.5 1.5 0 0 0 6.46 17H8c.8 0 1.54-.37 2.01-.99L11 15l1.5 1.5c.47.62 1.21.99 2.01.99h1.54c.8 0 1.54-.37 2.01-.99L18 15l1.5 1.5c.47.62 1.21.99 2.01.99H22v-6h-2v6z"/></svg>') no-repeat center 35%;
+  background-size: 70% 70%;
+  transform: rotate(-1deg);
+}
+
+.api-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231E40AF" opacity="0.3"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>') no-repeat center 70%;
+  background-size: 70% 70%;
+  transform: rotate(1deg);
+}
+
+.what-we-do-card:hover .card-background-icon {
+  opacity: 0.4;
+  transform: scale(1.05);
+}
+
+.what-we-do-card h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.what-we-do-card:hover h3 {
+  color: #333;
+}
+
+.what-we-do-card p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.5rem;
   margin: 0;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.what-we-do-card:hover p {
+  color: #444;
 }
 
 /* 5 Pillars Section */
@@ -1185,7 +2032,8 @@ no-header: true
   background: 
     radial-gradient(circle at 10% 20%, rgba(4, 157, 217, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 90% 80%, rgba(95, 191, 174, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(151, 191, 65, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 50% 50%, rgba(151, 191, 65, 0.1) 0%, transparent 50%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><pattern id="dataFlow" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="40" cy="40" r="4" fill="%23049DD9" opacity="0.6"/><circle cx="0" cy="0" r="3" fill="%235FBFAE" opacity="0.5"/><circle cx="80" cy="80" r="3" fill="%2397BF41" opacity="0.5"/><circle cx="0" cy="80" r="2" fill="%23049DD9" opacity="0.4"/><circle cx="80" cy="0" r="2" fill="%235FBFAE" opacity="0.4"/><circle cx="40" cy="0" r="1.5" fill="%2397BF41" opacity="0.3"/><circle cx="0" cy="40" r="1.5" fill="%23049DD9" opacity="0.3"/><circle cx="80" cy="40" r="1.5" fill="%235FBFAE" opacity="0.3"/><circle cx="40" cy="80" r="1.5" fill="%2397BF41" opacity="0.3"/><rect x="20" y="20" width="8" height="8" fill="%23049DD9" opacity="0.2" rx="2"/><rect x="52" y="52" width="6" height="6" fill="%235FBFAE" opacity="0.2" rx="1"/><rect x="20" y="52" width="4" height="4" fill="%2397BF41" opacity="0.2" rx="1"/><rect x="52" y="20" width="4" height="4" fill="%23049DD9" opacity="0.2" rx="1"/><line x1="0" y1="0" x2="40" y2="40" stroke="%23049DD9" stroke-width="1.5" opacity="0.3"/><line x1="40" y1="40" x2="80" y2="80" stroke="%235FBFAE" stroke-width="1.5" opacity="0.3"/><line x1="0" y1="80" x2="40" y2="40" stroke="%2397BF41" stroke-width="1.2" opacity="0.25"/><line x1="80" y1="0" x2="40" y2="40" stroke="%23049DD9" stroke-width="1.2" opacity="0.25"/><line x1="0" y1="40" x2="40" y2="40" stroke="%235FBFAE" stroke-width="1" opacity="0.2"/><line x1="40" y1="0" x2="40" y2="40" stroke="%2397BF41" stroke-width="1" opacity="0.2"/><line x1="80" y1="40" x2="40" y2="40" stroke="%23049DD9" stroke-width="1" opacity="0.2"/><line x1="40" y1="80" x2="40" y2="40" stroke="%235FBFAE" stroke-width="1" opacity="0.2"/></pattern></defs><rect width="400" height="400" fill="url(%23dataFlow)"/></svg>');
   animation: pillarBackground 20s ease-in-out infinite;
 }
 
@@ -1209,7 +2057,7 @@ no-header: true
 }
 
 .pillars-intro {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   max-width: 800px;
   margin: 0 auto 80px;
@@ -1239,7 +2087,8 @@ no-header: true
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
-  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .pillar-card:hover {
@@ -1261,7 +2110,7 @@ no-header: true
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: white;
   margin: 0 auto 15px;
@@ -1269,7 +2118,7 @@ no-header: true
 }
 
 .pillar-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 8px;
   color: #ffffff;
@@ -1277,7 +2126,7 @@ no-header: true
 }
 
 .pillar-subtitle {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   color: #cccccc;
   margin-bottom: 0;
 }
@@ -1316,7 +2165,7 @@ no-header: true
   color: #049DD9;
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 20px;
   border: 1px solid rgba(4, 157, 217, 0.3);
@@ -1335,14 +2184,14 @@ no-header: true
 }
 
 .pillar-info-label {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #5FBFAE;
   margin-bottom: 10px;
 }
 
 .pillar-info-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #cccccc;
   line-height: 1.6;
 }
@@ -1354,7 +2203,7 @@ no-header: true
 }
 
 .pillar-products-list li {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #cccccc;
   margin-bottom: 12px;
   padding-left: 20px;
@@ -1368,7 +2217,7 @@ no-header: true
   font-weight: bold;
   position: absolute;
   left: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 /* Responsive Design for Pillars */
@@ -1413,54 +2262,234 @@ no-header: true
 
 /* Why SciX Section */
 .why-scix-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #97BF41 0%, #BFAC4B 100%);
+  padding: 120px 0;
+  background: linear-gradient(135deg, #049DD9 0%, #5FBFAE 50%, #97BF41 100%);
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-scix-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="whyGrid" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="2" fill="%23ffffff" opacity="0.3"/><circle cx="0" cy="0" r="1.5" fill="%23ffffff" opacity="0.2"/><circle cx="40" cy="40" r="1.5" fill="%23ffffff" opacity="0.2"/><circle cx="0" cy="40" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="40" cy="0" r="1" fill="%23ffffff" opacity="0.1"/><line x1="0" y1="0" x2="20" y2="20" stroke="%23ffffff" stroke-width="0.5" opacity="0.2"/><line x1="20" y1="20" x2="40" y2="40" stroke="%23ffffff" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="40" x2="20" y2="20" stroke="%23ffffff" stroke-width="0.3" opacity="0.15"/><line x1="40" y1="0" x2="20" y2="20" stroke="%23ffffff" stroke-width="0.3" opacity="0.15"/></pattern></defs><rect width="200" height="200" fill="url(%23whyGrid)"/></svg>');
+  animation: whyBackground 20s ease-in-out infinite;
+}
+
+@keyframes whyBackground {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
 }
 
 .why-scix-section h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   text-align: center;
-  margin-bottom: 60px;
-  font-weight: 700;
+  margin-bottom: 30px;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  color: white;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
+
 
 .value-props {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .value-prop {
   text-align: center;
-  padding: 30px 20px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+  padding: 50px 40px;
+  background: white;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: cardSlideIn 0.8s ease-out;
+}
+
+.value-prop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.value-prop:hover::before {
+  left: 100%;
 }
 
 .value-prop:hover {
-  background: rgba(255,255,255,0.2);
-  transform: translateY(-5px);
+  background: white;
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Background Icons */
+.card-background-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.coverage-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23049DD9" opacity="0.6"><circle cx="12" cy="12" r="10"/><polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88 16.24,7.76"/></svg>') no-repeat center 25%;
+  background-size: 60% 60%;
+  transform: rotate(-5deg);
+}
+
+.impact-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23049DD9" opacity="0.6"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/></svg>') no-repeat center 75%;
+  background-size: 60% 60%;
+  transform: rotate(3deg);
+}
+
+.global-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23049DD9" opacity="0.6"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>') no-repeat center 30%;
+  background-size: 60% 60%;
+  transform: rotate(-2deg);
+}
+
+.discovery-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23049DD9" opacity="0.6"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/><path d="M20.2 20.2l-4.5-4.5m-7.4-7.4L3.8 3.8"/></svg>') no-repeat center 80%;
+  background-size: 60% 60%;
+  transform: rotate(4deg);
+}
+
+.open-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23049DD9" opacity="0.6"><path d="M9 12l2 2 4-4"/><path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/><path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/><path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/><path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/></svg>') no-repeat center 35%;
+  background-size: 60% 60%;
+  transform: rotate(-3deg);
+}
+
+.innovation-bg {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23049DD9" opacity="0.6"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>') no-repeat center 70%;
+  background-size: 60% 60%;
+  transform: rotate(2deg);
+}
+
+.value-prop:hover .card-background-icon {
+  opacity: 0;
+  transform: scale(1.05);
 }
 
 .value-icon {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 30px;
+  background: rgba(4, 157, 217, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  border: 2px solid rgba(4, 157, 217, 0.3);
+}
+
+.value-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke: #049DD9;
+  transition: all 0.3s ease;
+}
+
+.value-prop:hover .value-icon {
+  background: rgba(4, 157, 217, 0.2);
+  transform: scale(1.1) rotate(5deg);
+  border-color: rgba(4, 157, 217, 0.5);
+}
+
+.value-prop:hover .value-icon svg {
+  stroke: #049DD9;
+  filter: drop-shadow(0 0 8px rgba(4, 157, 217, 0.5));
 }
 
 .value-prop h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.value-prop:hover h3 {
+  color: #049DD9;
 }
 
 .value-prop p {
-  opacity: 0.95;
-  line-height: 1.6;
-  margin: 0;
+  line-height: 1.7;
+  margin: 0 0 25px 0;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+  color: #666;
+}
+
+.value-prop:hover p {
+  color: #333;
+}
+
+.value-stat {
+  display: inline-block;
+  background: rgba(4, 157, 217, 0.1);
+  color: #049DD9;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 1px solid rgba(4, 157, 217, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.value-prop:hover .value-stat {
+  background: rgba(4, 157, 217, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Team Section */
@@ -1478,11 +2507,12 @@ no-header: true
 }
 
 .team-intro {
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 50px;
   color: #666;
+  line-height: 1.6;
 }
 
 .team-highlights {
@@ -1501,7 +2531,7 @@ no-header: true
 }
 
 .team-highlight h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   color: #333;
   font-weight: 600;
@@ -1515,6 +2545,296 @@ no-header: true
 
 .team-cta {
   text-align: center;
+}
+
+/* Values & Ethos Combined Section */
+.values-ethos-section {
+  margin-bottom: 60px;
+}
+
+.values-ethos-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.values-graphic h3,
+.ethos-content h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.values-bubbles {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.bubble {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual bubble positioning and styling */
+.bubble-1 {
+  background: linear-gradient(135deg, #049DD9, #5FBFAE);
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 50px;
+}
+
+.bubble-2 {
+  background: linear-gradient(135deg, #5FBFAE, #97BF41);
+  width: 140px;
+  height: 140px;
+  top: 80px;
+  left: 180px;
+}
+
+.bubble-3 {
+  background: linear-gradient(135deg, #97BF41, #049DD9);
+  width: 180px;
+  height: 180px;
+  top: 150px;
+  left: 30px;
+}
+
+.bubble-4 {
+  background: linear-gradient(135deg, #7C3AED, #049DD9);
+  width: 150px;
+  height: 150px;
+  top: 200px;
+  left: 250px;
+}
+
+.bubble-5 {
+  background: linear-gradient(135deg, #20B2AA, #5FBFAE);
+  width: 170px;
+  height: 170px;
+  top: 50px;
+  left: 300px;
+}
+
+.bubble-6 {
+  background: linear-gradient(135deg, #1E40AF, #7C3AED);
+  width: 140px;
+  height: 140px;
+  top: 250px;
+  left: 120px;
+}
+
+.bubble-7 {
+  background: linear-gradient(135deg, #5FBFAE, #20B2AA);
+  width: 160px;
+  height: 160px;
+  top: 300px;
+  left: 280px;
+}
+
+.ethos-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.ethos-text {
+  font-size: 2rem;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  animation: testimonialBackground 15s ease-in-out infinite;
+}
+
+@keyframes testimonialBackground {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px 40px 40px 40px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Quote Marks */
+.quote-marks {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  font-size: 8rem;
+  color: rgba(4, 157, 217, 0.2);
+  font-family: serif;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-text {
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-style: italic;
+  position: relative;
+  z-index: 2;
+}
+
+/* Highlighted Phrases */
+.highlight-phrase {
+  background: linear-gradient(120deg, rgba(4, 157, 217, 0.15) 0%, rgba(95, 191, 174, 0.15) 100%);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #2c3e50;
+  position: relative;
+  display: inline-block;
+  margin: 4px 2px;
+  border: 2px solid rgba(4, 157, 217, 0.3);
+  box-shadow: 0 2px 8px rgba(4, 157, 217, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.highlight-phrase::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #049DD9, #5FBFAE);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(4, 157, 217, 0.3);
+}
+
+/* Author Section */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.author-avatar {
+  flex-shrink: 0;
+}
+
+.author-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.author-photo:hover {
+  transform: scale(1.05);
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-info strong {
+  color: #333;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Team Content */
+.team-content {
+  margin-top: 40px;
+}
+
+.team-content h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
 }
 
 /* CTA Section */
@@ -1533,7 +2853,7 @@ no-header: true
 }
 
 .cta-section p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 40px;
   opacity: 0.95;
 }
@@ -1545,6 +2865,102 @@ no-header: true
   flex-wrap: wrap;
 }
 
+/* Newsletter Card within CTA Section */
+.newsletter-card {
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.newsletter-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-icon {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-icon i {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.newsletter-text {
+  flex: 1;
+  text-align: left;
+  color: white;
+}
+
+.newsletter-text h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.newsletter-text p {
+  font-size: 1.3rem;
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.5;
+}
+
+.newsletter-action {
+  flex-shrink: 0;
+}
+
+.newsletter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #333;
+  text-decoration: none;
+}
+
+.newsletter-btn:active {
+  transform: translateY(0);
+}
+
+.newsletter-btn i {
+  font-size: 1.3rem;
+  color: #049DD9;
+}
+
 /* Buttons */
 .btn-primary, .btn-secondary {
   display: inline-block;
@@ -1552,7 +2968,7 @@ no-header: true
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
@@ -1596,8 +3012,45 @@ no-header: true
   background: #1a1a1a;
 }
 
-[data-theme='dark'] .work-section {
-  background: #2c2c2c;
+[data-theme='dark'] .what-we-do-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+}
+
+[data-theme='dark'] .what-we-do-title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .title-text {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .what-we-do-subtitle {
+  color: #cccccc;
+}
+
+[data-theme='dark'] .what-we-do-card {
+  background: rgba(44, 44, 44, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .what-we-do-card:hover {
+  background: rgba(44, 44, 44, 0.98);
+}
+
+[data-theme='dark'] .what-we-do-card h3 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .what-we-do-card:hover h3 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .what-we-do-card p {
+  color: #cccccc;
+}
+
+[data-theme='dark'] .what-we-do-card:hover p {
+  color: #e0e0e0;
 }
 
 [data-theme='dark'] .team-section {
@@ -1665,9 +3118,71 @@ no-header: true
 [data-theme='dark'] .expertise-card p,
 [data-theme='dark'] .work-item p,
 [data-theme='dark'] .team-highlight p,
+[data-theme='dark'] .mission-tagline {
+  color: #5FBFAE;
+}
+
+[data-theme='dark'] .mission-tagline::before,
+[data-theme='dark'] .mission-tagline::after {
+  background: linear-gradient(90deg, transparent, #5FBFAE, transparent);
+}
+
 [data-theme='dark'] .mission-text,
 [data-theme='dark'] .team-intro {
   color: #cccccc;
+}
+
+[data-theme='dark'] .values-graphic h3,
+[data-theme='dark'] .ethos-content h3,
+[data-theme='dark'] .testimonials-section h3,
+[data-theme='dark'] .team-content h3 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .ethos-text {
+  color: #cccccc;
+}
+
+[data-theme='dark'] .testimonials-section {
+  background: linear-gradient(135deg, #8B5CF6 0%, #06B6D4 50%, #3B82F6 100%);
+}
+
+[data-theme='dark'] .testimonial-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='dark'] .testimonial-card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme='dark'] .quote-marks {
+  color: rgba(139, 92, 246, 0.4);
+}
+
+[data-theme='dark'] .testimonial-text {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .highlight-phrase {
+  background: linear-gradient(120deg, rgba(139, 92, 246, 0.3) 0%, rgba(6, 182, 212, 0.3) 100%);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .highlight-phrase::before {
+  background: linear-gradient(90deg, #8B5CF6, #06B6D4);
+}
+
+[data-theme='dark'] .testimonial-author {
+  color: #cccccc;
+}
+
+[data-theme='dark'] .author-info strong {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .author-photo {
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 [data-theme='dark'] .discipline-showcase {
@@ -1706,6 +3221,17 @@ no-header: true
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
+[data-theme='dark'] .discipline-stats .stat-link {
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+[data-theme='dark'] .discipline-stats .stat-link:hover {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title-wrapper {
@@ -1722,7 +3248,24 @@ no-header: true
   }
   
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+  
+  .mission-tagline {
+    font-size: 2rem;
+  }
+  
+  .mission-tagline::before,
+  .mission-tagline::after {
+    width: 40px;
+  }
+  
+  .mission-tagline::before {
+    left: -60px;
+  }
+  
+  .mission-tagline::after {
+    right: -60px;
   }
   
   .hero-stats {
@@ -1757,8 +3300,49 @@ no-header: true
     padding: 40px 25px;
   }
   
-  .work-grid {
-    grid-template-columns: 1fr;
+  .what-we-do-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .value-props {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .why-scix-section h2 {
+    font-size: 3.5rem;
+  }
+  
+  
+  .value-prop {
+    padding: 45px 35px;
+  }
+  
+  .search-text {
+    font-size: 2rem;
+  }
+  
+  .search-cursor {
+    height: 30px;
+  }
+  
+  .search-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .search-logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .what-we-do-subtitle {
+    font-size: 2rem;
+  }
+  
+  .what-we-do-card {
+    padding: 40px 30px;
   }
   
   .pillars-grid {
@@ -1771,34 +3355,124 @@ no-header: true
   }
   
   .discipline-grid {
-    gap: 15px;
-    padding-bottom: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) auto 1fr;
+    height: auto;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  .discipline-banner-card {
+    grid-column: 1;
+  }
+  
+  .discipline-banner-content h3 {
+    font-size: 2rem;
+  }
+  
+  .discipline-banner-content p {
+    font-size: 1.1rem;
   }
   
   .discipline-card {
-    height: 250px;
-    width: 240px;
-    min-width: 240px;
+    height: 300px;
+    flex: none;
+  }
+  
+  .discipline-stats {
+    bottom: 20px;
+  }
+  
+  .discipline-description {
+    margin-bottom: 60px;
   }
   
   .discipline-title {
     font-size: 1.8rem;
+    top: 20px;
   }
   
   .discipline-description {
-    font-size: 1rem;
+    font-size: 1.5rem;
     max-width: 250px;
   }
   
   .discipline-overlay {
     padding: 20px;
   }
+}
+
+@media (max-width: 480px) {
+  .discipline-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr) auto 1fr;
+  }
+  
+  .discipline-banner-card {
+    padding: 30px 15px;
+  }
+  
+  .discipline-banner-content h3 {
+    font-size: 1.8rem;
+  }
+  
+  .discipline-banner-content p {
+    font-size: 1rem;
+  }
   
   .value-props {
     grid-template-columns: 1fr;
   }
   
+  .why-scix-section h2 {
+    font-size: 3rem;
+  }
+  
+  
+  .value-prop {
+    padding: 40px 30px;
+  }
+  
+  .value-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .value-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .value-prop h3 {
+    font-size: 1.8rem;
+  }
+  
+  .value-prop p {
+    font-size: 1.3rem;
+  }
+  
   .team-highlights {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-ethos-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .values-bubbles {
+    height: 300px;
+  }
+  
+  .bubble-1 { top: 10px; left: 20px; width: 100px; height: 100px; }
+  .bubble-2 { top: 60px; left: 120px; width: 90px; height: 90px; }
+  .bubble-3 { top: 100px; left: 10px; width: 110px; height: 110px; }
+  .bubble-4 { top: 130px; left: 160px; width: 95px; height: 95px; }
+  .bubble-5 { top: 30px; left: 200px; width: 105px; height: 105px; }
+  .bubble-6 { top: 160px; left: 60px; width: 90px; height: 90px; }
+  .bubble-7 { top: 190px; left: 180px; width: 100px; height: 100px; }
+  
+  .testimonials-grid {
     grid-template-columns: 1fr;
   }
   
@@ -1827,6 +3501,16 @@ no-header: true
     font-size: 2rem;
   }
   
+  .mission-tagline {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .mission-tagline::before,
+  .mission-tagline::after {
+    display: none;
+  }
+  
   .mission-section,
   .expertise-section,
   .work-section,
@@ -1836,8 +3520,64 @@ no-header: true
     padding: 60px 0;
   }
   
+  .what-we-do-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .search-bar {
+    max-width: 90%;
+    padding: 6px;
+  }
+  
+  .search-text {
+    font-size: 1.8rem;
+  }
+  
+  .search-cursor {
+    height: 25px;
+    width: 2px;
+  }
+  
+  .search-button {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .search-logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .what-we-do-subtitle {
+    font-size: 1.8rem;
+  }
+  
+  .what-we-do-card {
+    padding: 35px 25px;
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .card-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .what-we-do-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .what-we-do-card p {
+    font-size: 1.5rem;
+  }
+  
   .expertise-card,
-  .work-item,
   .value-prop,
   .team-highlight {
     padding: 20px;
@@ -1845,109 +3585,3 @@ no-header: true
 }
 </style>
 
-<script>
-// Pillar data
-const pillarsData = {
-  1: {
-    name: "Core Infrastructure",
-    purpose: "Provide the authoritative backbone—a unified search and data repository integrating 20M+ records across NASA's science disciplines.",
-    role: "Serves as foundational 'raw material' for all other pillars. Feedback drives constant updates to the data index.",
-    products: [
-      "Unified Data Index & Full-Text Search",
-      "ADS (Bumblebee) & SciX (Nectar) Front-Ends",
-      "Authoritative Metadata & Persistent IDs",
-      "APIs & Data Services",
-      "Scalable Architecture"
-    ]
-  },
-  2: {
-    name: "AI/NLP Data Mining",
-    purpose: "Transform raw text into structured, discoverable knowledge through machine learning and natural language processing.",
-    role: "Mines and structures raw material from Core Infrastructure. Outputs flow to Curatorial Sciences for validation.",
-    products: [
-      "Entity Extraction Pipelines",
-      "Semantic Enrichment & Ontology Tagging",
-      "Citation & Knowledge Graph Analysis",
-      "Domain-Specific Language Models",
-      "Cross-Domain Object Integration"
-    ]
-  },
-  3: {
-    name: "Curatorial Sciences",
-    purpose: "Ensure all platform content meets rigorous scholarly standards through human expertise and governance.",
-    role: "Acts as the quality gate. Validates AI outputs and feeds corrections back into the AI pipeline.",
-    products: [
-      "Source & Journal Vetting",
-      "Classification & Taxonomy Expertise",
-      "Dataset & Software Linkage",
-      "Human-in-the-Loop Validation",
-      "Bibliometrics & Impact Metrics"
-    ]
-  },
-  4: {
-    name: "Research Intelligence",
-    purpose: "Deliver enriched, curated content through intuitive, AI-powered interfaces for researchers, funders, and the public.",
-    role: "Surfaces enriched content while usage data flows back into AI and curation workflows.",
-    products: [
-      "AI Research Agent (Chatbot)",
-      "Auto-Summaries (TL;DR)",
-      "Paper-to-Podcast & Audio",
-      "SciXLabs Sandbox",
-      "Metrics & Insights Dashboard"
-    ]
-  },
-  5: {
-    name: "Scientific Community",
-    purpose: "Engage the global Earth & space science community, amplify open-science values, and foster collaboration.",
-    role: "Serves as community bridge bringing user insights into development and promoting cross-disciplinary collaboration.",
-    products: [
-      "Ambassador & User Programs",
-      "Scientific Advisory Board",
-      "Conference Presence & Workshops",
-      "Thought Leadership",
-      "Community Feedback Systems"
-    ]
-  }
-};
-
-function togglePillar(pillarId) {
-  const detailsCard = document.getElementById('pillar-details');
-  const allCards = document.querySelectorAll('.pillar-card');
-  
-  // Remove active class from all cards
-  allCards.forEach(card => card.classList.remove('active'));
-  
-  // Add active class to clicked card
-  const clickedCard = document.querySelector(`[data-pillar="${pillarId}"]`);
-  clickedCard.classList.add('active');
-  
-  // Get pillar data
-  const pillar = pillarsData[pillarId];
-  
-  if (pillar) {
-    // Update the details card content
-    document.getElementById('pillar-badge').textContent = `Pillar ${pillarId}`;
-    document.getElementById('pillar-details-title').textContent = pillar.name;
-    document.getElementById('pillar-purpose').textContent = pillar.purpose;
-    document.getElementById('pillar-role').textContent = pillar.role;
-    
-    // Update products list
-    const productsList = document.getElementById('pillar-products');
-    productsList.innerHTML = '';
-    pillar.products.forEach(product => {
-      const li = document.createElement('li');
-      li.textContent = product;
-      productsList.appendChild(li);
-    });
-    
-    // Show the details card
-    detailsCard.style.display = 'block';
-    detailsCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-}
-
-// Initialize with first pillar selected
-document.addEventListener('DOMContentLoaded', function() {
-  togglePillar(1);
-});
-</script>

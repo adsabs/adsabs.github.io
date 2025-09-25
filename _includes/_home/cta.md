@@ -8,7 +8,7 @@
       <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary">Learn to Navigate SciX</a>
     </div>
   </div>
-    
+  
   <!-- Newsletter Card within CTA Section -->
   <div class="newsletter-card">
     <div class="newsletter-content">

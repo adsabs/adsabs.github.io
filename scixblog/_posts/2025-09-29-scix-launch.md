@@ -2,7 +2,6 @@
 layout: blog_post_scix
 title: "The SciX Adventure Begins: Exploring the Universe of Research Together"
 author: "Alberto Accomazzi & the SciX Team"
-position: "SciX Team"
 category: scixblog
 label: general, news
 thumbnail: blog/images/scixlaunch2025.png

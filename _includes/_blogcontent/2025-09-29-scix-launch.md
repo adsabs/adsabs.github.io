@@ -25,3 +25,7 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
 
 ## Welcome aboard!
 
+<div class="text-center">
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlaunch2025.png" />
+</div>
+<br>

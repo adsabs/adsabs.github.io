@@ -19,7 +19,7 @@
       <div class="what-we-do-card literature-card">
         <div class="card-background-icon literature-bg"></div>
         <h3>Literature Discovery</h3>
-        <p>Comprehensive indexing and search across 28+ million research records, including refereed papers, preprints, conference proceedings, and gray literature</p>
+        <p>Comprehensive indexing and search across 30+ million research records, including refereed papers, preprints, conference proceedings, and gray literature</p>
       </div>
       <div class="what-we-do-card search-card">
         <div class="card-background-icon search-bg"></div>

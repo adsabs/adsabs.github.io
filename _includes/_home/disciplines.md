@@ -8,7 +8,7 @@
       <div class="discipline-card earth-science" data-discipline="earth">
         <div class="discipline-overlay">
           <h3 class="discipline-title">Earth Science</h3>
-          <p class="discipline-description">Atmospheric, oceanic, and terrestrial research including climate studies, weather patterns, and environmental monitoring</p>
+          <p class="discipline-description">Earth, oceanic and atmospheric sciences including geology, geochemistry and geophysics, meteorology and climate studies, remote sensing, water resources, environmental engineering, & more</p>
         </div>
       </div>
       

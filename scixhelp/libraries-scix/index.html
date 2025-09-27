@@ -1,0 +1,15 @@
+---
+layout: post_scix
+category: libraries-scix
+---
+
+<h1> SciX Libraries </h1>
+
+<p>SciX Libraries are designed to help you create and organize collections of bibliographic records. You can use them to keep track of sources for an article, build your CV, or share references with colleagues.</p>
+
+<p>Please note: SciX Libraries are available only to registered users. If you don't have an account yet, head over to the <a href="https://scixplorer.org/user/account/register">sign-up page</a> to get started.</p>
+{% assign posts = site.categories.libraries-scix | sort:"order"  %}
+    {% for post in posts %}
+        <h3>{{post.title}}</h3>
+        {{post.content}}
+    {% endfor %}

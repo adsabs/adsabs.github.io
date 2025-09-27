@@ -1,4 +1,4 @@
-{% if include.ads %}The following page describes extra details about the search syntax not found in the otherwise comprehensive [search syntax help](search-syntax).
+The following page describes extra details about the search syntax not found in the otherwise comprehensive [search syntax help](search-syntax).
 
 
 ## Big Picture
@@ -89,4 +89,4 @@ Pro tip: if you add `debugQuery=true` to your search request URL parameters (and
     }
 
 
-Pro tip (II): If you had access to STDOUT/logging of the SOLR instance, you would see LOTS of details; each and every step in the query pipeline produces output. This information is however only printed to STDOUT - and so only {{ include.site }} engineers can really see it.{% endif %}
+Pro tip (II): If you had access to STDOUT/logging of the SOLR instance, you would see LOTS of details; each and every step in the query pipeline produces output. This information is however only printed to STDOUT - and so only {{ include.site }} engineers can really see it.

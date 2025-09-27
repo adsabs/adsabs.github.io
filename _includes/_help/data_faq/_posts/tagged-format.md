@@ -1,6 +1,6 @@
 # The {{ include.site }} Tagged Format
 
-We welcome the submission of Bibliographic Records from librarians and researchers willing to provide this information to the {{ include.site }}. To facilitate the insertion of this data into our databases, we request that the records be submitted in electronic form and adhere to the following format:
+We welcome the submission of Bibliographic Records from librarians and researchers willing to provide this information to {{ include.site }}. To facilitate the insertion of this data into our databases, we request that the records be submitted in electronic form and adhere to the following format:
 
     %R Bibliographic Code (required)
     %A Author List

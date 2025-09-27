@@ -18,13 +18,13 @@ This option sorts based on a paper's publication date (month and year).
 <br/>
 
 <h4>Entry Date</h4>
-This option sorts based on a paper's entry date in the {{ include.site }} database.
+This option sorts based on a paper's entry date in {{ include.site }} database.
 <br/>
 
 <h4>Read Count</h4>
 This option is a measure of <b>recent popularity</b>. It sorts on the
 90-day read count of a paper: the number of times a paper has been
-accessed in the {{ include.site }} or on arXiv in the last 90 days.
+accessed in {{ include.site }} or on arXiv in the last 90 days.
 
 <h4>{% if include.ads %}Score{% else %}Relevancy{% endif %}</h4>
 This option is currently a combination of two factors: the first is the raw search score, or how well the results match the search terms. For unfielded searches, or those that don't use search tags, commonly searched fields such as author and publication year are more heavily weighted in determining the score. The second factor is a boost factor for more highly read and cited papers. This boost factor is designed to more highly rank papers that are relevant and popular now and is calculated via an age-normalized combination of reads and citation.

@@ -1,13 +1,6 @@
 # Frequently Asked Questions (FAQs)
 
-[Searching](#searching) •
-{% if include.ads %}[Submitting Grant Applications](#submitting-grant-applications) •{% endif %}
-{% if include.ads %}[Transitioning from Classic](#transitioning-from-classic) •{% endif %}
-[{{ include.site }} Libraries](#{{ include.site | downcase }}-libraries) •
-[ORCID](#orcid) •
-[Data and Curation](#data-and-curation) •
-[Database Coverage](#database-coverage) •
-[Other](#other)
+[Searching](#searching) • {% if include.ads %}[Submitting Grant Applications](#submitting-grant-applications) •{% endif %}{% if include.ads %}[Transitioning from Classic](#transitioning-from-classic) •{% endif %}[{{ include.site }} Libraries](#{{ include.site | downcase }}-libraries) • [ORCID](#orcid) • [Data and Curation](#data-and-curation) • [Database Coverage](#database-coverage) • [Other](#other)
 
 ## Searching
 
@@ -42,16 +35,16 @@ You can access the abstract page of a known paper by inserting an identifier (bi
 
 {% if include.ads %}## Submitting Grant Applications
 ##### Q: My NSF grant application requires that I provide a list of all of my recent co-authors. Can {{ include.site }} provide that list?
-We have a tool specifically for this purpose: the "Author Affiliation" report option on the Export menu (accessible from the search results page). For more, see the [Author Affiliation help page](../actions/author-affiliation).
+We have a tool specifically for this purpose: the "Author Affiliation" report option on the Export menu (accessible from the search results page). For more, see the [Author Affiliation help page]({% if include.ads %}{{ site.ads_base_url }}/help/actions{% else %}{{ site.scix_base_url }}/scixhelp/actions-scix{% endif %}/author-affiliation).
 
 ##### Q: My NSF application requires I build a CV via SciENcv. Can {{ include.site }} help with that?
 There are two options to use {{ include.site }} to help build your SciENcv:  
-1. The first option is to export your publications from {{ include.site }} in the [RIS format](../actions/export). The SciENcv citations manager will then allow you to import your citations in this format.  
-2. The second option is to link your ORCID account with SciENcv and import your citations from there. You can use {{ include.site }} to [add citations to your ORCID profile](../orcid/claiming-papers), then link your updated ORCID profile to your account in SciENcv.{% endif %}
+1. The first option is to export your publications from {{ include.site }} in the [RIS format]({% if include.ads %}{{ site.ads_base_url }}/help/actions{% else %}{{ site.scix_base_url }}/scixhelp/actions-scix{% endif %}/export). The SciENcv citations manager will then allow you to import your citations in this format.  
+2. The second option is to link your ORCID account with SciENcv and import your citations from there. You can use {{ include.site }} to [add citations to your ORCID profile]({% if include.ads %}{{ site.ads_base_url }}/help/orcid{% else %}{{ site.scix_base_url }}/scixhelp/orcid-scix{% endif %}/claiming-papers), then link your updated ORCID profile to your account in SciENcv.{% endif %}
 
 {% if include.ads %}## Transitioning from Classic
 ##### Q: How do I transfer a private library from Classic to the new {{ include.site }}?
-Link your Classic account to your the new {{ include.site }} account and [use our import tool to transfer your library](../libraries/legacy-importing#importing-libraries).
+Link your Classic account to your the new {{ include.site }} account and [use our import tool to transfer your library](../libraries/legacy-importing#importing-libraries). {% endif %}
 
 ##### Q: I have some links to Classic pages on my website - do I need to update all of these to the new {{ include.site }} links?
 Nope! Existing Classic URLs now redirect to the corresponding URLs in the new {{ include.site }}.
@@ -61,7 +54,7 @@ In general, the function **Reviews** in the **Explore** menu will generate the s
 
 The new function **Useful** can be used in a similar way to generate the same results you would get the with button *Get reference lists for selected articles* in the old {{ include.site }}. When "score" is selected for sorting, the records are sorted by the number of cites by the original set.
 
-The **Co-reads** function corresponds with *Get also-read lists for selected articles*.{% endif %}
+The **Co-reads** function corresponds with *Get also-read lists for selected articles*.
 
 ## {{ include.site }} Libraries
 ##### Q: The number of papers listed in the header of my library differs from the actual number in the library.
@@ -95,7 +88,7 @@ This issue is commonly seen when users have JavaScript turned off in their brows
 We support all current versions (within the last 5 years) of Chrome, Firefox, Safari, and Edge. We also support Internet Explorer 11. This includes Firefox ESR (extended service release) versions, but does not include versions of any browser newer than 5 years old that have been officially retired.
 
 ##### Q: How should I acknowledge {{ include.site }}?
-If you wish to acknowledge us in a publication, kindly use a phrase such as the following: {% if include.ads %}"This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC21M00561."{% else %}"This research has made use of SciX, a scientific literature search and discovery platform."{% endif %} If you are using the {{ include.site }} as a tool for bibliometric studies, please make sure you have an in-depth understanding of the system, its features and limitations, by reading and citing as appropriate the relevant published literature about {{ include.site }} ([refereed]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/#/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ), [non-refereed]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/#/public-libraries/iETdWs2pSGajhFBI30X3UQ)).
+If you wish to acknowledge us in a publication, kindly use a phrase such as the following: {% if include.ads %}"This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC21M00561."{% else %}"This research has made use of SciX, a scientific literature search and discovery platform."{% endif %} If you are using {{ include.site }} as a tool for bibliometric studies, please make sure you have an in-depth understanding of the system, its features and limitations, by reading and citing as appropriate the relevant published literature about {{ include.site }} ([refereed]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ), [non-refereed]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/iETdWs2pSGajhFBI30X3UQ)).
 
 {% if include.ads %}##### Q: Do you have any mirror sites? 
 No, once we moved our site to the cloud in 2018, we no longer host mirror sites. See our [mirror policy page](../policies/mirrors) for more information.{% endif %}

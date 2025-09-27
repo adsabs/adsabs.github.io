@@ -4,7 +4,7 @@ There are two ways to create an {{ include.site }} library:
 
   2. Go the **My Account** drop down and select **{{ include.site }} Libraries**. Press the {% if include.ads %}**Create a library**{% else %}**Add New Library**{% endif %} button.
 
-{% if include.ads %}<img class="img-responsive" src="{{ site.baseurl }}/help/img/library_screenshot.png" alt="a screenshot of the {{ include.site }} search results interface showing the {{ include.site }} libraries button"/>{% endif %}
+{% if include.ads %}<img class="img-responsive" src="{{ site.baseurl }}/help/img/library_screenshot.png" alt="a screenshot of {{ include.site }} search results interface showing {{ include.site }} libraries button"/>{% endif %}
 
 It is possible to modify the name and description of the library you have created. To do this, simply navigate to the {{ include.site }} Libraries page from the **My Account** drop down, at the top right of the web interface. Once there, you can select your library of interest, and {% if include.ads %}press **edit** on the attribute you would like to modify.{% else %}click the gear icon to modify the attributes you would like to change.{% endif %}
 

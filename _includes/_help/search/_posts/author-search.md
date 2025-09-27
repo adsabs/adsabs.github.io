@@ -1,4 +1,4 @@
-{% if include.ads %}The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!
+The following section describes, in ugly detail, the logic of author parsing. The rules can (and will) on occassion change. But unless you have to be here and want to really know the details just run, run away from here, quick!
 
 
 ## Referenced resources
@@ -90,4 +90,4 @@ If it produces unexpected results, it usually is because of these reasons:
 - haphazard interferences: wrong data indexed, wrong or outdated versions of synonyms/transliterations deployed, parts of the production cluster being down, parts of the backoffice processing pipeline being down....
 
 
-**Intermezzo #1**{% endif %}
+**Intermezzo #1**

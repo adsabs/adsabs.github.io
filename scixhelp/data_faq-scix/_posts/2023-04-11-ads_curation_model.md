@@ -1,6 +1,6 @@
 ---
 layout: post_scix
-title: "ADS Curation Model"
+title: "SciX Curation Model"
 order: 5
 ---
 

@@ -22,10 +22,6 @@ To create a new notification (for all notifications except for the general notif
 <figure>
    <img src="{{ site.baseurl }}/help/img/myads_setup_blank.png"  class="img-responsive">
 </figure>
-{% else %}
-<figure>
-   <img src="{{ site.baseurl }}/help/img/myscix.png"  class="img-responsive">
-</figure>
 {% endif %}
 
 ### arXiv
@@ -91,6 +87,7 @@ Detail-level settings, accessed via the Edit button as described above, are disp
 
 **Note for general-type notifications**: General-type notifications cannot be edited. To easily alter your general-type notification, click "Search" in the Actions menu, which will run the search as it would in today's notification email. Remove the *entdate:* and *pubdate:* search tags from the end of the search, then make any other edits as desired to the search terms. Use the "Create email notification" widget in the right sidebar to create a new general-type notification using the new search. You may delete the old notification once the new, edited notification has been created.
 
+{% if include.ads %}
 ## Importing
 You import your Classic my{{ include.site }} settings using the provided import tool. From the [my{{ include.site }} setup screen]({% if include.ads %}https://ui.adsabs.harvard.edu/user/settings/myads{% else %}https://scixplorer.org/user/notifications{% endif %}), click the Import button.
 
@@ -110,7 +107,7 @@ After logging into your Classic account in the new {{ include.site }} successful
 
 A message will be displayed after import with the number of successfully imported settings. If the import has been run previously, only notifications that do not exist in your account in the new {{ include.site }} will be imported. The displayed message will indicate the number of new vs. existing notifications that were found in your Classic account.
 
-{% if include.ads %}## FAQs
+## FAQs
 ### My imported keywords (or other imported setup) are formatted differently in the new {{ include.site }} than they were in Classic.
 The import tool attempts to correct formatting issues that will cause queries to fail in the new {{ include.site }}, including removing new line characters, extra parentheses, and other non-standard special characters. Also, in Classic, keywords that were not explicitly combined with Boolean operators (AND, OR, NOT) were assumed to be combined with OR, while in the new {{ include.site }} the implied operator is AND. The import tool converts between these as necessary. If you think your query was not translated correctly during testing, you can edit the imported query as necessary to match your original logic after the import is finished.
 

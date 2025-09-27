@@ -1,10 +1,10 @@
-This section is intended to be a guideline for editors and authors wishing to submit conference proceedings for inclusion in the {{ include.site }} Abstract and Scanned Literature Services. Any questions about the procedure should be directed to <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}.
+This section is intended to be a guideline for editors and authors wishing to submit conference proceedings for inclusion in {{ include.site }} Abstract and Scanned Literature Services. Any questions about the procedure should be directed to <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}.
 
 {{ include.site }} is pleased to include any conference proceedings volume, as well as individual conference proceedings abstracts. This includes both electronic and printed conference proceedings. We have a set of naming conventions detailed below, but are flexible if there is a different naming scheme which is more appropriate for your particular conference. If you would like to have your conference proceedings included in our database before your conference, we request that you submit them to us one month in advance of the start of your conference.
 
 ## Submitting Bibliographic Records for {{ include.site }} Abstract Service
 
-Please send us an email at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %} with the information to make a conference entry in the {{ include.site }}. 
+Please send us an email at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %} with the information to make a conference entry in {{ include.site }}. 
 
 In addition a file containing the following should be sent to {{ include.site }}. Individual Article Entries should include the following tags ( ( * ) items are required.)
 
@@ -23,11 +23,11 @@ Please note that there are many more details that you can add but these are the 
 
 A long entry should continue on the next line(s) with no repetition of the percent sign and keying letter. All entries should be in ascii and there should be no tabs or control characters. Blank lines can delimit paragraphs in the abstract, but should not otherwise be present within a record. A title, author list, and page number are required. Other information such as author affiliation, links to online full-text, abstract text and references are strongly recommended as well. The more information that you can provide for each article, the better. This additional information will aid in searching and using advanced features in {{ include.site }}.
 
-This information can be submitted via email to {% if include.ads %}[ads@cfa.harvard.edu](mailto:ads@cfa.harvard.edu){% else %}[help@scixplorer.org](mailto:help@scixplorer.org) or placed on our anonymous ftp site, under [ftp://adsftp.harvard.edu/pub/Conf](ftp://adsftp.harvard.edu/pub/Conf). Please send us an email indicating when you have transferred things to us, so that we can include it in our database as soon as possible. Please send us an email so that we can include it in our database as soon as possible.{% endif %}
+This information can be submitted via email to {% if include.ads %}[ads@cfa.harvard.edu](mailto:ads@cfa.harvard.edu){% else %}[help@scixplorer.org](mailto:help@scixplorer.org){% endif %} or placed on our anonymous ftp site, under [ftp://adsftp.harvard.edu/pub/Conf](ftp://adsftp.harvard.edu/pub/Conf). Please send us an email indicating when you have transferred things to us, so that we can include it in our database as soon as possible.
 
 ## Including Full-text Papers in {{ include.site }}
 
-It is possible for us to make the full-text of articles published in conference proceedings available via {{ include.site }} Article Service. This section describes the requirements and procedures to be followed in order to do that.ou arti
+It is possible for us to make the full-text of articles published in conference proceedings available via {{ include.site }} Article Service. This section describes the requirements and procedures to be followed in order to do that.
 
 **Note**: We do **not** publish original material that is not published elsewhere, since we are not a publisher.
 

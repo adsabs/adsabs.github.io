@@ -1,6 +1,8 @@
-<figure>
-   <img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/orcid-add.gif"  class="img-responsive" alt="a short animated image showing the orcid claiming process">
-</figure>
+{% if include.ads %}<figure>
+   <img src="/help/img/orcid-add.gif"  class="img-responsive" alt="a short animated image showing the orcid claiming process">
+</figure>{% else %}<figure>
+   <img src="/scixhelp/sciximg/scix-orcid-add.gif"  class="img-responsive" alt="a short animated image showing the orcid claiming process">
+</figure>{% endif %}
 
 
 ### Recommended Method

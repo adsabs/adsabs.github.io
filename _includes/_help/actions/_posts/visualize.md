@@ -1,9 +1,9 @@
 ### Author Network
 The author network detects **groups of authors** and **connections between those groups** within a set of results.
 
-<img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/author_network.png" alt="author network" class="img-responsive">
+{% if include.ads %}<img src="/help/img/author_network.png" alt="author network" class="img-responsive">
 <i>An image of the author network for John Huchra with the link overlay activated. </i>
-<br/>
+<br/>{% endif %}
 
 #### How the network is made
 
@@ -17,7 +17,7 @@ Clicking on an inside edge of a group will show you all papers from that group. 
  To quickly narrow down your search results to papers from a certain collaboration group, select the group, click the "add to filter" button,  and filter your {{ include.site }} search.
 
 * **Visually explore your results set**
-To get an at-a-glance overview of a scientist's career, search "author:LastName,FirstName" in the {{ include.site }}, view the network, and quickly see an organized overview of important collaborators.
+To get an at-a-glance overview of a scientist's career, search "author:LastName,FirstName" in {{ include.site }}, view the network, and quickly see an organized overview of important collaborators.
 
 *  **Answer specific questions about the results set**
      * To find authors who collaborate not only within their group but outside of it, check the "view link overlay" box and see which authors tend to collaborate with authors in other groups.
@@ -27,9 +27,9 @@ To get an at-a-glance overview of a scientist's career, search "author:LastName,
 ### Paper Network
 The paper network detects **groups of papers** based on **shared references** between those papers. In general, papers with many shared references will tend to have similar topics.
 
-<img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/paper-network.png" alt="paper network" class="img-responsive">
+{% if include.ads %}<img src="/help/img/paper-network.png" alt="paper network" class="img-responsive">
 <i>Paper network for John Huchra.</i>
-<br/>
+<br/>{% endif %}
 
 #### How the network is made
 The paper network creates groups of papers that share a significant number of references, and names those groups by looking for shared, unique words in their titles.
@@ -49,7 +49,7 @@ Clicking on a group will also show you in the right pane the most commonly refer
 ### Results Graph
 When you look at a list of {{ include.site }} search results, you can sort by date published, by citation count, or by recent popularity of the article in {{ include.site }}, but you cannot see all of these dimensions at once, and you cannot easily see outliers. The results graph is a customizable scatter chart that allows you to assign values to the x and y axes as well as to the radius of the circle representing a paper.
 
-<img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/scatter-plot.png" class="img-responsive">
+{% if include.ads %}<img src="/help/img/scatter-plot.png" class="img-responsive">{% endif %}
 
 #### How to use it
 
@@ -58,13 +58,13 @@ Mouse over a circle to read information about the paper, or drag a square around
 
 
 * **Find newly popular papers**
-The default graph shows the [recent views]({% if include.ads %}../actions/analyze#recent-views{% else %}../actions-scix/analyze#recent-views{% endif %}) (the number of times a paper has been accessed in the {{ include.site }} in the last 90 days) as the y-axis value. In general, graphs will show a trend of decreasing reads over time as an article ages. If any paper has a higher read count than predicted by the general trend, it might be worth investigating further.
+The default graph shows the [recent views]({% if include.ads %}../actions/analyze#recent-views{% else %}../actions-scix/analyze#recent-views{% endif %}) (the number of times a paper has been accessed in {{ include.site }} in the last 90 days) as the y-axis value. In general, graphs will show a trend of decreasing reads over time as an article ages. If any paper has a higher read count than predicted by the general trend, it might be worth investigating further.
 
 
 ### Concept Cloud
 The concept cloud shows you **frequently appearing** and **unique words** in your search results.
 
-<img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/word-cloud.png" class="img-responsive">
+{% if include.ads %}<img src="/help/img/word-cloud.png" class="img-responsive">{% endif %}
 
 #### How the concept cloud is made
 The concept cloud takes words from the titles and abstracts of your search results, counts their frequencies and compares them to the same word's frequency across the entire {{ include.site }} corpus.
@@ -76,5 +76,5 @@ The concept cloud takes words from the titles and abstracts of your search resul
 ### Instructions on Downloading Graphics as High-Quality PNGS in Chrome
 1. <a href="https://nytimes.github.io/svg-crowbar/"> Install the SVG Crowbar 2 Bookmarklet</a>
 2. Open the graph in {{ include.site }} (currently the paper and author networks have the best support)
-3. Click the SVG Crowbar icon, you will see something that looks a bit messy, like this: <img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/svg-crowbar.png" class="img-responsive">
+3. Click the SVG Crowbar icon, you will see something that looks a bit messy, like this: {% if include.ads %}<img src="/help/img/svg-crowbar.png" class="img-responsive">{% endif %}
 4. Click on the two bottom buttons: <b> #network-viz-main-chart</b> to download the main chart, and <b>#network-viz-time-series</b> to download the accompanying time series graph.

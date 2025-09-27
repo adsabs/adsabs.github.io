@@ -3,19 +3,19 @@
 The {{ include.site }} respects the privacy of its users. The following describes our policy.
 
 ## Server Logs
-As you travel through the {{ include.site }} web site, our server logs the following information about your session on the site:
+As you travel through {{ include.site }} web site, our server logs the following information about your session on the site:
 
   * Your computer's IP address (an IP address is a number that is assigned to you by your internet service provider).
   * The type of browser and operating system used to access our site.
   * The date and time you access our site.
   * The pages that you visit.
   * If you came to our website using a link from a different web site, the address of that website.
-  * The cookie that the {{ include.site }} may have set up for you (see below).
+  * The cookie that {{ include.site }} may have set up for you (see below).
 
 We use this information from our server logs to learn about our visitors as a group, not about you as an individual. We also use the information to generate important statistics required by our funding sources. These records are kept only for the purpose of maintaining and improving services on our site, and are never shared with any other entity.
 
 ## Cookies
-A *cookie* is a unique identifier that a website places in your computer's hard drive for future reference. The {{ include.site }} uses cookies to allow customization of our site's features on a user-by-user basis. For instance, the implementation of the {{ include.site }} preference settings makes use of cookies.
+A *cookie* is a unique identifier that a website places in your computer's hard drive for future reference. {{ include.site }} uses cookies to allow customization of our site's features on a user-by-user basis. For instance, the implementation of {{ include.site }} preference settings makes use of cookies.
 
 Additionally, cookies offer a mechanism allowing us to track the sequence of documents that a particular user retrieves from our site, without having any knowledge of the user's identity, and without requiring any form of user ID or password assignment. Again, this information is being collected only for the purpose of providing better service to our users. This permits, for instance, the creation of the "Also-read" article links, allowing users to see articles which were also read by people who read a given article.
 

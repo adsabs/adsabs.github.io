@@ -1,7 +1,7 @@
 ### How do you search for a specific paper?
 *Note: the Quick Start series is designed to get you started with the
 new interface. More advanced information on searching can be found in
-the [Search Syntax help page]({% if include.ads %}../search/search-syntax{% else %}../search-scix/search-syntax{% endif %}) and other pages in the "Making a Query"  and "Search Results" sections.*
+the [Search Syntax help page]({% if include.ads %}../search/search-syntax{% else %}../../search-scix/search-syntax{% endif %}) and other pages in the "Making a Query"  and "Search Results" sections.*
 
 A common task in {{ include.site }} is locating a specific paper, often for
 download or for retrieval of the bibliographic data. In this case, a
@@ -27,24 +27,32 @@ We recommend that you use the field tags (e.g. *author:*) when searching for a k
 3. Do the same for the year: tag and year of publication.
 4. Press Return or click the Search button to begin the search.
 
-<figure>
-   <img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/author.gif"  class="img-responsive" alt="a short
+{% if include.ads %}<figure>
+   <img src="/help/img/author.gif"  class="img-responsive" alt="a short
    animated image showing querying by author and year">
-</figure>
+</figure>{% else %}<figure>
+   <img src="/scixhelp/sciximg/scix-author.gif"  class="img-responsive" alt="a short
+   animated image showing querying by author and year">
+</figure>{% endif %}
 
 ### Querying when the first author is known
 Follow the same procedure as for a known author, but to trigger the first-author tag autocompletion, use the standard caret (^) operator or start typing "first author."
 
 Note: for a first-author search using the ^ operator, you do not have to specify the author tag. Typing *^last_name* is an abbreviation for *author:"^last_name"* and will produce the expected results.
 
-<figure>
-   <img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/caret_firstauthor.gif"  class="img-responsive" alt="a short
+{% if include.ads %}<figure>
+   <img src="/help/img/caret_firstauthor.gif"  class="img-responsive" alt="a short
    animated image showing querying by first author using the caret operator">
-</figure>
+</figure>{% else %}<figure>
+   <img src="/scixhelp/sciximg/scix-caret_firstauthor.gif"  class="img-responsive" alt="a short
+   animated image showing querying by first author using the caret operator">
+</figure>{% endif %}
 
 ### Filtering
-If your search by author and/or publication year returns too many results, you can use [interactive filtering]({% if include.ads %}../search/filter{% else %}../search-scix/filter{% endif %}) to narrow down the results instead of editing your original search query. Filtering by author or publication is often useful when a paper is known. 
+If your search by author and/or publication year returns too many results, you can use [interactive filtering]({% if include.ads %}../search/filter{% else %}../../search-scix/filter{% endif %}) to narrow down the results instead of editing your original search query. Filtering by author or publication is often useful when a paper is known. 
 
-<figure>
-   <img src="{% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/filter-facet.png"  class="img-responsive">
-</figure>
+{% if include.ads %}<figure>
+   <img src="/help/img/filter-facet.png"  class="img-responsive">
+</figure>{% else %}<figure>
+   <img src="/scixhelp/sciximg/scix-filter-facet.png"  class="img-responsive">
+</figure>{% endif %}

@@ -18,7 +18,7 @@ This option sorts based on a paper's publication date (month and year).
 <br/>
 
 <h4>Entry Date</h4>
-This option sorts based on a paper's entry date in {{ include.site }} database.
+This option sorts based on a paper's entry date in the {{ include.site }} database.
 <br/>
 
 <h4>Read Count</h4>

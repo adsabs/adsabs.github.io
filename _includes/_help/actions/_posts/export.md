@@ -2,15 +2,11 @@
 
 {{ include.site }} provides the ability to export results into various formats. There are two options:
 
-1. **Export All Results**
-![export-all-results]({% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/export-all-results.gif){:width="800px"}
+1. **Export All Results:**
+{% if include.ads %}![export-all-results](/help/img/export-all-results.gif){:width="800px"}{% endif %} From the results page, find the **{% if include.ads %}Export{% else %}Bulk Actions{% endif %}** dropdown menu in the top right of the page. From there, you can select a format.
 
-From the results page, find the **{% if include.ads %}Export{% else %}Bulk Actions{% endif %}** dropdown menu in the top right of the page. From there, you can select a format.
-
-2. **Export Selected Results**
-![export-selected-results]({% if include.ads %}/help{% else %}/scixhelp{% endif %}/img/export-selected-results.gif){:width="800px"}
-
-From the results page, find the **{% if include.ads %}Export{% else %}Bulk Actions{% endif %}** dropdown menu in the top right of the page. From there, you will see **selected papers** checked, and you can select a format.
+2. **Export Selected Results:**
+{% if include.ads %} ![export-selected-results](/help/img/export-selected-results.gif){:width="800px"} {% endif %} From the results page, find the **{% if include.ads %}Export{% else %}Bulk Actions{% endif %}** dropdown menu in the top right of the page. From there, you will see **selected papers** checked, and you can select a format.
 
 When the tool is opened, you will have the opportunity to review the export result and either download or copy to clipboard.
 

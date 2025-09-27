@@ -1,5 +1,5 @@
 ### How do you find a paper by an author with a common name?
-*Note: the Quick Start series is designed to get you started with the
+*Note: the Getting Started series is designed to get you started with the
 new interface. More advanced information on searching can be found in
 the [Search Syntax help page]({% if include.ads %}../search/search-syntax{% else %}../../search-scix/search-syntax{% endif %}) and other pages in the "Making a Query"  and "Search Results" sections.*
 
@@ -9,24 +9,25 @@ Finding a paper by an author with a common name, especially if you have little e
 
 By default, {{ include.site }} returns all relevant matches when searching for author names. For example, searching for *author:"smith, j"* will return results for J. Smith, Jane Smith, and John Smith, amongst others. To disable this synonym expansion, use the equals sign operator (=). Searching for *=author:"smith, j"* will only return results where the first initial was used in place of the full spelled-out given name. 
 
+{% if include.ads %}
 This can be especially helpful when a given author often uses their middle initial. For example, compare the number of results for author Y. Wang:
-
-{% if include.ads %}<figure>
+<figure>
    <img src="/help/img/exact-name-1.png"  class="img-responsive" alt="Exact
    name matching query with full family name and given name
    initial. 5732 total search results.">
-   </figure>{% endif %}
+   </figure>
 
 <br>
 With those for author Y. S. Wang:
 
-{% if include.ads %}<figure>
+<figure>
    <img src="/help/img/exact-name-2.png"  class="img-responsive" alt="Exact
    name matching query with full family name and given name and middle name
    initials. 233 total search results.">
-</figure>{% endif %}
-
+</figure>
 <br>
+{% endif %}
+
 ### Filtering results
 
 The facets are useful when trying to narrow down a large list of search results. In addition to the author facet, which allows you to include or exclude name variations of authors, try these facets. All are located in the left-hand column, unless otherwise noted:

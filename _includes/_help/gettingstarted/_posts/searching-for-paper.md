@@ -1,5 +1,5 @@
 ### How do you search for a specific paper?
-*Note: the Quick Start series is designed to get you started with the
+*Note: the Getting Started series is designed to get you started with the
 new interface. More advanced information on searching can be found in
 the [Search Syntax help page]({% if include.ads %}../search/search-syntax{% else %}../../search-scix/search-syntax{% endif %}) and other pages in the "Making a Query"  and "Search Results" sections.*
 

@@ -4,7 +4,7 @@ This section is intended to be a guideline for editors and authors wishing to su
 
 ## Submitting Bibliographic Records for {{ include.site }} Abstract Service
 
-Please send us an email at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %} with the information to make a conference entry in {{ include.site }}. 
+Please send us an email at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}</a> with the information to make a conference entry in {{ include.site }}. 
 
 In addition a file containing the following should be sent to {{ include.site }}. Individual Article Entries should include the following tags ( ( * ) items are required.)
 

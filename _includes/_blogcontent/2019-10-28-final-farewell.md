@@ -17,7 +17,7 @@ If you have been bookmarking URLs of records in ADS or even queries into our sys
 
 We are aware that change isn’t always easy and understand people's reluctance to invest time to learn how to navigate a new system. Just like any software, learning the new ADS will take a bit of time, but we have you covered. We encourage you to check out the following resources to help with the transition:
 * ADS Office Hours talks (starting with the recording of the talk "[Intro to the new ADS](../help/videos/intro)"). We'll be hosting two ADS Office Hours talks on November 5th, one at 10am EST (scheduled so Europe and other points east can join) and one at 3pm EST (for the American west coast and Hawaii). Both will include a half-hour talk/demo of searching in the new ADS and will allow time for audience questions. Tune in to the live stream on our [YouTube channel](https://www.youtube.com/user/nasaads). (Note: if there's demand for an Office Hours talk for Australia/Asia, let us know in the comments and we'll see what we can schedule.)
-* The Quick Start guides (start with the Quick Start [guide to basic searching](../help/quickstart/searching-for-paper)) for written step-by-step instructions for individual tasks
+* The Getting Started guides (start with the Getting Started [guide to basic searching](../help/gettingstarted/searching-for-paper)) for written step-by-step instructions for individual tasks
 * A [checklist](../blog/transition-reminder) of things to do with your Classic account before it retires, including importing your Classic libraries
 * If you’re struggling with the one-box search syntax in the new ADS, try the [Classic-style form](https://ui.adsabs.harvard.edu/classic-form)
 

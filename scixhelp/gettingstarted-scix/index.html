@@ -1,0 +1,12 @@
+---
+layout: post_scix
+category: gettingstarted-scix
+---
+
+<h2>Getting Started Series</h2>
+
+{% assign posts = site.categories.gettingstarted-scix | sort:"order"  %}
+    {% for post in posts %}
+    <h3>{{post.title}}</h3>
+    {{post.content}}
+      {% endfor %}

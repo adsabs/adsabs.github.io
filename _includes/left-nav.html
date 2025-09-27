@@ -5,16 +5,16 @@
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="quickstart-help">
-        <a class="collapsed" role="button" data-toggle="collapse" href="#quickstart-items" aria-expanded="false" aria-controls="collapseThree">
-            <h3 class="{% if page.url contains '/quickstart/' %}
+    <div class="panel-heading" role="tab" id="gettingstarted-help">
+        <a class="collapsed" role="button" data-toggle="collapse" href="#gettingstarted-items" aria-expanded="false" aria-controls="collapseThree">
+            <h3 class="{% if page.url contains '/gettingstarted/' %}
     active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i>
-    Quick Start</h3>
+    Getting Started</h3>
         </a>
     </div>
-    <div id="quickstart-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="quickstart-help">
+    <div id="gettingstarted-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="gettingstarted-help">
       <ul class="list-group">
-            {% assign posts = (site.categories.quickstart | sort:"order") %} {% for post in posts %} {% if post.url %}
+            {% assign posts = (site.categories.gettingstarted | sort:"order") %} {% for post in posts %} {% if post.url %}
             <a href="{{ site.baseurl }}{{ post.url }}">
                 <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
             </a>

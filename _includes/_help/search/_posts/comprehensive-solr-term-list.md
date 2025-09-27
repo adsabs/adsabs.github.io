@@ -84,7 +84,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                   nonbib_mtime | y | y | Machine readable modification timestamp; corresponds to time when non-bibliographic metadata was updated |
  |                          orcid | y | n | Virtual field to search across all orcid fields |
  |                    orcid_mtime | y | y | Machine readable modification timestamp; corresponds to time when data were fetched from ORCiD |
- |                    orcid_other | y | y | ORCID claims from users who used {{ include.site }} claiming interface, but did not give us consent to show their profiles |
+ |                    orcid_other | y | y | ORCID claims from users who used the {{ include.site }} claiming interface, but did not give us consent to show their profiles |
  |                      orcid_pub | y | y | ORCID IDs supplied by publishers |
  |                     orcid_user | y | y | ORCID claims from users who gave {{ include.site }} consent to expose their public profiles. |
  |                           page | y | y | First page of a record |

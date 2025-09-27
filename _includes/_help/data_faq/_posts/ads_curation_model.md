@@ -1,10 +1,12 @@
-The {{ include.site }} curation model is represented by the diagram below (see [Kurtz et al. 2021]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/abs/2021BAAS...53d.470K/abstract)). 
+The {{ include.site }} curation model is {% if include.ads %}represented by the diagram below (see [Kurtz et al. 2021]({{ site.ads_base_url }}/abs/2021BAAS...53d.470K/abstract)).{% else %} described in [Kurtz et al. 2021]({{ site.scix_base_url }}/abs/2021BAAS...53d.470K/abstract).{% endif %} 
 
 {% if include.ads %}<figure>
     <img src="../img/curation_model.png"  class="img-responsive" alt="{{ include.site }} Curation Model">
     <figcaption><em>{{ include.site }}'s tiered curation model. The core collection represents disciplines where its curation is strongest and its coverage is authoritative. The surrounding tiers are connected to the core via the citation network.</em></figcaption>
-</figure>{% endif %}
+</figure>
 <br>
+{% endif %}
+
 The Core Collection consists of the main journals for the disciplines covered, the most influential journals. For ADS, this includes astronomy, astrophysics, and closely related fields. As we move into the inner and outer rings, curation efforts decrease. A qualitative characterization of the model is given below.
 
 ### Core: main journals for discipline

@@ -3,7 +3,7 @@
 The {{ include.site }} respects the privacy of its users. The following describes our policy.
 
 ## Server Logs
-As you travel through {{ include.site }} web site, our server logs the following information about your session on the site:
+As you travel through the {{ include.site }} web site, our server logs the following information about your session on the site:
 
   * Your computer's IP address (an IP address is a number that is assigned to you by your internet service provider).
   * The type of browser and operating system used to access our site.

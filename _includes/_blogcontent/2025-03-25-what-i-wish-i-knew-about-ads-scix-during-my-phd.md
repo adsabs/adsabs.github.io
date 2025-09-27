@@ -26,7 +26,7 @@ The inclusion of additional scientific disciplines in SciX creates new opportuni
 
 ### 2- One account to rule them all. 
 
-Your ADS account and account settings are fully integrated and shared with SciX, this includes your ADS libraries. Libraries are one of my favorite features of ADS and SciX and if you have not used them before I encourage you to create a SciX account, if you don’t have one already, and start organizing your research. Check out [this blog post](https://scixplorer.org/scixhelp/quickstart-scix/build-library) about how to create a library in SciX. 
+Your ADS account and account settings are fully integrated and shared with SciX, this includes your ADS libraries. Libraries are one of my favorite features of ADS and SciX and if you have not used them before I encourage you to create a SciX account, if you don’t have one already, and start organizing your research. Check out [this blog post](https://scixplorer.org/scixhelp/gettingstarted-scix/build-library) about how to create a library in SciX. 
 
 Libraries can be designated as public, shared, or private to suit your needs. **A feature currently exclusive to SciX** is the ability to add annotations to saved papers—extremely useful for documenting why you saved a particular paper in a specific library. This is one extra small reason to do the change from ADS to SciX and a reminder that future development will focus on the SciX platform and new features will be made available on SciX.
 

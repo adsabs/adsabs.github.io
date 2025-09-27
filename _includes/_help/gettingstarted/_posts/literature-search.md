@@ -1,6 +1,6 @@
 ### How do you start a literature search in {{ include.site }}?
 
-*Note: the Quick Start series is designed to get you started with the new interface. More advanced information on searching can be found in the [Second Order Queries]({% if include.ads %}../search/second-order{% else %}../../search-scix/second-order{% endif %}){% if include.ads %}, [Citation Helper](../libraries/citation-helper),{% endif %} and [Article View]({% if include.ads %}../actions/article-view{% else %}../../actions-scix/article-view{% endif %}) help pages and other pages in the "Making a Query" and "Search Results" sections.*
+*Note: the Getting Started series is designed to get you started with the new interface. More advanced information on searching can be found in the [Second Order Queries]({% if include.ads %}../search/second-order{% else %}../../search-scix/second-order{% endif %}){% if include.ads %}, [Citation Helper](../libraries/citation-helper),{% endif %} and [Article View]({% if include.ads %}../actions/article-view{% else %}../../actions-scix/article-view{% endif %}) help pages and other pages in the "Making a Query" and "Search Results" sections.*
 
 Starting research on a new topic can be tricky, especially when you
 don't know which papers you should be reading. How do you make sure

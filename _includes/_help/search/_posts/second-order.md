@@ -30,10 +30,10 @@ will return a ranked list of papers spanning a variety of topics useful to resea
 
 will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications.
 
-{% if include.ads %}<figure>
+<figure>
     <img src="../img/second-order.png"  class="img-responsive" alt="diagram showing use of the second order operators">
     <figcaption><em><center>Usage of the similar( ), trending( ), useful( ), and reviews( ) second-order operators</center></em></figcaption>
-</figure>{% endif %}
+</figure>
 <br>
 
 **TopN** -- returns the list of top N documents for a user defined query, where they are ordered by their default sort order or a user specified sort order. For example:

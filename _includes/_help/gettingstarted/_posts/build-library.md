@@ -1,5 +1,5 @@
 ### How do you build a library?
-*Note: the Quick Start series is designed to get you started with the new interface. More advanced information on libraries can be found in the [Creating and Editing a Library help page]({% if include.ads %}../libraries/creating-libraries{% else %}../../libraries-scix/creating-libraries{% endif %}) and other pages in the "{{ include.site }} Libraries" sections.*
+*Note: the Getting Started series is designed to get you started with the new interface. More advanced information on libraries can be found in the [Creating and Editing a Library help page]({% if include.ads %}../libraries/creating-libraries{% else %}../../libraries-scix/creating-libraries{% endif %}) and other pages in the "{{ include.site }} Libraries" sections.*
 
 {{ include.site }} libraries allow you to save collections of papers to view later. These libraries can be private (by default) or public. In addition to viewing and sorting saved papers, you can export the collection in a variety of formats, view citations and other metrics, explore visualizations such as the paper or author networks, and check for related papers.  Libraries are a popular way to build reference lists when writing papers, or keeping one's bibliography to use in a CV.
 

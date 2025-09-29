@@ -2,6 +2,10 @@
 <div class="hero-section">
   <div class="hero-background">
     <div class="hero-particles"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-particles"></div>
     <div class="hero-gradient"></div>
   </div>
   <div class="hero-content">

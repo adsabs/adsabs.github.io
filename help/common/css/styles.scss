@@ -32,6 +32,8 @@ $nav-color: #fff;
 $nav-header-color: desaturate($brand-color, 30);
 $nav-text-color: $text-color;
 
+@import "help/common/css/particles.scss";
+
 /* ==========================================================================
    .default-layout is a plain layout, just used for job announcements right now
    ========================================================================== */
@@ -607,34 +609,6 @@ $nav-text-color: $text-color;
   padding-bottom: 80px;
 }
 
-
-.hero-particles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(3px 3px at 20px 30px, #049DD9, transparent),
-    radial-gradient(2px 2px at 40px 70px, #5FBFAE, transparent),
-    radial-gradient(2px 2px at 90px 40px, #97BF41, transparent),
-    radial-gradient(2px 2px at 130px 80px, #BFAC4B, transparent),
-    radial-gradient(3px 3px at 160px 30px, #049DD9, transparent),
-    radial-gradient(1px 1px at 50px 20px, #5FBFAE, transparent),
-    radial-gradient(1px 1px at 80px 60px, #97BF41, transparent),
-    radial-gradient(1px 1px at 120px 90px, #BFAC4B, transparent),
-    radial-gradient(1px 1px at 180px 50px, #049DD9, transparent),
-    radial-gradient(1px 1px at 30px 100px, #5FBFAE, transparent),
-    radial-gradient(1px 1px at 70px 10px, #97BF41, transparent),
-    radial-gradient(1px 1px at 110px 80px, #BFAC4B, transparent),
-    radial-gradient(1px 1px at 150px 30px, #049DD9, transparent),
-    radial-gradient(1px 1px at 190px 70px, #5FBFAE, transparent);
-  background-repeat: repeat;
-  background-size: 200px 100px;
-  animation: float 20s ease-in-out infinite;
-  opacity: 0.8;
-  z-index: 1;
-}
 
 .hero-gradient {
   position: absolute;

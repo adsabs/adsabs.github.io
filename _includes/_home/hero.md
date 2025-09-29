@@ -56,6 +56,12 @@
       <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary">
         <span>Quick Start Guide</span>
       </a>
+      <a href="https://www.youtube.com/watch?v=sgJ-LolRLu8" class="btn-secondary" target="_blank">
+        <span>Watch Video</span>
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
     </div>
   </div>
 </div>

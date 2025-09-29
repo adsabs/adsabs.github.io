@@ -471,3 +471,22 @@ details {
   padding: 1rem;
   border-radius: 10px;
 }
+
+// Highlight boxes
+.highlight-box {
+  background-color: #F2F2F2;
+  border-left: 4px solid;
+  padding: 3rem;
+  margin: 1rem 0;
+  font-style: italic;
+  border-radius: 0;
+  font-size: 1.25em;
+}
+
+.highlight-box-teal {
+  border-left-color: #5FBFAE;
+}
+
+.highlight-box-yellow {
+  border-left-color: #BFAC4B;
+}

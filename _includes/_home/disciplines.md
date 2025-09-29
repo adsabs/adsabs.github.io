@@ -15,7 +15,7 @@
       <div class="discipline-card astrophysics" data-discipline="astro">
         <div class="discipline-overlay">
           <h3 class="discipline-title">Astrophysics</h3>
-          <p class="discipline-description">Stars, galaxies, and cosmic phenomena including stellar evolution, galactic dynamics, and cosmological research</p>
+          <p class="discipline-description">Astronomy, astrophysics, instrumentation, and history including stars and stellar evolution, galaxies and large-scale structure, cosmology and dark matter, black holes and compact objects, interstellar and intergalactic medium, exoplanets, gravitational waves, high-energy astrophysics, transient phenomena, gravitational lensing, instrumentation, observational techniques, laboratory astrophysics, and more</p>
         </div>
       </div>
       

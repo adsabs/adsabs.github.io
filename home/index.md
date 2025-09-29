@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 'About SciX'
+title: 'SciX Home'
 no-header: true
 ---
 

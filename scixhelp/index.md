@@ -512,8 +512,9 @@ no-header: true
 }
 
 .help-nav-item:hover {
-  background: #F2F2F2;
+  background: #5FBFAE;
   transform: translateY(-2px);
+  color: white;
 }
 
 .help-page .help-nav-item h3 {
@@ -537,13 +538,13 @@ no-header: true
 }
 
 .help-nav-item a:hover {
-  color: #5FBFAE;
+  color: #97BF41;
   text-decoration: underline;
 }
 
 /* API Note Styles */
 .api-note {
-  background: #f8f9fa;
+  background: #F2F2F2;
   border-left: 4px solid #049DD9;
   border-radius: 4px;
   margin: 20px 0 30px 0;
@@ -575,8 +576,8 @@ no-header: true
 
 /* Search Examples Styles */
 .search-examples-toggle {
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
+  background: #F2F2F2;
+  border: 1px solid #5FBFAE;
   border-radius: 6px;
   padding: 12px 16px;
   margin: 15px 0;
@@ -585,8 +586,9 @@ no-header: true
 }
 
 .search-examples-toggle:hover {
-  background: #e9ecef;
-  border-color: #049DD9;
+  background: #5FBFAE;
+  border-color: #97BF41;
+  color: white;
 }
 
 .search-examples-toggle h4 {
@@ -598,21 +600,33 @@ no-header: true
   justify-content: space-between;
 }
 
+.search-examples-toggle:hover h4 {
+  color: white;
+}
+
 .search-examples-toggle i {
-  color: #049DD9;
+  color: #5FBFAE;
   margin-right: 8px;
+}
+
+.search-examples-toggle:hover i {
+  color: white;
 }
 
 .examples-toggle {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #049DD9;
+  color: #5FBFAE;
+}
+
+.search-examples-toggle:hover .examples-toggle {
+  color: white;
 }
 
 .search-examples-content {
   display: none;
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
+  background: #F2F2F2;
+  border: 1px solid #5FBFAE;
   border-top: none;
   border-radius: 0 0 6px 6px;
   padding: 20px;
@@ -632,7 +646,7 @@ no-header: true
 }
 
 .example-section h5 {
-  color: #333;
+  color: #049DD9;
   font-size: 1.3rem;
   margin-bottom: 10px;
   font-weight: 600;
@@ -686,8 +700,8 @@ no-header: true
 }
 
 .tab-button:hover {
-  background: #e9ecef;
-  color: #333;
+  background: #5FBFAE;
+  color: white;
 }
 
 .tab-button.active {
@@ -769,15 +783,16 @@ no-header: true
 }
 
 .help-section code {
-  background: #e9ecef;
+  background: #F2F2F2;
   padding: 2px 6px;
   border-radius: 4px;
   font-family: 'Courier New', monospace;
-  color: #d63384;
+  color: #049DD9;
+  border: 1px solid #5FBFAE;
 }
 
 .faq-toc {
-  background: #f8f9fa;
+  background: #F2F2F2;
   padding: 20px;
   border-radius: 8px;
   margin: 20px 0;
@@ -810,9 +825,9 @@ no-header: true
 }
 
 .toc-link:hover {
-  background: #049DD9;
+  background: #5FBFAE;
   color: white;
-  border-color: #049DD9;
+  border-color: #5FBFAE;
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -827,10 +842,16 @@ no-header: true
 
 .faq-item {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #5FBFAE;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #97BF41;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .faq-question {
@@ -846,7 +867,7 @@ no-header: true
 }
 
 .faq-question:hover {
-  background: #f8f9fa;
+  background: #F2F2F2;
 }
 
 .help-page .faq-question h3 {
@@ -879,8 +900,8 @@ no-header: true
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
-  background: #f8f9fa;
-  border-top: 1px solid #eee;
+  background: #F2F2F2;
+  border-top: 1px solid #5FBFAE;
 }
 
 .faq-answer.active {
@@ -906,12 +927,12 @@ no-header: true
 }
 
 .faq-answer a {
-  color: #007bff;
+  color: #049DD9;
   text-decoration: none;
 }
 
 .faq-answer a:hover {
-  color: #0056b3;
+  color: #5FBFAE;
   text-decoration: underline;
 }
 
@@ -975,7 +996,8 @@ no-header: true
 }
 
 [data-theme='dark'] .help-nav-item:hover {
-  background: #404040;
+  background: #5FBFAE;
+  color: white;
 }
 
 [data-theme='dark'] .help-page .help-nav-item h3 {
@@ -991,7 +1013,7 @@ no-header: true
 }
 
 [data-theme='dark'] .help-nav-item a:hover {
-  color: #5FBFAE;
+  color: #97BF41;
 }
 
 [data-theme='dark'] .faq-item {
@@ -1022,7 +1044,7 @@ no-header: true
 
 [data-theme='dark'] .faq-answer {
   background: #1a1a1a;
-  border-top: 1px solid #404040;
+  border-top: 1px solid #5FBFAE;
 }
 
 [data-theme='dark'] .faq-answer p {
@@ -1035,11 +1057,11 @@ no-header: true
 }
 
 [data-theme='dark'] .faq-answer a {
-  color: #4a9eff;
+  color: #049DD9;
 }
 
 [data-theme='dark'] .faq-answer a:hover {
-  color: #6bb6ff;
+  color: #5FBFAE;
 }
 
 [data-theme='dark'] .faq-answer strong {
@@ -1061,9 +1083,9 @@ no-header: true
 }
 
 [data-theme='dark'] .toc-link:hover {
-  background: #049DD9;
+  background: #5FBFAE;
   color: white;
-  border-color: #049DD9;
+  border-color: #5FBFAE;
 }
 
 /* Responsive design */

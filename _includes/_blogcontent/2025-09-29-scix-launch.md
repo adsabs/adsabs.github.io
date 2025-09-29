@@ -33,13 +33,27 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
 
 ---
 
-## Press Coverage
+<!-- ## Press Coverage -->
 
-<button class="press-coverage-toggle" onclick="togglePressCoverage()" title="Toggle Press Coverage">
-  <i class="fa fa-newspaper-o"></i>
-</button>
+<div class="press-coverage-container">
+  <div class="press-coverage-tab" onclick="togglePressCoverage()">
+    <span class="tab-text">Press Coverage</span>
+  </div>
+  
+  <div id="press-coverage-box" class="press-coverage-box" onclick="togglePressCoverage()">
+    <div class="press-coverage-header">
+      <h4><i class="fa fa-newspaper-o"></i>Press Coverage</h4>
+      <button class="close-button" onclick="event.stopPropagation(); togglePressCoverage();">&times;</button>
+    </div>
+    <ul>
+      <li><a href="https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science" target="_blank">New NASA-Backed Research Platform SciX Expands Open Science</a><br><small>Center for Astrophysics | Harvard & Smithsonian</small></li>
+      <li><a href="https://science.data.nasa.gov/features-events/scix-launch" target="_blank">SciX: A New Era for NASA Research Discovery</a><br><small>NASA Science Data Portal</small></li>
+    </ul>
+  </div>
+</div>
 
-<div id="press-coverage-box" class="press-coverage-box">
+<!-- Desktop version -->
+<div id="press-coverage-box-desktop" class="press-coverage-box-desktop">
   <h4 style="margin-top: 0; color: #495057; font-size: 16px;"><i class="fa fa-newspaper-o" style="margin-right: 8px;"></i>Press Coverage</h4>
   <ul style="margin-bottom: 0; padding-left: 20px;">
     <li style="margin-bottom: 8px;"><a href="https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science" target="_blank" style="color: #007bff; text-decoration: none;">New NASA-Backed Research Platform SciX Expands Open Science</a><br><small style="color: #6c757d;">Center for Astrophysics | Harvard & Smithsonian</small></li>
@@ -48,24 +62,152 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
 </div>
 
 <style>
-  .press-coverage-toggle {
+  .press-coverage-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
     display: none;
-    position: fixed;
-    top: 200px;
-    right: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
+  }
+  
+  .press-coverage-tab {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    color: #049DD9;
+    padding: 15px 8px;
+    border-radius: 8px 0 0 8px;
     cursor: pointer;
-    z-index: 1001;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(4, 157, 217, 0.2);
+  }
+  
+  .press-coverage-tab:hover {
+    background: rgba(4, 157, 217, 0.1);
+    transform: translateX(-5px);
+    box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+    border-color: rgba(4, 157, 217, 0.4);
+  }
+  
+  .tab-text {
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
   
   .press-coverage-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 14px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .press-coverage-box.show {
+    transform: translateX(0);
+  }
+  
+  .press-coverage-header {
+    background: none;
+    color: #495057;
+    padding: 0;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .press-coverage-header h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .press-coverage-header i {
+    margin-right: 8px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #495057;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .close-button:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  .press-coverage-box ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+  }
+  
+  .press-coverage-box li {
+    margin-bottom: 8px;
+  }
+  
+  .press-coverage-box li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .press-coverage-box a {
+    color: #007bff;
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .press-coverage-box a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .press-coverage-box small {
+    color: #6c757d;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .press-coverage-container {
+      display: block;
+    }
+    
+    .press-coverage-box {
+      width: 280px;
+    }
+  }
+  
+  .press-coverage-box-desktop {
     position: absolute;
     top: 250px;
     right: -275px;
@@ -80,25 +222,19 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
     transition: transform 0.3s ease;
   }
   
-  .press-coverage-box.hidden {
+  .press-coverage-box-desktop.hidden {
     transform: translateX(100%);
   }
   
   @media (max-width: 768px) {
-    .press-coverage-toggle {
-      display: block;
+    .press-coverage-box-desktop {
+      display: none;
     }
-    
-    .press-coverage-box {
-      position: fixed;
-      top: 200px;
-      right: 10px;
-      width: 280px;
-      transform: translateX(100%);
-    }
-    
-    .press-coverage-box.show {
-      transform: translateX(0);
+  }
+  
+  @media (min-width: 769px) {
+    .press-coverage-container {
+      display: none;
     }
   }
 </style>

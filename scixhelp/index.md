@@ -118,18 +118,19 @@ no-header: true
   
   <div class="faq-item" id="common-name-search">
     <div class="faq-question" onclick="toggleFAQ('faq2')">
-      <h3>How can I search for papers by an author with a common name?</h3>
+      <h3>My colleague’s name is not unique in my discipline. How can I search for their papers?</h3>
       <span class="faq-toggle">+</span>
     </div>
     <div class="faq-answer" id="faq2">
-      <p>Common names can be tricky, but these strategies help:</p>
+      <p>Common names like "Sun, Jin" (6.5K results) or "Smith, John" (13.2K results) can be tricky. Use these strategies:</p>
       <ul>
-        <li><strong>Be more specific:</strong> Use <code>author:"Smith, J. S."</code> instead of just <code>author:"Smith, J"</code></li>
-        <li><strong>Add an equals sign:</strong> Use <code>=author:"Smith, J"</code> to find only exact matches</li>
-        <li><strong>Use filters:</strong> Click on author names in the left panel to narrow results</li>
-        <li><strong>Add more details:</strong> Include year, institution, or topic to narrow your search</li>
+        <li><strong>Be specific:</strong> <code>author:"Smith, J. S."</code> or <code>=author:"Smith, J"</code> → exact matches</li>
+        <li><strong>Add topics:</strong> <code>abs:"electromagnetic"</code> → filter by research area</li>
+        <li><strong>Use ORCID:</strong> <code>orcid:"0000-0001-6066-793X"</code> → guaranteed author match (click green ORCID icons)</li>
+        <li><strong>Filter institutions:</strong> Left panel → Institutions → "OR St U" or "ETH Zurich" → 6.5K results → ~500</li>
+        <li><strong>Author networks:</strong> <strong>Explore</strong> → <strong>Author network</strong> → select collaborators → few papers of interest</li>
       </ul>
-      <p>Learn more about <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">author search techniques</a>.</p>
+      <p>Learn more about <a href="{{ site.baseurl }}/scixhelp/search-scix">advanced search techniques</a> and <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">author search methods</a>.</p>
     </div>
   </div>
   
@@ -141,11 +142,11 @@ no-header: true
     <div class="faq-answer" id="faq3">
       <p>Make your work easier to find:</p>
       <ul>
-        <li><strong>Use your full name:</strong> Include middle initials when publishing</li>
-        <li><strong>Stay consistent:</strong> Use the same name format across all papers</li>
-        <li><strong>Get an ORCID ID:</strong> Create an <a href="https://orcid.org/">ORCID ID</a> and <a href="{{ site.baseurl }}/scixhelp/orcid-scix">claim your papers</a> in SciX</li>
-        <li><strong>Name changes:</strong> <a href="mailto:help@scixplorer.org">Email us</a> to link different name variations</li>
-        <li><strong>Share your work:</strong> <a href="{{ site.baseurl }}/scixhelp/libraries-scix">Create a public library</a> of your papers</li>
+        <li><strong>Full name:</strong> Include middle initials for more specific matches</li>
+        <li><strong>Stay consistent:</strong> Use same name format across all papers</li>
+        <li><strong>Get ORCID:</strong> <a href="https://orcid.org/">Create ID</a>, share on profiles, use on submissions, and <a href="{{ site.baseurl }}/scixhelp/orcid-scix">claim papers</a> in SciX</li>
+        <li><strong>Name changes:</strong> <a href="{{ site.baseurl }}/scixhelp/policies-scix/name-changes/">See our name change policy</a> or <a href="mailto:help@scixplorer.org">email us</a> to link name variations</li>
+        <li><strong>Share work:</strong> <a href="{{ site.baseurl }}/scixhelp/libraries-scix">Create public library</a> to showcase your papers</li>
       </ul>
     </div>
   </div>
@@ -156,15 +157,15 @@ no-header: true
       <span class="faq-toggle">+</span>
     </div>
     <div class="faq-answer" id="faq5">
-      <p>Find potential collaborators through SciX:</p>
+      <p>Search your topic (e.g., <code>abs:"sea level rise"</code> or <code>author:"Mitrovica, Jerry"</code>) then explore:</p>
       <ul>
-        <li><strong>Author networks:</strong> Use the <strong>Explore</strong> menu to see who works together</li>
-        <li><strong>Search by institution:</strong> Use <code>inst:"Harvard"</code> to find researchers at specific places</li>
-        <li><strong>Look at co-authors:</strong> Check who frequently collaborates in your field</li>
-        <li><strong>Find similar work:</strong> Use <code>similar(your_topic)</code> to find related papers and their authors</li>
-        <li><strong>Citation connections:</strong> See whose work is cited together with yours</li>
+        <li><strong>Author networks:</strong> <strong>Explore</strong> menu → see who works together</li>
+        <li><strong>Institution search:</strong> <code>inst:"Harvard U"</code> → find researchers at specific places</li>
+        <li><strong>Similar work:</strong> <strong>Explore</strong> → <strong>similar</strong> → related papers and authors</li>
+        <li><strong>Funded projects:</strong> <code>abs:"sea level rise" has:credit</code> → find funded researchers</li>
+        <li><strong>Citation networks:</strong> <code>citations(author:"Mitrovica, Jerry")</code> → <strong>Explore</strong> → paper/author networks</li>
       </ul>
-      <p>Explore these features in our <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">Getting Started Tutorial</a>.</p>
+      <p>Learn more in our <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">Getting Started Tutorial</a>.</p>
     </div>
   </div>
   
@@ -174,13 +175,13 @@ no-header: true
       <span class="faq-toggle">+</span>
     </div>
     <div class="faq-answer" id="faq6">
-      <p>Keep track of who's citing your work:</p>
+      <p>Track who's citing your work:</p>
       <ul>
-        <li><strong>Find all citations:</strong> Use <code>citations(author:"Your Name")</code> to see papers citing your work</li>
-        <li><strong>Track specific papers:</strong> Use <code>citations(bibcode:YOUR_BIBCODE)</code> for individual papers</li>
-        <li><strong>Set up alerts:</strong> Save searches to get notified of new citations</li>
-        <li><strong>View metrics:</strong> Use the <strong>Metrics</strong> feature to see citation trends</li>
-        <li><strong>Export data:</strong> Download citation data for analysis</li>
+        <li><strong>All citations:</strong> <code>citations(author:"Your Name")</code> → see papers citing your work</li>
+        <li><strong>Specific papers:</strong> <code>citations(identifier:"PAPER_ID")</code> → track individual papers</li>
+        <li><strong>Set alerts:</strong> Save searches → get notified of new citations</li>
+        <li><strong>View metrics:</strong> <strong>Metrics</strong> feature → see citation trends</li>
+        <li><strong>Export data:</strong> Download citation data → analysis</li>
       </ul>
       <p>Learn more about <a href="{{ site.baseurl }}/scixhelp/search-scix">citation tracking</a> and <a href="{{ site.baseurl }}/scixhelp/libraries-scix">library management</a>.</p>
     </div>
@@ -196,16 +197,10 @@ no-header: true
       <ul>
         <li><strong>Paper Network:</strong> See how papers connect through shared references</li>
         <li><strong>Author Networks:</strong> Visualize who collaborates with whom</li>
-        <li><strong>Smart search tools:</strong>
-          <ul>
-            <li><code>similar()</code> - Find papers like yours</li>
-            <li><code>trending()</code> - See what's popular now</li>
-            <li><code>useful()</code> - Find important methods and tools</li>
-            <li><code>reviews()</code> - Locate comprehensive review papers</li>
-          </ul>
-        </li>
+        <li><strong>Smart search tools:</strong> <code>similar()</code> → papers like yours, <code>trending()</code> → what's popular, <code>useful()</code> → methods & tools, <code>reviews()</code> → comprehensive reviews</li>
         <li><strong>Co-reads:</strong> See what else people who read your paper also read</li>
         <li><strong>Citation Helper:</strong> Find related papers through citation connections</li>
+        <li><strong>Highlights:</strong> Turn on using gear button above search results</li>
       </ul>
       <p>Access these features through the <strong>Explore</strong> menu on search results pages.</p>
     </div>
@@ -220,11 +215,11 @@ no-header: true
       <p>Narrow down your results with filters:</p>
       <ul>
         <li><strong>Authors:</strong> Include or exclude specific authors</li>
-        <li><strong>Journals:</strong> Filter by publication or journal type</li>
-        <li><strong>Years:</strong> Use sliders to pick date ranges</li>
+        <li><strong>Publications:</strong> Filter by publication or journal type</li>
+        <li><strong>Years:</strong> Use sliders → pick date ranges</li>
         <li><strong>Institutions:</strong> Filter by research institutions</li>
         <li><strong>Topics:</strong> Filter by keywords, objects, or data availability</li>
-        <li><strong>Collections:</strong> Limit to astronomy, physics, or general papers</li>
+        <li><strong>Collections:</strong> Limit to astronomy, physics, or general science papers</li>
         <li><strong>Combine filters:</strong> Use AND, OR, and EXCLUDE when selecting multiple terms</li>
       </ul>
       <p>All filters are in the left panel of search results. Learn more about <a href="{{ site.baseurl }}/scixhelp/search-scix">advanced filtering</a>.</p>
@@ -240,12 +235,12 @@ no-header: true
       <p>Libraries help you organize and manage your research:</p>
       <ul>
         <li><strong>Group papers:</strong> Organize by topic, project, or any way you want</li>
-        <li><strong>Build collections:</strong> Create comprehensive lists for literature reviews</li>
+        <li><strong>Build collections:</strong> Create comprehensive lists → literature reviews</li>
         <li><strong>Share with others:</strong> Make public libraries or collaborate with colleagues</li>
         <li><strong>Export citations:</strong> Download in BibTeX, RIS, or other formats</li>
         <li><strong>Track impact:</strong> See citation patterns and metrics for your papers</li>
-        <li><strong>Find connections:</strong> Use Paper Network to see how papers relate</li>
-        <li><strong>Discover more:</strong> Use Citation Helper to find additional relevant papers</li>
+        <li><strong>Find connections:</strong> Use Paper Network → see how papers relate</li>
+        <li><strong>Discover more:</strong> Use Citation Helper → find additional relevant papers</li>
       </ul>
       <p>Learn how to <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">create and manage libraries</a>.</p>
     </div>
@@ -277,8 +272,8 @@ no-header: true
     <div class="faq-answer" id="faq11">
       <p>Yes! Here's how to request corrections:</p>
       <ul>
-        <li><strong>Missing papers:</strong> Use our <a href="https://ui.adsabs.harvard.edu/feedback/correctabstract">Submit Abstract Form</a> to report missing papers</li>
-        <li><strong>Wrong details:</strong> Use the same form to report errors in existing records</li>
+        <li><strong>Missing papers:</strong> Use our <a href="https://ui.adsabs.harvard.edu/feedback/correctabstract">Submit Abstract Form</a> → report missing papers</li>
+        <li><strong>Wrong details:</strong> Use the same form → report errors in existing records</li>
         <li><strong>Timing:</strong> New arXiv papers appear daily, published articles weekly</li>
         <li><strong>What we cover:</strong> Refereed articles, arXiv preprints, conference papers, and other scholarly works</li>
         <li><strong>Data sources:</strong> We work with publishers and arXiv for comprehensive coverage</li>
@@ -317,12 +312,63 @@ no-header: true
         <li><strong>Comprehensive coverage:</strong> Access millions of papers from astronomy, physics, and related fields</li>
         <li><strong>Smart search:</strong> Find exactly what you need with powerful search tools and filters</li>
         <li><strong>Discover connections:</strong> See how papers, authors, and ideas connect through networks</li>
-        <li><strong>Organize your work:</strong> Create libraries to manage and share your research</li>
+        <li><strong>Organize your work:</strong> Create libraries → manage and share your research</li>
         <li><strong>Track impact:</strong> Monitor citations and analyze the influence of your work</li>
-        <li><strong>Stay current:</strong> Find trending papers and discover what's popular in your field</li>
+        <li><strong>Stay current:</strong> Find trending papers → discover what's popular in your field</li>
         <li><strong>Free and open:</strong> Access all features without cost or restrictions</li>
         <li><strong>Built for researchers:</strong> Designed specifically for the scientific community's needs</li>
       </ul>
+    </div>
+  </div>
+  
+  <div class="faq-item" id="export-citations">
+    <div class="faq-question" onclick="toggleFAQ('faq14')">
+      <h3>Can I export my search results to a citation manager like EndNote or Zotero?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq14">
+      <p>Yes! Export your search results to citation managers:</p>
+      <ul>
+        <li><strong>Bulk Actions menu:</strong> Export search results → most scientific reference formats</li>
+        <li><strong>Supported formats:</strong> EndNote, Zotero, BibTeX, RIS, and more</li>
+        <li><strong>Coverage:</strong> Earth and space sciences, physics, and mathematics</li>
+        <li><strong>Libraries too:</strong> Same export options available for saved libraries</li>
+      </ul>
+      <p>Learn more about <a href="{{ site.baseurl }}/scixhelp/actions-scix">export options</a> and <a href="{{ site.baseurl }}/scixhelp/libraries-scix">library management</a>.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item" id="search-history">
+    <div class="faq-question" onclick="toggleFAQ('faq15')">
+      <h3>Is my search history saved? Can I retrieve my searches later?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq15">
+      <p>For privacy reasons, we don't track or save your search history:</p>
+      <ul>
+        <li><strong>No personal tracking:</strong> We collect aggregate search data but can't track back to you</li>
+        <li><strong>Email alerts:</strong> Use bell button → set up notifications for your search</li>
+        <li><strong>Save searches:</strong> Create account → <strong>Bulk Actions</strong> → export to Library → note query in description</li>
+        <li><strong>Revisit anytime:</strong> Access saved searches through your libraries</li>
+      </ul>
+      <p>Learn more about <a href="{{ site.baseurl }}/scixhelp/libraries-scix">library management</a> and <a href="{{ site.baseurl }}/scixhelp/userpreferences-scix">user preferences</a>.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item" id="discipline-selection">
+    <div class="faq-question" onclick="toggleFAQ('faq16')">
+      <h3>How and why would I specify my discipline?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq16">
+      <p>Specify your discipline to boost relevant content:</p>
+      <ul>
+        <li><strong>Top-left menu:</strong> Select preferred discipline → boosts relevant content to top</li>
+        <li><strong>General Science:</strong> Primarily physics, computer science, and chemistry content</li>
+        <li><strong>Left panel:</strong> Select collection by discipline → filters out other disciplines</li>
+        <li><strong>Account setting:</strong> Create account → discipline stays selected for future searches</li>
+      </ul>
+      <p>Learn more about <a href="{{ site.baseurl }}/scixhelp/search-scix">search techniques</a> and <a href="{{ site.baseurl }}/scixhelp/userpreferences-scix">user preferences</a>.</p>
     </div>
   </div>
 </div>
@@ -1092,10 +1138,14 @@ function toggleFAQ(faqId) {
     answer.classList.remove('active');
     question.classList.remove('active');
     toggle.textContent = '+';
+    // Save state to localStorage
+    localStorage.setItem('faq_' + faqId, 'closed');
   } else {
     answer.classList.add('active');
     question.classList.add('active');
     toggle.textContent = '−';
+    // Save state to localStorage
+    localStorage.setItem('faq_' + faqId, 'open');
   }
 }
 
@@ -1169,8 +1219,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Restore FAQ states from localStorage
+function restoreFAQStates() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const faqAnswer = item.querySelector('.faq-answer');
+    const faqQuestion = item.querySelector('.faq-question');
+    const faqId = faqAnswer.id;
+    
+    if (faqId) {
+      const savedState = localStorage.getItem('faq_' + faqId);
+      if (savedState === 'open') {
+        faqAnswer.classList.add('active');
+        faqQuestion.classList.add('active');
+        const toggle = faqQuestion.querySelector('.faq-toggle');
+        if (toggle) toggle.textContent = '−';
+      }
+    }
+  });
+}
+
 // Auto-open FAQ on page load if there's a hash in the URL
 document.addEventListener('DOMContentLoaded', function() {
+  // First restore saved FAQ states
+  restoreFAQStates();
+  
+  // Then handle URL hash if present
   if (window.location.hash) {
     const target = document.querySelector(window.location.hash);
     if (target && target.classList.contains('faq-item')) {

@@ -32,7 +32,7 @@ $nav-color: #fff;
 $nav-header-color: desaturate($brand-color, 30);
 $nav-text-color: $text-color;
 
-@import "help/common/css/particles.scss";
+@import "particles.scss";
 
 /* ==========================================================================
    .default-layout is a plain layout, just used for job announcements right now

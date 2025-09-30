@@ -48,6 +48,7 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
     <ul>
       <li><a href="https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science" target="_blank">New NASA-Backed Research Platform SciX Expands Open Science</a><br><small>Center for Astrophysics | Harvard & Smithsonian</small></li>
       <li><a href="https://science.data.nasa.gov/features-events/scix-launch" target="_blank">SciX: A New Era for NASA Research Discovery</a><br><small>NASA Science Data Portal</small></li>
+      <li><a href="https://www.thenationalnews.com/future/space/2025/09/30/uae-raised-astrophysicist-helps-build-nasas-new-portal-for-earth-and-space-research/" target="_blank">UAE-raised astrophysicist helps build NASA's new portal for Earth and space research</a><br><small>The National</small></li>
     </ul>
   </div>
 </div>
@@ -57,7 +58,8 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
   <h4 style="margin-top: 0; color: #495057; font-size: 16px;"><i class="fa fa-newspaper-o" style="margin-right: 8px;"></i>Press Coverage</h4>
   <ul style="margin-bottom: 0; padding-left: 20px;">
     <li style="margin-bottom: 8px;"><a href="https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science" target="_blank" style="color: #007bff; text-decoration: none;">New NASA-Backed Research Platform SciX Expands Open Science</a><br><small style="color: #6c757d;">Center for Astrophysics | Harvard & Smithsonian</small></li>
-    <li><a href="https://science.data.nasa.gov/features-events/scix-launch" target="_blank" style="color: #007bff; text-decoration: none;">SciX: A New Era for NASA Research Discovery</a><br><small style="color: #6c757d;">NASA Science Data Portal</small></li>
+    <li style="margin-bottom: 8px;"><a href="https://science.data.nasa.gov/features-events/scix-launch" target="_blank" style="color: #007bff; text-decoration: none;">SciX: A New Era for NASA Research Discovery</a><br><small style="color: #6c757d;">NASA Science Data Portal</small></li>
+    <li><a href="https://www.thenationalnews.com/future/space/2025/09/30/uae-raised-astrophysicist-helps-build-nasas-new-portal-for-earth-and-space-research/" target="_blank" style="color: #007bff; text-decoration: none;">UAE-raised astrophysicist helps build NASA's new portal for Earth and space research</a><br><small style="color: #6c757d;">The National</small></li>
   </ul>
 </div>
 

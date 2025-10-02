@@ -1,0 +1,3 @@
+# Mirror Links Policy
+
+ADS does not currently host mirror sites, unlike ADS Classic. We removed our mirror sites in 2018 when we upgraded our site infrastructure from being hosted on local servers to cloud based. This move to the cloud was made to improve the speed and reliability of ADS as our content base was growing. For more information, please see this blog post outlining the differences between the [Classic ADS and the New ADS]({{ site.ads_base_url }}/blog/technical).

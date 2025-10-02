@@ -246,6 +246,35 @@ h2 {
   height: 60px;
 }
 
+// Default navbar - About dropdown pinned to the right
+.navbar-right {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  float: none !important;
+  margin-right: 0 !important;
+}
+
+.navbar-right .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.navbar {
+  position: relative !important;
+}
+
+// Home navbar - different layout with search bar
+.home-navbar .navbar-right {
+  position: static !important;
+  float: right !important;
+  margin-right: 0 !important;
+}
+
+.home-navbar .navbar {
+  position: static !important;
+}
+
 .navbar-nav .btn-link {
   color: #c4c4c4;
   &:hover,
@@ -441,4 +470,23 @@ details {
   border: 1px solid darkgrey;
   padding: 1rem;
   border-radius: 10px;
+}
+
+// Highlight boxes
+.highlight-box {
+  background-color: #F2F2F2;
+  border-left: 4px solid;
+  padding: 3rem;
+  margin: 1rem 0;
+  font-style: italic;
+  border-radius: 0;
+  font-size: 1.25em;
+}
+
+.highlight-box-teal {
+  border-left-color: #5FBFAE;
+}
+
+.highlight-box-yellow {
+  border-left-color: #BFAC4B;
 }

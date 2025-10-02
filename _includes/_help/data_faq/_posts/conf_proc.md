@@ -1,0 +1,89 @@
+This section is intended to be a guideline for editors and authors wishing to submit conference proceedings for inclusion in {{ include.site }} Abstract and Scanned Literature Services. Any questions about the procedure should be directed to <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}.
+
+{{ include.site }} is pleased to include any conference proceedings volume, as well as individual conference proceedings abstracts. This includes both electronic and printed conference proceedings. We have a set of naming conventions detailed below, but are flexible if there is a different naming scheme which is more appropriate for your particular conference. If you would like to have your conference proceedings included in our database before your conference, we request that you submit them to us one month in advance of the start of your conference.
+
+## Submitting Bibliographic Records for {{ include.site }} Abstract Service
+
+Please send us an email at <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}</a> with the information to make a conference entry in {{ include.site }}. 
+
+In addition a file containing the following should be sent to {{ include.site }}. Individual Article Entries should include the following tags ( ( * ) items are required.)
+
+( * ) %T Title  
+( * ) %A Author List  
+%F Author Affiliation  
+( * ) %P First Page of Article  
+%L Last Page of Article  
+%I Links to online resources (see below)  
+%B Abstract Text  
+%Z References  
+%K Keywords
+
+
+Please note that there are many more details that you can add but these are the required minimum tags. A complete list of {{ include.site }} tagged fields can be found [here]({% if include.ads %}../data_faq/tagged-format{% else %}../data_faq-scix/tagged-format{% endif %}). Please note that references containing TeX/LaTeX formatting, AASTeX macros and HTML entities are acceptable.
+
+A long entry should continue on the next line(s) with no repetition of the percent sign and keying letter. All entries should be in ascii and there should be no tabs or control characters. Blank lines can delimit paragraphs in the abstract, but should not otherwise be present within a record. A title, author list, and page number are required. Other information such as author affiliation, links to online full-text, abstract text and references are strongly recommended as well. The more information that you can provide for each article, the better. This additional information will aid in searching and using advanced features in {{ include.site }}.
+
+This information can be submitted via email to {% if include.ads %}[ads@cfa.harvard.edu](mailto:ads@cfa.harvard.edu){% else %}[help@scixplorer.org](mailto:help@scixplorer.org){% endif %} or placed on our anonymous ftp site, under [ftp://adsftp.harvard.edu/pub/Conf](ftp://adsftp.harvard.edu/pub/Conf). Please send us an email indicating when you have transferred things to us, so that we can include it in our database as soon as possible.
+
+## Including Full-text Papers in {{ include.site }}
+
+It is possible for us to make the full-text of articles published in conference proceedings available via {{ include.site }} Article Service. This section describes the requirements and procedures to be followed in order to do that.
+
+**Note**: We do **not** publish original material that is not published elsewhere, since we are not a publisher.
+
+Provide written permission from the copyright holder allowing {{ include.site }} to publish electronically the papers in the conference proceedings. The relevant letter should state something along the following lines:
+
+    The <full description of the copyright holder> grants permission to the Astrophysics Data System at the Smithsonian Astrophysical Observatory to:
+
+    1. Convert postscript files to tiff files for <name of conference>
+
+    2. Add a note at the bottom of each page with the following content:
+
+        (©) <name of copyright holder> - Provided by the Astrophysics Data System
+
+    3. Make the images of the articles electronically available, free of charge, for all volumes starting 1 year after publication
+
+Feel free to modify as you see fit, especially item three, then send a copy of a signed copy of the permission letter to:
+
+        Alberto Accomazzi
+        Astrophysics Data System
+        Harvard-Smithsonian Center for Astrophysics
+        60 Garden Street, M.S. 83
+        Cambridge, MA 02138
+        USA
+
+Send us either a printed copy of the conference proceedings book or (if available) the set of full-text files used to create the proceedings. If only a printed book is available, please send it to Alberto Accomazzi at the address listed above along with the permission letter. If full-text PostScript or PDF files are available for all papers, please read on.
+
+To submit the full-text files with the necessary information for us to process them, you will need to create a tar or zip archive and transfer it to our ftp server. This is what must be included in the archive file:
+
+* All the files containing the full-text, including front-matter (introductory) and back-matter (index) pages if available. You should make sure that these files are either in PostScript or PDF format, and that they have been created using 600dpi or higher resolution fonts. (Note: if you are using `dvips` to create the postscript file, you can specify the options `-D600 -Z` on the command-line to have 600dpi fonts included).
+
+* A file named README, containing general information concerning this publication, the name and email address of the person submitting the full-text papers to us, and any additional information we should be aware of.
+
+* A file named PUBLICATION, containing the full name of the conference or book (you should use the same name given in the journal field above).
+
+* A file named COPYRIGHT, containing the copyright string that needs to be displayed at the bottom of each page that {{ include.site }} creates and places online in its article service (please do not try to include the copyright symbol © since we already do this for you).
+
+* A file named BIBSTEM, containing the bibliographic abbreviation for the publication (e.g. *ASPC..117* or *2000immm.proc*). This should be the same abbreviation that has been used to create the bibliographic entries described above.
+
+* Optionally, a PAGEMAP file containing mapping of full-text file names to page numbers, if these cannot be determined from the full-text files themselves. Whether or not this is needed is a function of how the files were originally created; usually if you used LaTeX and dvips to create the postscript files then the page numbering displayed on each page is carried into the postscript files and can be automatically extracted at least for "regular" pages. Pages which are part of the front-matter may need to have entries associated with them. The format of the PAGEMAP file is the following:
+
+            # This is a comment
+            file1.ps    C1-C4         # first file has cover pages 1-4
+            file2.ps    C6            # second file has cover page 6
+            file3.ps    1-8 8A 9-15   # third file has pages 1-8, insert 8A, 9-15
+            file4.pdf   16-           # fourth file has pages 16 and up
+
+When in doubt, please contact us for help.
+
+Create a compressed tar or zip archive containing of all the full-text files, the README file, and name of the file using (if possible) the standard acronym adopted by {{ include.site }} in naming bibliographic entries for the conference. For example, the archive file containing papers submitted to the ASP Conference Proceedings n.117 should be named *ASPC117.tar.gz* or *ASPC..117.tar.gz*. The archive for files containing the conference *2000immm.proc* should be named *2000immm.proc.tar.gz*.
+
+Deposit the tar archive on our anonymous ftp server under the URL ftp://adsftp.harvard.edu/pub/Conf and notify us. We will contact you with any questions regarding the full-text processing of the files.
+
+## Archiving Conference Proceedings in {{ include.site }}
+
+As more conferences are published electronically, editors are turning to {{ include.site }} for long-term archiving of their full text proceedings. We can agree to this under the following conditions:
+
+* The conference is originally published elswhere (e.g. through a university or observatory publication, or through another publisher).
+* We receive the pdf or postscript files as described above.
+* The data have been published at least three years ago.

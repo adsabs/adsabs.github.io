@@ -3,7 +3,7 @@ layout: about
 title: "Team"
 ---
 
-The ADS personnel are:
+Astrophysics Data Systems (ADS) Personnel:
 
 - [Dr. Alberto Accomazzi](../team/team/aaccomazzi.html) - PI & Program Manager  
 - [Dr. Michael J. Kurtz](../team/team/mkurtz.html) - Project Scientist Emeritus
@@ -24,17 +24,21 @@ The ADS personnel are:
 - [Jean-Claude Paquin](../team/team/jcpaquin.html) - Back-End Development (search)
 - [Dr. Jennifer Bartlett](../team/team/jbartlett.html) - Astrophysics Project Scientist
 - [Dr. Mugdha Polimera](../team/team/mpolimera.html) - Back-End Development
-- [Dr. Stephanie Jarmak](../team/team/sjarmak.html) - Planetary Science Project Scientist
 - [Dr. Anna Kelbert](../team/team/akelbert.html) - Earth Science Project Scientist
 - [Paul Di Re](../team/team/pdire.html) - Project Manager
 - [Dr. Jeffrey Pomerantz](../team/team/jpomerantz.html) - Digital Technologies Development Librarian
+- [Dr. Atilla Kaan Alkan](../team/team/aalkan.html) - Postdoctoral Research Fellow
 
-ADS research associates are:
+Community Engagement Coordinator: 
+- [Dr. Suze Kundu](../team/team/skundu.html)
+
+ADS Research Associates:
 - [Dr. Sergi Blanco-Cuaresma](../team/team/sblancocuaresma.html)
+- [Dr. Stephanie Jarmak](../team/team/sjarmak.html)
 
 The late [Stephen S. Murray](https://www.cfa.harvard.edu/news/stephen-s-murray-high-energy-astrophysicist-dies-age-70) served as the Principal Investigator of the project from its inception in 1993 until his passing in August 2015.
 
-If you have comments or questions about the ADS, you are welcome to contact any of us directly, although the preferred way to get in touch with ADS staff is through our support email ([adshelp [at] cfa.harvard.edu](mailto:adshelp@cfa.harvard.edu)), which guarantees a timely reply to your inquiry.
+If you have comments or questions about the ADS, you are welcome to contact any of us directly, although the preferred way to get in touch with ADS staff is through our support email (<a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}), which guarantees a timely reply to your inquiry.
 
 <div>
   <div class="floated_img">

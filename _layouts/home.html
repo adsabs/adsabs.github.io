@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  {% include head_default_scix.html %}
+
+  <body>
+    <!-- Custom Home Page Header -->
+    <div class="home-header">
+      <nav class="navbar home-navbar fluid navbar-inverse" aria-label="main navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand s-navbar-brand" href="https://scixplorer.org/">
+            <img
+              class="s-ads-icon"
+              src="{{ site.baseurl }}/help/common/images/scix/FULL COLOR-ScixHorizontalBlackBackground.svg"
+              alt="SciX Logo"
+            />
+          </a>
+        </div>
+        
+        <!-- Search Bar in Navbar -->
+        <div class="navbar-search-container">
+          <form class="navbar-search-form" id="navbarSearchForm" action="https://scixplorer.org/search" method="get" target="_blank">
+            <div class="navbar-search-input-group">
+              <input 
+                type="text" 
+                name="q" 
+                class="navbar-search-input" 
+                placeholder="Search 30M+ records in the Earth and space sciences..." 
+                aria-label="Search scientific literature"
+                autocomplete="off"
+                required
+              />
+              <button type="submit" class="navbar-search-button" aria-label="Search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <button
+                type="button"
+                class="btn btn-link dropdown-toggle"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i
+                  class="fa fa-question-circle about-page-icon"
+                  aria-hidden="true"
+                ></i>
+                About <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="{{ site.baseurl }}/scixabout/">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    About SciX
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ site.baseurl }}/scixblog/">
+                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ site.baseurl }}/scixhelp/">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    SciX Help Pages
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- Header Text Overlay -->
+      <div class="header-text-overlay">
+        <h1 class="header-welcome-text">Welcome to the Future of Scientific Discovery</h1>
+      </div>
+    </div>
+    
+    <div class="home-page-content">{{ content }}</div>
+
+    <!-- Only include the dark mode toggle -->
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+      🌓
+    </div>
+    <script src="/help/common/js/dark-mode-switch-scix.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      'script',
+      '//www.google-analytics.com/analytics.js',
+      'ga'
+    );
+
+    ga('create', 'UA-37369750-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Navbar Search Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchForm = document.getElementById('navbarSearchForm');
+      const searchInput = document.querySelector('.navbar-search-input');
+      
+      if (searchForm && searchInput) {
+        // Add keyboard shortcut (Ctrl/Cmd + K) to focus search
+        document.addEventListener('keydown', function(e) {
+          if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            searchInput.focus();
+          }
+        });
+        
+        // Add search suggestions or recent searches (optional enhancement)
+        searchInput.addEventListener('focus', function() {
+          this.placeholder = 'Try: "climate change", "exoplanets", "machine learning"';
+        });
+        
+        searchInput.addEventListener('blur', function() {
+          this.placeholder = 'Search 30M+ records in the Earth and space sciences...';
+        });
+        
+        // Add loading state on form submission
+        searchForm.addEventListener('submit', function(e) {
+          const query = searchInput.value.trim();
+          if (query) {
+            // Add loading animation
+            const button = document.querySelector('.navbar-search-button');
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '<i class="fa fa-spinner fa-spin"></i>';
+            
+            // Reset button after a short delay (form will redirect)
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+            }, 1000);
+          }
+        });
+        
+        // Ensure input is focusable
+        searchInput.addEventListener('click', function() {
+          this.focus();
+        });
+      }
+      
+      // Debug dropdown functionality
+      const dropdownToggle = document.querySelector('.dropdown-toggle');
+      const dropdown = document.querySelector('.dropdown');
+      
+      if (dropdownToggle && dropdown) {
+        console.log('Dropdown elements found');
+        
+        // Add click event listener
+        dropdownToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log('Dropdown clicked');
+          
+          // Toggle dropdown manually
+          if (dropdown.classList.contains('open')) {
+            dropdown.classList.remove('open');
+          } else {
+            dropdown.classList.add('open');
+          }
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove('open');
+          }
+        });
+      } else {
+        console.log('Dropdown elements not found');
+      }
+    });
+  </script>
+</html>

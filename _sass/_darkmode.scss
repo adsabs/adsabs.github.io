@@ -301,10 +301,35 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
   // ADS
 
   .dropdown-menu {
-    background-color: $darkmode-dropdown-bg;
+    background-color: $darkmode-dropdown-bg !important;
+    border-color: $darkmode-border !important;
+
+    li {
+      color: $darkmode-dropdown-text !important;
+      background-color: $darkmode-dropdown-bg !important;
+      
+      &:hover {
+        color: $darkmode-dropdown-text !important;
+        background-color: $darkmode-dropdown-highlight-bg !important;
+      }
+
+      a {
+        color: $darkmode-dropdown-text !important;
+        background-color: transparent !important;
+        
+        &:hover {
+          color: $darkmode-dropdown-text !important;
+          background-color: transparent !important;
+        }
+        
+        i {
+          color: $darkmode-dropdown-text !important;
+        }
+      }
+    }
 
     li.no-hover-style {
-      color: $darkmode-dropdown-text;
+      color: $darkmode-dropdown-text !important;
       &:hover {
         background-color: $darkmode-dropdown-bg !important;
       }
@@ -315,7 +340,7 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
       h4,
       h5,
       h6 {
-        color: $darkmode-dropdown-text;
+        color: $darkmode-dropdown-text !important;
         &:hover {
           background-color: $darkmode-dropdown-bg !important;
         }
@@ -323,26 +348,40 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
 
       a,
       a:hover {
-        color: $darkmode-dropdown-text;
+        color: $darkmode-dropdown-text !important;
         background-color: $darkmode-dropdown-bg !important;
       }
     }
 
     li:not(.divider):not(.no-hover-style) {
-      color: $darkmode-dropdown-text;
-      background-color: $darkmode-dropdown-bg;
+      color: $darkmode-dropdown-text !important;
+      background-color: $darkmode-dropdown-bg !important;
       &:hover {
-        color: $darkmode-dropdown-text;
-        background-color: $darkmode-dropdown-highlight-bg;
+        color: $darkmode-dropdown-text !important;
+        background-color: $darkmode-dropdown-highlight-bg !important;
       }
       a {
-        color: $darkmode-dropdown-text;
-        background-color: $darkmode-dropdown-bg;
+        color: $darkmode-dropdown-text !important;
+        background-color: transparent !important;
       }
       a:hover {
-        color: $darkmode-dropdown-text;
-        background-color: $darkmode-dropdown-highlight-bg;
+        color: $darkmode-dropdown-text !important;
+        background-color: transparent !important;
       }
+    }
+  }
+
+  // Dropdown toggle button text
+  .dropdown-toggle {
+    color: $darkmode-text !important;
+    
+    &:hover,
+    &:focus {
+      color: $darkmode-text !important;
+    }
+    
+    .caret {
+      border-top-color: $darkmode-text !important;
     }
   }
 
@@ -385,5 +424,33 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
 
   .__footer_links a {
     color: rgba(255, 255, 255, 0.8);
+  }
+
+  // Highlight boxes
+  .highlight-box {
+    background-color: $darkmode-background-secondary !important;
+    color: $darkmode-text !important;
+    border-left: 4px solid;
+    padding: 3rem;
+    margin: 1rem 0;
+    font-style: italic;
+    border-radius: 0;
+    font-size: 1.25em;
+
+    strong {
+      color: $darkmode-text-strong !important;
+    }
+
+    a {
+      color: $darkmode-link !important;
+    }
+  }
+
+  .highlight-box-teal {
+    border-left-color: #5FBFAE !important;
+  }
+
+  .highlight-box-yellow {
+    border-left-color: #BFAC4B !important;
   }
 }

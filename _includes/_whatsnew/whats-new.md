@@ -3,6 +3,96 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## October 2025
+* Announcements:<br>
+  * **SciX Has Officially Launched!**<br>
+    We are delighted to share that the non-beta version of SciX officially launched on September 29th! This milestone represents the culmination of our community’s collective effort to build a platform that expands on ADS and provides integrated access to research across Earth, environmental and space sciences, including planetary science, heliophysics, geology, geophysics, atmospheric sciences and oceanography. <b>[Check out our new video here!](https://youtu.be/sgJ-LolRLu8?si=10sM6h05rD_fWQRY)</b><br>
+	
+	You can access the platform at [scixplorer.org](http://scixplorer.org/).<br>
+
+	You can also [read our launch blog post](../../blog/scix-launch), read the [NASA Science Data Portal's news item](https://science.data.nasa.gov/features-events/scix-launch), and read the [Center for Astrophysics Harvard & Smithsonian's press release](https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science) too!<br>
+
+	As part of the launch, we’ll be sharing updates and news across social media, and it would be wonderful if you could support us in three simple ways:<br>
+	
+	1\.&nbsp;&nbsp;Keep an eye out for SciX launch posts on our social media channels and amplify them through your own networks - we are <b>@SciXCommunity</b> everywhere!
+		[LinkedIn](https://www.linkedin.com/company/scixcommunity/) 🔎 [X](https://x.com/SciXCommunity) 🔎 [Bluesky](https://web-cdn.bsky.app/profile/scixcommunity.bsky.social) 🔎 [Facebook](https://www.facebook.com/SciXCommunity) 🔎 [Instagram](https://www.instagram.com/scixcommunity/) 🔎 [Mastodon](https://mastodon.social/@SciXCommunity)<br>
+		
+    2\.&nbsp;&nbsp;[Provide us with a short testimonial about SciX](https://docs.google.com/forms/d/e/1FAIpQLSdm9JYp8fFm1UwtR4Nman_s60FTGnDitW7dcsBZoYcrsdLQig/viewform?usp=dialog) - why it matters to you, to your field, or to the broader research ecosystem<br>
+	
+    3\.&nbsp;&nbsp;Invite at least two colleagues (ideally from diverse areas of research) to [also share a testimonial](https://docs.google.com/forms/d/e/1FAIpQLSdm9JYp8fFm1UwtR4Nman_s60FTGnDitW7dcsBZoYcrsdLQig/viewform?usp=dialog). Personal recommendations go a long way in highlighting the value and impact of SciX - please let us know if we can help with this.<br>
+		
+	Thanks for embarking on this journey with us - we are so happy to have you on board!<br>
+
+	<img src="{{site.baseurl}}/blog/images/scixlaunch2025.png" 
+	         alt="scix-launch" 
+	         class="img-responsive" 
+	         style="display: block; margin: 1em auto;">
+		 
+  * **Professional Development Training - Register Your Interest!**<br>
+    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.<br>
+
+	<img src="{{site.baseurl}}/help/img/whatsnew_202510-prof-dev.png" 
+		 alt="professional-development" 
+		 class="img-responsive" 
+		 style="display: block; margin: 1em auto;">
+
+* Development and data holdings updates as of October 1st:
+  * Website and API
+    + **[new]** [SciX Homepage](https://scixplorer.org/home/)
+    + **[new]** New [Quick Start help page](../../scixhelp)
+    + **[new]** Blog post celebrating [SciX Launch](../../blog/scix-launch)
+    + Bumblebee releases:
+       +  **[new]** Added PubMed full source links
+       +  **[improved]** Added link to system status page in footer
+       +  **[fixed]** Updated submodule for feedback form bug
+    + Export Service releases:
+       +  **[improved]** Added support for BibTeX `techreport` document type
+       +  **[fixed]** ASCL BibTeX format
+    + Nectar releases:
+       +  **[improved]** Landing page updates
+       +  **[improved]** Tooltips for abstract page
+       +  **[improved]** Improve search error message
+       +  **[improved]** Allow facet download at different levels
+       +  **[fixed]** Author affiliation form load error with some queries
+       +  **[fixed]** Notifications on protected pages
+       +  **[fixed]** Facets are now correctly applied in 2nd order operations
+       +  **[ops]** Updated SciX email contact for Feedback and Help pages
+  * Data holdings and pipelines
+    + 510K new records, and 8.44M new citations
+    + This month we have added several noteworthy data holdings, included but not limited to:
+		- 1.25 million journal articles from [IEEE](https://ieee.org/)
+		- 63K conference abstracts from the [Goldschmidt conference series](https://goldschmidt.info/)
+		- 33K technical reports from [NASA's NTRS](https://ntrs.nasa.gov/)
+		- 16K datasets from [USGS](https://www.usgs.gov/)
+		- 6K software records from [USGS](https://www.usgs.gov/) and [DOE](https://www.energy.gov/)<br>
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.1">v1.10.1</a></li>
+</ul>
+
+<li>Export Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.16">v3.1.16</a></li>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.15">v3.1.15</a></li>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.23-temp">v0.22.23-temp</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.23">v0.22.23</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.21">v0.22.21</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.19">v0.22.19</a></li>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.22.16">v0.22.16</a></li>
+</ul>
+  
+</ul>
+</details>
+
 ## September 2025
 * Announcements:<br>
   * **SciX is Out of Beta and Ready for Take-Off!**<br>

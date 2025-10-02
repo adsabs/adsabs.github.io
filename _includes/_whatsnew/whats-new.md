@@ -20,7 +20,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 		
 	Thanks for embarking on this journey with us - we are so happy to have you on board!<br>
 
-	<img src="{{site.baseurl}}/help/img/whatsnew_202509-out-of-beta.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew_202510-scix-launched.png" 
 	         alt="scix-out-of-beta" 
 	         class="img-responsive" 
 	         style="display: block; margin: 1em auto;">

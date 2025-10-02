@@ -15,7 +15,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 	As part of the launch, we’ll be sharing updates and news across social media, and it would be wonderful if you could support us in three simple ways:<br>
 	
 	1\.&nbsp;&nbsp;Keep an eye out for SciX launch posts on our social media channels and amplify them through your own networks - we are <b>@SciXCommunity</b> everywhere!
-		[LinkedIn](https://www.linkedin.com/company/scixcommunity/) :mag_right: [X](https://x.com/SciXCommunity) :mag_right: [Bluesky](https://web-cdn.bsky.app/profile/scixcommunity.bsky.social) :mag_right: [Facebook](https://www.facebook.com/SciXCommunity) :mag_right: [Instagram](https://www.instagram.com/scixcommunity/) :mag_right: [Mastodon](https://mastodon.social/@SciXCommunity)<br>
+		[LinkedIn](https://www.linkedin.com/company/scixcommunity/) 🔎 [X](https://x.com/SciXCommunity) 🔎 [Bluesky](https://web-cdn.bsky.app/profile/scixcommunity.bsky.social) 🔎 [Facebook](https://www.facebook.com/SciXCommunity) 🔎 [Instagram](https://www.instagram.com/scixcommunity/) 🔎 [Mastodon](https://mastodon.social/@SciXCommunity)<br>
 		
     2\.&nbsp;&nbsp;[Provide us with a short testimonial about SciX](https://docs.google.com/forms/d/e/1FAIpQLSdm9JYp8fFm1UwtR4Nman_s60FTGnDitW7dcsBZoYcrsdLQig/viewform?usp=dialog) - why it matters to you, to your field, or to the broader research ecosystem<br>
 	

@@ -32,7 +32,7 @@ $nav-color: #fff;
 $nav-header-color: desaturate($brand-color, 30);
 $nav-text-color: $text-color;
 
-@import "particles.scss";
+@import "help/common/css/particles.scss";
 
 /* ==========================================================================
    .default-layout is a plain layout, just used for job announcements right now
@@ -119,12 +119,13 @@ $nav-text-color: $text-color;
 /* Custom Home Header */
 .home-header {
   position: relative;
-  background-image: 
+  background-image:
     linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),
-    url('/help/common/images/scix/scix-discipline-backdrop.png');
+    url('/help/common/images/scix/optimized/scix-discipline-backdrop.webp');
   background-size: 120% auto, cover !important;
   background-position: center center, center;
   background-attachment: scroll, scroll;
+  background-color: #000;
   height: 40vh;
   min-height: 40vh;
   width: 100%;
@@ -1098,45 +1099,45 @@ $nav-text-color: $text-color;
 
 /* Earth Science - Individual backdrop image */
 .discipline-card.earth-science {
-  background-image: 
+  background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-    url('/help/common/images/scix/earth-science-backdrop.png');
+    url('/help/common/images/scix/optimized/earth-science-backdrop.webp');
   background-position: center;
   background-size: cover;
 }
 
 /* Astrophysics - Individual backdrop image */
 .discipline-card.astrophysics {
-  background-image: 
+  background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-    url('/help/common/images/scix/astrophysics-backdrop.png');
+    url('/help/common/images/scix/optimized/astrophysics-backdrop.webp');
   background-position: center;
   background-size: cover;
 }
 
 /* Biology - Individual backdrop image */
 .discipline-card.biology {
-  background-image: 
+  background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-    url('/help/common/images/scix/biological-and-physical-sciences-backdrop.png');
+    url('/help/common/images/scix/optimized/biological-and-physical-sciences-backdrop.webp');
   background-position: center;
   background-size: cover;
 }
 
 /* Planetary Science - Individual backdrop image */
 .discipline-card.planetary {
-  background-image: 
+  background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-    url('/help/common/images/scix/planetary-backdrop.png');
+    url('/help/common/images/scix/optimized/planetary-backdrop.webp');
   background-position: center;
   background-size: cover;
 }
 
 /* Heliophysics - Individual backdrop image */
 .discipline-card.heliophysics {
-  background-image: 
+  background-image:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-    url('/help/common/images/scix/helio-backdrop.png');
+    url('/help/common/images/scix/optimized/helio-backdrop.webp');
   background-position: center;
   background-size: cover;
 }

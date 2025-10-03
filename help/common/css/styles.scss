@@ -32,7 +32,97 @@ $nav-color: #fff;
 $nav-header-color: desaturate($brand-color, 30);
 $nav-text-color: $text-color;
 
-@import "help/common/css/particles.scss";
+// Particle background styles
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: radial-gradient(3px 3px at 20px 30px, #049DD9, transparent),
+  radial-gradient(2px 2px at 40px 70px, #5FBFAE, transparent),
+  radial-gradient(2px 2px at 90px 40px, #97BF41, transparent),
+  radial-gradient(2px 2px at 130px 80px, #BFAC4B, transparent),
+  radial-gradient(3px 3px at 160px 30px, #049DD9, transparent),
+  radial-gradient(1px 1px at 50px 20px, #5FBFAE, transparent),
+  radial-gradient(1px 1px at 80px 60px, #97BF41, transparent),
+  radial-gradient(1px 1px at 120px 90px, #BFAC4B, transparent),
+  radial-gradient(1px 1px at 180px 50px, #049DD9, transparent),
+  radial-gradient(1px 1px at 30px 100px, #5FBFAE, transparent),
+  radial-gradient(1px 1px at 70px 10px, #97BF41, transparent),
+  radial-gradient(1px 1px at 110px 80px, #BFAC4B, transparent),
+  radial-gradient(1px 1px at 150px 30px, #049DD9, transparent),
+  radial-gradient(1px 1px at 190px 70px, #5FBFAE, transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  transform: scale(2);
+  transform-origin: center center;
+  animation: hero-zoom 7s infinite;
+  animation-fill-mode: both;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+// Staggered particle layers
+.hero-particles:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: -2s;
+}
+
+.hero-particles:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: -4s;
+}
+
+.hero-particles:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: -6s;
+}
+
+.hero-particles:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: -1s;
+}
+
+.hero-particles:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: -3s;
+}
+
+@keyframes hero-zoom {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  15% {
+    transform: scale(1.0);
+    opacity: 0.3;
+    animation-timing-function: linear;
+  }
+  40% {
+    transform: scale(1.8);
+    opacity: 0.7;
+    animation-timing-function: linear;
+  }
+  70% {
+    transform: scale(2.6);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: scale(3.5);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-particles {
+    animation: none;
+    opacity: 0.35;
+    transform: none;
+  }
+}
 
 /* ==========================================================================
    .default-layout is a plain layout, just used for job announcements right now

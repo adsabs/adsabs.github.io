@@ -14,6 +14,6 @@ In addition to maintaining its bibliographic corpus, ADS tracks citations and us
 
 Multiple societies and individuals have [recognized](https://ui.adsabs.harvard.edu/about/awards.html) the unsurpassed role that ADS plays in supporting the scientific community.
 
-If you wish to acknowledge ADS in a publication, kindly use a phrase such as the following: _"This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC25M7105."_
+If you wish to acknowledge ADS in a publication, kindly use a phrase such as the following: _"This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC21M0056."_
 
 

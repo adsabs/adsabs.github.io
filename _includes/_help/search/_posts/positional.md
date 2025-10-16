@@ -19,3 +19,13 @@ You can limit the number of results returned by your search by using the _topn()
     topn(20,"galaxy clusters")
 
 This will limit the list of results to be the 20 most relevant papers on "galaxy clusters." --->
+
+{% unless include.ads %}
+### Last Author
+For the special case of last author searches, a template is available from the all search terms dropdown menu for every disciplinary interface. In addition, it is available as a QUICK FIELD choice for the Biological and Physical Sciences. Selecting a last author search by either of these means places _pos(author:””,-1)_ in the search bar so that the user can enter the desired author’s name.
+
+<figure>
+   <img src="/scixhelp/sciximg/scix-lastauthorsearch.jpg"  class="img-responsive" alt="a screenshot showing the Last Author entry in the All Search Terms dropdown menu in SciX">
+</figure>
+
+{% endunless %}

@@ -43,6 +43,12 @@ In general, we have searchable full text for most major journals in astronomy an
 ##### Q: How do I get my conference proceeding in {{ include.site }}?
 Full instructions for submitting conference proceedings can be found [here]({% if include.ads %}../data_faq/conf_proc{% else %}../data_faq-scix/conf_proc{% endif %}).
 
+##### Q: Why is my citation count different on other platforms?
+While we do our best to capture citations accurately, there are a few reasons we would have more or fewer citations than you may see on other platforms. The primary reasons are as follows:
+- We merge the arXiv record with the published record, so that a citation for either version counts as one citation. This avoids double counting a citation.
+- Citations to books, book chapters, and other less formally structured content is often difficult to resolve in an automated fashion. Our citations to this content is likely under-counted.
+- In order for a citation to count in our system, both the cited record and the citing record must be in our system. Users are always welcome to submit missing content through the [Missing articles]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/feedback/correctabstract) form linked off our feedback menu.
+
 ## arXiv
 ##### Q: My arXiv paper is missing its references.
 We extract references directly from the PDF for arXiv records, which doesn't always work well, depending on reference and document format. If the paper will be published, we will get the reference list from the publisher and will update the references on the record at that point. Note also that we're working on a new module for extracting references directly from PDFs and arXiv reference extraction should improve at that point.
@@ -70,7 +76,6 @@ You'll need to contact the arXiv directly for corrections to your papers on thei
 Most conference proceedings are not refereed. They may be reviewed by an editor, but rarely is there the kind of rigorous review as is done by many journals. (In general, users and editors and librarians and publishers all have different opinions on what constitutes "peer-reviewed.")
 
 If a publication or a conference is generally not peer-reviewed, all articles/proceedings within that publication/conference will automatically be listed as non-refereed. If a particular article/proceeding within the generally non-refereed publication/conference is peer-reviewed, have the editors [email us](mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}) to confirm and we can correct the listing.
-
 
 ## Submissions
 ##### Q: How do I submit my PhD thesis?

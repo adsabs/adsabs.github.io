@@ -5,8 +5,8 @@ The following page describes extra details about the search syntax not found in 
 
 The search has two distinct phases:
 
-1. building query
-1. executing query, collecting results
+1. building the query
+1. executing the query, collecting results
 
 The first phase is what we are going to discuss here. We'll break it down further into:
 
@@ -15,7 +15,7 @@ The first phase is what we are going to discuss here. We'll break it down furthe
 1. building the query object
 
 
-## Parsing text into AST
+### Building the Query
 
 The [Search Grammar](https://github.com/adsabs/montysolr/blob/main/montysolr/src/main/antlr/ADS.g) defines the search language of {{ include.site }}. It is a context-free grammar and it is used to generate a client library ([by ANTLR](https://www.antlr.org/)).
 
@@ -29,19 +29,19 @@ The search operators have the following precedence (from higher to lower priorit
 
 Some details worth mentioning: 
 
-**Empty space is the default** 
+**Empty space is the default AND** 
 
 Better to illustrate it by way of examples:
 
-`jim and john not mary` becomes behind the scenes: `(jim AND (john NOT mary))` because `NOT` has precedence over `AND`. But `john jim and mary` becomes `(john AND (jim AND mary))` because `AND` operator has precedence over empty space (operator) -- notice how `jim and mary` is evaluated as a group: i.e. the query is **not** parsed as `john AND jim AND mary`. That is a behaviour **right now** and the stress is on **now**; for the time being {{ include.site }} search defaults to `AND` logic for the search operations. We are returning results that contain all the elements of the query. The reasons for this default behaviour are complex (and for the most part obsolete -- more on that later). This behaviour can change in the future if {{ include.site }} switches to a different default operator (`OR`) and makes sorting by relevancy the default sort order. Such a change would be (potentially highly) beneficial but would also change the order of how things get parsed. To make it clearer, if we ever change the default operator to (e.g.) `OR` - then `john jim and mary` will be evaluated as `(jim OR (john AND mary))`
+`jim and john not mary` becomes behind the scenes: `(jim AND (john NOT mary))` because `NOT` has precedence over `AND`. But `john jim and mary` becomes `(john AND (jim AND mary))` because `AND` operator has precedence over empty space (operator) -- notice how `jim and mary` is evaluated as a group: i.e. the query is **not** parsed as `john AND jim AND mary`. 
 
 **You can modify the default operator**
 
 It can also be changed on demand by adding `q.op=OR` into URL parameters (i.e. NOT inside the search form), in which case the logic will change dramatically. For any given query the results will contain many more records, but if sorted by relevancy score, the top items will be still the ones returned with the default `AND` operator.
 
-**{{ include.site }} supports proximity searches**
+**{{ include.site }} supports proximity searches for text fields**
 
-Yes, many people may not know about it, but you can do stuff like: `title:(dog NEAR5 cat)` -- this will find any mention of the barking animal appearing up to 5 words (tokens) from the meowing animal. The `NEAR` has to be followed by a number [1-5] and it will not care about the order; i.e. `cat NEAR5 dog` == `dog NEAR5 cat` -- this search can be very powerful, especially if applied against fulltext. It can also be quite expensive (computationally) - especially when the search term(s) have synonyms.
+Yes, many people may not know about it, but you can do stuff like: `title:(dog NEAR5 cat)` -- this will find any mention of the barking animal appearing up to 5 text words (tokens) from the meowing animal. The `NEAR` has to be followed by a number [1-5] and it will not care about the order; i.e. `cat NEAR5 dog` == `dog NEAR5 cat` -- this search can be very powerful, especially if applied against fulltext. It can also be quite expensive (computationally) - especially when the search term(s) have synonyms. Use this operator with fielded queries on text fields such as `full`, `abs`, `title`.
 
 **There is no in-order proximity operator, but {{ include.site }} still supports this feature**
 
@@ -51,8 +51,6 @@ Yes, many people may not know about it, but you can do stuff like: `title:(dog N
 ### Syntax Parsing
 
 OK, so back to the syntactic parsing -- how does it actually work? We have a formal grammar which describes the query language. Based on that, we have generated a library (in Java) which is included inside SOLR, our search engine. When SOLR receives the user input, before it can start searching for documents, the user query (string) will be turned into a query object. And that is the objective of the parser. First comes the syntactic phase during which an ANTLR parser will be 'eating' input character by character. It will occassionally veer off to explore a possible (alternative) branch, to either pursue it further or return back and start branching from some previous position. The input has to be syntactically correct; if we explored all possible readings and there are still some input characters left, it means the input is non-conforming and we'll generate an exception and give up.
-
-This is a feature, but it is borderline feature/bug. The syntax parser is `unforgiving` (that is the actual name of the class in Java). It would be possible (and the sensible thing to do) to actually first try to parse the input and on failure try again with some less unforgiving parser; but we have never gotten to it -- so perhaps in the future... just know that if the parser encounters an error, it will generate an exception and the exception will actually say why/what has failed.
 
 If the query is correct, however, after the parser is finished parsing, we'll have the **AST** (Abstract Syntax Tree): a hierarchical datastructure (a tree) instead of the flat chain of characters.
 
@@ -89,4 +87,4 @@ Pro tip: if you add `debugQuery=true` to your search request URL parameters (and
     }
 
 
-Pro tip (II): If you had access to STDOUT/logging of the SOLR instance, you would see LOTS of details; each and every step in the query pipeline produces output. This information is however only printed to STDOUT - and so only {{ include.site }} engineers can really see it.
+

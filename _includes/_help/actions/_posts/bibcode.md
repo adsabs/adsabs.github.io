@@ -15,3 +15,7 @@ YYYYJJJJJVVVVMPPPPA where:
 
 The fields are padded with periods (.) so that the code is always 19 characters long. The journal is left-justified within its 5 characters, and the volume and page are right-justified. New journal abbreviations should be unique, and follow existing naming conventions. As an example, the bibliographic code:
 1992ApJ...400L...1W corresponds to the article: Astrophysical Journal Letters volume 400, page L1.
+
+As many publishers are moving away from page numbers and using electronic identifiers more and more frequently, the page field is no longer guaranteed to be numeric. Often an identifier of more than 5 digits is truncated, and there may be letters, periods, dashes, or other characters in the page field as well. The volume field may also contain non-numeric characters. 
+
+Modern bibcodes are likely to be deprecated in the future, and users should not depend on semantic meaning represented in the bibcode.

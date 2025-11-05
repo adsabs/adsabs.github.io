@@ -10,7 +10,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 	Our mission? To show how open and FAIR research platforms can help bridge disciplines and catalyse collaboration - because the biggest challenges on (and beyond) our planet can’t be solved with research that lives in a single science silo.<br><br>
 	Through our booth and Dr Anna Kelbert’s demo-talk on the Innovation Stage, we had the pleasure of meeting SciX users old and new - and we’d love to see more of you at the AGU conference in New Orleans next month!<br><br>
 	<img src="{{site.baseurl}}/help/img/whatsnew_202511-GSA.png" 
-	 alt="professional-development" 
+	 alt="SciX at GSA Connects 2025" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
 		 

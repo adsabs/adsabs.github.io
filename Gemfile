@@ -4,6 +4,8 @@ source "https://rubygems.org"
 gem "jekyll"
 # Pin jekyll-sass-converter to avoid sass-embedded 1.93.3 compatibility issues
 gem "jekyll-sass-converter", "~> 3.0.0"
+# Pin sass-embedded to exclude buggy version 1.93.3 (released Nov 3, 2025)
+gem "sass-embedded", "< 1.93.3"
 
 group :jekyll_plugins do
    gem "jekyll-last-modified-at"

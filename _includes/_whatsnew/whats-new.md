@@ -5,23 +5,31 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 ## November 2025
 * Announcements:<br>
-  * **ADS Survey**<br>
+	* **SciX visits San Antonio for GSA Connects 2025**<br>
+    San Antonio served up sunshine, science, and a whole lot of curiosity at this year’s GSA Connects 2025, held at the Henry B. González Convention Center. Against the backdrop of the city’s iconic River Walk and limestone heritage, the SciX team joined thousands of geoscientists, data specialists, and Earth explorers for a week of discovery and dialogue.<br><br>
+	Our mission? To show how open and FAIR research platforms can help bridge disciplines and catalyse collaboration - because the biggest challenges on (and beyond) our planet can’t be solved with research that lives in a single science silo.<br><br>
+	Through our booth and Dr Anna Kelbert’s demo-talk on the Innovation Stage, we had the pleasure of meeting SciX users old and new - and we’d love to see more of you at the AGU conference in New Orleans next month!<br><br>
+	<img src="{{site.baseurl}}/help/img/whatsnew_202511-GSA.png" 
+	 alt="professional-development" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+		 
+	* **ADS Survey**<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew_202511-survey.png" 
 	 alt="ADS-Survey" 
 	 class="img-responsive" 
 	 style="float: right; margin: 0 0 1em 1em; width: 250px;">
     If you have not already let us know what you think about how ADS is performing, please complete [our survey](https://docs.google.com/forms/d/e/1FAIpQLSeW-QnDYEZhpe4dYZcUHvnund1edrHXFZvp_c2BGaj2BmWJVA/viewform) soon. We value your feedback. However, we are currently making upgrades only to the SciX interface because we will eventually have to consolidate all our users on a single platform. Therefore, we are especially interested in knowing whether you have tried SciX. <br>
 
-
-  * **ADS Users Group Meeting: Nov. 20-21**<br>
+	* **ADS Users Group Meeting: Nov. 20-21**<br>
     The [ADS Users Group](../../about/adsug/charter) will meet virtually on November 20 and 21 to review the state of ADS and operational plans for next year. Community guidance is especially important as we strive to support researchers in this challenging and uncertain environment. Please let either the chair or the PI know of any issues they should consider or   contact the PI for an invitation to the public sessions.  We will be updating the [ADS Users Group webpage](../../about/adsug/adsug)  as the meeting approaches with the newest members and planned presentations.<br>
 
-  * **LISA 10**<br>
+	* **LISA 10**<br>
   	<img src="{{site.baseurl}}/help/img/whatsnew_202511-lisa10.jpg"
 	     alt="LISA-10"
 	     class="img-responsive"
 	     style="float: right; margin: 0 0 1em 1em; width: 250px;">
-    [Edwin Henneken](../../about/team/team/ehenneken), Content, Curation & Collaborations Lead, and [Jennifer Lynn Bartlett](../../about/team/team/jbartlett), Project Scientist for Astrophysics, presented virtually at the [Library and Information Services in Astronomy](https://www.eso.org/sci/meetings/2025/LISA10.html) meeting at the beginning of this month. Jennifer discussed [recent work to apply keywords](https://zenodo.org/records/17460502) from the [Unified Astronomy Thesaurus (UAT)](https://astrothesaurus.org/) automatically to astronomy papers, datasets, and software to make them more easily findable. SciX Ambassador [Manuel Pichardo Marcano](https://zenodo.org/records/17460502) translated the presentation into Spanish. <br>
+    [Edwin Henneken](../../about/team/team/ehenneken), Content, Curation & Collaborations Lead, and [Jennifer Lynn Bartlett](../../about/team/team/jbartlett), Project Scientist for Astrophysics, presented virtually at the [Library and Information Services in Astronomy](https://www.eso.org/sci/meetings/2025/LISA10.html) meeting at the beginning of this month. Edwin presented on how the ADS/SciX links to and indexes data products. Jennifer discussed [recent work to apply keywords](https://zenodo.org/records/17460502) from the [Unified Astronomy Thesaurus (UAT)](https://astrothesaurus.org/) automatically to astronomy papers, datasets, and software to make them more easily findable. SciX Ambassador [Manuel Pichardo Marcano](https://zenodo.org/records/17460502) translated the presentation into Spanish. <br>
  
 * Development and data holdings updates as of November 1st:
   * Website and API
@@ -52,7 +60,6 @@ To receive this listing via monthly email newsletter, along with announcements a
 	- [ops] Added tags to search page queries for analytics<br>
 	- [ops] Added null check when deleting all records from a library<br>
 </ul>
-
 
 <li>Nectar Releases</li>
 <ul>

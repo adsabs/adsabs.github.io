@@ -281,7 +281,7 @@ Records in {{ include.site }} are assigned a document type which is indexed in t
 Document Type  | Resource associated with record
 ---------------|--------------------------------
 article        | journal article
-eprint         | article preprinted in arXiv
+eprint         | preprinted article
 inproceedings  | article appearing in a conference proceedings
 inbook         | article appearing in a book
 abstract       | meeting abstract

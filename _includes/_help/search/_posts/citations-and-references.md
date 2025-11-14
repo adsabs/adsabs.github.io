@@ -4,7 +4,7 @@ The syntax for these operators are _references(query)_ and _citations(query)_.
 
 Example Query                              | Explanation
 -------------------------------------------|------------------------------------------------
-citations(author:"huchra, john")           | returns the list of records citing John Huchra's papers
+citations(author:&ldquo;huchra, john")           | returns the list of records citing John Huchra's papers
 references(bibcode:2003AJ....125..525J)    | returns records cited by the paper 2003AJ....125..525J
 citations(abstract:JWST)                   | returns records citing papers which have "JWST" in their abstract
 references(data:Chandra)                   | returns records cited by papers in the Chandra data bibliography

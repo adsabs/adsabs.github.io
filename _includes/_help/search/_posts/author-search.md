@@ -31,7 +31,7 @@ author:"peter adamczuk"
 
 The first step we perform is name normalization, in order to ensure that the author name is properly formatted. Our *search* tokenizer is going to take the input in its entirety (the full string `peter adamczuk` with **NO** tokenization into `peter` and `adamczuk`) and will pass the input to a [name parsing Python library](https://pypi.org/project/nameparser/). Since the search engine is written in Java, in reality the library will be executed by [Jython](https://www.jython.org/).
 
-The library will parse the input string to identify its components: surname, first name, and optionally middle name(s), titles, suffixes, etc. So `Pope John Paul the II` would lose all his titles and be normalized to `Paul, John, II` In our example, `Peter` is recognized as the first name, and `Adamczuk` as the last name.
+The library will parse the input string to identify its components: surname, first name, and optionally middle name(s), titles, suffixes, etc. So `Pope John Paul the II` would lose all his titles and be normalized to `Paul, John, II`. In our example, `Peter` is recognized as the first name, and `Adamczuk` as the last name.
 
 Normalization also involves removal of excessive whitespace, punctuation, hyphens, apostrophes, etc. For example, `Adamczuk  ,               P ` becomes `Adamczuk, P`, and `Lao'tzu` becomes `Lao tzu,`. We also limit the number of names allowed for a single author to 6 tokens.
 

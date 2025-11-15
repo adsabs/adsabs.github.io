@@ -1,4 +1,7 @@
-We provide five second-order operators which modify the query results by performing second-order operations on the original query. To invoke the operators, enter the corresponding operator before your search terms (enclosing your search terms in parentheses) in the search box. The search terms enclosed by parentheses are considered the first-order query.
+We provide five second-order operators which modify the query results by performing second-order operations on the original query. Theese operators are database functions which form secondary queries based on attributes of the objects returned in an initial query; they can provide powerful methods to investigate complex, multipartite information graphs. To invoke the operators, enter the corresponding operator before your search terms (enclosing your search terms in parentheses) in the search box. The search terms enclosed by parentheses are considered the first-order query.
+
+In addition to the basic information provided below, we have [published a tutorial describing these operators in detail]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/abs/2020BAAS...52.0207K/abstract), both alone and in conjunction with other functions. It is intended for scientists and others who wish to make fuller use of the SciX database. 
+
 
 **Similar** - The *similar* operator takes the text of the abstracts of the papers in the first-order query, combines them into a single "document," then ranks all the abstracts in {{ include.site }} by their text-based similarity to this combined document, and returns the ranked list. The returned results exclude the articles returned by the first-order query. The documents returned are the most similar, as determined via text analysis, to the topic being researched, while excluding the original documents. For example:
 
@@ -31,7 +34,7 @@ will return a ranked list of papers spanning a variety of topics useful to resea
 will return a ranked list of papers featuring reviews of weak gravitational lensing and its cosmological implications.
 
 <figure>
-    <img src="../img/second-order.png"  class="img-responsive" alt="diagram showing use of the second order operators">
+    <img src="/help/img/second-order.png"  class="img-responsive" alt="diagram showing use of the second order operators">
     <figcaption><em><center>Usage of the similar( ), trending( ), useful( ), and reviews( ) second-order operators</center></em></figcaption>
 </figure>
 <br>

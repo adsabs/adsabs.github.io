@@ -12,8 +12,8 @@ title: 'Transition from ADS to SciX'
       </p>
     </div>
     <div class="flyer-logos">
-      <a href="https://ui.adsabs.harvard.edu"><img src="{{ site.baseurl }}/help/common/images/ads_logo_text.png" alt="ADS logo" /></a>
-      <a href="https://scixplorer.org"><img src="{{ site.baseurl }}/help/common/images/scix/FULL COLOR-ScixHorizontalBlackBackground.svg" alt="SciX logo" /></a>
+      <a href="https://ui.adsabs.harvard.edu" target="_blank"><img src="{{ site.baseurl }}/help/common/images/ads_logo_text.png" alt="ADS logo" /></a>
+      <a href="https://scixplorer.org" target="_blank"><img src="{{ site.baseurl }}/help/common/images/scix/FULL COLOR-ScixHorizontalBlackBackground.svg" alt="SciX logo" /></a>
     </div>
   </header>
   <div class="flyer-transition">
@@ -26,13 +26,13 @@ title: 'Transition from ADS to SciX'
   </div>  
   {% include _adstoscix/cards.md %}
   <div class="flyer-nav">
-    <a href="https://scixplorer.org/" class="btn-primary">
+    <a href="https://scixplorer.org/" class="btn-primary" target="_blank">
       <span>Start Exploring</span>
       <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
     </a>
-    <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary">
+    <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary" target="_blank">
       <span>Quick Start Guide</span>
     </a>
     <a href="https://www.youtube.com/watch?v=sgJ-LolRLu8" class="btn-secondary" target="_blank">

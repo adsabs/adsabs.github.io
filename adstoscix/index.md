@@ -20,7 +20,7 @@ title: 'Transition from ADS to SciX'
     <h2>Seamless Transition</h2>
     <p>✓ Sign into SciX with your ADS credentials.</p>
     <p>✓ Your user account, settings, email notifications, and libraries will remain unchanged.</p>
-    <p>✓ Your links will be redirected, you will not need to manually update them.</p>
+    <p>✓ Your links will be redirected, you will not need to redirect them manually.</p>
     <p>✓ You can access the Classic interface.</p>
     <p>✓ Choosing the Astronomy discipline prioritizes astronomy results in your searches.</p>
   </div>  

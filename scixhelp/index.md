@@ -312,7 +312,7 @@ no-header: true
     <div class="faq-answer" id="faq11">
       <p>Yes! Here's how to request corrections:</p>
       <ul>
-        <li><strong>Missing papers:</strong> Use our <a href="https:/scixplorer.org/feedback/missingrecord">Submit Abstract Form</a> to report missing papers</li>
+        <li><strong>Missing papers:</strong> Use our <a href="https://scixplorer.org/feedback/missingrecord">Submit Abstract Form</a> to report missing papers</li>
         <li><strong>Wrong details:</strong> Use the same form to report errors in existing records</li>
         <li><strong>Timing:</strong> New arXiv papers appear daily, published articles weekly</li>
         <li><strong>What we cover:</strong> Refereed articles, arXiv preprints, conference papers, and other scholarly works</li>

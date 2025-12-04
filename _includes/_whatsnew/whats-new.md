@@ -8,7 +8,7 @@ Announcements:<br>
 
 <i>We can’t believe it’s already December. As we look back on another year of supporting research, we want to take a moment to thank you, our loyal user community. ADS and SciX are made by scientists, for scientists, and we couldn’t do any of this without your feedback. With all that being said, this month’s newsletter contains some news about the future of our platforms. We want to assure all of our users that we are committed to working through these impending changes with you. As such, if you have any questions, please don’t hesitate to contact us by email at <b>help@scixplorer.org</b>, or by using [this feedback form](https://scixplorer.org/feedback/general). Thanks for being a continued part of our community. Read on to find out more.</i><br>
 
-* **ADS Transition to SciX**<br>
+* **ADS is Evolving in 2026**<br>
 	Because of funding uncertainties, we are preparing to transition the ADS website to the astrophysics disciplinary version of SciX, potentially as soon as March 2026. Our development team is working to ensure that astronomers have as [smooth a transition as possible](https://scixplorer.org/adstoscix/). In all of this, we remain committed to serving the astronomy community. In the meantime, ADS users will be glad to know that:<br>
 	+ You can use your existing ADS accounts with SciX; sign in with same credentials
 	+ Your libraries, settings, and notifications will continue as is.
@@ -18,24 +18,37 @@ Announcements:<br>
 	
 	When you switch to SciX, you get the benefits of:
 	+ Astrophysics-focused literature, data, and software searches within a larger multidisciplinary collection
-	+ More citations resolved and matched to your papers
-	+ More references available for the papers you are reading
-	+ Improved speed and reliability, including a dashboard to check system status if you need it
-	+ Mobile-friendly interface that adapts to smaller screens for working wherever you are
-	+ Better accessibility compliance so that all scientists can access our resources
-	+ Copy-and-paste citations
-	+ NASA and NSF proposals, awards, and associated papers
-	+ Links among papers, proposals, data, and software through less formal mentions and acknowledgements in addition to traditional citations
-	+ Searchable filters for narrowing your search
-	+ Type-ahead support to help you formulate queries<br>
+ 	+ Improved speed and reliability, including a dashboard to check system status if you need it
+  	+ Better accessibility compliance so that all scientists can access our resources
+  	+ Mobile-friendly interface that adapts to smaller screens for working wherever you are
+  	+ Copy-and-paste citations
+  	+ NASA and NSF proposals, awards, and associated papers
+  	+ Links among papers, proposals, data, and software through less formal mentions and acknowledgements in addition to traditional citations
+  	+ Searchable filters for narrowing your search
+  	+ Type-ahead support to help you formulate queries
+  	+ Tags on abstract pages that identify refereed status, collection, document type, and bibliographic group
+  	+ (beta) concepts assigned from the Unified Astronomy Thesaurus (UAT) providing a consistent set of keywords across astronomy papers, datasets, and software<br>
 
+	Keep an eye out for links to more information, including onboarding tutorials, and lived-experience testimonials from existing ADS users that have transitioned into regular SciX users. If there are any other resources that you feel would benefit the astro community in this transition, please share your thoughts with us, either by email at <b>help@scixplorer.org</b>, or via [this feedback form](https://scixplorer.org/feedback/general).<br>
+
+	This exciting step into a new era of ADS’s long established history will help you expand the reach of your research, and unlock a huge amount of previously untapped collaborative potential, making your research even more impactful than it has been before. We are looking forward to going on this journey with you, and we are so excited to see how the expanded SciX coverage supports your work. If you just can’t wait, head on over to our [Quick Start Guide](https://scixplorer.org/scixhelp/) and start exploring for yourself!<br>
+	
 * **2025 ADS Users Group Meeting**<br>
 	The [ADS Users Group](../../about/adsug/adsug) met on November 20 and 21 to review how well ADS and SciX are performing, to assess progress towards our vision of a single multidisciplinary digital library, and to prioritize goals for the coming year. With continuing budget uncertainty, we provided plans based on two scenarios: full funding for both ADS and SciX and funding for ADS only. While SciX met expectations and launched as a [fully functional interface](https://science.data.nasa.gov/features-events/scix-launch) to our extensive collections in September, the 2025 ADS User Survey showed that the astronomical community remains uncertain about embracing a new access point, only six years after the last major revision. While we wait for the ADS Users Group report, you can see [our presentations online](../../about/adsug/adsug). <br>
 	<img src="{{site.baseurl}}/help/img/whatsnew_202512-adsug.png" 
 	 alt="2025 ADS Users Group" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
- 
+
+* **See You At AGU25!**<br>
+	Some members of the SciX team will be at the AGU25 Conference in New Orleans later this month. Swing by booth #1532 to learn more about the platform and discover how it can catalyse your research, discovery and impact in the Earth, ocean and planetary sciences!<br>
+
+	We will also be giving talks, demos and presenting posters at the conference so we hope our paths cross with as many current and future users as possible!<br>
+	<img src="{{site.baseurl}}/help/img/whatsnew_202512-agu25.png" 
+	 alt="AGU 2025 Meeting" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+
 Development and data holdings updates as of December 1st:
   * Website and API
     + **[new]** Updated ADSUG charter; added ADSUG 2025 meeting

@@ -43,7 +43,7 @@ Announcements:<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew_202512-AAS247.png" 
 	 alt="AAS 247" 
 	 class="img-responsive" 
-	 style="float: right; margin: 0 0 1em 1em; width: 250px;">
+	 style="float: right; margin: 0 0 1em 1em; width: 350px;">
 	Jump into SciX and accelerate your research with our “[Exploring SciX: A Researcher’s Guide to the Science Explorer Platform](https://submissions.mirasmart.com/AAS247/Itinerary/EventDetail.aspx?evt=31)” Workshop on Sunday, January 4 at the American Astronomical Society Meeting. Three complimentary (FREE!) 1-hour sessions will be offered at 1 PM, 2 PM, and 3 PM in Phoenix Convention Center, Room 126 A.  Whether you are an old ADS hand who is ready to transition to a multidisciplinary environment or a new researcher who needs to navigate your first literature search effectively and efficiently, you will find the resources and support you need in one of these sessions.<br>
 	
 	We have been working with AAS staff to reconfigure [this workshop](https://aas.org/meetings/aas247/workshops) to make it available to as many people as possible. You should be able to register for the shorter, free sessions through the [AAS registration site](https://aas.org/meetings/aas247/registration) shortly. If you have already registered for the meeting, you can just add this event to your registration.<br>

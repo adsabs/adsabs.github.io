@@ -9,9 +9,8 @@ Announcements:<br>
 <i>We can't believe it's already December. As we look back on another year of supporting research, we want to take a moment to thank you, our loyal user community. ADS and SciX are made by scientists, for scientists, and we couldn't do any of this without your feedback. With all that being said, this month's newsletter contains some news about the future of our platforms. We want to assure all of our users that we are committed to working through these impending changes with you. As such, if you have any questions, please don't hesitate to contact us by email at <b><a href="mailto:help@scixplorer.org">help@scixplorer.org</a></b>, or by using [this feedback form](https://scixplorer.org/feedback/general). Thanks for being a continued part of our community. Read on to find out more.</i><br>
 
 * **ADS is Evolving in 2026**<br>
-	2026 will be a transition year for ADS users, as the astronomy community moves to the astrophysics version of SciX. Our development team is working to ensure that astronomers have as [smooth a transition as possible](https://scixplorer.org/adstoscix/). In all of this, we remain committed to serving the astronomy community.<br>
-
-  + In the meantime, ADS users will be glad to know that:
+	2026 will be a transition year for ADS users, as the astronomy community moves to the astrophysics version of SciX. Our development team is working to ensure that astronomers have as [smooth a transition as possible](https://scixplorer.org/adstoscix/). In all of this, we remain committed to serving the astronomy community. In the meantime, ADS users will be glad to know that:
+  <br>
 	+ You can use your existing ADS account with SciX; sign in with the same credentials
  	+ Your libraries, settings, and notifications will continue as is
   	+ Your links will be automatically redirected; you will not need to change any of them

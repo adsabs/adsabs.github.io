@@ -9,8 +9,9 @@ Announcements:<br>
 <i>We can't believe it's already December. As we look back on another year of supporting research, we want to take a moment to thank you, our loyal user community. ADS and SciX are made by scientists, for scientists, and we couldn't do any of this without your feedback. With all that being said, this month's newsletter contains some news about the future of our platforms. We want to assure all of our users that we are committed to working through these impending changes with you. As such, if you have any questions, please don't hesitate to contact us by email at <b><a href="mailto:help@scixplorer.org">help@scixplorer.org</a></b>, or by using [this feedback form](https://scixplorer.org/feedback/general). Thanks for being a continued part of our community. Read on to find out more.</i><br>
 
 * **ADS is Evolving in 2026**<br>
-	2026 will be a transition year for ADS users, as the astronomy community moves to the astrophysics version of SciX. Our development team is working to ensure that astronomers have as [smooth a transition as possible](https://scixplorer.org/adstoscix/). In all of this, we remain committed to serving the astronomy community. In the meantime, ADS users will be glad to know that:
-  <br>
+	2026 will be a transition year for ADS users, as the astronomy community moves to the astrophysics version of SciX. Our development team is working to ensure that astronomers have as [smooth a transition as possible](https://scixplorer.org/adstoscix/). In all of this, we remain committed to serving the astronomy community.<br>
+
+  + In the meantime, ADS users will be glad to know that:
 	+ You can use your existing ADS account with SciX; sign in with the same credentials
  	+ Your libraries, settings, and notifications will continue as is
   	+ Your links will be automatically redirected; you will not need to change any of them
@@ -23,8 +24,8 @@ Announcements:<br>
     alt="SciX Resources: System Status and Accessibility Compliance" 
     class="img-responsive" 
     style="float: right; margin: 0 0 1em 1em; width: 430px;">
-    + Improved speed and reliability, including a dashboard to check system status if you need it
-    + Better accessibility compliance so that all scientists can access our resources
+    + Improved speed and reliability, including a [dashboard to check system status](https://adsabs.github.io/Status-Page/) if you need it
+    + Better [accessibility compliance](https://adsabs.github.io/accessibility-conformance-reports/) so that all scientists can access our resources
     + Mobile-friendly interface that adapts to smaller screens for working wherever you are
     + Copy-and-paste citations
     + [NASA](https://scixplorer.org/search?fq=%7B%21type%3Daqp+v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&n=10&p=1&q=doctype%3Aproposal+pub%3A%22NASA%22&sort=date+desc) and [NSF](https://scixplorer.org/search?q=doctype%3Aproposal+pub%3A%22NSF+Award%22&sort=score+desc&sort=date+desc&p=1) proposals, awards, and associated papers
@@ -33,7 +34,6 @@ Announcements:<br>
     + Type-ahead support to help you formulate queries
     + Tags on abstract pages that identify refereed status, collection, document type, and bibliographic group
     + [beta] concepts assigned from the Unified Astronomy Thesaurus (UAT) providing a consistent set of keywords across astronomy papers, datasets, and software<br>
-
 
 	Keep an eye out for links to more information, including onboarding tutorials, and lived-experience testimonials from existing ADS users that have transitioned into regular SciX users. If there are any other resources that you feel would benefit the astro community in this transition, please share your thoughts with us, either by email at <b>[help@scixplorer.org](mailto:help@scixplorer.org)</b>, or via [this feedback form](https://scixplorer.org/feedback/general).<br>
 

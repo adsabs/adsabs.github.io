@@ -9,13 +9,14 @@ Announcements:<br>
 <i>We can't believe it's already December. As we look back on another year of supporting research, we want to take a moment to thank you, our loyal user community. ADS and SciX are made by scientists, for scientists, and we couldn't do any of this without your feedback. With all that being said, this month's newsletter contains some news about the future of our platforms. We want to assure all of our users that we are committed to working through these impending changes with you. As such, if you have any questions, please don't hesitate to contact us by email at <b><a href="mailto:help@scixplorer.org">help@scixplorer.org</a></b>, or by using [this feedback form](https://scixplorer.org/feedback/general). Thanks for being a continued part of our community. Read on to find out more.</i><br>
 
 * **ADS is Evolving in 2026**<br>
-	2026 will be a transition year for ADS users, as the astronomy community moves to the astrophysics version of SciX. Our development team is working to ensure that astronomers have as [smooth a transition as possible](https://scixplorer.org/adstoscix/). In all of this, we remain committed to serving the astronomy community. In the meantime, ADS users will be glad to know that:
-  <br>
-	+ You can use your existing ADS account with SciX; sign in with the same credentials
- 	+ Your libraries, settings, and notifications will continue as is
-  	+ Your links will be automatically redirected; you will not need to change any of them
-  	+ You can still use the Classic interface in SciX
-  	+ Choosing the astrophysics discipline prioritizes astronomy results in your searches, or you can restrict your searches to our astronomy and physics collections for a more focused ADS-like experience.
+	2026 will be a transition year for ADS users, as the astronomy community moves to the astrophysics version of SciX. Our development team is working to ensure that astronomers have as [smooth a transition as possible](https://scixplorer.org/adstoscix/). In all of this, we remain committed to serving the astronomy community.<br>
+
+  + In the meantime, ADS users will be glad to know that:
+    + You can use your existing ADS account with SciX; sign in with the same credentials
+    + Your libraries, settings, and notifications will continue as is
+    + Your links will be automatically redirected; you will not need to change any of them
+    + You can still use the Classic interface in SciX
+    + Choosing the astrophysics discipline prioritizes astronomy results in your searches, or you can restrict your searches to our astronomy and physics collections for a more focused ADS-like experience.
 <br>
   + When you switch to SciX, you get the benefits of:
     + Astrophysics-focused literature, data, and software searches within a larger multidisciplinary collection
@@ -23,8 +24,8 @@ Announcements:<br>
     alt="SciX Resources: System Status and Accessibility Compliance" 
     class="img-responsive" 
     style="float: right; margin: 0 0 1em 1em; width: 430px;">
-    + Improved speed and reliability, including a dashboard to check system status if you need it
-    + Better accessibility compliance so that all scientists can access our resources
+    + Improved speed and reliability, including a [dashboard to check system status](https://adsabs.github.io/Status-Page/) if you need it
+    + Better [accessibility compliance](https://adsabs.github.io/accessibility-conformance-reports/) so that all scientists can access our resources
     + Mobile-friendly interface that adapts to smaller screens for working wherever you are
     + Copy-and-paste citations
     + [NASA](https://scixplorer.org/search?fq=%7B%21type%3Daqp+v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&n=10&p=1&q=doctype%3Aproposal+pub%3A%22NASA%22&sort=date+desc) and [NSF](https://scixplorer.org/search?q=doctype%3Aproposal+pub%3A%22NSF+Award%22&sort=score+desc&sort=date+desc&p=1) proposals, awards, and associated papers
@@ -34,7 +35,6 @@ Announcements:<br>
     + Tags on abstract pages that identify refereed status, collection, document type, and bibliographic group
     + [beta] concepts assigned from the Unified Astronomy Thesaurus (UAT) providing a consistent set of keywords across astronomy papers, datasets, and software<br>
 
-
 	Keep an eye out for links to more information, including onboarding tutorials, and lived-experience testimonials from existing ADS users that have transitioned into regular SciX users. If there are any other resources that you feel would benefit the astro community in this transition, please share your thoughts with us, either by email at <b>[help@scixplorer.org](mailto:help@scixplorer.org)</b>, or via [this feedback form](https://scixplorer.org/feedback/general).<br>
 
 	This exciting step into a new era of ADS’s long established history will help you expand the reach of your research, and unlock a huge amount of previously untapped collaborative potential, making your research even more impactful than it has been before. We are looking forward to going on this journey with you, and we are so excited to see how the expanded SciX coverage supports your work. If you just can’t wait, head on over to our [Quick Start Guide](https://scixplorer.org/scixhelp/) and start exploring for yourself!<br>
@@ -43,7 +43,7 @@ Announcements:<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew_202512-AAS247.png" 
 	 alt="AAS 247" 
 	 class="img-responsive" 
-	 style="float: right; margin: 0 0 1em 1em; width: 250px;">
+	 style="float: right; margin: 0 0 1em 1em; width: 350px;">
 	Jump into SciX and accelerate your research with our “[Exploring SciX: A Researcher’s Guide to the Science Explorer Platform](https://submissions.mirasmart.com/AAS247/Itinerary/EventDetail.aspx?evt=31)” Workshop on Sunday, January 4 at the American Astronomical Society Meeting. Three complimentary (FREE!) 1-hour sessions will be offered at 1 PM, 2 PM, and 3 PM in Phoenix Convention Center, Room 126 A.  Whether you are an old ADS hand who is ready to transition to a multidisciplinary environment or a new researcher who needs to navigate your first literature search effectively and efficiently, you will find the resources and support you need in one of these sessions.<br>
 	
 	We have been working with AAS staff to reconfigure [this workshop](https://aas.org/meetings/aas247/workshops) to make it available to as many people as possible. You should be able to register for the shorter, free sessions through the [AAS registration site](https://aas.org/meetings/aas247/registration) shortly. If you have already registered for the meeting, you can just add this event to your registration.<br>
@@ -241,7 +241,7 @@ Development and data holdings updates as of December 1st:
 	         style="display: block; margin: 1em auto;">
 		 
   * **Professional Development Training - Register Your Interest!**<br>
-    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.<br>
+    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.<br>
 
 	<img src="{{site.baseurl}}/help/img/whatsnew_202510-prof-dev.png" 
 		 alt="professional-development" 
@@ -274,9 +274,9 @@ Development and data holdings updates as of December 1st:
     + This month we have added several noteworthy data holdings, included but not limited to:
 		- 1.25 million journal articles from [IEEE](https://ieee.org/)
 		- 63K conference abstracts from the [Goldschmidt conference series](https://goldschmidt.info/)
-		- 33K technical reports from [NASA's NTRS](https://ntrs.nasa.gov/)
+		- 33K technical reports from [NASA's NTRS](https://ntrs.nasa.gov/)
 		- 16K datasets from [USGS](https://www.usgs.gov/)
-		- 6K software records from [USGS](https://www.usgs.gov/) and [DOE](https://www.energy.gov/)<br>
+		- 6K software records from [USGS](https://www.usgs.gov/) and [DOE](https://www.energy.gov/)<br>
 
 <details>
 <summary>Development details</summary>
@@ -318,7 +318,7 @@ Development and data holdings updates as of December 1st:
 	         style="display: block; margin: 1em auto;">
 		 
   * **Professional Development Training - Register Your Interest!**<br>
-    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.<br>
+    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.<br>
     
   * **“SciX Data Collections” Blog Post**<br>
     We have published a [new blog post](../../blog/scix-data-collections) about data collections in ADS/SciX! Tracking the use of research data and software in the scientific literature is one of the primary goals of SciX, and maintaining data collections is the primary way for users to discover them. This blog post describes how SciX curators generate and maintain these resources and how users benefit from having them integrated into the system. Please see [the blog post](../../blog/scix-data-collections) for more details.<br>
@@ -409,7 +409,7 @@ Development and data holdings updates as of December 1st:
 ## August 2025
 * Announcements:<br>
   * **Professional Development Training - Register Your Interest!**<br>
-    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.
+    Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.
     
   * **Getting Resources Ready for a New Year**<br>
     SciX has over 175,000 [physics](https://scixplorer.org/search?q=abs%3A%22physics+education+research%22&sort=score+desc&sort=date+desc&p=1) and [astronomy education research](https://scixplorer.org/search?q=bibstem%3AAEdRv&sort=score+desc&sort=date+desc&p=1) articles; most are available in the [PhysEd bibgroup](https://scixplorer.org/search?q=bibgroup%3APhysEd&sort=score+desc&sort=date+desc&p=1). By submitting feedback, you can help us link the written descriptions to the associated supplementary materials that make these resources most useful:
@@ -556,7 +556,7 @@ Development and data holdings updates as of December 1st:
    We now have [about 10k datasets](https://scixplorer.org/search?q=doctype%3Adataset+pub%3A%22Distributed+Active+Archive+Center%22&sort=score+desc&sort=date+desc&p=1) from the NASA Distributed Active Archive Centers (DAACs) indexed, with about 5k citations. Discover more by searching [doctype:dataset pub:"Distributed Active Archive Center"](https://scixplorer.org/search?q=doctype%3Adataset+pub%3A%22Distributed+Active+Archive+Center%22&sort=score+desc&sort=date+desc&p=1).<br>
 
    **Meet us at AAS 246!** <br>
-   Will you be at the [American Astronomical Society meeting](https://aas.org/meetings/aas246) this month? Stop by iPoster #104.02 (terminal 7) on Monday, June 9 from 9 AM to 10 AM AKDT and talk to [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), SciX project scientist for astrophysics. She is presenting “[A Plate in Her Hand](https://submissions.mirasmart.com/AAS246/ViewSubmissionFile.aspx?sbmID=577&mode=html&validate=false)”, which begins to connect the female computers working in Harvard’s “great library of glass” by the astronomical photographic plates they used.  Such plates were the only mechanical detector available to astronomers before the 1970s. As these archives are digitized, SciX would like to connect these valuable datasets to the corresponding literature.<br> 
+   Will you be at the [American Astronomical Society meeting](https://aas.org/meetings/aas246) this month? Stop by iPoster #104.02 (terminal 7) on Monday, June 9 from 9 AM to 10 AM AKDT and talk to [Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html), SciX project scientist for astrophysics. She is presenting “[A Plate in Her Hand](https://submissions.mirasmart.com/AAS246/ViewSubmissionFile.aspx?sbmID=577&mode=html&validate=false)”, which begins to connect the female computers working in Harvard’s “great library of glass” by the astronomical photographic plates they used.  Such plates were the only mechanical detector available to astronomers before the 1970s. As these archives are digitized, SciX would like to connect these valuable datasets to the corresponding literature.<br> 
 
    **Got Images? Graphs? Video?** <br>
    The [Sixteenth Biennial History of Astronomy Workshop](https://www3.nd.edu/~histast/workshops/2025ndxvi/index.shtml) will explore visual practices in the production and transmission of astronomical knowledge this month. In SciX, we see the evolution of visualizations in the scholarly literature. For instance, [E.E. Barnard (1894)](https://scixplorer.org/abs/1894PA......2..151B/abstract) provided a sketch of stars in “Great Photographic Nebula in Orion”. Today, [Monthly Notices of the Royal Astronomical Society](https://scixplorer.org/search?q=bibstem%3AMNRAS+&sort=score+desc&sort=date+desc&p=1&n=10) provides graphics files that can be previewed by [clicking “Graphics”](https://scixplorer.org/abs/2025MNRAS.538.1921M/graphics) on the menu on the left side of the abstract view.<br>
@@ -1168,7 +1168,7 @@ Development and data holdings updates as of December 1st:
      Aligned with the AGU conference theme, "What’s Next for Science," the workshop will delve into open digital repositories for NASA’s research, including SciX, the Planetary Data System, and the NASA Science Discovery Engine. Participants will engage in hands-on demonstrations and guided exercises, learning to navigate these platforms for comprehensive data discovery and integration. Emphasizing the importance of interdisciplinary collaboration, the workshop aims to bridge gaps between scientific disciplines and geographic boundaries, promoting innovative research and fostering a culture of openness and transparency.<br><br>
      Please save the date and plan to register for the workshop when you sign up for the AGU Fall Meeting later this fall!
  
-   + **Careers at ADS/SciX** - We are now hiring for the following two positions on the ADS/SciX team: <br><br>
+   + **Careers at ADS/SciX** - We are now hiring for the following two positions on the ADS/SciX team: <br><br>
    **Digital Technologies Development Librarian**: The ADS/SciX team is seeking a Digital Technologies Development Librarian who will support the team by designing and implementing new tools, technology and services, and will be involved in collection management, assisting with content decisions, documentation and user support. <br>
    Applications are due by September 27. [Apply here](https://trustcareers.si.edu/en/postings/48bc36f4-09d3-4054-b0d7-0f90bdf4584a).<br><br>
    **IT Specialist (Back Office Developer)**: The ADS/SciX team is seeking an IT Specialist (Back Office Developer). The position requires experience with search engines (e.g., Solr, Elasticsearch), designing and building software (Java and Python), data pipelines, and REST APIs.<br><br>
@@ -1272,10 +1272,10 @@ Applications are due by September 30. [Apply here](https://trustcareers.si.edu/e
       - **[Part II: Linked Data](../../blog/data-linking-II)**<br>
         The second post discusses linked data within the Research Life Cycle framework. It highlights the importance of linking digital artifacts like data and software to scholarly articles. The post also covers the process of capturing and indexing citations to these research products and provides strategies for finding linked data within SciX.<br>
 
-   + **Upcoming Conferences and Events:** Please be on the lookout for members of the SciX team as well as [our new cohort of SciX Ambassadors](../../blog/announcing-2024-ambassadors) at the following events in July!  
+   + **Upcoming Conferences and Events:** Please be on the lookout for members of the SciX team as well as [our new cohort of SciX Ambassadors](../../blog/announcing-2024-ambassadors) at the following events in July!  
       - Visit the SciX Booth at the [Special Library Association Annual Conference](https://sla.org/page/sla-2024-annual-conference) in Kingston, RI from July 13-16.
       - Watch SciX project staff present at the [Incorporating Data Science and Open Science in Aquatic Research Summit](https://www.usgs.gov/centers/john-wesley-powell-center-for-analysis-and-synthesis/news/virtual-summit-incorporating-data) taking place online 18-19 July.
-      - Connect with [SciX Ambassador Chenyue Jiao](../../blog/announcing-2024-ambassadors) at the [Earth Science Information Partners (ESIP) meeting](https://2024julyesipmeeting.sched.com/info) in Asheville, NC and online from July 23-26.<br>
+      - Connect with [SciX Ambassador Chenyue Jiao](../../blog/announcing-2024-ambassadors) at the [Earth Science Information Partners (ESIP) meeting](https://2024julyesipmeeting.sched.com/info) in Asheville, NC and online from July 23-26.<br>
 
 * Development and data holdings updates as of July 1st:
   * Website and API

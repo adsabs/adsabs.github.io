@@ -398,7 +398,7 @@ no-header: true
         <h3><i class="fa fa-cog"></i> Rate Limits & Support</h3>
         <p>API usage guidelines and support:</p>
         <ul>
-          <li><strong>Rate limits:</strong> Free accounts have generous limits for most use cases</li>
+          <li><strong>Rate limits:</strong> All accounts have generous rate limits suitable for most use cases</li>
           <li><strong>Higher limits:</strong> Contact us for increased rate limits if needed</li>
           <li><strong>Support:</strong> Email <a href="mailto:help@scixplorer.org">help@scixplorer.org</a> for API questions</li>
         </ul>

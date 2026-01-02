@@ -32,7 +32,7 @@ title: 'Transition from ADS to SciX'
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
     </a>
-    <a href="{{ site.baseurl }}/scixhelp/" class="btn-secondary" target="_blank">
+    <a href="{{ site.baseurl }}/adstoscix/quick-start" class="btn-secondary" target="_blank">
       <span>Quick Start Guide</span>
     </a>
     <a href="https://www.youtube.com/watch?v=sgJ-LolRLu8" class="btn-secondary" target="_blank">

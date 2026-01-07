@@ -6,10 +6,10 @@ To receive this listing via monthly email newsletter, along with announcements a
 ## January 2026
 Announcements:<br>
 
-<i>Happy New Year!<br>
-We are thrilled to bring you the first SciX Newsletter of the year. In last month's newsletter, we reflected on a year of evolution. As we embark on a brand new year, and with our future secured thanks to some recent funding-related good news, our focus and commitment to ensuring a seamless [transition from ADS to SciX](https://scixplorer.org/adstoscix/) and a smooth onboarding for new SciX users remain our main priorities.
+<i>Happy New Year!</i><br>
+<i>We are thrilled to bring you the first SciX Newsletter of the year. In last month's newsletter, we reflected on a year of evolution. As we embark on a brand new year, and with our future secured thanks to some recent funding-related good news, our focus and commitment to ensuring a seamless [transition from ADS to SciX](https://scixplorer.org/adstoscix/) and a smooth onboarding for new SciX users remain our main priorities.</i>
 
-With that in mind, as always, if you have any questions, please don’t hesitate to contact us by email at <b>help@scixplorer.org</b>, or by using [this feedback form](https://scixplorer.org/feedback/general). Thanks for being a valuable and valued member of our community.</i><br>
+<i>With that in mind, as always, if you have any questions, please don’t hesitate to contact us by email at <b>help@scixplorer.org</b>, or by using [this feedback form](https://scixplorer.org/feedback/general). Thanks for being a valuable and valued member of our community.</i><br>
 
 * **SciX at AGU25**<br>
 	We had a great time meeting SciX-curious attendees at #AGU25 last month! From existing ADS users that have already made the switch, to people brand new to our platform, we were excited by the research community’s excitement for the platform. We are always keen to showcase our user stories, so if you’ve been using SciX to help accelerate your research discovery, innovation and impact and want to tell your story via a short video or a post on our blog, [get in touch](https://scixplorer.org/feedback/general).<br>

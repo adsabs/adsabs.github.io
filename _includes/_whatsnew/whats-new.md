@@ -3,6 +3,61 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## January 2026
+Announcements:<br>
+
+<i>Happy New Year!</i><br>
+<i>We are thrilled to bring you the first SciX Newsletter of the year. In last month's newsletter, we reflected on a year of evolution. As we embark on a brand new year, and with our future secured thanks to some recent funding-related good news, our focus and commitment to ensuring a seamless [transition from ADS to SciX](https://scixplorer.org/adstoscix/) and a smooth onboarding for new SciX users remain our main priorities.</i>
+
+<i>With that in mind, as always, if you have any questions, please don’t hesitate to contact us by email at <b>help@scixplorer.org</b>, or by using [this feedback form](https://scixplorer.org/feedback/general). Thanks for being a valuable and valued member of our community.</i><br>
+
+* **SciX at AGU25**<br>
+	We had a great time meeting SciX-curious attendees at #AGU25 last month! From existing ADS users that have already made the switch, to people brand new to our platform, we were excited by the research community’s excitement for the platform. We are always keen to showcase our user stories, so if you’ve been using SciX to help accelerate your research discovery, innovation and impact and want to tell your story via a short video or a post on our blog, [get in touch](https://scixplorer.org/feedback/general).<br>
+
+	Whether you saw one of our or our Ambassador’s panel discussions, posters, NASA hyperwall talks, or whether you managed to grab one of our hundreds of SciX badges before they ran out on the last day, thanks for engaging with us. If you missed us, look out for us at #AAS247. We’ll also be attending AMS and OSM in the next couple of months. If you’d like to arrange a chat with one of our team to find out more about SciX, please [let us know](https://scixplorer.org/feedback/general).<br>
+	<img src="{{site.baseurl}}/help/img/whatsnew_202601-scixatagu25.png" 
+	 alt="SciX at AGU25" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+
+Development and data holdings updates as of January 1st:
+  * Website and API
+    + **[new]** [ADS to SciX quick start guide](https://scixplorer.org/adstoscix/)
+  * Data holdings and pipelines
+    + 168k new records, and 3.86M new citations
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>API Gateway Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/api_gateway/releases/tag/v1.2.4">v1.2.4</a></li>
+	- [improved] Added nectar feedback form<br>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.29.2">v0.29.2</a></li>
+	- [new] Added 'keyword' and 'author' fields to highlights<br>
+	- [improved] Empty abstract graphics state<br>
+	- [improved] Auto-set ASTROPHYSICS mode for legacy ADS users<br>
+	- [fixed] Prevented undefined error in AbstractSideNav<br>
+	- [fixed] Authors field edit bug<br>
+	- [fixed] Restored notifications on login page and added ADS credentials message<br>
+	- [fixed] Abstract page title to show paper title on direct navigation<br>
+</ul>
+
+<li>Solr Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.1">v1.1.1</a></li>
+	- [improved] Enabled boost type mapping<br>
+	- [ops] Enabled injecting query parameters<br>
+</ul>
+
+</ul>
+</details>
+
 ## December 2025
 Announcements:<br>
 

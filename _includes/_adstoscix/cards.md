@@ -329,7 +329,7 @@
         </div>
         <h2>Choose your own SciX Experience.</h2>
         <p>
-          You can customize your experience from more ADS-like (including Classic) to very interdisciplinary, plus options for planetary science and heliophysics. See the <a href="{{ site.baseurl }}/scixhelp/" target="_blank">Quick Start Guide</a> to choose the right settings for you.
+          You can customize your experience from more ADS-like (including Classic) to very interdisciplinary, plus options for planetary science and heliophysics. See the <a href="{{ site.baseurl }}/adstoscix/quick-start" target="_blank">Quick Start Guide</a> to choose the right settings for you.
         </p>
       </div>
       <div class="value-prop innovation-card">

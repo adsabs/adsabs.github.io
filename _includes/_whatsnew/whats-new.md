@@ -3,6 +3,115 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## February 2026
+Announcements:<br>
+What a start to the year it has been! With the transition from ADS to SciX in full swing, the SciX team have been meeting with members of the SciX Community at meetings and conferences all over. Read on to find out more about where we have been, where you’ll find us next, and some of the most recent developments for Science Explorer, your one stop shop for research discovery, innovation and impact, helping you “keep it 100 on the land, the sea, the sky”.<br>
+
+* **AAS247 Round-Up**<br>
+SciX at AAS 247.  SciX staff enjoyed meeting so many new users and old friends at the 247th meeting of the American Astronomical Society held in Phoenix, AZ during the first full week of January.  Our efforts focused on sharing the power of the Science Explorer to support astronomical research.  Our expanded collections provide access to greater interdisciplinary papers and resources from other disciplines that can make our work easier in addition to the increasing number of references and citations connected with our system. Researchers who tried SciX either during our workshops or at the booth were pleased by how familiar the SciX interface for ADS plus new features like smooth resizing for a mobile-friendly experience and one-click “copy and paste” citations. <br>
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-scixatAAS247.png" 
+	 alt="SciX at AMS 2026" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+
+* **AMS 2026 Round-Up**<br>
+Team members Kelly, Daniel and Anna joined thousands of others in braving the thing they love best - BIG WEATHER - to attend the American Meteorological Society conference in Houston, Texas, at the end of January. We loved meeting you all and hearing about the unique challenges that you are helping overcome. The AMS meeting is a real opportunity to see interdisciplinary research lead to impactful realities. From atmospheric aerosols to Zenith angles, SciX has your research covered.<br>
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-scixatAMS26.png" 
+	 alt="SciX at AMS 2026" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+	 
+* **AGU OSM - February 2026, Glasgow UK**<br>
+If you missed us at AGU, AAS, AMS, or any other conference with a three-letter acronym, don’t fear because we’ll soon be at more conferences with three-letter acronyms! We just can’t get enough of interacting with our community. We’ll be attending the AGU’s Ocean Sciences Meeting in Glasgow, UK at the end of February. The team will be on hand to answer any questions you might have about how you can use this free and open platform to explore the kind of interdisciplinary research that lurks in the depths of the sea. We’ll also be bringing some of our cute swag, and if you can successfully use the clues to Guess the Science Explorer, you’ll also be in with a chance of winning some very exclusive SciX merchandise! **Swing by Booth Number 85**. We look forward to seeing you there - as they say in Scottish Gaelic, <i>tha mi air bhioran</i>!<br>
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-aguosm26.png" 
+	 alt="SciX at AGU OSM26" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+
+* **Collaborate with ADS for a Multi-Label Text Classification Dataset**<br>
+We are inviting users to participate in a collaborative effort with the NASA ADS team to build an open annotated dataset for multi-label text classification in astrophysics.
+The goal of this project is to create a high-quality training resource that will support the development of language models capable of automatically assigning scientific concepts (keywords) to research papers. Such models will play an important role in future information-retrieval tools for the astrophysics community.
+
+     <ins>Motivation</ins>: Developing robust models for automatic keyword assignment requires carefully annotated training data. This project aims to create such a resource by collecting research papers and annotating them with the relevant Unified Astronomy Thesaurus (UAT) concepts. Once completed, the dataset will be openly released and will support downstream applications, including automated indexing, topic discovery, and improved literature search capabilities within ADS/SciX.
+
+     <ins>What Participation Involves</ins>: We are seeking contributors who would be willing to read 5–10 full papers and assign the UAT concepts that best describe their scientific content, following our annotation guidelines. As part of the process, annotators will be asked to highlight the text fragments that justifyeach selected keyword. This will later help with explainability and model interpretability.
+Contributors will be acknowledged, with the opportunity to be listed as co-authors on the dataset release publication, depending on their level of involvement.
+
+     <ins>How to Participate</ins>: If you are interested in contributing, please indicate your interest [using this short form](https://docs.google.com/forms/d/e/1FAIpQLSduV6qJ-_4QCYnFW4dc04UAQ4yCUgN585pwpRt6-GmoTKEErA/viewform?usp=sharing&ouid=113114061719386419121). We will follow up with participants and provide the annotation guidelines, example annotations, and access to the annotation interface. 
+
+     We hope you will consider joining this collaborative effort to build a shared, reusable dataset that will benefit the entire astrophysics community. Please feel free to contact us if you have any questions.
+
+Development and data holdings updates as of February 1st:
+  * Data holdings and pipelines
+    + 128k new records, and 2.48M new citations
+    + Over 4300 NASA Earth Science proposals added
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.13">v1.10.13</a></li>
+	- [new] Added setting to view ALL authors per search result<br>
+	- [improved] Strip HTML tags from document title on abstract pages<br>
+	- [improved] Added UAT to all search terms dropdown<br>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.12">v1.10.12</a></li>
+	- [ops] Recaptcha authorization<br>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.11">v1.10.11</a></li>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.10">v1.10.10</a></li>
+	- [ops] Recaptcha loading and error tracking<br>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.9">v1.10.9</a></li>
+	- [ops] Redirect url pattern<br>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.8">v1.10.8</a></li>
+	- [new] Menu and button for ADS to Scix transition
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.37.7">v0.37.7</a></li>
+	- [new] Added the ability to adjust items per page on abstract subpages<br>
+	- [new] Implement 'authors per result' user preference<br>
+	- [improved] Updated quick citation format list to display most popular formats<br>
+	- [improved] Adjusted font colors, font sizes, icons sizes to improve readability<br>
+	- [improved] Redirect users to original page after login<br>
+	- [improved] Made landing page form selection sticky<br>
+	- [improved] Strip HTML tags from title in browser tab and meta tags<br>
+	- [fixed] Use OR operator for multiple collections in classic form<br>
+	- [fixed] Icon not shown on Safari<br>
+	- [fixed] Show 'back to results' link when query is *:*<br>
+	- [fixed] New line not shown in html citation<br>
+	- [fixed] Show ORCiD session expired warning only once<br>
+	- [ops] Error handling, performance, and robustness<br>
+	- [ops] Dependency updates<br>
+	- [ops] Sanitized middleware logging and added tracing headers<br>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.34.14">v0.34.14</a></li>
+	- [new] Added tooltips in search results page<br>
+	- [new] Added 'By ADS' to logos when in astrophysics, heliophysics, or planetary modes<br>
+	- [improved] Add back buttons for tours<br>
+	- [improved] Enhanced metadata tags for full ADS parity<br>
+	- [improved] Improved the visibility of the Highlights button and now label each highlight with its source field for clearer context<br>
+	- [fixed] Removed n param from url<br>
+	- [fixed] Library copy citation bug<br>
+	- [fixed] Prevent ADS mode reactivation on page load/navigation<br>
+	- [ops] Dependency updates<br>
+	- [ops] Improved middleware test coverage<br>
+</ul>
+
+<li>Solr Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.4.4">v96.4.4</a></li>
+	- [fixed] Regex to normalize ASCII text<br>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.4.3">v96.4.3</a></li>
+	- [ops] Dependency updates<br>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.4.0">v96.4.0</a></li>
+	- [fixed] Pub field fixes<br>
+	- [improved] Author name ASCII folding to aid searches for author names with diacritics<br>
+</ul>
+
+</ul>
+</details>
+
 ## January 2026
 Announcements:<br>
 
@@ -15,7 +124,7 @@ Announcements:<br>
 	We had a great time meeting SciX-curious attendees at #AGU25 last month! From existing ADS users that have already made the switch, to people brand new to our platform, we were excited by the research community’s excitement for the platform. We are always keen to showcase our user stories, so if you’ve been using SciX to help accelerate your research discovery, innovation and impact and want to tell your story via a short video or a post on our blog, [get in touch](https://scixplorer.org/feedback/general).<br>
 
 	Whether you saw one of our or our Ambassador’s panel discussions, posters, NASA hyperwall talks, or whether you managed to grab one of our hundreds of SciX badges before they ran out on the last day, thanks for engaging with us. If you missed us, look out for us at #AAS247. We’ll also be attending AMS and OSM in the next couple of months. If you’d like to arrange a chat with one of our team to find out more about SciX, please [let us know](https://scixplorer.org/feedback/general).<br>
-	<img src="{{site.baseurl}}/help/img/whatsnew_202601-scixatagu25.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2601-scixatagu25.png" 
 	 alt="SciX at AGU25" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
@@ -75,7 +184,7 @@ Announcements:<br>
 <br>
   + When you switch to SciX, you get the benefits of:
     + Astrophysics-focused literature, data, and software searches within a larger multidisciplinary collection
-  <img src="{{site.baseurl}}/help/img/whatsnew_202512-resources.png" 
+  <img src="{{site.baseurl}}/help/img/whatsnew/WN2512-resources.png" 
     alt="SciX Resources: System Status and Accessibility Compliance" 
     class="img-responsive" 
     style="float: right; margin: 0 0 1em 1em; width: 430px;">
@@ -95,7 +204,7 @@ Announcements:<br>
 	This exciting step into a new era of ADS’s long established history will help you expand the reach of your research, and unlock a huge amount of previously untapped collaborative potential, making your research even more impactful than it has been before. We are looking forward to going on this journey with you, and we are so excited to see how the expanded SciX coverage supports your work. If you just can’t wait, head on over to our [Quick Start Guide](https://scixplorer.org/scixhelp/) and start exploring for yourself!<br>
 
 * **SciX Workshop at AAS 247**<br>
-	<img src="{{site.baseurl}}/help/img/whatsnew_202512-AAS247.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2512-AAS247.png" 
 	 alt="AAS 247" 
 	 class="img-responsive" 
 	 style="float: right; margin: 0 0 1em 1em; width: 350px;">
@@ -107,7 +216,7 @@ Announcements:<br>
 
 * **2025 ADS Users Group Meeting**<br>
 	The [ADS Users Group](../../about/adsug/adsug) met on November 20 and 21 to review how well ADS and SciX are performing, to assess progress towards our vision of a single multidisciplinary digital library, and to prioritize goals for the coming year. With continuing budget uncertainty, we provided plans based on two scenarios: full funding for both ADS and SciX and funding for ADS only. While SciX met expectations and launched as a [fully functional interface](https://science.data.nasa.gov/features-events/scix-launch) to our extensive collections in September, the 2025 ADS User Survey showed that the astronomical community remains uncertain about embracing a new access point, only six years after the last major revision. While we wait for the ADS Users Group report, you can see [our presentations online](../../about/adsug/adsug). <br>
-	<img src="{{site.baseurl}}/help/img/whatsnew_202512-adsug.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2512-adsug.png" 
 	 alt="2025 ADS Users Group" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
@@ -116,7 +225,7 @@ Announcements:<br>
 	Some members of the SciX team will be at the AGU25 Conference in New Orleans later this month. Swing by booth #1532 to learn more about the platform and discover how it can catalyse your research, discovery and impact in the Earth, ocean and planetary sciences!<br>
 
 	We will also be giving talks, demos and presenting posters at the conference so we hope our paths cross with as many current and future users as possible!<br>
-	<img src="{{site.baseurl}}/help/img/whatsnew_202512-agu25.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2512-agu25.png" 
 	 alt="AGU 2025 Meeting" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
@@ -182,13 +291,13 @@ Development and data holdings updates as of December 1st:
     San Antonio served up sunshine, science, and a whole lot of curiosity at this year’s GSA Connects 2025, held at the Henry B. González Convention Center. Against the backdrop of the city’s iconic River Walk and limestone heritage, the SciX team joined thousands of geoscientists, data specialists, and Earth explorers for a week of discovery and dialogue.<br><br>
 	Our mission? To show how open and FAIR research platforms can help bridge disciplines and catalyse collaboration - because the biggest challenges on (and beyond) our planet can’t be solved with research that lives in a single science silo.<br><br>
 	Through our booth and Dr Anna Kelbert’s demo-talk on the Innovation Stage, we had the pleasure of meeting SciX users old and new - and we’d love to see more of you at the AGU conference in New Orleans next month!<br><br>
-	<img src="{{site.baseurl}}/help/img/whatsnew_202511-GSA.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2511-GSA.png" 
 	 alt="SciX at GSA Connects 2025" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
 		 
 	* **ADS Survey**<br>
-	<img src="{{site.baseurl}}/help/img/whatsnew_202511-survey.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2511-survey.png" 
 	 alt="ADS-Survey" 
 	 class="img-responsive" 
 	 style="float: right; margin: 0 0 1em 1em; width: 250px;">
@@ -198,7 +307,7 @@ Development and data holdings updates as of December 1st:
     The [ADS Users Group](../../about/adsug/charter) will meet virtually on November 20 and 21 to review the state of ADS and operational plans for next year. Community guidance is especially important as we strive to support researchers in this challenging and uncertain environment. Please let either the chair or the PI know of any issues they should consider or   contact the PI for an invitation to the public sessions.  We will be updating the [ADS Users Group webpage](../../about/adsug/adsug)  as the meeting approaches with the newest members and planned presentations.<br>
 
 	* **LISA 10**<br>
-  	<img src="{{site.baseurl}}/help/img/whatsnew_202511-lisa10.jpg"
+  	<img src="{{site.baseurl}}/help/img/whatsnew/WN2511-lisa10.jpg"
 	     alt="LISA-10"
 	     class="img-responsive"
 	     style="float: right; margin: 0 0 1em 1em; width: 250px;">
@@ -298,7 +407,7 @@ Development and data holdings updates as of December 1st:
   * **Professional Development Training - Register Your Interest!**<br>
     Are you a current ADS user curious to learn more about how you can further elevate your research with the extra functionality offered by Science Explorer (SciX), or are you a current SciX user that wants to learn more about how you can utilize all the fantastic features on this new platform to support your work? [Then register your interest in our professional development training program using this form](https://forms.gle/XFeBhbYSJxZmcBu2A)! Once we have an indication of the best formats for this training to take place, we will be in touch with more information. Engaging with our users helps us build a platform that best suits the needs of the research community, and every bit of feedback helps us as well as the broader research landscape, so please share the link with your colleagues and collaborators.<br>
 
-	<img src="{{site.baseurl}}/help/img/whatsnew_202510-prof-dev.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2510-prof-dev.png" 
 		 alt="professional-development" 
 		 class="img-responsive" 
 		 style="display: block; margin: 1em auto;">
@@ -367,7 +476,7 @@ Development and data holdings updates as of December 1st:
 
     If you're already a SciX user and would like to be part of our launch, we are collecting stories from our users about how the tool has revolutionized their research. If you would like to share your own story, either by text or in a short video, [follow this link to complete the form](https://docs.google.com/forms/d/e/1FAIpQLSdm9JYp8fFm1UwtR4Nman_s60FTGnDitW7dcsBZoYcrsdLQig/viewform?usp=header).<br>
 
-	<img src="{{site.baseurl}}/help/img/whatsnew_202509-out-of-beta.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2509-out-of-beta.png" 
 	         alt="scix-out-of-beta" 
 	         class="img-responsive" 
 	         style="display: block; margin: 1em auto;">

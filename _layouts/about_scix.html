@@ -24,6 +24,9 @@ layout: about_layout_scix
     <header class="post-header">
       {%unless page.no-header %}
       <h2 class="post-title">{{ page.title }}</h2>
+      {% if page.subtitle %}
+      <h4 class="post-subtitle" style="color: #666; margin-top: -10px;">{{ page.subtitle }}</h4>
+      {% endif %}
       {% endunless %}
     </header>
 

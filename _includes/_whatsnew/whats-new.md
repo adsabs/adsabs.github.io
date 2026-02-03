@@ -5,24 +5,37 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 ## February 2026
 Announcements:<br>
-What a start to the year it has been! With the transition from ADS to SciX in full swing, the SciX team have been meeting with members of the SciX Community at meetings and conferences all over. Read on to find out more about where we have been, where you’ll find us next, and some of the most recent developments for Science Explorer, your one stop shop for research discovery, innovation and impact, helping you “keep it 100 on the land, the sea, the sky”.<br>
+What a start to the year it has been! With the transition from [ADS to SciX](https://scixplorer.org/adstoscix/) in full swing, the SciX team have been meeting with members of the SciX Community at meetings and conferences all over. Read on to find out more about where we have been, where you’ll find us next, and some of the most recent developments for Science Explorer, your one stop shop for research discovery, innovation and impact, helping you “keep it 100 on the land, the sea, the sky”.<br>
 
 * **AAS247 Round-Up**<br>
-SciX at AAS 247.  SciX staff enjoyed meeting so many new users and old friends at the 247th meeting of the American Astronomical Society held in Phoenix, AZ during the first full week of January.  Our efforts focused on sharing the power of the Science Explorer to support astronomical research.  Our expanded collections provide access to greater interdisciplinary papers and resources from other disciplines that can make our work easier in addition to the increasing number of references and citations connected with our system. Researchers who tried SciX either during our workshops or at the booth were pleased by how familiar the SciX interface for ADS plus new features like smooth resizing for a mobile-friendly experience and one-click “copy and paste” citations. <br>
+	 <img src="{{site.baseurl}}/help/img/whatsnew/WN2602-AAS247booth.png" 
+	    alt="SciX at AMS 2026" 
+	    class="img-responsive" 
+	    style="float: left; margin: 0 0 1em 1em; width: 400px;">
+SciX team members, [Alberto Accomazzi](../../about/team/team/aaccomazzi), [Atilla Alkan](../../about/team/team/aalkan), [Carolyn Grant](../../about/team/team/csterngrant), [Edwin Henneken](../../about/team/team/ehenneken), [Jennifer Lynn Bartlett](../../about/team/team/jbartlett), and [Mugdha Polimera](../../about/team/team/mpolimera), enjoyed meeting so many new users and old friends at the [247th meeting of the American Astronomical Society](https://aas.org/meetings/aas247) held in Phoenix, AZ during the first full week of January.  Our efforts focused on sharing the power of the Science Explorer to support astronomical research.  Our expanded collections provide access to greater interdisciplinary papers and resources from other disciplines that can make our work easier, in addition to the increasing number of references and citations connected with our system. Researchers who tried SciX either during our workshops or at the booth were pleased by how familiar the SciX interface for ADS plus new features like smooth resizing for a mobile-friendly experience and one-click “copy and paste” citations.
+
+	Mugdha, back-end developer, presented “[The Future of Scientific Discovery: Responsible AI/ML Enhancements in ADS and SciX](https://aas247-aas.ipostersessions.com/default.aspx?s=3D-92-59-ED-DD-42-F3-5B-54-C6-B0-0C-84-63-14-11)” describing how we enrich our collections and enable you to search for papers, datasets, and software in more nuanced ways. 
+
+	Atilla, AI/ML postdoctoral researcher, presented “[Concept Classification Across Scientific Domains: Adapting to the Unified Astronomy Thesaurus’s Expansion into Heliophysics](https://aas247-aas.ipostersessions.com/default.aspx?s=EF-89-D3-93-4F-06-A7-97-BF-52-EA-77-96-6B-99-57)” describing our approach to automated classification of scientific records to accelerate discovery and improve search.    
+
+* **AAS247 Transition to SciX**<br>
+[Alberto Accomazzi](../../about/team/team/aaccomazzi), Principal Investigator, gave a talk at AAS247 about the [benefits of moving to SciX](https://zenodo.org/records/18463879) now at the NASA hyperwall. If you weren’t there or you missed our resource links last month, check out our [ADS to SciX page](../../adstoscix/) and dive in to our [Quick Start guide](../../adstoscix/quick-start)!<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-scixatAAS247.png" 
-	 alt="SciX at AMS 2026" 
+	 alt="Transition to SciX" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
 
 * **AMS 2026 Round-Up**<br>
-Team members Kelly, Daniel and Anna joined thousands of others in braving the thing they love best - BIG WEATHER - to attend the American Meteorological Society conference in Houston, Texas, at the end of January. We loved meeting you all and hearing about the unique challenges that you are helping overcome. The AMS meeting is a real opportunity to see interdisciplinary research lead to impactful realities. From atmospheric aerosols to Zenith angles, SciX has your research covered.<br>
+Team members [Kelly Lockhart](../../about/team/team/klockhart), [Daniel Chivvis](../../about/team/team/dchivvis), and [Anna Kelbert](../../about/team/team/akelbert) joined thousands of others in braving the thing they love most - BIG WEATHER - to attend the American Meteorological Society conference in Houston, Texas, at the end of January. Anna, the Project Scientist for Earth Science at SciX, gave a talk titled “Discovering Space Weather Resources in Science Explorer using Keyword Enrichments” at a session focused on the current state and future of space weather research.
+
+	We loved meeting you all and hearing about the unique challenges that you are helping overcome. The AMS meeting is a real opportunity to see how interdisciplinary research leads to impactful realities. From atmospheric aerosols to Zonda winds, SciX has your research A-Z covered.<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-scixatAMS26.png" 
 	 alt="SciX at AMS 2026" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
 	 
 * **AGU OSM - February 2026, Glasgow UK**<br>
-If you missed us at AGU, AAS, AMS, or any other conference with a three-letter acronym, don’t fear because we’ll soon be at more conferences with three-letter acronyms! We just can’t get enough of interacting with our community. We’ll be attending the AGU’s Ocean Sciences Meeting in Glasgow, UK at the end of February. The team will be on hand to answer any questions you might have about how you can use this free and open platform to explore the kind of interdisciplinary research that lurks in the depths of the sea. We’ll also be bringing some of our cute swag, and if you can successfully use the clues to Guess the Science Explorer, you’ll also be in with a chance of winning some very exclusive SciX merchandise! **Swing by Booth Number 85**. We look forward to seeing you there - as they say in Scottish Gaelic, <i>tha mi air bhioran</i>!<br>
+If you missed us at AGU, AAS, AMS, or any other conference with a three-letter acronym, don’t fear because we’ll soon be at more conferences with three-letter acronyms! We just can’t get enough of interacting with our community. We’ll be attending the [Ocean Sciences Meeting](https://www.agu.org/ocean-sciences-meeting) in Glasgow, UK at the end of February. The team will be on hand to answer any questions you might have about how you can use this free and open platform to explore the kind of interdisciplinary research that lurks in the depths of the sea. We’ll also be bringing some of our cute swag, and if you can successfully use the clues to Guess the Science Explorer, you’ll also be in with a chance of winning some very exclusive SciX merchandise! **Swing by Booth Number 85**. We look forward to seeing you there - as they say in Scottish Gaelic, <i>tha mi air bhioran</i>!<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-aguosm26.png" 
 	 alt="SciX at AGU OSM26" 
 	 class="img-responsive" 
@@ -32,7 +45,7 @@ If you missed us at AGU, AAS, AMS, or any other conference with a three-letter a
 We are inviting users to participate in a collaborative effort with the NASA ADS team to build an open annotated dataset for multi-label text classification in astrophysics.
 The goal of this project is to create a high-quality training resource that will support the development of language models capable of automatically assigning scientific concepts (keywords) to research papers. Such models will play an important role in future information-retrieval tools for the astrophysics community.
 
-     <ins>Motivation</ins>: Developing robust models for automatic keyword assignment requires carefully annotated training data. This project aims to create such a resource by collecting research papers and annotating them with the relevant Unified Astronomy Thesaurus (UAT) concepts. Once completed, the dataset will be openly released and will support downstream applications, including automated indexing, topic discovery, and improved literature search capabilities within ADS/SciX.
+     <ins>Motivation</ins>: Developing robust models for automatic keyword assignment requires carefully annotated training data. This project aims to create such a resource by collecting research papers and annotating them with the relevant [Unified Astronomy Thesaurus (UAT) concepts](https://astrothesaurus.org/). Once completed, the dataset will be openly released and will support downstream applications, including automated indexing, topic discovery, and improved literature search capabilities within ADS/SciX.
 
      <ins>What Participation Involves</ins>: We are seeking contributors who would be willing to read 5–10 full papers and assign the UAT concepts that best describe their scientific content, following our annotation guidelines. As part of the process, annotators will be asked to highlight the text fragments that justifyeach selected keyword. This will later help with explainability and model interpretability.
 Contributors will be acknowledged, with the opportunity to be listed as co-authors on the dataset release publication, depending on their level of involvement.
@@ -44,7 +57,7 @@ Contributors will be acknowledged, with the opportunity to be listed as co-autho
 Development and data holdings updates as of February 1st:
   * Data holdings and pipelines
     + 128k new records, and 2.48M new citations
-    + Over 4300 NASA Earth Science proposals added
+    + Over 4300 [NASA Earth Science proposals](https://scixplorer.org/search?p=1&q=doctype%3Aproposal+pub%3A%22NASA%22+collection%3Aearthscience&sort=score+desc&sort=date+desc&d=general) newly indexed
 
 <details>
 <summary>Development details</summary>

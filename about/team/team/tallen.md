@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Tom Allen"
-subtitle: "Astrophysics Data Support"
+team_id: "tallen"
 ---
 
 {% include _teambios/tallen.md %}

@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Felix Grezes"
-subtitle: "Machine Learning and Natural Language Processing"
+team_id: "fgrezes"
 ---
 
 {% include _teambios/fgrezes.md %}

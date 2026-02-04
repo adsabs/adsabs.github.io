@@ -4,7 +4,7 @@ title: "Team"
 ---
 
 Science Explorer (SciX) Personnel:
-{% for member in site.data.team.team_members %}{% unless member.role_type %}- [{{ member.name }}](../team/team/{{ member.id }}.html) - {{ member.title_scix }}
+{% for member in site.data.team.team_members %}{% unless member.role_type %}- [{{ member.name }}](../team/team/{{ member.id }}.html) - {{ member.title }}
 {% endunless %}{% endfor %}
 
 Community Engagement Coordinator: 

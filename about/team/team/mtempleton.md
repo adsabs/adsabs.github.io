@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Matthew Templeton"
-subtitle: "Data Integration Manager"
+team_id: "mtempleton"
 ---
 
 {% include _teambios/mtempleton.md %}

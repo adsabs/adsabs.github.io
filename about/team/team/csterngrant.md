@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Carolyn Stern Grant"
-subtitle: "Data Ingestion Lead"
+team_id: "csterngrant"
 ---
 
 {% include _teambios/csterngrant.md %}

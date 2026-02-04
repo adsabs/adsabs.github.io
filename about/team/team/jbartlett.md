@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Jennifer Lynn Bartlett"
-subtitle: "Astrophysics Project Scientist"
+team_id: "jbartlett"
 ---
 
 {% include _teambios/jbartlett.md %}

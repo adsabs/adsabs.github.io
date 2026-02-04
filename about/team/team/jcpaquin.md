@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Jean-Claude Paquin"
-subtitle: "Back-End Development (search)"
+team_id: "jcpaquin"
 ---
 
 {% include _teambios/jcpaquin.md %}

@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Fernanda de Macedo Alves"
-subtitle: "Back-End Development"
+team_id: "fdemacedoalves"
 ---
 
 {% include _teambios/fdemacedoalves.md %}

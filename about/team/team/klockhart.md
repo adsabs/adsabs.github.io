@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Kelly Lockhart"
-subtitle: "Technical Lead"
+team_id: "klockhart"
 ---
 
 {% include _teambios/klockhart.md %}

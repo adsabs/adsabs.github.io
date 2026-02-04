@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Daniel Chivvis"
-subtitle: "Digital Technologies Development Librarian"
+team_id: "dchivvis"
 ---
 
 {% include _teambios/dchivvis.md %}

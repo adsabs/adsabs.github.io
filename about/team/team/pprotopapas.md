@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Pavlos Protopapas"
-subtitle: "Interim Project Scientist for Data Science"
+team_id: "pprotopapas"
 ---
 
 {% include _teambios/pprotopapas.md %}

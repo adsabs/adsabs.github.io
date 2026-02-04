@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Sergi Blanco-Cuaresma"
-subtitle: "ADS/SciX Research Associate"
+team_id: "sblancocuaresma"
 ---
 
 {% include _teambios/sblancocuaresma.md %}

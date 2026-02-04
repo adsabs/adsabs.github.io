@@ -44,64 +44,39 @@ Mugdha received her Ph.D. in Astrophysics from the University of North Carolina.
 2. Name it `[your-id].jpg` (e.g., `mpolimera.jpg`)
 3. Update the image path in your bio file if needed
 
-### 2. Your Job Title (Subtitle on Profile Page)
+### 2. Your Job Title
 
-**Location**: `about/team/team/[your-id].md`
+**Your job title is stored in ONE place**: `_data/team.yml`
 
-**What's in this file:**
-- Your name (title)
-- Your job title (subtitle)
-- A reference to your bio file
+Job titles automatically appear on:
+- ✅ Your individual profile page
+- ✅ The ADS team index page (`about/team/index.md`)
+- ✅ The SciX team index page (`scixabout/team/index.md`)
 
-**Example** (`about/team/team/mpolimera.md`):
-```yaml
----
-layout: about
-title: "Dr. Mugdha Polimera"
-subtitle: "Back-End Development & Astrophysicist"
----
-
-{% include _teambios/mpolimera.md %}
-```
-
-**To update your job title:**
-1. Navigate to `about/team/team/`
-2. Find your file (e.g., `mpolimera.md`)
-3. Edit the `subtitle:` line
+**To update your job title everywhere:**
+1. Navigate to `_data/team.yml`
+2. Find your entry (search for your `id`)
+3. Edit the `title` field
 4. Save the file
 
-⚠️ **Note**: This only updates your individual profile page. To update your title on the team index pages, see section 3 below.
+That's it! Your title will update automatically across all pages. 🎉
 
-### 3. Your Job Title on Team Index Pages
+### 3. Understanding Your team.yml Entry
 
-**Location**: `_data/team.yml`
-
-The team index pages (both ADS and SciX) automatically pull job titles from this central file.
-
-**Example entry**:
+**Example entry** in `_data/team.yml`:
 ```yaml
 - id: mpolimera
   name: "Dr. Mugdha Polimera"
-  title_ads: "Back-End Development & Astrophysicist"
-  title_scix: "Back-End Development"
-  order: 19
+  title: "Back-End Development & Astrophysicist"
+  order: 18
 ```
 
-**To update your job title on index pages:**
-1. Navigate to `_data/team.yml`
-2. Find your entry (search for your `id`)
-3. Edit `title_ads` (for ADS pages) or `title_scix` (for SciX pages)
-4. Save the file
-
-✅ **Automatic update**: Your title will appear on both `about/team/index.md` and `scixabout/team/index.md` automatically!
-
 **Fields explained:**
-- `id`: Your unique identifier (don't change this)
-- `name`: Your full name with title
-- `title_ads`: Your job title on the ADS website
-- `title_scix`: Your job title on the SciX website
-- `order`: Your position in the team list (don't change without coordinating)
-- `role_type`: Your role category (only for special roles like research associates)
+- `id`: Your unique identifier (don't change this - matches your bio filename)
+- `name`: Your full name with title (Dr., etc.)
+- `title`: Your job title (appears on both ADS and SciX websites)
+- `order`: Your position in the team list (don't change without coordinating with team)
+- `role_type`: Your role category (only used for special roles like research associates or community coordinators)
 
 ---
 
@@ -118,15 +93,10 @@ The team index pages (both ADS and SciX) automatically pull job titles from this
 3. Save
 
 ### Update My Job Title
-**For your profile page only:**
-1. Edit `about/team/team/[your-id].md`
-2. Change the `subtitle:` line
-3. Save
-
-**For team index pages:**
 1. Edit `_data/team.yml`
-2. Find your entry and update `title_ads` or `title_scix`
+2. Find your entry and update the `title` field
 3. Save
+4. ✨ Your title updates automatically everywhere!
 
 ### Update My Email Address
 1. Go to `_includes/_teambios/[your-id].md`
@@ -187,12 +157,12 @@ Once you know your ID, navigate to:
 ## Important Notes
 
 ### About Job Titles
-You can have **different job titles** in different places:
-- **Profile page subtitle**: Customizable, can be unique to you
-- **ADS index page**: Pulled from `team.yml` → `title_ads`
-- **SciX index page**: Pulled from `team.yml` → `title_scix`
+Your job title is stored in **one place** (`_data/team.yml`) and automatically appears everywhere:
+- **Your profile page**: Shows your `title`
+- **ADS index page**: Shows your `title`
+- **SciX index page**: Shows your `title`
 
-💡 **Tip**: Keep them consistent for clarity, but you can customize if needed!
+💡 **Tip**: Since ADS and SciX share the same team, we use one consistent title across both sites!
 
 ### About Team Order
 The `order` field in `team.yml` determines the order on index pages. If you want to change your position, please coordinate with the web team to avoid conflicts.
@@ -262,7 +232,7 @@ Welcome! Here's how to set up your profile:
 ---
 layout: about
 title: "Your Full Name"
-subtitle: "Your Job Title"
+team_id: "[your-id]"
 ---
 
 {% include _teambios/[your-id].md %}
@@ -270,9 +240,16 @@ subtitle: "Your Job Title"
 
 ### 4. Add Yourself to team.yml
 - Open `_data/team.yml`
-- Add your entry following the format of others
-- Choose an appropriate `order` number
-- Set `role_type` if you're a research associate or have a special role
+- Add your entry following the format of others:
+```yaml
+- id: yourname
+  name: "Your Full Name"
+  title: "Your Job Title"
+  order: 26
+```
+- Choose an appropriate `order` number (next available number)
+- Set `role_type: "research_associate"` if you're a research associate
+- Set `role_type: "community"` if you're the community coordinator
 
 ### 5. Submit for Review
 - Commit your changes to a new branch

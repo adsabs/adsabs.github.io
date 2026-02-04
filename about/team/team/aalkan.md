@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Atilla Kaan Alkan"
-subtitle: "Postdoctoral Research Fellow"
+team_id: "aalkan"
 ---
 
 {% include _teambios/aalkan.md %}

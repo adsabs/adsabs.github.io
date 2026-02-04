@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Michael J. Kurtz"
-subtitle: "Project Scientist Emeritus"
+team_id: "mkurtz"
 ---
 
 {% include _teambios/mkurtz.md %}

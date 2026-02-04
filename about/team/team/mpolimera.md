@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Mugdha Polimera"
-subtitle: "Back-End Development & Astrophysicist"
+team_id: "mpolimera"
 ---
 
 {% include _teambios/mpolimera.md %}

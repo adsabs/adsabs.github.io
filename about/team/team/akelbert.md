@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Anna Kelbert"
-subtitle: "Earth Science Project Scientist"
+team_id: "akelbert"
 ---
 
 {% include _teambios/akelbert.md %}

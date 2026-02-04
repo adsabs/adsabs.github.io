@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Alberto Accomazzi"
-subtitle: "PI & Program Manager"
+team_id: "aaccomazzi"
 ---
 
 {% include _teambios/aaccomazzi.md %}

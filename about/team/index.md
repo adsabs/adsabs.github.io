@@ -5,7 +5,7 @@ title: "Team"
 
 Astrophysics Data Systems (ADS) Personnel:
 
-{% for member in site.data.team.team_members %}{% unless member.role_type %}- [{{ member.name }}](../team/team/{{ member.id }}.html) - {{ member.title_ads }}  
+{% for member in site.data.team.team_members %}{% unless member.role_type %}- [{{ member.name }}](../team/team/{{ member.id }}.html) - {{ member.title }}  
 {% endunless %}{% endfor %}
 
 Community Engagement Coordinator: 

@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Paul Di Re"
-subtitle: "Project Manager"
+team_id: "pdire"
 ---
 
 {% include _teambios/pdire.md %}

@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Edwin Henneken"
-subtitle: "Content, Curation & Collaborations Lead"
+team_id: "ehenneken"
 ---
 
 {% include _teambios/ehenneken.md %}

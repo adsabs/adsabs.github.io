@@ -4,159 +4,128 @@
 team_members:
   - id: aaccomazzi
     name: "Dr. Alberto Accomazzi"
-    title_ads: "PI & Program Manager"
-    title_scix: "PI & Program Manager"
+    title: "PI & Program Manager"
     order: 1
     
   - id: mkurtz
     name: "Dr. Michael J. Kurtz"
-    title_ads: "Project Scientist Emeritus"
-    title_scix: "Project Scientist Emeritus"
+    title: "Project Scientist Emeritus"
     order: 2
     
   - id: pprotopapas
     name: "Dr. Pavlos Protopapas"
-    title_ads: "Interim Project Scientist for Data Science"
-    title_scix: "Interim Project Scientist for Data Science"
+    title: "Interim Project Scientist for Data Science"
     order: 3
     
   - id: csterngrant
     name: "Carolyn Stern Grant"
-    title_ads: "Data Ingestion Lead"
-    title_scix: "Data Ingestion Lead"
+    title: "Data Ingestion Lead"
     order: 4
     
   - id: ehenneken
     name: "Edwin Henneken"
-    title_ads: "Content, Curation & Collaborations Lead"
-    title_scix: "Content, Curation & Collaborations Lead"
+    title: "Content, Curation & Collaborations Lead"
     order: 5
     
   - id: klockhart
     name: "Dr. Kelly Lockhart"
-    title_ads: "Technical Lead"
-    title_scix: "Technical Lead"
+    title: "Technical Lead"
     order: 6
     
   - id: thostetler
     name: "Tim Hostetler"
-    title_ads: "User Interface and Front-End Development"
-    title_scix: "User Interface and Front-End Development"
+    title: "User Interface and Front-End Development"
     order: 7
     
   - id: mtempleton
     name: "Dr. Matthew Templeton"
-    title_ads: "Data Integration Manager"
-    title_scix: "Senior Data Specialist"
+    title: "Data Integration Manager"
     order: 8
     
   - id: schen
     name: "Shinyi (Jennifer) Chen"
-    title_ads: "User Experience and Front-End Development"
-    title_scix: "User Experience and Front-End Development"
+    title: "User Experience and Front-End Development"
     order: 9
     
   - id: fgrezes
     name: "Dr. Felix Grezes"
-    title_ads: "Machine Learning and Natural Language Processing"
-    title_scix: "Machine Learning and Natural Language Processing"
+    title: "Machine Learning and Natural Language Processing"
     order: 10
     
   - id: jkoch
     name: "Jennifer Koch"
-    title_ads: "Digital Technologies Development Librarian"
-    title_scix: "Digital Technologies Development Librarian"
+    title: "Digital Technologies Development Librarian"
     order: 11
     
   - id: tallen
     name: "Dr. Tom Allen"
-    title_ads: "Astrophysics Data Support"
-    title_scix: "Astrophysics Data Support"
+    title: "Astrophysics Data Support"
     order: 12
     
   - id: tjacovich
     name: "Dr. Taylor Jacovich"
-    title_ads: "Back-End Development & Data Analysis"
-    title_scix: "Back-End Development & Data Analysis"
+    title: "Back-End Development & Data Analysis"
     order: 13
-    
-  - id: hblom
-    name: "Dr. Harry Blom"
-    title_ads: "Senior Publishing Liaison"
-    title_scix: "Senior Publishing Liaison"
-    order: 14
     
   - id: dchivvis
     name: "Daniel Chivvis"
-    title_ads: "Digital Technologies Development Librarian"
-    title_scix: "Digital Technologies Development Librarian"
-    order: 15
+    title: "Digital Technologies Development Librarian"
+    order: 14
     
   - id: fdemacedoalves
     name: "Fernanda de Macedo Alves"
-    title_ads: "Back-End Development"
-    title_scix: "Back-End Development"
-    order: 16
+    title: "Back-End Development"
+    order: 15
     
   - id: jcpaquin
     name: "Jean-Claude Paquin"
-    title_ads: "Back-End Development (search)"
-    title_scix: "Back-End Development (search)"
-    order: 17
+    title: "Back-End Development (search)"
+    order: 16
     
   - id: jbartlett
     name: "Dr. Jennifer Bartlett"
-    title_ads: "Astrophysics Project Scientist"
-    title_scix: "Astrophysics Project Scientist"
-    order: 18
+    title: "Astrophysics Project Scientist"
+    order: 17
     
   - id: mpolimera
     name: "Dr. Mugdha Polimera"
-    title_ads: "Back-End Development & Astrophysicist"
-    title_scix: "Back-End Development"
-    order: 19
+    title: "Back-End Development & Astrophysicist"
+    order: 18
     
   - id: akelbert
     name: "Dr. Anna Kelbert"
-    title_ads: "Earth Science Project Scientist"
-    title_scix: "Earth Science Project Scientist"
-    order: 20
+    title: "Earth Science Project Scientist"
+    order: 19
     
   - id: pdire
     name: "Paul Di Re"
-    title_ads: "Project Manager"
-    title_scix: "Project Manager"
-    order: 21
+    title: "Project Manager"
+    order: 20
     
   - id: jpomerantz
     name: "Dr. Jeffrey Pomerantz"
-    title_ads: "Digital Technologies Development Librarian"
-    title_scix: "Digital Technologies Development Librarian"
-    order: 22
+    title: "Digital Technologies Development Librarian"
+    order: 21
     
   - id: aalkan
     name: "Dr. Atilla Kaan Alkan"
-    title_ads: "Postdoctoral Research Fellow"
-    title_scix: "Postdoctoral Research Fellow"
-    order: 23
+    title: "Postdoctoral Research Fellow"
+    order: 22
     
   - id: skundu
     name: "Dr. Suze Kundu"
-    title_ads: "Community Engagement Coordinator"
-    title_scix: "Community Engagement Coordinator"
-    order: 24
+    title: "Community Engagement Coordinator"
+    order: 23
     role_type: "community"
     
   - id: sblancocuaresma
     name: "Dr. Sergi Blanco-Cuaresma"
-    title_ads: "ADS/SciX Research Associate"
-    title_scix: "ADS/SciX Research Associate"
-    order: 25
+    title: "ADS/SciX Research Associate"
+    order: 24
     role_type: "research_associate"
     
   - id: sjarmak
     name: "Dr. Stephanie Jarmak"
-    title_ads: "ADS/SciX Research Associate"
-    title_scix: "ADS/SciX Research Associate"
-    order: 26
+    title: "ADS/SciX Research Associate"
+    order: 25
     role_type: "research_associate"

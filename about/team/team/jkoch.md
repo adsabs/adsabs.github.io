@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Jennifer Koch"
-subtitle: "Digital Technologies Development Librarian"
+team_id: "jkoch"
 ---
 
 {% include _teambios/jkoch.md %}

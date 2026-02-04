@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Tim Hostetler"
-subtitle: "User Interface and Front-End Development"
+team_id: "thostetler"
 ---
 
 {% include _teambios/thostetler.md %}

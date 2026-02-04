@@ -1,7 +1,7 @@
 ---
 layout: about
 title: "Dr. Suze Kundu"
-subtitle: "Community Engagement Coordinator"
+team_id: "skundu"
 ---
 
 {% include _teambios/skundu.md %}

@@ -61,7 +61,7 @@ If you missed us at AGU, AAS, AMS, or any other conference with a three-letter a
 	 style="display: block; margin: 1em auto; width: 550px;">
 
 * **By Scientists, For Scientists**<br>
-[Mugdha Polimera](../../about/team/team/mpolimera), SciX back-end developer and astrophysicist, shone in her dual roles at [AAS247](https://aas.org/meetings/aas247) with her presentation on “[From Dwarfs to Giants: A Complete Census of AGN Across the RESOLVE and ECO Surveys](https://aas247-aas.ipostersessions.com/Default.aspx?s=3B-7A-2A-3E-92-AA-2A-F2-AA-5D-76-7E-CB-24-74-13).” She and her co-authors show the demographics of active galactic nuclei (AGN), i.e., actively accreting supermassive black holes, and their hosts shift dramatically with galaxy mass. \
+[Mugdha Polimera](../../about/team/team/mpolimera), SciX back-end developer and astrophysicist, shone in her dual roles at [AAS247](https://aas.org/meetings/aas247) with her presentation on “[From Dwarfs to Giants: A Complete Census of AGN Across the RESOLVE and ECO Surveys](https://aas247-aas.ipostersessions.com/Default.aspx?s=3B-7A-2A-3E-92-AA-2A-F2-AA-5D-76-7E-CB-24-74-13).” She and her co-authors show the demographics of active galactic nuclei (AGN), i.e., actively accreting supermassive black holes, and their hosts shift dramatically with galaxy mass.
 
 	The results show that AGN are more common in dwarf galaxies than most previous surveys suggested, but also reveal a sharp increase in AGN frequency in transitional galaxies around the same mass as the Milky Way. They argue the transition reflects how the cold gas accretion in the host galaxies and the dark matter mass of the group haloes could regulate black hole growth and star formation.
 

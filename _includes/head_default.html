@@ -5,11 +5,25 @@
   <title>{% if page.title %}{{ page.title }}{% else %}ADS {{ include.subtitle }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}ADS {{ include.subtitle }}{% endif %}" />
+  <meta property="og:site_name" content="NASA Astrophysics Data System (ADS)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.ads_base_url }}" />
   <meta property="og:description"
-        content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ page.title | strip_html | strip_newlines | truncate: 200 | escape }}{% endif %}">
+        content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:image"
-        content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+        content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.ads_base_url }}{% else %}{{ site.ads_base_url }}/help/common/images/transparent_logo.svg{% endif %}" />
+  <meta property="og:image:alt" content="NASA ADS Logo" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@adsabs" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}ADS {{ include.subtitle }}{% endif %}" />
+  <meta name="twitter:description"
+        content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="twitter:image"
+        content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.ads_base_url }}{% else %}{{ site.ads_base_url }}/help/common/images/transparent_logo.svg{% endif %}" />
 
   <!-- Canonical: standardize on site.url -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -57,5 +71,4 @@
     ga('send', 'pageview');
   </script>
   <meta http-equiv="Last-Modified" content="{{ page.last_modified_at }}" />
-  {% seo %}
 </head>

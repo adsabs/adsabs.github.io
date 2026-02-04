@@ -5,25 +5,44 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 ## February 2026
 Announcements:<br>
-What a start to the year it has been! With the transition from [ADS to SciX](https://scixplorer.org/adstoscix/) in full swing, the SciX team have been meeting with members of the SciX Community at meetings and conferences all over. Read on to find out more about where we have been, where you’ll find us next, and some of the most recent developments for Science Explorer, your one stop shop for research discovery, innovation and impact, helping you “keep it 100 on the land, the sea, the sky”.<br>
+What a start to the year it has been! With the transition from [ADS to SciX](https://scixplorer.org/adstoscix/) in full swing, the SciX team has been meeting with members of the SciX Community at meetings and conferences all over. Our goal is for the astronomy community to experience SciX as early as possible and step up to the next generation of literature search and more by the end of 2026. Read on to find out more about where we have been, where you’ll find us next, and some of the most recent developments for Science Explorer, your one-stop shop for research discovery, innovation, and impact, helping you “keep it 100 on the land, the sea, the sky”.<br>
+
+* **AAS247 Transition to SciX**<br>
+[Alberto Accomazzi](../../about/team/team/aaccomazzi), Principal Investigator, gave a talk at AAS247 about the [benefits of moving to SciX](https://zenodo.org/records/18463879) now at the NASA hyperwall. If you weren’t there or you missed our resource links last month, check out our [ADS to SciX page](../../adstoscix/) and dive in to our [Quick Start guide](../../adstoscix/quick-start)!
+
+	Our current SciX transition outreach efforts are focused on showcasing the platform’s power to support astronomical research. Our expanded collections provide access to greater interdisciplinary papers and resources from other disciplines that can make our work easier, in addition to the increasing number of references and citations connected with our system. Astro researchers who tried SciX during recent conferences were pleased by how similar the interface is to ADS, as well as its new features like smooth resizing for a mobile-friendly experience and one-click “copy and paste” citations.<br>
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-scixatAAS247.png" 
+	 alt="Transition to SciX" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+
+* **Get Involved! Create a Multi-Label Text Classification Dataset with ADS**<br>
+Please help us build an open annotated dataset for multi-label text classification in astrophysics that will further strengthen the discoverability of astronomy research in SciX!. Together, we will create a high-quality training resource to support the development of language models capable of automatically assigning scientific concepts (keywords) to research papers. Such models will enable future information-retrieval tools for astrophysics.
+
+     **Motivation**: Developing robust models for automatic keyword assignment requires carefully annotated training data. Therefore, we will target a representative set of astrophysics research papers and annotate each with the relevant [Unified Astronomy Thesaurus (UAT) concepts](https://astrothesaurus.org/). Once completed, the dataset will be openly released and will support downstream applications, including automated indexing, topic discovery, and improved literature search capabilities within ADS/SciX.
+
+     **What Participation Involves**: You should be willing to read 5–10 full papers and assign the UAT concepts that best describe their scientific content, following our annotation guidelines. In addition, you will highlight the text fragments that justify each selected keyword. The selections will help with explainability and model interpretability. Finally, you may be asked to participate in a virtual discussion to finalize keyword selection when annotators disagree on their selections. 
+
+     **How to Participate**: Please indicate your interest [using this short form](https://docs.google.com/forms/d/e/1FAIpQLSduV6qJ-_4QCYnFW4dc04UAQ4yCUgN585pwpRt6-GmoTKEErA/viewform?usp=sharing&ouid=113114061719386419121). We will follow up to provide the annotation guidelines, example annotations, and access to the annotation interface. Please contact [Atilla Alkan](../../about/team/team/aalkan) with any questions. We hope you will collaborate with us to build a shared, reusable dataset to benefit the entire astrophysics community.<br>
+	 <img src="{{site.baseurl}}/help/img/whatsnew/WN2602-UAT.png" 
+	 alt="Unified Astronomy Thesaurus" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
 
 * **AAS247 Round-Up**<br>
-	 <img src="{{site.baseurl}}/help/img/whatsnew/WN2602-AAS247booth.png" 
-	    alt="SciX at AMS 2026" 
+SciX team members, [Alberto Accomazzi](../../about/team/team/aaccomazzi), [Atilla Alkan](../../about/team/team/aalkan), [Carolyn Grant](../../about/team/team/csterngrant), [Edwin Henneken](../../about/team/team/ehenneken), [Jennifer Lynn Bartlett](../../about/team/team/jbartlett), and [Mugdha Polimera](../../about/team/team/mpolimera), enjoyed meeting so many new users and old friends at the [247th meeting of the American Astronomical Society](https://aas.org/meetings/aas247) held in Phoenix, AZ during the first full week of January.
+
+	[Olivia “Harper” Wilkins](../../scixabout/ambassador/team/Wilkins.html), Dickinson College chemistry professor and [SciX Lead Ambassador](../../scixabout/ambassador/), co-led our workshops on Sunday afternoon. Everyone contributed to staffing the booth, which featured stickers with artwork of [Yueyi Che](../../scixabout/ambassador/team/Che.html), PhD student at UC Irvine and SciX Lead Ambassador.
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-AAS247booth.png" 
+	    alt="SciX at AAS247" 
 	    class="img-responsive" 
-	    style="float: left; margin: 0 0 1em 1em; width: 400px;">
-SciX team members, [Alberto Accomazzi](../../about/team/team/aaccomazzi), [Atilla Alkan](../../about/team/team/aalkan), [Carolyn Grant](../../about/team/team/csterngrant), [Edwin Henneken](../../about/team/team/ehenneken), [Jennifer Lynn Bartlett](../../about/team/team/jbartlett), and [Mugdha Polimera](../../about/team/team/mpolimera), enjoyed meeting so many new users and old friends at the [247th meeting of the American Astronomical Society](https://aas.org/meetings/aas247) held in Phoenix, AZ during the first full week of January.  Our efforts focused on sharing the power of the Science Explorer to support astronomical research.  Our expanded collections provide access to greater interdisciplinary papers and resources from other disciplines that can make our work easier, in addition to the increasing number of references and citations connected with our system. Researchers who tried SciX either during our workshops or at the booth were pleased by how familiar the SciX interface for ADS plus new features like smooth resizing for a mobile-friendly experience and one-click “copy and paste” citations.
+	    style="float: right; margin: 0 0 1em 1em; width: 400px;">
 
 	Mugdha, back-end developer, presented “[The Future of Scientific Discovery: Responsible AI/ML Enhancements in ADS and SciX](https://aas247-aas.ipostersessions.com/default.aspx?s=3D-92-59-ED-DD-42-F3-5B-54-C6-B0-0C-84-63-14-11)” describing how we enrich our collections and enable you to search for papers, datasets, and software in more nuanced ways. 
 
 	Atilla, AI/ML postdoctoral researcher, presented “[Concept Classification Across Scientific Domains: Adapting to the Unified Astronomy Thesaurus’s Expansion into Heliophysics](https://aas247-aas.ipostersessions.com/default.aspx?s=EF-89-D3-93-4F-06-A7-97-BF-52-EA-77-96-6B-99-57)” describing our approach to automated classification of scientific records to accelerate discovery and improve search.    
 
-* **AAS247 Transition to SciX**<br>
-[Alberto Accomazzi](../../about/team/team/aaccomazzi), Principal Investigator, gave a talk at AAS247 about the [benefits of moving to SciX](https://zenodo.org/records/18463879) now at the NASA hyperwall. If you weren’t there or you missed our resource links last month, check out our [ADS to SciX page](../../adstoscix/) and dive in to our [Quick Start guide](../../adstoscix/quick-start)!<br>
-	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-scixatAAS247.png" 
-	 alt="Transition to SciX" 
-	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 550px;">
+	Jennifer, project scientist for astrophysics, presented “[Science Explorer: Open Science Discovery Engine](https://aas247-aas.ipostersessions.com/default.aspx?s=88-2C-FD-E4-53-A8-DF-4E-9F-49-AE-DE-2B-A4-67-D5&guestview=true)” describing a Library Carpentry course for new SciX users. She also presented “[Science Explorer and StarGlass: the Future of the Historical Sky](https://aas247-aas.ipostersessions.com/default.aspx?s=79-56-95-F6-2A-91-DB-3F-27-E0-A0-67-14-C2-69-4D&guestview=true)” demonstrating the linking of astronomical photographic plates (observations) to articles and logbooks. In addition, she organized splinter sessions for the [Working Group on the Preservation of Astronomical Heritage](https://aas.org/comms/working-group-preservation-astronomical-heritage-wgpah) and the [Working Group on the Unified Astronomy Thesaurus](https://aas.org/comms/working-group-unified-astronomy-thesaurus-wguat) (UAT). SciX continues the ADS tradition of making the [historical literature of astronomy](https://adsabs.harvard.edu/historical.html) accessible to scientists, historians, and educators. The [UAT](https://astrothesaurus.org/) is our preferred vocabulary for astronomy concepts and keywords; improving its content and its use will improve searches for astronomy topics and help make connections among similar ideas in other disciplines. 
 
 * **AMS 2026 Round-Up**<br>
 Team members [Kelly Lockhart](../../about/team/team/klockhart), [Daniel Chivvis](../../about/team/team/dchivvis), and [Anna Kelbert](../../about/team/team/akelbert) joined thousands of others in braving the thing they love most - BIG WEATHER - to attend the American Meteorological Society conference in Houston, Texas, at the end of January. Anna, the Project Scientist for Earth Science at SciX, gave a talk titled “Discovering Space Weather Resources in Science Explorer using Keyword Enrichments” at a session focused on the current state and future of space weather research.
@@ -41,19 +60,17 @@ If you missed us at AGU, AAS, AMS, or any other conference with a three-letter a
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 550px;">
 
-* **Collaborate with ADS for a Multi-Label Text Classification Dataset**<br>
-We are inviting users to participate in a collaborative effort with the NASA ADS team to build an open annotated dataset for multi-label text classification in astrophysics.
-The goal of this project is to create a high-quality training resource that will support the development of language models capable of automatically assigning scientific concepts (keywords) to research papers. Such models will play an important role in future information-retrieval tools for the astrophysics community.
+* **By Scientists, For Scientists**<br>
+[Mugdha Polimera](../../about/team/team/mpolimera), SciX back-end developer and astrophysicist, shone in her dual roles at [AAS247](https://aas.org/meetings/aas247) with her presentation on “[From Dwarfs to Giants: A Complete Census of AGN Across the RESOLVE and ECO Surveys](https://aas247-aas.ipostersessions.com/Default.aspx?s=3B-7A-2A-3E-92-AA-2A-F2-AA-5D-76-7E-CB-24-74-13).” She and her co-authors show the demographics of active galactic nuclei (AGN), i.e., actively accreting supermassive black holes, and their hosts shift dramatically with galaxy mass. \
 
-     <ins>Motivation</ins>: Developing robust models for automatic keyword assignment requires carefully annotated training data. This project aims to create such a resource by collecting research papers and annotating them with the relevant [Unified Astronomy Thesaurus (UAT) concepts](https://astrothesaurus.org/). Once completed, the dataset will be openly released and will support downstream applications, including automated indexing, topic discovery, and improved literature search capabilities within ADS/SciX.
+	The results show that AGN are more common in dwarf galaxies than most previous surveys suggested, but also reveal a sharp increase in AGN frequency in transitional galaxies around the same mass as the Milky Way. They argue the transition reflects how the cold gas accretion in the host galaxies and the dark matter mass of the group haloes could regulate black hole growth and star formation.
 
-     <ins>What Participation Involves</ins>: We are seeking contributors who would be willing to read 5–10 full papers and assign the UAT concepts that best describe their scientific content, following our annotation guidelines. As part of the process, annotators will be asked to highlight the text fragments that justifyeach selected keyword. This will later help with explainability and model interpretability.
-Contributors will be acknowledged, with the opportunity to be listed as co-authors on the dataset release publication, depending on their level of involvement.
-
-     <ins>How to Participate</ins>: If you are interested in contributing, please indicate your interest [using this short form](https://docs.google.com/forms/d/e/1FAIpQLSduV6qJ-_4QCYnFW4dc04UAQ4yCUgN585pwpRt6-GmoTKEErA/viewform?usp=sharing&ouid=113114061719386419121). We will follow up with participants and provide the annotation guidelines, example annotations, and access to the annotation interface. 
-
-     We hope you will consider joining this collaborative effort to build a shared, reusable dataset that will benefit the entire astrophysics community. Please feel free to contact us if you have any questions.
-
+	Check out the [January 8 press conference](https://www.youtube.com/live/sFyIBkNlk5A?si=TJ2dIovfwz0Dm8h0&t=805) and [press release](https://www.cfa.harvard.edu/news/scientists-find-more-active-black-holes-dwarf-and-milky-way-sized-galaxies-cutting-through-glare) featuring her work!<br>
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-MPAAS247.png" 
+	 alt="Mugdha Polimera at AAS247" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 550px;">
+	 
 Development and data holdings updates as of February 1st:
   * Data holdings and pipelines
     + 128k new records, and 2.48M new citations

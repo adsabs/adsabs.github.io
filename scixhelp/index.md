@@ -439,15 +439,124 @@ no-header: true
   <!-- Video Guide Tab -->
   <div id="video" class="tab-content">
     <div class="tab-header">
-      <h2>Video Tutorial</h2>
-      <p>Watch our comprehensive video guide to get started with SciX</p>
+      <h2>Video Tutorials</h2>
+      <p>Watch our video guides to get started with SciX. Click any video to play.</p>
     </div>
-    <div class="video-container-large">
-<div class="scalable scalable-16-9">
-  <div class="scalable-content">
-    <iframe src="https://www.youtube.com/embed/LeTFmhmPjs0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-</div>
+    
+    <div class="video-gallery">
+      <!-- Video 1 -->
+      <div class="video-item">
+        <div class="video-header" onclick="toggleVideo('video1')">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://img.youtube.com/vi/jJ0ve_3ov0M/maxresdefault.jpg" alt="Welcome to the SciX Training Hub" class="video-thumbnail">
+            <div class="play-button-overlay">
+              <i class="fa fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-title-wrapper">
+            <h3>Welcome to the SciX Training Hub</h3>
+            <span class="video-toggle">+</span>
+          </div>
+        </div>
+        <div class="video-content" id="video1" data-video-id="jJ0ve_3ov0M">
+          <p class="video-description">Get started with SciX and learn about the training resources available to help you master the platform.</p>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-item">
+        <div class="video-header" onclick="toggleVideo('video2')">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://img.youtube.com/vi/7ELEYN5L49U/maxresdefault.jpg" alt="Searching for a Specific Paper" class="video-thumbnail">
+            <div class="play-button-overlay">
+              <i class="fa fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-title-wrapper">
+            <h3>Searching for a Specific Paper</h3>
+            <span class="video-toggle">+</span>
+          </div>
+        </div>
+        <div class="video-content" id="video2" data-video-id="7ELEYN5L49U">
+          <p class="video-description">Learn how to quickly find a specific research paper using different search strategies and identifiers.</p>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-item">
+        <div class="video-header" onclick="toggleVideo('video3')">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://img.youtube.com/vi/WsYbgdaC2Es/maxresdefault.jpg" alt="Beginning a Literature Search" class="video-thumbnail">
+            <div class="play-button-overlay">
+              <i class="fa fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-title-wrapper">
+            <h3>Beginning a Literature Search</h3>
+            <span class="video-toggle">+</span>
+          </div>
+        </div>
+        <div class="video-content" id="video3" data-video-id="WsYbgdaC2Es">
+          <p class="video-description">Start your research journey with effective literature search techniques and discover relevant papers in your field.</p>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-item">
+        <div class="video-header" onclick="toggleVideo('video4')">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://img.youtube.com/vi/aOq_JxQId4M/maxresdefault.jpg" alt="Searching for Authors with Common Names" class="video-thumbnail">
+            <div class="play-button-overlay">
+              <i class="fa fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-title-wrapper">
+            <h3>Searching for Authors with Common Names</h3>
+            <span class="video-toggle">+</span>
+          </div>
+        </div>
+        <div class="video-content" id="video4" data-video-id="aOq_JxQId4M">
+          <p class="video-description">Master advanced author search techniques to find the right researcher when dealing with common names.</p>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-item">
+        <div class="video-header" onclick="toggleVideo('video5')">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://img.youtube.com/vi/tZaLIAoavv8/maxresdefault.jpg" alt="Building a Library & Calculating Metrics" class="video-thumbnail">
+            <div class="play-button-overlay">
+              <i class="fa fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-title-wrapper">
+            <h3>Building a Library & Calculating Metrics</h3>
+            <span class="video-toggle">+</span>
+          </div>
+        </div>
+        <div class="video-content" id="video5" data-video-id="tZaLIAoavv8">
+          <p class="video-description">Create personal libraries to organize your research and analyze citation metrics for papers and authors.</p>
+        </div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="video-item">
+        <div class="video-header" onclick="toggleVideo('video6')">
+          <div class="video-thumbnail-wrapper">
+            <img src="https://img.youtube.com/vi/IPGv0vPxy4M/maxresdefault.jpg" alt="ORCiD and Science Explorer" class="video-thumbnail">
+            <div class="play-button-overlay">
+              <i class="fa fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-title-wrapper">
+            <h3>ORCiD and Science Explorer</h3>
+            <span class="video-toggle">+</span>
+          </div>
+        </div>
+        <div class="video-content" id="video6" data-video-id="IPGv0vPxy4M">
+          <p class="video-description">Learn how to link your ORCiD profile with SciX to claim your papers and enhance your researcher profile.</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -909,6 +1018,172 @@ no-header: true
   max-height: 1000px;
 }
 
+/* Video Gallery Styles - Reuse FAQ pattern */
+.video-gallery {
+  max-width: 900px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.video-item {
+  background: #fff;
+  border: 1px solid #5FBFAE;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.video-item:hover {
+  border-color: #97BF41;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.video-header {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.video-header:hover {
+  background: #F2F2F2;
+}
+
+.video-thumbnail-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 180px;
+  height: 101px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.video-header:hover .play-button-overlay {
+  font-size: 3.5rem;
+  color: #049DD9;
+}
+
+.video-title-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help-page .video-title-wrapper h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+.video-toggle {
+  font-size: 24px;
+  font-weight: 900;
+  color: #666;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+  min-width: 24px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1;
+}
+
+.video-header.active .video-toggle {
+  color: #049DD9;
+}
+
+.video-content {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  background: #F2F2F2;
+  border-top: 1px solid #5FBFAE;
+}
+
+.video-content.active {
+  padding: 25px 30px;
+  max-height: 800px;
+}
+
+.video-description {
+  margin: 0 0 15px 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.video-embed-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.video-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive adjustments for video gallery */
+@media (max-width: 768px) {
+  .video-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .video-thumbnail-wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .video-title-wrapper {
+    width: 100%;
+  }
+}
+
 .faq-answer p {
   margin: 0 0 15px 0;
   color: #555;
@@ -1138,6 +1413,68 @@ function toggleFAQ(faqId) {
     toggle.textContent = '−';
     // Save state to localStorage
     localStorage.setItem('faq_' + faqId, 'open');
+  }
+}
+
+function toggleVideo(videoId) {
+  const videoContent = document.getElementById(videoId);
+  const videoHeader = videoContent.previousElementSibling;
+  const toggle = videoHeader.querySelector('.video-toggle');
+  
+  if (videoContent.classList.contains('active')) {
+    // Close the video and pause playback
+    videoContent.classList.remove('active');
+    videoHeader.classList.remove('active');
+    toggle.textContent = '+';
+    
+    // Pause the video using YouTube's postMessage API
+    const iframe = videoContent.querySelector('iframe');
+    if (iframe) {
+      iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    }
+  } else {
+    // Close all other open videos first and pause their playback
+    document.querySelectorAll('.video-content.active').forEach(content => {
+      content.classList.remove('active');
+      const header = content.previousElementSibling;
+      header.classList.remove('active');
+      const otherToggle = header.querySelector('.video-toggle');
+      if (otherToggle) otherToggle.textContent = '+';
+      
+      // Pause the video using YouTube's postMessage API
+      const iframe = content.querySelector('iframe');
+      if (iframe) {
+        iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+      }
+    });
+    
+    // Open this video
+    videoContent.classList.add('active');
+    videoHeader.classList.add('active');
+    toggle.textContent = '−';
+    
+    // Inject iframe if not already present (lazy loading)
+    if (!videoContent.querySelector('iframe')) {
+      const videoYoutubeId = videoContent.getAttribute('data-video-id');
+      const embedWrapper = document.createElement('div');
+      embedWrapper.className = 'video-embed-wrapper';
+      
+      const iframe = document.createElement('iframe');
+      // Add enablejsapi=1 to enable YouTube API control
+      iframe.src = 'https://www.youtube.com/embed/' + videoYoutubeId + '?autoplay=1&enablejsapi=1';
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allow', 'autoplay; encrypted-media');
+      iframe.setAttribute('allowfullscreen', '');
+      
+      embedWrapper.appendChild(iframe);
+      videoContent.appendChild(embedWrapper);
+    } else {
+      // Resume playback if iframe already exists
+      const iframe = videoContent.querySelector('iframe');
+      if (iframe) {
+        iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+      }
+    }
   }
 }
 

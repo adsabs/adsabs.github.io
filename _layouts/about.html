@@ -24,6 +24,14 @@ layout: about_layout
     <header class="post-header">
       {%unless page.no-header %}
       <h2 class="post-title">{{ page.title }}</h2>
+      {% if page.subtitle %}
+      <h4 class="post-subtitle" style="color: #666; margin-top: -10px;">{{ page.subtitle }}</h4>
+      {% elsif page.team_id %}
+        {% assign team_member = site.data.team.team_members | where: "id", page.team_id | first %}
+        {% if team_member %}
+      <h4 class="post-subtitle" style="color: #666; margin-top: -10px;">{{ team_member.title }}</h4>
+        {% endif %}
+      {% endif %}
       {% endunless %}
     </header>
 

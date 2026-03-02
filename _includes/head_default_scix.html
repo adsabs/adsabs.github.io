@@ -9,11 +9,25 @@
   </title>
   <meta name="description" content="{{ site.description }}" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}SciX {{ include.subtitle }}{% endif %}" />
+  <meta property="og:site_name" content="NASA Science Explorer (SciX)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.scix_base_url }}" />
   <meta property="og:description"
-        content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}{{ page.title | strip_html | strip_newlines | truncate: 200 | escape }}{% endif %}" />
+        content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}NASA Science Explorer: Discover and access research across Astrophysics, Heliophysics, Planetary Science, and Earth Science{% endif %}" />
   <meta property="og:image"
-        content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+        content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.scix_base_url }}{% else %}{{ site.scix_base_url }}/help/common/images/scix/FULL%20COLOR-ScixHorizontalBlackBackground.svg{% endif %}" />
+  <meta property="og:image:alt" content="NASA Science Explorer Logo" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@NASA_SciX" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}SciX {{ include.subtitle }}{% endif %}" />
+  <meta name="twitter:description"
+        content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 200 | escape }}{% else %}NASA Science Explorer: Discover and access research across Astrophysics, Heliophysics, Planetary Science, and Earth Science{% endif %}" />
+  <meta name="twitter:image"
+        content="{% if page.thumbnail %}{{ page.thumbnail | prepend: '/' | prepend: site.image_base | prepend: site.baseurl | prepend: site.scix_base_url }}{% else %}{{ site.scix_base_url }}/help/common/images/scix/FULL%20COLOR-ScixHorizontalBlackBackground.svg{% endif %}" />
 
   <!-- Canonical: standardize on site.url -->
   <link rel="canonical"

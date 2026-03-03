@@ -1,0 +1,308 @@
+---
+---
+
+// SciX Training Hub — tutorial page styles
+// Uses the SciX brand palette to match the rest of the site.
+// Scoped to .tutorials-hub.
+
+.tutorials-hub {
+  padding: 20px 0;
+  color: #333;
+
+  // ── Header ────────────────────────────────────────────────────────────────
+
+  .hub-header {
+    margin-bottom: 28px;
+
+    h1 {
+      color: #333;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 18px;
+    }
+
+    .progress-section {
+      .progress-label {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+
+        .progress-pct-value {
+          color: #049DD9;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+
+      .progress {
+        height: 10px;
+        border-radius: 5px;
+        background: #e0e0e0;
+        box-shadow: none;
+
+        .progress-bar {
+          background: linear-gradient(90deg, #049DD9 0%, #5FBFAE 100%);
+          border-radius: 5px;
+          transition: width 0.5s ease;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  // ── Tutorial rows ──────────────────────────────────────────────────────────
+
+  .tutorial-row {
+    background: #fff;
+    border: 1px solid #5FBFAE;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 4px 10px rgba(4, 157, 217, 0.15);
+      border-color: #049DD9;
+    }
+
+    &.active {
+      border-color: #049DD9;
+      box-shadow: 0 4px 10px rgba(4, 157, 217, 0.15);
+    }
+
+    &.completed {
+      border-color: #97BF41;
+
+      .completion-indicator {
+        opacity: 1 !important;
+        color: #97BF41;
+      }
+    }
+
+    // Row header (clickable title bar)
+    .tutorial-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      cursor: pointer;
+      user-select: none;
+      background: #F2F2F2;
+      border-bottom: 1px solid #e0e0e0;
+      outline: none;
+
+      &:hover {
+        background: #e8f7fc;
+      }
+
+      &:focus-visible {
+        box-shadow: inset 0 0 0 2px #049DD9;
+      }
+
+      .tutorial-title-area {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .tutorial-number {
+          color: #049DD9;
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          white-space: nowrap;
+        }
+
+        .badge-new {
+          background: #5FBFAE;
+          color: #fff;
+          font-size: 10px;
+          padding: 2px 8px;
+          border-radius: 10px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .tutorial-title {
+          margin: 0;
+          color: #333;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      .tutorial-meta {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-shrink: 0;
+        margin-left: 12px;
+
+        .completion-indicator {
+          color: #97BF41;
+          font-size: 18px;
+          opacity: 0;
+          transition: opacity 0.2s ease;
+        }
+
+        .toggle-icon {
+          color: #049DD9;
+          font-size: 14px;
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+
+    // Chevron flips when row is open
+    &.active .tutorial-header .toggle-icon {
+      transform: rotate(180deg);
+    }
+
+    // Active header gets a blue left accent
+    &.active .tutorial-header {
+      border-left: 3px solid #049DD9;
+      background: #e8f7fc;
+    }
+
+    // Collapsed preview: thumbnail + description side by side
+    .tutorial-preview {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 14px 18px 16px;
+      cursor: pointer;
+
+      &:hover {
+        background: #fafafa;
+      }
+
+      .tutorial-thumbnail {
+        flex-shrink: 0;
+        width: 200px;
+        height: auto;
+        border-radius: 4px;
+        object-fit: cover;
+        border: 1px solid #e0e0e0;
+      }
+
+      .tutorial-description {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+
+    // Hide preview when expanded
+    &.active .tutorial-preview {
+      display: none;
+    }
+
+    // Expanded body: full-width video + mark complete
+    .tutorial-body {
+      display: none;
+      padding: 0 18px 18px;
+
+      &.open {
+        display: block;
+      }
+
+      .video-container {
+        position: relative;
+        width: 100%;
+        background: #000;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 14px;
+        margin-bottom: 14px;
+
+        iframe,
+        > div {
+          width: 100% !important;
+          min-height: 360px;
+          border: none;
+          display: block;
+        }
+      }
+
+      .tutorial-actions {
+        display: flex;
+        justify-content: flex-end;
+
+        .btn-mark-complete {
+          background: transparent;
+          border: 2px solid #049DD9;
+          color: #049DD9;
+          padding: 8px 20px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 600;
+          transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+          line-height: 1.4;
+
+          &:hover {
+            background: #e8f7fc;
+          }
+
+          &.completed {
+            background: #97BF41;
+            border-color: #97BF41;
+            color: #fff;
+
+            &:hover {
+              background: #82a836;
+              border-color: #82a836;
+            }
+          }
+
+          i {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+
+@media (max-width: 600px) {
+  .tutorials-hub {
+    .hub-header h1 {
+      font-size: 20px;
+    }
+
+    .tutorial-row .tutorial-header {
+      padding: 12px 14px;
+
+      .tutorial-title-area .tutorial-title {
+        font-size: 14px;
+      }
+    }
+
+    .tutorial-row .tutorial-preview {
+      flex-direction: column;
+      padding: 12px 14px 14px;
+
+      .tutorial-thumbnail {
+        width: 100%;
+      }
+    }
+
+    .tutorial-row .tutorial-body {
+      padding: 0 14px 14px;
+
+      .video-container iframe,
+      .video-container > div {
+        min-height: 220px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+- id: tutorial-1
+  title: "Welcome to the SciX Training Hub"
+  description: "Get an overview of the SciX Training Hub and what you'll learn across this tutorial series."
+  video_id: jJ0ve_3ov0M
+  is_new: true
+
+- id: tutorial-2
+  title: "Searching for a Specific Paper"
+  description: "Learn how to quickly find a specific paper in SciX using author names, titles, identifiers, and more."
+  video_id: 7ELEYN5L49U
+  is_new: true
+
+- id: tutorial-3
+  title: "SciX Tutorial 3"
+  description: "Placeholder description — update this in _data/tutorials.yml."
+  video_id: WsYbgdaC2Es
+  is_new: false
+
+- id: tutorial-4
+  title: "SciX Tutorial 4"
+  description: "Placeholder description — update this in _data/tutorials.yml."
+  video_id: aOq_JxQId4M
+  is_new: false
+
+- id: tutorial-5
+  title: "SciX Tutorial 5"
+  description: "Placeholder description — update this in _data/tutorials.yml."
+  video_id: tZaLIAoavv8
+  is_new: false
+
+- id: tutorial-6
+  title: "SciX Tutorial 6"
+  description: "Placeholder description — update this in _data/tutorials.yml."
+  video_id: IPGv0vPxy4M
+  is_new: false

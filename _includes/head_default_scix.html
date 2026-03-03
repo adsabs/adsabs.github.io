@@ -78,5 +78,10 @@
     ga('send', 'pageview');
   </script>
 
+  <!-- Per-page extra CSS (set extra_css in front matter) -->
+  {% if page.extra_css %}
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ page.extra_css }}" />
+  {% endif %}
+
   <!-- No body-hiding, no <noscript> needed -->
 </head>

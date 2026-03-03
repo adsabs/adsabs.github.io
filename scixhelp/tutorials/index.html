@@ -1,0 +1,99 @@
+---
+layout: tutorials_layout_scix
+title: "SciX Training Hub"
+extra_css: /help/common/css/tutorials.css
+---
+
+<div class="tutorials-hub">
+
+  <!-- ── Header & progress bar ─────────────────────────────────────────── -->
+  <div class="hub-header">
+    <h1>Welcome to the SciX Training Hub</h1>
+    <div class="progress-section">
+      <div class="progress-label">
+        <span id="completed-count">0</span>
+        of {{ site.data.tutorials | size }} complete &nbsp;&mdash;&nbsp;
+        <span class="progress-pct-value"><span id="progress-pct">0</span>%</span>
+      </div>
+      <div
+        class="progress"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Tutorial accordion rows ───────────────────────────────────────── -->
+  <div class="tutorials-list">
+    {% for tutorial in site.data.tutorials %}
+    {% assign idx = forloop.index %}
+
+    <div
+      class="tutorial-row"
+      id="{{ tutorial.id }}"
+      data-video-id="{{ tutorial.video_id }}"
+    >
+      <!-- Row header (always visible, click to expand/collapse) -->
+      <div
+        class="tutorial-header"
+        role="button"
+        tabindex="0"
+        onclick="toggleTutorial('{{ tutorial.id }}')"
+        onkeypress="if(event.key==='Enter'||event.key===' ')toggleTutorial('{{ tutorial.id }}')"
+      >
+        <div class="tutorial-title-area">
+          <span class="tutorial-number">Tutorial {{ idx }}</span>
+          {% if tutorial.is_new %}
+          <span class="badge-new">New</span>
+          {% endif %}
+          <h3 class="tutorial-title">{{ tutorial.title }}</h3>
+        </div>
+
+        <div class="tutorial-meta">
+          <span class="completion-indicator" id="indicator-{{ tutorial.id }}">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </span>
+          <i class="fa fa-chevron-down toggle-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <!-- Collapsed preview: thumbnail + description side by side -->
+      <div
+        class="tutorial-preview"
+        id="preview-{{ tutorial.id }}"
+        onclick="toggleTutorial('{{ tutorial.id }}')"
+      >
+        <img
+          class="tutorial-thumbnail"
+          src="https://img.youtube.com/vi/{{ tutorial.video_id }}/mqdefault.jpg"
+          alt="Thumbnail for {{ tutorial.title }}"
+        />
+        <p class="tutorial-description">{{ tutorial.description }}</p>
+      </div>
+
+      <!-- Expanded body: full-width video player + mark complete -->
+      <div class="tutorial-body" id="body-{{ tutorial.id }}">
+        <div class="video-container">
+          <div id="player-{{ tutorial.id }}"></div>
+        </div>
+
+        <div class="tutorial-actions">
+          <button
+            class="btn-mark-complete"
+            id="btn-{{ tutorial.id }}"
+            onclick="event.stopPropagation(); toggleComplete('{{ tutorial.id }}')"
+          >
+            <i class="fa fa-check" aria-hidden="true"></i> Mark as Complete
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+
+</div>

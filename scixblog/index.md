@@ -18,9 +18,9 @@ title: "All Posts"
 
             <div class="col-lg-4">
                 {% if post.thumbnail %}
-                    <img src="{{ site.baseurl }}/{{ post.thumbnail }}" style="max-width: 340px;height:auto"/>
+                    <img src="{{ site.baseurl }}/{{ post.thumbnail }}" alt="{{ post.title }}" style="max-width: 340px;height:auto"/>
                 {% else %}
-                    <img src="{{ site.baseurl }}/img/ads_logo.png" style="max-width: 340px;height:auto"/>
+                    <img src="{{ site.baseurl }}/img/ads_logo.png" alt="{{ post.title }}" style="max-width: 340px;height:auto"/>
                 {% endif %}
             </div>
 

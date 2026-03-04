@@ -1,5 +1,6 @@
 ---
 layout: blog_page_scix
+title: "Technical Posts"
 ---
 
 <div class="container">

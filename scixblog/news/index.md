@@ -1,5 +1,6 @@
 ---
 layout: blog_page_scix
+title: "News"
 ---
 
 <div class="container">
@@ -17,9 +18,9 @@ layout: blog_page_scix
     
                 <div class="col-md-2">
                     {% if post.thumbnail %}
-                        <img src="{{ site.baseurl }}/{{ post.thumbnail }}" style="width: 280px"/>
+                        <img src="{{ site.baseurl }}/{{ post.thumbnail }}" alt="{{ post.title }}" style="width: 280px"/>
                     {% else %}
-                        <img src="{{ site.baseurl }}/img/ads_logo.png" style="width: 280px"/>
+                        <img src="{{ site.baseurl }}/img/ads_logo.png" alt="{{ post.title }}" style="width: 280px"/>
                     {% endif %}
                 </div>
     

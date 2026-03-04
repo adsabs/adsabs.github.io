@@ -6,9 +6,9 @@ Died: January 24, 1981, Tucson, Arizona, USA
 
 Known as the “first lady of Harvard College Observatory” during the directorship of her husband, Harlow Shapley ([0000 0001 1027 0109](https://isni.org/isni/0000000110270109)), Martha Shapley (nee Betz) was an authority on eclipsing binaries in her own right and an accomplished mathematician. 
 
-[Scientific Contributions](https://scixplorer.org/public-libraries/jqWiU27iTyuNgy4dd5tnQg) of Martha Shapley 
+{% if include.ads %}[Scientific Contributions](https://ui.adsabs.harvard.edu/public-libraries/jqWiU27iTyuNgy4dd5tnQg){% else %}[Scientific Contributions](https://scixplorer.org/public-libraries/jqWiU27iTyuNgy4dd5tnQg){% endif %} of Martha Shapley 
 
-[Biographical Works](https://scixplorer.org/public-libraries/Kk-Cnxx_Qriryu0DxU6Z-g) about Martha Shapley
+{% if include.ads %}[Biographical Works](https://ui.adsabs.harvard.edu/public-libraries/Kk-Cnxx_Qriryu0DxU6Z-g){% else %}[Biographical Works](https://scixplorer.org/public-libraries/Kk-Cnxx_Qriryu0DxU6Z-g){% endif %} about Martha Shapley
 
 Keywords:  [eclipsing binary stars](https://astrothesaurus.org/uat/444), [computational astronomy](https://astrothesaurus.org/uat/293), [history of astronomy](https://astrothesaurus.org/uat/1868), [Harvard College Observatory](https://platestacks.cfa.harvard.edu/observatories), [women astronomical computers](https://platestacks.cfa.harvard.edu/women-at-hco)
 

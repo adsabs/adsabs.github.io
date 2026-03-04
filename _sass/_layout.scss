@@ -185,6 +185,22 @@ h3 {
   font-size: 22px;
 }
 
+.post-author,
+.post-date {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.post-content p {
+  line-height: 1.5;
+}
+
+.panel-body {
+  p {
+    line-height: 1.5;
+  }
+}
+
 .search-bar-container *,
 .search-bar-container *:before,
 .search-bar-container *:after {
@@ -444,7 +460,7 @@ h2 {
     padding: 0 30px;
   }
   .__footer_brand {
-    line-height: 1.1.5;
+    line-height: 1.5;
   }
   .__footer_brand_extra {
     color: rgba(255, 255, 255, 0.5);
@@ -456,6 +472,10 @@ h2 {
   }
 
   .__footer_brand_logos {
+    a {
+      display: inline-block;
+      min-height: 24px;
+    }
     #nasa-logo {
       width: 80px;
     }
@@ -480,6 +500,8 @@ h2 {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 100;
+    display: inline-block;
+    min-height: 24px;
     &:hover {
       color: #5683e0;
     }
@@ -487,7 +509,7 @@ h2 {
 
   li {
     line-height: 1.25;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 }
 

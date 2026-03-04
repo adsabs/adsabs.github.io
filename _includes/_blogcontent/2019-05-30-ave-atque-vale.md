@@ -4,7 +4,7 @@ ADS Classic, a pioneer of the Information Age, died at 3:19 pm EDT on 30 May 201
 Conceived near the dawn of the internet era, and born, following a difficult gestation, after the first cup of coffee, the Abstract Service, as it was then called, had many parents.  In approximate time order: Michael Kurtz, Joyce Rey-Watson, Geoff Shaw, Peter Ossorio, Steve Murray, Guenther Riegler, Frank Giovane, Margaret Geller, Guenther Eichhorn, Todd Karakashian, Carolyn Stern Grant, and Alberto Accomazzi.
 
 <div class="text-center">
-        <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_05_30_ave-1.png" width="50%" /><img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_05_30_ave-2.png" width="50%"/>
+        <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_05_30_ave-1.png" width="50%" alt="Screenshot of ADS Classic interface at the time of its birth in the early 1990s" /><img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_05_30_ave-2.png" width="50%" alt="Screenshot of ADS Classic interface at the time of its retirement in 2019"/>
 <em>ADS Classic at the time of its birth, and at the time of its death.</em>
 </div>
 <br>

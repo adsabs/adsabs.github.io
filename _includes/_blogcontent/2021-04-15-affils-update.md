@@ -3,7 +3,7 @@ We publicly introduced our affiliations feature in a [blog post](../blog/affilia
 
 Users should note that while affiliation information is more than 80% complete across all literature, not all records contain an affiliation. We strongly recommend combining affiliation searches with author searches for best results.
 
-### What are Affiliations?
+## What are Affiliations?
 
 An affiliation is whatever metadata a bibliographic record contains listing a contributing author's institutional location and/or membership(s).  In nearly all modern literature, affiliation metadata is specifically fielded as such by publishers, and can be extracted, tagged, and made available for search.  The ADS has always maintained affiliation data as a separate field within records and we encourage authors and publishers to include this with their author metadata. What has changed has been the inclusion of affiliation as a searchable field, and the assignment of unique identifiers to individual affiliation strings to improve their discoverability.
 
@@ -13,28 +13,28 @@ The ADS has developed a curated database of affiliation identifiers where we hav
 
 These identifiers power our affiliation search feature, allowing you to search and select literature on the basis of affiliation data.  With the ADS, you have two ways to use affiliation data in your searches: through the affiliation search filter, and directly in your search queries.  We show you how below.
 
-### Using affiliations in your literature search
+## Using affiliations in your literature search
 
 **Affiliation filtering**
 
 The ADS interface enables you to refine your search using filters, located on the left hand side of the default view of search results.  When you search for anything in the ADS, your search results also automatically populate all of the search filters which let you refine your results.  There are several filters including: author, collection, keywords, and institutions.  The Institutions filter is where you use the affiliation data to refine your searches.  For example, if you search for "gravitational waves" and "year:2020" you'll get a list of over 3,300 papers published in the year 2020 that contain the phrase "gravitational waves".  If you click *INSTITUTIONS* in the left column, you'll get an abbreviated list of the most-frequently seen affiliations among those 3,300 papers:
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_1.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_1.jpg" alt="Screenshot of the ADS Institutions filter showing top affiliations for gravitational waves papers in 2020" />
 </div>
 <br>
 
 If you select one of those affiliations (by checking the box to the left), you'll see the following:
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_2.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_2.jpg" alt="Screenshot of the ADS Institutions filter showing limit to and exclude options after selecting Max Planck Institute" />
 </div>
 <br>
 
 Note especially the "limit to" and "exclude" options; if you select "limit to", your original set of results will be refined to just those 155 papers having one or more coauthors from the Max Planck Institute:
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_3.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_affil_drop_3.jpg" alt="Screenshot of ADS search results filtered to 155 papers with Max Planck Institute co-authors" />
 </div>
 <br>
 
@@ -87,12 +87,12 @@ If you do not see the results you expect, one or more of the following may help:
 
 
 
-### Curated affiliation metadata: by the numbers
+## Curated affiliation metadata: by the numbers
 
 We significantly expanded curated affiliation coverage in the ADS over the past twelve months.  In January 2020, the ADS contained about 38.6 million individual author-affiliation pairs -- each affiliation of each author of all the papers, articles, and books in the ADS.  Today, that number is about 42 million, an increase of 3.2 million (8%).  Of those 42 million strings, 34.7 million (83%) have been matched to identifiers and can be searched via the affiliation filter.  The remaining 7.3 million (17%) have not; they can be searched as a text field (i.e. with the "aff" keyword), but not via the *INSTITUTIONS* filter.
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_matched.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_matched.jpg" alt="Chart showing 83% of ADS author-affiliation pairs matched to identifiers in 2021, up from 57% in 2020" />
 </div>
 <br>
 
@@ -100,13 +100,13 @@ This is a large improvement over last year's numbers, where only 22 million (57%
 
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_unmatched.jpg" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2021-04-15_unmatched.jpg" alt="Chart showing the distribution of unmatched ADS affiliation strings, with 17% remaining unmatched in 2021" />
 </div>
 <br>
 
 We streamlined the process of matching identifiers in 2020; matching strings to identifiers is still done by hand but we sped up the process by scripting aspects of the text manipulation and extraction process, searching for substrings common to different affiliation strings, and then using simple text processing and human analysis to confirm identifications.  We placed particular emphasis on looking for substrings that appeared thousands of times, even if the individual affiliations containing those substrings may be less common.  Many affiliations fell into this category, particularly individual universities represented in multiple categories in the ADS, such as physics, astronomy, chemistry, computer science and engineering.  By targeting those substrings that occur most frequently, we can generate more matches overall, and we added them more quickly -- it was easier to disambiguate among departments and laboratories in a single university than across multiple institutions.  This work is still in progress, and we are shifting focus to the country-level to ensure more complete international coverage.
 
-### Improvements and additions over the past year
+## Improvements and additions over the past year
 
 Another reason our coverage increased is that we expanded the number of identifiers to nearly 7000 different entities and parent-child relationships, which lets us match more institutions that are easily assignable, and helps us disambiguate entities that may have multiple parents or warrant better subdivision at the department or institution level.
 
@@ -126,7 +126,7 @@ We have also added affiliation IDs for a partial list of Tribal Colleges and Uni
 
 There are comparatively few publications by authors affiliated with Tribal Colleges and Universities, and the papers written by TCU authors and coauthors in the ADS primarily focus on topics in Environmental Science and Science Education, which are not currently part of our core literature.  Of those schools represented, Salish Kootenai College (Montana), Northwest Indian College (Pacific NW), Din&eacute; College (Arizona) and Fond du Lac Tribal College (Minnesota) have the most publications.  TCUs may become more frequently represented if our scope widens to include more related sciences (e.g. planetary science and allied literature).  We also want to ensure that their contributions are noted in existing literature, and that their contributions will be more easily tracked if researchers from these institutions increase their participation in the ADS core fields of astronomy and physics.
 
-### Improving Affiliation Metadata: You Can Help!
+## Improving Affiliation Metadata: You Can Help!
 
 Affiliation identification is an ongoing process and always will be.  One of our tasks over the past year has been to fix errors in our affiliations metadata, including badly-parsed affiliations; we focused on papers having either the longest author list or the highest citations, but we know there are still some data that needs to be fixed.  Likewise, there are many cases where an author has multiple affiliations and our representation is correct but can't be cleanly split into independent entities -- think of an author who lists "Departments of Chemistry and Physics, University of..." where we assigned IDs to both departments.  We may identify such strings as one or the other, depending on which department we searched for first.  In these cases, our ID is technically correct, but incomplete.
 

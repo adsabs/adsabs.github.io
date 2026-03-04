@@ -1,9 +1,9 @@
-### Introducing the Science Explorer Ambassador Program
+## Introducing the Science Explorer Ambassador Program
 
 The [Science Explorer (SciX)](https://scixplorer.org) team is thrilled to announce the launch of the SciX Ambassador Program! This initiative marks a new chapter in the evolution of the Astrophysics Data System (ADS) into SciX, with a significant leap in promoting interdisciplinary communication and research. To further this mission, we are seeking approximately 12 researchers to become our Lead Ambassadors, representing diverse disciplines across NASA, including Astrophysics, Planetary Science, Earth Science, Heliophysics, and Biological & Physical Sciences. Our goal is to drive forward the vision of interdisciplinary engagement and innovation as a cornerstone of SciX.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/SciX_AmbassadorProgram_Flyer.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/SciX_AmbassadorProgram_Flyer.png" alt="SciX Ambassador Program promotional flyer with program details and application information"/>
 <br>
 <em>SciX Ambassador Program Flyer
 </em>
@@ -22,7 +22,7 @@ The Lead Ambassadors will serve a two-year term, during which they will particip
 
 The SciX Ambassador Program aims to empower ambassadors to effectively promote the platform, improve it through community feedback, gain visibility and recognition for their work, and build a robust online community that connects researchers from diverse fields. Through their efforts, the ambassadors will play a pivotal role in advancing the mission of interdisciplinary research and open science.
 
-### Key Program Highlights
+## Key Program Highlights
 
 - **Presentations:** Ambassadors will present on SciX twice a year in various formats, such as locally at their institute, virtually at a meeting, or in person at a workshop.
 - **Workshop:** A 2.5-day workshop at the [Center for Astrophysics \| Harvard & Smithsonian](https://www.cfa.harvard.edu/) (August 21 - 23, 2024), where ambassadors will connect with the SciX team, learn community engagement skills, and receive training on the SciX platform.

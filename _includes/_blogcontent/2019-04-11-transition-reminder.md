@@ -1,8 +1,8 @@
 
-### Update (September 11, 2019)
+## Update (September 11, 2019)
 *This post has been updated with the latest schedule. Some links have been updated.*
 
-### Update (May 29, 2019)
+## Update (May 29, 2019)
 *This post has been updated to reflect that the library set operations and the "perform actions on selected articles" functionality, previously listed in the "Classic features in progress" section, are now available.*
 
 ADS Classic, [online since 1994](https://ui.adsabs.harvard.edu/about/history/), will be retired at the end of October 2019. (For more on the technical need for this upgrade, see [this previous blog post](../blog/technical).) Regular Classic users may have noticed some changes over the last few months, including an increasing number of warnings and pointers to the [new ADS](https://ui.adsabs.harvard.edu/), meant to encourage users to begin routinely using the new interface. As of the date of this post, Classic is still available, though its remaining time is limited. Now is an excellent time for the remaining Classic users to begin to familiarize themselves with the new system and to [contact us](mailto:adshelp@cfa.harvard.edu) if they run into problems. Below, we list a few important things for users to know as they begin to use the new ADS.
@@ -23,7 +23,7 @@ The new ADS and Classic have separate user databases, which means that user acco
 As with user accounts, libraries in Classic and the new ADS are stored in different databases and will not be transferred automatically. However, we do offer a tool to help import libraries from the old system into the new one. After creating a new user account and logging in, users can link their old account to their new one and [import their libraries](../help/libraries/legacy-importing) using the import tool. There are several things to note about the import tool: all libraries in the old account will be imported, though unwanted libraries may be deleted after import. Also, the tool imports libraries, it does not link them, so changes made to libraries in the old system after import will not propagate to the new one. Other guidelines for using this tool can be found on the [help page](../help/libraries/legacy-importing).
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/help/img/import_help_02.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/help/img/import_help_02.png" alt="Import Classic libraries into the new ADS interface" />
 <em>Import Classic libraries into the new ADS</em>
 </div>
 <br>
@@ -34,7 +34,7 @@ Users with an account in the new ADS have access to settings that allow them to 
 In addition to the library link server, users with accounts can set some [application settings](https://ui.adsabs.harvard.edu/user/settings/application). These include setting a default database(s) or collection(s) for searches, such as limiting results to astronomy only by default; automatically hiding the left and right sidebars on the search results page; and defining custom formats for exporting citations.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_02_13_application-settings.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_02_13_application-settings.png" alt="ADS application settings page showing customization options" />
 <em>Application settings</em>
 </div>
 <br>
@@ -53,7 +53,7 @@ These features were previously listed as "in-progress" but are now available in 
 - Perform actions on selected articles: Second order operations, such as retrieving the references of selected articles, are now available for a subset of articles manually selected from the search results set. To access this feature, select the desired articles in the search results, then click the Explore menu and choose the desired operation
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_04_11_perform-actions-on-selected_newADS.gif" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2019_04_11_perform-actions-on-selected_newADS.gif" alt="Animated demo of performing actions on selected articles in the new ADS" />
 <em>Performing actions on selected articles in the new ADS</em>
 </div>
 <br>

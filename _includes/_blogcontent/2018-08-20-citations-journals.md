@@ -22,7 +22,7 @@ We have also run the query on all refereed articles in the ADS; <a href="https:/
 In the next blog posts we will examine individual journals; here we look at the behavior of the sample as a whole.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt1_1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt1_1.png" alt="Line chart showing growth in astronomy paper counts from 1997 to 2016 for in-sample and out-of-sample journal sets"/>
 <em>Figure 1</em>
 </div>
 <br>
@@ -34,7 +34,7 @@ The In Sample group shows a steady 4% yearly increase in number of papers publis
 Most of the Out of Sample journal articles  are not from small astronomy journals (this has been steadily declining from about 10% to about 3% now); instead, they are from nearby physics/geophysics related disciplines.  Assuming these fields are not growing any faster than the 4% rate of astronomy (or all science) we can conclude that the interdisciplinary reach of astronomy is growing by about 2.7% per year, a 25 year doubling period.  As a percentage, the Out of Sample papers grew from 25% to 40% of the total during the 20 year period.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt1_2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt1_2.png" alt="Line chart showing total citation counts by publication year for in-sample and out-of-sample astronomy journals"/>
 <em>Figure 2</em>
 </div>
 <br>

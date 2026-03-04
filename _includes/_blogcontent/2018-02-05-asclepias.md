@@ -6,13 +6,32 @@ Soon, if not already, the research lifecycle will be fully digital. Every stage 
     Figure source: "Research Life Cycle" image from UC Irvine [Library Digital Scholarship Services](https://www.lib.uci.edu/dss)
 </div>
 
-| Organization | Team Members |
-| :------------- |:-------------|
-
-| <img src="{{site.baseurl}}/blog/images/blog_2018_02_05_AAS_logo.png" alt="AAS" class="img-responsive">        | Gus Muench           | 
-| <img src="{{site.baseurl}}/blog/images/blog_2018_02_05_ADS_logo.png" alt="ADS" class="img-responsive">      | Alberto Accomazzi, Sergi Blanco-Cuaresma, Edwin Henneken | 
-| <img src="{{site.baseurl}}/blog/images/blog_2018_02_05_Zenodo_logo.png" alt="Zenodo" class="img-responsive">      | Lars Holm Nielsen, Krzysztof Nowak , Alexander Ioannidis      |  
-| <img src="{{site.baseurl}}/blog/images/blog_2018_02_05_TR_logo.png" alt="Robitaille" class="img-responsive"> | Thomas Robitaille      | 
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Organization</th>
+      <th scope="col">Team Members</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="{{site.baseurl}}/blog/images/blog_2018_02_05_AAS_logo.png" alt="AAS" class="img-responsive"></td>
+      <td>Gus Muench</td>
+    </tr>
+    <tr>
+      <td><img src="{{site.baseurl}}/blog/images/blog_2018_02_05_ADS_logo.png" alt="ADS" class="img-responsive"></td>
+      <td>Alberto Accomazzi, Sergi Blanco-Cuaresma, Edwin Henneken</td>
+    </tr>
+    <tr>
+      <td><img src="{{site.baseurl}}/blog/images/blog_2018_02_05_Zenodo_logo.png" alt="Zenodo" class="img-responsive"></td>
+      <td>Lars Holm Nielsen, Krzysztof Nowak, Alexander Ioannidis</td>
+    </tr>
+    <tr>
+      <td><img src="{{site.baseurl}}/blog/images/blog_2018_02_05_TR_logo.png" alt="Thomas Robitaille" class="img-responsive"></td>
+      <td>Thomas Robitaille</td>
+    </tr>
+  </tbody>
+</table>
 
 What is so special about software citation that it takes so many parties to deal with it properly? This becomes clear when you think about how to move from a position where the curation and preservation of software products has been taken care of, to one where these products are discoverable, together with their links to the scholarly literature (by means of citations or otherwise). One challenge is that currently, there is no established standard or policy for citing software in scholarly publications. Writing a “software paper” may seem like a work-around, but it is not a very good one. It can work if you just write one, static piece of software. You describe how it works, acknowledge contributors and, perhaps, where people can get a copy, and you’re done. In all other cases, even though it is better than nothing, a “software paper” is just a bad proxy for representing all aspects. Software is a highly dynamical object, especially when it evolves from version to version, with different contributors and different characteristics. For this reason, it is important to capture the acknowledgement of actual software products. Since reworking the entire, established process of capturing scholarly acknowledgement (read: “citations”) is extremely hard, to say the least, adapting the existing mechanism of finding citations to include software, will be the next best thing. 
 
@@ -32,12 +51,21 @@ Thanks to Zenodo’s interoperability with Github, records were created for both
 
 The next step is to go through the reference data in the ADS holdings and see if we find any evidence of the Zenodo DOIs, corresponding with the different versions of both *triangle.py* and *corner.py*. The table below shows the results (as of Feburary 5, 2018).
 
-|        |           |  |
-| ------------- |:-------------:| -----:|
-| 10.5281/zenodo.10598      | triangle | 2 |
-| 10.5281/zenodo.11020      | triangle      |   40 |
-| 10.5281/zenodo.45906 | corner      |    16 |
-| 10.5281/zenodo.53155 | corner      |    7 |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Zenodo DOI</th>
+      <th scope="col">Module</th>
+      <th scope="col">Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>10.5281/zenodo.10598</td><td>triangle</td><td>2</td></tr>
+    <tr><td>10.5281/zenodo.11020</td><td>triangle</td><td>40</td></tr>
+    <tr><td>10.5281/zenodo.45906</td><td>corner</td><td>16</td></tr>
+    <tr><td>10.5281/zenodo.53155</td><td>corner</td><td>7</td></tr>
+  </tbody>
+</table>
 
 This analysis shows that authors are already citing the different versions of both modules, but also that it results in a significant amount of additional citations! 
 

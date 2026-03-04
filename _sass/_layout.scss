@@ -129,6 +129,16 @@ h3 {
   line-height: 1.5;
 }
 
+// Ensure standalone list links and ambassador profile links meet 44px minimum
+// target size (WCAG 2.5.5, sia-r111).
+.post-content li > a,
+.post-content blockquote p > a,
+.textlabel p > a {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+}
+
 .panel-body {
   p {
     line-height: 1.5;

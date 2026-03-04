@@ -10,7 +10,7 @@ In this blog, I'll share some of my favorite Scix features that I wish I had kno
 ### 1- Astronomy is still a main area of support and interdisciplinary content is a feature and not a bug. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image1.png" alt="Screenshot of the SciX interface showing the discipline drop-down menu with Astrophysics selected" />
 <br>
 </div>
 <br>
@@ -19,7 +19,7 @@ The classic form is still available for those who prefer it. You can access it b
 
 The inclusion of additional scientific disciplines in SciX creates new opportunities for cross-disciplinary collaboration and discovery. Just as in ADS, you can limit your search results to astronomy by using the filter ``collection:astronomy`` in your search query or by selecting "astronomy" under the filter options on the left side of the interface.
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image2.png" alt="Screenshot of SciX search results filtered to astronomy collection using the collection:astronomy query" />
 <br>
 </div>
 <br>
@@ -31,14 +31,14 @@ Your ADS account and account settings are fully integrated and shared with SciX,
 Libraries can be designated as public, shared, or private to suit your needs. **A feature currently exclusive to SciX** is the ability to add annotations to saved papers—extremely useful for documenting why you saved a particular paper in a specific library. This is one extra small reason to do the change from ADS to SciX and a reminder that future development will focus on the SciX platform and new features will be made available on SciX.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image3.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image3.png" alt="Screenshot of a SciX library showing papers with annotation notes added to saved entries" />
 <br>
 </div>
 <br>
 Make sure you have an account to be able to save papers to your libraries. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image4.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image4.png" alt="Screenshot of the SciX account sign-in prompt encouraging users to log in to save papers" />
 <br>
 </div>
 <br>
@@ -71,7 +71,7 @@ Libraries can serve as input for the [4 second-order operators](https://ads.harv
 which you can further modify and explore.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image5.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads_to_scix_image5.png" alt="Screenshot of the SciX library Explore menu showing second-order operator options including similar, trending, useful, and reviews" />
 <br>
 </div>
 <br>

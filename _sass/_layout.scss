@@ -351,10 +351,9 @@ h2 {
 }
 
 .__footer_wrapper {
-  background-color: #484f4f;
+  background-color: #000;
   color: white;
-  //font-size: 1.1em;
-  font-size: 0.97058824em;
+  font-size: 1em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   padding: 30px 0;
@@ -366,22 +365,22 @@ h2 {
   }
 
   p {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   & > * {
     padding: 0 30px;
   }
   .__footer_brand {
-    line-height: 1.428571429;
+    line-height: 1.1.5;
   }
   .__footer_brand_extra {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.7em;
     max-width: 300px;
     @media (min-width: $screen-sm-min) {
       width: 100%;
     }
+    line-height: 1.5;
   }
 
   .__footer_brand_logos {
@@ -394,6 +393,7 @@ h2 {
     #cfa-logo {
       width: 100px;
       padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }

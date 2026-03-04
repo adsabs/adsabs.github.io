@@ -9,11 +9,11 @@ layout: about_layout_scix
   </script>
   {% endfor %}
 
-  <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
+  <nav class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
     {%include about-left-nav_scix.html %}
-  </div>
+  </nav>
 
-  <div class="post main-content col-xs-12 col-md-9">
+  <main class="post main-content col-xs-12 col-md-9">
     <button
       class="btn btn-primary visible-sm-inline-block visible-xs-inline-block"
       data-toggle="off-canvas"
@@ -25,16 +25,16 @@ layout: about_layout_scix
       {%unless page.no-header %}
       <h2 class="post-title">{{ page.title }}</h2>
       {% if page.subtitle %}
-      <h4 class="post-subtitle" style="color: #666; margin-top: -10px;">{{ page.subtitle }}</h4>
+      <div class="post-subtitle" style="color: #666; margin-top: -10px; font-weight: bolder;">{{ page.subtitle }}</div>
       {% elsif page.team_id %}
         {% assign team_member = site.data.team.team_members | where: "id", page.team_id | first %}
         {% if team_member %}
-      <h4 class="post-subtitle" style="color: #666; margin-top: -10px;">{{ team_member.title }}</h4>
+      <div class="post-subtitle" style="color: #666; margin-top: -10px; font-weight: bolder;">{{ team_member.title }}</div>
         {% endif %}
       {% endif %}
       {% endunless %}
     </header>
 
     <article class="post-content">{{ content }}</article>
-  </div>
+  </main>
 </div>

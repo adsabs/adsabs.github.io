@@ -1,5 +1,6 @@
 ---
 layout: blog_page_scix
+title: "All Posts"
 ---
 
 [Sign up](http://eepurl.com/ggoxhn) for our monthly email updates.

@@ -1202,12 +1202,13 @@ no-header: true
 }
 
 .faq-answer a {
-  color: #049DD9;
+  color: #0000FF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .faq-answer a:hover {
-  color: #5FBFAE;
+  color: #0000FF;
   text-decoration: underline;
 }
 

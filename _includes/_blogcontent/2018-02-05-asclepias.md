@@ -2,12 +2,13 @@
 Soon, if not already, the research lifecycle will be fully digital. Every stage can be captured by one or more digital objects, each of which carries specific knowledge with regards to that stage. The most obvious inhabitant of this digital cosmos is the scholarly publication, but there are many more species, ranging from observation proposals, datasets, software to posters and presentations. With repositories like mission data archives, [Figshare](https://figshare.com/) and [Zenodo](https://zenodo.org/), all of these objects can, in principle, be made discoverable and citable. In this blog we focus on one particular digital object: software. Enter ***Asclepias***! Asclepias, “*Enabling software citation and discovery workflows*”, is a project funded through a grant from the Alfred P. Sloan Foundation to the American Astronomical Society (AAS), and it involves collaboration between the AAS, Zenodo, the ADS and Thomas Robitaille as freelancer. Why this collaboration? It reflects the fact that no one stakeholder can “solve” the problem of software citation.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_lifecycle.jpg" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_lifecycle.jpg" alt="Diagram showing the research life cycle stages from proposal through publication and data archiving"/>
     Figure source: "Research Life Cycle" image from UC Irvine [Library Digital Scholarship Services](https://www.lib.uci.edu/dss)
 </div>
 
-|         |           | 
-| :------------- |:-------------| 
+| Organization | Team Members |
+| :------------- |:-------------|
+
 | <img src="{{site.baseurl}}/blog/images/blog_2018_02_05_AAS_logo.png" alt="AAS" class="img-responsive">        | Gus Muench           | 
 | <img src="{{site.baseurl}}/blog/images/blog_2018_02_05_ADS_logo.png" alt="ADS" class="img-responsive">      | Alberto Accomazzi, Sergi Blanco-Cuaresma, Edwin Henneken | 
 | <img src="{{site.baseurl}}/blog/images/blog_2018_02_05_Zenodo_logo.png" alt="Zenodo" class="img-responsive">      | Lars Holm Nielsen, Krzysztof Nowak , Alexander Ioannidis      |  
@@ -20,13 +21,13 @@ This is exactly what the Asclepias project focuses on. Its goal is to **promote 
 What does all of this mean in practice? Let’s look at an example. The Python module *corner.py* (previously known as *triangle.py*) is widely used in astronomy. Its main developer, Daniel Foreman-Mackey, made it available on [Github](https://github.com/dfm/corner.py) and published an [entry](http://joss.theoj.org/papers/10.21105/joss.00024) in the Journal of Open Source Software (JOSS). The ADS has a [record](http://ui.adsabs.harvard.edu/#abs/2016JOSS.2016...24F/abstract) for this JOSS software paper, and as a result citations are being captured (provided people cite this record properly). As of November 9, 2017, this JOSS paper accumulated 77 citations.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_JOSS_corner.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_JOSS_corner.png" alt="Screenshot of the ADS record for the corner.py JOSS software paper showing citation count"/>
 </div>
 
 Thanks to Zenodo’s interoperability with Github, records were created for both *triangle.py* and *[corner.py](https://doi.org/10.5281/zenodo.53155)*. Zenodo mints a DOI for each software version and also a so-called concept DOI. The concept DOI is available for when you don’t want to cite a specific software version, but just “the latest”. The crucial step that make this interoperability possible is the authentication within Zenodo, using your Github account, allowing Zenodo to view and retrieve your repositories on Github. For details, see: https://guides.github.com/activities/citable-code/.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_zenodo.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2018_02_05_zenodo.png" alt="Screenshot of Zenodo record for the corner.py software package showing DOI and version metadata"/>
 </div>
 
 The next step is to go through the reference data in the ADS holdings and see if we find any evidence of the Zenodo DOIs, corresponding with the different versions of both *triangle.py* and *corner.py*. The table below shows the results (as of Feburary 5, 2018).

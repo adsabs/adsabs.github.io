@@ -63,7 +63,6 @@
 
     }
 
-
     h3 {
         font-size: $base-font-size;
         font-weight: bold;
@@ -114,10 +113,24 @@
     }
 
     li.list-group-item {
-      padding-left: 10%;
+      // Zero out Bootstrap's padding so the child anchor fills the full tap
+      // area (sia-r68 fix: li>a nesting requires anchor to own the padding).
+      padding: 0;
       border-left: 4px solid transparent !important;
       border-radius: 0 !important;
 
+      > a {
+        display: block;
+        padding: 10px 15px 10px 10%;
+        min-height: 44px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          background-color: $list-group-hover-bg;
+        }
+      }
     }
 
     li.active.list-group-item {

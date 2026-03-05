@@ -3,14 +3,14 @@ layout: post
 category: userpreferences
 ---
 
-<h2> User Preferences </h2>
+<h1> User Preferences </h1>
 
 User preferences store relevant information for a specific user. The following documentation is an overview of the current features available to a user.
 
 {% assign posts = site.categories[page.category] | sort:"order"  %}
     {% for post in posts %}
         {% assign section_id = post.section_id | default: post.slug %}
-        {% include _help/section_heading.html id=section_id title=post.title %}
+        {% include _help/section_heading.html id=section_id title=post.title level=2 %}
         {{post.content}}
     {% endfor %}
 

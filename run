@@ -3,7 +3,7 @@ set -euo pipefail
 
 usage() {
   cat <<EOF
-Usage: ./site <command>
+Usage: ./run <command>
 
 Commands:
   serve   Start dev server at http://127.0.0.1:4000 (livereload enabled)

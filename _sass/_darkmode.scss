@@ -408,7 +408,8 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
     }
   }
 
-  .left-nav a {
+  .left-nav a,
+  .left-nav button {
     color: $darkmode-text !important;
   }
 

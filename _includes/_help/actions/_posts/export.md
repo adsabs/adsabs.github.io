@@ -13,7 +13,7 @@ When the tool is opened, you will have the opportunity to review the export resu
 ### Export Formats
 
 Use this button to export your search results in different formats.  Currently available options are:
-###### 1. Tagged Formats:
+#### 1. Tagged Formats:
 * BibTeX
 * BibTeX ABS
 * ADS (generic tagged abstracts)
@@ -23,13 +23,13 @@ Use this button to export your search results in different formats.  Currently a
 * RefWorks
 * MEDLARS
 
-###### 2. LaTeX Formats:
+#### 2. LaTeX Formats:
 * AASTeX
 * Icarus
 * MNRAS
 * Solar Physics (SoPh)
 
-###### 3. XML Formats:
+#### 3. XML Formats:
 * DC (Dublin Core) XML
 * REF-XML
 * REFABS-XML

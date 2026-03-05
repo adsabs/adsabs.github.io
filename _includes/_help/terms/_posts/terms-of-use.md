@@ -10,7 +10,7 @@ Use of {{ include.site }} services implies that the user has read and agrees to 
 
 4. {{ include.site }} makes reasonable efforts to ensure that the contents of its archives are accurate. However, {{ include.site }} does not guarantee the completeness, accuracy or usefulness of its databases and search interfaces. {{ include.site }} is not to be considered liable for any delay, downtime, or other failure of performance in providing its services.
 
-### Acknowledgements
+## Acknowledgements
 
 If you wish to acknowledge the services provided by {{ include.site }} in a publication, kindly use a phrase such as the following:
 

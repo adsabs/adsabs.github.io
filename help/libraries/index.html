@@ -3,7 +3,7 @@ layout: post
 category: libraries
 ---
 
-<h2> ADS Libraries </h2>
+<h1> ADS Libraries </h1>
 
 <p>ADS Libraries are designed to help you create and organize collections of bibliographic records. You can use them to keep track of sources for an article, build your CV, or share references with colleagues.</p>
 
@@ -13,7 +13,7 @@ category: libraries
     {% for post in posts %}
         {% unless post.hidden %}
         {% assign section_id = post.section_id | default: post.slug %}
-        {% include _help/section_heading.html id=section_id title=post.title %}
+        {% include _help/section_heading.html id=section_id title=post.title level=2 %}
         {{post.content}}
         {% endunless %}
     {% endfor %}

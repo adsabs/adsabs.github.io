@@ -6,6 +6,7 @@
   min-width: 44px;
   min-height: 44px;
   position: fixed;
+  border: none;
   border-radius: 50%;
   right: 32px;
   bottom: 32px;
@@ -17,6 +18,7 @@
   align-items: center;
   z-index: 100;
   font-size: 1.5rem;
+  padding: 0;
 }
 
 // dark mode colors

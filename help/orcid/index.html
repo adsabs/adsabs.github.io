@@ -3,12 +3,12 @@ layout: post
 category: orcid
 ---
 
-<h2> ORCID + ADS  </h2>
+<h1> ORCID + ADS  </h1>
 
 
 {% assign posts = site.categories[page.category] | sort:"order"  %}
     {% for post in posts %}
         {% assign section_id = post.section_id | default: post.slug %}
-        {% include _help/section_heading.html id=section_id title=post.title %}
+        {% include _help/section_heading.html id=section_id title=post.title level=2 %}
         {{post.content}}
     {% endfor %}

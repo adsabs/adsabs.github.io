@@ -10,6 +10,8 @@ category: libraries-scix
 <p>Please note: SciX Libraries are available only to registered users. If you don't have an account yet, head over to the <a href="https://scixplorer.org/user/account/register">sign-up page</a> to get started.</p>
 {% assign posts = site.categories.libraries-scix | sort:"order"  %}
     {% for post in posts %}
+        {% unless post.hidden %}
         <h2>{{post.title}}</h2>
         {{post.content}}
+        {% endunless %}
     {% endfor %}

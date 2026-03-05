@@ -125,10 +125,16 @@
         min-height: 44px;
         text-decoration: none;
 
-        &:hover,
-        &:focus {
+        &:hover {
           text-decoration: none;
           background-color: $list-group-hover-bg;
+        }
+
+        &:focus-visible {
+          text-decoration: none;
+          background-color: $list-group-hover-bg;
+          outline: 2px solid #4073dd;
+          outline-offset: -2px;
         }
       }
     }
@@ -141,6 +147,10 @@
       border-left: 4px solid #4073dd !important;
       background: lighten(#C8DEFF, 7%);
       color: #2169DA;
+
+      > a {
+        color: #2169DA;
+      }
     }
 
 }

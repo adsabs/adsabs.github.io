@@ -22,9 +22,9 @@ The same function is available on the abstract page of a single paper.
 The contents of a library can be [exported in a variety of formats]({% if include.ads %}../actions/export{% else %}../../actions-scix/export{% endif %}), including BibTeX and AASTeX. This was designed to facilitate the development of a {{ include.site }} library as a bibliography for a paper in progress, and allow its export into the appropriate format for the journal when ready.
 
 {% if include.ads %}<figure>
-   <img src="/help/img/library-export.png"  class="img-responsive">
+   <img src="/help/img/library-export.png" alt="Screenshot of a library showing the Export button and format selection dropdown" class="img-responsive">
 </figure>{% else %}<figure>
-   <img src="/scixhelp/sciximg/scix-library-export.gif"  class="img-responsive">
+   <img src="/scixhelp/sciximg/scix-library-export.gif" alt="Animated image showing how to export a library in SciX using the Export button" class="img-responsive">
 </figure>{% endif %}
  
 {% if include.ads %}
@@ -32,7 +32,7 @@ The contents of a library can be [exported in a variety of formats]({% if includ
 The [library citation helper](../libraries/citation-helper) is a unique feature specifically available to help build and maintain complete collections. It's designed to evaluate the papers already in a library and suggest related papers that should possibly also be included. 
 
 <figure>
-   <img src="/help/img/library-citation-helper.png"  class="img-responsive">
+   <img src="/help/img/library-citation-helper.png" alt="Screenshot of the library citation helper suggesting related papers not yet in the library" class="img-responsive">
 </figure>
 {% endif %}
 
@@ -40,16 +40,16 @@ The [library citation helper](../libraries/citation-helper) is a unique feature 
 The [citations and read statistics]({% if include.ads %}../actions/analyze{% else %}../../actions-scix/analyze{% endif %}) for a library are available, similar to those available from the search results page or an abstract page. Click on the Metrics button within the library to view.
 
 {% if include.ads %}<figure>
-   <img src="/help/img/library-metrics.png"  class="img-responsive">
+   <img src="/help/img/library-metrics.png" alt="Screenshot of library metrics view showing citation and read statistics charts" class="img-responsive">
 </figure>{% else %}<figure>
-   <img src="/scixhelp/sciximg/scix-library-metrics.gif"  class="img-responsive">
+   <img src="/scixhelp/sciximg/scix-library-metrics.gif" alt="Animated image showing how to access library metrics in SciX" class="img-responsive">
 </figure>{% endif %}
 
 ### Visualizations: paper network, author network, word cloud
 The same [visualizations]({% if include.ads %}../actions/visualize{% else %}../../actions-scix/visualize{% endif %}) available in the search results page are available within a {{ include.site }} library. 
 
 {% if include.ads %}<figure>
-   <img src="/help/img/author_network.png"  class="img-responsive">
+   <img src="/help/img/author_network.png" alt="Screenshot of the author network visualization showing color-coded groups of collaborating authors" class="img-responsive">
 </figure>{% else %}<figure>
-   <img src="/scixhelp/sciximg/scix-author_network.gif"  class="img-responsive">
+   <img src="/scixhelp/sciximg/scix-author_network.gif" alt="Animated image showing the author network visualization in SciX" class="img-responsive">
 </figure>{% endif %}

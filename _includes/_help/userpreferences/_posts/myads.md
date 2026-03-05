@@ -8,7 +8,7 @@ The my{{ include.site }} notification service delivers daily or weekly email upd
 {% if include.ads == true %}
 <div class="scalable scalable-16-9">
   <div class="scalable-content">
-    <iframe src="https://www.youtube.com/embed/qtoz1HlIFik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/qtoz1HlIFik" title="myADS Notification Service Overview" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 </div>
 {% endif %}

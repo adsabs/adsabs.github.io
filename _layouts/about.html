@@ -23,7 +23,9 @@ layout: about_layout
 
     <header class="post-header">
       {%unless page.no-header %}
+      {% if page.title %}
       <h2 class="post-title">{{ page.title }}</h2>
+      {% endif %}
       {% if page.subtitle %}
       <div class="post-subtitle" style="color: #666; margin-top: -10px;">{{ page.subtitle }}</div>
       {% elsif page.team_id %}

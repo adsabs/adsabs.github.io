@@ -17,7 +17,9 @@ layout: help_layout
 
     <header class="post-header">
       {%unless page.no-header %}
+      {% if page.title %}
       <h2 class="post-title">{{ page.title }}</h2>
+      {% endif %}
       {% endunless %}
     </header>
 

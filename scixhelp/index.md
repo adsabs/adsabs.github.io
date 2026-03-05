@@ -1460,9 +1460,11 @@ function toggleVideo(videoId) {
       const embedWrapper = document.createElement('div');
       embedWrapper.className = 'video-embed-wrapper';
       
+      const videoTitle = (videoHeader.querySelector('h3') || {}).textContent || '';
       const iframe = document.createElement('iframe');
       // Add enablejsapi=1 to enable YouTube API control
       iframe.src = 'https://www.youtube.com/embed/' + videoYoutubeId + '?autoplay=1&enablejsapi=1';
+      iframe.setAttribute('title', videoTitle);
       iframe.setAttribute('frameborder', '0');
       iframe.setAttribute('allow', 'autoplay; encrypted-media');
       iframe.setAttribute('allowfullscreen', '');

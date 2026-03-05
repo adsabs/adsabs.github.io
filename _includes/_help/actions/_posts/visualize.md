@@ -49,7 +49,7 @@ Clicking on a group will also show you in the right pane the most commonly refer
 ### Results Graph
 When you look at a list of {{ include.site }} search results, you can sort by date published, by citation count, or by recent popularity of the article in {{ include.site }}, but you cannot see all of these dimensions at once, and you cannot easily see outliers. The results graph is a customizable scatter chart that allows you to assign values to the x and y axes as well as to the radius of the circle representing a paper.
 
-{% if include.ads %}<img src="/help/img/scatter-plot.png" class="img-responsive">{% endif %}
+{% if include.ads %}<img src="/help/img/scatter-plot.png" alt="Scatter plot of search results showing date on x-axis, citation count on y-axis, and circle size representing recent reads" class="img-responsive">{% endif %}
 
 #### How to use it
 
@@ -64,7 +64,7 @@ The default graph shows the [recent views]({% if include.ads %}../actions/analyz
 ### Concept Cloud
 The concept cloud shows you **frequently appearing** and **unique words** in your search results.
 
-{% if include.ads %}<img src="/help/img/word-cloud.png" class="img-responsive">{% endif %}
+{% if include.ads %}<img src="/help/img/word-cloud.png" alt="Word cloud of frequently appearing and unique keywords in a set of search results" class="img-responsive">{% endif %}
 
 #### How the concept cloud is made
 The concept cloud takes words from the titles and abstracts of your search results, counts their frequencies and compares them to the same word's frequency across the entire {{ include.site }} corpus.
@@ -76,5 +76,5 @@ The concept cloud takes words from the titles and abstracts of your search resul
 ### Instructions on Downloading Graphics as High-Quality PNGS in Chrome
 1. <a href="https://nytimes.github.io/svg-crowbar/"> Install the SVG Crowbar 2 Bookmarklet</a>
 2. Open the graph in {{ include.site }} (currently the paper and author networks have the best support)
-3. Click the SVG Crowbar icon, you will see something that looks a bit messy, like this: {% if include.ads %}<img src="/help/img/svg-crowbar.png" class="img-responsive">{% endif %}
+3. Click the SVG Crowbar icon, you will see something that looks a bit messy, like this: {% if include.ads %}<img src="/help/img/svg-crowbar.png" alt="Screenshot of the SVG Crowbar bookmarklet overlay showing download buttons for network visualization charts" class="img-responsive">{% endif %}
 4. Click on the two bottom buttons: <b> #network-viz-main-chart</b> to download the main chart, and <b>#network-viz-time-series</b> to download the accompanying time series graph.

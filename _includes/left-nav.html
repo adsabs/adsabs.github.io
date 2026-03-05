@@ -6,11 +6,11 @@
 
 <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="gettingstarted-help">
-        <a class="collapsed" role="button" data-toggle="collapse" href="#gettingstarted-items" aria-expanded="false" aria-controls="collapseThree">
+        <button class="collapsed" type="button" data-toggle="collapse" data-target="#gettingstarted-items" aria-expanded="false" aria-controls="gettingstarted-items">
             <div class="{% if page.url contains '/gettingstarted/' %}
     active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i>
     Getting Started</div>
-        </a>
+        </button>
     </div>
     <div id="gettingstarted-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="gettingstarted-help">
       <ul class="list-group">
@@ -25,9 +25,9 @@
 
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="search-help">
-        <a class="collapsed" role="button" data-toggle="collapse" href="#search-items" aria-expanded="false" aria-controls="collapseThree">
+        <button class="collapsed" type="button" data-toggle="collapse" data-target="#search-items" aria-expanded="false" aria-controls="search-items">
             <div class="{% if page.url contains '/search/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Making a Query</div>
-        </a>
+        </button>
     </div>
     <div id="search-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="search-help">
       <ul class="list-group">
@@ -42,9 +42,9 @@
 
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="actions-help">
-      <a class="collapsed" role="button" data-toggle="collapse" href="#actions-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#actions-items" aria-expanded="false" aria-controls="actions-items">
           <div class="{% if page.url contains '/actions/' %} active {% endif %}"><i class="fa fa-lg fa-caret-right"> </i> Search Results</div>
-      </a>
+      </button>
   </div>
   <div id="actions-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="actions-help">
     <ul class="list-group">
@@ -59,9 +59,9 @@
 
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="userpreferences-help">
-      <a class="collapsed" role="button" data-toggle="collapse" href="#userpreferences-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#userpreferences-items" aria-expanded="false" aria-controls="userpreferences-items">
           <div class="{% if page.url contains '/userpreferences/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</div>
-      </a>
+      </button>
   </div>
   <div id="userpreferences-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="userpreferences-help">
     <ul class="list-group">
@@ -76,9 +76,9 @@
 
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="libraries-help">
-      <a class="collapsed" role="button" data-toggle="collapse"  href="#libraries-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#libraries-items" aria-expanded="false" aria-controls="libraries-items">
           <div class="{% if page.url contains '/libraries/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ADS Libraries</div>
-      </a>
+      </button>
   </div>
   <div id="libraries-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="libraries-help">
       <ul class="list-group">
@@ -93,9 +93,9 @@
 
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="orcid-help">
-      <a class="collapsed" role="button" data-toggle="collapse"  href="#orcid-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#orcid-items" aria-expanded="false" aria-controls="orcid-items">
           <div class="{% if page.url contains '/orcid/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ORCID </div>
-      </a>
+      </button>
   </div>
   <div id="orcid-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="orcid-help">
       <ul class="list-group">
@@ -110,9 +110,9 @@
 
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="data_faq-help">
-      <a class="collapsed" role="button" data-toggle="collapse"  href="#data_faq-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#data_faq-items" aria-expanded="false" aria-controls="data_faq-items">
           <div class="{% if page.url contains '/data_faq/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Data & Curation </div>
-      </a>
+      </button>
   </div>
   <div id="data_faq-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="data_faq-help">
       <ul class="list-group">
@@ -127,11 +127,11 @@
 
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="troubleshooting-help">
-      <a class="collapsed" role="button" data-toggle="collapse"  href="#troubleshooting-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#troubleshooting-items" aria-expanded="false" aria-controls="troubleshooting-items">
         <div class="{% if page.url contains '/troubleshooting/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Troubleshooting </div>
-        </a>
+      </button>
     </div>
-    <div id="troubleshooting-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tutorials-help">
+    <div id="troubleshooting-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="troubleshooting-help">
       <ul class="list-group">
         {% assign posts = (site.categories.troubleshooting | sort:"order") %} {% for post in posts %} {% if post.url %}
         <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
@@ -144,11 +144,11 @@
 
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="video-help">
-      <a class="collapsed" role="button" data-toggle="collapse"  href="#videos-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#videos-items" aria-expanded="false" aria-controls="videos-items">
         <div class="{% if page.url contains '/videos/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Videos </div>
-        </a>
+      </button>
     </div>
-    <div id="videos-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="videos-help">
+    <div id="videos-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="video-help">
       <ul class="list-group">
         {% assign posts = site.categories.videos %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
         <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
@@ -161,9 +161,9 @@
 
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="policies-help">
-      <a class="collapsed" role="button" data-toggle="collapse"  href="#policies-items" aria-expanded="false" aria-controls="collapseThree">
+      <button class="collapsed" type="button" data-toggle="collapse" data-target="#policies-items" aria-expanded="false" aria-controls="policies-items">
         <div class="{% if page.url contains '/policies/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Policies </div>
-      </a>
+      </button>
     </div>
     <div id="policies-items" class="panel-collapse collapse" role="tabpanel" aria-labelledby="policies-help">
       <ul class="list-group">

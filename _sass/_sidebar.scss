@@ -91,7 +91,13 @@
       margin: 10px 0;
     }
 
-    .panel-heading > a {
+    .panel-heading > button {
+      // Accordion trigger: reset browser button defaults and match prior <a> styles.
+      background: none;
+      border: none;
+      padding: 0;
+      text-align: left;
+      cursor: pointer;
       &:active {
         text-decoration: none;
       }
@@ -101,10 +107,14 @@
       &:focus {
         text-decoration: none;
       }
+      &:focus-visible {
+        outline: 2px solid #4073dd;
+        outline-offset: 2px;
+      }
       color: $text-color;
       width: 100%;
       height: 100%;
-      display:block;
+      display: block;
 
     }
 

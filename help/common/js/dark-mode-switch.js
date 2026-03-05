@@ -5,6 +5,7 @@
     document.body.setAttribute('data-theme', 'dark');
     darkSwitch.classList.add('darkModeOn');
     darkSwitch.setAttribute('title', 'Turn off dark mode');
+    darkSwitch.setAttribute('aria-label', 'Disable dark mode');
     if (save) localStorage.setItem('darkSwitch', 'on');
   };
 
@@ -12,6 +13,7 @@
     document.body.removeAttribute('data-theme');
     darkSwitch.classList.remove('darkModeOn');
     darkSwitch.setAttribute('title', 'Turn on dark mode');
+    darkSwitch.setAttribute('aria-label', 'Enable dark mode');
     if (save) localStorage.setItem('darkSwitch', 'off');
   };
 

@@ -1576,7 +1576,7 @@ $nav-text-color: $text-color;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  min-height: 92px;
+  animation: slideInDown 1s ease-out;
 }
 
 .search-bar {

@@ -15,9 +15,9 @@
     <div id="gettingstarted-items" class="panel-collapse collapse{% if page.url contains '/gettingstarted-scix/' %} in{% endif %}"  aria-labelledby="gettingstarted-help">
       <ul class="list-group">
             {% assign posts = site.categories.gettingstarted-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-            </a>
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
             {% endif %} {% endfor %} {% endif %}
         </ul>
     </div>
@@ -32,9 +32,9 @@
     <div id="search-items" class="panel-collapse collapse{% if page.url contains '/search-scix/' %} in{% endif %}"  aria-labelledby="search-help">
       <ul class="list-group">
             {% assign posts = site.categories.search-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-            </a>
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
             {% endif %} {% endfor %} {% endif %}
         </ul>
     </div>
@@ -49,9 +49,9 @@
   <div id="actions-items" class="panel-collapse collapse{% if page.url contains '/actions-scix/' %} in{% endif %}"  aria-labelledby="actions-help">
     <ul class="list-group">
         {% assign posts = site.categories.actions-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-        </a>
+        <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endif %} {% endfor %} {% endif %}
       </ul>
     </div>
@@ -66,9 +66,9 @@
   <div id="userpreferences-items" class="panel-collapse collapse{% if page.url contains '/userpreferences-scix/' %} in{% endif %}"  aria-labelledby="userpreferences-help">
     <ul class="list-group">
         {% assign posts = site.categories.userpreferences-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-        </a>
+        <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -83,9 +83,9 @@
   <div id="libraries-items" class="panel-collapse collapse{% if page.url contains '/libraries-scix/' %} in{% endif %}"  aria-labelledby="libraries-help">
       <ul class="list-group">
           {% assign posts = site.categories.libraries-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -100,9 +100,9 @@
   <div id="orcid-items" class="panel-collapse collapse{% if page.url contains '/orcid-scix/' %} in{% endif %}"  aria-labelledby="orcid-help">
       <ul class="list-group">
           {% assign posts = site.categories.orcid-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -117,9 +117,9 @@
   <div id="data_faq-items" class="panel-collapse collapse{% if page.url contains '/data_faq-scix/' %} in{% endif %}"  aria-labelledby="data_faq-help">
       <ul class="list-group">
           {% assign posts = site.categories.data_faq-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -134,9 +134,9 @@
     <div id="troubleshooting-items" class="panel-collapse collapse{% if page.url contains '/troubleshooting-scix/' %} in{% endif %}"  aria-labelledby="troubleshooting-help">
       <ul class="list-group">
         {% assign posts = site.categories.troubleshooting-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-        </a>
+        <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endif %} {% endfor %} {% endif %}
       </ul>
     </div>
@@ -152,9 +152,9 @@
     <div id="policies-items" class="panel-collapse collapse{% if page.url contains '/policies-scix/' %} in{% endif %}"  aria-labelledby="policies-help">
       <ul class="list-group">
         {% assign posts = (site.posts | sort:"order") %} {% assign policies_posts = posts | where: "category", "policies-scix" %} {% if policies_posts.size > 0 %} {% for post in policies_posts %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
         {% endfor %} {% endif %}
       </ul>
     </div>

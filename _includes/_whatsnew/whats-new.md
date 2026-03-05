@@ -10,13 +10,14 @@ Spring is in the air in the Northern hemisphere, while our friends in the Southe
 Wherever you are exploring science, stay safe, and we hope to see you soon\!<br>
 
 * **Ocean Sciences Meeting 2026 Recap**  
-[Jenny Koch](../../scixabout/team/team/jkoch.html) and [Suze Kundu](../../scixabout/team/team/skundu.html) from the SciX team spent last week in glorious Glasgow, UK where the annual Ocean Sciences Meeting took place. We spent four energising days meeting researchers working across land, sea, and sky \- from coral reef explorers off Madagascar to climate scientists linking satellite data with fieldwork. \[Read our blog post\] to discover what Claudette Proctor (Stanford) and Kayla Ellerbe (University of Miami) thought of the SciX platform, and find out how interdisciplinary ocean researchers like Bryan Wilson are using NASA’s ECOSTRESS data. While we did run out of our much-loved badges designed by SciX Lead Ambassador [Yueyi Che](../../scixabout/ambassador/team/Che.html), we made our own interdisciplinary connections with attendees, including CSU’s Mackenzie Eckles who supplied us with some bonus “Barbie in STEM” stickers. We even had brushes with royalty \- in the form of a princess, and a boat. Add in a first deep-fried Mars Bar for Jenny and more Irn-Bru than strictly advisable for Suze, and OSM 2026 was a joyful reminder that ocean science is global, collaborative, and brilliantly interconnected. Find out more in our \[OSM write-up\]\!  
+[Jenny Koch](../../scixabout/team/team/jkoch.html) and [Suze Kundu](../../scixabout/team/team/skundu.html) from the SciX team spent last week in glorious Glasgow, UK where the annual Ocean Sciences Meeting took place. We spent four energising days meeting researchers working across land, sea, and sky \- from coral reef explorers off Madagascar to climate scientists linking satellite data with fieldwork. \[Read our blog post\] to discover what Claudette Proctor (Stanford) and Kayla Ellerbe (University of Miami) thought of the SciX platform, and find out how interdisciplinary ocean researchers like Bryan Wilson are using NASA’s ECOSTRESS data. While we did run out of our much-loved badges designed by SciX Lead Ambassador [Yueyi Che](../../scixabout/ambassador/team/Che.html), we made our own interdisciplinary connections with attendees, including CSU’s Mackenzie Eckles who supplied us with some bonus “Barbie in STEM” stickers. We even had brushes with royalty \- in the form of a princess, and a boat. Add in a first deep-fried Mars Bar for Jenny and more Irn-Bru than strictly advisable for Suze, and OSM 2026 was a joyful reminder that ocean science is global, collaborative, and brilliantly interconnected. Find out more in our [OSM write-up](https://scixplorer.org/scixblog/osm26)\!  
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2603-scixatOSM26.png" 
 	 alt="SciX at OSM26" 
 	 class="img-responsive" 
 	 style="float: right; margin: 0 0 1em 1em; width: 400px;">
 
 * **See You At APS\!**
+The SciX team is heading to the 2026 meeting of the American Physical Society (APS) [Global Physics Summit](https://summit.aps.org/), March 15-20 in Denver, Colorado! We’re excited to connect with researchers, learn about the latest discoveries, and share how SciX supports the physics community. If you’ll be attending, be sure to say hello to us at the Hyatt Regency Denver alongside our NASA colleagues.
 
 Development and data holdings updates as of March 1st:
   * Website and API Releases
@@ -24,7 +25,7 @@ Development and data holdings updates as of March 1st:
     + Posted the [ADSUG 2025 Report](../../scixabout/advisory_board/)
   * Data holdings and pipelines
     + 4.42M new records, and 6.25M new citations
-    + Over 25k publications from the [NASA Space Life Sciences Library](https://scixplorer.org/public-libraries/cKITSx29RQKDpKwbGtLfLw) newly indexed
+    + Over 25k publications from the [NASA Space Life Sciences Library](https://scixplorer.org/search?p=1&q=bibgroup%3ANASA+SLSL&sort=score+desc&sort=date+desc&d=general) newly indexed and a bibgroup!
 
 <details>
 <summary>Development details</summary>

@@ -424,6 +424,10 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
     color: $darkmode-text !important;
     background-color: $darkmode-text-dimmer !important;
     border-color: $darkmode-text !important;
+
+    > a {
+      color: $darkmode-text !important;
+    }
   }
 
   .__footer_links a {

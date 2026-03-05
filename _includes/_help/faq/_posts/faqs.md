@@ -81,7 +81,7 @@ For arXiv sources, we attempt to extract references from the full text and from 
 The full text is available for searching for many records, including most recent publications. You can search for records with full text using the query [has:body]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}{% if include.ads %}/#search/q=has:body{% else %}/search?q=has:body{% endif %}). Note that the searchable full text resides in our database and is separate from the links to publisher or arXiv sources; not all records with source links have searchable full text.
 
 ## Other
-{% if include.ads %}##### Q: I'm trying to use the new interface but I'm getting a message about JavaScript / it's stuck on a loading screen.
+{% if include.ads %}### Q: I'm trying to use the new interface but I'm getting a message about JavaScript / it's stuck on a loading screen.
 This issue is commonly seen when users have JavaScript turned off in their browser, or they're using security software or browser plugins (such as NoScript) that block JavaScript, or are accessing the site from a network that blocks content from certain domains (e.g. google.com).  The full version of the new {{ include.site }} requires JavaScript in order to function (note: the basic HTML version, linked from the bottom of the search page or from the loading page when JavaScript is not detected, offers limited functionality without requiring JavaScript).  At an absolute minimum you must have JavaScript turned on.  Further, if you have any security settings or plugins that require sites to be whitelisted before running JavaScript, you must whitelist two domains for basic functionality: harvard.edu, and google.com.{% endif %}
 
 ### Q: What internet browsers are supported by {{ include.site }}?
@@ -90,5 +90,5 @@ We support all current versions (within the last 5 years) of Chrome, Firefox, Sa
 ### Q: How should I acknowledge {{ include.site }}?
 If you wish to acknowledge us in a publication, kindly use a phrase such as the following: {% if include.ads %}"This research has made use of the Astrophysics Data System, funded by NASA under Cooperative Agreement 80NSSC21M00561."{% else %}"This research has made use of SciX, a scientific literature search and discovery platform."{% endif %} If you are using {{ include.site }} as a tool for bibliometric studies, please make sure you have an in-depth understanding of the system, its features and limitations, by reading and citing as appropriate the relevant published literature about {{ include.site }} ([refereed]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ), [non-refereed]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/iETdWs2pSGajhFBI30X3UQ)).
 
-{% if include.ads %}##### Q: Do you have any mirror sites? 
+{% if include.ads %}### Q: Do you have any mirror sites?
 No, once we moved our site to the cloud in 2018, we no longer host mirror sites. See our [mirror policy page](../policies/mirrors) for more information.{% endif %}

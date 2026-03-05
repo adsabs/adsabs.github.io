@@ -133,7 +133,7 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
     margin-bottom: 15px;
   }
   
-  .press-coverage-header h4 {
+  .press-coverage-header h3 {
     margin: 0;
     font-size: 16px;
     font-weight: 600;

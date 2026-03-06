@@ -3,6 +3,98 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## March 2026
+Announcements:<br>
+Spring is in the air in the Northern hemisphere, while our friends in the Southern hemisphere enjoy the transition into cooler autumnal days. However the SciX team have been experiencing four seasons in a day \- whether at SciX HQ in Cambridge MA, or on their conference travels in 50 shades of grey Glasgow\! The team were out there representing SciX at the recent Ocean Sciences Meeting. Read on to find out what they got up to, and look out for us later this month in Denver CO for the APS Conference.
+
+Wherever you are exploring science, stay safe, and we hope to see you soon\!<br>
+
+* **Ocean Sciences Meeting 2026 Recap**  
+[Jenny Koch](../../scixabout/team/team/jkoch.html) and [Suze Kundu](../../scixabout/team/team/skundu.html) from the SciX team spent last week in glorious Glasgow, UK where the annual Ocean Sciences Meeting took place. We spent four energising days meeting researchers working across land, sea, and sky. [Read our blog post](../../scixblog/osm26) to discover what Claudette Proctor (Stanford) and Kayla Ellerbe (University of Miami) thought of the SciX platform, and find out how interdisciplinary ocean researchers like Bryan Wilson are using NASA’s ECOSTRESS data. While we did run out of our much-loved badges designed by SciX Lead Ambassador [Yueyi Che](../../scixabout/ambassador/team/Che.html), we made our own interdisciplinary connections with attendees. We even had brushes with royalty \- in the form of a princess, and a boat. OSM 2026 was a joyful reminder that ocean science is global, collaborative, and brilliantly interconnected. Find out more in our [OSM write-up](../../scixblog/osm26)\!  
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2603-scixatOSM26.png" 
+	 alt="SciX at OSM26" 
+	 class="img-responsive" 
+	 style="float: right; margin: 0 0 1em 1em; width: 400px;">
+
+* **See You At APS\!**
+The SciX team is heading to the 2026 meeting of the American Physical Society (APS) [Global Physics Summit](https://summit.aps.org/), March 15-20 in Denver, Colorado! We’re excited to connect with researchers, learn about the latest discoveries, and share how SciX supports the physics community. If you’ll be attending, be sure to say hello to us at the Hyatt Regency Denver alongside our NASA colleagues.
+
+Development and data holdings updates as of March 1st:
+  * Website and API Releases
+    + Added new [tutorial videos from Youtube](../../scixhelp/)
+    + Posted the [ADSUG 2025 Report](../../about/adsug/adsug/)
+  * Data holdings and pipelines
+    + 4.42M new records, and 6.25M new citations
+    + Over 25k publications from the [NASA Space Life Sciences Library](https://scixplorer.org/search?p=1&q=bibgroup%3ANASA+SLSL&sort=score+desc&sort=date+desc) newly indexed and a bibgroup!
+
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Export Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/export_service/releases/tag/v3.1.17">v3.1.17</a></li>
+	- [fixed] Fixes for AGU, AMS styles<br>
+	- [fixed] In AASTeX-PSF moved title before journal name<br>
+</ul>
+
+<li>Journals Database Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/ADSJournalsDB/releases/tag/v1.3.5">v1.3.5</a></li>
+	- [improved] Added ‘year’ to completeness schema<br>
+	- [improved] Modified sort order based on refereed status<br>
+	- [improved] Minor change to pipeline command line options: converts input table names to lower case<br>
+<li><a href="https://github.com/adsabs/ADSJournalsDB/releases/tag/v1.3.4">v1.3.4</a></li>
+	- [ops] Export (bibcode, canonical abbreviation) to backoffice file<br>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.45.0">v0.45.0</a></li>
+	- [improved] Show "Record Not Found" in abstract subpages if invalid abstract ID<br>
+	- [improved] Set password minimum length to 8<br>
+	- [improved] Improve add to library dialog<br>
+	- [improved] Render feedback menu items as links for new-tab support<br>
+	- [improved] Update access labels (open access vs paid)<br>
+	- [fixed] Prevent facet requests from firing with empty query<br>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.42.3">v0.42.3</a></li>
+	- [new] Add access-level badges (open access vs paid) to full text sources<br>
+	- [fixed] Fetching results list bug<br>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.41.0">v0.41.0</a></li>
+	- [improved] Update ORCID work types<br>
+	- [improved] Filter collections facet to exclude astrophysics, planetary, and heliophysics<br>
+	- [improved] Redirect correction feedback form<br>
+	- [improved] Add reset to defaults button on settings pages<br>
+	- [improved] Make search results items more compact<br>
+	- [fixed] Search results loading layout bug<br>
+	- [fixed] Filter empty string orcid values<br>
+	- [fixed] Prevent truncation of math-heavy abstracts<br>
+	- [fixed] Typo in visualizations error message<br>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.39.0">v0.39.0</a></li>
+	- [improved] Extract collection and property into query filters<br>
+	- [improved] Add discipline routes, fix legacy referrer, rename General Science in discipline drop-down menu to “no preferred discipline”<br>
+	- [improved] Expand authors-per-result preference to 1-50<br>
+</ul>
+
+<li>Solr Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.5">v1.1.5</a></li>
+	- [fixed] Anonymous BigQuery handler was pointed at solr select endpoint<br>
+<li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.4">v1.1.4</a></li>
+	- [improved] Add Non-authenticated user check for handler<br>
+<li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.3.1">v1.1.3.1</a></li>
+	- [fixed] Minor bug that caused highlight queries to fail<br>
+<li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.3">v1.1.3</a></li>
+	- [new] Enable keyword & author highlights<br>
+	- [new] Windowed Highlights<br>
+	- [improved] Remove empty highlights<br>
+<li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.2">v1.1.2</a></li>
+	- [ops] Set UID using new header name
+</ul>
+
+</ul>
+</details>
+
 ## February 2026
 Announcements:<br>
 What a start to the year it has been! With the transition from [ADS to SciX](https://scixplorer.org/adstoscix/) in full swing, the SciX team has been meeting with members of the SciX Community at meetings and conferences all over. Our goal is for the astronomy community to experience SciX as early as possible and step up to the next generation of literature search and more by the end of 2026. Read on to find out more about where we have been, where you’ll find us next, and some of the most recent developments for Science Explorer, your one-stop shop for research discovery, innovation, and impact, helping you “keep it 100 on the land, the sea, the sky”.<br>

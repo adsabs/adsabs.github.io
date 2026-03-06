@@ -22,10 +22,10 @@ The SciX team is heading to the 2026 meeting of the American Physical Society (A
 Development and data holdings updates as of March 1st:
   * Website and API Releases
     + Added new [tutorial videos from Youtube](../../scixhelp/)
-    + Posted the [ADSUG 2025 Report](../../scixabout/advisory_board/)
+    + Posted the [ADSUG 2025 Report](../../about/adsug/adsug/)
   * Data holdings and pipelines
     + 4.42M new records, and 6.25M new citations
-    + Over 25k publications from the [NASA Space Life Sciences Library](https://scixplorer.org/search?p=1&q=bibgroup%3ANASA+SLSL&sort=score+desc&sort=date+desc&d=general) newly indexed and a bibgroup!
+    + Over 25k publications from the [NASA Space Life Sciences Library](https://scixplorer.org/search?p=1&q=bibgroup%3ANASA+SLSL&sort=score+desc&sort=date+desc) newly indexed and a bibgroup!
 
 <details>
 <summary>Development details</summary>
@@ -89,6 +89,7 @@ Development and data holdings updates as of March 1st:
 	- [new] Windowed Highlights<br>
 	- [improved] Remove empty highlights<br>
 <li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.2">v1.1.2</a></li>
+	- [ops] Set UID using new header name
 </ul>
 
 </ul>

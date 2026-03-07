@@ -3,6 +3,6 @@ Note: {{ include.site }} Office Hours talk for April 23, 2019, by Carolyn Stern 
 <br>
 <div class="scalable scalable-16-9">
   <div class="scalable-content">
-    <iframe src="https://www.youtube.com/embed/hSStpjyzrx8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/hSStpjyzrx8" title="ADS Affiliations" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 </div>

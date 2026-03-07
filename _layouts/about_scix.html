@@ -9,9 +9,9 @@ layout: about_layout_scix
   </script>
   {% endfor %}
 
-  <nav class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
+  <div class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
     {%include about-left-nav_scix.html %}
-  </nav>
+  </div>
 
   <main class="post main-content col-xs-12 col-md-9">
     <button
@@ -23,7 +23,9 @@ layout: about_layout_scix
 
     <header class="post-header">
       {%unless page.no-header %}
+      {% if page.title %}
       <h2 class="post-title">{{ page.title }}</h2>
+      {% endif %}
       {% if page.subtitle %}
       <div class="post-subtitle" style="color: #666; margin-top: -10px; font-weight: bolder;">{{ page.subtitle }}</div>
       {% elsif page.team_id %}

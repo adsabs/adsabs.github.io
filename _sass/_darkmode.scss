@@ -1,8 +1,12 @@
 .darkmode-toggle {
   background: #100f2c;
+  color: #fff;
   width: 4rem;
   height: 4rem;
+  min-width: 44px;
+  min-height: 44px;
   position: fixed;
+  border: none;
   border-radius: 50%;
   right: 32px;
   bottom: 32px;
@@ -13,6 +17,8 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
+  font-size: 1.5rem;
+  padding: 0;
 }
 
 // dark mode colors
@@ -404,7 +410,8 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
     }
   }
 
-  .left-nav a {
+  .left-nav a,
+  .left-nav button {
     color: $darkmode-text !important;
   }
 
@@ -420,6 +427,10 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
     color: $darkmode-text !important;
     background-color: $darkmode-text-dimmer !important;
     border-color: $darkmode-text !important;
+
+    > a {
+      color: $darkmode-text !important;
+    }
   }
 
   .__footer_links a {

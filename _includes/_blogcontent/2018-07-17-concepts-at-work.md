@@ -8,7 +8,7 @@ Authors publish because they want to transfer information. They have been doing 
 The research project "Concepts at work" was originally developed in a workshop which planned a long term investigation into astrophysics research practices in the light of philosophical, sociological and historical questions. Inspired by the epistemology of Polish immunologist Ludwik Fleck (1896–1961) (Fleck, 1979), this multidisciplinary enterprise was fixed to study how astrophysical facts come into being and evolve.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/LudwikFleck.jpg" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/LudwikFleck.jpg" alt="Portrait photograph of Ludwik Fleck, Polish immunologist and epistemologist (1896-1961)"/>
 <br><em>Ludwik Fleck (credit: Archiv für Zeitgeschichte Zürich)</em>
 </div>
 <br>
@@ -17,7 +17,7 @@ The historical project which was granted a three year funding by the DFG (German
 In the project at hand, [Karin Pelte](http://www.philosophie.tu-berlin.de/menue/fachgebiete/wissenschaftsgeschichte/team/wissenschaftliche_mitarbeiter/karin_pelte_ma/) studies the world wide development of the research on multiple and interacting galaxies from around 1925 to 1980. *Multiple and interacting galaxies* (MIG from here on) is used as a catch-all and represents many of the names given to such phenomena as double, binary, multiple, colliding, merging, exploding, satellite galaxies, or small groups and chains or nests of galaxies.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/VV_1977.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/VV_1977.png" alt="Page from Vorontsov-Vel'yaminov's 1977 Atlas and Catalogue of Interacting Galaxies showing galaxy images"/>
 <em>Taken from Vorontsov-Vel'yaminov's <a href="https://ui.adsabs.harvard.edu/#abs/19771977A&AS...28....1V/abstract">Atlas and Catalogue of Interacting Galaxies II</a>, 1977</em>
 </div>
 <br>

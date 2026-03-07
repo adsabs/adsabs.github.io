@@ -73,6 +73,20 @@ After installing Jekyll, run the following commands to preview the site:
 
 You will now be able to access the help pages locally at `http://0.0.0.0:4000`  or `localhost:4000` (default configuration). After the website is built for the first time, you should only need to save the file, wait a second or two for it to rebuild automatically (check the terminal window where you ran `jekyll serve`), then refresh the page to see any changes.
 
+#### Development with Docker
+
+As an alternative, you can use Docker instead of installing Ruby locally. The only prerequisite is [Docker](https://docs.docker.com/get-docker/). A convenience script wraps the Docker Compose setup:
+
+```
+./run serve   # start dev server at http://localhost:4000 (livereload)
+./run build   # one-shot production build
+./run dev     # watch + incremental rebuild (no server)
+./run stop    # stop running containers
+./run clean   # remove build artifacts and Docker volumes
+```
+
+`JEKYLL_PORT` and `JEKYLL_ENV` can be set as environment variables.
+
 ### Maintainer
 
 Mugdha

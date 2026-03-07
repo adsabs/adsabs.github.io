@@ -1,23 +1,23 @@
 <!--googleoff: all-->
 
-<nav class="help-nav">
+<nav class="help-nav" aria-label="Help topics">
 
-<div class="panel-group" id="accordion" aria-multiselectable="true">
+<div class="panel-group" id="accordion">
 
 <div class="panel panel-default">
     <div class="panel-heading" id="gettingstarted-help">
-        <a class="{% if page.url contains '/gettingstarted-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse" href="#gettingstarted-items" aria-expanded="{% if page.url contains '/gettingstarted-scix/' %}true{% else %}false{% endif %}" aria-controls="gettingstarted-items">
-            <div class="{% if page.url contains '/gettingstarted-scix/' %}
-    active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i>
-    Getting Started</div>
-        </a>
+        <button class="{% if page.url contains '/gettingstarted-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#gettingstarted-items" aria-expanded="{% if page.url contains '/gettingstarted-scix/' %}true{% else %}false{% endif %}" aria-controls="gettingstarted-items">
+            <span class="{% if page.url contains '/gettingstarted-scix/' %}
+    active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i>
+    Getting Started</span>
+        </button>
     </div>
     <div id="gettingstarted-items" class="panel-collapse collapse{% if page.url contains '/gettingstarted-scix/' %} in{% endif %}"  aria-labelledby="gettingstarted-help">
       <ul class="list-group">
             {% assign posts = site.categories.gettingstarted-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-            </a>
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
             {% endif %} {% endfor %} {% endif %}
         </ul>
     </div>
@@ -25,16 +25,16 @@
 
   <div class="panel panel-default">
     <div class="panel-heading"  id="search-help">
-        <a class="{% if page.url contains '/search-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse" href="#search-items" aria-expanded="{% if page.url contains '/search-scix/' %}true{% else %}false{% endif %}" aria-controls="search-items">
-            <div class="{% if page.url contains '/search-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Making a Query</div>
-        </a>
+        <button class="{% if page.url contains '/search-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#search-items" aria-expanded="{% if page.url contains '/search-scix/' %}true{% else %}false{% endif %}" aria-controls="search-items">
+            <span class="{% if page.url contains '/search-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> Making a Query</span>
+        </button>
     </div>
     <div id="search-items" class="panel-collapse collapse{% if page.url contains '/search-scix/' %} in{% endif %}"  aria-labelledby="search-help">
       <ul class="list-group">
             {% assign posts = site.categories.search-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-            </a>
+            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
             {% endif %} {% endfor %} {% endif %}
         </ul>
     </div>
@@ -42,16 +42,16 @@
 
 <div class="panel panel-default">
   <div class="panel-heading"  id="actions-help">
-      <a class="{% if page.url contains '/actions-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse" href="#actions-items" aria-expanded="{% if page.url contains '/actions-scix/' %}true{% else %}false{% endif %}" aria-controls="actions-items">
-          <div class="{% if page.url contains '/actions-scix/' %} active {% endif %}"><i class="fa fa-lg fa-caret-right"> </i> Search Results</div>
-      </a>
+      <button class="{% if page.url contains '/actions-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#actions-items" aria-expanded="{% if page.url contains '/actions-scix/' %}true{% else %}false{% endif %}" aria-controls="actions-items">
+          <span class="{% if page.url contains '/actions-scix/' %} active {% endif %}"><i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> Search Results</span>
+      </button>
   </div>
   <div id="actions-items" class="panel-collapse collapse{% if page.url contains '/actions-scix/' %} in{% endif %}"  aria-labelledby="actions-help">
     <ul class="list-group">
         {% assign posts = site.categories.actions-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-        </a>
+        <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endif %} {% endfor %} {% endif %}
       </ul>
     </div>
@@ -59,16 +59,16 @@
 
 <div class="panel panel-default">
   <div class="panel-heading"  id="userpreferences-help">
-      <a class="{% if page.url contains '/userpreferences-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse" href="#userpreferences-items" aria-expanded="{% if page.url contains '/userpreferences-scix/' %}true{% else %}false{% endif %}" aria-controls="userpreferences-items">
-          <div class="{% if page.url contains '/userpreferences-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> User Preferences</div>
-      </a>
+      <button class="{% if page.url contains '/userpreferences-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#userpreferences-items" aria-expanded="{% if page.url contains '/userpreferences-scix/' %}true{% else %}false{% endif %}" aria-controls="userpreferences-items">
+          <span class="{% if page.url contains '/userpreferences-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> User Preferences</span>
+      </button>
   </div>
   <div id="userpreferences-items" class="panel-collapse collapse{% if page.url contains '/userpreferences-scix/' %} in{% endif %}"  aria-labelledby="userpreferences-help">
     <ul class="list-group">
         {% assign posts = site.categories.userpreferences-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-        </a>
+        <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -76,16 +76,16 @@
 
 <div class="panel panel-default">
   <div class="panel-heading"  id="libraries-help">
-      <a class="{% if page.url contains '/libraries-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#libraries-items" aria-expanded="{% if page.url contains '/libraries-scix/' %}true{% else %}false{% endif %}" aria-controls="libraries-items">
-          <div class="{% if page.url contains '/libraries-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> SciX Libraries</div>
-      </a>
+      <button class="{% if page.url contains '/libraries-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#libraries-items" aria-expanded="{% if page.url contains '/libraries-scix/' %}true{% else %}false{% endif %}" aria-controls="libraries-items">
+          <span class="{% if page.url contains '/libraries-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> SciX Libraries</span>
+      </button>
   </div>
   <div id="libraries-items" class="panel-collapse collapse{% if page.url contains '/libraries-scix/' %} in{% endif %}"  aria-labelledby="libraries-help">
       <ul class="list-group">
           {% assign posts = site.categories.libraries-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -93,16 +93,16 @@
 
 <div class="panel panel-default">
   <div class="panel-heading"  id="orcid-help">
-      <a class="{% if page.url contains '/orcid-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#orcid-items" aria-expanded="{% if page.url contains '/orcid-scix/' %}true{% else %}false{% endif %}" aria-controls="orcid-items">
-          <div class="{% if page.url contains '/orcid-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> ORCID </div>
-      </a>
+      <button class="{% if page.url contains '/orcid-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#orcid-items" aria-expanded="{% if page.url contains '/orcid-scix/' %}true{% else %}false{% endif %}" aria-controls="orcid-items">
+          <span class="{% if page.url contains '/orcid-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> ORCID </span>
+      </button>
   </div>
   <div id="orcid-items" class="panel-collapse collapse{% if page.url contains '/orcid-scix/' %} in{% endif %}"  aria-labelledby="orcid-help">
       <ul class="list-group">
           {% assign posts = site.categories.orcid-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -110,16 +110,16 @@
 
 <div class="panel panel-default">
   <div class="panel-heading"  id="data_faq-help">
-      <a class="{% if page.url contains '/data_faq-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#data_faq-items" aria-expanded="{% if page.url contains '/data_faq-scix/' %}true{% else %}false{% endif %}" aria-controls="data_faq-items">
-          <div class="{% if page.url contains '/data_faq-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Data & Curation </div>
-      </a>
+      <button class="{% if page.url contains '/data_faq-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#data_faq-items" aria-expanded="{% if page.url contains '/data_faq-scix/' %}true{% else %}false{% endif %}" aria-controls="data_faq-items">
+          <span class="{% if page.url contains '/data_faq-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> Data & Curation </span>
+      </button>
   </div>
   <div id="data_faq-items" class="panel-collapse collapse{% if page.url contains '/data_faq-scix/' %} in{% endif %}"  aria-labelledby="data_faq-help">
       <ul class="list-group">
           {% assign posts = site.categories.data_faq-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>
@@ -127,16 +127,16 @@
 
   <div class="panel panel-default">
     <div class="panel-heading"  id="troubleshooting-help">
-      <a class="{% if page.url contains '/troubleshooting-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#troubleshooting-items" aria-expanded="{% if page.url contains '/troubleshooting-scix/' %}true{% else %}false{% endif %}" aria-controls="troubleshooting-items">
-        <div class="{% if page.url contains '/troubleshooting-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Troubleshooting </div>
-        </a>
+      <button class="{% if page.url contains '/troubleshooting-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#troubleshooting-items" aria-expanded="{% if page.url contains '/troubleshooting-scix/' %}true{% else %}false{% endif %}" aria-controls="troubleshooting-items">
+        <span class="{% if page.url contains '/troubleshooting-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> Troubleshooting </span>
+      </button>
     </div>
     <div id="troubleshooting-items" class="panel-collapse collapse{% if page.url contains '/troubleshooting-scix/' %} in{% endif %}"  aria-labelledby="troubleshooting-help">
       <ul class="list-group">
         {% assign posts = site.categories.troubleshooting-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-        </a>
+        <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </li>
         {% endif %} {% endfor %} {% endif %}
       </ul>
     </div>
@@ -145,16 +145,16 @@
 
   <div class="panel panel-default">
     <div class="panel-heading"  id="policies-help">
-      <a class="{% if page.url contains '/policies-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#policies-items" aria-expanded="{% if page.url contains '/policies-scix/' %}true{% else %}false{% endif %}" aria-controls="policies-items">
-        <div class="{% if page.url contains '/policies-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> Policies </div>
-      </a>
+      <button class="{% if page.url contains '/policies-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#policies-items" aria-expanded="{% if page.url contains '/policies-scix/' %}true{% else %}false{% endif %}" aria-controls="policies-items">
+        <span class="{% if page.url contains '/policies-scix/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> Policies </span>
+      </button>
     </div>
     <div id="policies-items" class="panel-collapse collapse{% if page.url contains '/policies-scix/' %} in{% endif %}"  aria-labelledby="policies-help">
       <ul class="list-group">
         {% assign posts = (site.posts | sort:"order") %} {% assign policies_posts = posts | where: "category", "policies-scix" %} {% if policies_posts.size > 0 %} {% for post in policies_posts %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
         {% endfor %} {% endif %}
       </ul>
     </div>

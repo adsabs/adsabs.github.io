@@ -7,7 +7,7 @@ As a recent addition to the ADS Team supporting curation efforts and assisting i
  
 In this blog post I will outline the goals I established, the steps I took to accomplish them, and lessons learned. To accomplish this project, I used a combination of my own knowledge and expertise, read API documentation, searched online for solutions as needed, and collaborated with team members to debug and learn the ins and outs of the ADS API.
 
-### Project Outline and Goals
+## Project Outline and Goals
 
 The source data used in this project was an Excel spreadsheet provided of ARC/SSAD’s bibliographic holdings (with metadata for authors, 'org code' as a unique identifier of NASA's organizational structure, title, journal information, and DOI if available), which was split up into three sheets by Branch (Astrophysics Branch, the Planetary Systems Branch, and the Exobiology Branch). The data provided was obtained from NASA's Astrobiology Habitable Environments Database (AHED).
 

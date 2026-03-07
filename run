@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<EOF
+Usage: ./site <command>
+
+Commands:
+  serve   Start dev server at http://127.0.0.1:4000 (livereload enabled)
+  dev     Watch + incremental rebuild (no server)
+  build   One-shot production build
+  stop    Stop running containers
+  clean   Remove built site, caches, and Docker volumes
+
+Environment:
+  JEKYLL_PORT   Server port (default: 4000)
+  JEKYLL_ENV    Jekyll environment (default: development)
+EOF
+  exit 1
+}
+
+cmd="${1:-}"
+shift || true
+
+case "$cmd" in
+  serve)
+    docker compose --profile serve up "$@"
+    ;;
+  dev)
+    docker compose --profile dev run --rm dev "$@"
+    ;;
+  build)
+    docker compose --profile build run --rm build "$@"
+    ;;
+  stop)
+    docker compose --profile serve down "$@"
+    ;;
+  clean)
+    docker compose --profile serve down -v "$@"
+    rm -rf _site .jekyll-cache .sass-cache
+    ;;
+  *)
+    usage
+    ;;
+esac

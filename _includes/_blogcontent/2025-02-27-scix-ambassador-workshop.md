@@ -8,7 +8,7 @@ A key component of the workshop was the **blue sky project activity**, where amb
 - **Workshop Report Team** – Led by Stephanie Jarmak, Harper Wilkins, and Sunny Narayanan, this team is compiling key workshop discussions, feedback, and outcomes.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scix_ambassador_workshop_image1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scix_ambassador_workshop_image1.png" alt="Group photo of SciX Lead Ambassadors and SciX staff at the end of the 2024 workshop in Cambridge, MA" />
 <br>
 </div>
 <br>

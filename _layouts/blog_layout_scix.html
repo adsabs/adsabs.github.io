@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   {% include head_default_scix.html %}
 
   <body>
     {% include header_default_scix.html subtitle="blog" subpath="scixblog"
     search=false %}
 
-    <div class="smart-container row">
-      <div class="col-xs-4 col-md-2 rss-container">
-        <a href="{{ site.baseurl }}/help/common/feed.xml"
-          ><i class="fa fa-rss"></i> RSS Feed</a
-        >
-      </div>
-      <div class="blog-links col-xs-8 col-md-4">
-        <a href="{{ site.baseurl }}/scixblog">all blog posts</a> |
-        <a href="{{ site.baseurl }}/scixblog/news">news</a> |
-        <a href="{{ site.baseurl }}/scixblog/general">general</a> |
-        <a href="{{ site.baseurl }}/scixblog/technical-posts">technical</a>
-      </div>
+    <nav aria-label="Blog navigation">
+      <div class="smart-container row">
+        <div class="col-xs-4 col-md-2 rss-container">
+          <a href="{{ site.baseurl }}/help/common/feed.xml"
+            ><i class="fa fa-rss"></i> RSS Feed</a
+          >
+        </div>
+        <div class="blog-links col-xs-8 col-md-4">
+          <a href="{{ site.baseurl }}/scixblog">all blog posts</a> |
+          <a href="{{ site.baseurl }}/scixblog/news">news</a> |
+          <a href="{{ site.baseurl }}/scixblog/general">general</a> |
+          <a href="{{ site.baseurl }}/scixblog/technical-posts">technical</a>
+        </div>
 
-      <div class="search-bar-container col-xs-12 col-md-6">
-        <div class="pull-right">{% include search.html %}</div>
+        <div class="search-bar-container col-xs-12 col-md-6">
+          <div class="pull-right">{% include search.html %}</div>
+        </div>
       </div>
-    </div>
-    <div class="page-content smart-container">{{ content }}</div>
+    </nav>
+    <main>
+      <div class="page-content smart-container">{{ content }}</div>
+      <button
+        id="darkSwitch"
+        class="darkmode-toggle"
+        type="button"
+        aria-label="Enable dark mode"
+      >
+        🌓
+      </button>
+      <script src="/help/common/js/dark-mode-switch.js"></script>
+    </main>
 
     {% include footer_default_scix.html %}
-    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
-      🌓
-    </div>
-    <script src="/help/common/js/dark-mode-switch.js"></script>
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

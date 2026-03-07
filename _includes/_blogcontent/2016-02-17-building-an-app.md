@@ -3,22 +3,22 @@ Underneath the new user interface of the ADS, ADS Beta (or Bumblebee), there is 
 
 *FYI: this is more technical, and repetitively uses a cooking/Wrestling theme.*
 
-### Ingredients
+## Ingredients
 The following is needed for the wrecipe:
 
   1. An ADS account and an ADS API key (make an account [here](https://ui.adsabs.harvard.edu/#user/account/register), and then go to User Settings -> Customize -> API Token)
   2. A [Heroku account](http://herokuapp.com)
   3. Python "unofficial ADS client" by Andy Casey (https://github.com/andycasey/ads)
 
-### Step 1: Decide what your application should do
+## Step 1: Decide what your application should do
 
 First, we decided to create an application that pits two authors against one another by comparing their publication metrics against each other. Second, apply the 90s-00s WWE/WWF theme.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-17_image01.jpg"/>
+    <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-17_image01.jpg" alt="WWE-style promotional graphic for the ADS Author Smackdown app concept"/>
 </div>
 
-### Step 2: Obtain the information you need from the ADS
+## Step 2: Obtain the information you need from the ADS
 
 We wanted to compare two authors against each other, *reasonably* fairly. One possible approach is to just compare total citations of one author to another, but obviously this can lead to biases given that someone who works longer should have more citations, people who have more papers from collaborations will have more citations, etc. To get around this, we chose to use the RIQ, a metric that is meant to *fairly* compare two authors. You can read more about this metric [here](https://ui.adsabs.harvard.edu/#abs/2012PLoSO...746428P/abstract). Of course, there are problems with this metric too, but.....
 
@@ -50,11 +50,11 @@ Once you have the relevant bibcodes, we need to ask the metrics end point for th
 
 The above is fairly simple, and so you could do it via curl requests as outlined in our [API help pages](https://github.com/adsabs/adsabs-dev-api), or write your own client in the language of your choice.
 
-### Step 3: Dish out your logic in a web app
+## Step 3: Dish out your logic in a web app
 
 Our application will receive two authors names, and return the RIQs of each author, which will then display the winner (and loser) on the front-end application. To do this, we built a back-end application using Python-Flask, and a front-end application written in JavaScript. If you want to see the full code, you can see the Flask backend [here](https://github.com/jonnybazookatone/authorsmackdown) and the JavaScript frontend [here](https://github.com/aholachek/smackdown). At this stage you can utilise your favourite web application, cgi-bins, ruby on rails, go-lang, etc.
 
-### Step 4: Decide how to deliver your app to the public
+## Step 4: Decide how to deliver your app to the public
 
 You can opt to host your application locally if you prefer, and there are a plethora of free options on the internet. To get things running quickly, we chose to host our application on Heroku app (http://herokuapp.com). You only need to do two things:
 
@@ -63,11 +63,11 @@ You can opt to host your application locally if you prefer, and there are a plet
 
 *Note* If you use your own API token for an application that is available to other users, your rate limits will be consumed as normal, and may run out during a 24 hour period. If you believe your application deserves its own rate limits then feel free to tweet us [@adsabs](http://twitter.com/adsabs) or [contact us directly](adshelp@cfa.harvard.edu).
 
-### Step 5: Leave to cool for 5 mins and add a cliché title
+## Step 5: Leave to cool for 5 mins and add a cliché title
 
 <div class="text-center">
      <a href="http://authorsmackdown.herokuapp.com/">
-         <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-17_image02.png"/>
+         <img class="img-thumbnail" src="{{ site.base_url }}/blog/images/blog_2016-02-17_image02.png" alt="Screenshot of the Author Smackdown web application comparing two authors' publication metrics"/>
      </a>
 </div>
 

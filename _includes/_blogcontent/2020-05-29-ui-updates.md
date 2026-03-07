@@ -7,7 +7,7 @@ The myADS service, which notifies subscribers via email about new papers relevan
 The [setup page](https://ui.adsabs.harvard.edu/user/settings/myads) can be found within your account settings. Here, you can either set up new notifications, or if you were a subscriber of the Classic myADS notifications, you can import your existing settings from Classic.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-05-01_myads.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-05-01_myads.png" alt="Screenshot of the myADS setup page showing notification configuration options" />
 <em>myADS setup</em>
 </div>
 <br>
@@ -22,7 +22,7 @@ One of the most-requested features for ADS libraries has now arrived: the abilit
 * Read: A user with read privileges can view a private library.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-05-01_library_collaborators.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-05-01_library_collaborators.png" alt="Screenshot of the Manage Library Collaborators screen showing permission levels" />
 <em>Manage Library Collaborators screen</em>
 </div>
 <br>
@@ -40,7 +40,7 @@ The new score sort is ideal for these types of searches. The score sort is simil
 A search for Nobel Prize-winning astronomer Adam Riess shows the difference. Searching by his last name and sorting by date ([Riess](https://ui.adsabs.harvard.edu/search/q=Riess&sort=date%20desc%2C%20bibcode%20desc&p_=0)) returns the most recent papers first; some of these likely cite him in the abstract, include him or someone with the same name as *Nth* author, or otherwise mention his name in passing. Changing the sort to score order ([Riess](https://ui.adsabs.harvard.edu/search/p_=0&q=Riess&sort=score%20desc%2C%20bibcode%20desc)), however, returns his Nobel Prize-winning papers, and other highly cited works, at the top of the list.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-05-01_score_sort.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-05-01_score_sort.png" alt="Search results showing sort by score order, placing a Nobel Prize paper at the top" />
 <em>Example of sorting by score</em>
 </div>
 <br>

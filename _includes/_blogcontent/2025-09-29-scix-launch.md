@@ -27,7 +27,7 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
 ## Welcome aboard!
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlaunch2025.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlaunch2025.png" alt="SciX launch announcement graphic" />
 </div>
 <br>
 
@@ -42,7 +42,7 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
   
   <div id="press-coverage-box" class="press-coverage-box" onclick="togglePressCoverage()">
     <div class="press-coverage-header">
-      <h4><i class="fa fa-newspaper-o"></i>Press Coverage</h4>
+      <h3><i class="fa fa-newspaper-o"></i>Press Coverage</h3>
       <button class="close-button" onclick="event.stopPropagation(); togglePressCoverage();">&times;</button>
     </div>
     <ul>
@@ -55,7 +55,7 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
 
 <!-- Desktop version -->
 <div id="press-coverage-box-desktop" class="press-coverage-box-desktop">
-  <h4 style="margin-top: 0; color: #495057; font-size: 16px;"><i class="fa fa-newspaper-o" style="margin-right: 8px;"></i>Press Coverage</h4>
+  <h3 style="margin-top: 0; color: #495057; font-size: 16px;"><i class="fa fa-newspaper-o" style="margin-right: 8px;"></i>Press Coverage</h3>
   <ul style="margin-bottom: 0; padding-left: 20px;">
     <li style="margin-bottom: 8px;"><a href="https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science" target="_blank" style="color: #007bff; text-decoration: none;">New NASA-Backed Research Platform SciX Expands Open Science</a><br><small style="color: #6c757d;">Center for Astrophysics | Harvard & Smithsonian</small></li>
     <li style="margin-bottom: 8px;"><a href="https://science.data.nasa.gov/features-events/scix-launch" target="_blank" style="color: #007bff; text-decoration: none;">SciX: A New Era for NASA Research Discovery</a><br><small style="color: #6c757d;">NASA Science Data Portal</small></li>
@@ -133,7 +133,7 @@ SciX is a project created by the ADS team and operated out of the Smithsonian As
     margin-bottom: 15px;
   }
   
-  .press-coverage-header h4 {
+  .press-coverage-header h3 {
     margin: 0;
     font-size: 16px;
     font-weight: 600;

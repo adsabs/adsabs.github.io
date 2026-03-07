@@ -31,12 +31,11 @@ As ADS adopts use of the UAT across its astronomy collection, we encourage all a
 
 While the AAS has assumed formal ownership of the UAT, the thesaurus remains available under a Creative Commons License, ensuring its widest use while protecting the intellectual property of its contributors. Development and maintenance are stewarded by a broad group of parties with a direct stake in the UAT; this includes professional associations (IVOA, IAU), learned societies (AAS, RAS), publishers (IOP, AIP), software developers, librarians, and other curators working for major astronomy institutes and data archives.
 
-The UAT has been implemented by an increasing number of journals, research organizations, and systems[^1].
+The UAT has been implemented by an increasing number of journals, research organizations, and systems. Current adoptees include:
 
-[^1]: Current adoptees include:
-    - American Astronomical Society journals, including The Astronomical Journal (AJ), The Astrophysical Journal (ApJ), ApJS, ApJL, The Planetary Science Journal (PSJ), and Research Notes of the AAS (RNAAS)
-    - Astrophysics Data System (ADS)
-    - Publications of the Astronomical Society of the Pacific (PASP)
-    - International Virtual Observatory Alliance (IVOA)
-    - Space Telescope Science Institute (STScI) for the Hubble Space Telescope (HST) and James Webb Space Telescope (JWST) proposal systems
-    - Icarus - in formulation for 2023
+- American Astronomical Society journals, including The Astronomical Journal (AJ), The Astrophysical Journal (ApJ), ApJS, ApJL, The Planetary Science Journal (PSJ), and Research Notes of the AAS (RNAAS)
+- Astrophysics Data System (ADS)
+- Publications of the Astronomical Society of the Pacific (PASP)
+- International Virtual Observatory Alliance (IVOA)
+- Space Telescope Science Institute (STScI) for the Hubble Space Telescope (HST) and James Webb Space Telescope (JWST) proposal systems
+- Icarus - in formulation for 2023

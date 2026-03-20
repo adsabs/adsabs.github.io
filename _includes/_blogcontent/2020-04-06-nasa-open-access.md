@@ -67,7 +67,7 @@ elsevier/NASA | [380](https://ui.adsabs.harvard.edu/search/q=(aff%3ANASA%20OR%20
 
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-04-06_nasa_oa_results.png" />
+<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-04-06_nasa_oa_results.png" alt="Bar chart showing open access percentages for NASA-affiliated research papers across publisher groups in 2018" />
 <em>Figure 1</em>
 </div>
 <br>

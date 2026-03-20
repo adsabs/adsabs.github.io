@@ -13,7 +13,7 @@ myADS provides four main types of notifications:
 - Keywords: Follow the most popular, recent, and cited papers that match a certain list of keywords (e.g., *gravitational waves OR cosmic microwave background*). 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-08-10_myADS_settings.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-08-10_myADS_settings.png" alt="Screenshot of the myADS email notification settings page in ADS"/>
 <em>Example of <a href="https://ui.adsabs.harvard.edu/user/settings/myads">myADS email notification settings</a></em>
 </div>
 <br>
@@ -21,7 +21,7 @@ myADS provides four main types of notifications:
 No matter how many notifications you setup, they will be grouped together into a single daily or weekly email.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-08-10_myADS_email.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-08-10_myADS_email.png" alt="Example of a myADS weekly digest email showing grouped paper notifications"/>
 <em>Example of a myADS weekly email</em>
 </div>
 <br>
@@ -29,7 +29,7 @@ No matter how many notifications you setup, they will be grouped together into a
 These alerts cover many of the typical use cases, but the new myADS is ready to unleash the full ADS potential by allowing fully customizable notifications. Now, any valid ADS search query can be converted into a daily or weekly notification.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-08-10_myADS_general_query.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-08-10_myADS_general_query.png" alt="Screenshot showing how to create a custom myADS notification from the ADS search results page"/>
 <em>Create general myADS notifications from the ADS results page</em>
 </div>
 <br>

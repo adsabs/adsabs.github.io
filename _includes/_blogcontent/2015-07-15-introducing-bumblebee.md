@@ -1,5 +1,5 @@
 
-<img src="{{ site.baseurl }}/blog/images/blog_2015-07-15_adsbumblebee.png" width="128"><br>
+<img src="{{ site.baseurl }}/blog/images/blog_2015-07-15_adsbumblebee.png" width="128" alt="ADS Bumblebee logo"><br>
 The Astrophysics Data System (ADS) is a tool for finding astronomy and planetary science publications. ADS currently has three different interfaces:
 
  * ~~[ADS “Classic”](http://adsabs.harvard.edu/abstract_service.html) -- the one you all know and love,~~ *We're slowly removing Classic servers from use and the redirects will stop working in the near future. Please update your bookmarks to point directly to the [new website](https://ui.adsabs.harvard.edu/) (edited 11/2021).*

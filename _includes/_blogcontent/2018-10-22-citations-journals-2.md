@@ -1,7 +1,7 @@
 
 This is the second of a series of blog posts measuring the journals that publish astronomy research articles, using citation statistics with a number of different indices. In this post, we examine the performance of individual journals with respect to each other over time. We use the data described and published in [Part 1](../blog/citations-journals), which looked at some of the integrated properties of the sample, such as citation counts and h-indices. In Part 3, we will look into some of the properties of the indices.
 
-### A. Ranked Lists
+## A. Ranked Lists
 We begin by creating ranked lists of the 50 journals in the main sample for each of the 5 bibliometric indicators: number of articles, number of citations to these articles, h (Hirsch) index, i10 (number of articles with 10 or more citations), and i100 (number of articles with 100 or more citations). We do this for each of the 20 years (1997-2016) of the study. The appendix, [published on Zenodo (DOI: 10.5281/zenodo.1400692)](https://doi.org/10.5281/zenodo.1400692), contains all the lists.
 
 Much can be gleaned from these lists; we recommend the reader avails themself of this opportunity. We will illustrate some of the results by a little cherry picking.
@@ -28,7 +28,7 @@ There are (at least) three main takeaways from looking at these lists:
 
 3. The physics journals have substantially increased their role in astrophysics research. In 1997 the only physics journal in the top 10 is PhRvD at #10, twenty years later there are 5 (counting JCAP as physics), with PhRvD at #4. Remember that this is for only those papers which are “astronomy related” as described in Part 1; they are a fraction of the papers published by these journals. For example in 2016 9% of the papers in PhRvL were astronomy related, as were 29% of the papers in PhLB.
 
-### B. Winners and Losers
+## B. Winners and Losers
 
 As shown in Figure 1 of [Part 1](../blog/citations-journals), the astronomy literature has been growing over the past two decades. While astronomy has spread its influence into related areas (and this is the point of that figure), the core astronomy literature can be taken as being within the ~50 major international journals of physics, astrophysics, and geophysics in our main sample (listed in Part 1). The growth of this literature has been a steady 4% per year, doubling over the period, consistent with long term trends in many disciplines.
 
@@ -39,13 +39,13 @@ Figure 1 of this post shows the three “winners”: MNRAS, PhRvD, and JCAP, as 
 Figure 2 shows the three “losers”: A&A, ApJL, and AJ, also with the ApJ as a fiducial. A&AS was merged into the main journal in 2001; the A&A line represents the sum. All three journals lost about half their market share during the last two decades.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_1.png" alt="Line chart showing market share gains for MNRAS, PhRvD, and JCAP compared to ApJ from 1997 to 2016"/>
 <em>Figure 1</em>
 </div>
 <br>
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_2.png" alt="Line chart showing market share losses for A&amp;A, ApJL, and AJ compared to ApJ from 1997 to 2016"/>
 <em>Figure 2</em>
 </div>
 <br>
@@ -57,7 +57,7 @@ Note that the number of citations is as measured in the middle of July 2018; eac
 Looking at Figure 3, the first thing to notice is the decline in mind share for the Astrophysical Journal. The ApJ had an extraordinary presence 20 years ago, with nearly a quarter of all citations to astronomy related papers on somewhat less than a sixth of the total astronomy related papers. Now, the ApJ still has somewhat less than a sixth of the total papers but only slightly more than a sixth of the total citations (and thus mind share).
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_3.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_3.png" alt="Line chart showing mind share trends for MNRAS, PhRvD, and JCAP compared to declining ApJ from 1997 to 2016"/>
 <em>Figure 3</em>
 </div>
 <br>
@@ -76,7 +76,7 @@ Were they to be gaining market share by lowering their standards, the slopes for
 Figure 4 shows the changes in mind share for the three journals that are the biggest losers in terms of market share (again with the ApJ as a fiducial). Were they to have lost market share by raising their standards, we would expect to see declines in mind share that are less steep than in market share. We do see that for A&A, while the ApJL mind share slope is the same as the market share slope, and the AJ mind share decline is even steeper than its market share decline.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_4.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt2_4.png" alt="Line chart showing mind share changes for A&amp;A, ApJL, and AJ compared to ApJ, showing A&amp;A improving relative to market share"/>
 <em>Figure 4</em>
 </div>
 <br>

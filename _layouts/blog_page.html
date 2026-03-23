@@ -4,7 +4,9 @@ layout: blog_layout
 
 <div class="post">
   <header class="post-header">
+    {% if page.title %}
     <h2 class="post-title">{{ page.title }}</h2>
+    {% endif %}
   </header>
 
   <article class="post-content">{{ content }}</article>

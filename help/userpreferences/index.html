@@ -9,7 +9,7 @@ User preferences store relevant information for a specific user. The following d
 
 {% assign posts = site.categories[page.category] | sort:"order"  %}
     {% for post in posts %}
-        <h3>{{post.title}}</h3>
+        <h2>{{post.title}}</h2>
         {{post.content}}
     {% endfor %}
 

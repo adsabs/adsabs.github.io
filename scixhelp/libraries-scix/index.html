@@ -11,7 +11,7 @@ category: libraries-scix
 {% assign posts = site.categories.libraries-scix | sort:"order"  %}
     {% for post in posts %}
         {% unless post.hidden %}
-        <h3>{{post.title}}</h3>
+        <h2>{{post.title}}</h2>
         {{post.content}}
         {% endunless %}
     {% endfor %}

@@ -1,8 +1,9 @@
 ---
 layout: blog_page_scix
+title: "All Posts"
 ---
 
-[Sign up](http://eepurl.com/ggoxhn) for our monthly email updates.
+[Sign up](https://eepurl.com/ggoxhn) for our monthly email updates.
 
 <div class="container">
     <div class="row">
@@ -17,9 +18,9 @@ layout: blog_page_scix
 
             <div class="col-lg-4">
                 {% if post.thumbnail %}
-                    <img src="{{ site.baseurl }}/{{ post.thumbnail }}" style="max-width: 340px;height:auto"/>
+                    <img src="{{ site.baseurl }}/{{ post.thumbnail }}" alt="{{ post.title }}" style="max-width: 340px;height:auto"/>
                 {% else %}
-                    <img src="{{ site.baseurl }}/img/ads_logo.png" style="max-width: 340px;height:auto"/>
+                    <img src="{{ site.baseurl }}/img/ads_logo.png" alt="ADS/SciX logo" style="max-width: 340px;height:auto"/>
                 {% endif %}
             </div>
 

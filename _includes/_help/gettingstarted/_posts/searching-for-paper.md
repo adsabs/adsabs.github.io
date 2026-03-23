@@ -52,7 +52,7 @@ Note: for a first-author search using the ^ operator, you do not have to specify
 If your search by author and/or publication year returns too many results, you can use [interactive filtering]({% if include.ads %}../search/filter{% else %}../../search-scix/filter{% endif %}) to narrow down the results instead of editing your original search query. Filtering by author or publication is often useful when a paper is known. 
 
 {% if include.ads %}<figure>
-   <img src="/help/img/filter-facet.png"  class="img-responsive">
+   <img src="/help/img/filter-facet.png" alt="Screenshot of search results page with the author filter facet panel open in the left sidebar" class="img-responsive">
 </figure>{% else %}<figure>
-   <img src="/scixhelp/sciximg/scix-filter-facet.png"  class="img-responsive">
+   <img src="/scixhelp/sciximg/scix-filter-facet.png" alt="Screenshot of SciX search results page with the author filter facet panel open in the left sidebar" class="img-responsive">
 </figure>{% endif %}

@@ -9,7 +9,7 @@ layout: blog_layout_scix
     <header class="post-header">
       {%unless page.no-header %}
       <h1 class="post-title">{{ page.title }}</h1>
-      <h3 class="post-author">
+      <p class="post-author">
 {% assign authorCount = page.author | size %}
 {% assign positionCount = page.position | split: ", " | size %}
 {% if authorCount == 0 %}
@@ -33,8 +33,8 @@ layout: blog_layout_scix
 {% if positionCount == 1 %}
     <b>({{ page.position }})</b>
 {% endif %}
-</h3>
-      <h3 class="post-date">{{ page.date | date_to_string }}</h3>
+</p>
+      <p class="post-date">{{ page.date | date_to_string }}</p>
 
       {% if page.comment %}
       <hr />

@@ -1,10 +1,10 @@
 
-### Introduction
+## Introduction
 
 The Astrophysics Data System (ADS) has been developing Natural Language Processing tools and datasets to further enhance its data holdings and services.  As part of this effort, we have been building and curating datasets to train deep learning models. These new tools, and more that will build upon them, will both provide a richer user experience and allow internal processes to be scaled-up.  Further, we expect that these tools will be useful to researchers in a variety of fields.  This post will describe our models and datasets for interested researchers.  We are strong proponents of open science, and we endeavor to make our datasets publicly available and easy to access. This post contains links to our curated datasets and will be updated as more datasets are created. The models are licensed under an [MIT license](https://opensource.org/license/mit/) and the datasets are licensed under a [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).  Briefly, these licenses allow researchers to use, share, modify or build upon these works as long as appropriate attribution is given.  If there are any questions about fair usage, contact us at [ADS help](mailto:adshelp@cfa.harvard.edu).
 
 
-### astroBERT
+## astroBERT
 
 To support broad community participation in these efforts, we have recently released the [astroBERT](https://huggingface.co/adsabs/astroBERT) astrophysics-specific language model. A language model is a statistical representation of the relationships among words, and even sub-word units called tokens, in a corpus of text.  By creating a model that is astronomy specific, we can better account for the nuances of the language used in the astrophysical literature.
 
@@ -19,14 +19,14 @@ astroBERT was trained using [Masked Language Model](https://huggingface.co/docs/
 Further technical details about astroBERT can be found in the following [paper](https://arxiv.org/abs/2112.00590). The astroBERT page on Hugging Face includes documentation about how to access and utilize the model, as well as all publicly available versions.
 
 
-### Detecting Entities in the Astrophysical Literature (DEAL)
+## Detecting Entities in the Astrophysical Literature (DEAL)
 
 The [Detecting Entities in the Astrophysical Literature](https://huggingface.co/datasets/adsabs/WIESP2022-NER) (DEAL) dataset is a curated dataset for Named Entity Recognition.  This task involves identifying predetermined entities in text, such as Organization or Location.  The dataset consists of text fragments obtained from the astrophysical literature. The journals that the text fragments were obtained from are the Astrophysical Journal, Astronomy & Astrophysics, and the Monthly Notices of the Royal Astronomical Society. All text fragments are from recent publications, between the years of 2015 and 2021. Each text fragment is roughly a paragraph in length, and originates from one of two parts of an article. The first are fragments from the fulltext, consisting of all sections of the body of the article, excluding the abstract and acknowledgments sections. The second are fragments from the acknowledgments section of the article.  Roughly 6000 text snippets were labeled, containing over 147,000 labeled entities. Figure 1 shows an example of a manually labeled text snippet. 
 
   
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-10-23-DEAL-example.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-10-23-DEAL-example.png" alt="Example of a manually labeled astrophysical text snippet with named entity tags from the DEAL dataset" />
 <br>
 <em>Figure 1: Example of a manually labeled full text snippet.
 </em>
@@ -37,7 +37,7 @@ Thirty-three different entities, composed of general and astrophysical entities,
 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-10-23-DEAL-counts.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-10-23-DEAL-counts.png" alt="Bar chart showing counts of labeled entity categories in the DEAL dataset, split by fulltext (blue) and acknowledgments (red)" />
 <br>
 <em>Figure 2: Counts of labeled entities.  Red denotes entities labeled in the Acknowledgments section of a paper, and blue denotes entities labeled in the body of a paper.
 </em>
@@ -49,7 +49,7 @@ Thirty-three different entities, composed of general and astrophysical entities,
 The DEAL dataset was used as part of a shared task in the [First Workshop on Information Extraction from the Scientific Literature](https://ui.adsabs.harvard.edu/WIESP/2022/) (WIESP 2022) as part of the AACL-IJCNLP 2022 conference.  The proceedings of this workshop are part of the [ACL Anthology](https://aclanthology.org/volumes/2022.wiesp-1/).  
 
 
-### Function Of Citation in Astrophysics Literature (FOCAL)
+## Function Of Citation in Astrophysics Literature (FOCAL)
 
 The [Function Of Citation in Astrophysics Literature](https://huggingface.co/datasets/adsabs/FOCAL) (FOCAL) dataset is a curated dataset for citation context analysis.  Citation context analysis  “facilitates the syntactic and semantic analysis of the contents of the citation context to understand how and why authors discuss others research work” ([Kunnath et al. 2021](https://direct.mit.edu/qss/article/2/4/1170/107610/A-meta-analysis-of-semantic-classification-of)).  Citation context analysis includes the determination of citation function, or the reason an author is including a particular citation; citation polarity, or the author’s sentiment towards the cited work, either positive or negative; and citation impact, or the importance of a cited work to the citing work.  
 
@@ -86,7 +86,7 @@ We are considering a set of eight potential citation functions.  These are:
 The snippets that contain the citations are obtained from over 25,000 astronomy articles, from the same journals and publication years as the DEAL dataset.  From this set of articles, over 2 million citations and their context are harvested.  Further, only citations with context sizes between 2,000 and 10,000 characters are selected. This is to allow the determination of what portions of the context are most relevant to understanding the citation’s function.  A domain area expert manually examined these text snippets to determine the citation function as well as label the relevant context.  In total there are 6023 instances of annotated citations.  Table 1 shows the number of instances for each citation function category.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-10-23-FOCAL_example.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2023-10-23-FOCAL_example.png" alt="Example of a manually labeled citation context text snippet from the FOCAL dataset showing multiple citation functions" />
 <br>
 <em>Figure 3: An example of a manually labeled citation context text snippet.
 </em>
@@ -99,13 +99,13 @@ There are a number of open questions in citation context analysis research that 
 The FOCAL dataset will be used for the [Second Workshop on Information Extraction from the Scientific Literature](https://ui.adsabs.harvard.edu/WIESP/2023/shared_task_1) (WIESP 2023) part of [IJCNLP-AACL 2023](http://www.ijcnlp-aacl2023.org/).
  
 
-### We Want to Hear From You
+## We Want to Hear From You
 
 If you find any of these datasets useful in your research or if you are working on similar efforts, we would like to hear from you.  You can contact the ADS Team at [ADS help](mailto:adshelp@cfa.harvard.edu).
 
 
 
-### Linked Resources
+## Linked Resources
 
 astroBERT model: [https://huggingface.co/adsabs/astroBERT](https://huggingface.co/adsabs/astroBERT)
 

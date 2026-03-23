@@ -8,7 +8,7 @@ However, while our existing API documentation covered the most widely used featu
 The OpenAPI spec is a language-agnostic, widely adopted industry standard for documenting APIs in a machine-readable way. We spent weeks documenting and describing 80+ user-facing (and, for internal use, 70+ data pipeline and internal) API operations, resulting in a comprehensive document that combines descriptions, examples, and schema for each operation. This document is now available to explore visually using our new [beautiful, easy to use documentation](../../help/api/api-docs.html)<sup>[2](#footnote1)</sup>.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_apidocs.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_apidocs.png" alt="Screenshot of the ADS OpenAPI documentation interface showing the list of API operations" />
 <em>New API help documentation</em>
 </div>
 <br>
@@ -18,7 +18,7 @@ Our [new API documentation](../../help/api/api-docs.html) looks a little overwhe
 This is all very useful already, if similar to the existing Jupyter notebook documentation. Where these docs really shine, though, are with the built-in try-me functionality. To use this, first [get your API key](https://ui.adsabs.harvard.edu/user/settings/token) and copy it into the box in the [Authentication section](../../help/api/api-docs.html#auth) and click Set. Now you can try out the API directly from this documentation! Let’s look at an example.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_auth.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_auth.png" alt="Screenshot of the API token authentication input box in the ADS API documentation" />
 <em>API token authentication box</em>
 </div>
 <br>
@@ -26,7 +26,7 @@ This is all very useful already, if similar to the existing Jupyter notebook doc
 We’ll start with a basic search, using the operation labeled [Search ADS](../../help/api/api-docs.html#get-/search/query). This operation uses the GET method and the endpoint `/search/query`. A longer description, with examples, is also provided in the documentation.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS.png" alt="Screenshot of the Search ADS operation in the API documentation showing the GET /search/query endpoint" />
 <em>Search ADS operation</em>
 </div>
 <br>
@@ -38,7 +38,7 @@ Some other things to note about the request parameters section:
 * Below some of the parameters, there’s an example shown; click on the example to fill it in. You can also use the “fill example” button at the bottom of the list of parameters to fill all available examples.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS-request.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS-request.png" alt="Screenshot of the Search ADS request parameters panel with q and fl fields filled in" />
 <em>Search ADS request parameters</em>
 </div>
 <br>
@@ -46,7 +46,7 @@ Some other things to note about the request parameters section:
 Once you’ve filled in the parameters you’d like, scroll to the end of the parameter list and click Try. This will format your request, send it, and return the results. The request response is shown in the “Response” tab, in JSON format. The “responseHeader” section contains some information about the request, while the “response” section (shown below) contains the actual request results. In this example, 556,985 total results were found, and the page is displaying the first 10 in the Response box.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS-response.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS-response.png" alt="Screenshot of the Search ADS API response showing JSON results with bibcode and title fields" />
 <em>Search ADS response</em>
 </div>
 <br>
@@ -54,7 +54,7 @@ Once you’ve filled in the parameters you’d like, scroll to the end of the pa
 You can scroll through the search results here, or you can click on the “curl” tab to copy the request formatted using your input parameters to use in your own scripts.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS-curl.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_searchADS-curl.png" alt="Screenshot of the curl tab in the Search ADS documentation showing a copyable curl command" />
 <em>Search ADS curl command: copy this into your terminal to run the query as formatted</em>
 </div>
 <br>
@@ -62,7 +62,7 @@ You can scroll through the search results here, or you can click on the “curl�
 This works similarly for operations that have the POST HTTP request method, but there is a slight difference. Let’s look at one more example. The [BibTeX export for multiple bibcodes](../../help/api/api-docs.html#post-/export/bibtex) uses the POST method. You can see that while this operation doesn’t have any parameters (though some POST operations do), it does have a request body, which is used to pass in the bibcodes you want to export. The default view for a request body is the “schema” tab, which shows the information you can pass in via the body (again, the fields marked with an asterisk are required).
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_bibtex-post.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_bibtex-post.png" alt="Screenshot of the BibTeX export POST operation in the API documentation showing the request body schema" />
 <em>BibTeX export for multiple bibcodes</em>
 </div>
 <br>
@@ -70,7 +70,7 @@ This works similarly for operations that have the POST HTTP request method, but 
 To test this operation, click on the “example” tab. It defaults to an empty box; click on “fill example” to fill in the placeholder text that demonstrates the proper formatting.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_bibtex-post-body.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_bibtex-post-body.png" alt="Screenshot of the BibTeX export Example tab showing the request body with placeholder bibcodes" />
 <em>Request body; click on the Example tab, then "fill example" to show the proper request body formatting</em>
 </div>
 <br>
@@ -78,7 +78,7 @@ To test this operation, click on the “example” tab. It defaults to an empty 
 Fill in your bibcodes in the placeholder text:
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_bibtex-post-body-2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2021-08-04_bibtex-post-body-2.png" alt="Screenshot of the BibTeX export request body with user-entered bibcodes replacing the placeholder text" />
 <em>Edit the placeholder request body as necessary</em>
 </div>
 <br>

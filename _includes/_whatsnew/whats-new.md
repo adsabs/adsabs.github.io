@@ -3,6 +3,61 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## April 2026
+Announcements:<br>
+* **Recent Workshop Highlight: Language AI in the Space Sciences**<br>
+Several ADS and SciX team members participated in the [Language AI in Space Sciences Workshop](https://www.stsci.edu/contents/events/stsci/2026/march/language-ai-in-the-space-sciences#event-materials), which was held on March 9-12 in Baltimore, MD. Organized by the Space Telescope Science Institute (STScI), the European Space Agency (ESA), and the Astrophysics Data System (ADS), this unique, interdisciplinary gathering brought together astronomy researchers, AI and natural language processing (NLP) specialists, software engineers, and domain experts. Unlike traditional scientific conferences, the event was heavily focused on hands-on exploration, open discussions, and collaborative projects, allowing participants substantial unstructured time to experiment with emerging tools and methods. The workshop offered a highly interactive environment that fostered creativity and innovation, including tutorials, discussions, and hackathons. Contributions by the ADS team included a discussion on licensing and property rights by [Alberto Accomazzi](../../about/team/team/aaccomazzi), a tutorial on Retrieval-Augmented Generation by [Atilla Alkan](../../about/team/team/aalkan), and a presentation on Multilabel Text Classification for Concept Assignment in Astrophysics Literature also by [Atilla Alkan](../../about/team/team/aalkan). Recordings of the workshop’s presentations are available at on [Youtube](https://www.youtube.com/playlist?list=PLaMFBSsW8QxAooMVyQS4TOwoGKWnSpuF3).<br>
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2604-AISS-wkshp.png" 
+	 alt="Language AI in the Space Sciences Workshop" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 600px;">
+
+* **Sharing the Science Explorer at APS Global Physics Summit 2026 Recap**<br>
+Project Scientist for Astrophysics [Jennifer Lynn Bartlett](../../about/team/team/jbartlett) was thrilled to spend a week in the mile-high city talking to physicists with a broad range of interests about how they can find what they are looking for in the SciX. As Glen Bennett, Swastika Acharjee, [Naaz Shafeer Vemmerath Kulangara](https://naazshafeer.github.io/), and [Liz Kruesi](https://www.lizkruesi.com/) discovered, the SciX [physics collection](https://www.scixplorer.org/search?p=1&q=collection%3Aphysics&sort=score+desc&sort=date+desc&d=general) is extensive, easy to navigate, and free; we welcome new researchers and independent scholars. Read more about it in our [blog post](../../scixblog/aps2) and please reach out if you have questions about the ADS to SciX transition or about accessing physics content effectively. Many thanks to the [NASA Physics of the Cosmos](https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/about/) team, especially Chief Scientist [Brian Humensky](https://www.linkedin.com/in/brian-humensky/) and public outreach specialist [Stephanie Clark](https://science.nasa.gov/people/stephanie-clark-public-outreach-specialist/), for sharing our Hyatt space with us and to [Dan Cooke](https://www.linkedin.com/in/cookedan/) and all the [American Physical Society](https://www.aps.org/) staff who make sharing our science through the Global Physics Summits possible. 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2604-scixatAPS2026.png" 
+	 alt="SciX at APS 2026" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 1em 1em; width: 400px;">
+
+* **Retirement of ADS and SciX’s Lead Project Scientist, Dr. Michael J. Kurtz**<br>
+After decades of visionary leadership and unwavering dedication, the Astrophysics Data System (ADS) announces the retirement of our Project Scientist, [Dr. Michael J. Kurtz](../../about/team/team/mkurtz).  Michael joined the CfA in 1982 as a research astronomer in the OIR division, participating in both the CfA Redshift Survey and the Century Survey. Michael has been a cornerstone of the ADS since its inception in the early 1990s, helping transform the way researchers access scientific literature. Under his guidance, ADS was conceived and developed into the sophisticated, multi-faceted discovery engine that powers modern astronomical research today.
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2604-michael-kurtz.jpg" 
+	 alt="Portrait of Michael J. Kurtz" 
+	 class="img-responsive"
+	 style="float: left; margin: 0 0 1em 1em; width: 400px;">
+<br><br>Beyond his visionary contributions to ADS, Michael is widely respected for his deep understanding of the intersection between information science and astrophysics. His research in bibliometrics and informatics have been widely recognized: in 2000 he received the ISI/ASIST Citation Award for innovation in bibliographic research; in 2001 the AAS awarded him the George Van Biesbroeck Prize for “for the visionary design of the Astrophysics Data System;” in 2018 he was given the [best paper award](https://scixplorer.org/abs/2017JASIS..68..695K/abstract) by the Journal of the Association for Information Science and Technology. He is a fellow of the AAS, APS, and AAAS. While we will miss his insight and historical perspective in our daily operations, his legacy is firmly embedded in ADS and its successor, SciX. We invite you to join us in thanking Michael for his extraordinary service and wishing him a rewarding and peaceful retirement.
+
+Development and data holdings updates as of April 1st:
+  * Website and API Releases
+    + Added Solar Dynamics Observatory to [bibgroups page](../../help/data_faq/_posts/2024-08-29-Bibgroups.md)
+    + New blog post: [APS 2026 Recap](../../scixblog/aps2)
+  * Data holdings and pipelines
+    + 594k new records, and 8.65M new citations
+      
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>API Gateway Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/api_gateway/releases/tag/v1.2.6">v1.2.6</a></li>
+	- [fixed] Typo in ADS sender name<br>
+<li><a href="https://github.com/adsabs/api_gateway/releases/tag/v1.2.5">v1.2.5</a></li>
+	- [improved] Updated to send emails that represent the user's UI origin<br>
+</ul>
+
+<li>Journals Database Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/ADSJournalsDB/releases/tag/v1.3.7">v1.3.7</a></li>
+	- [fixed] Updates to titlehistory (and some other tables) did not trigger an export to backoffice files<br>
+	- [fixed] Changed the default ‘ref_type‘ to ‘C‘ to fix export to bibstems dat<br>
+<li><a href="https://github.com/adsabs/ADSJournalsDB/releases/tag/v1.3.6">v1.3.6</a></li>
+	- [improved] Removed restriction on export-on-checkin<br>
+</ul>
+
+</ul>
+</details>
+
 ## March 2026
 Announcements:<br>
 Spring is in the air in the Northern hemisphere, while our friends in the Southern hemisphere enjoy the transition into cooler autumnal days. However the SciX team have been experiencing four seasons in a day \- whether at SciX HQ in Cambridge MA, or on their conference travels in 50 shades of grey Glasgow\! The team were out there representing SciX at the recent Ocean Sciences Meeting. Read on to find out what they got up to, and look out for us later this month in Denver CO for the APS Conference.

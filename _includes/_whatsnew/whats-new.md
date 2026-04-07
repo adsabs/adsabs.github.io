@@ -13,7 +13,7 @@ Several ADS and SciX team members participated in the [Language AI in Space Scie
 	 style="display: block; margin: 1em auto; width: 600px;">
 
 * **Sharing the Science Explorer at APS Global Physics Summit 2026 Recap**<br>
-	<img src="{{site.baseurl}}/help/img/whatsnew/WN2604-scixatAPS2026.png" 
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2604-scixataps2026.png" 
 	 alt="SciX at APS 2026" 
 	 class="img-responsive"
 	 style="float: right; margin: 0 0 1em 1em; width: 400px;">

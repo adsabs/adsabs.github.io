@@ -37,7 +37,7 @@ If you access the historical observatory publications through the “[Historical
 
 Development and data holdings updates as of April 1st:
   * Website and API Releases
-    + Added Solar Dynamics Observatory to [bibgroups page](../../help/data_faq/_posts/2024-08-29-Bibgroups.md)
+    + Added Solar Dynamics Observatory to [bibgroups page](../../help/data_faq/Bibgroups)
     + New blog post: [APS 2026 Recap](../../scixblog/aps2)
   * Data holdings and pipelines
     + 594k new records, and 8.65M new citations

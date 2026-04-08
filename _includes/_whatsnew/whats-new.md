@@ -16,29 +16,29 @@ Several ADS and SciX team members participated in the [Language AI in Space Scie
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2604-scixataps2026.png" 
 	 alt="SciX at APS 2026" 
 	 class="img-responsive"
-	 style="float: right; margin: 0 0 1em 1em; width: 400px;">
-Project Scientist for Astrophysics [Jennifer Lynn Bartlett](../../about/team/team/jbartlett) was thrilled to spend a week in the mile-high city talking to physicists with a broad range of interests about how they can find what they are looking for in the SciX. As Glen Bennett, Swastika Acharjee, [Naaz Shafeer Vemmerath Kulangara](https://naazshafeer.github.io/), and [Liz Kruesi](https://www.lizkruesi.com/) discovered, the SciX [physics collection](https://www.scixplorer.org/search?p=1&q=collection%3Aphysics&sort=score+desc&sort=date+desc&d=general) is extensive, easy to navigate, and free; we welcome new researchers and independent scholars. Read more about it in our [blog post](../../scixblog/aps2) and please reach out if you have questions about the ADS to SciX transition or about accessing physics content effectively. Many thanks to the [NASA Physics of the Cosmos](https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/about/) team, especially Chief Scientist [Brian Humensky](https://www.linkedin.com/in/brian-humensky/) and public outreach specialist [Stephanie Clark](https://science.nasa.gov/people/stephanie-clark-public-outreach-specialist/), for sharing our Hyatt space with us and to [Dan Cooke](https://www.linkedin.com/in/cookedan/) and all the [American Physical Society](https://www.aps.org/) staff who make sharing our science through the Global Physics Summits possible. 
+	 style="float: right; margin: 0 0 1em 1em; width: 300px;">
+Project Scientist for Astrophysics [Jennifer Lynn Bartlett](../../about/team/team/jbartlett) was thrilled to spend a week in the mile-high city talking to physicists with a broad range of interests about how they can find what they are looking for in the SciX. As Glen Bennett, Swastika Acharjee, [Naaz Shafeer Vemmerath Kulangara](https://naazshafeer.github.io/), and [Liz Kruesi](https://www.lizkruesi.com/) discovered, the SciX [physics collection](https://www.scixplorer.org/search?p=1&q=collection%3Aphysics&sort=score+desc&sort=date+desc&d=general) is extensive, easy to navigate, and free; we welcome new researchers and independent scholars. Read more about it in our [blog post](../../scixblog/aps26) and please reach out if you have questions about the ADS to SciX transition or about accessing physics content effectively. Many thanks to the [NASA Physics of the Cosmos](https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/about/) team, especially Chief Scientist [Brian Humensky](https://www.linkedin.com/in/brian-humensky/) and public outreach specialist [Stephanie Clark](https://science.nasa.gov/people/stephanie-clark-public-outreach-specialist/), for sharing our Hyatt space with us and to [Dan Cooke](https://www.linkedin.com/in/cookedan/) and all the [American Physical Society](https://www.aps.org/) staff who make sharing our science through the Global Physics Summits possible. 
 
 * **Retirement of ADS and SciX’s Lead Project Scientist, Dr. Michael J. Kurtz**<br>
+After decades of visionary leadership and unwavering dedication, the Astrophysics Data System (ADS) announces the retirement of our Project Scientist, [Dr. Michael J. Kurtz](../../about/team/team/mkurtz).  Michael joined the CfA in 1982 as a research astronomer in the OIR division, participating in both the CfA Redshift Survey and the Century Survey. Michael has been a cornerstone of the ADS since its inception in the early 1990s, helping transform the way researchers access scientific literature. Under his guidance, ADS was conceived and developed into the sophisticated, multi-faceted discovery engine that powers modern astronomical research today.
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2604-michael-kurtz.jpg" 
 	 alt="Portrait of Michael J. Kurtz" 
 	 class="img-responsive"
-	 style="float: left; margin: 0 0 1em 1em; width: 400px;">
-After decades of visionary leadership and unwavering dedication, the Astrophysics Data System (ADS) announces the retirement of our Project Scientist, [Dr. Michael J. Kurtz](../../about/team/team/mkurtz).  Michael joined the CfA in 1982 as a research astronomer in the OIR division, participating in both the CfA Redshift Survey and the Century Survey. Michael has been a cornerstone of the ADS since its inception in the early 1990s, helping transform the way researchers access scientific literature. Under his guidance, ADS was conceived and developed into the sophisticated, multi-faceted discovery engine that powers modern astronomical research today.
-
+	 style="float: right; margin: 0 0 1em 1em; width: 300px;">
+	 
 	Beyond his visionary contributions to ADS, Michael is widely respected for his deep understanding of the intersection between information science and astrophysics. His research in bibliometrics and informatics have been widely recognized: in 2000 he received the ISI/ASIST Citation Award for innovation in bibliographic research; in 2001 the AAS awarded him the George Van Biesbroeck Prize for “for the visionary design of the Astrophysics Data System;” in 2018 he was given the [best paper award](https://scixplorer.org/abs/2017JASIS..68..695K/abstract) by the Journal of the Association for Information Science and Technology. He is a fellow of the AAS, APS, and AAAS. While we will miss his insight and historical perspective in our daily operations, his legacy is firmly embedded in ADS and its successor, SciX. We invite you to join us in thanking Michael for his extraordinary service and wishing him a rewarding and peaceful retirement.
 
-* **Do You Use the ADS Historical Observatory Publications\?** <br>
+* **Do You Use the ADS Historical Observatory Publications?** <br>
 <img src="{{site.baseurl}}/blog/images/histlit_titles.gif" 
 	 alt="Historical Literature" 
 	 class="img-responsive"
-	 style="float: right; margin: 0 0 1em 1em; width: 400px;">
+	 style="float: right; margin: 0 0 1em 1em; width: 300px;">
 If you access the historical observatory publications through the “[Historical scans currently in the ADS](https://adsabs.harvard.edu/historical.html)” page or the “[Observatory/Society Publications Query Page for the Astronomy database](https://adsabs.harvard.edu/bulletins_service.html)” rather than through the primary ADS or SciX search pages, please contact Project Scientist for Astrophysics and occasional historian of astronomy [Jennifer Lynn Bartlett](../../about/team/team/jbartlett) (help@scixplorer.org). We would like your feedback on what these pages provide that our other interfaces do not. As we prepare to complete the [transition from ADS to SciX](../../adstoscix/), we plan to modernize these as well, as they have not been maintained for years.
 
 Development and data holdings updates as of April 1st:
   * Website and API Releases
-    + Added Solar Dynamics Observatory to [bibgroups page](../../help/data_faq/_posts/2024-08-29-Bibgroups.md)
-    + New blog post: [APS 2026 Recap](../../scixblog/aps2)
+    + Added Solar Dynamics Observatory to [bibgroups page](../../help/data_faq/Bibgroups)
+    + New blog post: [APS 2026 Recap](../../scixblog/aps26)
   * Data holdings and pipelines
     + 594k new records, and 8.65M new citations
       
@@ -313,7 +313,7 @@ Announcements:<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2601-scixatagu25.png" 
 	 alt="SciX at AGU25" 
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 550px;">
+	 style="display: block; margin: 1em auto; width: 400px;">
 
 Development and data holdings updates as of January 1st:
   * Website and API
@@ -405,7 +405,7 @@ Announcements:<br>
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2512-adsug.png" 
 	 alt="2025 ADS Users Group" 
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 550px;">
+	 style="display: block; margin: 1em auto; width: 400px;">
 
 * **See You At AGU25**!<br>
 	Some members of the SciX team will be at the AGU25 Conference in New Orleans later this month. Swing by booth #1532 to learn more about the platform and discover how it can catalyse your research, discovery and impact in the Earth, ocean and planetary sciences!<br>

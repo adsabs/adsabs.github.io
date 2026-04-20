@@ -82,7 +82,7 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 ### (USGS) United States Geological Survey
 `bibgroup:USGS` The USGS bibgroup contains publications authored by USGS scientists over the entire century-plus history of the bureau. Publications available include USGS-authored journal articles, series reports, book chapters, other government publications, and more. This bibgroup is maintained by {{ include.site }} and is sourced from the [USGS Publications Warehouse](https://www.usgs.gov/products/publications).
 
-## (USNO) United States Naval Observatory
+### (USNO) United States Naval Observatory
 `bibgroup:USNO` The U.S. Naval Observatory (USNO) bibgroup contains publications authored by USNO scientists over the entire 150+ year history of the Observatory. Publications available include USNO-authored journal articles, reports, abstracts, and more. This bibgroup is maintained by USNO Library staff and is updated quarterly.
 
 ### William Herschel Telescope

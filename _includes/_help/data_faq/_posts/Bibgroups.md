@@ -21,6 +21,7 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 - [(SOHO) NASA-ESA Solar and Heliospheric Observatory](#soho-nasa-esa-solar-and-heliospheric-observatory)
 - [(STEREO) Solar TErrestrial RElations Observatory](#stereo-solar-terrestrial-relations-observatory)
 - [(USGS) United States Geological Survey](#usgs-united-states-geological-survey)
+- [(USNO) United States Naval Observatory](#usno-united-states-naval-observatory)
 - [(WHT) William Herschel Telescope](#wht-william-herschel-telescope)
 - [Copernicus, EUVE, FUSE, GALEX, IUE, K2, Kepler, and TESS](#copernicus-euve-fuse-galex-iue-k2-kepler-and-tess)
 
@@ -80,6 +81,9 @@ Bibgroups are libraries that are curated by librarians, archivists and scientist
 
 ### (USGS) United States Geological Survey
 `bibgroup:USGS` The USGS bibgroup contains publications authored by USGS scientists over the entire century-plus history of the bureau. Publications available include USGS-authored journal articles, series reports, book chapters, other government publications, and more. This bibgroup is maintained by {{ include.site }} and is sourced from the [USGS Publications Warehouse](https://www.usgs.gov/products/publications).
+
+## (USNO) United States Naval Observatory
+`bibgroup:USNO` The U.S. Naval Observatory (USNO) bibgroup contains publications authored by USNO scientists over the entire 150+ year history of the Observatory. Publications available include USNO-authored journal articles, reports, abstracts, and more. This bibgroup is maintained by USNO Library staff and is updated quarterly.
 
 ### William Herschel Telescope
 `bibgroup:WHT`  The WHT bibgroup contains refereed papers published since 1988 using William Herschel Telescope data. The Isaac Newton Group of Telescopes (ING) operates the 4.2 metre William Herschel Telescope (WHT) and the 2.5 metre Isaac Newton Telescope (INT) at the Roque de los Muchachos Observatory, La Palma, Spain. The ING is funded by the Science and Technology Facilities Council (STFC-UKRI) of the United Kingdom, the Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO) of the Netherlands, and the Instituto de Astrofísica de Canarias (IAC) in Spain. IAC's contribution to ING is funded by the Spanish Ministry of Science and Innovation. This bibgroup is maintained by ING and is updated yearly - more information about the publications can be found at the [ING Publications](https://astro.ing.iac.es/biblio/pubs.php) website.

@@ -43,6 +43,4 @@ The 2024-25 SciX Lead Ambassadors, our first cohort, achieved an exciting lineup
 - [Tieza Mica Santos](../ambassador/team/Santos.html) (Environmental Sciences and Policy)
 - [Olivia Wilkins](../ambassador/team/Wilkins.html) (Astrochemistry)
 
-
-
 If you have comments or questions about SciX, you are welcome to contact any Ambassador directly, although the preferred way to get in touch with SciX staff is through our support email ([help [at] scixplorer.org](mailto:help@scixplorer.org)), which guarantees a timely reply to your inquiry.

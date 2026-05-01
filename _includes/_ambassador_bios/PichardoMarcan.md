@@ -3,3 +3,5 @@
 Dr. Manuel Pichardo Marcano is originally from Santo Domingo, Dominican Republic and is now a Postdoctoral research fellow at Instituto de Astronomía at Universidad Nacional Autónoma de México. Manuel’s research is focused on transient sources and the study of stellar remnants in binary systems, especially those that harbor white dwarfs.
 
 [m.pichardo.marcano [at] astro.unam.mx](mailto:m.pichardo.marcano@astro.unam.mx)
+
+<div style="clear: both; margin-bottom: 40px;"></div>

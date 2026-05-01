@@ -11,7 +11,7 @@ The SciX Lead Ambassadors are community advocates working with the [SciX staff](
 
 - Contributing to the [SciX blog](https://scixplorer.org/scixblog/) and online forums, sharing their insights and experiences.
 
-The 2024-25 SciX Lead Ambassadors, our first cohort, achieved an exciting lineup of events aimed at promoting collaboration and community development. Key events included:
+The 2024-26 SciX Lead Ambassadors, our first cohort, achieved an exciting lineup of events aimed at promoting collaboration and community development. Key events included:
 
 - A foundational workshop at the [Center for Astrophysics \| Harvard & Smithsonian](https://www.cfa.harvard.edu/) from August 21 - 23, 2024. The program trained Lead Ambassadors to share SciX with their communities, improve our Lead Ambassador Program, foster connections with the SciX team and other ambassadors, and create materials to facilitate community engagement.
 

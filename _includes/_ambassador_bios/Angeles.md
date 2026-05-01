@@ -2,4 +2,4 @@
 
 Alvin Angeles is a heliophysicist exploring turbulence in the solar wind and is a passionate steward of the scientific community. Alvin strives to advance science through discovery and advocacy in public policy.
 
-<div style="clear: both;"></div>
+<div style="clear: both; margin-bottom: 40px;"></div>

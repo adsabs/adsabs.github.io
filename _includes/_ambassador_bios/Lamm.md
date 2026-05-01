@@ -3,3 +3,5 @@
 Sarah is currently a PhD candidate in Geology at the University of Kansas, focusing her research on analog materials for Mars using Raman spectroscopy. Lamm obtained her Master of Science in 2021, and her Bachelors' of Science in Chemistry, Geology, and Geography in 2018, all from Kansas State University. Sarah's career also includes internships at Los Alamos National Laboratory and NASA Jet Propulsion Laboratory. 
 
 [slamm [at] ku.edu](mailto:slamm@ku.edu)
+
+<div style="clear: both; margin-bottom: 40px;"></div>

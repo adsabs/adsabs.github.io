@@ -5,7 +5,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 ## May 2026
 ### Announcements:
 <div style="border: 1px solid #E6E8EB; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
-<strong>SciX at EGU General Assembly 2026</strong><br>
+<strong style="font-size: 1.2em;">SciX at EGU General Assembly 2026</strong><br>
 <p>The SciX team is on the ground in Vienna this week for EGU26, and we’d love to connect! Stop by <strong>Booth X223 (downstairs)</strong> to meet the team, explore what we’ve been working on, and chat about how SciX supports your research.</p>
 <p>We’re also excited to be part of the scientific program:</p>
 	<ul>
@@ -21,11 +21,11 @@ To receive this listing via monthly email newsletter, along with announcements a
 </div>
 
 <div style="border: 1px solid #E6E8EB; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
-<strong>SciX at AbSciCon 2026</strong><br>
+<strong style="font-size: 1.2em;">SciX at AbSciCon 2026</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
 	 alt="Logo image for the AbSciCon26 conference" 
 	 class="img-responsive"
-	 style="float: right; width: 300px;">
+	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
 <p>Next up, the SciX team is heading to Madison for AbSciCon 2026, taking place <strong>May 17-22</strong>! As one of the leading conferences in Astrobiology, AbSciCon brings together researchers from across disciplines – and we’re excited to be part of the conversation.</p>
 
 <p>Ahead of the meeting, we’re also highlighting our work with the astrobiology community in a new blog post: “<a href="{% if include.ads %}../../blog/astrobiology-collab{% else %}../../scixblog/astrobiology-collab{% endif %}">From Collaboration to Curation: Building NASA Astrobiology’s Living Bibliography in SciX</a>”. It’s a behind-the-scenes look at how SciX supports cross-disciplinary research and helps make complex, distributed scholarship more discoverable.</p>
@@ -36,7 +36,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 </div>
 
 <div style="border: 1px solid #E6E8EB; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
-<strong>One is Rarely Done</strong><br>
+<strong style="font-size: 1.2em;">One is Rarely Done</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-plates1.png" 
 	 alt="Photographic glass plate" 
 	 class="img-responsive"
@@ -49,7 +49,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 </div>
 
 <div style="border: 1px solid #E6E8EB; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
-<strong>UMD Astronomers Ready for SciX</strong><br>
+<strong style="font-size: 1.2em;">UMD Astronomers Ready for SciX</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-UMDLogo.png" 
 	 alt="Image logo of University of Maryland Department of Astronomy" 
 	 class="img-responsive"
@@ -60,7 +60,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 </div>
 
 <div style="border: 1px solid #E6E8EB; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
-<strong>Dr. Anna Kelbert of SciX Discovers Lost Worlds with Data</strong><br>
+<strong style="font-size: 1.2em;">Dr. Anna Kelbert of SciX Discovers Lost Worlds with Data</strong><br>
 <p>Our own Project Scientist for Earth Science, Dr. Anna Kelbert, is the lead author of a paper that has been making waves this week! Anna and her team have revealed what is essentially the “lost” chunk of a continent hiding beneath the eastern USA. By using new deep-Earth mapping techniques, they showed that parts of the Appalachian Mountains sit on top of ancient continental fragments left over from long-vanished tectonic collisions. The paper is a brilliant reminder that the ground beneath our feet is anything but simple. What looks like stable, familiar geology is actually a stitched-together patchwork of Earth’s deep-time history, with pieces of old continents buried just out of sight. What is even more interesting is what this could mean for the technology of our present and future - <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024RG000850">read the open access paper here to find out more</a>!</p>
 </div>
 

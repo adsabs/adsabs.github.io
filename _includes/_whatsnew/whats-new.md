@@ -9,11 +9,15 @@ The SciX team is on the ground in Vienna this week for EGU26, and we’d love to
 
     We’re also excited to be part of the scientific program:
 
-	- [{% if include.ads %}Anna Kelbert](../../about/team/team/akelbert.html){% else %}Anna Kelbert](../../scixabout/team/team/akelbert.html){% endif %}, SciX Project Scientist for Earth Science, will present on Thursday at 5:10 PM during the ESSI3.2 session. Her talk will explore how SciX enables cross-disciplinary dialogue and improves credit attribution across research communities.
-	- [{% if include.ads %}Suze Kundu](../../about/team/team/skundu.html){% else %}Suze Kundu](../../scixabout/team/team/skundu.html){% endif %}, our Community Engagement Coordinator, will be presenting a SciX poster on Friday from 4:15–6:00 PM in Hall X4 (X4.84) – stop by to say hello and learn more!
+	- [{% if include.ads %}Dr. Anna Kelbert](../../about/team/team/akelbert.html){% else %}Dr. Anna Kelbert](../../scixabout/team/team/akelbert.html){% endif %}, SciX Project Scientist for Earth Science, will present on Thursday at 5:10 PM during the ESSI3.2 session. Her talk will explore how SciX enables cross-disciplinary dialogue and improves credit attribution across research communities.
+	- [{% if include.ads %}Dr. Suze Kundu](../../about/team/team/skundu.html){% else %}Dr. Suze Kundu](../../scixabout/team/team/skundu.html){% endif %}, our Research Community Engagement Coordinator, will be presenting a [SciX poster](https://www.youtube.com/watch?v=aFn_lUL_6Hg) on Friday from 4:15–6:00 PM in Hall X4 (X4.84) – stop by to say hello and learn more!
 
     Whether you're curious about SciX or already using it, we’d love to see you there.
-
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-egu-newsletter.png" 
+	 alt="Banner image showing photos of the SciX booth at EGU" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 600px;">
+	 
 * **SciX at AbSciCon 2026**<br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
 	 alt="Logo image for the AbSciCon26 conference" 
@@ -46,8 +50,11 @@ As shown in these scanned pages from the 1979 NASA publication “[An emission-l
 	 style="float: left; margin: 10px 10px 0 0; width: 300px;">
 [Andrew Harris](https://www.astro.umd.edu/people/andrew-i-harris), chair of the [University of Maryland Department of Astronomy](https://www.astro.umd.edu/), hosted [{% if include.ads %}Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html){% else %}Jennifer Lynn Bartlett](../../scixabout/team/team/jbartlett.html){% endif %}, project scientist for astrophysics, last month for a talk about how SciX benefits astronomers and how to adapt the new system to existing workflows. Folks were delighted with the advanced features, such as visualizations, and relieved that they would not have to give up old friends, like the “Classic” form. Jennifer was grateful for their hospitality and appreciated the opportunity to meet with colleagues in person while she was in Maryland.
 
-	If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or {% if include.site == 'SciX' %}{% assign contact_email = 'help@scixplorer.org' %}{% else %}{% assign contact_email = 'adshelp@cfa.harvard.edu' %}{% endif %}<a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.
-	 
+	If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or {% if include.ads %}{% assign contact_email = 'adshelp@cfa.harvard.edu' %}{% else %}{% assign contact_email = 'help@scixplorer.org' %}{% endif %}<a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.
+
+* **Dr. Anna Kelbert of SciX Discovers Lost Worlds with Data** <br>
+Our own Project Scientist for Earth Science, Dr. Anna Kelbert, is the lead author of a paper that has been making waves this week! Anna and her team have revealed what is essentially the “lost” chunk of a continent hiding beneath the eastern USA. By using new deep-Earth mapping techniques, they showed that parts of the Appalachian Mountains sit on top of ancient continental fragments left over from long-vanished tectonic collisions. The paper is a brilliant reminder that the ground beneath our feet is anything but simple. What looks like stable, familiar geology is actually a stitched-together patchwork of Earth’s deep-time history, with pieces of old continents buried just out of sight. What is even more interesting is what this could mean for the technology of our present and future - [read the open access paper here to find out more](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024RG000850)!
+
 Development and data holdings updates as of May 1st:
   * Website and API Releases
     + Added USNO to [{% if include.ads %}bibgroups page](../../help/data_faq/Bibgroups){% else %}bibgroups page](../../scixhelp/data_faq-scix/Bibgroups){% endif %}

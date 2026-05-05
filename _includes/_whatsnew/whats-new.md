@@ -4,7 +4,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 ## May 2026
 ### Announcements:
-<div style="border: 1px solid #60c3b2; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">SciX at EGU General Assembly 2026</strong><br>
 <p>The SciX team is on the ground in Vienna this week for EGU26, and we’d love to connect! Stop by <strong>Booth X223 (downstairs)</strong> to meet the team, explore what we’ve been working on, and chat about how SciX supports your research.</p>
 <p>We’re also excited to be part of the scientific program:</p>
@@ -20,7 +20,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 	 style="display: block; margin: 1em auto; width: 700px;">
 </div>
 
-<div style="border: 1px solid #faa954; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">SciX at AbSciCon 2026</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
 	 alt="Logo image for the AbSciCon26 conference" 
@@ -35,7 +35,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>If you’ll be attending AbSciCon, join us in the exhibit hall for a quick demo that can accelerate your science and show us what connections you are making across disciplines. We’d love to connect!</p>
 </div>
 
-<div style="border: 1px solid #0098da; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">One is Rarely Done</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-plates1.png" 
 	 alt="Photographic glass plate" 
@@ -48,7 +48,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>As shown in these scanned pages from the 1979 NASA publication “<a href="https://scixplorer.org/abs/1979NASSP.434.....P/abstract">An emission-line survey of the Milky Way</a>“, not every scan captures all the information present in the originals. At best, these views of our Milky Way are an observation of an observation of an observation. Therefore, when digitizing, retaining the original material if possible is desirable. Here, <a href="https://scixplorer.org/search?p=1&q=author%3A%22Gull%2C+T.+R.%22&sort=score+desc&sort=date+desc&d=astrophysics">Ted Gull</a>, one of the original authors, entrusted <a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Jennifer Lynn Bartlett</a>, project scientist for astrophysics, with the original photographic plate negatives. She plans to work with the <a href="https://platestacks.cfa.harvard.edu/">Harvard Plate Stacks</a> to scan these and make them available in SciX for everyone, However, given their current state and the need to raise funds to support scanning additional historical literature, this project is likely to take several years.</p>
 </div>
 
-<div style="border: 1px solid #cbbc4c; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">UMD Astronomers Ready for SciX</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-UMDLogo.png" 
 	 alt="Image logo of University of Maryland Department of Astronomy" 
@@ -59,7 +59,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or {% if include.ads %}{% assign contact_email = 'adshelp@cfa.harvard.edu' %}{% else %}{% assign contact_email = 'help@scixplorer.org' %}{% endif %}<a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.</p>
 </div>
 
-<div style="border: 1px solid #95c949; border-left: 6px solid #5FBFAE; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Dr. Anna Kelbert of SciX Discovers Lost Worlds with Data</strong><br>
 <p>Our own Project Scientist for Earth Science, Dr. Anna Kelbert, is the lead author of a paper that has been making waves this week! Anna and her team have revealed what is essentially the “lost” chunk of a continent hiding beneath the eastern USA. By using new deep-Earth mapping techniques, they showed that parts of the Appalachian Mountains sit on top of ancient continental fragments left over from long-vanished tectonic collisions. The paper is a brilliant reminder that the ground beneath our feet is anything but simple. What looks like stable, familiar geology is actually a stitched-together patchwork of Earth’s deep-time history, with pieces of old continents buried just out of sight. What is even more interesting is what this could mean for the technology of our present and future - <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024RG000850">read the open access paper here to find out more</a>!</p>
 </div>

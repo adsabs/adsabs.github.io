@@ -18,29 +18,33 @@ One of the most rewarding outcomes of this collaboration is that the SciX librar
 
 <h3 style="margin-top: 0; color: #049DD9;">Using the Astrobiology Library</h3>
 
+As a researcher, you can access the Astrobiology library via [the link here](https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA) or from the “For Researchers” dropdown menu on the [NASA Astrobiology Program](https://science.nasa.gov/astrobiology/) home page. 
+
+<div style="display: flex; gap: 20px; align-items: flex-start;">
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure1.png" 
 	 alt="SciX interface showing the NASA Astrobiology Publications library with a list of papers and sorting options"
 	 class="img-responsive"
-	 style="float: right; margin: 0 10px 1em 1em; width: 300px;">
-As a researcher, you can access the Astrobiology library via [the link here](https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA) or from the “For Researchers” dropdown menu on the [NASA Astrobiology Program](https://science.nasa.gov/astrobiology/) home page. 
-
+	 style="width: 300px;">
+	 
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure2.png" 
 	 alt="SciX library sorting controls showing a dropdown menu and sort order toggle"
 	 class="img-responsive"
-	 style="float: right; margin: 0 10px 1em 1em; width: 300px;">
+	 style="width: 300px;">
+</div>
+
 Within the Astrobiology library view, you can sort the papers several ways, including `Time Added` to see the latest additions to the library, `Date` to see the latest publications, or `First Author` to find a specific paper. 
 
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure3.png" 
 	 alt="SciX article view with options for full text, citations, data products, and sharing"
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 550px;">
+	 style="display: block; margin: 1em auto; width: 650px;">
    
 The icons on the right side of each individual entry provide you quick links to the abstract, full text, references and citations, data products, and copied URL or citation. Here you can quickly initiate the most common requests with regards to the astrobiology literature.
 
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure4.png" 
 	 alt="SciX paper list with one entry expanded to display its abstract and action icons"
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 550px;">
+	 style="display: block; margin: 1em auto; width: 650px;">
    
 To read the abstract of any paper, you can click on the down caret or the notetaking icon. If you click on a paper’s title, you can explore all the resources of our full-featured [Abstract View](https://www.scixplorer.org/scixhelp/actions-scix/article-view) of that paper. The individual abstract view is a hub for identifying and accessing a wealth of resources related to that particular astrobiology resource.
 

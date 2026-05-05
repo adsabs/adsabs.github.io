@@ -1,7 +1,7 @@
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_nasa-astrobiology-poster.jpg" 
 	 alt="Illustration of a planet with diverse microbial life beneath a star-filled galaxy"
 	 class="img-responsive"
-	 style="float: left; margin: 0 10 1em 1em; width: 300px;">
+	 style="float: left; margin: 0 20px 1em 1em; width: 300px;">
 Keeping track of scientific publications sounds straightforward - until you’re working in a field as interdisciplinary as astrobiology. Astrobiology sits at the intersection of astronomy, geology, chemistry, biology, and planetary science, which means its research is scattered across a wide range of journals, repositories, and formats. For teams trying to maintain a comprehensive, up-to-date bibliography, the task quickly becomes an ongoing challenge.
 
 With the launch of Science Explorer (SciX) and its growing focus on interdisciplinary science, we’ve had the opportunity to collaborate with the [NASA Astrobiology Program](https://science.nasa.gov/astrobiology/) to rethink how their publications are tracked, curated, and shared. What began as an effort to streamline internal tracking has evolved into something much more impactful: a living, publicly accessible [NASA Astrobiology bibliography](https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA) that now helps power how the program shares its research with the world.
@@ -16,7 +16,7 @@ At its core, this project is driven by a simple goal: to make astrobiology resea
 
 One of the most rewarding outcomes of this collaboration is that the SciX library is no longer just an internal tool. It now serves as the publications bibliography featured on the NASA Astrobiology website, providing a reliable, continuously updated resource for researchers, collaborators, and the public.
 
-<h3 style="margin-top: 0; color: #049DD9;">Using the Astrobiology Library</h3>
+<h3 style="margin-top: 0; color: #5FBFAE;">Using the Astrobiology Library</h3>
 
 As a researcher, you can access the Astrobiology library via [the link here](https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA) or from the “For Researchers” dropdown menu on the [NASA Astrobiology Program](https://science.nasa.gov/astrobiology/) home page. 
 
@@ -24,12 +24,12 @@ As a researcher, you can access the Astrobiology library via [the link here](htt
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure1.png" 
 	 alt="SciX interface showing the NASA Astrobiology Publications library with a list of papers and sorting options"
 	 class="img-responsive"
-	 style="width: 300px;">
+	 style="width: 500px; border: 3px solid #049DD9; border-radius: 6px;">
 	 
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure2.png" 
 	 alt="SciX library sorting controls showing a dropdown menu and sort order toggle"
 	 class="img-responsive"
-	 style="width: 300px;">
+	 style="width: 300px; border: 3px solid #049DD9; border-radius: 6px;">
 </div>
 
 Within the Astrobiology library view, you can sort the papers several ways, including `Time Added` to see the latest additions to the library, `Date` to see the latest publications, or `First Author` to find a specific paper. 

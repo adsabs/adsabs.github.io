@@ -1,4 +1,3 @@
-
 This page is updated monthly with a list of new (**[new]**) and improved (**[improved]**) features and bug fixes (**[fixed]**) to our website, API, data pipelines, and data holdings. We also list operations issues and improvements of note (**[ops]**).
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
@@ -19,7 +18,7 @@ The SciX team is on the ground in Vienna this week for EGU26, and we’d love to
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
 	 alt="Logo image for the AbSciCon26 conference" 
 	 class="img-responsive"
-	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
+	 style="float: right; width: 300px;">
 Next up, the SciX team is heading to Madison for AbSciCon 2026, taking place **May 17-22**! As one of the leading conferences in Astrobiology, AbSciCon brings together researchers from across disciplines – and we’re excited to be part of the conversation.
 
 	Ahead of the meeting, we’re also highlighting our work with the astrobiology community in a new blog post: “[{% if include.ads %}From Collaboration to Curation: Building NASA Astrobiology’s Living Bibliography in SciX](../../blog/astrobiology-collab){% else %}From Collaboration to Curation: Building NASA Astrobiology’s Living Bibliography in SciX](../../scixblog/astrobiology-collab){% endif %}”. It’s a behind-the-scenes look at how SciX supports cross-disciplinary research and helps make complex, distributed scholarship more discoverable.
@@ -44,10 +43,10 @@ As shown in these scanned pages from the 1979 NASA publication “[An emission-l
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-UMDLogo.png" 
 	 alt="Image logo of University of Maryland Department of Astronomy" 
 	 class="img-responsive"
-	 style="float: left; margin: 0 10px 10px 0; width: 300px;">
+	 style="float: left; margin: 10px 10px 0 0; width: 300px;">
 [Andrew Harris](https://www.astro.umd.edu/people/andrew-i-harris), chair of the [University of Maryland Department of Astronomy](https://www.astro.umd.edu/), hosted [{% if include.ads %}Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html){% else %}Jennifer Lynn Bartlett](../../scixabout/team/team/jbartlett.html){% endif %}, project scientist for astrophysics, last month for a talk about how SciX benefits astronomers and how to adapt the new system to existing workflows. Folks were delighted with the advanced features, such as visualizations, and relieved that they would not have to give up old friends, like the “Classic” form. Jennifer was grateful for their hospitality and appreciated the opportunity to meet with colleagues in person while she was in Maryland.
 
-	If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}. She is available virtually or in-person if we will be in your area.  
+	If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or {% if include.site == 'SciX' %}{% assign contact_email = 'help@scixplorer.org' %}{% else %}{% assign contact_email = 'adshelp@cfa.harvard.edu' %}{% endif %}<a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.
 	 
 Development and data holdings updates as of May 1st:
   * Website and API Releases

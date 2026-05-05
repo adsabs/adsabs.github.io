@@ -3,6 +3,87 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## May 2026
+Announcements:<br>
+* **SciX at EGU General Assembly 2026**<br>
+The SciX team is on the ground in Vienna this week for EGU26, and we’d love to connect! Stop by **Booth X223 (downstairs)** to meet the team, explore what we’ve been working on, and chat about how SciX supports your research.
+
+    We’re also excited to be part of the scientific program:
+
+	- [{% if include.ads %}Anna Kelbert](../../about/team/team/akelbert.html){% else %}Anna Kelbert](../../scixabout/team/team/akelbert.html){% endif %}, SciX Project Scientist for Earth Science, will present on Thursday at 5:10 PM during the ESSI3.2 session. Her talk will explore how SciX enables cross-disciplinary dialogue and improves credit attribution across research communities.
+	- [{% if include.ads %}Suze Kundu](../../about/team/team/skundu.html){% else %}Suze Kundu](../../scixabout/team/team/skundu.html){% endif %}, our Community Engagement Coordinator, will be presenting a SciX poster on Friday from 4:15–6:00 PM in Hall X4 (X4.84) – stop by to say hello and learn more!
+
+    Whether you're curious about SciX or already using it, we’d love to see you there.
+
+* **SciX at AbSciCon 2026**<br>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
+	 alt="Logo image for the AbSciCon26 conference" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
+Next up, the SciX team is heading to Madison for AbSciCon 2026, taking place **May 17-22**! As one of the leading conferences in Astrobiology, AbSciCon brings together researchers from across disciplines – and we’re excited to be part of the conversation.
+
+	Ahead of the meeting, we’re also highlighting our work with the astrobiology community in a new blog post: “[{% if include.ads %}From Collaboration to Curation: Building NASA Astrobiology’s Living Bibliography in SciX](../../blog/astrobiology-collab){% else %}From Collaboration to Curation: Building NASA Astrobiology’s Living Bibliography in SciX](../../scixblog/astrobiology-collab){% endif %}”. It’s a behind-the-scenes look at how SciX supports cross-disciplinary research and helps make complex, distributed scholarship more discoverable.
+	
+	[{% if include.ads %}Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html){% else %}Jennifer Lynn Bartlett](../../scixabout/team/team/jbartlett.html){% endif %}, project scientist for astrophysics, will present “Science Explorer (SciX): Supporting Open and Interdisciplinary Science,” a poster in Session 227: Best Practices for Implementing Open Science on Tuesday, May 19 from 3:45 PM–5:15 PM CDT. The poster hall is on level 1 of the Monona Terrace. 
+	
+	If you’ll be attending AbSciCon, join us in the exhibit hall for a quick demo that can accelerate your science and show us what connections you are making across disciplines. We’d love to connect!
+
+* **One is Rarely Done**<br>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-plates1.png" 
+	 alt="Photographic glass plate" 
+	 class="img-responsive"
+	 style="float: left; margin: 0 10px 10px 0; width: 300px;">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-boxes.jpg" 
+	 alt="Boxes of material stacked in the back of a vehicle" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 200px;">	 
+As shown in these scanned pages from the 1979 NASA publication “[An emission-line survey of the Milky Way](https://scixplorer.org/abs/1979NASSP.434.....P/abstract)“, not every scan captures all the information present in the originals. At best, these views of our Milky Way are an observation of an observation of an observation. Therefore, when digitizing, retaining the original material if possible is desirable. Here, [Ted Gull](https://scixplorer.org/search?p=1&q=author%3A%22Gull%2C+T.+R.%22&sort=score+desc&sort=date+desc&d=astrophysics), one of the original authors, entrusted 
+[{% if include.ads %}Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html){% else %}Jennifer Lynn Bartlett](../../scixabout/team/team/jbartlett.html){% endif %}, project scientist for astrophysics, with the original photographic plate negatives. She plans to work with the [Harvard Plate Stacks](https://platestacks.cfa.harvard.edu/) to scan these and make them available in SciX for everyone, However, given their current state and the need to raise funds to support scanning additional historical literature, this project is likely to take several years.
+
+* **UMD Astronomers Ready for SciX** <br>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-UMDLogo.png" 
+	 alt="Image logo of University of Maryland Department of Astronomy" 
+	 class="img-responsive"
+	 style="float: left; margin: 0 10px 10px 0; width: 300px;">
+[Andrew Harris](https://www.astro.umd.edu/people/andrew-i-harris), chair of the [University of Maryland Department of Astronomy](https://www.astro.umd.edu/), hosted [{% if include.ads %}Jennifer Lynn Bartlett](../../about/team/team/jbartlett.html){% else %}Jennifer Lynn Bartlett](../../scixabout/team/team/jbartlett.html){% endif %}, project scientist for astrophysics, last month for a talk about how SciX benefits astronomers and how to adapt the new system to existing workflows. Folks were delighted with the advanced features, such as visualizations, and relieved that they would not have to give up old friends, like the “Classic” form. Jennifer was grateful for their hospitality and appreciated the opportunity to meet with colleagues in person while she was in Maryland.
+
+	If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or <a href="mailto:{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}">{% if include.site == 'SciX' %}help@scixplorer.org{% else %}adshelp@cfa.harvard.edu{% endif %}. She is available virtually or in-person if we will be in your area.  
+	 
+Development and data holdings updates as of May 1st:
+  * Website and API Releases
+    + Added USNO to [{% if include.ads %}bibgroups page](../../help/data_faq/Bibgroups){% else %}bibgroups page](../../scixhelp/data_faq-scix/Bibgroups){% endif %}
+    + New blog post about our [{% if include.ads %}NASA Astrobiology Collaboration](../../blog/astrobiology-collab){% else %}NASA Astrobiology Collaboration](../../scixblog/astrobiology-collab){% endif %}
+    + Updated the [{% if include.ads %}Lead Ambassadors about pages](../../about/ambassador){% else %}Lead Ambassadors about pages](../../scixabout/ambassador){% endif %}
+  * Data holdings and pipelines
+    + 198k new records, and 10.12M new citations
+      
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Biblib Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/biblib-service/releases/tag/v2.0.0">v2.0.0</a></li>
+	- [ops] Updated to python 3.10<br>
+</ul>
+
+<li>Resolver Gateway Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/resolver_gateway/releases/tag/v2.1.4">v2.1.4</a></li>
+	- [improved] Redirect ADS_SCAN links to scan explorer manifest page<br>
+</ul>
+
+<li>Scan Explorer Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/ADSScanExplorerService/releases/tag/v1.0.11">v1.0.11</a></li>
+	- [improved] Raise per-user rate limits from 300/day to 5000/day<br>
+<li><a href="https://github.com/adsabs/ADSScanExplorerService/releases/tag/v1.0.10">v1.0.10</a></li>
+	- [ops] Add manifest cache, PDF early limit check, and parallel S3 fetching<br>
+</ul>
+
+</ul>
+</details>
+
 ## April 2026
 Announcements:<br>
 * **Recent Workshop Highlight: Language AI in the Space Sciences**<br>

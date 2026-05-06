@@ -65,9 +65,10 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 <p>By mapping electrical conductivity of the Earth’s crust and upper mantle across the USA, the team discovered that the Appalachian Mountains and the mid-continent sit on ancient continental fragments left over from long-vanished tectonic collisions. This research supports important Earth science applications, including the nation’s capability to mitigate natural geomagnetic hazards that can disrupt the power grids we rely on. The paper reminds us that the ground beneath our feet is anything but simple. What looks like stable, familiar geology is actually a result of complicated dynamics, a stitched-together patchwork of Earth’s deep-time history with direct relevance to our technological present and future. <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024RG000850">Read the open access paper to learn more</a>!</p>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-usgeomap.jpg" 
-	 alt="Electrical conductivity map of the United States at 35 km depth" 
-	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 700px;">
+	alt="Electrical conductivity map of the United States at 35 km depth"
+	class="img-responsive" 
+	style="display: block; margin: 1em auto; width: 700px;">
+	
 </div>
 
 ### Development and data holdings updates as of May 1st:

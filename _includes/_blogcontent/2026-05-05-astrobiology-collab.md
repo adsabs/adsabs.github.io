@@ -8,13 +8,13 @@ With the launch of Science Explorer (SciX) and its growing focus on interdiscipl
 
 <h3 style="margin-top: 0; color: #5FBFAE;">Building the Astrobiology Library</h3>             
 
-The collaboration came together pretty organically. We connected with the NASA Astrobiology team to discover more literature to add to our growing collections. We compared notes on publication tracking workflows, and quickly found a path forward that built on what they were already doing - just with a bit more automation and structure layered in.
-
-It started with a simple CSV list of publications maintained by the Astrobiology team. From there, we developed a Python-based workflow to transform that list into a fully realized SciX library. Using the SciX API, we first check which publications already exist in the system. For anything missing, we generate new records using curation-focused scripts that clean, standardize, and enrich the metadata. Once everything is in place, we use the API again to maintain a dedicated SciX Library that brings the full set of NASA Astrobiology publications together in one place. The Astrobiology team now includes us on their monthly publication digest, which means this isn’t a one-time effort - it’s a sustained, evolving collaboration that keeps the library continuously up to date.
-
 At its core, this project is driven by a simple goal: to make astrobiology research more findable, organized, and usable. Through SciX, we’ve built a library that aggregates publications from multiple sources, normalizes metadata, and ensures consistency across records.
 
 One of the most rewarding outcomes of this collaboration is that the SciX library is no longer just an internal tool. It now serves as the publications bibliography featured on the NASA Astrobiology website, providing a reliable, continuously updated resource for researchers, collaborators, and the public.
+
+The collaboration came together pretty organically. We connected with the NASA Astrobiology team to discover more literature to add to our growing collections. We compared notes on publication tracking workflows, and quickly found a path forward that built on what they were already doing - just with a bit more automation and structure layered in.
+
+It started with a simple CSV list of publications maintained by the Astrobiology team. From there, we developed a Python-based workflow to transform that list into a fully realized SciX library: Using the SciX API, we first check which publications already exist in the system. For anything missing, we generate new records using curation-focused scripts that clean, standardize, and enrich the metadata. Once everything is in place, we use the API again to maintain a dedicated SciX Library that brings the full set of NASA Astrobiology publications together in one place. The Astrobiology team now includes us on their monthly publication digest, which means this isn’t a one-time effort - it’s a sustained, evolving collaboration that keeps the library continuously up to date.
 
 <h3 style="margin-top: 0; color: #5FBFAE;">Using the Astrobiology Library</h3>
 

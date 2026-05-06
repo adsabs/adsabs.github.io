@@ -1,7 +1,109 @@
-
 This page is updated monthly with a list of new (**[new]**) and improved (**[improved]**) features and bug fixes (**[fixed]**) to our website, API, data pipelines, and data holdings. We also list operations issues and improvements of note (**[ops]**).
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
+
+## May 2026
+### Announcements:
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">SciX at EGU General Assembly 2026</strong><br>
+<p>The SciX team is on the ground in Vienna this week for EGU26, and we’d love to connect! Stop by <strong>Booth X223 (downstairs)</strong> to meet the team, explore what we’ve been working on, and chat about how SciX supports your research.</p>
+<p>We’re also excited to be part of the scientific program:</p>
+	<ul>
+		<li><a href="{% if include.ads %}../../about/team/team/akelbert.html{% else %}../../scixabout/team/team/akelbert.html{% endif %}">Dr. Anna Kelbert</a>, SciX Project Scientist for Earth Science, will present on Thursday at 5:10 PM during the ESSI3.2 session. Her talk will explore how SciX enables cross-disciplinary dialogue and improves credit attribution across research communities.</li>
+		<li><a href="{% if include.ads %}../../about/team/team/skundu.html{% else %}../../scixabout/team/team/skundu.html{% endif %}">Dr. Suze Kundu</a>, our Research Community Engagement Coordinator, will be presenting a <a href="https://www.youtube.com/watch?v=aFn_lUL_6Hg">SciX poster</a> on Friday from 4:15–6:00 PM in Hall X4 (X4.84) – stop by to say hello and learn more!</li>
+	</ul>
+
+<p>Whether you're curious about SciX or already using it, we’d love to see you there.</p>
+	<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-egu-newsletter.png" 
+	 alt="Banner image showing photos of the SciX booth at EGU" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 700px;">
+</div>
+
+<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">SciX at AbSciCon 2026</strong><br>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
+	 alt="Logo image for the AbSciCon26 conference" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
+<p>Next up, the SciX team is heading to Madison for AbSciCon 2026, taking place <strong>May 17-22</strong>! As one of the leading conferences in Astrobiology, AbSciCon brings together researchers from across disciplines – and we’re excited to be part of the conversation.</p>
+
+<p>Ahead of the meeting, we’re also highlighting our work with the astrobiology community in a new blog post: “<a href="{% if include.ads %}../../blog/astrobiology-collab{% else %}../../scixblog/astrobiology-collab{% endif %}">From Collaboration to Curation: Building NASA Astrobiology’s Living Bibliography in SciX</a>”. It’s a behind-the-scenes look at how SciX supports cross-disciplinary research and helps make complex, distributed scholarship more discoverable.</p>
+	
+<p><a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Jennifer Lynn Bartlett</a>, project scientist for astrophysics, will present “Science Explorer (SciX): Supporting Open and Interdisciplinary Science,” a poster in Session 227: Best Practices for Implementing Open Science on Tuesday, May 19 from 3:45 PM–5:15 PM CDT. The poster hall is on level 1 of the Monona Terrace.</p>
+	
+<p>If you’ll be attending AbSciCon, join us in the exhibit hall for a quick demo that can accelerate your science and show us what connections you are making across disciplines. We’d love to connect!</p>
+</div>
+
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">One is Rarely Done</strong><br>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-plates1.png" 
+	 alt="Photographic glass plate" 
+	 class="img-responsive"
+	 style="float: left; margin: 0 10px 10px 0; width: 300px;">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-boxes.jpg" 
+	 alt="Boxes of material stacked in the back of a vehicle" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 200px;">	 
+<p>As shown in these scanned pages from the 1979 NASA publication “<a href="https://scixplorer.org/abs/1979NASSP.434.....P/abstract">An emission-line survey of the Milky Way</a>“, not every scan captures all the information present in the originals. At best, these views of our Milky Way are an observation of an observation of an observation. Therefore, when digitizing, retaining the original material if possible is desirable. Here, <a href="https://scixplorer.org/search?p=1&q=author%3A%22Gull%2C+T.+R.%22&sort=score+desc&sort=date+desc&d=astrophysics">Ted Gull</a>, one of the original authors, entrusted <a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Jennifer Lynn Bartlett</a>, project scientist for astrophysics, with the original photographic plate negatives. She plans to work with the <a href="https://platestacks.cfa.harvard.edu/">Harvard Plate Stacks</a> to scan these and make them available in SciX for everyone, However, given their current state and the need to raise funds to support scanning additional historical literature, this project is likely to take several years.</p>
+</div>
+
+<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">UMD Astronomers Ready for SciX</strong><br>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-UMDLogo.png" 
+	 alt="Image logo of University of Maryland Department of Astronomy" 
+	 class="img-responsive"
+	 style="float: left; margin: 10px 10px 0 0; width: 300px;">
+<p><a href="https://www.astro.umd.edu/people/andrew-i-harris">Andrew Harris</a>, chair of the <a href="https://www.astro.umd.edu/">University of Maryland Department of Astronomy</a>, hosted <a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Jennifer Lynn Bartlett</a>, project scientist for astrophysics, last month for a talk about how SciX benefits astronomers and how to adapt the new system to existing workflows. Folks were delighted with the advanced features, such as visualizations, and relieved that they would not have to give up old friends, like the “Classic” form. Jennifer was grateful for their hospitality and appreciated the opportunity to meet with colleagues in person while she was in Maryland.</p>
+
+<p>If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or {% if include.ads %}{% assign contact_email = 'adshelp@cfa.harvard.edu' %}{% else %}{% assign contact_email = 'help@scixplorer.org' %}{% endif %}<a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.</p>
+</div>
+
+<div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">Dr. Anna Kelbert of SciX Publishes Stunning Images of Earth’s Structure in North America</strong><br>
+<p>Our own Project Scientist for Earth Science, <a href="{% if include.ads %}../../about/team/team/akelbert.html{% else %}../../scixabout/team/team/akelbert.html{% endif %}">Dr. Anna Kelbert</a>, is the lead author of a paper that has been making waves this week! The work was recently featured in press releases from the <a href="https://www.cfa.harvard.edu/news/scientists-map-hidden-electrical-structure-us-revealing-new-clues-about-earths-interior-and">Harvard-Smithsonian Center for Astrophysics</a>, <a href="https://www.science.org/content/article/deep-earth-map-reveals-lost-u-s-continent">Science</a>, and <a href="https://www.usgs.gov/programs/geomagnetism/science/mapping-grid-united-states-magnetotelluric-array">USGS</a>.</p>
+
+<p>By mapping electrical conductivity of the Earth’s crust and upper mantle across the continental United States, the team discovered that the Appalachian Mountains and the mid-continent sit on ancient continental fragments left over from long-vanished tectonic collisions. This research supports important Earth science applications, including the United States’ capability to mitigate natural geomagnetic hazards that can disrupt the power grids we rely on. The paper reminds us that the ground beneath our feet is anything but simple. What looks like stable, familiar geology is actually a result of complicated dynamics, a stitched-together patchwork of Earth’s deep-time history with direct relevance to our technological present and future. <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024RG000850">Read the open access paper to learn more</a>!</p>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-usgeomap.jpg" 
+	alt="Electrical conductivity map of the United States at 35 km depth"
+	class="img-responsive" 
+	style="display: block; margin: 1em auto; width: 700px;">
+</div>
+
+### Development and data holdings updates as of May 1st:
+  * Website and API Releases
+    + Added USNO to [{% if include.ads %}bibgroups page](../../help/data_faq/Bibgroups){% else %}bibgroups page](../../scixhelp/data_faq-scix/Bibgroups){% endif %}
+    + New blog post about our [{% if include.ads %}NASA Astrobiology Collaboration](../../blog/astrobiology-collab){% else %}NASA Astrobiology Collaboration](../../scixblog/astrobiology-collab){% endif %}
+    + Updated the [{% if include.ads %}Lead Ambassadors about pages](../../about/ambassador){% else %}Lead Ambassadors about pages](../../scixabout/ambassador){% endif %}
+  * Data holdings and pipelines
+    + 198k new records, and 10.12M new citations
+      
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Biblib Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/biblib-service/releases/tag/v2.0.0">v2.0.0</a></li>
+	- [ops] Updated to python 3.10<br>
+</ul>
+
+<li>Resolver Gateway Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/resolver_gateway/releases/tag/v2.1.4">v2.1.4</a></li>
+	- [improved] Redirect ADS_SCAN links to scan explorer manifest page<br>
+</ul>
+
+<li>Scan Explorer Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/ADSScanExplorerService/releases/tag/v1.0.11">v1.0.11</a></li>
+	- [improved] Raised per-user rate limits from 300/day to 5000/day<br>
+<li><a href="https://github.com/adsabs/ADSScanExplorerService/releases/tag/v1.0.10">v1.0.10</a></li>
+	- [ops] Added manifest cache, PDF early limit check, and parallel S3 fetching<br>
+</ul>
+
+</ul>
+</details>
 
 ## April 2026
 Announcements:<br>

@@ -61,14 +61,13 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 <div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Dr. Anna Kelbert of SciX Publishes Stunning Images of Earth’s Structure in North America</strong><br>
-<p>Our own Project Scientist for Earth Science, <a href="{% if include.ads %}../../about/team/team/akelbert.html{% else %}../../scixabout/team/team/akelbert.html{% endif %}">Dr. Anna Kelbert</a>, is the lead author of a paper that has been making waves this week! The work was recently featured in press releases from the <a href="https://www.cfa.harvard.edu/news/scientists-map-hidden-electrical-structure-us-revealing-new-clues-about-earths-interior-and">Harvard-Smithsonian Center for Astrophysics</a>, <a href="https://www.science.org/content/article/deep-earth-map-reveals-lost-u-s-continent">Science</a>, and <a href="https://www.usgs.gov/programs/geomagnetism/science/mapping-grid-united-states-magnetotelluric-array">USGS</a>.
+<p>Our own Project Scientist for Earth Science, <a href="{% if include.ads %}../../about/team/team/akelbert.html{% else %}../../scixabout/team/team/akelbert.html{% endif %}">Dr. Anna Kelbert</a>, is the lead author of a paper that has been making waves this week! The work was recently featured in press releases from the <a href="https://www.cfa.harvard.edu/news/scientists-map-hidden-electrical-structure-us-revealing-new-clues-about-earths-interior-and">Harvard-Smithsonian Center for Astrophysics</a>, <a href="https://www.science.org/content/article/deep-earth-map-reveals-lost-u-s-continent">Science</a>, and <a href="https://www.usgs.gov/programs/geomagnetism/science/mapping-grid-united-states-magnetotelluric-array">USGS</a>.</p>
 
 <p>By mapping electrical conductivity of the Earth’s crust and upper mantle across the USA, the team discovered that the Appalachian Mountains and the mid-continent sit on ancient continental fragments left over from long-vanished tectonic collisions. This research supports important Earth science applications, including the nation’s capability to mitigate natural geomagnetic hazards that can disrupt the power grids we rely on. The paper reminds us that the ground beneath our feet is anything but simple. What looks like stable, familiar geology is actually a result of complicated dynamics, a stitched-together patchwork of Earth’s deep-time history with direct relevance to our technological present and future. <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024RG000850">Read the open access paper to learn more</a>!</p>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-usgeomap.jpg" 
 	alt="Electrical conductivity map of the United States at 35 km depth"
 	class="img-responsive" 
 	style="display: block; margin: 1em auto; width: 700px;">
-	
 </div>
 
 ### Development and data holdings updates as of May 1st:

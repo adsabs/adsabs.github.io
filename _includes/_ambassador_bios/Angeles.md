@@ -1,5 +1,5 @@
 <img src="{{ site.baseurl }}/about/ambassador/img/2026-Angeles.png" width="200" alt="Headshot of Alvin Angeles" style="float: left; margin: 4px 10px 0px 15px; border: 1px solid #000000;">
 
-Alvin Angeles is a heliophysicist exploring turbulence in the solar wind and is a passionate steward of the scientific community. Alvin strives to advance science through discovery and advocacy in public policy.
+Alvin Angeles is a Heliophysics PhD candidate at the University of New Hampshire. His research focuses on investigating and characterizing small-scale magnetic field turbulence in the solar wind in order to better understand energy dissipation mechanisms. Alvin is passionate about advancing science education and advocacy. In undergrad, he spent time volunteering at the Denver Museum of Nature and Science, as well as serving as a campus space ambassador. In 2021, he earned his B.A. in Astronomy and Astrophysics from the University of Colorado Boulder. Following graduation, he worked for a nonprofit organization, The Space Foundation, where he helped to create and teach space-based curriculum. After starting his PhD in the fall of 2022, he has been active as the co-chair and then chair of the American Geophysical Union Solar and Aeronomy’s Student Advisory Committee.
 
 <div style="clear: both; margin-bottom: 40px;"></div>

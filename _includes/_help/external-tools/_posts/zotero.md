@@ -6,7 +6,7 @@
 
 When you are viewing search results or a specific paper in SciX, you can use the Zotero browser extension to automatically extract the metadata of the paper(s) and save them directly to your collections.
 
-Our team contributes to and maintains the Zotero translators for SciX data to ensure the highest accuracy. If you encounter any issues using Zotero with SciX, please contact us directly.
+Our team contributes to and maintains the Zotero translators for SciX data to ensure the highest accuracy. If you encounter any issues using Zotero with SciX, please [contact us](mailto:help@scixplorer.org) directly.
 
 ### Getting Started with Zotero
 
@@ -29,17 +29,17 @@ Perform a search in SciX, and click on the Zotero extension
 
  <img src="/scixhelp/sciximg/zotero/zotero-step-03.png"  class="img-responsive" alt="A screenshot SciX search results and Zotero browser extension highlighted">
 
-Zotero extension opens a dialog box with in the page, and an external window showing a list of the papers in the current search results page.
+Zotero extension opens a dialog box within the page, and an external window, the "Zotero Item Selector", showing a list of the papers in the current search results page.
 
  <img src="/scixhelp/sciximg/zotero/zotero-step-04.png"  class="img-responsive" alt="A screenshot SciX search results page with dialog box after clicking on Zotero extension">
 
  <img src="/scixhelp/sciximg/zotero/zotero-step-05.png"  class="img-responsive" alt="Zotero item selector dialog">
 
-Select the papers to save from the list of papers
+Select the papers to save from the list of papers, and click "OK".
 
  <img src="/scixhelp/sciximg/zotero/zotero-step-06.png"  class="img-responsive" alt="Zotero item selector dialog with items selected">
 
-Go back to the browser, select the collection to save to and click done.
+Go back to the browser, select the collection to save to in the Zotero extension dialog box and click done.
 
  <img src="/scixhelp/sciximg/zotero/zotero-step-07.png"  class="img-responsive" alt="Zotero extension dialog after items selected">
 

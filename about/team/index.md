@@ -22,9 +22,9 @@ If you have comments or questions about the ADS, you are welcome to contact any 
 
 <div>
   <div class="floated_img">
-    <img src="{{ site.baseurl }}/about/team/img/Team_photo_Mar2024.jpeg" alt="Team photo from March 2024 Retreat" style="max-width: 100%; height: auto;">
+    <img src="{{ site.baseurl }}/about/team/img/team_photo_Mar2026.jpg" alt="Team photo from March 2026 Retreat" style="max-width: 100%; height: auto;">
   </div>
   <div class="textlabel">
-    <p><b>Team photo from March 2024 Retreat</b></p>
+    <p><b>Team photo from March 2026 Retreat</b></p>
   </div>
 </div>

@@ -105,6 +105,76 @@ pre code {
  */
 .post-header {
   margin: $spacing-unit 0;
+
+  .post-title[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  .post-title.section-anchor .section-anchor-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: $grey-color;
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: middle;
+    text-decoration: none;
+    opacity: 1;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+      background-color: rgba($brand-color, 0.08);
+      border-color: rgba($brand-color, 0.2);
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-content {
+  h2[id],
+  h3[id],
+  h4[id] {
+    scroll-margin-top: 5rem;
+  }
+
+  .section-anchor-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: $grey-color;
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: middle;
+    text-decoration: none;
+    opacity: 1;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+      background-color: rgba($brand-color, 0.08);
+      border-color: rgba($brand-color, 0.2);
+      outline: none;
+      text-decoration: none;
+    }
+  }
 }
 
 //for subheadings within posts

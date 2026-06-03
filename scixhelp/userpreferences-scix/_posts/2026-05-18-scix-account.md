@@ -1,6 +1,7 @@
 ---
 layout: post_scix
 title: 'SciX Account'
+section_id: scix-accounts
 order: 1
 ---
 

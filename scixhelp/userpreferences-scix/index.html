@@ -9,6 +9,6 @@ User preferences store relevant information for a specific user. The following d
 
 {% assign posts = site.categories[page.category] | sort:"order"  %}
     {% for post in posts %}
-        <h3>{{post.title}}</h3>
+        <h3{% if post.section_id %} id="{{ post.section_id }}" class="section-anchor"{% endif %}>{{ post.title }}{% if post.section_id %}{% include _help/section_anchor_link.html id=post.section_id %}{% endif %}</h3>
         {{post.content}}
     {% endfor %}

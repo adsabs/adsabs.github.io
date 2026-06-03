@@ -17,7 +17,7 @@ layout: help_layout_scix
 
     <header class="post-header">
       {%unless page.no-header %}
-      <h2 class="post-title">{{ page.title }}</h2>
+      <h2 class="post-title{% if page.section_id %} section-anchor{% endif %}"{% if page.section_id %} id="{{ page.section_id }}"{% endif %}>{{ page.title }}{% if page.section_id %}{% include _help/section_anchor_link.html id=page.section_id %}{% endif %}</h2>
       {% endunless %}
     </header>
 

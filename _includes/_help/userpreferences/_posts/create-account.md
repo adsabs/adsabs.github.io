@@ -1,14 +1,12 @@
-<h2 id="signup-for-account" class="section-anchor">Signup for Account{% include _help/section_anchor_link.html id="signup-for-account" %}</h2>
+You do not need an account for most SciX functions. You do need one for a few personalized features.
 
-<h3 id="ads-account-holder-signup" class="section-anchor">ADS Account Holder{% include _help/section_anchor_link.html id="ads-account-holder-signup" %}</h3>
+<h3 id="ads-account-holder" class="section-anchor">ADS Account Holder{% include _help/section_anchor_link.html id="ads-account-holder" %}</h3>
 
-ADS users do not need to create a new account. Log into SciX using your current ADS account credentials (see [ADS Account Holder](#ads-account-holder-login) above).
+ADS users do not need to create a new account. Log into SciX using your current ADS account credentials (see [ADS Account Holder](/scixhelp/userpreferences-scix/scix-account#ads-account-holder-login) on the SciX Account page).
 
-<h3 id="no-previous-account" class="section-anchor">No Previous Account{% include _help/section_anchor_link.html id="no-previous-account" %}</h3>
+<h3 id="creating-a-scix-account" class="section-anchor">Creating a SciX Account{% include _help/section_anchor_link.html id="creating-a-scix-account" %}</h3>
 
 <img src="/scixhelp/sciximg/account/SciXaccountmenulsignup.png" alt="Click on the account to see a dropdown with link to login and sign up" />
-
-You do not need an account for most SciX functions. You do need one for a few personalized features.
 
 Access the account signup screen by selecting “Signup” from the “Account” dropdown menu, which is in the upper right on the header of every SciX page.
 

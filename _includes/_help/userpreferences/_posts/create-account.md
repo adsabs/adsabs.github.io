@@ -1,4 +1,11 @@
-You do not need an account for most SciX functions. You do need one for a few personalized features.
+You do not need an account for most SciX functions. However, you will need an account to
+
+- [Receive notifications](/scixhelp/userpreferences-scix/myscix) of new items that match a query of interest to you
+- Create or maintain specialized subsets of items, "[libraries](/scixhelp/gettingstarted-scix/build-library)", of interest to you
+- Access restricted publisher sites to which your institution subscribes via their “[library link server](/scixhelp/userpreferences-scix/library-servers)”
+- [Use the API](/scixhelp/api-scix/)
+
+In addition, having an account facilitates your [claiming papers with ORCiD](/scixhelp/orcid-scix/claiming-papers) and allows you to customize your search and export preferences.
 
 <h3 id="ads-account-holder" class="section-anchor">ADS Account Holder{% include _help/section_anchor_link.html id="ads-account-holder" %}</h3>
 

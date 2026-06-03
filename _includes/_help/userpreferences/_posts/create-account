@@ -1,1 +1,31 @@
+<h2 id="signup-for-account" class="section-anchor">Signup for Account{% include _help/section_anchor_link.html id="signup-for-account" %}</h2>
 
+<h3 id="ads-account-holder-signup" class="section-anchor">ADS Account Holder{% include _help/section_anchor_link.html id="ads-account-holder-signup" %}</h3>
+
+ADS users do not need to create a new account. Log into SciX using your current ADS account credentials (see [ADS Account Holder](#ads-account-holder-login) above).
+
+<h3 id="no-previous-account" class="section-anchor">No Previous Account{% include _help/section_anchor_link.html id="no-previous-account" %}</h3>
+
+<img src="/scixhelp/sciximg/account/SciXaccountmenulsignup.png" alt="Click on the account to see a dropdown with link to login and sign up" />
+
+You do not need an account for most SciX functions. You do need one for a few personalized features.
+
+Access the account signup screen by selecting “Signup” from the “Account” dropdown menu, which is in the upper right on the header of every SciX page.
+
+Enter your name, the email address at which you would like to receive notifications to new items related to your queries, and an eight-character (minimum) password.
+
+You will enter your password twice to confirm it. It should also contain at least one each of the following: uppercase letter, lowercase letter, and number.
+
+Then, click submit.
+
+<img src="/scixhelp/sciximg/account/ScXaccountsignupBPS.png" alt="The registration page" />
+
+You should receive a message indicating that the system has successfully created your account and directing you to check your email.
+
+<img src="/scixhelp/sciximg/account/SciXaccountcreatedBPS.png" alt="The registration page with notification showing an account has been created" />
+
+You will not be able to login until you receive and respond to the verification email. The email will contain a login link. Follow that link to login for the first time using the credentials you just choose. The link in the verification email is only valid for 24 hours.
+
+Once you have logged in for the first time, your account is successfully established. You can now create [notifications](/scixhelp/userpreferences-scix/myscix), [libraries](/scixhelp/gettingstarted-scix/build-library), and an [API token](/scixhelp/api-scix/) plus you can further customize your experience with additional preferences, including a [library link server](/scixhelp/userpreferences-scix/library-servers).
+
+You should remain logged in on your current computer unless you log out.

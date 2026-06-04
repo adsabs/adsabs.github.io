@@ -11,7 +11,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 <div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">AbSciCon 2026 Recap</strong><br>
-<img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AbSciCon.png" 
 	 alt="SciX team member pointing to a laptop screen demonstrating the SciX platform to attendees standing around the SciX conference booth" 
 	 class="img-responsive"
 	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
@@ -26,7 +26,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Lead Ambassador Guest Post: Vincent Ledvina - "Using SciX to Trace Connections in Heliophysics Citizen Science Literature
 "</strong><br>
-<p>Studying the aurora through citizen science means working across space physics, atmospheric science, public engagement, data validation, and more. In this month's guest blog, SciX Lead Ambassador <a href="{% if include.ads %}../../about/ambassador/team/Ledvina.html{% else %}../../scixabout/ambassador/team/Ledvina.html{% endif %}">Vincent Ledvina</a> explains how SciX helps him make sense of this interdisciplinary landscape, revealing the connections between papers, authors, projects, and research communities that traditional literature searches can easily miss. It's a fascinating look at how modern research discovery works when science refuses to stay neatly within disciplinary boundaries. <a href="{% if include.ads %}../../blog/helio-citizen-sci{% else %}../../scixblog/helio-citizen-sci{% endif %}">Read the blog post here</a>!
+<p>Studying the aurora through citizen science means working across space physics, atmospheric science, public engagement, data validation, and more. In this month's guest blog, SciX Lead Ambassador <a href="{% if include.ads %}../../about/ambassador/team/Ledvina.html{% else %}../../scixabout/ambassador/team/Ledvina.html{% endif %}">Vincent Ledvina</a> explains how SciX helps him make sense of this interdisciplinary landscape, revealing the connections between papers, authors, projects, and research communities that traditional literature searches can easily miss. It's a fascinating look at how modern research discovery works when science refuses to stay neatly within disciplinary boundaries. <a href="{% if include.ads %}../../blog/helio-citizen-sci{% else %}../../scixblog/helio-citizen-sci{% endif %}">Read the blog post here</a>!</p>
 </div>
 
 ### Development and data holdings updates as of June 1st:

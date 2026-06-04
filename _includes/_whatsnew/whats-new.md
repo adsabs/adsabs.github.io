@@ -10,11 +10,11 @@ To receive this listing via monthly email newsletter, along with announcements a
 </div>
 
 <div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
-<strong style="font-size: 1.2em;">AbSciCon 2026 Recap</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AbSciCon.jpg" 
 	 alt="SciX team member pointing to a laptop screen demonstrating the SciX platform to attendees standing around the SciX conference booth" 
 	 class="img-responsive"
 	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
+<strong style="font-size: 1.2em;">AbSciCon 2026 Recap</strong><br>
 <p>SciX was proud to exhibit at AbSciCon 2026, showcasing our platform to the vibrant astrobiology research community. The conference provided an excellent opportunity to connect with scientists, educators, students, and information professionals, many of whom visited our booth to explore SciX's tools and services. We enjoyed meaningful conversations, live platform demonstrations, and valuable feedback from attendees. The strong interest and engagement we received reinforced the importance of discoverability and access within interdisciplinary scientific research, and we look forward to building on the connections made at this year's meeting.</p>
 </div>
 

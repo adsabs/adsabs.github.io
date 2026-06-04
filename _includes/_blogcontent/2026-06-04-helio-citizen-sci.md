@@ -1,7 +1,7 @@
 <img src="{{site.baseurl}}/blog/images/blog_2026-06-04_helio-citizen-sci.jpg" 
 	 alt="Bright green aurora borealis swirling across a starry night sky above a small island surrounded by calm water."
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
+	 style="display: block; margin: 1em auto; width: 650px;">
    
 Literature searches are relatively simple until the topic you are studying refuses to stay in one discipline.
 
@@ -9,13 +9,13 @@ I am a Space Physics Ph.D. student at the University of Alaska Fairbanks, where 
 <img src="{{site.baseurl}}/blog/images/blog_2026-06-04_vledvina1.jpg" 
 	 alt="Conference attendees gather around a poster presentation while presenter Vincent Ledvina demonstrates a portable all-sky aurora camera housed in a bright green case."
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
+	 style="float: right; margin: 20px; width: 500px; ">
 
 That challenge matters in practical ways. When I am working on a paper or helping plan a project, I want to know how other efforts recruited participants, validated observations, handled data quality, described uncertainty, or connected citizen data to scientific measurements. A traditional keyword search can find individual papers, but it does not always show the connections and relationships (neighborhood) around those papers.
 <img src="{{site.baseurl}}/blog/images/blog_2026-06-04_vledvina2.jpg" 
 	 alt="Four conference participants stand beside a research poster displaying survey results related to aurora forecasting and citizen science."
 	 class="img-responsive" 
-	 style="float: right; margin: 0 20px 10px 0; width: 250px; border: 3px solid #049DD9; border-radius: 6px;">
+	 style="float: right; margin: 20px; width: 500px; ">
 
 Science Explorer (SciX) is useful because it helps me discover more papers that are relevant and visualize the links between themes in the literature. Built on the NASA-funded Astrophysics Data System (ADS) foundation and expanded across Earth and space science, SciX brings together literature, citations, metrics, and visual exploration tools. For interdisciplinary work, that combination helps me find matching papers and understand how topics are connected.
 
@@ -36,6 +36,7 @@ In NASA ADS, the query returns a conventional search-result page. That is still 
     </figcaption>
 </figure>
 
+
 Running the same broad idea in SciX gives me a more useful starting point for this kind of interdisciplinary search. The results page is still recognizable as a search page, but it immediately puts the pieces I care about in the foreground: relevant papers, author facets, collection facets, publication-year structure, and an Explore menu for moving from a list into relationships.
 
 This is the first reason SciX fits the way I actually do literature searches. Before I decide what to read, I want to know whether the field has already researched my question, which communities are connected to it, and which papers look close enough to become anchors for the next stage of the search.
@@ -49,6 +50,7 @@ This is the first reason SciX fits the way I actually do literature searches. Be
         Figure 2. The same messy search in SciX surfaces closely related heliophysics citizen science papers.
     </figcaption>
 </figure>
+
 
 <h3 style="margin-top: 0; color: #5FBFAE;">Checking whether the field is moving</h3>
 After I know that a topic has a real literature foundation, the next question is timing. A publication timeline can show whether a field is quiet, steadily active, or suddenly getting attention. That context matters for me when I am preparing a project. A spike in papers may point to a new instrument being released, a major observing campaign, a large collaboration, a new technique, or a broader wave of interest that my work can contribute to or benefit from.
@@ -69,12 +71,12 @@ The point is not that the timeline answers the science question. It gives me con
 
 <h3 style="margin-top: 0; color: #5FBFAE;">Mapping the people behind the papers</h3>
 Once I know more about the activity of the topic, I want to understand who is doing the work. The Author Network is useful because papers are not isolated objects. They are written by teams, and those teams often reveal the collaborations, instruments, communities, and methods behind a field.
-
-For a citizen science project, this context lets me see if the same groups of authors appear across related papers and if I can identify research teams that have already handled similar data or developed methods that my project should build on. That helps me decide who to cite, whose work to read closely, and who might be worth contacting or inviting into a collaboration.
 <img src="{{site.baseurl}}/blog/images/blog_2026-06-04_vledvina3.jpg" 
 	 alt="Vincent stands at a conference beside a poster presenting his work on citizen science in heliophysics"
 	 class="img-responsive" 
-	 style="float: right; margin: 0 20px 10px 0; width: 250px; border: 3px solid #049DD9; border-radius: 6px;">
+	 style="float: right; margin: 20px; width: 350px; ">
+	 
+For a citizen science project, this context lets me see if the same groups of authors appear across related papers and if I can identify research teams that have already handled similar data or developed methods that my project should build on. That helps me decide who to cite, whose work to read closely, and who might be worth contacting or inviting into a collaboration.
 
 This is one of the places where SciX is especially useful for project preparation. It moves the literature search from “Which papers exist?” to “Which communities are shaping this topic?” That helps me decide which papers to cite and understand the field which I am trying to publish in.
 <figure style="text-align: center;">
@@ -87,6 +89,7 @@ This is one of the places where SciX is especially useful for project preparatio
         Figure 4. The Author Network view shows research teams and collaboration links, which can help identify established groups, related expertise, and potential collaborators.
     </figcaption>
 </figure>
+
 
 <h3 style="margin-top: 0; color: #5FBFAE;">Following established projects into their citations</h3>
 As I get closer to writing, I usually shift from broad discovery to targeted reading. For heliophysics citizen science, one good strategy is to start from a larger, more established project and ask which papers are connected to it. Aurorasaurus is a useful example because it sits at the intersection of auroral science, public reports, data validation, and space-weather applications.
@@ -105,6 +108,7 @@ This stage is less about collecting every possible paper and more about building
     </figcaption>
 </figure>
 
+
 <h3 style="margin-top: 0; color: #5FBFAE;">A chronological workflow for literature search</h3>
 For me, SciX is most useful when I treat it as part of a project-preparation workflow. The process looks something like this:
 1. Start with a messy query that describes the research idea.
@@ -120,6 +124,6 @@ For interdisciplinary work, SciX grants a meaningful advantage since discoverabi
 <img src="{{site.baseurl}}/blog/images/blog_2026-06-04_helio-citizen-sci2.jpg" 
 	 alt="Bright aurora borealis in colors of green, pink, purple, and red, swirling across a starry night sky above a snowy path surrounded by mountains and trees."
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
+	 style="display: block; margin: 1em auto; width: 650px;">
    
 <div style="clear: both; margin-bottom: 10px;"></div>

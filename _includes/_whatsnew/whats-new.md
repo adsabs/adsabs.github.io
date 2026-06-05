@@ -7,12 +7,16 @@ To receive this listing via monthly email newsletter, along with announcements a
 <div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">See You at EAS 2026!</strong><br>
 <p>SciX is excited to exhibit at the European Astronomical Society Annual Meeting 2026, June 28-July 3 in Lausanne, Switzerland. Visit our booth to explore the SciX platform, see new features in action, and chat with our team about tools that help make scientific research more discoverable and accessible. Whether you're a longtime user or just learning about SciX, we'd love to meet you and hear about your research needs.</p>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2606-EAS26.jpg" 
+	 alt="" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 600px;">
 </div>
 
 <div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">AAS Meeting 248 is Nearly Begun</strong><br>
 <p>Summer AAS meetings are smaller, quieter, and in some ways make for better conversations than the larger winter meetings. If you will be in <a href="https://aas.org/meetings/aas248">Pasadena June 14-18</a>, look for <a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Jennifer Lynn Bartlett</a>, Project Scientist for Astrophysics. Although we will not have a booth, she will be presenting and conducting oral history interviews. She would be delighted to talk to you about the transition from <a href="https://scixplorer.org/adstoscix/">ADS to SciX</a> or anything else astronomical (or not, she can be rather chatty).</p>
-	<img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AAS248.jpg" 
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AAS248.jpg" 
 	 alt="" 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 600px;">

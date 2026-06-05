@@ -1,0 +1,10 @@
+---
+layout: blog_post
+title: "Exploring Astrobiology Connections "
+author: "Jennifer Lynn Bartlett (Project Scientist for Astrophysics) and Jenny Koch (SciX Digital Librarian) "
+category: blog
+label: general, news
+thumbnail: blog/images/2026-06-04-AbSciCon26-logo.jpg
+---
+
+{% include _blogcontent/2026-06-04-abscion26.md ads=false %}

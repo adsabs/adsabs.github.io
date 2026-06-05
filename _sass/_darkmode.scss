@@ -465,4 +465,36 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
       border-color: rgba($darkmode-link, 0.25);
     }
   }
+
+  // Blog testimonial quote cards
+  .blog-testimonials-section {
+    background: $darkmode-background-secondary;
+  }
+
+  .blog-testimonial-card {
+    background: linear-gradient($darkmode-background-tertiary, $darkmode-background-tertiary) padding-box,
+                linear-gradient(135deg, #5FBFAE, #2596be, #82c36b, #dbb64a) border-box;
+    border-width: 3px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    blockquote {
+      color: $darkmode-text;
+    }
+  }
+
+  .blog-testimonial-author {
+    border-top-color: $darkmode-border;
+  }
+
+  .blog-testimonial-name {
+    color: $darkmode-text-strong;
+  }
+
+  .blog-testimonial-affiliation {
+    color: $darkmode-text-secondary;
+  }
 }

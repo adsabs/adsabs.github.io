@@ -2,6 +2,72 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## June 2026
+### Announcements:
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">See You at EAS 2026!</strong><br>
+<p>SciX is excited to exhibit at the European Astronomical Society Annual Meeting 2026, June 28-July 3 in Lausanne, Switzerland. Visit our booth to explore the SciX platform, see new features in action, and chat with our team about tools that help make scientific research more discoverable and accessible. Whether you're a longtime user or just learning about SciX, we'd love to meet you and hear about your research needs.</p>
+</div>
+
+<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AbSciCon.jpg" 
+	 alt="SciX team member pointing to a laptop screen demonstrating the SciX platform to attendees standing around the SciX conference booth" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
+<strong style="font-size: 1.2em;">AbSciCon 2026 Recap</strong><br>
+<p>SciX was proud to exhibit at AbSciCon 2026, showcasing our platform to the vibrant astrobiology research community. The conference provided an excellent opportunity to connect with scientists, educators, students, and information professionals, many of whom visited our booth to explore SciX's tools and services. We enjoyed meaningful conversations, live platform demonstrations, and valuable feedback from attendees. The strong interest and engagement we received reinforced the importance of discoverability and access within interdisciplinary scientific research, and we look forward to building on the connections made at this year's meeting.</p>
+</div>
+
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">EGU 2026 - Vienna Waited For Us!</strong><br>
+<p>Talks? Check. Posters? Check. Booth demos and conference swag? Also check. But our biggest takeaway from EGU 2026, held in Vienna, Austria in early May 2026, was the enthusiasm of the researchers who stopped by to explore SciX. Rather than writing a traditional conference recap, we're handing the microphone to scientists from across the globe who shared their thoughts on SciXplorer, research discovery, and the future of connected science. <a href="{% if include.ads %}../../blog/EGU26{% else %}../../scixblog/EGU26{% endif %}">Read on to hear what they had to say</a>.</p>
+</div>
+
+<div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">Lead Ambassador Guest Post: Vincent Ledvina
+	"Using SciX to Trace Connections in Heliophysics Citizen Science Literature"</strong><br>
+<p>Studying the aurora through citizen science means working across space physics, atmospheric science, public engagement, data validation, and more. In this month's guest blog, SciX Lead Ambassador <a href="{% if include.ads %}../../about/ambassador/team/Ledvina.html{% else %}../../scixabout/ambassador/team/Ledvina.html{% endif %}">Vincent Ledvina</a> explains how SciX helps him make sense of this interdisciplinary landscape, revealing the connections between papers, authors, projects, and research communities that traditional literature searches can easily miss. It's a fascinating look at how modern research discovery works when science refuses to stay neatly within disciplinary boundaries. <a href="{% if include.ads %}../../blog/helio-citizen-sci{% else %}../../scixblog/helio-citizen-sci{% endif %}">Read the blog post here</a>!</p>
+</div>
+
+### Development and data holdings updates as of June 1st:
+  * Website and API Releases
+    + Updated the [{% if include.ads %}SciX Team photo](../../about/team){% else %}SciX Team photo](../../scixabout/team){% endif %}
+    {% if include.ads %}{% else %}+ Added [SciX account help pages](../../scixhelp/userpreferences-scix/scix-account){% endif %} 
+  * Data holdings and pipelines
+    + 181k new records, and 5.7M new citations
+      
+<details>
+<summary>Development details</summary>
+<ul>
+
+<li>Bumblebee Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.11.0">v1.11.0</a></li>
+	- [ops] Integrated FingerprintJS Pro visitor header for bot detection<br>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.16">v1.10.16</a></li>
+	- [improved] increased highlight analyzer limit to 1M<br>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.15">v1.10.15</a></li>
+	- [ops] dependency updates<br>
+<li><a href="https://github.com/adsabs/bumblebee/releases/tag/v1.10.14">v1.10.14</a></li>
+	- [improved] Update ORCID work types to match current doctypes<br>
+	- [improved] Added performance instrumentation for dashboard comparison<br>
+</ul>
+
+<li>Solr Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/montysolr/releases/tag/v96.5.1">v96.5.1</a></li>
+	- [fixed] Removed invalid import<br>
+</ul>
+
+<li>Solr-Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/solr-service/releases/tag/v1.1.6">v1.1.6</a></li>
+	- [fixed] Prevent duplicate windowed highlights<br>
+</ul>
+
+</ul>
+</details>
+
 ## May 2026
 ### Announcements:
 <div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">

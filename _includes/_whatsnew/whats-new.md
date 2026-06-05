@@ -10,15 +10,22 @@ To receive this listing via monthly email newsletter, along with announcements a
 </div>
 
 <div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
-<img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AbSciCon.jpg" 
+<strong style="font-size: 1.2em;">AAS Meeting 248 is Nearly Begun</strong><br>
+<p>Summer AAS meetings are smaller, quieter, and in some ways make for better conversations than the larger winter meetings. If you will be in <a href="https://aas.org/meetings/aas248">Pasadena June 14-18</a>, look for <a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Jennifer Lynn Bartlett</a>, Project Scientist for Astrophysics. Although we will not have a booth, she will be presenting and conducting oral history interviews. She would be delighted to talk to you about the transition from <a href="https://scixplorer.org/adstoscix/">ADS to SciX</a> or anything else astronomical (or not, she can be rather chatty).</p>
+</div>
+
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AbSciCon2.jpg" 
 	 alt="SciX team member pointing to a laptop screen demonstrating the SciX platform to attendees standing around the SciX conference booth" 
 	 class="img-responsive"
 	 style="float: right; margin: 0 0 10px 10px; width: 300px;">
 <strong style="font-size: 1.2em;">AbSciCon 2026 Recap</strong><br>
-<p>SciX was proud to exhibit at AbSciCon 2026, showcasing our platform to the vibrant astrobiology research community. The conference provided an excellent opportunity to connect with scientists, educators, students, and information professionals, many of whom visited our booth to explore SciX's tools and services. We enjoyed meaningful conversations, live platform demonstrations, and valuable feedback from attendees. The strong interest and engagement we received reinforced the importance of discoverability and access within interdisciplinary scientific research, and we look forward to building on the connections made at this year's meeting.</p>
+<p>SciX was proud to exhibit at <a href="https://www.agu.org/abscicon">AbSciCon 2026</a>, showcasing our platform to the vibrant astrobiology research community. If you missed us, you can find our iPoster “<a href="https://abscicon26.ipostersessions.com/default.aspx?s=F3-BA-94-73-18-67-96-F3-2F-FC-CA-6F-06-8E-C6-44&guestview=true">Science Explorer (SciX): Supporting Open and Interdisciplinary Science</a>” or the <a href="https://doi.org/10.5281/zenodo.20536390">other files</a> on the <a href="https://zenodo.org/communities/scixcommunity/records?q=&l=list&p=1&s=10&sort=newest">Science Explorer Community on Zenodo</a>.</p>
+<p>The conference provided an excellent opportunity to connect with scientists, educators, students, and information professionals, many of whom visited our booth to explore SciX's tools and services. We enjoyed meaningful conversations, live platform demonstrations, and valuable feedback from attendees. The strong interest and engagement we received reinforced the importance of discoverability and access within interdisciplinary scientific research.</p>
+<p>We look forward to building on the connections made at this year's meeting and supporting the interdisciplinary astrobiology community wherever you are. For more about the meeting and astrobiology content in SciX, <a href="{% if include.ads %}../../blog/abscicon26{% else %}../../scixblog/abscicon26{% endif %}">read the full meeting summary</a>.</p>
 </div>
 
-<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">EGU 2026 - Vienna Waited For Us!</strong><br>
 <p>Talks? Check. Posters? Check. Booth demos and conference swag? Also check. But our biggest takeaway from EGU 2026, held in Vienna, Austria in early May 2026, was the enthusiasm of the researchers who stopped by to explore SciX. Rather than writing a traditional conference recap, we're handing the microphone to scientists from across the globe who shared their thoughts on SciXplorer, research discovery, and the future of connected science. <a href="{% if include.ads %}../../blog/EGU26{% else %}../../scixblog/EGU26{% endif %}">Read on to hear what they had to say</a>.</p>
 </div>

@@ -15,17 +15,23 @@ When a publication in the SciX collection is also in either of these OA collecti
 * Note the icons to the right of the text that says PubMed Central or Europe PMC
 * Click on the HTML icon to link to the record for this item in PubMed Central or Europe PMC, or
 * Click on the PDF icon (when available) to download the full text of this item
+
+<img src="{{site.baseurl}}/blog/images/blog_2026-07-16_ads_pubmed_screenshot.png" 
+	 alt="Screengrab of the ADS interface showing a record view page with a right-hand menu that provides full-text links, one of which is a link to the PubMed Central source."
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 750px;">
 {% else %}
 * Find the Full Text Sources box in the top left of the page
 * Note the icons to the right of the text that says PubMed Central or Europe PMC
 * Click on the HTML icon to link to the record for this item in PubMed Central or Europe PMC, or
 * Click on the PDF icon (when available) to download the full text of this item
-{% endif %}
+
 <img src="{{site.baseurl}}/blog/images/blog_2026-07-16_pubmed_screenshot.png" 
 	 alt="Screengrab of the SciX interface showing a record view page with a left-hand menu that provides full-text links, one of which is a link to the PubMed Central source."
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 750px;">
-   
+{% endif %}
+
 If an article is in both PMC and Europe PMC, the Full Text Sources box will show links to both. Of course, not every record in SciX has an OA copy. Links to OA versions appear in the Full Text Sources box when an OA version exists in the PMC and Europe PMC collections.
 
 As of July 2026, SciX contains 1.9 million records that link to PMC, and 1.4 million that link to Europe PMC. This set includes publications in more than 4,000 unique journals going back to 1894, across all SciX collections. As you might expect for a corpus of life sciences literature, more than half of these records are in the [SciX General Science collection]{% if include.ads %}(https://ui.adsabs.harvard.edu/search/q=esources%3Apmc%2A+collection%3Ageneral&d=general){% else %}(https://scixplorer.org/search?q=esources%3Apmc%2A+collection%3Ageneral&d=general){% endif %}, though about a third are in [Earth Science]{% if include.ads %}(https://ui.adsabs.harvard.edu/search/q=esources%3Apmc%2A+collection%3Aearthscience&d=general){% else %}(https://scixplorer.org/search?q=esources%3Apmc%2A+collection%3Aearthscience&d=general){% endif %}, and about a quarter in [Physics]{% if include.ads %}(https://ui.adsabs.harvard.edu/search/q=esources%3Apmc%2A+collection%3Aphysics&d=general){% else %}(https://scixplorer.org/search?q=esources%3Apmc%2A+collection%3Aphysics&d=general){% endif %}. (Note that the SciX collections are not mutually exclusive; a publication can be in more than one.) There are even several thousand in the [Astronomy]{% if include.ads %}(https://ui.adsabs.harvard.edu/search/q=esources%3Apmc%2A+collection%3Aastronomy){% else %}(https://scixplorer.org/search?q=esources%3Apmc%2A+collection%3Aastronomy){% endif %} collection.

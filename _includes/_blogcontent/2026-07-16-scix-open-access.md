@@ -8,7 +8,7 @@ To that end, the SciX team has recently rolled out [links]{% if include.ads %}(h
 
 Likewise, Europe PMC is an archive that provides access to life sciences literature, including content from PMC and several other collections of published and preprint articles. It is hosted by EMBL’s European Bioinformatics Institute (EMBL-EBI), and contains more than 48 million records. Like PMC, Europe PMC also provides an Open Access Subset, containing nearly 8 million articles.
 
-When a publication in the SciX collection is also in either of these OA collections, you will see a link to that record, allowing you to easily access the full text. Most of these records have accompanying PDFs, to which SciX also links. When you are viewing a record in SciX:
+When a publication in the SciX collection is also in either of these OA collections, you will see a link to that record, allowing you to easily access the full text. Most of these records have accompanying PDFs, to which SciX also links. When you are viewing a record in {% if include.ads %}ADS{% else %}SciX{% endif %}:
 
 {% if include.ads %}
 * Find the Full Text Sources box in the top right of the page

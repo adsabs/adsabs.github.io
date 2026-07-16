@@ -18,7 +18,7 @@ When a publication in the SciX collection is also in either of these OA collecti
 <img src="{{site.baseurl}}/blog/images/blog_2026-07-16_pubmed_screenshot.png" 
 	 alt="Screengrab of the SciX interface showing a record view page with a left-hand menu that provides full-text links, one of which is a link to the PubMed Central source."
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 650px;">
+	 style="display: block; margin: 1em auto; width: 750px;">
    
 If an article is in both PMC and Europe PMC, the Full Text Sources box will show links to both. Of course, not every record in SciX has an OA copy. Links to OA versions appear in the Full Text Sources box when an OA version exists in the PMC and Europe PMC collections.
 

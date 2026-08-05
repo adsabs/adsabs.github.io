@@ -2,6 +2,73 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## August 2026
+### Announcements:
+
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2608-COSPAR.png" 
+	 alt="" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 350px;">
+<strong style="font-size: 1.2em;">We’re At COSPAR!</strong><br>
+<p>ADS/SciX team members <a href="{% if include.ads %}../../about/team/team/aaccomazzi.html{% else %}../../scixabout/team/team/aaccomazzi.html{% endif %}">Alberto Accomazzi</a> (Director), and <a href="{% if include.ads %}../../about/team/team/dchivvis.html{% else %}../../scixabout/team/team/dchivvis.html{% endif %}">Daniel Chivvis</a> (Digital Librarian) are excited to be on the ground at the <a href="https://cospar2026.org/">46th COSPAR Scientific Assembly</a> in Florence, Italy! Stop by <b>Booth #28</b> to learn how our upcoming transition from ADS to SciX this fall will better serve the broad, multidisciplinary space science community represented at COSPAR - spanning astrophysics, planetary science, heliophysics, and Earth observation. Come explore the expanded SciX platform, ask questions about the rollout, and grab some exclusive, fresh-off-the-press SciX swag.</p>
+
+<p>Whether you're a longtime ADS power user or just discovering our tools, we'd love to meet you and hear how we can support your specific space research needs.</p>
+
+<p>Alberto Accomazzi is also participating in <a href="https://www.cospar-assembly.org/admin/session_cospar.php?session=1547">Session PSW.4</a> (FAIR Infrastructure and Open Science) taking place on Wednesday, August 5th, 9:00-10:30am CET with a presentation titled “The Science Explorer: An Open Science Discovery Platform in the Earth and Space Sciences.”</p>
+</div>
+
+<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">SciX at IEEE/IGARSS August 9-14</strong><br>
+<p>Join the SciX team at the <a href="https://2026.ieeeigarss.org/">IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026</a> in Washington, DC from 9th to 14th August. Stop by <b>Booth #111</b> to meet the team, see how SciX is helping researchers discover and connect research across the Earth and space sciences, and explore the latest platform features. Whether you're already using SciX or are curious to learn more, we'd love to chat, answer your questions, and hear how we can better support your research. See you there!</p>
+</div>
+
+<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">NASA Science Data: Assessing Research Impact with SciX</strong><br>
+<p>The NASA Science Data Team has <a href="https://science.data.nasa.gov/learn/blog/science-explorer-research-management">released a video</a> of a tutorial by PI Alberto Accomazzi on how SciX libraries can help users manage research portfolios and track research trends. Demonstrating the scientific ROI (return on investment) of research programs, missions, and facilities requires a robust link between funding and the resulting scientific output. SciX offers a comprehensive ecosystem for Program Officers to automate the tracking, curation, and public dissemination of these bibliographies.</p>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2608-sciencedata.png" 
+	 alt="" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 600px;">
+<p>The presentation demonstrates how SciX libraries serve as a centralized hub for managing research portfolios, allowing users to aggregate papers linked to specific missions, facilities, datasets, software, and grants. It explores advanced features tailored for institutional workflows, including: collaborative curation (managing bibliographies across teams), public sharing (leveraging public libraries and the SciX API to integrate publication lists directly into project websites or annual reports), and expertise mapping (utilizing citation networks to identify qualified peer reviewers and track research trends).</p>
+</div>
+
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">SciX for Open Access Blog Post</strong><br>
+<p>SciX has significantly expanded its support for open access by identifying and adding millions of links to freely available versions of publications from PubMed Central and Europe PMC.</p>
+<p>Learn how these enhancements make it easier to discover and access openly available research through SciX - <a href="{% if include.ads %}../../blog/scix-open-access{% else %}../../scixblog/scix-open-access">Read more here!</a></p>
+
+<div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">Reflections from EAS 2026: The Transition to SciX and the Future of Publishing</strong><br>
+<img src="{{site.baseurl}}/blog/images/blog_2026-07-27-EAS-booth.png" 
+	 alt="" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 350px;">
+<p>Our team recently returned from the <a href="https://eas.unige.ch/EAS2026/">European Astronomical Society (EAS) Annual Meeting</a> in Lausanne, Switzerland! It was fantastic to connect directly with the community at the ADS/SciX booth, where we walked researchers through the upcoming transition and demonstrated SciX's expanded, interdisciplinary capabilities. We were pleased by the positive reception, with users praising the platform's polished interface and seamless redirecting of legacy ADS links.</p>
+
+<p>Beyond the exhibit floor, the evolving landscape of literature discovery was a major theme of the conference. A notable highlight was Special Session 44 on "AI and Open Access in Modern Astronomy Publishing," which featured a panel presentation by our Director and PI, Alberto Accomazzi, “<a href="https://zenodo.org/records/21282148">AI for Astronomers: a View from the ADS</a>”.</p>
+
+<p><a href="(../../{% if include.ads %}blog{% else %}scixblog{% endif %}/EAS2026)">Read the full blog post</a> to see user testimonials and learn more!</p>
+</div>
+	
+### Development and data holdings updates as of August 1st:
+  * Website and API Releases
+    + [new] [EAS 2026 Recap blog](../../{% if include.ads %}blog{% else %}scixblog{% endif %}/EAS2026)
+    + [new] [SciX Open Access blog](../../{% if include.ads %}blog{% else %}scixblog{% endif %}/scix-open-access)
+
+  * Data holdings and pipelines
+    + 421k new records, and 8.09M new citations
+    + Over 70k PhD theses newly indexed! We're continuing to expand our PhD Thesis collection, making more graduate research easier to discover and access. Can't find your thesis yet? We'd love to include it - submit it through our [Missing Record form]({% if include.ads %}https://ui.adsabs.harvard.edu/feedback/correctabstract{% else %}https://scixplorer.org/feedback/missingrecord{% endif %}), and we'll review it for addition to SciX.
+
+      
+<details>
+<summary>Development details</summary>
+<ul>
+
+
+</ul>
+</details>
+
 ## July 2026
 ### Announcements:
 

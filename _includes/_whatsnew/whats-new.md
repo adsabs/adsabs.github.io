@@ -37,6 +37,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <strong style="font-size: 1.2em;">SciX for Open Access Blog Post</strong><br>
 <p>SciX has significantly expanded its support for open access by identifying and adding millions of links to freely available versions of publications from PubMed Central and Europe PMC.</p>
 <p>Learn how these enhancements make it easier to discover and access openly available research through SciX - <a href="{% if include.ads %}../../blog/scix-open-access{% else %}../../scixblog/scix-open-access">Read more here!</a></p>
+</div>
 
 <div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Reflections from EAS 2026: The Transition to SciX and the Future of Publishing</strong><br>

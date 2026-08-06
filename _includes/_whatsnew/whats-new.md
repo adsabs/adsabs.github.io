@@ -18,7 +18,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>Alberto Accomazzi is also participating in <a href="https://www.cospar-assembly.org/admin/session_cospar.php?session=1547">Session PSW.4</a> (FAIR Infrastructure and Open Science) taking place on Wednesday, August 5th, 9:00-10:30am CET with a presentation titled “The Science Explorer: An Open Science Discovery Platform in the Earth and Space Sciences.”</p>
 </div>
 
-<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">SciX at IEEE/IGARSS August 9-14</strong><br>
 <p>Join the SciX team at the <a href="https://2026.ieeeigarss.org/">IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026</a> in Washington, DC from 9th to 14th August. Stop by <b>Booth #111</b> to meet the team, see how SciX is helping researchers discover and connect research across the Earth and space sciences, and explore the latest platform features. Whether you're already using SciX or are curious to learn more, we'd love to chat, answer your questions, and hear how we can better support your research. See you there!</p>
 </div>
@@ -39,7 +39,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>Learn how these enhancements make it easier to discover and access openly available research through SciX - <a href="{% if include.ads %}../../blog/scix-open-access{% else %}../../scixblog/scix-open-access{% endif %}">Read more here!</a></p>
 </div>
 
-<div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Reflections from EAS 2026: The Transition to SciX and the Future of Publishing</strong><br>
 <img src="{{site.baseurl}}/blog/images/blog_2026-07-27-EAS-booth.png" 
 	 alt="" 
@@ -51,21 +51,45 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 <p><a href="(../../{% if include.ads %}blog{% else %}scixblog{% endif %}/EAS2026)">Read the full blog post</a> to see user testimonials and learn more!</p>
 </div>
-	
-### Development and data holdings updates as of August 1st:
-  * Website and API Releases
-    + [new] [EAS 2026 Recap blog](../../{% if include.ads %}blog{% else %}scixblog{% endif %}/EAS2026)
-    + [new] [SciX Open Access blog](../../{% if include.ads %}blog{% else %}scixblog{% endif %}/scix-open-access)
 
-  * Data holdings and pipelines
-    + 421k new records, and 8.09M new citations
-    + Over 70k PhD theses newly indexed! We're continuing to expand our PhD Thesis collection, making more graduate research easier to discover and access. Can't find your thesis yet? We'd love to include it - submit it through our [Missing Record form]({% if include.ads %}https://ui.adsabs.harvard.edu/feedback/correctabstract{% else %}https://scixplorer.org/feedback/missingrecord{% endif %}), and we'll review it for addition to SciX.
+<div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">
+  <strong style="font-size: 1.2em;">Development and data holdings updates as of August 1:</strong>
 
+	<strong>Website and API Releases</strong>
+      <ul>
+        <li>[new] <a href="../../{% if include.ads %}blog{% else %}scixblog{% endif %}/EAS2026">EAS 2026 Recap blog</a></li>
+        <li>[new] <a href="../../{% if include.ads %}blog{% else %}scixblog{% endif %}/scix-open-access">SciX Open Access blog</a></li>
+      </ul>
+
+	<strong>Data holdings and pipelines</strong>
+      <ul>
+        <li>421k new records and 8.09M new citations.</li>
+        <li>Over 70k PhD theses newly indexed! We're continuing to expand our PhD Thesis collection, making more graduate research easier to discover and access. Can't find your thesis yet? We'd love to include it—submit it through our <a href="{% if include.ads %}https://ui.adsabs.harvard.edu/feedback/correctabstract{% else %}https://scixplorer.org/feedback/missingrecord{% endif %}">Missing Record form</a>, and we'll review it for addition to SciX.</li>
+      </ul>
+</div>
       
 <details>
 <summary>Development details</summary>
 <ul>
 
+<li>Metrics Service Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/metrics_service/releases/tag/v1.2.0">v1.2.0</a></li>
+	- [fixed] Convert metrics id column to use BIGINT, increasing support of more values<br>
+</ul>
+
+<li>Nectar Releases</li>
+<ul>
+<li><a href="https://github.com/adsabs/nectar/releases/tag/v0.49.3">v0.49.3</a></li>
+	- [fixed] Encoded DOI/OpenURL special characters to fix broken links<br>
+	- [fixed] Ensure the second-order operator queries (trending, reviews, useful, similar) sort by score instead of user preference<br>
+	- [improved] Show Google Scholar tags by defined set of doctypes<br>
+	- [improved] UAT facet field improvements<br>
+	- [improved] Extended the width discipline mode notifier<br>
+	- [improved] Removed ‘PAID’ tag on full text sources and updated file icons<br>
+	- [improved] Add volume and page in search result items<br>
+	- [improved] Replicate historical literature page<br>
+</ul>
 
 </ul>
 </details>

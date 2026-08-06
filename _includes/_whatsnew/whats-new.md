@@ -53,7 +53,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 </div>
 
 <div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">
-  <strong style="font-size: 1.2em;">Development and data holdings updates as of August 1:</strong>
+  <strong style="font-size: 1.2em;">Development and data holdings updates as of August 1:</strong><br>
 
 	<strong>Website and API Releases</strong>
       <ul>
@@ -108,12 +108,12 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>Alberto Accomazzi is also participating in Special Session 44, “AI and Open Access in modern astronomy publishing” which takes place on Friday, July 3rd. He will be a panelist in block 1 (“Astronomy Publishing Today”) and a speaker in block 2 (“AI in Astronomy Publishing and its Practical Applications”), providing an ADS perspective on the use of AI to support astronomy research. We hope to see you there!</p>
 </div>
 
-<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">ADS and SciX at COSPAR 2026</strong><br>
 <p>The ADS and SciX teams will be at the <a href="https://cospar2026.org/">46th COSPAR Scientific Assembly</a> in Florence, taking place August 1-9, 2026. The assembly will bring together thousands of scientists, engineers, and space agency representatives for over 150 scientific sessions dedicated to sharing the latest advancements in space exploration, planetary science, and climate monitoring. ADS/SciX team members <a href="{% if include.ads %}../../about/team/team/aaccomazzi.html{% else %}../../scixabout/team/team/aaccomazzi.html{% endif %}">Alberto Accomazzi</a> and <a href="{% if include.ads %}../../about/team/team/dchivvis.html{% else %}../../scixabout/team/team/dchivvis.html{% endif %}">Daniel Chivvis</a> will be staffing the SciX booth for the duration of the meeting and Alberto will give a solicited talk about SciX in the <a href="https://www.cospar-assembly.org/admin/session_cospar.php?session=1547">Fair Infrastructure and Open Science Session</a> on Wednesday, August 5th.</p>
 </div>
 
-<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 	<strong style="font-size: 1.2em;">Mt. Wilson Observatory Gen. 3</strong><br><br>
 	<div style="float:left; width:350px; margin:0 15px 10px 0; text-align:center;">
 		<img src="{{site.baseurl}}/help/img/whatsnew/WN2607-MTO.png"
@@ -128,14 +128,21 @@ To receive this listing via monthly email newsletter, along with announcements a
 <div style="clear:both;"></div>
 </div>
 
-### Development and data holdings updates as of July 1st:
-  * Website and API Releases
-    + [new] Added [{% if include.ads %}AI policy](../../help/policies/ai-policy){% else %}AI policy](../../scixhelp/policies-scix/ai-policy){% endif %} to help page 
-    + [improved] Updated and reformatted the [{% if include.ads %}bibgroups page](../../help/data_faq/Bibgroups){% else %}bibgroups page](../../scixhelp/data_faq-scix/Bibgroups){% endif %} for readability
+<div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">
+  <strong style="font-size: 1.2em;">Development and data holdings updates as of July 1:</strong><br>
 
-  * Data holdings and pipelines
-    + 168k new records, and 12.9M new citations
-    + 50K theses from SISSA, MIT, Caltech, Rice, UChicago newly indexed
+	<strong>Website and API Releases</strong>
+      <ul>
+        <li>[new] Added <a href="../../{% if include.ads %}help/policies/ai-policy{% else %}scixhelp/policies-scix/ai-policy{% endif %}">AI policy</a></li>
+        <li>[new] Updated and reformatted the <a href="../../{% if include.ads %}help/data_faq/Bibgroups{% else %}scixhelp/data_faq-scix/Bibgroups{% endif %}">bibgroups page</a> for readability</li>
+      </ul>
+
+	<strong>Data holdings and pipelines</strong>
+      <ul>
+        <li>168k new records, and 12.9M new citations.</li>
+        <li>50K theses from SISSA, MIT, Caltech, Rice, UChicago newly indexed</li>
+      </ul>
+</div>
       
 <details>
 <summary>Development details</summary>
@@ -183,7 +190,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 	 style="display: block; margin: 1em auto; width: 600px;">
 </div>
 
-<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">AAS Meeting 248 is Nearly Begun</strong><br>
 <p>Summer AAS meetings are smaller, quieter, and in some ways make for better conversations than the larger winter meetings. If you will be in <a href="https://aas.org/meetings/aas248">Pasadena June 14-18</a>, look for <a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Jennifer Lynn Bartlett</a>, Project Scientist for Astrophysics. Although we will not have a booth, she will be presenting and conducting oral history interviews. She would be delighted to talk to you about the transition from <a href="https://scixplorer.org/adstoscix/">ADS to SciX</a> or anything else astronomical (or not, she can be rather chatty).</p>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2606-AAS248.jpg" 
@@ -203,23 +210,33 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>We look forward to building on the connections made at this year's meeting and supporting the interdisciplinary astrobiology community wherever you are. For more about the meeting and astrobiology content in SciX, <a href="{% if include.ads %}../../blog/abscicon26{% else %}../../scixblog/abscicon26{% endif %}">read the full meeting summary</a>.</p>
 </div>
 
-<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">EGU 2026 - Vienna Waited For Us!</strong><br>
 <p>Talks? Check. Posters? Check. Booth demos and conference swag? Also check. But our biggest takeaway from EGU 2026, held in Vienna, Austria in early May 2026, was the enthusiasm of the researchers who stopped by to explore SciX. Rather than writing a traditional conference recap, we're handing the microphone to scientists from across the globe who shared their thoughts on SciXplorer, research discovery, and the future of connected science. <a href="{% if include.ads %}../../blog/EGU26{% else %}../../scixblog/EGU26{% endif %}">Read on to hear what they had to say</a>.</p>
 </div>
 
-<div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Lead Ambassador Guest Post: Vincent Ledvina
 	"Using SciX to Trace Connections in Heliophysics Citizen Science Literature"</strong><br>
 <p>Studying the aurora through citizen science means working across space physics, atmospheric science, public engagement, data validation, and more. In this month's guest blog, SciX Lead Ambassador <a href="{% if include.ads %}../../about/ambassador/team/Ledvina.html{% else %}../../scixabout/ambassador/team/Ledvina.html{% endif %}">Vincent Ledvina</a> explains how SciX helps him make sense of this interdisciplinary landscape, revealing the connections between papers, authors, projects, and research communities that traditional literature searches can easily miss. It's a fascinating look at how modern research discovery works when science refuses to stay neatly within disciplinary boundaries. <a href="{% if include.ads %}../../blog/helio-citizen-sci{% else %}../../scixblog/helio-citizen-sci{% endif %}">Read the blog post here</a>!</p>
 </div>
 
-### Development and data holdings updates as of June 1st:
-  * Website and API Releases
-    + Updated the [{% if include.ads %}SciX Team photo](../../about/team){% else %}SciX Team photo](../../scixabout/team){% endif %}
-    {% if include.ads %}{% else %}+ Added [SciX account help pages](../../scixhelp/userpreferences-scix/scix-account){% endif %} 
-  * Data holdings and pipelines
-    + 181k new records, and 5.7M new citations
+<div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">
+  <strong style="font-size: 1.2em;">Development and data holdings updates as of June 1:</strong><br>
+
+	<strong>Website and API Releases</strong>
+      <ul>
+        <li>Updated the <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/team">SciX Team photo</a></li>
+		{% if include.ads %}{% else %}
+        <li>Added <a href="../../scixhelp/userpreferences-scix/scix-account">SciX account help pages</a></li>
+		{% endif %}
+      </ul>
+
+	<strong>Data holdings and pipelines</strong>
+      <ul>
+        <li>181k new records, and 5.7M new citations.</li>
+      </ul>
+</div>
       
 <details>
 <summary>Development details</summary>
@@ -271,7 +288,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 	 style="display: block; margin: 1em auto; width: 700px;">
 </div>
 
-<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">SciX at AbSciCon 2026</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-AbSciCon26-logo.png" 
 	 alt="Logo image for the AbSciCon26 conference" 
@@ -286,7 +303,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>If you’ll be attending AbSciCon, join us in the exhibit hall for a quick demo that can accelerate your science and show us what connections you are making across disciplines. We’d love to connect!</p>
 </div>
 
-<div style="border: 1px solid #0098da; border-left: 6px solid #0098da; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">One is Rarely Done</strong><br>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2605-plates1.png" 
 	 alt="Photographic glass plate" 
@@ -310,7 +327,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 <p>If your department or project would like a presentation about SciX, please contact <a href="mailto:jennifer.bartlett@cfa.harvard.edu">jennifer.bartlett@cfa.harvard.edu</a> or {% if include.ads %}{% assign contact_email = 'adshelp@cfa.harvard.edu' %}{% else %}{% assign contact_email = 'help@scixplorer.org' %}{% endif %}<a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.</p>
 </div>
 
-<div style="border: 1px solid #95c949; border-left: 6px solid #95c949; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<div style="border: 1px solid #cbbc4c; border-left: 6px solid #cbbc4c; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Dr. Anna Kelbert of SciX Publishes Stunning Images of Earth’s Structure in North America</strong><br>
 <p>Our own Project Scientist for Earth Science, <a href="{% if include.ads %}../../about/team/team/akelbert.html{% else %}../../scixabout/team/team/akelbert.html{% endif %}">Dr. Anna Kelbert</a>, is the lead author of a paper that has been making waves this week! The work was recently featured in press releases from the <a href="https://www.cfa.harvard.edu/news/scientists-map-hidden-electrical-structure-us-revealing-new-clues-about-earths-interior-and">Harvard-Smithsonian Center for Astrophysics</a>, <a href="https://www.science.org/content/article/deep-earth-map-reveals-lost-u-s-continent">Science</a>, and <a href="https://www.usgs.gov/programs/geomagnetism/science/mapping-grid-united-states-magnetotelluric-array">USGS</a>.</p>
 
@@ -321,13 +338,21 @@ To receive this listing via monthly email newsletter, along with announcements a
 	style="display: block; margin: 1em auto; width: 700px;">
 </div>
 
-### Development and data holdings updates as of May 1st:
-  * Website and API Releases
-    + Added USNO to [{% if include.ads %}bibgroups page](../../help/data_faq/Bibgroups){% else %}bibgroups page](../../scixhelp/data_faq-scix/Bibgroups){% endif %}
-    + New blog post about our [{% if include.ads %}NASA Astrobiology Collaboration](../../blog/astrobiology-collab){% else %}NASA Astrobiology Collaboration](../../scixblog/astrobiology-collab){% endif %}
-    + Updated the [{% if include.ads %}Lead Ambassadors about pages](../../about/ambassador){% else %}Lead Ambassadors about pages](../../scixabout/ambassador){% endif %}
-  * Data holdings and pipelines
-    + 198k new records, and 10.12M new citations
+<div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">
+  <strong style="font-size: 1.2em;">Development and data holdings updates as of May 1:</strong><br>
+
+	<strong>Website and API Releases</strong>
+      <ul>
+        <li>Added USNO to <a href="../../{% if include.ads %}help/data_faq/Bibgroups{% else %}scixhelp/data_faq-scix/Bibgroups{% endif %}">Bibgroups page</a></li>
+        <li>New blog post about our <a href="../../{% if include.ads %}blog{% else %}scixblog{% endif %}/astrobiology-collab">NASA Astrobiology Collaboration</a></li>
+		<li>Updated the <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/ambassador">Lead Ambassadors about pages</a></li>
+      </ul>
+
+	<strong>Data holdings and pipelines</strong>
+      <ul>
+        <li>198k new records, and 10.12M new citations.</li>
+      </ul>
+</div>
       
 <details>
 <summary>Development details</summary>

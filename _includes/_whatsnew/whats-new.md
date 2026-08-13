@@ -619,7 +619,7 @@ What a start to the year it has been! With the transition from [ADS to SciX](htt
 <strong style="font-size: 1.2em;">AMS 2026 Round-Up</strong><br>
 <p>Team members <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/team/team/klockhart.html">Kelly Lockhart</a>, <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/team/team/dchivvis.html">Daniel Chivvis</a>, and <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/team/team/akelbert.html">Anna Kelbert</a> joined thousands of others in braving the thing they love most - BIG WEATHER - to attend the American Meteorological Society conference in Houston, Texas, at the end of January. Anna, the Project Scientist for Earth Science at SciX, gave a talk titled “Discovering Space Weather Resources in Science Explorer using Keyword Enrichments” at a session focused on the current state and future of space weather research.</p>
 
-<p>We loved meeting you all and hearing about the unique challenges that you are helping overcome. The AMS meeting is a real opportunity to see how interdisciplinary research leads to impactful realities. From atmospheric aerosols to Zonda winds, SciX has your research A-Z covered.</p><br>
+<p>We loved meeting you all and hearing about the unique challenges that you are helping overcome. The AMS meeting is a real opportunity to see how interdisciplinary research leads to impactful realities. From atmospheric aerosols to Zonda winds, SciX has your research A-Z covered.</p>
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2602-scixatAMS26.png" 
 	 alt="SciX at AMS 2026" 
 	 class="img-responsive" 
@@ -734,13 +734,13 @@ With that in mind, as always, if you have any questions, please don’t hesitate
 
 <div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">SciX at AGU25</strong><br>
-<p>We had a great time meeting SciX-curious attendees at #AGU25 last month! From existing ADS users that have already made the switch, to people brand new to our platform, we were excited by the research community’s excitement for the platform. We are always keen to showcase our user stories, so if you’ve been using SciX to help accelerate your research discovery, innovation and impact and want to tell your story via a short video or a post on our blog, [get in touch](https://scixplorer.org/feedback/general).</p>
+<p>We had a great time meeting SciX-curious attendees at #AGU25 last month! From existing ADS users that have already made the switch, to people brand new to our platform, we were excited by the research community’s excitement for the platform. We are always keen to showcase our user stories, so if you’ve been using SciX to help accelerate your research discovery, innovation and impact and want to tell your story via a short video or a post on our blog, <a href="https://scixplorer.org/feedback/general">get in touch</a>.</p>
  
-<p>Whether you saw one of our or our Ambassador’s panel discussions, posters, NASA hyperwall talks, or whether you managed to grab one of our hundreds of SciX badges before they ran out on the last day, thanks for engaging with us. If you missed us, look out for us at #AAS247. We’ll also be attending AMS and OSM in the next couple of months. If you’d like to arrange a chat with one of our team to find out more about SciX, please [let us know](https://scixplorer.org/feedback/general).</p>
+<p>Whether you saw one of our or our Ambassador’s panel discussions, posters, NASA hyperwall talks, or whether you managed to grab one of our hundreds of SciX badges before they ran out on the last day, thanks for engaging with us. If you missed us, look out for us at #AAS247. We’ll also be attending AMS and OSM in the next couple of months. If you’d like to arrange a chat with one of our team to find out more about SciX, please <a href="https://scixplorer.org/feedback/general">let us know</a>.</p>
 	<img src="{{site.baseurl}}/help/img/whatsnew/WN2601-scixatagu25.png" 
 	 alt="SciX at AGU25" 
 	 class="img-responsive" 
-	 style="display: block; margin: 1em auto; width: 400px;">
+	 style="display: block; margin: 1em auto; width: 700px;">
 </div>
 
 <div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">

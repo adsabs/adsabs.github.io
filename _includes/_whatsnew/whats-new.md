@@ -49,7 +49,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 <p>Beyond the exhibit floor, the evolving landscape of literature discovery was a major theme of the conference. A notable highlight was Special Session 44 on "AI and Open Access in Modern Astronomy Publishing," which featured a panel presentation by our Director and PI, Alberto Accomazzi, “<a href="https://zenodo.org/records/21282148">AI for Astronomers: a View from the ADS</a>”.</p>
 
-<p><a href="(../../{% if include.ads %}blog{% else %}scixblog{% endif %}/EAS2026)">Read the full blog post</a> to see user testimonials and learn more!</p>
+<p><a href="../../{% if include.ads %}blog{% else %}scixblog{% endif %}/EAS2026">Read the full blog post</a> to see user testimonials and learn more!</p>
 </div>
 
 <div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">

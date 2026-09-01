@@ -2,6 +2,66 @@ This page is updated monthly with a list of new (**[new]**) and improved (**[imp
 
 To receive this listing via monthly email newsletter, along with announcements and new blog posts, [sign up here](http://eepurl.com/ggoxhn).
 
+## September 2026
+### Announcements:
+
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2609-COSPAR.png" 
+	 alt="" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 400px;">
+<strong style="font-size: 1.2em;">We loved meeting you at COSPAR!</strong><br>
+<p>The ADS/SciX team had a busy time interacting with scientists attending the <a href="https://cospar2026.org/">46th COSPAR Scientific Assembly</a> that took place on 1-9 August in Florence, Italy. <a href="{% if include.ads %}../../about/team/team/dchivvis.html{% else %}../../scixabout/team/team/dchivvis.html{% endif %}">Daniel Chivvis</a> and <a href="{% if include.ads %}../../about/team/team/aaccomazzi.html{% else %}../../scixabout/team/team/aaccomazzi.html{% endif %}">Alberto Accomazzi</a> demonstrated how the upcoming transition from ADS to SciX this fall will better serve the broad, multidisciplinary space science community represented at COSPAR—spanning astrophysics, planetary science, heliophysics, and Earth observation.</p>
+
+<p>After going through a demo of the SciX platform, pictured ADS user Raj Mal Jat, PhD student from Central University of Rajasthan in India, commented “I'm excited to switch from ADS to SciX.” Dagmara Stasiowska, a Life Scientist postdoc from the University of Krakow, was impressed by the author network visualizations and commented: “I see the potential of SciX to increase the diversity of the researchers we are collaborating with.” Have you explored the new features available in SciX yet? Start browsing our <a href="https://scixplorer.org/scixhelp/">quick start guide</a> today!</p>
+</div>
+
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2609-IGARSS.png" 
+	 alt="" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 400px;">
+<strong style="font-size: 1.2em;">The Lowdown on IEEE/IGARSS</strong><br>
+<p>The SciX team chatted with Earth observation and remote sensing researchers at the <a href="https://2026.ieeeigarss.org/">IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026</a> in Washington, DC. For most of them it was a first introduction, and their reactions were even better than we imagined. Rui Cao, Assistant Professor at the Hong Kong University of Science and Technology (Guangzhou), said, "I found the service and platform very useful for researchers, and it is non-profit. Surprisingly, I found that the Abstract Service [from Harvard] is also provided by them. I would recommend the service to my colleagues and students.”</p>
+
+<p>Anshula Dhiman, a PhD student at Cleveland State University, said "I really liked how it shows all the metrics related to an author I'm interested in - seeing everything about a research article, from references to the projects and datasets associated with it." To learn more about the features that got the remote sensing crowd excited at IEEE-IGARSS, head to scixplorer.org. </p>
+</div>
+
+<div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<strong style="font-size: 1.2em;">Celebrating 250 Years of US Astronomy</strong><br>
+<p>The Astro Society held a three-day virtual conference to celebrate 250 years of astronomy in the United States, and Dr Jennifer Lynn Bartlett and Dr Suze Kundu from the SciX team ran a workshop introducing people to SciX. Among other things, Jennifer led the group through the research adventures of Nancy Grace Roman, ahead of the launch of the space telescope named after her. Some participants were existing users of ADS and found the user interface of SciX pleasantly familiar, while the majority were brand new to the SciX platform and were blown away by the ease of search and discovery, and the in-built visualisation features.</p>
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2609-AST250.png" 
+	 alt="" 
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 700px;">
+</div>
+
+<div style="border: 1px solid #faa954; border-left: 6px solid #faa954; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+<img src="{{site.baseurl}}/help/img/whatsnew/WN2609-DigiMercury.png" 
+	 alt="" 
+	 class="img-responsive"
+	 style="float: right; margin: 0 0 10px 10px; width: 400px;">
+<strong style="font-size: 1.2em;">Digitizing Decades of Mercury</strong><br>
+<p>Since 1972, Mercury magazine has served as the Astronomical Society of the Pacific's (ASP) public voice, translating cutting-edge astronomical research into stories anyone could follow. Across more than three decades of issues, Mercury chronicled the space age as it happened in the words of the scientists and science writers who lived through it.</p>
+	
+<p>While issues from 2007 onward have long been available online, everything printed between 1972 and 2007 has existed only on paper, tucked away on library shelves and effectively invisible to today's researchers, educators, and space enthusiasts. A new initiative from the ASP and Astrophysics Data System aims to close that 35-year gap: digitizing every issue from this period and making it freely searchable through the ADS and Science Explorer (SciX). Once complete, the entire run of Mercury will be permanently preserved, fully text-searchable, and openly accessible to anyone, anywhere — no subscription or institutional affiliation required. <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/initiatives/mercury.html">Learn more about the Mercury digitization initiative</a>.</p>
+</div>
+
+<div style="border: 1px solid #95C949; border-left: 6px solid #95C949; border-radius: 10px; padding: 16px; margin: 20px 0;">
+  <strong style="font-size: 1.2em;">Development and data holdings updates as of September 1:</strong><br>
+
+	<strong>Website and API Releases</strong>
+      <ul>
+        <li>[new] Added a new page describing '<a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/initiatives">Initiatives</a>' the team participates in</li>
+        <li>[improved] Updates to the What's New page formatting</li>
+      </ul>
+
+	<strong>Data holdings and pipelines</strong>
+      <ul>
+        <li>X new records and X new citations.</li>
+      </ul>
+</div>
+
 ## August 2026
 ### Announcements:
 

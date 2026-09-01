@@ -24,12 +24,12 @@ To receive this listing via monthly email newsletter, along with announcements a
 <strong style="font-size: 1.2em;">The Lowdown on IEEE/IGARSS</strong><br>
 <p>The SciX team chatted with Earth observation and remote sensing researchers at the <a href="https://2026.ieeeigarss.org/">IEEE International Geoscience and Remote Sensing Symposium (IGARSS) 2026</a> in Washington, DC. For most of them it was a first introduction, and their reactions were even better than we imagined. Rui Cao, Assistant Professor at the Hong Kong University of Science and Technology (Guangzhou), said, "I found the service and platform very useful for researchers, and it is non-profit. Surprisingly, I found that the Abstract Service [from Harvard] is also provided by them. I would recommend the service to my colleagues and students.”</p>
 
-<p>Anshula Dhiman, a PhD student at Cleveland State University, said "I really liked how it shows all the metrics related to an author I'm interested in - seeing everything about a research article, from references to the projects and datasets associated with it." To learn more about the features that got the remote sensing crowd excited at IEEE-IGARSS, head to scixplorer.org. </p>
+<p>Anshula Dhiman, a PhD student at Cleveland State University, said "I really liked how it shows all the metrics related to an author I'm interested in - seeing everything about a research article, from references to the projects and datasets associated with it." To learn more about the features that got the remote sensing crowd excited at IEEE-IGARSS, head to <a href="https://scixplorer.org/">scixplorer.org</a>. </p>
 </div>
 
 <div style="border: 1px solid #60c3b2; border-left: 6px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <strong style="font-size: 1.2em;">Celebrating 250 Years of US Astronomy</strong><br>
-<p>The Astro Society held a three-day virtual conference to celebrate 250 years of astronomy in the United States, and Dr Jennifer Lynn Bartlett and Dr Suze Kundu from the SciX team ran a workshop introducing people to SciX. Among other things, Jennifer led the group through the research adventures of Nancy Grace Roman, ahead of the launch of the space telescope named after her. Some participants were existing users of ADS and found the user interface of SciX pleasantly familiar, while the majority were brand new to the SciX platform and were blown away by the ease of search and discovery, and the in-built visualisation features.</p>
+<p>The Astro Society held a three-day virtual conference to celebrate 250 years of astronomy in the United States, and <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/team/team/jbartlett.html">Dr. Jennifer Lynn Bartlett</a> and <a href="../../{% if include.ads %}about{% else %}scixabout{% endif %}/team/team/skundu.html">Dr. Suze Kundu</a> from the SciX team ran a workshop introducing people to SciX. Among other things, Jennifer led the group through the research adventures of Nancy Grace Roman, ahead of the launch of the space telescope named after her. Some participants were existing users of ADS and found the user interface of SciX pleasantly familiar, while the majority were brand new to the SciX platform and were blown away by the ease of search and discovery, and the in-built visualization features.</p>
 <img src="{{site.baseurl}}/help/img/whatsnew/WN2609-AST250.png" 
 	 alt="" 
 	 class="img-responsive" 
@@ -58,7 +58,7 @@ To receive this listing via monthly email newsletter, along with announcements a
 
 	<strong>Data holdings and pipelines</strong>
       <ul>
-        <li>X new records and X new citations.</li>
+        <li>163k new records and 11.32M new citations.</li>
       </ul>
 </div>
 

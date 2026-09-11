@@ -35,7 +35,7 @@ However, thanks to our text mining efforts, we are now able to supplement this i
 <div class="text-center">
     <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixdatacollections2.png" />
 <em>
-Figure 2: The <a href="https://scixplorer.org/abs/2016ornl.data.1328T/abstract">SciX record</a> for a dataset hosted by the ORNL DAAC. As of 8/25/2025, SciX has identified 139 citations and 2 credits from mentions for the dataset. Insert: the corresponding citation metrics for the record in question.
+Figure 2: The <a href="https://www.scixplorer.org/abs/2022ornl.data.2129T/abstract">SciX record</a> for a dataset hosted by the ORNL DAAC. As of 8/25/2025, SciX has identified 139 citations and 2 credits from mentions for the dataset. Insert: the corresponding citation metrics for the record in question.
 </em>
 </div>
 <br>

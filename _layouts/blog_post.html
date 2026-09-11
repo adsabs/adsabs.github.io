@@ -4,7 +4,7 @@ layout: blog_layout
 
 <div class="row row-offcanvas row-offcanvas-left">
   <div
-    class="post main-content col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1"
+    class="post main-content col-md-10 col-md-offset-1 col-sm-12"
   >
     <header class="post-header">
       {%unless page.no-header %}
@@ -58,30 +58,7 @@ layout: blog_layout
     {% endif %}
 
     <article class="post-content">{{ content }}</article>
+    <hr />
+    <p>Questions or feedback? Contact us at <a href="mailto:adshelp@cfa.harvard.edu">adshelp@cfa.harvard.edu</a>.</p>
   </div>
-</div>
-<div class="row">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'adsabsblog';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-      var dsq = document.createElement('script');
-      dsq.type = 'text/javascript';
-      dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (
-        document.getElementsByTagName('head')[0] ||
-        document.getElementsByTagName('body')[0]
-      ).appendChild(dsq);
-    })();
-  </script>
-  <noscript
-    >Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
-      >comments powered by Disqus.</a
-    ></noscript
-  >
 </div>

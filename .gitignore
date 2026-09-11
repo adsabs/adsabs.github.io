@@ -5,3 +5,6 @@ _site
 Gemfile.lock
 .DS_Store
 .idea
+/.jekyll-metadata
+/vendor
+.cursor

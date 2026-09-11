@@ -1,0 +1,32 @@
+services:
+  jekyll:
+    build: .
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=${JEKYLL_ENV:-development}
+
+  serve:
+    extends:
+      service: jekyll
+    ports:
+      - "127.0.0.1:${JEKYLL_PORT:-4000}:4000"
+      - "127.0.0.1:35729:35729"
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload
+    profiles: [serve]
+
+  dev:
+    extends:
+      service: jekyll
+    command: bundle exec jekyll build --watch --incremental --force_polling
+    profiles: [dev]
+
+  build:
+    extends:
+      service: jekyll
+    command: bundle exec jekyll build
+    profiles: [build]
+
+volumes:
+  bundle_cache:

@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.git
+.github
+.claude
+vendor
+node_modules
+bower_components
+*.xcf
+.DS_Store
+.idea
+.cursor

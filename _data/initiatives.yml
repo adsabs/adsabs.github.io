@@ -1,0 +1,7 @@
+# ADS/SciX Initiatives Data
+# This is the single source of truth for initiatives
+
+initiatives:
+  - id: mercury
+    title: 'Digitizing Mercury Magazine'
+    order: 1

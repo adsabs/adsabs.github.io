@@ -3,7 +3,7 @@ layout: about_scix
 title: "Careers@SciX"
 ---
 
-## Who we are
+### Who we are
 
 The Science Explorer (SciX) is the expansion to the earth sciences of the Astrophysics Data Service (ADS), the primary digital library portal for researchers in astronomy, astrophysics, planetary science and heliophysics. Learn more about SciX's mission and features [in our home page](https://scixplorer.org/home).
 
@@ -17,10 +17,10 @@ SciX develops and maintains services to facilitate the discovery and access of t
 
 SciX has built a highly scalable and feature-rich platform using a modern development stack: a custom build of the open-source search engine Solr, a highly responsive UI engineered on top of React, a high performance distributed brokerage system, and cloud-based hosted services with Kubernetes in Amazon Web Services. The primary programming languages are Python, Java, and JavaScript/TypeScript.
 
-## Who we are looking for
+### Who we are looking for
 We currently do not have any job openings. 
 
-## What we offer
+### What we offer
 
 NASA funds SciX through a cooperative agreement.  We are hosted by the Smithsonian Astrophysical Observatory at the Center for Astrophysics \| Harvard & Smithsonian (CfA) in Cambridge, Massachusetts (USA), one the largest and most diverse astrophysical institutions in the world and home of a growing earth science community. Here, scientists carry out a broad program of research in earth and space sciences. By joining us, you will be actively supporting the discovery and dissemination of scientific results to the worldwide research community!
 

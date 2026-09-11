@@ -3,7 +3,7 @@ layout: about
 title: "Careers@ADS"
 ---
 
-## Who we are
+### Who we are
 
 The Astrophysics Data System (ADS) is the primary digital library portal for researchers in astronomy, astrophysics, planetary science and heliophysics. The ADS corpus consists of over 16 million documents and is growing at a rate of over ten thousand per week. Every astronomy paper ever published and nearly every physics and geophysics article refereed in the past 20 years is fully indexed by the ADS. Over 50,000 scientists and librarians use the ADS daily, all over the world.
 
@@ -13,10 +13,10 @@ The ADS project develops and maintains services to facilitate the discovery and 
 
 The ADS has built a highly scalable and feature-rich platform using a modern development stack: a custom build of the open-source search engine Solr, a highly responsive UI engineered on top of React, a high performance distributed brokerage system, and cloud-based hosted services with Kubernetes in Amazon Web Services. The primary programming languages are Python, Java, and JavaScript/TypeScript.
 
-## Who we are looking for
+### Who we are looking for
 We currently do not have any job openings. 
 
-## What we offer
+### What we offer
 
 The ADS project is funded by NASA through a cooperative agreement and provides its services to the entire worldwide research community in astronomy and physics. We are hosted by the Smithsonian Astrophysical Observatory at the Center for Astrophysics \| Harvard & Smithsonian (CfA) in Cambridge, Massachusetts (USA), one the largest and most diverse astrophysical institution in the world. Here, scientists carry out a broad program of research in astronomy, astrophysics, and earth and space sciences. By joining our group, you will be actively supporting the discovery and dissemination of scientific results to the worldwide research community!
 

@@ -35,6 +35,12 @@ plugins:
 last-modified-at:
   date-format: '%Y-%m-%dT%H:%M:%S%:z'
 
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - run
+  - vendor
+
 defaults:
   - scope:
       path: ''

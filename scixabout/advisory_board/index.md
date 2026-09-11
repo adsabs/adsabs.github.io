@@ -154,3 +154,30 @@ Dr. Matthew Graham is Research Professor of Astronomy at the California Institut
 *Disciplinary Expertise: Heliophysics*
 
 Dr. Alex Young is an astrophysicist and science communicator specializing in heliophysics, space weather, data science, and public outreach. With over two decades of experience in research, education, and media engagement, he has dedicated his career to advancing our understanding of solar dynamics and their impact on Earth. Dr. Young has authored numerous journal articles, written popular science pieces, and delivered presentations around the world to share his work and inspire curiosity. His goal is to connect people with the wonders of space and empower them with knowledge about our universe.
+
+---
+
+## Anand "Sunny" Narayanan
+![Anand "Sunny" Narayanan](/about/img/scixab/17.png){: style="float: left; margin-right: 20px; width: 200px;"}
+**Research Faculty, Florida State University**  
+*Disciplinary Expertise: Space Physiology/Human Space Exploration*
+
+Dr. Anand "Sunny" Narayanan is a Research Faculty member at Florida State University specializing in space and medical physiology. He earned his Ph.D. in Medical and Space Physiology from Texas A&M University and dual B.S. degrees in Mechanical Engineering and Biology from West Virginia University. His research investigates the physiological effects of deep space radiation and reduced lunar and Martian gravity on the cardiovascular, immune, and musculoskeletal systems, with findings relevant to human missions to the Moon and Mars. Dr. Narayanan has supported NASA projects since serving as a high school intern, including systems engineering work at the Katherine Johnson IV&V Facility and biomedical research flown to the International Space Station. A first-generation immigrant from a disadvantaged background, he is active in mentoring students and early-career professionals pursuing human spaceflight careers.
+
+---
+
+## Stephanie Jarmak
+![Stephanie Jarmak](/about/img/scixab/18.png){: style="float: left; margin-right: 20px; width: 200px;"}
+**Applied Research Scientist & AI Agent Advocate, Sourcegraph**  
+*Disciplinary Expertise: Planetary Science/AI for Scientific Discovery*
+
+Dr. Stephanie Jarmak is an Applied Research Scientist and AI Agent Advocate at Sourcegraph, where she leads applied research on agentic systems and code intelligence. She previously served as Project Scientist for Planetary Science at NASA's Astrophysics Data System (ADS) and SciX, developing NLP and knowledge-graph capabilities for scientific discovery, and conducted research at the Southwest Research Institute analyzing JWST and spacecraft data. Dr. Jarmak earned her Ph.D. in Physics/Planetary Science from the University of Central Florida, an M.S. in Physics from Texas A&M University-Commerce, and a B.S. in Earth, Atmospheric and Planetary Sciences from MIT. Her research has spanned asteroid spectroscopy, regolith dynamics, and lunar dust mitigation for crewed missions, and she was honored by the International Astronomical Union with an asteroid naming in 2023.
+
+---
+
+## Graziella Caprarelli
+![Graziella Caprarelli](/about/img/scixab/19.png){: style="float: left; margin-right: 20px; width: 200px;"}
+**Adjunct Research Fellow, Centre for Astrophysics, University of Southern Queensland**  
+*Disciplinary Expertise: Planetary Geology/Mars Science*
+
+Dr. Graziella Caprarelli is an Adjunct Research Fellow at the Centre for Astrophysics, University of Southern Queensland, and Editor-in-Chief of the AGU journal *Earth and Space Science*. She earned her Ph.D. in Earth Sciences and M.S. in Geological Sciences from Sapienza University of Rome. Her research spans volcanic and tectonic processes on Earth and Mars, impact cratering of planetary surfaces, and the stability of water and ice on Mars, and she is a member of the MARSIS radar sounder science team on ESA's Mars Express mission. Dr. Caprarelli is a Fellow of the Australian Institute of Geoscientists and was named Australian Space Scientist of the Year in 2021.

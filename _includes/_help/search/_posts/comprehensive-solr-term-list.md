@@ -61,6 +61,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                 fulltext_mtime | y | y | Machine readable modification timestamp; corresponds to time when a fulltext was updated |
  |                          grant | y | y | Field that contains both grant ids and grant agencies. |
  |               grant_facet_hier | y | n | Hierarchical facet field which contains grant/grant_id. This field is not suitable for user queries, but rather for UI components. Term frequencies and positions are deactivated. |
+ |                            has | y | n | list of fields that are populated for a particular record. |
  |                             id | y | y | Internal identifier of a record, does not change with reindexing but users are advised to not rely on contents of this field |
  |                     identifier | y | n | A field that can be used to search an array of alternative identifiers for the record. May contain alternative bibcodes, DOIs and/or arxiv ids. |
  |                     indexstamp | y | y | Date at which the record was indexed `YYYY-MM-DD'T'hh:mm:ss.SSS'Z'` |
@@ -89,5 +90,9 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |                     orcid_user | y | y | ORCID claims from users who gave {{ include.site }} consent to expose their public profiles. |
  |                           page | y | y | First page of a record |
  |                     page_count | y | y | If page_range is present, gives the difference between the first and last page numbers in the range |
+ |              planetary_feature | y | y | List of USGS-IAU Planetary feature names discussed in paper |
+ |   planetary_feature_facet_hier_3level | y | n | Facets for the planetary_feature field. |
  |                       property | y | y | Array of miscellaneous flags associated with the record. For possible values see [Properties](search-syntax#properties).| 
  |                            pub | y | y | Canonical name of the publication the record appeared in |
+ |                            uat | y | y | List of Unified Astronomy Thesaurus (UAT) terms assigned to the record. |
+ |                      uat_facet | y | n | Facets for the uat field. |

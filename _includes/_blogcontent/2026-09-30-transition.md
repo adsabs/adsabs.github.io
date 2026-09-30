@@ -53,6 +53,7 @@ So join us for the SciX Transition Marathon. Come for ten minutes or stay for th
 
 Across four weeks, we'll be traveling through every hour of the global research day.
 
+<div style="border: 1px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <a id="session-schedule"></a>
 <h3 style="margin-top: 0; color: #5FBFAE;">24 hours. Every time zone. Four weeks. One global astronomy community.</h3>
 
@@ -61,7 +62,7 @@ Wherever you are, there will be a SciX office hour for you. Check out the list b
 For questions about the ADS to SciX transition, please contact Jennifer Lynn Bartlett at [jennifer.bartlett@sao.si.edu](mailto:jennifer.bartlett@sao.si.edu)
 
 *UK time is BST until Sunday 25th October, then GMT.
-<div style="border: 1px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
+
 <table>
   <thead>
     <tr>

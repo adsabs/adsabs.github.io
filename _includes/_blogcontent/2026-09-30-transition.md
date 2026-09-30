@@ -57,11 +57,11 @@ Across four weeks, we'll be traveling through every hour of the global research 
 <a id="session-schedule"></a>
 <h3 style="margin-top: 0; color: #5FBFAE;">24 hours. Every time zone. Four weeks. One global astronomy community.</h3>
 
-Wherever you are, there will be a SciX office hour for you. Check out the list below and click on a session or sessions that best suits your time zone to add it to your calendar.
+<p>Wherever you are, there will be a SciX office hour for you. Check out the list below and click on a session or sessions that best suits your time zone to add it to your calendar.</p>
 
-For questions about the ADS to SciX transition, please contact Jennifer Lynn Bartlett at [jennifer.bartlett@sao.si.edu](mailto:jennifer.bartlett@sao.si.edu)
+<p>For questions about the ADS to SciX transition, please contact Jennifer Lynn Bartlett at (jennifer.bartlett@sao.si.edu).</p>
 
-*UK time is BST until Sunday 25th October, then GMT.
+<p>*UK time is BST until Sunday 25th October, then GMT.</p>
 
 <table>
   <thead>

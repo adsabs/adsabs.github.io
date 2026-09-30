@@ -53,6 +53,7 @@ So join us for the SciX Transition Marathon. Come for ten minutes or stay for th
 
 Across four weeks, we'll be traveling through every hour of the global research day.
 
+<a id="session-schedule"></a>
 <h3 style="margin-top: 0; color: #5FBFAE;">24 hours. Every time zone. Four weeks. One global astronomy community.</h3>
 
 Wherever you are, there will be a SciX office hour for you. Check out the list below and click on a session or sessions that best suits your time zone to add it to your calendar.

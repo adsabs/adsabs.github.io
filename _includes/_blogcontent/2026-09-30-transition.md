@@ -61,7 +61,7 @@ Wherever you are, there will be a SciX office hour for you. Check out the list b
 For questions about the ADS to SciX transition, please contact Jennifer Lynn Bartlett at [jennifer.bartlett@sao.si.edu](mailto:jennifer.bartlett@sao.si.edu)
 
 *UK time is BST until Sunday 25th October, then GMT.
-
+<div style="border: 1px solid #60c3b2; border-radius: 10px; padding: 16px; margin: 20px 0; ">
 <table>
   <thead>
     <tr>
@@ -95,3 +95,4 @@ For questions about the ADS to SciX transition, please contact Jennifer Lynn Bar
     <tr><td><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDUxNDRhZ2R1YzJnNW90czVkYnU2OGkyN2kgMzI5YmI4M2VlN2Y2ZjI1YzEzM2NmM2ZjZDRkNmQ0MzU3MjZkMGVmOTI0OWM3OTExNGZmMThmNWYwYWJlZThmOEBn&tmsrc=329bb83ee7f6f25c133cf3fcd4d6d435726d0ef9249c79114ff18f5f0abee8f8%40group.calendar.google.com">Session 24</a></td><td>Wednesday, October 28, 2026</td><td>13:00-15:00</td><td>17:00-19:00</td><td>17:00-19:00</td></tr>
   </tbody>
 </table>
+</div>

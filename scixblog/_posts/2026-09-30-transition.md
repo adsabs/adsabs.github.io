@@ -1,7 +1,7 @@
 ---
 layout: blog_post_scix
 title: "ADS to SciX Transition Office Hours: At a Screen and Time Convenient to You"
-author: "Jennifer Lynn Bartlett (Project Scientist for Astrophysics)"
+author: "Jennifer Lynn Bartlett (Project Scientist for Astrophysics) and Suze Kundu (Community Engagement Coordinator)"
 category: scixblog
 label: general, news
 thumbnail: blog/images/2026-09-30-transition.jpg

@@ -1,2 +1,731 @@
 // Presentations page: featured talk cards, type badges, and the full list.
 // Data comes from _data/presentations.yml.
+// Rendered by about/documents/index.md and scixabout/presentations/index.md via
+// _includes/_presentations/presentations.md.
+//
+// Imported after _darkmode.scss, so the $darkmode-* variables are in scope.
+
+/* Presentations: shared tokens */
+$pres-accent: #049dd9;
+$pres-teal: #60c3b2;
+$pres-green: #95c949;
+$pres-orange: #faa954;
+$pres-brand: #1c459b;
+$pres-surface: #fff;
+$pres-band: #f8f9fa;
+$pres-hairline: #e3e6ea;
+$pres-text: #333;
+$pres-text-muted: #495057;
+$pres-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+.pres-page {
+  margin-top: 6px;
+}
+
+.pres-lede {
+  font-size: 16px;
+  line-height: 1.65;
+  color: $pres-text-muted;
+  max-width: 62em;
+  margin-bottom: 30px;
+}
+
+/* Presentations: section titles and eyebrow labels */
+.pres-page .pres-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $pres-text-muted;
+  margin: 40px 0 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $pres-hairline;
+}
+
+.pres-eyebrow {
+  font-family: $pres-mono;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $pres-accent;
+  margin: 0 0 10px;
+}
+
+/* Presentations: oversized year watermark */
+.pres-watermark {
+  position: absolute;
+  right: 12px;
+  bottom: -14px;
+  font-family: $pres-mono;
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 1;
+  color: $pres-text;
+  opacity: 0.07;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Presentations: type badges */
+.pres-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background: rgba(73, 80, 87, 0.1);
+  color: $pres-text-muted;
+  border: 1px solid rgba(73, 80, 87, 0.2);
+}
+
+.pres-badge--invited-talk {
+  background: rgba(28, 69, 155, 0.1);
+  color: darken($pres-brand, 5%);
+  border-color: rgba(28, 69, 155, 0.3);
+}
+
+.pres-badge--contributed-talk {
+  background: rgba(4, 157, 217, 0.12);
+  color: darken($pres-accent, 12%);
+  border-color: rgba(4, 157, 217, 0.35);
+}
+
+.pres-badge--poster {
+  background: rgba(96, 195, 178, 0.16);
+  color: darken($pres-teal, 24%);
+  border-color: rgba(96, 195, 178, 0.45);
+}
+
+.pres-badge--workshop {
+  background: rgba(149, 201, 73, 0.18);
+  color: darken($pres-green, 24%);
+  border-color: rgba(149, 201, 73, 0.5);
+}
+
+.pres-badge--demo {
+  background: rgba(250, 169, 84, 0.2);
+  color: darken($pres-orange, 26%);
+  border-color: rgba(250, 169, 84, 0.5);
+}
+
+.pres-badge--video {
+  background: rgba(209, 63, 63, 0.12);
+  color: #9d2f2f;
+  border-color: rgba(209, 63, 63, 0.35);
+}
+
+.pres-badge--podcast {
+  background: rgba(124, 77, 175, 0.12);
+  color: #5d3a86;
+  border-color: rgba(124, 77, 175, 0.35);
+}
+
+.pres-badge--interview {
+  background: rgba(23, 122, 122, 0.12);
+  color: #106060;
+  border-color: rgba(23, 122, 122, 0.35);
+}
+
+/* Presentations: hero card */
+.pres-hero {
+  position: relative;
+  /* With aspect-ratio and min-height set at >=992px but no explicit width,
+     the min-height drives the width to 340 * 21/9 = 793px and the hero
+     overflows a narrower column. Pinning the width makes height follow. */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  border-left: 3px solid $pres-accent;
+  background: $pres-brand;
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pres-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(
+    to top,
+    rgba(3, 8, 20, 0.92) 0%,
+    rgba(3, 8, 20, 0.78) 38%,
+    rgba(3, 8, 20, 0.42) 68%,
+    rgba(3, 8, 20, 0.2) 100%
+  );
+}
+
+.pres-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.pres-hero .pres-watermark {
+  z-index: 3;
+  color: #fff;
+  opacity: 0.14;
+}
+
+.pres-hero-body {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  max-width: 44em;
+  padding: 24px 22px 22px;
+}
+
+.pres-hero .pres-eyebrow {
+  color: #8fdcff;
+}
+
+.pres-page .pres-hero-title {
+  margin: 0 0 12px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.pres-hero-title a {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.pres-hero-title a:hover,
+.pres-hero-title a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+  text-decoration: none;
+}
+
+.pres-hero-summary {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.pres-hero-meta {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.pres-hero-meta .pres-badge {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  margin-right: 10px;
+}
+
+.pres-hero-meta .pres-meta-date,
+.pres-hero-meta .pres-meta-people {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.pres-hero-meta .pres-meta-date {
+  font-family: $pres-mono;
+}
+
+.pres-hero--flat {
+  background: linear-gradient(135deg, $pres-brand 0%, darken($pres-accent, 18%) 100%);
+}
+
+.pres-hero--flat::before {
+  background: linear-gradient(to top, rgba(3, 8, 20, 0.55) 0%, rgba(3, 8, 20, 0.1) 100%);
+}
+
+.pres-hero-aside {
+  margin: 10px 0 0;
+  font-size: 13px;
+}
+
+/* Presentations: asymmetric featured pair */
+.pres-featured-pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.pres-card {
+  position: relative;
+  overflow: hidden;
+  background: $pres-surface;
+  border: 1px solid $pres-hairline;
+  border-top: 2px solid $pres-teal;
+  border-radius: 4px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.pres-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.pres-card .pres-watermark {
+  right: 10px;
+  bottom: -10px;
+  font-size: 64px;
+  z-index: 1;
+}
+
+.pres-card-image {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pres-card-body {
+  position: relative;
+  z-index: 2;
+  padding: 20px 20px 18px;
+}
+
+.pres-page .pres-card-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: $pres-text;
+}
+
+.pres-card-title a {
+  color: $pres-text;
+}
+
+.pres-card-title a:hover,
+.pres-card-title a:focus {
+  color: $pres-brand;
+}
+
+.pres-card-summary {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $pres-text-muted;
+}
+
+.pres-card-meta {
+  margin: 0;
+  font-size: 12px;
+  color: $pres-text-muted;
+}
+
+.pres-card-meta .pres-badge {
+  margin-right: 10px;
+}
+
+.pres-card-meta .pres-meta-date {
+  font-family: $pres-mono;
+  margin-right: 10px;
+}
+
+.pres-card-aside {
+  margin: 12px 0 0;
+  font-size: 13px;
+}
+
+/* Presentations: view all affordance */
+.pres-viewall-wrap {
+  margin: 24px 0 0;
+}
+
+.pres-viewall {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $pres-brand;
+  border-bottom: 2px solid $pres-accent;
+  padding-bottom: 3px;
+  transition: letter-spacing 0.25s ease, color 0.25s ease;
+}
+
+.pres-viewall:hover,
+.pres-viewall:focus {
+  letter-spacing: 0.26em;
+  color: $pres-accent;
+  text-decoration: none;
+}
+
+/* Presentations: type catalog */
+.pres-filter-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.pres-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.pres-pill {
+  border: 1px solid #049dd9;
+  background: #fff;
+  color: #1c459b;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.pres-pill.is-active,
+.pres-pill:hover,
+.pres-pill:focus {
+  background: #049dd9;
+  color: #fff;
+}
+
+.pres-catalog {
+  list-style: none;
+  margin: 0 0 1.5em;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.pres-catalog-card {
+  margin: 0;
+  padding: 14px;
+  border: 1px solid #dce3ea;
+  background: #fff;
+}
+
+.pres-catalog-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 8px 0 6px;
+  line-height: 1.35;
+}
+
+.pres-catalog-title a {
+  color: #1c459b;
+}
+
+.pres-catalog-meta,
+.pres-catalog-date {
+  font-size: 1.3rem;
+  color: #555;
+  margin: 0;
+}
+
+.pres-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px 18px;
+  padding: 18px 10px;
+  border-bottom: 1px solid $pres-hairline;
+  transition: background-color 0.2s ease;
+}
+
+.pres-row:hover {
+  background: $pres-band;
+}
+
+.pres-row-date {
+  font-family: $pres-mono;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #6c757d;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.pres-row-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: $pres-text;
+}
+
+.pres-row-title a {
+  color: $pres-text;
+}
+
+.pres-row-title a:hover,
+.pres-row-title a:focus {
+  color: $pres-brand;
+}
+
+.pres-row-venue {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $pres-text-muted;
+}
+
+.pres-row-links {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.pres-row-links a {
+  margin-right: 14px;
+}
+
+.pres-row-type {
+  padding-top: 2px;
+}
+
+.pres-footnote {
+  margin: 28px 0 0;
+  font-size: 13px;
+  color: $pres-text-muted;
+}
+
+/* Presentations: scroll reveal */
+@keyframes pres-fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.pres-reveal-armed {
+  opacity: 0;
+}
+
+.pres-reveal-armed.is-visible {
+  opacity: 1;
+  animation: pres-fade-rise 0.55s ease both;
+}
+
+/* Presentations: 768px and up */
+@media screen and (min-width: 768px) {
+  .pres-hero {
+    aspect-ratio: 16 / 9;
+    min-height: 300px;
+  }
+
+  .pres-hero-body {
+    padding: 32px 30px 28px;
+  }
+
+  .pres-page .pres-hero-title {
+    font-size: 28px;
+  }
+
+  .pres-watermark {
+    font-size: 130px;
+  }
+
+  .pres-card .pres-watermark {
+    font-size: 78px;
+  }
+
+  .pres-row {
+    grid-template-columns: 116px 1fr auto;
+    align-items: start;
+  }
+}
+
+/* Presentations: 992px and up */
+@media screen and (min-width: 992px) {
+  .pres-hero {
+    aspect-ratio: 21 / 9;
+    min-height: 340px;
+  }
+
+  .pres-page .pres-hero-title {
+    font-size: 32px;
+  }
+
+  .pres-featured-pair {
+    grid-template-columns: 7fr 5fr;
+  }
+
+  .pres-card-image {
+    height: 190px;
+  }
+
+  .pres-row {
+    grid-template-columns: 130px 1fr auto;
+  }
+}
+
+/* Presentations: dark mode */
+[data-theme='dark'] .pres-lede,
+[data-theme='dark'] .pres-card-summary,
+[data-theme='dark'] .pres-row-venue,
+[data-theme='dark'] .pres-footnote {
+  color: $darkmode-text;
+}
+
+[data-theme='dark'] .pres-page .pres-section-title {
+  color: $darkmode-text-secondary;
+  border-bottom-color: $darkmode-border;
+}
+
+[data-theme='dark'] .pres-eyebrow {
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .pres-watermark {
+  color: $darkmode-text-strong;
+  opacity: 0.08;
+}
+
+[data-theme='dark'] .pres-badge {
+  background: $darkmode-background-tertiary;
+  border-color: $darkmode-border;
+  color: $darkmode-text;
+}
+
+[data-theme='dark'] .pres-badge--invited-talk {
+  background: rgba(88, 166, 255, 0.16);
+  border-color: rgba(88, 166, 255, 0.45);
+  color: #a9cdff;
+}
+
+[data-theme='dark'] .pres-badge--contributed-talk {
+  background: rgba(4, 157, 217, 0.2);
+  border-color: rgba(4, 157, 217, 0.5);
+  color: #7fd3f5;
+}
+
+[data-theme='dark'] .pres-badge--poster {
+  background: rgba(96, 195, 178, 0.2);
+  border-color: rgba(96, 195, 178, 0.5);
+  color: #93dccf;
+}
+
+[data-theme='dark'] .pres-badge--workshop {
+  background: rgba(149, 201, 73, 0.2);
+  border-color: rgba(149, 201, 73, 0.5);
+  color: #bbdd85;
+}
+
+[data-theme='dark'] .pres-badge--demo {
+  background: rgba(250, 169, 84, 0.2);
+  border-color: rgba(250, 169, 84, 0.5);
+  color: #fbc489;
+}
+
+[data-theme='dark'] .pres-badge--video {
+  background: rgba(240, 120, 120, 0.18);
+  border-color: rgba(240, 120, 120, 0.45);
+  color: #f2a2a2;
+}
+
+[data-theme='dark'] .pres-badge--podcast {
+  background: rgba(168, 128, 224, 0.18);
+  border-color: rgba(168, 128, 224, 0.45);
+  color: #c9aaf0;
+}
+
+[data-theme='dark'] .pres-badge--interview {
+  background: rgba(64, 176, 176, 0.18);
+  border-color: rgba(64, 176, 176, 0.45);
+  color: #86d4d4;
+}
+
+[data-theme='dark'] .pres-hero {
+  background: $darkmode-background-secondary;
+  border-left-color: $darkmode-link;
+}
+
+[data-theme='dark'] .pres-hero::before {
+  background: linear-gradient(
+    to top,
+    rgba(1, 4, 9, 0.95) 0%,
+    rgba(1, 4, 9, 0.82) 38%,
+    rgba(1, 4, 9, 0.48) 68%,
+    rgba(1, 4, 9, 0.22) 100%
+  );
+}
+
+[data-theme='dark'] .pres-hero .pres-eyebrow {
+  color: #8fdcff;
+}
+
+[data-theme='dark'] .pres-hero--flat {
+  background: linear-gradient(135deg, $darkmode-background-secondary 0%, #123a63 100%);
+}
+
+[data-theme='dark'] .pres-card {
+  background: $darkmode-background-secondary;
+  border-color: $darkmode-border;
+  border-top-color: $pres-teal;
+}
+
+[data-theme='dark'] .pres-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme='dark'] .pres-page .pres-card-title,
+[data-theme='dark'] .pres-card-title a,
+[data-theme='dark'] .pres-row-title,
+[data-theme='dark'] .pres-row-title a {
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .pres-card-title a:hover,
+[data-theme='dark'] .pres-card-title a:focus,
+[data-theme='dark'] .pres-row-title a:hover,
+[data-theme='dark'] .pres-row-title a:focus {
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .pres-card-meta {
+  color: $darkmode-text-secondary;
+}
+
+[data-theme='dark'] .pres-viewall {
+  color: $darkmode-link;
+  border-bottom-color: $darkmode-link;
+}
+
+[data-theme='dark'] .pres-viewall:hover,
+[data-theme='dark'] .pres-viewall:focus {
+  color: #8fdcff;
+}
+
+[data-theme='dark'] .pres-list {
+  border-top-color: $darkmode-border;
+}
+
+[data-theme='dark'] .pres-row {
+  border-bottom-color: $darkmode-border;
+}
+
+[data-theme='dark'] .pres-row:hover {
+  background: $darkmode-background-tertiary;
+}
+
+[data-theme='dark'] .pres-row-date {
+  color: $darkmode-text-secondary;
+}

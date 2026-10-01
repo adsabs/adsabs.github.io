@@ -1,2 +1,1203 @@
 // Outreach materials page: credited showcase gallery of design work.
 // Display only - no downloads.
+//
+// Rendered by scixabout/outreach/index.md via _includes/_outreach/outreach.md.
+// Content lives in _data/outreach.yml.
+//
+// Imported after _darkmode.scss, so the $darkmode-* variables are in scope.
+
+/* Outreach Tokens */
+// Each tone carries a bright decorative colour (accent bars, badge fills) and a
+// darker text colour that keeps the small uppercase eyebrow labels legible on a
+// white tile. The four tones match the four SciX disciplines.
+$outreach-tones: (
+  "blue": (
+    #049dd9,
+    #0b6f96,
+    #58c8f0
+  ),
+  "teal": (
+    #60c3b2,
+    #2a7568,
+    #7fd6c5
+  ),
+  "green": (
+    #95c949,
+    #5b7f22,
+    #b6dd75
+  ),
+  "orange": (
+    #faa954,
+    #a05f11,
+    #f7bd7a
+  )
+);
+
+$outreach-mono: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+$outreach-hairline: #e3e7eb;
+$outreach-band: #f8f9fa;
+$outreach-ink: #333;
+$outreach-ink-soft: #495057;
+$outreach-ink-dim: #6c757d;
+
+/* Outreach Page Shell */
+.outreach-page {
+  color: $outreach-ink;
+}
+
+.outreach-lede {
+  font-size: 1.9rem;
+  line-height: 1.6;
+  color: $outreach-ink-soft;
+  margin: 0 0 3rem;
+  max-width: 62rem;
+}
+
+.outreach-footnote {
+  margin: 3.5rem 0 0;
+  font-size: 1.5rem;
+  color: $outreach-ink-soft;
+}
+
+.outreach-eyebrow {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1c459b;
+  margin: 0 0 0.8rem;
+}
+
+.outreach-eyebrow--section {
+  letter-spacing: 0.25em;
+  color: #1c459b;
+}
+
+/* Outreach View All Affordance */
+// No button chrome: an uppercase tracked label on a 2px accent rule. The
+// tracking widens on hover and focus.
+.outreach-viewall {
+  display: inline-block;
+  font-family: $outreach-mono;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #1c459b;
+  border-bottom: 2px solid #049dd9;
+  padding-bottom: 0.4rem;
+  margin-right: 2.4rem;
+  text-decoration: none;
+  transition: letter-spacing 0.25s ease, color 0.25s ease,
+    border-color 0.25s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    letter-spacing: 0.24em;
+    color: #049dd9;
+    border-color: #1c459b;
+    text-decoration: none;
+  }
+}
+
+/* Outreach Credit Card */
+// The designer credit is the reason this page exists, so it leads the page as a
+// deliberate block rather than sitting in fine print at the bottom.
+.outreach-credit {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+  background: $outreach-band;
+  border: 1px solid $outreach-hairline;
+  border-left: 4px solid #049dd9;
+  padding: 2.6rem;
+  margin-bottom: 4rem;
+}
+
+.outreach-credit-photo {
+  flex: 0 0 auto;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.outreach-credit-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.outreach-credit-name {
+  margin: 0 0 0.6rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  a {
+    color: $outreach-ink;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(4, 157, 217, 0.45);
+
+    &:hover,
+    &:focus {
+      color: #1c459b;
+      border-bottom-color: #1c459b;
+      text-decoration: none;
+    }
+  }
+}
+
+.outreach-credit-role {
+  margin: 0 0 1.2rem;
+  font-family: $outreach-mono;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  color: $outreach-ink-dim;
+}
+
+.outreach-credit-statement {
+  margin: 0 0 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.65;
+  color: $outreach-ink-soft;
+}
+
+.outreach-credit-links {
+  margin: 0;
+}
+
+/* Outreach Sections */
+.outreach-section {
+  margin-bottom: 4.5rem;
+}
+
+.outreach-section--band {
+  background: $outreach-band;
+  border: 1px solid $outreach-hairline;
+  padding: 2.8rem;
+}
+
+.outreach-section-head {
+  margin-bottom: 2.4rem;
+}
+
+.outreach-section-title {
+  margin: 0 0 1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: $outreach-ink;
+}
+
+.outreach-section-intro {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: $outreach-ink-soft;
+  max-width: 62rem;
+
+  i {
+    color: #049dd9;
+    margin-right: 0.6rem;
+  }
+}
+
+/* Outreach Gallery Grid */
+// Hairline dividers rather than wide gutters: the grid background shows through
+// 1px gaps, so the tiles read as one sheet of work instead of detached boxes.
+.outreach-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: $outreach-hairline;
+  border: 1px solid $outreach-hairline;
+}
+
+.outreach-tile {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Outreach Tile Media */
+.outreach-tile-media {
+  position: relative;
+  height: 24rem;
+  overflow: hidden;
+  background: $outreach-band;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// Photographs fill the tile; flat artwork is never cropped.
+.outreach-tile-media--cover img {
+  object-fit: cover;
+}
+
+.outreach-tile-media--contain img {
+  object-fit: contain;
+}
+
+.outreach-tile--hero .outreach-tile-media {
+  height: 28rem;
+}
+
+.outreach-tile--compact .outreach-tile-media {
+  height: 20rem;
+}
+
+/* Outreach Tile Hover Caption */
+// Everything in this overlay is also printed in the caption below the image, so
+// no essential information is hover-only. The overlay is decoration for
+// pointer users and appears on keyboard focus through :focus-within.
+.outreach-tile-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem 1.8rem 1.6rem;
+  background: linear-gradient(
+    to top,
+    rgba(1, 4, 9, 0.92) 0%,
+    rgba(1, 4, 9, 0.72) 55%,
+    rgba(1, 4, 9, 0) 100%
+  );
+  color: #fff;
+  opacity: 0;
+  transform: translateY(1.2rem);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.outreach-tile:hover .outreach-tile-overlay,
+.outreach-tile:focus-within .outreach-tile-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.outreach-tile:hover .outreach-tile-media img,
+.outreach-tile:focus-within .outreach-tile-media img {
+  transform: scale(1.03);
+}
+
+.outreach-overlay-title {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.outreach-overlay-credit {
+  display: block;
+  margin-top: 0.6rem;
+  font-family: $outreach-mono;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  color: #e6edf3;
+}
+
+/* Outreach Category Badge */
+.outreach-badge {
+  display: inline-block;
+  font-family: $outreach-mono;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 1.4rem;
+  background: #049dd9;
+  color: #010409;
+}
+
+/* Outreach Tile Caption */
+.outreach-tile-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.2rem 2.2rem;
+}
+
+.outreach-tile-title {
+  margin: 0 0 0.9rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $outreach-ink;
+}
+
+.outreach-tile-meta {
+  margin: 0 0 1.2rem;
+  font-family: $outreach-mono;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  color: $outreach-ink-dim;
+}
+
+.outreach-meta-venue {
+  color: $outreach-ink-soft;
+}
+
+.outreach-meta-date::before {
+  content: '\00a0\00b7\00a0';
+  color: $outreach-hairline;
+}
+
+.outreach-tile-description {
+  margin: 0 0 1.4rem;
+  font-size: 1.55rem;
+  line-height: 1.6;
+  color: $outreach-ink-soft;
+}
+
+.outreach-tile-note {
+  margin: -0.6rem 0 1.4rem;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  color: $outreach-ink-dim;
+  font-style: italic;
+}
+
+/* Outreach Credit Line */
+// Tone tinted band with an accent rule, so the designer credit reads as part of
+// the design rather than as a footnote.
+.outreach-tile-credit {
+  margin: auto 0 1.4rem;
+  padding: 1rem 1.2rem;
+  background: rgba(4, 157, 217, 0.07);
+  border-left: 3px solid #049dd9;
+  font-size: 1.45rem;
+  line-height: 1.5;
+  color: $outreach-ink;
+
+  i {
+    color: #0b6f96;
+    margin-right: 0.6rem;
+  }
+
+  a {
+    font-weight: 700;
+    color: $outreach-ink;
+    border-bottom: 1px solid rgba(4, 157, 217, 0.5);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #1c459b;
+      border-bottom-color: #1c459b;
+      text-decoration: none;
+    }
+  }
+}
+
+.outreach-credit-label {
+  font-family: $outreach-mono;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: $outreach-ink-dim;
+  margin-right: 0.5rem;
+}
+
+.outreach-credit-role-inline {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: $outreach-mono;
+  font-size: 1.15rem;
+  letter-spacing: 0.05em;
+  color: $outreach-ink-dim;
+}
+
+.outreach-tile-source {
+  margin: 0;
+}
+
+/* Outreach Tone Variants */
+@each $name, $tone in $outreach-tones {
+  $bright: nth($tone, 1);
+  $deep: nth($tone, 2);
+
+  .outreach-tone-#{$name} {
+    .outreach-eyebrow {
+      color: $deep;
+    }
+
+    .outreach-badge {
+      background: $bright;
+    }
+
+    .outreach-tile-credit {
+      background: rgba($bright, 0.1);
+      border-left-color: $bright;
+
+      i {
+        color: $deep;
+      }
+
+      a {
+        border-bottom-color: rgba($bright, 0.6);
+
+        &:hover,
+        &:focus {
+          color: $deep;
+          border-bottom-color: $deep;
+        }
+      }
+    }
+
+    .outreach-viewall {
+      color: $deep;
+      border-bottom-color: $bright;
+
+      &:hover,
+      &:focus {
+        color: $bright;
+        border-bottom-color: $deep;
+      }
+    }
+  }
+}
+
+/* Outreach Gaps In The Record */
+.outreach-gap-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: $outreach-hairline;
+  border: 1px solid $outreach-hairline;
+}
+
+.outreach-gap {
+  background: #fff;
+  padding: 1.8rem 2rem;
+
+  > i {
+    float: right;
+    font-size: 2rem;
+    color: #adb5bd;
+  }
+}
+
+.outreach-gap-title {
+  margin: 0 0 0.8rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: $outreach-ink;
+}
+
+.outreach-gap-detail {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.6;
+  color: $outreach-ink-soft;
+}
+
+/* Outreach Scroll Reveal */
+// The .outreach-reveal-on class is added by script, so tiles are visible when
+// JavaScript is unavailable.
+.outreach-reveal-on .outreach-tile {
+  opacity: 0;
+  transform: translateY(2.4rem);
+}
+
+.outreach-reveal-on .outreach-tile.is-revealed {
+  animation: outreachRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes outreachRise {
+  from {
+    opacity: 0;
+    transform: translateY(2.4rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .outreach-reveal-on .outreach-tile {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .outreach-tile-media img,
+  .outreach-tile-overlay {
+    transition: none;
+  }
+}
+
+// Pointer-less devices cannot hover, and the overlay only repeats the caption,
+// so it is dropped rather than left permanently covering the artwork.
+@media (hover: none) {
+  .outreach-tile-overlay {
+    display: none;
+  }
+}
+
+/* Outreach Responsive Layout */
+@media (min-width: 768px) {
+  .outreach-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .outreach-span-4,
+  .outreach-span-5,
+  .outreach-span-6 {
+    grid-column: span 6;
+  }
+
+  .outreach-span-7,
+  .outreach-span-8,
+  .outreach-span-12 {
+    grid-column: span 12;
+  }
+
+  .outreach-gap-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .outreach-tile-media {
+    height: 28rem;
+  }
+
+  .outreach-tile--hero .outreach-tile-media {
+    height: 36rem;
+  }
+
+  .outreach-tile--compact .outreach-tile-media {
+    height: 24rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .outreach-span-4 {
+    grid-column: span 4;
+  }
+
+  .outreach-span-5 {
+    grid-column: span 5;
+  }
+
+  .outreach-span-6 {
+    grid-column: span 6;
+  }
+
+  .outreach-span-7 {
+    grid-column: span 7;
+  }
+
+  .outreach-span-8 {
+    grid-column: span 8;
+  }
+
+  .outreach-span-12 {
+    grid-column: span 12;
+  }
+
+  .outreach-tile-media {
+    height: 30rem;
+  }
+
+  .outreach-tile--hero .outreach-tile-media {
+    height: 40rem;
+  }
+
+  .outreach-tile--compact .outreach-tile-media {
+    height: 24rem;
+  }
+
+  .outreach-span-12 .outreach-tile-media {
+    height: 32rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .outreach-credit {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.2rem 1.8rem;
+  }
+
+  .outreach-viewall {
+    margin-right: 1.6rem;
+  }
+}
+
+/* Outreach Dark Mode */
+[data-theme='dark'] {
+  .outreach-page {
+    color: $darkmode-text;
+  }
+
+  .outreach-lede,
+  .outreach-footnote,
+  .outreach-section-intro,
+  .outreach-credit-statement,
+  .outreach-tile-description,
+  .outreach-gap-detail {
+    color: $darkmode-text;
+  }
+
+  .outreach-eyebrow,
+  .outreach-credit-role,
+  .outreach-tile-meta,
+  .outreach-tile-note,
+  .outreach-credit-label,
+  .outreach-credit-role-inline {
+    color: $darkmode-text-secondary;
+  }
+
+  .outreach-eyebrow--section {
+    color: $darkmode-link;
+  }
+
+  .outreach-meta-venue {
+    color: $darkmode-text;
+  }
+
+  .outreach-meta-date::before {
+    color: $darkmode-border;
+  }
+
+  .outreach-viewall {
+    color: $darkmode-link;
+    border-bottom-color: $darkmode-link;
+
+    &:hover,
+    &:focus {
+      color: $darkmode-text-strong;
+      border-bottom-color: $darkmode-text-strong;
+    }
+  }
+
+  .outreach-credit {
+    background: $darkmode-background-secondary;
+    border-color: $darkmode-border;
+    border-left-color: $darkmode-link;
+  }
+
+  .outreach-credit-photo {
+    border-color: $darkmode-background-tertiary;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .outreach-credit-name a {
+    color: $darkmode-text-strong;
+    border-bottom-color: rgba(88, 166, 255, 0.5);
+
+    &:hover,
+    &:focus {
+      color: $darkmode-link;
+      border-bottom-color: $darkmode-link;
+    }
+  }
+
+  .outreach-section--band {
+    background: $darkmode-background-secondary;
+    border-color: $darkmode-border;
+  }
+
+  .outreach-section-title,
+  .outreach-tile-title,
+  .outreach-gap-title {
+    color: $darkmode-text-strong;
+  }
+
+  .outreach-grid,
+  .outreach-gap-list {
+    background: $darkmode-border;
+    border-color: $darkmode-border;
+  }
+
+  .outreach-tile,
+  .outreach-gap {
+    background: $darkmode-background-secondary;
+  }
+
+  // Flat artwork sits on a light card even in dark mode: the stickers are drawn
+  // on pale backgrounds and would otherwise float in a void.
+  .outreach-tile-media {
+    background: $darkmode-background-tertiary;
+  }
+
+  .outreach-tile-media--contain {
+    background: #eef1f4;
+  }
+
+  .outreach-tile-credit {
+    color: $darkmode-text;
+    background: rgba(88, 166, 255, 0.1);
+    border-left-color: $darkmode-link;
+
+    i {
+      color: $darkmode-link;
+    }
+
+    a {
+      color: $darkmode-text-strong;
+      border-bottom-color: rgba(88, 166, 255, 0.5);
+
+      &:hover,
+      &:focus {
+        color: $darkmode-link;
+        border-bottom-color: $darkmode-link;
+      }
+    }
+  }
+
+  .outreach-gap > i {
+    color: $darkmode-text-dim;
+  }
+
+  @each $name, $tone in $outreach-tones {
+    $bright: nth($tone, 1);
+    $light: nth($tone, 3);
+
+    .outreach-tone-#{$name} {
+      .outreach-eyebrow {
+        color: $light;
+      }
+
+      .outreach-badge {
+        background: $bright;
+        color: #010409;
+      }
+
+      .outreach-tile-credit {
+        background: rgba($bright, 0.14);
+        border-left-color: $bright;
+
+        i {
+          color: $light;
+        }
+
+        a {
+          border-bottom-color: rgba($light, 0.6);
+
+          &:hover,
+          &:focus {
+            color: $light;
+            border-bottom-color: $light;
+          }
+        }
+      }
+
+      .outreach-viewall {
+        color: $light;
+        border-bottom-color: $bright;
+
+        &:hover,
+        &:focus {
+          color: $darkmode-text-strong;
+          border-bottom-color: $light;
+        }
+      }
+    }
+  }
+}
+
+/* ===================================================================
+   Collage layout
+   The artwork is the content, so the composition does the talking:
+   asymmetric masthead, two interlocking courses of cut-outs, an uneven
+   print grid. Nothing on this page is a centred row.
+   =================================================================== */
+
+$or-paper: #f3f1ec;
+
+.outreach-page--collage {
+  max-width: 128rem;
+}
+
+/* --- Masthead: type block against a full plate ------------------- */
+.or-masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(2.4rem, 4vw, 6rem);
+  align-items: center;
+  margin-bottom: clamp(5rem, 8vw, 10rem);
+}
+
+.or-masthead-name {
+  margin: 0 0 2rem;
+  font-size: clamp(4.2rem, 5.5vw, 7.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+
+  a {
+    color: $outreach-ink;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #1c459b;
+    }
+  }
+}
+
+.or-masthead-who {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-top: 1.8rem;
+  border-top: 2px solid $outreach-ink;
+}
+
+.or-masthead-portrait {
+  flex: 0 0 7.2rem;
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.or-masthead-role {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: $outreach-ink;
+
+  span {
+    font-weight: 400;
+    color: $outreach-ink-dim;
+  }
+}
+
+.or-masthead-plate {
+  margin: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    margin-top: 1.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $outreach-ink-dim;
+  }
+}
+
+/* --- The honeycomb ----------------------------------------------- */
+/* Two courses of four, spanning the full measure. Laid on a nine column
+   grid where every hexagon spans two columns: the second course starts one
+   column in, which is exactly half a hexagon, so it nests in the valleys of
+   the course above and both courses reach the same outer edges.
+
+   A pointy-top hexagon is sqrt(3)/2 as wide as it is tall and successive
+   courses advance by three quarters of the height, so the lower course rides
+   up by a quarter of its height. Percentage margins resolve against the
+   container width, which is what the calc below works in. */
+.or-hive {
+  --hex-gap: 0.25rem;
+  margin: 0 0 clamp(5rem, 8vw, 10rem);
+}
+
+.or-hive-row {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: var(--hex-gap);
+}
+
+.or-hive-row .or-hex {
+  grid-column: span 2;
+}
+
+/* Must restate the span: grid-column-start on its own overrides the
+   `grid-column: span 2` shorthand above and collapses this tile to one
+   column, which renders it at half the size of its neighbours. */
+.or-hive-row--offset .or-hex:first-child {
+  grid-column: 2 / span 2;
+}
+
+.or-hive-row + .or-hive-row {
+  margin-top: calc((100% - 8 * var(--hex-gap)) * -0.0642 - var(--hex-gap) * 0.2887);
+}
+
+.or-hex {
+  aspect-ratio: 0.866;
+  margin: 0;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: $outreach-band;
+  transition: transform 0.2s ease;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.or-hex:hover {
+  transform: scale(1.02);
+}
+
+/* --- Zines as flip books ------------------------------------------ */
+.or-books {
+  display: grid;
+  gap: clamp(3.2rem, 5vw, 6rem);
+  margin: 0 0 clamp(4rem, 6vw, 8rem);
+}
+
+.or-book {
+  margin: 0;
+}
+
+.or-book-title {
+  margin: 0 0 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $outreach-ink-soft;
+}
+
+/* Before the script runs every page is shown, stacked. Once paged, the stage
+   holds one view and keeps a steady height so the controls do not jump when a
+   single page view follows a double spread. */
+.or-book-stage {
+  display: grid;
+  gap: 1.2rem;
+  background: $outreach-band;
+  padding: clamp(1.2rem, 2vw, 2.4rem);
+}
+
+.or-book.is-paged .or-book-stage {
+  place-items: center;
+  min-height: clamp(26rem, 38vw, 46rem);
+}
+
+.or-book-page {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 6px 20px rgba(16, 32, 56, 0.18);
+}
+
+/* display: block above outranks the user agent rule for [hidden], so the
+   script's hidden pages would otherwise stay on screen. */
+.or-book-page[hidden] {
+  display: none;
+}
+
+.or-book.is-paged .or-book-page {
+  width: auto;
+  max-width: 100%;
+  max-height: clamp(26rem, 38vw, 46rem);
+}
+
+.or-book-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin-top: 1.2rem;
+}
+
+.or-book-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid $outreach-hairline;
+  background: #fff;
+  color: #1c459b;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    border-color: #049dd9;
+  }
+
+  &:disabled {
+    color: $outreach-ink-dim;
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.or-book-pips {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.or-book-pip {
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  padding: 0;
+  border: 1px solid $outreach-ink-dim;
+  border-radius: 50%;
+  background: transparent;
+
+  &:hover,
+  &:focus-visible {
+    border-color: #049dd9;
+    background: #049dd9;
+  }
+
+  &[aria-current='true'] {
+    background: #1c459b;
+    border-color: #1c459b;
+  }
+}
+
+/* --- Colouring sheet --------------------------------------------- */
+.or-sheet {
+  margin: 0 0 clamp(5rem, 8vw, 10rem);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* --- End mark ---------------------------------------------------- */
+.or-endmark {
+  display: grid;
+  grid-template-columns: clamp(12rem, 16vw, 20rem) minmax(0, 1fr);
+  gap: clamp(2.4rem, 4vw, 4.8rem);
+  align-items: center;
+  margin-top: clamp(4rem, 6vw, 8rem);
+  padding-top: clamp(2.4rem, 3vw, 4rem);
+  border-top: 2px solid $outreach-ink;
+}
+
+.or-endmark-crest {
+  margin: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.or-endmark-credit .outreach-eyebrow {
+  margin-bottom: 0.6rem;
+}
+
+.or-endmark-line {
+  margin: 0 0 0.8rem;
+  font-size: 1.7rem;
+  color: $outreach-ink;
+
+  a {
+    color: #1c459b;
+  }
+}
+
+/* --- Narrow screens ---------------------------------------------- */
+@media (max-width: 900px) {
+  .or-masthead {
+    grid-template-columns: 1fr;
+  }
+
+  .or-books {
+    gap: clamp(2.4rem, 4vw, 3.2rem);
+  }
+}
+
+@media (max-width: 620px) {
+  .or-hive {
+    --hex-gap: 0.3rem;
+  }
+
+  .or-endmark {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .or-hex {
+    transition: none;
+  }
+
+  .or-hex:hover {
+    transform: none;
+  }
+}
+
+html.dark-mode {
+  .or-hex {
+    background: $darkmode-background-secondary;
+  }
+
+  .or-masthead-name a,
+  .or-endmark-line {
+    color: $darkmode-text-strong;
+  }
+
+  .or-masthead-role {
+    color: $darkmode-text;
+
+    span {
+      color: $darkmode-text-secondary;
+    }
+  }
+
+  .or-masthead-who,
+  .or-endmark {
+    border-color: $darkmode-border;
+  }
+
+  .or-masthead-plate figcaption {
+    color: $darkmode-text-secondary;
+  }
+
+  .or-book-stage {
+    background: $darkmode-background-secondary;
+  }
+
+  .or-book-btn {
+    background: $darkmode-background;
+    border-color: $darkmode-border;
+    color: $darkmode-link;
+  }
+
+  .or-book-title {
+    color: $darkmode-text-secondary;
+  }
+
+  .or-book-pip {
+    border-color: $darkmode-text-secondary;
+
+    &[aria-current='true'] {
+      background: $darkmode-link;
+      border-color: $darkmode-link;
+    }
+  }
+}

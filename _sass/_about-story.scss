@@ -1,0 +1,1378 @@
+// About section: SciX colours, left-rail pages, graphic tiles.
+// Bootstrap html { font-size: 10px }, so 1rem = 10px.
+
+$scix-navy: #1c459b;
+$scix-cyan: #049dd9;
+$scix-teal: #60c3b2;
+$scix-green: #95c949;
+$scix-orange: #faa954;
+$scix-rule: #dce3ea;
+$scix-ink: #333;
+$scix-muted: #555;
+$scix-wash: #f4f8fb;
+
+/* Full-width About frame (replaces smart-container on SciX About) */
+.about-page-frame {
+  display: block;
+  width: 100%;
+  max-width: 2200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Below $screen-md-min the shell children are still Bootstrap float columns.
+   This frame replaced the .row that used to clear them, so without a clearfix
+   the floated .about-shell-main escapes and pushes the footer off to the right,
+   which shows up as horizontal scroll on every SciX About page on a phone. */
+.about-page-frame::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.about-shell {
+  margin: 0;
+  width: 100%;
+}
+
+.about-shell-rail {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.about-shell-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(16px, 2.2vw, 32px) clamp(20px, 3vw, 56px) clamp(48px, 6vw, 88px);
+}
+
+.post-content--flush {
+  padding: 0;
+  max-width: none;
+}
+
+[data-theme='dark'] .about-rail-toggle {
+  background: $darkmode-background;
+  border-color: $darkmode-border;
+  color: $darkmode-text;
+}
+
+/* The toggle is a wide-screen control; small screens use the off-canvas
+   button Bootstrap already provides. Declared before the media query below
+   so the min-width rule overrides it rather than the other way round. */
+.about-rail-toggle {
+  display: none;
+}
+
+@media (min-width: $screen-md-min) {
+  .about-shell {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .about-shell-rail {
+    flex: 0 0 clamp(220px, 14vw, 280px);
+    width: clamp(220px, 14vw, 280px);
+    max-width: clamp(220px, 14vw, 280px);
+    float: none;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 28px 16px 48px clamp(16px, 1.6vw, 28px);
+    border-right: 1px solid $scix-rule;
+    background: #fff;
+  }
+
+  .about-shell-main {
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 0;
+    float: none;
+    padding: 0;
+    container-type: inline-size;
+    container-name: about-main;
+  }
+
+  /* Icon button pinned to the top of the rail. Collapsing leaves a narrow
+     strip holding just the icon, so the control never moves and never floats
+     loose in the reading column. */
+  .about-rail-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0 0 12px auto;
+    padding: 0;
+    border: 1px solid $scix-rule;
+    border-radius: 3px;
+    background: #fff;
+    color: $scix-muted;
+    font-size: 1.5rem;
+
+    &:hover,
+    &:focus-visible {
+      border-color: $scix-cyan;
+      color: $scix-navy;
+    }
+  }
+
+  .about-shell.is-rail-hidden {
+    .about-shell-rail {
+      flex-basis: 52px;
+      width: 52px;
+      max-width: 52px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .about-rail-nav {
+      display: none;
+    }
+
+    .about-rail-toggle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+@media (max-width: $screen-sm-max) {
+  .about-page-frame {
+    padding: 0;
+  }
+
+  .about-shell-inner {
+    padding: 16px 20px 48px;
+  }
+}
+
+/* Nested about rail */
+.scix-about-nav {
+  .panel {
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 4px;
+    background: transparent;
+  }
+
+  .panel-heading {
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .panel-heading a {
+    text-decoration: none;
+  }
+
+  .panel-heading a > div {
+    padding: 8px 4px;
+    font-size: 16px;
+    color: $scix-ink;
+  }
+
+  .panel-heading a > div.active,
+  .panel-heading a[aria-expanded='true'] > div {
+    color: $scix-navy;
+  }
+
+  .list-group-item.active {
+    border-left-color: $scix-cyan !important;
+    background: rgba(4, 157, 217, 0.08) !important;
+    color: $scix-navy !important;
+  }
+}
+
+/* About landing (inside .post-content) */
+.about-story {
+  color: $scix-ink;
+  font-size: clamp(1.6rem, 0.35vw + 1.5rem, 1.8rem);
+  line-height: 1.65;
+
+  h2 {
+    font-size: clamp(2.4rem, 1.2vw + 1.8rem, 3.4rem);
+    font-weight: 700;
+    color: $scix-navy;
+    margin: 0 0 0.5em;
+  }
+
+  h3 {
+    font-size: clamp(1.6rem, 0.3vw + 1.5rem, 1.8rem);
+    font-weight: 700;
+    margin: 0 0 0.4em;
+    color: $scix-ink;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0 0 0.4em;
+    color: $scix-ink;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  a {
+    color: $scix-cyan;
+  }
+}
+
+.about-title {
+  font-size: clamp(3.2rem, 2vw + 2rem, 5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: $scix-navy;
+  margin: 0 0 0.4em;
+}
+
+.about-lead {
+  font-size: clamp(1.8rem, 0.55vw + 1.6rem, 2.3rem);
+  line-height: 1.45;
+  color: $scix-ink;
+  max-width: 62ch;
+}
+
+.about-band--intro p {
+  max-width: 68ch;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 2em 0 0;
+}
+
+.about-action {
+  display: inline-block;
+  padding: 10px 22px;
+  background: $scix-cyan;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border: 2px solid $scix-cyan;
+}
+
+.about-action:hover,
+.about-action:focus {
+  background: $scix-navy;
+  border-color: $scix-navy;
+}
+
+.about-action--ghost {
+  background: transparent;
+  color: $scix-navy !important;
+  border-color: $scix-navy;
+}
+
+.about-action--ghost:hover,
+.about-action--ghost:focus {
+  background: $scix-navy;
+  color: #fff !important;
+}
+
+.about-band {
+  padding: clamp(48px, 6vw, 96px) 0;
+}
+
+.about-band-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 clamp(20px, 3vw, 56px);
+}
+
+.about-band-inner > p {
+  max-width: 68ch;
+}
+
+.about-band--intro {
+  padding: clamp(48px, 5.5vw, 88px) 0 clamp(56px, 6vw, 88px);
+  background: linear-gradient(180deg, #e8f4fb 0%, #fff 72%);
+  border-bottom: 1px solid $scix-rule;
+}
+
+.about-band--wash {
+  background: $scix-wash;
+}
+
+.about-split {
+  display: grid;
+  /* The image column leads slightly: a centred photo in a row sized by a tall
+     text column reads as a small picture floating in white space. */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: clamp(20px, 3.2vw, 48px);
+  align-items: start;
+  max-width: min(100%, 1400px);
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid $scix-rule;
+}
+
+.about-photo--center {
+  width: auto;
+  max-width: min(100%, 880px);
+  margin: 0.4em auto 2em;
+}
+
+.about-tiles {
+  list-style: none;
+  margin: 1.5em 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(12px, 1.4vw, 20px);
+  max-width: min(100%, 1320px);
+}
+
+.about-tiles--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: min(100%, 1080px);
+}
+
+.about-tile {
+  margin: 0;
+  padding: 24px 20px 20px;
+  border: 1px solid $scix-rule;
+  border-top: 3px solid $scix-cyan;
+  background: #fff;
+}
+
+.about-tile p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: $scix-muted;
+}
+
+.about-tile p + p {
+  margin-top: 0.8em;
+}
+
+.about-tile-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: rgba(4, 157, 217, 0.12);
+  color: $scix-cyan;
+  font-size: 20px;
+}
+
+/* Knowledge graph drawing */
+.about-graph {
+  margin: 0;
+}
+
+.about-graph svg {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.kg-field {
+  fill: #f4f8fb;
+}
+
+.kg-dot {
+  fill: #1c459b;
+  opacity: 0.18;
+}
+
+.kg-edge {
+  stroke-linecap: round;
+}
+
+.kg-edge--primary {
+  stroke-width: 2.2;
+  stroke-dasharray: 5 7;
+  animation: about-graph-dash 14s linear infinite;
+}
+
+.kg-edge--leaf {
+  stroke-width: 1.2;
+  opacity: 0.7;
+}
+
+.kg-edge--cross {
+  stroke: #8aa0b8;
+  stroke-width: 1;
+  stroke-dasharray: 2 6;
+  opacity: 0.55;
+}
+
+.kg-edge--navy { stroke: $scix-navy; }
+.kg-edge--cyan { stroke: $scix-cyan; }
+.kg-edge--teal { stroke: $scix-teal; }
+.kg-edge--green { stroke: $scix-green; }
+.kg-edge--orange { stroke: $scix-orange; }
+
+.kg-node--paper rect,
+.kg-node--paper path {
+  fill: none;
+}
+
+.kg-node--paper rect {
+  fill: $scix-navy;
+}
+
+.kg-node--paper path {
+  stroke: #fff;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+.kg-node--data circle {
+  fill: $scix-teal;
+}
+
+.kg-node--soft rect {
+  fill: $scix-green;
+}
+
+.kg-node--grant polygon {
+  fill: $scix-orange;
+}
+
+.kg-node--leaf {
+  opacity: 0.92;
+}
+
+.kg-label {
+  font-size: 12px;
+  font-weight: 700;
+  fill: $scix-navy;
+  letter-spacing: 0.01em;
+}
+
+.kg-hub-card {
+  fill: $scix-navy;
+}
+
+.kg-hub-lines {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.kg-hub-text {
+  font-size: 13px;
+  font-weight: 700;
+  fill: #fff;
+}
+
+@keyframes about-graph-dash {
+  to {
+    stroke-dashoffset: -88;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kg-edge--primary {
+    animation: none;
+    stroke-dasharray: none;
+  }
+}
+
+/* Horizontal history path */
+.about-path {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 1.2em 0 1.4em;
+  padding: 0;
+  position: relative;
+}
+
+.about-path:not(.about-history-path)::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 24px;
+  height: 2px;
+  background: $scix-cyan;
+  opacity: 0.35;
+}
+
+.about-path li {
+  flex: 1 1 160px;
+  position: relative;
+  padding: 0 28px 12px 0;
+}
+
+.about-path li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-path li a:hover .about-path-label {
+  color: $scix-cyan;
+}
+
+.about-path-year {
+  display: block;
+  position: relative;
+  padding-top: 22px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $scix-cyan;
+}
+
+.about-path-year::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: $scix-cyan;
+  z-index: 1;
+}
+
+.about-path-label {
+  display: block;
+  font-size: 1.6rem;
+  color: $scix-ink;
+  margin-top: 6px;
+}
+
+/* Small caps label above a band heading. */
+.about-eyebrow {
+  margin: 0 0 0.6em;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $scix-muted;
+}
+
+/* Scale figures in the intro band. */
+.about-figures {
+  list-style: none;
+  margin: clamp(24px, 3vw, 40px) 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: clamp(16px, 2.4vw, 32px);
+  max-width: 96ch;
+}
+
+.about-figures li {
+  border-top: 3px solid $scix-cyan;
+  padding-top: 12px;
+}
+
+.about-figure-value {
+  display: block;
+  font-size: clamp(3.2rem, 2.2vw + 2.4rem, 4.4rem);
+  line-height: 1.05;
+  font-weight: 700;
+  color: $scix-navy;
+  font-variant-numeric: tabular-nums;
+}
+
+.about-figure-label {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: $scix-muted;
+}
+
+/* Compact figures used inside a prose band, smaller than the intro set. */
+.about-figures--compact {
+  margin: clamp(20px, 2.4vw, 32px) 0;
+  max-width: 80ch;
+
+  .about-figure-value {
+    font-size: clamp(2.6rem, 1.4vw + 2.2rem, 3.4rem);
+  }
+}
+
+/* Disciplines covered. Four blocks of label plus list. */
+.about-fields {
+  list-style: none;
+  margin: clamp(24px, 3vw, 40px) 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: clamp(20px, 2.6vw, 36px);
+}
+
+.about-fields li {
+  border-top: 3px solid $scix-teal;
+  padding-top: 14px;
+}
+
+.about-fields h3 {
+  margin: 0 0 6px;
+  font-size: 1.9rem;
+}
+
+.about-fields p {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $scix-muted;
+}
+
+/* Model and dataset releases, year in a fixed gutter. */
+.about-releases {
+  list-style: none;
+  margin: 0 0 1.4em;
+  padding: 0;
+}
+
+.about-releases li {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid $scix-rule;
+}
+
+.about-release-year {
+  font-weight: 700;
+  color: $scix-cyan;
+  font-variant-numeric: tabular-nums;
+}
+
+.about-release-body {
+  line-height: 1.5;
+}
+
+/* Two even columns, for text against text rather than text against art. */
+.about-split--wide {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.about-closing {
+  max-width: 78ch;
+  margin-top: clamp(20px, 2.4vw, 32px);
+}
+
+/* Award band: statement on the left, the wider record on the right. */
+.about-award {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: start;
+}
+
+.about-award-main h2 {
+  margin-top: 0;
+}
+
+.about-award-aside {
+  border-left: 3px solid $scix-orange;
+  padding-left: clamp(16px, 2vw, 28px);
+}
+
+.about-award-list {
+  list-style: none;
+  margin: 0 0 1.2em;
+  padding: 0;
+}
+
+.about-award-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid $scix-rule;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: $scix-muted;
+}
+
+.about-honor {
+  display: flex;
+  gap: clamp(16px, 2vw, 24px);
+  align-items: flex-start;
+  padding: clamp(20px, 2.4vw, 36px) clamp(20px, 2.6vw, 36px);
+  border: 1px solid $scix-rule;
+  border-left: 6px solid $scix-orange;
+  background: #fff;
+  margin: 0;
+}
+
+.about-honor h2 {
+  margin-top: 0;
+  font-size: 2.6rem;
+}
+
+.about-honor-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(250, 169, 84, 0.2);
+  color: #c47a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.about-cite {
+  margin: 0;
+  padding: 28px 28px;
+  border-left: 6px solid $scix-teal;
+  font-style: italic;
+  font-size: 1.8rem;
+  color: $scix-muted;
+  background: #fff;
+
+  footer {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: $scix-ink;
+
+    /* Bootstrap puts an em dash before blockquote footers. */
+    &::before {
+      content: '';
+    }
+  }
+}
+
+.about-history {
+  max-width: 72ch;
+
+  .about-lead {
+    max-width: none;
+  }
+
+  .about-cite {
+    margin: 1.6em 0;
+  }
+
+  .highlight-box {
+    max-width: none;
+    margin: 1.6em 0;
+  }
+
+  mark {
+    background: rgba(250, 169, 84, 0.38);
+    color: inherit;
+    padding: 0 0.12em;
+  }
+}
+
+/* Staff directory */
+.about-people {
+  list-style: none;
+  margin: 0 0 2.4em;
+  padding: 0;
+  max-width: 52em;
+  border-top: 1px solid $scix-rule;
+}
+
+.about-person {
+  display: grid;
+  grid-template-columns: minmax(12em, 0.85fr) minmax(0, 1.15fr);
+  gap: 4px 28px;
+  align-items: baseline;
+  margin: 0;
+  padding: 12px 8px 12px 2px;
+  border: 0;
+  border-bottom: 1px solid $scix-rule;
+  background: transparent;
+}
+
+.about-person a {
+  font-weight: 700;
+  text-decoration: none;
+  color: $scix-navy;
+}
+
+.about-person a:hover,
+.about-person a:focus {
+  color: $scix-cyan;
+}
+
+.about-person-title {
+  display: block;
+  font-size: 1.6rem;
+  color: $scix-muted;
+  margin: 0;
+}
+
+.about-group-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: $scix-navy;
+  margin: 2em 0 0.4em;
+}
+
+/* Team mosaic: mixed shapes, staggered sizes, slight toss. SciX team page only. */
+.team-mosaic {
+  list-style: none;
+  margin: 0.4em 0 2.8em;
+  padding: 0.6em 0 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem 0.8rem;
+}
+
+.team-chip {
+  margin: 0;
+  width: 14.4rem;
+  flex: 0 0 auto;
+}
+
+.team-chip--lg {
+  width: 18rem;
+}
+
+.team-chip--sm {
+  width: 11.2rem;
+}
+
+.team-chip a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-chip-photo {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: $scix-navy;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+.team-chip-initials {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.team-chip--circle .team-chip-photo {
+  border-radius: 50%;
+}
+
+.team-chip--squircle .team-chip-photo {
+  border-radius: 36%;
+}
+
+.team-chip--arch .team-chip-photo {
+  border-radius: 50% 50% 18% 18% / 46% 46% 16% 16%;
+}
+
+.team-chip--petal .team-chip-photo {
+  border-radius: 68% 22% 68% 22%;
+}
+
+.team-chip--pentagon .team-chip-photo {
+  clip-path: polygon(50% 0%, 100% 36%, 82% 100%, 18% 100%, 0% 36%);
+}
+
+.team-chip--hex .team-chip-photo {
+  clip-path: polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0% 50%);
+}
+
+.team-chip--navy .team-chip-photo {
+  background: $scix-navy;
+}
+
+.team-chip--cyan .team-chip-photo {
+  background: $scix-cyan;
+}
+
+.team-chip--teal .team-chip-photo {
+  background: $scix-teal;
+}
+
+.team-chip--green .team-chip-photo {
+  background: $scix-green;
+}
+
+.team-chip--orange .team-chip-photo {
+  background: $scix-orange;
+}
+
+.team-chip-name {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $scix-navy;
+}
+
+.team-chip-title {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: $scix-muted;
+}
+
+.team-chip a:hover .team-chip-name,
+.team-chip a:focus .team-chip-name {
+  color: $scix-cyan;
+}
+
+.team-chip:nth-child(3n + 1) {
+  margin-top: 0;
+}
+
+.team-chip:nth-child(3n + 2) {
+  margin-top: 2.4rem;
+}
+
+.team-chip:nth-child(3n) {
+  margin-top: 1.1rem;
+}
+
+.team-chip:nth-child(5n + 1) a {
+  transform: rotate(-3.2deg);
+}
+
+.team-chip:nth-child(5n + 2) a {
+  transform: rotate(2.6deg);
+}
+
+.team-chip:nth-child(5n + 3) a {
+  transform: rotate(-1.4deg);
+}
+
+.team-chip:nth-child(5n + 4) a {
+  transform: rotate(3.4deg);
+}
+
+.team-chip:nth-child(5n) a {
+  transform: rotate(-2.2deg);
+}
+
+.team-chip a:hover,
+.team-chip a:focus {
+  transform: rotate(0deg) scale(1.04);
+}
+
+.team-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1.2rem clamp(2.4rem, 4vw, 4.8rem);
+  align-items: start;
+  margin: 0 0 2.8em;
+}
+
+.team-pair .about-group-title {
+  margin-top: 0;
+}
+
+.team-pair .team-mosaic {
+  justify-content: flex-start;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.team-pair .team-chip,
+.team-pair .team-chip--lg,
+.team-pair .team-chip--sm {
+  width: 14.4rem;
+}
+
+.team-pair .team-chip:nth-child(n) {
+  margin-top: 0;
+}
+
+.team-pair .team-chip:nth-child(n) a {
+  transform: none;
+}
+
+@media (max-width: $screen-sm-max) {
+  .team-pair {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .team-mosaic {
+    gap: 0.8rem 0.6rem;
+  }
+
+  .team-chip,
+  .team-chip--lg,
+  .team-chip--sm {
+    width: calc(50% - 0.8rem);
+  }
+
+  .team-chip:nth-child(n) {
+    margin-top: 0;
+  }
+
+  .team-chip:nth-child(n) a {
+    transform: none;
+  }
+}
+
+.amb-grid {
+  list-style: none;
+  margin: 0.4em 0 2.8em;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: clamp(14px, 1.6vw, 22px);
+}
+
+.amb-card {
+  margin: 0;
+}
+
+.amb-card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid $scix-rule;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    border-color: $scix-cyan;
+    text-decoration: none;
+  }
+}
+
+.amb-card-photo {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: $scix-wash;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+}
+
+.amb-card-name {
+  display: block;
+  padding: 1.2rem 1.4rem 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $scix-navy;
+}
+
+.amb-card-field {
+  display: block;
+  padding: 0 1.4rem 1.4rem;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  color: $scix-muted;
+}
+
+.amb-card-link:hover .amb-card-name,
+.amb-card-link:focus .amb-card-name {
+  color: $scix-cyan;
+}
+
+.about-initiatives {
+  list-style: none;
+  margin: 0 0 1.5em;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: clamp(10px, 1vw, 16px);
+}
+
+.about-initiative {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid $scix-rule;
+  background: #fff;
+}
+
+.about-initiative a {
+  font-weight: 700;
+  text-decoration: none;
+  color: $scix-navy;
+}
+
+.about-initiative a:hover {
+  color: $scix-cyan;
+}
+
+/* History page path (taller) */
+.about-history-path {
+  margin: 0 0 2em;
+}
+
+[data-theme='dark'] .about-page-frame,
+[data-theme='dark'] .about-shell-main {
+  background: $darkmode-background;
+}
+
+[data-theme='dark'] .about-shell-rail {
+  background: $darkmode-background;
+  border-color: $darkmode-border;
+}
+
+[data-theme='dark'] .about-story {
+  color: $darkmode-text;
+}
+
+/* Moved off the inline style the layout used to carry, so the dark-mode rule
+   below can win. */
+.post-subtitle {
+  color: #666;
+  margin-top: -10px;
+  font-weight: bolder;
+}
+
+/* .about-lead hard-codes $scix-ink, which is near black and therefore invisible
+   on the dark background. .post-title is the sub-page h1 and sits at #575757,
+   below the AA floor. Both carry the first sentence a reader sees. */
+[data-theme='dark'] .about-lead,
+[data-theme='dark'] .post-title,
+[data-theme='dark'] .post-subtitle {
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .about-title,
+[data-theme='dark'] .about-story h2,
+[data-theme='dark'] .about-story h3,
+[data-theme='dark'] .about-story h4,
+[data-theme='dark'] .about-person a,
+[data-theme='dark'] .about-initiative a,
+[data-theme='dark'] .about-group-title,
+[data-theme='dark'] .team-chip-name {
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .kg-field,
+html.dark-mode .kg-field {
+  fill: $darkmode-background;
+}
+
+[data-theme='dark'] .kg-dot,
+html.dark-mode .kg-dot {
+  fill: $darkmode-text;
+  opacity: 0.22;
+}
+
+[data-theme='dark'] .kg-label,
+html.dark-mode .kg-label {
+  fill: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .kg-edge--cross,
+html.dark-mode .kg-edge--cross {
+  stroke: $darkmode-border;
+}
+
+[data-theme='dark'] .about-band--intro {
+  background: linear-gradient(180deg, $darkmode-background-secondary 0%, $darkmode-background 72%);
+  border-color: $darkmode-border;
+}
+
+[data-theme='dark'] .about-band--wash {
+  background: $darkmode-background-secondary;
+}
+
+[data-theme='dark'] .amb-card-link {
+  background: $darkmode-background;
+  border-color: $darkmode-border;
+  color: $darkmode-text;
+}
+
+[data-theme='dark'] .amb-card-photo {
+  background: $darkmode-background-secondary;
+}
+
+[data-theme='dark'] .amb-card-name {
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .amb-card-field {
+  color: $darkmode-text-secondary;
+}
+
+[data-theme='dark'] .amb-card-link:hover .amb-card-name,
+[data-theme='dark'] .amb-card-link:focus .amb-card-name {
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .about-tile,
+[data-theme='dark'] .about-honor,
+[data-theme='dark'] .about-initiative,
+[data-theme='dark'] .about-cite {
+  background: $darkmode-background;
+  border-color: $darkmode-border;
+}
+
+[data-theme='dark'] .about-fields p {
+  color: $darkmode-text;
+}
+
+[data-theme='dark'] .about-releases li {
+  border-color: $darkmode-border;
+}
+
+[data-theme='dark'] .about-eyebrow,
+[data-theme='dark'] .about-figure-label,
+[data-theme='dark'] .about-award-list li {
+  color: $darkmode-text;
+}
+
+[data-theme='dark'] .about-figure-value {
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .about-award-list li {
+  border-color: $darkmode-border;
+}
+
+[data-theme='dark'] .about-people,
+[data-theme='dark'] .about-person {
+  border-color: $darkmode-border;
+  background: transparent;
+}
+
+[data-theme='dark'] .about-tile p,
+[data-theme='dark'] .about-person-title,
+[data-theme='dark'] .about-cite,
+[data-theme='dark'] .about-path-label,
+[data-theme='dark'] .team-chip-title {
+  color: $darkmode-text-secondary;
+}
+
+[data-theme='dark'] .about-cite footer {
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .about-history mark {
+  background: rgba(250, 169, 84, 0.28);
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .team-chip a:hover .team-chip-name,
+[data-theme='dark'] .team-chip a:focus .team-chip-name {
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .about-story a {
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .scix-about-nav .panel-heading a > div {
+  color: $darkmode-text;
+}
+
+[data-theme='dark'] .about-action--ghost {
+  color: $darkmode-text-strong !important;
+  border-color: $scix-cyan;
+}
+
+@container about-main (max-width: 1100px) {
+  .about-tiles {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  }
+}
+
+@container about-main (max-width: 980px) {
+  .about-split,
+  .about-split--wide,
+  .about-award {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: min(100%, 640px);
+  }
+
+  .about-tiles--three {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .about-band-inner {
+    padding: 0 20px;
+  }
+
+  .about-split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-path {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-path:not(.about-history-path)::before {
+    display: none;
+  }
+
+  .about-person {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 12px 0;
+  }
+
+  /* The @container about-main rules below cannot fire here: the container is
+     only declared from $screen-md-min up, so without these the tile grids stay
+     at five and three columns on a phone and break words mid-syllable. */
+  .about-tiles,
+  .about-tiles--three {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  }
+
+  .about-award,
+  .about-split--wide {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,2 +1,874 @@
 // Full-width marketing sections shared by /home/ and the SciX About page.
 // Extends the existing home page design language in styles.scss.
+// Note: Bootstrap scaffolding sets html { font-size: 10px }, so 1rem = 10px here.
+
+/* Marketing Tokens */
+$mk-brand: #1c459b;
+$mk-blue: #049dd9;
+$mk-teal: #60c3b2;
+$mk-green: #95c949;
+$mk-orange: #faa954;
+
+$mk-surface: #ffffff;
+$mk-band: #f8f9fa;
+$mk-hairline: #e3e6ea;
+$mk-ink: #333333;
+$mk-ink-soft: #495057;
+$mk-ink-dim: #6c757d;
+
+$mk-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+  monospace;
+
+// Darkened variants of the SciX accents. The brand accents themselves sit
+// around 3:1 against white, which is short of the 4.5:1 WCAG AA needs for the
+// small text used by eyebrows, badges and milestone years.
+$mk-blue-text: #036c95;
+$mk-teal-text: #2b7466;
+$mk-green-text: #4e7419;
+$mk-orange-text: #96590f;
+
+/* Optional Layout Header Subtitle */
+.header-text-overlay-stacked {
+  flex-direction: column;
+}
+
+.header-welcome-subtext {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  max-width: 900px;
+  margin: 18px auto 0;
+  line-height: 1.5;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.9);
+}
+
+/* Eyebrow Label */
+.mk-eyebrow {
+  display: block;
+  font-family: $mk-mono;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $mk-blue-text;
+  margin: 0 0 14px 0;
+}
+
+.mk-eyebrow-teal {
+  color: $mk-teal-text;
+}
+
+.mk-eyebrow-green {
+  color: $mk-green-text;
+}
+
+.mk-eyebrow-orange {
+  color: $mk-orange-text;
+}
+
+.mk-eyebrow-invert {
+  color: #7ddcff;
+}
+
+/* Section Bands */
+.mk-section {
+  padding: 100px 0;
+  background: $mk-surface;
+  position: relative;
+}
+
+.mk-section-tint {
+  background: $mk-band;
+}
+
+.mk-section-head {
+  max-width: 900px;
+  margin: 0 0 56px 0;
+}
+
+.mk-section-title {
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: $mk-ink;
+  margin: 0 0 18px 0;
+}
+
+.mk-section-lede {
+  font-size: 1.9rem;
+  line-height: 1.65;
+  color: $mk-ink-soft;
+  margin: 0;
+}
+
+/* Hairline Grids */
+.mk-grid {
+  display: grid;
+  gap: 1px;
+  background: $mk-hairline;
+  border: 1px solid $mk-hairline;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mk-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mk-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tiered Cards */
+.mk-card {
+  background: $mk-surface;
+  padding: 38px 34px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.mk-card > .mk-eyebrow,
+.mk-card > .mk-badge,
+.mk-card > .mk-card-title,
+.mk-card > .mk-card-text,
+.mk-card > .mk-card-list,
+.mk-card > .mk-more,
+.mk-card > .mk-stat {
+  position: relative;
+  z-index: 1;
+}
+
+.mk-card:hover {
+  background: #fcfdfe;
+}
+
+.mk-card-hero {
+  grid-column: span 2;
+  border-left: 3px solid $mk-blue;
+  padding: 48px 44px;
+}
+
+.mk-card-featured {
+  border-top: 2px solid $mk-teal;
+}
+
+.mk-card-compact {
+  padding: 30px 28px;
+}
+
+.mk-card-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: $mk-ink;
+  margin: 0 0 14px 0;
+}
+
+.mk-card-hero .mk-card-title {
+  font-size: 2.8rem;
+}
+
+.mk-card-compact .mk-card-title {
+  font-size: 1.8rem;
+}
+
+.mk-card-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $mk-ink-soft;
+  margin: 0 0 14px 0;
+}
+
+.mk-card-hero .mk-card-text {
+  font-size: 1.8rem;
+}
+
+.mk-card-text:last-child {
+  margin-bottom: 0;
+}
+
+.mk-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mk-card-list li {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: $mk-ink-soft;
+  padding: 10px 0 10px 26px;
+  position: relative;
+  border-top: 1px solid $mk-hairline;
+}
+
+.mk-card-list li:first-child {
+  border-top: 0;
+}
+
+.mk-card-list li .fa {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  color: $mk-blue;
+  font-size: 1.5rem;
+}
+
+/* Decorative Watermark */
+.mk-watermark {
+  position: absolute;
+  right: 14px;
+  bottom: -14px;
+  font-family: $mk-mono;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 1;
+  color: $mk-ink;
+  opacity: 0.07;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mk-card-compact .mk-watermark {
+  font-size: 5.5rem;
+}
+
+/* Category Badges */
+.mk-badge {
+  display: inline-block;
+  font-family: $mk-mono;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  border-radius: 20px;
+  margin: 0 6px 12px 0;
+  background: rgba(4, 157, 217, 0.12);
+  color: $mk-blue-text;
+}
+
+.mk-badge-teal {
+  background: rgba(96, 195, 178, 0.18);
+  color: $mk-teal-text;
+}
+
+.mk-badge-green {
+  background: rgba(149, 201, 73, 0.2);
+  color: $mk-green-text;
+}
+
+.mk-badge-orange {
+  background: rgba(250, 169, 84, 0.2);
+  color: $mk-orange-text;
+}
+
+/* Asymmetric Split (7/5) */
+.mk-split {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.mk-split-84 {
+  grid-template-columns: 8fr 4fr;
+}
+
+// min-width: 0 keeps long words from forcing a grid track wider than its share.
+.mk-split-major,
+.mk-split-minor {
+  min-width: 0;
+}
+
+.mk-split-major .mk-section-title,
+.mk-split-major .mk-section-lede {
+  max-width: none;
+}
+
+.mk-split-major .mk-more {
+  margin-top: 10px;
+}
+
+/* Learn More Affordance */
+.mk-more {
+  display: inline-block;
+  font-family: $mk-mono;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $mk-brand;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid $mk-blue;
+  transition: letter-spacing 0.25s ease, color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.mk-more:hover,
+.mk-more:focus {
+  letter-spacing: 0.24em;
+  color: $mk-blue-text;
+  border-bottom-color: $mk-brand;
+  text-decoration: none;
+}
+
+.mk-more .fa {
+  margin-left: 8px;
+}
+
+/* Stat Blocks */
+.mk-stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: $mk-hairline;
+  border: 1px solid $mk-hairline;
+  margin-top: 48px;
+}
+
+.mk-stat {
+  background: $mk-surface;
+  padding: 30px 26px;
+  text-align: left;
+}
+
+.mk-stat-number {
+  display: block;
+  font-family: $mk-mono;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: $mk-brand;
+  margin: 0 0 12px 0;
+}
+
+.mk-stat-label {
+  display: block;
+  font-family: $mk-mono;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $mk-ink-dim;
+  line-height: 1.5;
+}
+
+/* Milestone Rail */
+.mk-milestones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid $mk-hairline;
+}
+
+.mk-milestone {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid $mk-hairline;
+}
+
+.mk-milestone-year {
+  font-family: $mk-mono;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $mk-blue-text;
+  line-height: 1.5;
+}
+
+.mk-milestone-body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $mk-ink-soft;
+}
+
+/* Award Callout */
+.mk-award {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 32px;
+  align-items: start;
+  background: $mk-surface;
+  border: 1px solid $mk-hairline;
+  border-left: 3px solid $mk-orange;
+  padding: 44px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mk-award-icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: rgba(250, 169, 84, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $mk-orange-text;
+  font-size: 3.6rem;
+}
+
+.mk-award-body {
+  position: relative;
+  z-index: 1;
+}
+
+.mk-award-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: $mk-ink;
+  margin: 0 0 14px 0;
+  line-height: 1.2;
+}
+
+/* Explore More Link Grid */
+.mk-linkgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: $mk-hairline;
+  border: 1px solid $mk-hairline;
+}
+
+.mk-linkcard {
+  display: block;
+  background: $mk-surface;
+  padding: 30px 28px;
+  text-decoration: none;
+  position: relative;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mk-linkcard:hover,
+.mk-linkcard:focus {
+  background: #fbfcfd;
+  text-decoration: none;
+  box-shadow: inset 3px 0 0 0 $mk-blue;
+}
+
+.mk-linkcard-icon {
+  display: block;
+  font-size: 2.4rem;
+  color: $mk-blue;
+  margin-bottom: 16px;
+}
+
+.mk-linkcard-title {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: $mk-ink;
+  margin-bottom: 8px;
+}
+
+.mk-linkcard-desc {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: $mk-ink-dim;
+}
+
+/* Closing Band */
+.mk-closing {
+  padding: 80px 0;
+  background: $mk-brand;
+  text-align: center;
+}
+
+.mk-closing .mk-eyebrow {
+  color: #9fd8f2;
+}
+
+.mk-closing-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+}
+
+.mk-closing-text {
+  font-size: 1.9rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+
+.mk-closing .mk-more {
+  color: #ffffff;
+  border-bottom-color: $mk-orange;
+}
+
+.mk-closing .mk-more:hover,
+.mk-closing .mk-more:focus {
+  color: $mk-orange;
+  border-bottom-color: #ffffff;
+}
+
+/* Eyebrows On Reused Home Sections */
+// The mission and team sections centre their own headings, and the mission
+// band paints a decorative ::before overlay that needs clearing.
+.mission-section .mk-eyebrow {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.team-section > .container > .mk-eyebrow {
+  text-align: center;
+}
+
+// .btn-primary is white on white inside the white team band; give the one
+// button on this page enough contrast to be readable and focusable.
+.team-section .team-cta .btn-primary {
+  background: $mk-blue;
+  color: #ffffff;
+  border-color: $mk-blue;
+}
+
+.team-section .team-cta .btn-primary:hover,
+.team-section .team-cta .btn-primary:focus {
+  background: $mk-brand;
+  color: #ffffff;
+  border-color: $mk-brand;
+}
+
+/* About Hero Adjustments */
+// Compound selector keeps these ahead of .hero-section, which is declared
+// later in styles.scss at equal specificity.
+.hero-section.mk-hero {
+  min-height: 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.mk-hero .hero-content {
+  margin-top: 0;
+}
+
+.mk-hero .hero-stats {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 50px;
+}
+
+.mk-hero .hero-lede {
+  font-size: 2.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.mk-hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Keyboard Focus */
+.mk-more:focus,
+.mk-linkcard:focus {
+  outline: 2px solid $mk-blue-text;
+  outline-offset: 3px;
+}
+
+.mk-closing .mk-more:focus {
+  outline-color: #ffffff;
+}
+
+/* Scroll Reveal */
+// Gated on the .mk-js flag set by _includes/_about/reveal.md so that the page
+// stays fully readable when JavaScript is unavailable.
+.mk-js .mk-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.mk-js .mk-reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mk-js .mk-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+  .header-welcome-subtext {
+    color: $darkmode-text-strong;
+  }
+
+  .mk-section {
+    background: $darkmode-background;
+  }
+
+  .mk-section-tint {
+    background: $darkmode-background-secondary;
+  }
+
+  .mk-section-title {
+    color: $darkmode-text-strong;
+  }
+
+  .mk-section-lede {
+    color: $darkmode-text;
+  }
+
+  .mk-grid,
+  .mk-stat-row,
+  .mk-linkgrid {
+    background: $darkmode-border;
+    border-color: $darkmode-border;
+  }
+
+  .mk-card,
+  .mk-stat,
+  .mk-linkcard {
+    background: $darkmode-background-secondary;
+  }
+
+  .mk-section-tint .mk-card,
+  .mk-section-tint .mk-stat,
+  .mk-section-tint .mk-linkcard {
+    background: $darkmode-background-tertiary;
+  }
+
+  .mk-card:hover,
+  .mk-linkcard:hover,
+  .mk-linkcard:focus {
+    background: $darkmode-background-tertiary;
+  }
+
+  .mk-section-tint .mk-card:hover,
+  .mk-section-tint .mk-linkcard:hover,
+  .mk-section-tint .mk-linkcard:focus {
+    background: #2d333b;
+  }
+
+  .mk-card-title,
+  .mk-linkcard-title,
+  .mk-award-title,
+  .mk-closing-title {
+    color: $darkmode-text-strong;
+  }
+
+  .mk-card-text,
+  .mk-card-list li,
+  .mk-milestone-body {
+    color: $darkmode-text;
+  }
+
+  .mk-linkcard-desc,
+  .mk-stat-label {
+    color: $darkmode-text-secondary;
+  }
+
+  .mk-card-list li,
+  .mk-milestones,
+  .mk-milestone {
+    border-color: $darkmode-border;
+  }
+
+  .mk-watermark {
+    color: $darkmode-text-strong;
+    opacity: 0.09;
+  }
+
+  .mk-stat-number {
+    color: $darkmode-link;
+  }
+
+  .mk-eyebrow {
+    color: #7ddcff;
+  }
+
+  .mk-eyebrow-teal {
+    color: $mk-teal;
+  }
+
+  .mk-eyebrow-green {
+    color: $mk-green;
+  }
+
+  .mk-eyebrow-orange {
+    color: $mk-orange;
+  }
+
+  .mk-more {
+    color: $darkmode-link;
+    border-bottom-color: $darkmode-link;
+  }
+
+  .mk-more:hover,
+  .mk-more:focus {
+    color: #9fd8f2;
+    border-bottom-color: #9fd8f2;
+  }
+
+  .mk-badge {
+    background: rgba(4, 157, 217, 0.22);
+    color: #7ddcff;
+  }
+
+  .mk-badge-teal {
+    background: rgba(96, 195, 178, 0.22);
+    color: $mk-teal;
+  }
+
+  .mk-badge-green {
+    background: rgba(149, 201, 73, 0.22);
+    color: $mk-green;
+  }
+
+  .mk-badge-orange {
+    background: rgba(250, 169, 84, 0.22);
+    color: $mk-orange;
+  }
+
+  .mk-award {
+    background: $darkmode-background-secondary;
+    border-color: $darkmode-border;
+    border-left-color: $mk-orange;
+  }
+
+  .mk-award-icon {
+    background: rgba(250, 169, 84, 0.18);
+    color: $mk-orange;
+  }
+
+  .mk-closing {
+    background: $darkmode-background-tertiary;
+  }
+
+  .mk-closing-text {
+    color: $darkmode-text;
+  }
+
+  .mk-closing .mk-more {
+    color: $darkmode-text-strong;
+    border-bottom-color: $mk-orange;
+  }
+
+  .mk-linkcard-icon {
+    color: $darkmode-link;
+  }
+
+  .mk-milestone-year {
+    color: $darkmode-link;
+  }
+
+  .mk-more:focus,
+  .mk-linkcard:focus {
+    outline-color: $darkmode-link;
+  }
+}
+
+/* Responsive: Tablet (992px and below) */
+@media (max-width: 992px) {
+  .mk-section {
+    padding: 72px 0;
+  }
+
+  .mk-grid,
+  .mk-grid-4,
+  .mk-linkgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mk-card-hero {
+    grid-column: span 2;
+  }
+
+  .mk-stat-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mk-split,
+  .mk-split-84 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mk-hero .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mk-section-title {
+    font-size: 3rem;
+  }
+}
+
+/* Responsive: Mobile (768px and below) */
+@media (max-width: 768px) {
+  .mk-section {
+    padding: 56px 0;
+  }
+
+  .mk-section-head {
+    margin-bottom: 36px;
+  }
+
+  .mk-section-title {
+    font-size: 2.6rem;
+  }
+
+  .mk-grid,
+  .mk-grid-2,
+  .mk-grid-4,
+  .mk-linkgrid,
+  .mk-stat-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mk-card-hero {
+    grid-column: span 1;
+    padding: 34px 26px;
+  }
+
+  .mk-card {
+    padding: 30px 26px;
+  }
+
+  .mk-hero .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .mk-hero-title {
+    font-size: 3rem;
+  }
+
+  .mk-award {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 32px 26px;
+  }
+
+  .mk-milestone {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .mk-watermark {
+    font-size: 6rem;
+  }
+
+  .header-welcome-subtext {
+    font-size: 1.7rem;
+  }
+}

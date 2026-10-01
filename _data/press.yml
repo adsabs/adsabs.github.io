@@ -1,0 +1,43 @@
+# Press releases, coverage, and media mentions for SciX, ADS, and team members.
+# Single source of truth for the press coverage rail on blog posts and for the Media page.
+#
+# Fields:
+#   title  - headline as published
+#   outlet - publication or institution
+#   url    - link to the piece
+#   date   - publication date (YYYY-MM-DD)
+#   kind   - press-release | coverage
+#   about  - scix | ads | team
+#   person - optional; team member name when the piece is about an individual
+#   sets   - optional; blog-post rails this item should appear in
+
+coverage:
+  # The CfA and NASA pieces are launch-day announcements; exact publication
+  # dates still to be confirmed.
+  - title: "New NASA-Backed Research Platform SciX Expands Open Science"
+    outlet: "Center for Astrophysics | Harvard & Smithsonian"
+    url: https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science
+    date: 2025-09-29
+    kind: press-release
+    about: scix
+    sets:
+      - scix-launch
+
+  - title: "SciX: A New Era for NASA Research Discovery"
+    outlet: NASA Science Data Portal
+    url: https://science.data.nasa.gov/features-events/scix-launch
+    date: 2025-09-29
+    kind: press-release
+    about: scix
+    sets:
+      - scix-launch
+
+  - title: "UAE-raised astrophysicist helps build NASA's new portal for Earth and space research"
+    outlet: The National
+    url: https://www.thenationalnews.com/future/space/2025/09/30/uae-raised-astrophysicist-helps-build-nasas-new-portal-for-earth-and-space-research/
+    date: 2025-09-30
+    kind: coverage
+    about: team
+    person: Mugdha Polimera
+    sets:
+      - scix-launch

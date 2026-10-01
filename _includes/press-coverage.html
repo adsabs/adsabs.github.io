@@ -1,0 +1,66 @@
+{% comment %}
+Press coverage rail. Renders a slide-out tab on mobile and a side rail on
+desktop, both driven by _data/press.yml.
+
+Usage:
+  {% include press-coverage.html set="scix-launch" %}
+
+Parameters:
+  set   - required; matches a value in an item's `sets` list in _data/press.yml
+  title - optional; heading text, defaults to "Press Coverage"
+{% endcomment %}
+
+{% assign press_set = include.set %}
+{% assign press_title = include.title | default: "Press Coverage" %}
+{% assign press_items = site.data.press.coverage | where_exp: "item", "item.sets contains press_set" %}
+
+{% if press_items.size > 0 %}
+<div class="press-coverage-container">
+  <div class="press-coverage-tab" data-press-toggle="{{ press_set }}">
+    <span class="tab-text">{{ press_title }}</span>
+  </div>
+
+  <div id="press-coverage-box-{{ press_set }}" class="press-coverage-box" data-press-toggle="{{ press_set }}">
+    <div class="press-coverage-header">
+      <h4><i class="fa fa-newspaper-o" aria-hidden="true"></i>{{ press_title }}</h4>
+      <button type="button" class="close-button" aria-label="Close {{ press_title | downcase }}" data-press-close="{{ press_set }}">&times;</button>
+    </div>
+    <ul>
+      {% for item in press_items %}
+      <li><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a><br><small>{{ item.outlet }}</small></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="press-coverage-box-desktop">
+  <h4><i class="fa fa-newspaper-o" aria-hidden="true"></i>{{ press_title }}</h4>
+  <ul>
+    {% for item in press_items %}
+    <li><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a><br><small>{{ item.outlet }}</small></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+  (function () {
+    if (window.pressCoverageBound) return;
+    window.pressCoverageBound = true;
+
+    document.addEventListener('click', function (event) {
+      var closer = event.target.closest('[data-press-close]');
+      if (closer) {
+        event.stopPropagation();
+        var closing = document.getElementById('press-coverage-box-' + closer.getAttribute('data-press-close'));
+        if (closing) closing.classList.remove('show');
+        return;
+      }
+
+      var toggle = event.target.closest('[data-press-toggle]');
+      if (!toggle) return;
+      var box = document.getElementById('press-coverage-box-' + toggle.getAttribute('data-press-toggle'));
+      if (box) box.classList.toggle('show');
+    });
+  })();
+</script>
+{% endif %}

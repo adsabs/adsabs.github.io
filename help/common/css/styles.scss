@@ -139,6 +139,7 @@ $nav-text-color: $text-color;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'bootstrap', 'layout', 'sidebar', 'darkmode';
+@import 'awards', 'scix-history';
 /* Home Page Styles */
 .home-page-content {
   width: 100%;

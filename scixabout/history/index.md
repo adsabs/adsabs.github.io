@@ -1,14 +1,124 @@
 ---
 layout: about_scix
-title: "SciX History"
+title: SciX History
+no-header: true
 ---
 
-The Science Explorer (SciX) is an enhanced digital library designed for discovering scientific literature in astrophysics, earth science, heliophysics, planetary science, and physics. Publicly introduced at the 2023 American Geophysical Union meeting, the intuitive (beta) search interface allows immediate exploration of the growing collections and links among papers, software, and data. 
+<div class="about-story">
+<header class="about-masthead">
+  <h1 class="about-title">Building on the legacy of a 33-year-old library</h1>
+  <p class="about-standfirst">How a service built for astronomers became one for all of the Earth and space sciences</p>
+</header>
 
-In 2019, NASA’s Science Mission Directorate envisioned a unified portal spanning its divisions (Earth Science, Planetary Science, Astrophysics, Heliophysics, and Biological and Physical Sciences) to bolster open science through access to their recorded knowledge. Because the [Astrophysics Data Service (ADS)](https://ui.adsabs.harvard.edu/) provided innovative tools for aggregating and linking astronomy resources [for over a quarter century](https://ui.adsabs.harvard.edu/about/history/), it was the natural choice for this expansion. 
+<p class="about-lead">SciX grew out of the NASA Astrophysics Data System. ADS has served astronomers since the early 1990s and is credited with raising the research efficiency of the field by at least <a href="https://scixplorer.org/abs/2005JASIS..56...36K/abstract">six percent</a>, which is roughly the entire annual astronomy output of a G7 country.</p>
 
-In 2021, NASA first asked ADS to cover [Heliophysics and Planetary Science](https://ui.adsabs.harvard.edu/abs/2021AAS...23813203A/abstract) at a level similar to its astrophysics content. Heliophysics and planetary science are the two SMD disciplines most closely related to astrophysics. Therefore, ADS already included some material in these areas and was familiar with the nuances and semantics of these fields. 
+<ol class="about-timeline">
+  <li class="about-timeline-row about-timeline-row--left">
+    <p class="about-timeline-year">1988</p>
+    <div class="about-timeline-card">
+      <h3 class="about-timeline-title">Forty papers</h3>
+      <p class="about-timeline-body">A proof of concept built at the Center for Astrophysics, after the idea of a database of journal abstracts was floated at a conference in Garching the year before.</p>
+    </div>
+  </li>
+  <li class="about-timeline-row about-timeline-row--right">
+    <p class="about-timeline-year">1993</p>
+    <div class="about-timeline-card">
+      <h3 class="about-timeline-title">Connected to SIMBAD</h3>
+      <p class="about-timeline-body">ADS joins the object database in the summer of 1993, and moves onto the world wide web early the following year. It has not stopped since.</p>
+      <span class="about-timeline-tag">online for 33 years</span>
+    </div>
+  </li>
+  <li class="about-timeline-row about-timeline-row--left about-timeline-row--awardonly">
+    <p class="about-timeline-year">2001</p>
+    <aside class="about-timeline-award">
+      <span class="about-timeline-award-org">United Nations General Assembly</span>
+      <span class="about-timeline-award-name">Commendation of literature access</span>
+      <span class="about-timeline-award-quote">The first of four UN commendations, which cited the value of free access to the astronomy literature for developing countries.</span>
+    </aside>
+  </li>
+  <li class="about-timeline-row about-timeline-row--right about-timeline-row--awardonly">
+    <p class="about-timeline-year">2002</p>
+    <aside class="about-timeline-award">
+      <span class="about-timeline-award-org">CfA Visiting Committee</span>
+      <span class="about-timeline-award-name">Visiting Committee report</span>
+      <span class="about-timeline-award-quote">“The most valuable single contribution to astronomy research the Center for Astrophysics had made in its lifetime.”</span>
+    </aside>
+  </li>
+  <li class="about-timeline-row about-timeline-row--left">
+    <p class="about-timeline-year">2019</p>
+    <div class="about-timeline-card">
+      <h3 class="about-timeline-title">ADS Classic retires</h3>
+      <p class="about-timeline-body">After more than twenty-five years in service, the original interface is switched off and its successor becomes the only one.</p>
+    </div>
+    <aside class="about-timeline-award">
+      <span class="about-timeline-award-org">Smithsonian Institution</span>
+      <span class="about-timeline-award-name">Secretary’s Research Award</span>
+      <span class="about-timeline-award-quote">Awarded to Alberto Accomazzi, in the category of scholarly web site.</span>
+    </aside>
+  </li>
+  <li class="about-timeline-row about-timeline-row--right">
+    <p class="about-timeline-year">2021</p>
+    <div class="about-timeline-card">
+      <h3 class="about-timeline-title">NASA asks for more</h3>
+      <p class="about-timeline-body">Heliophysics and planetary science, the two divisions closest to astrophysics, are taken on at the same depth.</p>
+    </div>
+  </li>
+  <li class="about-timeline-row about-timeline-row--left">
+    <p class="about-timeline-year">2023</p>
+    <div class="about-timeline-card">
+      <h3 class="about-timeline-title">Earth Science expansion starts</h3>
+      <p class="about-timeline-body">The Earth science collection launches and the program is unveiled as SciX at the AGU Fall Meeting in San Francisco.</p>
+    </div>
+    <aside class="about-timeline-award">
+      <span class="about-timeline-award-org">ADASS</span>
+      <span class="about-timeline-award-name">Software Prize</span>
+      <span class="about-timeline-award-quote">For an outstanding contribution to astronomical software.</span>
+    </aside>
+  </li>
+  <li class="about-timeline-row about-timeline-row--right">
+    <p class="about-timeline-year">2025</p>
+    <div class="about-timeline-card">
+      <h3 class="about-timeline-title">SciX Launches!</h3>
+      <p class="about-timeline-body">SciX ships as a complete service in September. Every account, saved library and alert carries over untouched.</p>
+      <span class="about-timeline-tag">36M+ records</span>
+    </div>
+    <aside class="about-timeline-award">
+      <span class="about-timeline-award-org">NASA</span>
+      <span class="about-timeline-award-name">Agency Group Achievement Award</span>
+      <span class="about-timeline-award-quote">For INDUS, a language model built with NASA and IBM.</span>
+    </aside>
+  </li>
+  <li class="about-timeline-row about-timeline-row--left">
+    <p class="about-timeline-year">2026</p>
+    <div class="about-timeline-card">
+      <h3 class="about-timeline-title">ADS folds in</h3>
+      <p class="about-timeline-body">On 16 November, ADS users move across to the astrophysics view of SciX. One service, many fields.</p>
+    </div>
+    <aside class="about-timeline-award">
+      <span class="about-timeline-award-org">Smithsonian Institution</span>
+      <span class="about-timeline-award-name">Digital Innovation Award</span>
+      <span class="about-timeline-award-quote">To the SciX team, for carrying a thirty-year service into all of the Earth and space sciences.</span>
+    </aside>
+  </li>
+</ol>
 
-Next, NASA tasked ADS with building the Earth Science collection starting in 2022. With the formal launch of that content in 2023, “astrophysics” no longer adequately described the multidisciplinary digital library. [Renaming the program SciX](https://ui.adsabs.harvard.edu/blog/scix) better reflects its breadth.
+<section class="about-growth">
+<h2 class="about-group-title">Growing our collections</h2>
 
-As a major component in the infrastructure of scientific research, SciX contributes towards the goal of open science. The highly interconnected records support the [FAIR (Findable, Accessible, Interoperable, and Reusable)](https://www.go-fair.org/fair-principles/) principles. The team is continuously improving this indispensable literature portal using open source [code](https://github.com/adsabs), [models, and datasets](https://ui.adsabs.harvard.edu/blog/ads-models-and-datasets). If you have suggestions about how SciX could serve your community better, [please let us know](mailto:help@scixplorer.org).
+<p>SciX holds 37.6 million records. Earth science is the largest part of it at 15.3 million, physics accounts for 12.6 million, general science for 6.6 million, and the astronomy collections the service grew out of, planetary science and heliophysics among them, for a further 3.2 million.</p>
+
+{% include _about/growth-chart.html %}
+
+</section>
+
+<section class="about-legacy">
+<h2 class="about-group-title">What came before</h2>
+
+<p>None of this would have worked without the thirty years that came first. The idea of a searchable database of abstracts was raised at a conference in Garching in 1987. The first version, built the following year, held forty papers. Everything since has been the same job at a larger scale: connecting a paper to the data, the software and the observations behind it, and keeping those connections true as publishers, archives and identifiers changed underneath them.</p>
+
+<p>The service has been rebuilt several times along the way, and retired its original interface in 2019 after twenty-five years. Each time, the collection survived intact and so did the habits of the people who relied on it. That is the part that mattered most when ADS became SciX: a researcher who had kept a library for fifteen years did not lose it.</p>
+
+<p>SciX is free to use and open to build on. The <a href="https://github.com/adsabs">code</a>, the <a href="{{ site.baseurl }}/scixblog/ads-models-and-datasets">models and datasets</a> are public, and the records follow the <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a>. Awards and commendations going back to 2001 are listed on the <a href="{{ site.baseurl }}/scixabout/awards">awards page</a>. If something looks wrong, <a href="mailto:help@scixplorer.org">tell us</a>, and a person who works on it will read your message.</p>
+
+</section>
+</div>

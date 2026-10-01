@@ -1,0 +1,452 @@
+# Outreach materials designed for SciX by Lead Ambassador Yueyi Che.
+#
+# Rendered by _includes/_outreach/outreach.md, which is included by
+# scixabout/outreach/index.md. Styling lives in _sass/_outreach.scss.
+#
+# This is a display-only credited showcase. Do NOT add download links: showing
+# the work avoids any licensing decision about redistributing the artwork.
+#
+# Every `image` below is a file that already exists in this repository and was
+# checked for an HTTP 200. Do not add a piece unless you have confirmed the
+# image file is present; a broken tile is immediately visible on a gallery page.
+#
+# designer fields
+#   name          how the repo refers to her in prose
+#   role          her role, as the blog posts phrase it
+#   affiliation   institution, as the blog posts phrase it
+#   photo         portrait used on the credit card
+#   photo_alt     descriptive alt text for the portrait
+#   bio_url       ambassador bio page, relative to site.baseurl
+#   credit        the short credit line stamped on every piece
+#   statement     longer framing paragraph for the credit card (HTML allowed)
+#
+# piece fields
+#   id           unique slug, used for the tile id attribute
+#   variant      hero | featured | compact - the visual tier
+#   span         tile width in columns of a 12 column grid
+#   tone         green | blue | orange | teal - accent colour, keyed to type
+#   type         material type; rendered as the eyebrow label and pill badge
+#   title        name of the piece
+#   image        path under site.baseurl to a file that exists in this repo
+#   fit          contain (artwork, never crop) | cover (photograph)
+#   alt          real descriptive alt text - required, never decorative
+#   venue        where the piece was handed out or displayed
+#   date         human readable month and year of the appearance
+#   description  one or two sentences of plain text about the piece
+#   note         optional caveat shown in small print under the description
+#   source_label label for the link to the write-up the image comes from
+#   source_url   path to that write-up, relative to site.baseurl
+
+designer:
+  name: Yueyi Che
+  role: SciX Lead Ambassador
+  affiliation: PhD student at the University of California, Irvine
+  photo: /about/ambassador/img/2024-Che-square.jpg
+  photo_alt: >-
+    Yueyi Che smiling in an orange expedition parka and life vest, seated in an
+    inflatable boat on calm water with a snow covered ridge behind her.
+  bio_url: /scixabout/ambassador/team/Che.html
+  credit: Designed by Yueyi Che, SciX Lead Ambassador
+  statement: >-
+    Every piece on this page was drawn by <strong>Yueyi Che</strong>, a
+    glaciologist, SciX Lead Ambassador and PhD student at the University of
+    California, Irvine. Her hand-drawn scientists have travelled to conference
+    booths on two continents, and they are usually the first thing a visitor
+    picks up.
+
+intro: >-
+  SciX brings a table of hand-drawn artwork to every conference booth. The
+  stickers, button badges and printed literature below were all designed for
+  the SciX community by one person, and this page exists to credit her work and
+  to collect it in one place. The pieces are shown here for reference only;
+  they are not available for download.
+
+pieces:
+  - id: four-discipline-stickers
+    variant: hero
+    span: 8
+    tone: green
+    type: Sticker Set
+    title: The Four Discipline Scientists
+    image: /blog/images/blog_2026_03_23-4disciplines.png
+    fit: contain
+    alt: >-
+      Four pentagon shaped SciX stickers arranged on a light blue background.
+      Each sticker shows a hand-drawn cartoon scientist with the SciX logo and
+      the SciXplorer.org address. Top left, on grey, a woman with dark curly
+      hair in double buns looks through a telescope beside the words "I am an
+      Astrophysicist". Top right, on orange, a moustached man in a knitted vest
+      and round glasses gestures at a solar flare beside the words "I am a
+      heliophysicist". Bottom left, on deep blue, a woman in a yellow dress
+      works from a wheelchair and reaches towards a large banded planet beside
+      the words "I am a planetary scientist". Bottom right, on green, a woman in
+      a cap and goggles holds a rock hammer and a rock sample beside the words
+      "I am an Earth Scientist".
+    venue: APS Global Physics Summit 2026, Denver
+    date: March 2026
+    description: >-
+      A set of four pentagon stickers, one for each of the science communities
+      SciX serves. Each character is drawn by hand, given a distinctive
+      discipline palette, and captioned in the first person, so a researcher can
+      pick the sticker that says what they do.
+    source_label: Read the APS 2026 write-up
+    source_url: /scixblog/aps26
+
+  - id: character-button-badges
+    variant: featured
+    span: 4
+    tone: blue
+    type: Button Badges
+    title: Character Button Badges
+    image: /blog/images/blog_2026-06-04_EGU_image3.jpg
+    fit: cover
+    alt: >-
+      Seven conference attendees in lanyards lean over a small black table,
+      reaching for a spread of round SciX button badges. The badges are pinned
+      out in blue, green and yellow, each printed with one of the hand-drawn
+      SciX scientist characters. One attendee has already clipped a badge to her
+      lanyard.
+    venue: EGU General Assembly 2026, Vienna
+    date: May 2026
+    description: >-
+      The discipline characters reworked as round pin badges. Laying the full
+      set out on a table turns picking one into a conversation, which is exactly
+      what the booth team wants.
+    source_label: Read the EGU 2026 write-up
+    source_url: /scixblog/EGU26
+
+  - id: osm-sticker-and-badge-table
+    variant: featured
+    span: 12
+    tone: blue
+    type: Button Badges
+    title: The Ocean Sciences Badge Table
+    image: /blog/images/blog_2026-03-03_osm26img4.png
+    fit: contain
+    alt: >-
+      A three panel photograph from the SciX booth at the Ocean Sciences
+      Meeting. Left, a hand fans out a pile of pentagon SciX character stickers
+      next to SciX name cards and a printed handout. Centre, an attendee in a
+      conference lanyard leans over the booth table to choose from rows of round
+      SciX button badges arranged in a fan. Right, a hand holds a pink "Barbie
+      in STEM" sticker above trays of orange, blue and green SciX button badges.
+    venue: AGU Ocean Sciences Meeting 2026, Glasgow
+    date: February 2026
+    description: >-
+      The stickers and button badges together on the booth table at Ocean
+      Sciences. The exclusive ocean science badges from this run were gone
+      before lunchtime on the Tuesday.
+    note: >-
+      The pink "Barbie in STEM" sticker at the right of this composite was a
+      gift from another exhibitor and is not part of the SciX set.
+    source_label: Read the OSM 2026 write-up
+    source_url: /scixblog/osm26
+
+  - id: stickers-on-the-booth-table
+    variant: featured
+    span: 6
+    tone: green
+    type: Sticker Set
+    title: Stickers on the Booth Table
+    image: /blog/images/blog_2026-06-04_EGU_image1.jpg
+    fit: cover
+    alt: >-
+      A SciX booth at a conference. A team member stands behind a grey covered
+      table on which the pentagon SciX character stickers are spread out in
+      orange, green, blue and yellow. Behind her is a tall black SciX banner
+      showing the SciX logo, the SciXplorer.org address and five science images
+      of Earth, a nebula, a neuron, Jupiter and a solar prominence. A small
+      acrylic stand on the table holds a QR code card reading "Join the SciX
+      Community".
+    venue: EGU General Assembly 2026, Vienna
+    date: May 2026
+    description: >-
+      The stickers are designed to be laid out rather than stacked. Spread
+      across the table against the dark SciX banner, the discipline colours
+      carry across the aisle and pull people in.
+    source_label: Read the EGU 2026 write-up
+    source_url: /scixblog/EGU26
+
+  - id: science-explorer-flyers
+    variant: featured
+    span: 6
+    tone: orange
+    type: Print
+    title: Science Explorer Flyers
+    image: /blog/images/2026-06-04-abscicon-fig3.jpg
+    fit: cover
+    alt: >-
+      A SciX conference poster titled "Science Explorer (SciX): Supporting Open
+      and Interdisciplinary Science" pinned to a grey board numbered 361. Around
+      all four edges of the board, more than a dozen identical folded SciX
+      flyers are pinned in a border, each showing the SciX magnifying glass logo
+      and the words "Science Explorer" on a dark cover.
+    venue: AbSciCon 2026, Madison
+    date: May 2026
+    description: >-
+      The folded SciX flyer, printed with the same logo treatment as the
+      stickers. Pinning a border of them around a poster turns the handout into
+      part of the display and makes it obvious that visitors are welcome to take
+      one.
+    source_label: Read the AbSciCon 2026 write-up
+    source_url: /scixblog/abscicon26
+
+  - id: flyers-at-aps
+    variant: compact
+    span: 7
+    tone: orange
+    type: Print
+    title: A Wall of Flyers at APS
+    image: /blog/images/blog_2026_03_23-APS26posters.png
+    fit: cover
+    alt: >-
+      A SciX research poster titled "Science Explorer: Next-Generation Access to
+      ADS and All NASA Science" pinned to a grey board, with rows of folded SciX
+      flyers pinned along the bottom edge and up the right hand side. A small
+      framed QR code sign sits at the lower left. To the right, a phone
+      screenshot of the APS Global Physics Summit 2026 app shows the session
+      listing for "Exploring the Physics Literature with the Science Explorer".
+    venue: APS Global Physics Summit 2026, Denver
+    date: March 2026
+    description: >-
+      The same flyer used as a takeaway beside a poster, so a visitor who stops
+      to read can leave with something in hand.
+    source_label: Read the APS 2026 write-up
+    source_url: /scixblog/aps26
+
+  - id: materials-on-the-booth-table
+    variant: compact
+    span: 5
+    tone: teal
+    type: Booth Display
+    title: The Whole Table
+    image: /blog/images/blog_2026-03-23_aps26-booth.png
+    fit: cover
+    alt: >-
+      A SciX team member stands smiling beside a booth table covered with a
+      black SciX branded cloth. Laid out across the table are pentagon SciX
+      character stickers, printed flyers and small promotional items. Behind the
+      table, a tall dark SciX banner reads "Science Explorer, Accelerating the
+      pace of NASA Science" above five panels of Earth, planetary and solar
+      imagery.
+    venue: APS Global Physics Summit 2026, Denver
+    date: March 2026
+    description: >-
+      Stickers and printed literature working together as one display. The
+      artwork is the reason most visitors slow down long enough to ask what SciX
+      is.
+    source_label: Read the APS 2026 write-up
+    source_url: /scixblog/aps26
+
+# Material categories the team has described but for which this repository
+# holds no photograph yet. These render as an honest "help us fill this in"
+# note rather than as an empty or broken tile.
+missing:
+  - type: Button Badges
+    title: The ocean science button badges
+    detail: >-
+      The ocean science badges made for the 2026 Ocean Sciences Meeting ran out
+      before lunchtime on the Tuesday, and no close-up photograph of that design
+      is stored in this repository. The badge table above is the closest record
+      we have.
+  - type: Print
+    title: Flat scans of the printed literature
+    detail: >-
+      The flyers and handouts only appear in this repository as part of booth
+      and poster photographs. Front-and-back scans of each printed piece would
+      let us show the artwork properly.
+
+# Masters copied from Yueyi's 2026 swag folder into help/img/outreach/.
+# Design versions read these; the current conference-photo gallery still uses pieces.
+figures:
+  astro:
+    id: astro
+    file: /help/img/outreach/astro-pentagon.png
+    shape: pentagon
+    caption: I am an Astrophysicist
+    alt: >-
+      A pentagon sticker. A woman with dark curly hair in double buns looks
+      through a telescope on a grey field. Hand lettering reads I am an
+      Astrophysicist, with the SciX logo and scixplorer.org.
+  helio:
+    id: helio
+    file: /help/img/outreach/helio-pentagon.png
+    shape: pentagon
+    caption: I am a Heliophysicist
+    alt: >-
+      A pentagon sticker. A moustached man in a knitted vest and round glasses
+      gestures at a solar flare on an orange field. Hand lettering reads I am a
+      Heliophysicist.
+  planetary:
+    id: planetary
+    file: /help/img/outreach/planetary-pentagon.png
+    shape: pentagon
+    caption: I am a Planetary Scientist
+    alt: >-
+      A pentagon sticker. A woman in a yellow dress works from a wheelchair and
+      reaches toward a banded planet on a deep blue field. Hand lettering reads
+      I am a Planetary Scientist.
+  earth:
+    id: earth
+    file: /help/img/outreach/earth-pentagon.png
+    shape: pentagon
+    caption: I am an Earth Scientist
+    alt: >-
+      A pentagon sticker. A woman in a cap and goggles holds a rock hammer and
+      a sample on a green field. Hand lettering reads I am an Earth Scientist.
+  bio:
+    id: bio
+    file: /help/img/outreach/bio-pentagon.png
+    shape: pentagon
+    caption: I am an Astrobiologist
+    alt: >-
+      A pentagon sticker. A scientist in a lab coat holds a petri dish on a
+      teal field. Hand lettering reads I am an Astrobiologist.
+  ocean:
+    id: ocean
+    file: /help/img/outreach/ocean-circle.png
+    shape: circle
+    caption: Ocean sciences
+    alt: >-
+      A circular illustration of a science explorer on the water, drawn for
+      ocean sciences outreach.
+  astrobio:
+    id: astrobio
+    file: /help/img/outreach/astrobio-circle.png
+    shape: circle
+    caption: Astrobiology
+    alt: >-
+      A circular illustration of an astrobiology explorer, drawn as a companion
+      to the ocean sciences circle.
+  navigator:
+    id: navigator
+    file: /help/img/outreach/badge-navigator.png
+    shape: circle
+    caption: Navigator
+    alt: >-
+      A circular name badge. A science explorer in a cap stands as navigator,
+      with hand-drawn lettering around the rim.
+  lab:
+    id: lab
+    file: /help/img/outreach/badge-lab.png
+    shape: circle
+    caption: Lab
+    alt: >-
+      A circular name badge. A scientist works at a petri dish, with
+      hand-drawn lettering around the rim.
+  badge_planetary:
+    id: badge_planetary
+    file: /help/img/outreach/badge-planetary.png
+    shape: circle
+    caption: Planetary
+    alt: >-
+      A circular name badge. A planetary scientist works from a wheelchair
+      beside a large planet, with hand-drawn lettering around the rim.
+  night:
+    id: night
+    file: /help/img/outreach/together-night.png
+    shape: square
+    caption: We use SciX for open science
+    alt: >-
+      The science explorer characters sit together under a night sky. Hand
+      lettering reads we use SciX for open science.
+  poster:
+    id: poster
+    file: /help/img/outreach/together-poster.png
+    shape: portrait
+    caption: We are science explorers
+    alt: >-
+      A poster of the science explorer characters under a Smithsonian sun.
+      Large lettering reads WE ARE SCIENCE EXPLORERS.
+  table:
+    id: table
+    file: /help/img/outreach/together-table.png
+    shape: square
+    caption: The group at the table
+    alt: >-
+      The science explorer characters gathered around a yellow table, drawn
+      as a square sticker.
+  booklet_1:
+    id: booklet_1
+    file: /help/img/outreach/booklet-1.png
+    shape: landscape
+    caption: Booklet, first spread
+    alt: >-
+      The first spread of the SciX science explorer booklet, with hand-drawn
+      characters and lettering.
+  booklet_2:
+    id: booklet_2
+    file: /help/img/outreach/booklet-2.png
+    shape: landscape
+    caption: Booklet, second spread
+    alt: >-
+      The second spread of the SciX science explorer booklet.
+  coloring:
+    id: coloring
+    file: /help/img/outreach/coloring-map.png
+    shape: landscape
+    caption: Coloring challenge
+    alt: >-
+      A SciX coloring-challenge map of the science explorer characters, drawn
+      as a line illustration ready to color in.
+  crest:
+    id: crest
+    file: /help/img/outreach/explorer-crest.png
+    shape: portrait
+    caption: I am a science explorer
+    alt: >-
+      A crest-shaped illustration with the words I am a science explorer.
+
+conferences:
+  - city: Glasgow
+    name: Ocean Sciences Meeting
+    short: OSM
+    year: 2026
+    url: /scixblog/osm26
+  - city: Denver
+    name: APS Global Physics Summit
+    short: APS
+    year: 2026
+    url: /scixblog/aps26
+  - city: Vienna
+    name: EGU General Assembly
+    short: EGU
+    year: 2026
+    url: /scixblog/EGU26
+  - city: Madison
+    name: AbSciCon
+    short: AbSciCon
+    year: 2026
+    url: /scixblog/abscicon26
+
+versions:
+  - slug: cover
+    name: Cover
+    line: Magazine collage. Characters arrive first, then sit together, then travel.
+    thumb: /help/img/outreach/astro-pentagon.png
+    thumb_alt: Astrophysicist pentagon sticker
+  - slug: zine
+    name: Zine
+    line: Printed matter first. Booklet, coloring page, crest, then the cast.
+    thumb: /help/img/outreach/booklet-1.png
+    thumb_alt: First spread of the SciX science explorer booklet
+  - slug: cast
+    name: Cast
+    line: A character lineup. Large portraits, first-person captions, itinerary below.
+    thumb: /help/img/outreach/planetary-pentagon.png
+    thumb_alt: Planetary scientist pentagon sticker
+  - slug: salon
+    name: Salon
+    line: Gallery hang. Night poster as the wall piece, then quiet frames around it.
+    thumb: /help/img/outreach/together-poster.png
+    thumb_alt: We are science explorers poster
+  - slug: scatter
+    name: Scatter
+    line: Stickers on a table. Overlap, slight rotate, almost no chrome.
+    thumb: /help/img/outreach/together-table.png
+    thumb_alt: Science explorer characters gathered at a yellow table
+  - slug: photos
+    name: Photos
+    line: The current page. Conference booth photographs of the same materials.
+    thumb: /blog/images/blog_2026_03_23-4disciplines.png
+    thumb_alt: Four discipline stickers photographed at a conference

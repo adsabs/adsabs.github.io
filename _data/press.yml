@@ -2,24 +2,50 @@
 # Single source of truth for the press coverage rail on blog posts and for the Media page.
 #
 # Fields:
-#   title  - headline as published
-#   outlet - publication or institution
-#   url    - link to the piece
-#   date   - publication date (YYYY-MM-DD)
-#   kind   - press-release | coverage
-#   about  - scix | ads | team
-#   person - optional; team member name when the piece is about an individual
-#   sets   - optional; blog-post rails this item should appear in
+#   title          - headline as published
+#   outlet         - publication or institution
+#   outlet_short   - optional; short form used for the eyebrow label and the
+#                    "As Featured In" wordmark row when `outlet` is long
+#   url            - link to the piece
+#   date           - publication date (YYYY-MM-DD)
+#   date_precision - optional; day (default) | month | year. Controls how much of
+#                    the date is displayed, so we never imply precision we do not
+#                    have. Sorting always uses the full date.
+#   kind           - press-release | coverage
+#   about          - scix | ads | team
+#   person         - optional; team member name when the piece is about an individual
+#   description    - optional; one-line summary shown on the Media page
+#   variant        - hero | featured | compact. Controls prominence in the Media
+#                    page card grid; compact items appear in the full list only.
+#   outlet_tier    - optional; 1 | 2. Tier 1 outlets render larger in the
+#                    "As Featured In" wordmark row.
+#   sets           - optional; blog-post rails this item should appear in
+#   image          - hero image from the published article (team-supplied)
+#   image_alt      - descriptive alt text for that image
+#
+# Every URL in this file was taken from content that already lives in this
+# repository. Nothing here is reconstructed from memory. Where a published
+# headline could not be read directly from the citing page, the title is derived
+# from the target URL's own slug and flagged with a comment.
 
 coverage:
   # The CfA and NASA pieces are launch-day announcements; exact publication
   # dates still to be confirmed.
   - title: "New NASA-Backed Research Platform SciX Expands Open Science"
     outlet: "Center for Astrophysics | Harvard & Smithsonian"
+    outlet_short: "Center for Astrophysics"
     url: https://www.cfa.harvard.edu/news/new-nasa-backed-research-platform-scix-expands-open-science
     date: 2025-09-29
+    date_precision: month
     kind: press-release
     about: scix
+    description: "The Center for Astrophysics announces the public launch of the Science Explorer, extending open access to the literature of every NASA science division."
+    variant: hero
+    outlet_tier: 1
+    image: /help/img/media/cfa-scix-launch.jpg
+    image_alt: >-
+      Science Explorer launch graphic used in the Center for Astrophysics
+      announcement: a dark field of Earth and space imagery with the SciX name.
     sets:
       - scix-launch
 
@@ -27,8 +53,16 @@ coverage:
     outlet: NASA Science Data Portal
     url: https://science.data.nasa.gov/features-events/scix-launch
     date: 2025-09-29
+    date_precision: month
     kind: press-release
     about: scix
+    description: "NASA's Science Data Portal introduces SciX to the agency's research community as a single entry point to Earth and space science literature, data, and software."
+    variant: featured
+    outlet_tier: 1
+    image: /help/img/media/nasa-scix-launch.jpg
+    image_alt: >-
+      Social card from NASA's Science Data Portal SciX launch story, using the
+      SciX artwork supplied for the announcement.
     sets:
       - scix-launch
 
@@ -39,5 +73,223 @@ coverage:
     kind: coverage
     about: team
     person: Mugdha Polimera
+    description: "A profile of SciX back-end developer and astrophysicist Mugdha Polimera and her route from the UAE to building NASA's new discovery platform."
+    variant: featured
+    outlet_tier: 1
+    image: /help/img/media/national-polimera.jpg
+    image_alt: >-
+      Portrait of Mugdha Polimera used in The National profile, supplied by the
+      author.
     sets:
       - scix-launch
+
+  # Coverage of Anna Kelbert's continental conductivity mapping. All three links
+  # are cited together in the May 2026 What's New announcement
+  # (_includes/_whatsnew/whats-new.md); the announcement does not give exact
+  # publication days, hence date_precision: month.
+  - title: "Deep Earth map reveals lost U.S. continent"
+    outlet: Science
+    url: https://www.science.org/content/article/deep-earth-map-reveals-lost-u-s-continent
+    date: 2026-05-01
+    date_precision: month
+    kind: coverage
+    about: team
+    person: Anna Kelbert
+    description: "Science reports on work led by SciX project scientist for Earth science Anna Kelbert, mapping ancient continental fragments beneath North America."
+    variant: featured
+    outlet_tier: 1
+    image: /help/img/media/science-mt-array.jpg
+    image_alt: >-
+      Magnetotelluric array map of the continental United States, the figure
+      supplied for Science's coverage of the conductivity survey.
+
+  # Title derived from the target URL slug; confirm against the published headline.
+  - title: "Scientists map hidden electrical structure of the US, revealing new clues about Earth's interior"
+    outlet: "Center for Astrophysics | Harvard & Smithsonian"
+    outlet_short: "Center for Astrophysics"
+    url: https://www.cfa.harvard.edu/news/scientists-map-hidden-electrical-structure-us-revealing-new-clues-about-earths-interior-and
+    date: 2026-05-01
+    date_precision: month
+    kind: press-release
+    about: team
+    person: Anna Kelbert
+    description: "The Center for Astrophysics announces the electrical conductivity map of the crust and upper mantle across the continental United States."
+    variant: compact
+    outlet_tier: 1
+    image: /help/img/media/cfa-mt-array.jpg
+    image_alt: >-
+      Three-dimensional magnetotelluric map of electrical structure beneath the
+      United States, the figure supplied for the Center for Astrophysics release.
+
+  # Title derived from the target URL slug; confirm against the published headline.
+  - title: "Mapping the grid: the United States magnetotelluric array"
+    outlet: U.S. Geological Survey
+    outlet_short: USGS
+    url: https://www.usgs.gov/programs/geomagnetism/science/mapping-grid-united-states-magnetotelluric-array
+    date: 2026-05-01
+    date_precision: month
+    kind: press-release
+    about: team
+    person: Anna Kelbert
+    description: "The USGS Geomagnetism Program describes the magnetotelluric survey behind the conductivity mapping and its role in geomagnetic hazard mitigation."
+    variant: compact
+    outlet_tier: 2
+    image: /help/img/media/usgs-mt-array.jpg
+    image_alt: >-
+      Map of United States Magnetotelluric Array station coverage, the figure
+      used on the USGS Geomagnetism page.
+
+  # Title derived from the target URL slug; confirm against the published headline.
+  - title: "Scientists find more active black holes in dwarf and Milky Way-sized galaxies, cutting through the glare"
+    outlet: "Center for Astrophysics | Harvard & Smithsonian"
+    outlet_short: "Center for Astrophysics"
+    url: https://www.cfa.harvard.edu/news/scientists-find-more-active-black-holes-dwarf-and-milky-way-sized-galaxies-cutting-through-glare
+    date: 2026-01-08
+    kind: press-release
+    about: team
+    person: Mugdha Polimera
+    description: "A census of active galactic nuclei across the RESOLVE and ECO surveys, presented at AAS 247 by SciX developer and astrophysicist Mugdha Polimera."
+    variant: featured
+    outlet_tier: 1
+    image: /help/img/media/cfa-agn.jpg
+    image_alt: >-
+      Illustration of active black holes in nearby galaxies, the figure supplied
+      for the Center for Astrophysics AAS 247 announcement.
+
+  - title: "AAS 247 press conference: a complete census of AGN across the RESOLVE and ECO surveys"
+    outlet: American Astronomical Society
+    outlet_short: AAS
+    url: "https://www.youtube.com/live/sFyIBkNlk5A?si=TJ2dIovfwz0Dm8h0&t=805"
+    date: 2026-01-08
+    kind: coverage
+    about: team
+    person: Mugdha Polimera
+    description: "Recording of the AAS 247 press conference session in which Mugdha Polimera presents the AGN census results."
+    variant: compact
+    outlet_tier: 2
+    image: /help/img/media/aas-press-conference.jpg
+    image_alt: >-
+      Still from the AAS 247 press conference livestream in which the AGN census
+      was presented.
+
+  # Title derived from the target URL slug; cited in the March 2022 What's New.
+  - title: "New tool launches for astronomy software users"
+    outlet: American Astronomical Society
+    outlet_short: AAS
+    url: https://aas.org/press/new-tool-launches-astronomy-software-users
+    date: 2022-03-01
+    date_precision: month
+    kind: press-release
+    about: ads
+    description: "The AAS reports on Asclepias, a collaboration between ADS, Zenodo, and the AAS to preserve and credit scientific software in the literature."
+    variant: compact
+    outlet_tier: 2
+    image: /help/img/media/aas-asclepias.jpg
+    image_alt: >-
+      Asclepias splash screen from the AAS announcement of the astronomy software
+      citation tool.
+
+  # Title derived from the target URL slug; cited on the ADS awards page.
+  - title: "Dr. Alberto Accomazzi awarded SI's 2019 Secretary's Research Prize"
+    outlet: "Center for Astrophysics | Harvard & Smithsonian"
+    outlet_short: "Center for Astrophysics"
+    url: https://pweb.cfa.harvard.edu/news/dr-alberto-accomazzi-awarded-sis-2019-secretary-research-prize
+    date: 2019-01-01
+    date_precision: year
+    kind: press-release
+    about: team
+    person: Alberto Accomazzi
+    description: "The Smithsonian Institution's Secretary's Research Award for a scholarly web site, recognising the rebuilt ADS."
+    variant: compact
+    outlet_tier: 1
+    image: /help/img/media/cfa-accomazzi-2019.jpg
+    image_alt: >-
+      Portrait of Alberto Accomazzi used in the Center for Astrophysics
+      announcement of the 2019 Secretary's Research Prize.
+
+  # Title derived from the target URL slug; cited on the ADS awards page.
+  - title: "Kurtz, Henneken win Best JASIST Paper Award"
+    outlet: Association for Information Science & Technology
+    outlet_short: "ASIS&T"
+    url: https://www.asist.org/news/kurtz-henneken-win-best-jasist-paper-award/
+    date: 2018-01-01
+    date_precision: year
+    kind: press-release
+    about: team
+    person: Michael J. Kurtz
+    description: "ASIS&T recognises Michael Kurtz and Edwin Henneken for a 40-year cross-validation of citations, downloads, and peer review in astrophysics."
+    variant: compact
+    outlet_tier: 2
+    image: /help/img/media/asist-kurtz.jpg
+    image_alt: >-
+      Portrait of Michael Kurtz used in the ASIS&T announcement of the Best
+      JASIST Paper Award.
+
+  # Title derived from the target URL slug; the ADS blog cross-posts this piece.
+  - title: "Claiming papers and finding people with ORCID"
+    outlet: AstroBetter
+    url: http://www.astrobetter.com/blog/2016/03/07/claiming-papers-and-finding-people-with-orcid/
+    date: 2016-03-07
+    kind: coverage
+    about: ads
+    description: "AstroBetter carries the ADS explanation of ORCID claiming and author disambiguation for the wider astronomy community."
+    variant: compact
+    outlet_tier: 2
+    image: /help/img/media/astrobetter-orcid.png
+    image_alt: >-
+      ORCID claiming screenshot from the AstroBetter piece on finding people and
+      papers in ADS.
+
+  # Title derived from the target URL slug; cited in the ADS metrics blog post.
+  - title: "Updates on ADS interfaces and the announcement of Bumblebee"
+    outlet: AstroBetter
+    url: http://www.astrobetter.com/blog/2015/07/20/updates-on-ads-interfaces-and-the-announcement-of-bumblebee/
+    date: 2015-07-20
+    kind: coverage
+    about: ads
+    description: "AstroBetter announces the Bumblebee interface, the rebuild that became the modern ADS user interface."
+    variant: compact
+    outlet_tier: 2
+    image: /help/img/media/astrobetter-bumblebee.png
+    image_alt: >-
+      Bumblebee interface screenshot from the AstroBetter announcement of the
+      rebuilt ADS user interface.
+
+  # ---------------------------------------------------------------------------
+  # Coverage we know exists but for which no URL could be found anywhere in this
+  # repository. Structure is ready; uncomment once the real link is supplied.
+  # Nothing below has been guessed at.
+  # ---------------------------------------------------------------------------
+  #
+  # - title: ""
+  #   outlet: "Museum of Modern Art"
+  #   url:                                  # TODO: URL needed
+  #   date:                                 # TODO: publication date needed
+  #   kind: coverage
+  #   about: team
+  #   person: Michael J. Kurtz
+  #   description: "Michael Kurtz's Museum of Modern Art piece."
+  #   variant: compact
+  #   outlet_tier: 1
+  #
+  # - title: ""
+  #   outlet: ""                            # TODO: outlet needed
+  #   url:                                  # TODO: URL needed
+  #   date:                                 # TODO: publication date needed
+  #   kind: coverage
+  #   about: team
+  #   person: Jennifer Lynn Bartlett
+  #   description: "Coverage of Jennifer Bartlett's WISP work."
+  #   variant: compact
+  #   outlet_tier: 2
+  #
+  # - title: ""
+  #   outlet: ""                            # TODO: outlet needed
+  #   url:                                  # TODO: URL needed
+  #   date:                                 # TODO: publication date needed
+  #   kind: coverage
+  #   about: team
+  #   person: Anna Kelbert
+  #   description: "Further coverage of Anna Kelbert's work, beyond the three pieces listed above."
+  #   variant: compact
+  #   outlet_tier: 2

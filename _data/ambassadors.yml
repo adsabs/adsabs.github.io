@@ -1,0 +1,111 @@
+# SciX Lead Ambassador roster. Photos live in about/ambassador/img/.
+# Rendered by _includes/_about/ambassador-grid.md.
+
+cohorts:
+  - id: 2025-27
+    title: 2025 to 2027 cohort
+    members:
+      - slug: Angeles
+        name: Alvin Angeles
+        field: Heliophysics
+        photo: /about/ambassador/img/2026-Angeles.png
+        photo_alt: Headshot of Alvin Angeles
+      - slug: Cammaro
+        name: Anna Cammaro
+        field: Science education, space advocacy
+        photo: /about/ambassador/img/2025-Cammaro-square.jpg
+        photo_alt: Photograph of Anna Cammaro
+      - slug: Das
+        name: Saswati Das
+        field: Biochemistry, chemical pathology
+        photo: /about/ambassador/img/2025-Das-square.jpg
+        photo_alt: Headshot of Saswati Das
+      - slug: Ledvina
+        name: Vincent Ledvina
+        field: Space physics, space weather
+        photo: /about/ambassador/img/2024-Ledvina-square.jpg
+        photo_alt: Photograph of Vincent Ledvina
+      - slug: Long-Fox
+        name: Brooke Long-Fox
+        field: Conservation paleobiology
+        photo: /about/ambassador/img/2025-Long-Fox-square.jpg
+        photo_alt: Photograph of Brooke Long-Fox
+      - slug: McLennan
+        name: Jodie McLennan
+        field: Space physics, space weather
+        photo: /about/ambassador/img/2026-McLennan.png
+        photo_alt: Headshot of Jodie McLennan
+      - slug: Nauth
+        name: Murti Nauth
+        field: Planetary science
+        photo: /about/ambassador/img/2025-Nauth-square.jpeg
+        photo_alt: Photograph of Murti Nauth
+      - slug: Sharkus
+        name: Cielo Sharkus
+        field: Civil and environmental engineering
+        photo: /about/ambassador/img/2025-Sharkus-square.jpg
+        photo_alt: Headshot of Cielo Sharkus
+      - slug: Siew
+        name: Keith Siew
+        field: Medicine, physiology
+        photo: /about/ambassador/img/2025-Siew-square.jpeg
+        photo_alt: Photograph of Keith Siew
+
+  - id: 2024-26
+    title: 2024 to 2026 cohort
+    members:
+      - slug: Anghel
+        name: Simon Anghel
+        field: Astronomy, physics
+        photo: /about/ambassador/img/2024-Anghel-square.jpg
+        photo_alt: Headshot of Simon Anghel
+      - slug: Chaffee
+        name: Thom Chaffee
+        field: Geophysics, geology
+        photo: /about/ambassador/img/2024-Chaffee.jpg
+        photo_alt: Headshot of Thom Chaffee
+      - slug: Che
+        name: Yueyi Che
+        field: Glaciology, geology
+        photo: /about/ambassador/img/2024-Che-square.jpg
+        photo_alt: Photograph of Yueyi Che
+      - slug: Hutchinson
+        name: Gwyneth Hutchinson
+        field: Bioengineering
+        photo: /about/ambassador/img/2024-Hutchinson-square.jpg
+        photo_alt: Headshot of Gwyneth Hutchinson
+      - slug: Jiao
+        name: Chenyue Jiao
+        field: Information sciences
+        photo: /about/ambassador/img/2024-Jiao.jpg
+        photo_alt: Photograph of Chenyue Jiao
+      - slug: Lamm
+        name: Sarah Lamm
+        field: Geology
+        photo: /about/ambassador/img/2024-Lamm-square.jpg
+        photo_alt: Photograph of Sarah Lamm
+      - slug: PichardoMarcan
+        name: Manuel Pichardo Marcano
+        field: Astronomy
+        photo: /about/ambassador/img/2024-PichardoMarcano.png
+        photo_alt: Headshot of Manuel Pichardo Marcano
+      - slug: Mousavi
+        name: Amirhosein Mousavi
+        field: Earth data science
+        photo: /about/ambassador/img/2024-Mousavi.jpg
+        photo_alt: Headshot of Amirhosein Mousavi
+      - slug: Narayanan
+        name: Anand “Sunny” Narayanan
+        field: Space and medical physiology
+        photo: /about/ambassador/img/2024-Narayanan.png
+        photo_alt: Headshot of Anand Narayanan
+      - slug: Santos
+        name: Tieza Mica Santos
+        field: Environmental sciences and policy
+        photo: /about/ambassador/img/2024-Santos-square.jpg
+        photo_alt: Headshot of Tieza Mica Santos
+      - slug: Wilkins
+        name: Olivia Wilkins
+        field: Astrochemistry
+        photo: /about/ambassador/img/2024-Wilkins.jpg
+        photo_alt: Headshot of Olivia Wilkins

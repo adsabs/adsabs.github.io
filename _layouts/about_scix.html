@@ -2,18 +2,36 @@
 layout: about_layout_scix
 ---
 
-<div class="row row-offcanvas row-offcanvas-left">
+<div class="about-shell row-offcanvas row-offcanvas-left" data-rail>
   {% for js in page.jsarr %}
   <script type="text/javascript">
     {% include {{ js }} %}
   </script>
   {% endfor %}
 
-  <nav class="col-xs-6 col-sm-6 col-md-3 left-nav sidebar-offcanvas">
-    {%include about-left-nav_scix.html %}
+  <nav id="about-rail" class="about-shell-rail left-nav sidebar-offcanvas col-xs-6 col-sm-6">
+    <button
+      class="about-rail-toggle"
+      type="button"
+      data-rail-toggle
+      aria-expanded="true"
+      aria-controls="about-rail-nav"
+      aria-label="Hide menu"
+      title="Hide menu"
+    >
+      <i class="fa fa-angle-double-left" aria-hidden="true" data-rail-icon></i>
+    </button>
+    <div id="about-rail-nav" class="about-rail-nav">
+      {%include about-left-nav_scix.html %}
+    </div>
   </nav>
 
-  <main class="post main-content col-xs-12 col-md-9">
+  <main class="post main-content about-shell-main col-xs-12">
+    {%comment%}
+    Below $screen-md-min this is the Bootstrap off-canvas toggle. From
+    $screen-md-min up it collapses the sticky rail instead, so the reading
+    column can take the full width. The choice is remembered per visitor.
+    {%endcomment%}
     <button
       class="btn btn-primary visible-sm-inline-block visible-xs-inline-block"
       data-toggle="off-canvas"
@@ -21,20 +39,68 @@ layout: about_layout_scix
       toggle sidebar
     </button>
 
-    <header class="post-header">
-      {%unless page.no-header %}
-      <h2 class="post-title">{{ page.title }}</h2>
-      {% if page.subtitle %}
-      <div class="post-subtitle" style="color: #666; margin-top: -10px; font-weight: bolder;">{{ page.subtitle }}</div>
-      {% elsif page.team_id %}
-        {% assign team_member = site.data.team.team_members | where: "id", page.team_id | first %}
-        {% if team_member %}
-      <div class="post-subtitle" style="color: #666; margin-top: -10px; font-weight: bolder;">{{ team_member.title }}</div>
+    {% if page.wide_sections %}
+    <article class="post-content post-content--flush">{{ content }}</article>
+    {% else %}
+    <div class="about-shell-inner">
+      <header class="post-header">
+        {%unless page.no-header %}
+        <h2 class="post-title">{{ page.title }}</h2>
+        {% if page.subtitle %}
+        <div class="post-subtitle">{{ page.subtitle }}</div>
+        {% elsif page.team_id %}
+          {% assign team_member = site.data.team.team_members | where: "id", page.team_id | first %}
+          {% if team_member %}
+        <div class="post-subtitle">{{ team_member.title }}</div>
+          {% endif %}
         {% endif %}
-      {% endif %}
-      {% endunless %}
-    </header>
+        {% endunless %}
+      </header>
 
-    <article class="post-content">{{ content }}</article>
+      <article class="post-content">{{ content }}</article>
+    </div>
+    {% endif %}
   </main>
 </div>
+
+<script>
+  // Collapse the About rail on wide screens. The rail renders expanded, so the
+  // page is correct with no JavaScript; this only adds the ability to hide it.
+  (function () {
+    var shell = document.querySelector('[data-rail]');
+    var button = document.querySelector('[data-rail-toggle]');
+    if (!shell || !button) return;
+    var icon = button.querySelector('[data-rail-icon]');
+    var KEY = 'scix-about-rail-hidden';
+
+    function apply(hidden) {
+      shell.classList.toggle('is-rail-hidden', hidden);
+      button.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+      var text = hidden ? 'Show menu' : 'Hide menu';
+      button.setAttribute('aria-label', text);
+      button.setAttribute('title', text);
+      if (icon) {
+        icon.className =
+          'fa fa-angle-double-' + (hidden ? 'right' : 'left');
+      }
+    }
+
+    var stored = null;
+    try {
+      stored = window.localStorage.getItem(KEY);
+    } catch (e) {
+      // Private browsing or blocked storage: fall back to the default.
+    }
+    apply(stored === '1');
+
+    button.addEventListener('click', function () {
+      var hidden = !shell.classList.contains('is-rail-hidden');
+      apply(hidden);
+      try {
+        window.localStorage.setItem(KEY, hidden ? '1' : '0');
+      } catch (e) {
+        // Nothing to do; the toggle still works for this page view.
+      }
+    });
+  })();
+</script>

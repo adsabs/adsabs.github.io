@@ -1,0 +1,821 @@
+# Talks, posters, workshops, demos, and videos given by the ADS/SciX team.
+# Single source of truth for the Presentations page (ADS: /about/documents,
+# SciX: /scixabout/presentations), rendered by _includes/_presentations/presentations.md.
+#
+# Fields:
+#   title         - title as presented; keep verbatim wherever it was recorded
+#   type          - invited-talk | contributed-talk | poster | workshop | demo |
+#                   video | podcast | interview
+#   people        - presenter(s), optional
+#   venue         - meeting, host, or series; also used as the eyebrow label
+#   location      - city / venue, optional
+#   date          - QUOTED ISO string (YYYY-MM-DD). Quoted so Liquid does not
+#                   time-zone shift it. Used for sorting.
+#   date_display  - optional override when only the month or year is known
+#   url           - optional link to slides, poster, record, or recording
+#   url_label     - optional link text (defaults to a type-appropriate label)
+#   blog_slug     - optional ADS/SciX blog post slug that covers the appearance
+#   blog_slug_scix - optional override when the SciX copy of that post is filed
+#                   under a different slug than the ADS copy
+#   image         - optional site-root-relative image path (verified to exist)
+#   image_alt     - required whenever image is set
+#   eyebrow       - optional override for the eyebrow label (defaults to venue)
+#   summary       - one or two sentences of context
+#   variant       - hero | featured | (omit for the plain list)
+#
+# EVERY entry below was taken from content already in this repository. Nothing
+# here is invented. Where only a month or a year could be established, date is
+# set to the first of that period and date_display carries the honest precision.
+# Uncertainties are flagged inline.
+
+# Human-readable label for each type value. The badge CSS uppercases these.
+types:
+  invited-talk: Invited Talk
+  contributed-talk: Contributed Talk
+  poster: Poster
+  workshop: Workshop
+  demo: Demo
+  video: Video
+  podcast: Podcast
+  interview: Interview
+
+presentations:
+  # ---------------------------------------------------------------------------
+  # Hero
+  # ---------------------------------------------------------------------------
+  # Source: _includes/_whatsnew/whats-new.md, "August 2026" section, panel
+  # "NASA Science Data: Assessing Research Impact with SciX".
+  # UNCERTAIN: the repo cites the piece but gives no publication date; it is
+  # reported in the August 2026 newsletter, so only the month is claimed here.
+  # UNCERTAIN: the exact on-page title is not recorded in this repo. The title
+  # below is derived from the URL slug.
+  # NOTE: the repo links this at /learn/blog/... (not /blog/...); the repo's own
+  # URL is used because it is the one that can be verified from this codebase.
+  - title: "Science Explorer for Research Management"
+    type: video
+    people: Alberto Accomazzi
+    venue: NASA Science Data
+    eyebrow: NASA Science Data
+    date: "2026-08-01"
+    date_display: August 2026
+    url: https://science.data.nasa.gov/learn/blog/science-explorer-research-management
+    url_label: Watch the video
+    image: /help/img/whatsnew/WN2608-sciencedata.png
+    image_alt: "Slide from the SciX research management tutorial, showing a SciX library used to collect the publications produced by a research program."
+    variant: hero
+    summary: >
+      A recorded tutorial on using SciX libraries to manage research portfolios and
+      track research trends: aggregating the papers tied to a mission, dataset,
+      facility, or grant, curating them collaboratively, publishing them through
+      public libraries and the SciX API, and using citation networks to map
+      expertise and identify reviewers.
+
+  # ---------------------------------------------------------------------------
+  # Featured
+  # ---------------------------------------------------------------------------
+  # Source: _includes/_blogcontent/2026-07-27-EAS2026.md and
+  # _includes/_whatsnew/whats-new.md, "July 2026" section.
+  - title: "AI for Astronomers: a View from the ADS"
+    type: contributed-talk
+    people: Alberto Accomazzi
+    venue: European Astronomical Society Annual Meeting 2026
+    location: Lausanne, Switzerland
+    date: "2026-07-03"
+    url: https://zenodo.org/records/21282148
+    url_label: View on Zenodo
+    blog_slug: EAS2026
+    image: /blog/images/blog_2026-07-27-EAS-booth.png
+    image_alt: "Conference attendees visiting the SciX booth in the EAS 2026 exhibit hall."
+    variant: featured
+    summary: >
+      Presented in Special Session 44, "AI and Open Access in Modern Astronomy
+      Publishing", alongside an infrastructure-perspective panel contribution on how
+      SciX is evolving to use AI and to meet the challenges AI brings to scholarly
+      publishing.
+
+  # Source: _includes/_whatsnew/whats-new.md, "August 2026" section, panel
+  # "We're At COSPAR!" (session, date, and time are given there).
+  - title: "The Science Explorer: An Open Science Discovery Platform in the Earth and Space Sciences"
+    type: contributed-talk
+    people: Alberto Accomazzi
+    venue: 46th COSPAR Scientific Assembly
+    location: Florence, Italy
+    date: "2026-08-05"
+    url: https://www.cospar-assembly.org/admin/session_cospar.php?session=1547
+    url_label: Session PSW.4
+    image: /help/img/whatsnew/WN2608-COSPAR.png
+    image_alt: "The SciX booth at the 46th COSPAR Scientific Assembly in Florence, Italy."
+    variant: featured
+    summary: >
+      Part of Session PSW.4 on FAIR infrastructure and open science, given while the
+      team hosted a COSPAR booth focused on the transition from ADS to SciX.
+
+  # ---------------------------------------------------------------------------
+  # 2026
+  # ---------------------------------------------------------------------------
+  # Source: _includes/_blogcontent/2026-06-04-abscicon26.md
+  - title: "Science Explorer (SciX): Supporting Open and Interdisciplinary Science"
+    type: poster
+    people: Jennifer Lynn Bartlett and Jenny March
+    venue: Astrobiology Science Conference (AbSciCon) 2026
+    location: Madison, Wisconsin
+    date: "2026-05-19"
+    url: https://doi.org/10.5281/zenodo.20536390
+    url_label: View the poster
+    blog_slug: abscicon26
+    summary: >
+      Presented both physically and as an iPoster in the session "Best Practices for
+      Implementing Open Science in Astrobiology", including the SciX collaboration
+      with NASA Astrobiology on a findable publications library.
+
+  # Source: _includes/_blogcontent/2026-06-04-abscicon26.md ("Side Quests").
+  # UNCERTAIN: only the week is recorded, not the exact dates, and no title was
+  # given for these three departmental talks.
+  - title: "The transition from the Astrophysics Data System to the Science Explorer"
+    type: invited-talk
+    people: Jennifer Lynn Bartlett
+    venue: University of Wisconsin-Madison
+    location: Madison, Wisconsin
+    date: "2026-05-18"
+    date_display: May 2026
+    blog_slug: abscicon26
+    summary: >
+      Three talks hosted by the Astronomy Department: one for the physical science
+      librarians and two for department members, walking through what changes and
+      what does not when ADS users move to SciX.
+
+  # Source: _includes/_blogcontent/2026-06-04-EGU26.md
+  # UNCERTAIN: the blog records the presenter and the meeting but not the talk
+  # title, the session, or the exact day.
+  - title: "SciXplorer for Earth science research"
+    type: contributed-talk
+    people: Anna Kelbert
+    venue: EGU General Assembly 2026
+    location: Vienna, Austria
+    date: "2026-05-01"
+    date_display: May 2026
+    blog_slug: EGU26
+    image: /blog/images/blog_2026-06-04_EGU_image1.jpg
+    image_alt: "Members of the SciX team at the EGU 2026 General Assembly in Vienna."
+    summary: >
+      An oral presentation on SciXplorer for the earth science community, given
+      alongside a SciX poster on making research more FAIR and open, and several days
+      of platform demonstrations at the booth.
+
+  # Source: _includes/_blogcontent/2026-06-04-EGU26.md
+  # UNCERTAIN: the poster title is not recorded, only its subject.
+  - title: "Using SciX to make research more FAIR and open"
+    type: poster
+    people: Suze Kundu
+    venue: EGU General Assembly 2026
+    location: Vienna, Austria
+    date: "2026-05-01"
+    date_display: May 2026
+    blog_slug: EGU26
+    summary: >
+      A poster on SciX as a resource for researchers who want to make their work more
+      findable, accessible, interoperable, reusable, and open.
+
+  # Source: _includes/_blogcontent/2026-03-23-APS26.md
+  - title: "Exploring the Physics Literature with the Science Explorer"
+    type: poster
+    people: Jennifer Lynn Bartlett
+    venue: APS Global Physics Summit 2026
+    location: Denver, Colorado
+    date: "2026-03-15"
+    date_display: March 2026
+    blog_slug: aps26
+    image: /blog/images/blog_2026_03_23-APS26posters.png
+    image_alt: "A SciX poster pinned to a board beside a phone showing the APS 2026 on-demand poster session listing."
+    summary: >
+      A tour of the SciX physics collection and the ways physicists can use it,
+      presented both in person and in the meeting's on-demand poster session.
+
+  # Source: _includes/_blogcontent/2026-03-23-APS26.md
+  - title: "Science Explorer: Next-Generation Access to ADS and All NASA Science"
+    type: poster
+    people: Jennifer Lynn Bartlett
+    venue: APS Global Physics Summit 2026
+    location: Denver, Colorado
+    date: "2026-03-15"
+    date_display: March 2026
+    blog_slug: aps26
+    summary: >
+      Aimed at helping ADS users move to SciX and pick up a new feature or two in the
+      process.
+
+  # Source: _includes/_whatsnew/whats-new.md, "March 2026" section.
+  - title: "Language AI in the Space Sciences Workshop"
+    type: workshop
+    people: Alberto Accomazzi and Atilla Alkan
+    venue: STScI, ESA, and ADS
+    location: Baltimore, Maryland
+    date: "2026-03-09"
+    url: https://www.stsci.edu/contents/events/stsci/2026/march/language-ai-in-the-space-sciences#event-materials
+    url_label: Event materials
+    summary: >
+      Team contributions to a hands-on interdisciplinary workshop included a
+      discussion of licensing and property rights by Alberto Accomazzi, a tutorial on
+      Retrieval-Augmented Generation by Atilla Alkan, and a presentation by Atilla
+      Alkan on multilabel text classification for concept assignment in the
+      astrophysics literature. Recordings are on YouTube.
+
+  # Source: _includes/_blogcontent/2026-03-06-osm26.md
+  - title: "SciX platform demonstrations at Ocean Sciences Meeting 2026"
+    type: demo
+    people: Jenny March and Suze Kundu
+    venue: Ocean Sciences Meeting 2026
+    location: Glasgow, Scotland
+    date: "2026-03-01"
+    date_display: Early 2026
+    blog_slug: osm26
+    image: /blog/images/blog_2026-03-03_osm26booth1.png
+    image_alt: "A member of the SciX team at the SciX booth during the Ocean Sciences Meeting 2026 in Glasgow."
+    summary: >
+      Four days of platform demonstrations for oceanographers, climate scientists,
+      ecosystem modellers, and remote sensing researchers at the SciX booth.
+    # UNCERTAIN: the blog does not give the meeting dates; it is reported in the
+    # March 2026 blog as having happened shortly before APS in late March 2026.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2026" / "December 2025"
+  # sections (AAS247 round-up and workshop announcement).
+  - title: "Exploring SciX: A Researcher's Guide to the Science Explorer Platform"
+    type: workshop
+    people: SciX team
+    venue: 247th AAS Meeting
+    location: Phoenix, Arizona
+    date: "2026-01-04"
+    url: https://submissions.mirasmart.com/AAS247/Itinerary/EventDetail.aspx?evt=31
+    url_label: Workshop listing
+    summary: >
+      Three free one-hour sessions for both long-time ADS users moving to a
+      multidisciplinary environment and researchers running their first literature
+      search.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2026" section.
+  # UNCERTAIN: the newsletter links the Zenodo record but does not print the
+  # talk's title; the title below is descriptive, not quoted.
+  - title: "The benefits of moving to SciX"
+    type: invited-talk
+    people: Alberto Accomazzi
+    venue: 247th AAS Meeting, NASA Hyperwall
+    location: Phoenix, Arizona
+    date: "2026-01-05"
+    date_display: January 2026
+    url: https://zenodo.org/records/18463879
+    url_label: View on Zenodo
+    summary: >
+      A NASA Hyperwall talk on why ADS users should make the move to SciX now, given
+      during the first full week of January.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2026" section.
+  - title: "The Future of Scientific Discovery: Responsible AI/ML Enhancements in ADS and SciX"
+    type: poster
+    people: Mugdha Polimera
+    venue: 247th AAS Meeting
+    location: Phoenix, Arizona
+    date: "2026-01-05"
+    date_display: January 2026
+    url: https://aas247-aas.ipostersessions.com/default.aspx?s=3D-92-59-ED-DD-42-F3-5B-54-C6-B0-0C-84-63-14-11
+    url_label: View the iPoster
+    summary: >
+      How the collections are enriched so that papers, datasets, and software can be
+      searched in more nuanced ways.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2026" section.
+  - title: "Concept Classification Across Scientific Domains: Adapting to the Unified Astronomy Thesaurus's Expansion into Heliophysics"
+    type: poster
+    people: Atilla Alkan
+    venue: 247th AAS Meeting
+    location: Phoenix, Arizona
+    date: "2026-01-05"
+    date_display: January 2026
+    url: https://aas247-aas.ipostersessions.com/default.aspx?s=EF-89-D3-93-4F-06-A7-97-BF-52-EA-77-96-6B-99-57
+    url_label: View the iPoster
+    summary: >
+      The approach to automated classification of scientific records that accelerates
+      discovery and improves search.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2026" section.
+  - title: "Science Explorer: Open Science Discovery Engine"
+    type: poster
+    people: Jennifer Lynn Bartlett
+    venue: 247th AAS Meeting
+    location: Phoenix, Arizona
+    date: "2026-01-05"
+    date_display: January 2026
+    url: https://aas247-aas.ipostersessions.com/default.aspx?s=88-2C-FD-E4-53-A8-DF-4E-9F-49-AE-DE-2B-A4-67-D5&guestview=true
+    url_label: View the iPoster
+    summary: A Library Carpentry course for researchers new to SciX.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2026" section.
+  - title: "Science Explorer and StarGlass: the Future of the Historical Sky"
+    type: poster
+    people: Jennifer Lynn Bartlett
+    venue: 247th AAS Meeting
+    location: Phoenix, Arizona
+    date: "2026-01-05"
+    date_display: January 2026
+    url: https://aas247-aas.ipostersessions.com/default.aspx?s=79-56-95-F6-2A-91-DB-3F-27-E0-A0-67-14-C2-69-4D&guestview=true
+    url_label: View the iPoster
+    summary: >
+      Linking astronomical photographic plates to the articles and logbooks that
+      describe them.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2026" section.
+  # Individual research by a team member, not a SciX platform talk.
+  - title: "From Dwarfs to Giants: A Complete Census of AGN Across the RESOLVE and ECO Surveys"
+    type: poster
+    people: Mugdha Polimera
+    venue: 247th AAS Meeting
+    location: Phoenix, Arizona
+    date: "2026-01-05"
+    date_display: January 2026
+    url: https://aas247-aas.ipostersessions.com/Default.aspx?s=3B-7A-2A-3E-92-AA-2A-F2-AA-5D-76-7E-CB-24-74-13
+    url_label: View the iPoster
+    summary: >
+      How the demographics of active galactic nuclei and their host galaxies shift
+      with galaxy mass.
+
+  # ---------------------------------------------------------------------------
+  # 2025
+  # ---------------------------------------------------------------------------
+  # Source: _includes/_whatsnew/whats-new.md, "November 2025" section.
+  # UNCERTAIN: the newsletter describes the subject of each talk but prints no
+  # titles; both entries below are descriptive.
+  - title: "Applying Unified Astronomy Thesaurus keywords automatically to papers, datasets, and software"
+    type: contributed-talk
+    people: Jennifer Lynn Bartlett
+    venue: Library and Information Services in Astronomy (LISA 10)
+    date: "2025-11-01"
+    date_display: November 2025
+    url: https://zenodo.org/records/17460502
+    url_label: View on Zenodo
+    summary: >
+      Presented virtually; SciX Ambassador Manuel Pichardo Marcano translated the
+      presentation into Spanish.
+
+  - title: "How ADS/SciX links to and indexes data products"
+    type: contributed-talk
+    people: Edwin Henneken
+    venue: Library and Information Services in Astronomy (LISA 10)
+    date: "2025-11-01"
+    date_display: November 2025
+    summary: Presented virtually alongside the SciX keyword work.
+
+  # Source: _includes/_whatsnew/whats-new.md, "June 2025" section.
+  - title: "Astronomical Photographic Plates: More than a Century of Service"
+    type: contributed-talk
+    people: Jennifer Lynn Bartlett
+    venue: Sixteenth Biennial History of Astronomy Workshop
+    date: "2025-06-01"
+    date_display: June 2025
+    url: https://www3.nd.edu/~histast/workshops/2025ndxvi/index.shtml
+    url_label: Workshop programme
+    summary: >
+      The modern scientific, historical, and cultural roles of astronomical
+      photographic plates.
+
+  # Source: _includes/_whatsnew/whats-new.md, "June 2025" section.
+  - title: "A Plate in Her Hand"
+    type: poster
+    people: Jennifer Lynn Bartlett
+    venue: 246th AAS Meeting
+    date: "2025-06-09"
+    url: https://submissions.mirasmart.com/AAS246/ViewSubmissionFile.aspx?sbmID=577&mode=html&validate=false
+    url_label: View the abstract
+    summary: >
+      Connecting the women computers of Harvard's "great library of glass" through the
+      astronomical photographic plates they used, and the case for linking those
+      digitized archives to the literature.
+
+  # Source: _includes/_whatsnew/whats-new.md, "May 2025" section.
+  - title: "Enhancing Geoscience Collaboration and Discovery: Leveraging the Science Explorer (SciX) for Efficient Literature Review and Interdisciplinary Research"
+    type: contributed-talk
+    people: Michael Kurtz
+    venue: EGU General Assembly 2025
+    location: Vienna, Austria
+    date: "2025-04-30"
+    url: https://meetingorganizer.copernicus.org/EGU25/EGU25-10379.html
+    url_label: Abstract and programme
+    summary: >
+      An oral session presentation with a live demonstration, part of a week in which
+      the team reached more than 500 earth scientists.
+
+  # Source: _includes/_whatsnew/whats-new.md, "May 2025" section.
+  - title: "Science Explorer: Accelerating the Discovery of NASA Science"
+    type: invited-talk
+    people: Michael Kurtz and Jennifer Lynn Bartlett
+    venue: EGU General Assembly 2025, NASA Hyperwall
+    location: Vienna, Austria
+    date: "2025-04-01"
+    date_display: April 2025
+    url: https://doi.org/10.5281/zenodo.15353298
+    url_label: View on Zenodo
+    summary: Presented multiple times on the NASA Hyperwall in the NASA booth.
+
+  # Source: _includes/_whatsnew/whats-new.md, "April 2025" section.
+  - title: "The Physics in the Astrophysics Data System"
+    type: poster
+    people: Michael Kurtz and Jennifer Lynn Bartlett
+    venue: APS Global Physics Summit 2025
+    date: "2025-03-01"
+    date_display: March 2025
+    url: https://doi.org/10.5281/zenodo.15054921
+    url_label: View on Zenodo
+    summary: >
+      One of two posters presented at a meeting where the team also demonstrated SciX
+      to more than 200 physicists.
+
+  # Source: _includes/_whatsnew/whats-new.md, "April 2025" section.
+  - title: "Science Explorer: ADS for All NASA Science"
+    type: poster
+    people: Michael Kurtz and Jennifer Lynn Bartlett
+    venue: APS Global Physics Summit 2025
+    date: "2025-03-01"
+    date_display: March 2025
+    url: https://doi.org/10.5281/zenodo.15054991
+    url_label: View on Zenodo
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2025" and
+  # "January 2025" sections.
+  - title: "ADS and SciX: Pioneering the Next Generation of Interdisciplinary Research Discovery"
+    type: poster
+    venue: 245th AAS Meeting
+    date: "2025-01-01"
+    date_display: January 2025
+    url: https://zenodo.org/records/14811310
+    url_label: View on Zenodo
+    summary: >
+      How SciX builds on ADS to create a unified platform integrating literature,
+      data, and software across NASA's Science Mission Directorate.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2025" section. The same
+  # material was also presented at the AAS245 Exhibitor Theater on 15 January by
+  # Jennifer Lynn Bartlett, Kelly Lockhart, and Manuel Pichardo Marcano.
+  - title: "Science Explorer: Not Your Adviser's ADS"
+    type: poster
+    people: Jennifer Lynn Bartlett, Kelly Lockhart, and Manuel Pichardo Marcano
+    venue: 245th AAS Meeting
+    date: "2025-01-15"
+    url: https://zenodo.org/records/14811559
+    url_label: View on Zenodo
+    summary: >
+      How SciX extends ADS with AI-powered tools, semantic search, and
+      interdisciplinary connections.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2025" section.
+  - title: "What if it Rains on Your Eclipse: Planning Ahead for August 2045"
+    type: poster
+    venue: 245th AAS Meeting
+    date: "2025-01-01"
+    date_display: January 2025
+    url: https://aas245-aas.ipostersessions.com/?s=99-5B-5B-42-B7-DB-FB-60-E9-5D-8A-F0-AE-97-F2-4A
+    url_label: View the iPoster
+    summary: >
+      Strategies for public engagement and observational planning ahead of future
+      total solar eclipses.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2025" section.
+  - title: "Beyond Astronomy Content: Communication Skills for All Our Students"
+    type: poster
+    venue: 245th AAS Meeting
+    date: "2025-01-01"
+    date_display: January 2025
+    url: https://aas245-aas.ipostersessions.com/?s=4F-B3-0B-3E-80-05-98-47-C3-B7-DC-E9-DF-A6-07-52
+    url_label: View the iPoster
+    summary: >
+      The role of communication skills in astronomy education and career development.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2025" section.
+  - title: "Astro-3: Restoring Space Astronomy Flight Hardware for Public Education"
+    type: poster
+    venue: 245th AAS Meeting
+    date: "2025-01-01"
+    date_display: January 2025
+    url: https://aas245-aas.ipostersessions.com/?s=B7-68-27-2C-AC-BE-6A-75-E8-A6-57-B3-03-D4-91-31
+    url_label: View the iPoster
+    summary: >
+      The Astro Restoration Project's work to preserve the SpaceLab Astro science
+      payload as the largest flown space science observatory on public display.
+
+  # Source: _includes/_whatsnew/whats-new.md, "January 2025" section.
+  - title: "Science Explorer: Accelerating the Discovery of NASA Science"
+    type: invited-talk
+    people: Alberto Accomazzi
+    venue: 245th AAS Meeting, NASA Hyperwall
+    date: "2025-01-15"
+    summary: A NASA Hyperwall talk at booth 505.
+
+  # ---------------------------------------------------------------------------
+  # 2024
+  # ---------------------------------------------------------------------------
+  # Source: _includes/_whatsnew/whats-new.md, "December 2024" section
+  # (AGU Fall Meeting schedule).
+  - title: "Science Explorer (SciX): A Valuable New Information Service for Earth Science Literature, Data, and Software Discovery"
+    type: poster
+    people: Anna Kelbert, Alberto Accomazzi, and Yueyi Che
+    venue: AGU Fall Meeting 2024
+    location: Washington, DC
+    date: "2024-12-10"
+    url: https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1570363
+    url_label: AGU programme
+    summary: Poster session IN21C-2171 in the Informatics track.
+
+  # Source: _includes/_whatsnew/whats-new.md, "December 2024" section.
+  - title: "Bridging Disciplines and Advancing Discovery in Earth and Space Sciences through the NASA Science Explorer"
+    type: poster
+    people: Stephanie Jarmak
+    venue: AGU Fall Meeting 2024
+    location: Washington, DC
+    date: "2024-12-09"
+    url: https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1537773
+    url_label: AGU programme
+    summary: Poster session IN13A-2155 in the Informatics track.
+
+  # Source: _includes/_whatsnew/whats-new.md, "December 2024" section.
+  # Individual research by a team member, not a SciX platform talk.
+  - title: "Quantifying Hydration Abundance and Distribution on Asteroid (16) Psyche with JWST Data"
+    type: contributed-talk
+    people: Stephanie Jarmak
+    venue: AGU Fall Meeting 2024
+    location: Washington, DC
+    date: "2024-12-10"
+    url: https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1521465
+    url_label: AGU programme
+
+  # Source: _includes/_whatsnew/whats-new.md, "December 2024" section.
+  - title: "Harnessing the Power of NASA Open Digital Repositories for Earth and Space Research"
+    type: workshop
+    venue: AGU Fall Meeting 2024
+    location: Washington, DC
+    date: "2024-12-08"
+    url: https://agu.confex.com/agu/agu24/meetingapp.cgi/Session/229059
+    url_label: Workshop listing
+    summary: >
+      Co-hosted by SciX, the NASA Science Discovery Engine, and the Planetary Data
+      System.
+
+  # Source: _includes/_whatsnew/whats-new.md, "December 2024" section.
+  - title: "SciX demonstrations at the ESIP Data Help Desk"
+    type: demo
+    people: Carolyn Grant and Anna Kelbert
+    venue: AGU Fall Meeting 2024
+    location: Washington, DC
+    date: "2024-12-10"
+    date_display: December 2024
+    summary: >
+      Two morning sessions at the Earth Science Information Partners Data Help Desk in
+      the exhibit hall, on 10 and 12 December.
+
+  # Source: _includes/_blogcontent/2024-06-04-HistoricLit.md (closing note) and
+  # blog/_posts/2024-06-04-HistoricLit.md front matter.
+  - title: "Historic Observatory Publications in the Science Explorer"
+    type: poster
+    people: Jennifer Lynn Bartlett and Donna Thompson
+    venue: 244th AAS Meeting
+    location: Madison, Wisconsin
+    date: "2024-06-01"
+    date_display: June 2024
+    url: https://aas244-aas.ipostersessions.com/Default.aspx?s=75-EE-09-5A-22-21-C1-80-50-97-CC-01-8B-FD-0F-13
+    url_label: View the iPoster
+    blog_slug: HistoricLit
+    # The SciX copy of this post is filed under a misspelled slug
+    # (scixblog/_posts/2024-06-04-HistroricLit.md), so the SciX link differs.
+    blog_slug_scix: HistroricLit
+    summary: >
+      What it takes to bring scanned historic observatory publications into SciX, from
+      copyright permission to linking and full-text indexing.
+
+  # Source: _includes/_blogcontent/2024-01-03-aas-2024.md
+  - title: "The Science Explorer: ADS for all NASA Science"
+    type: contributed-talk
+    people: Alberto Accomazzi
+    venue: 243rd AAS Meeting
+    location: New Orleans, Louisiana
+    date: "2024-01-08"
+    url: https://ads.harvard.edu/pubs/AAS2024/AAS2024_Accomazzi_SciX.pdf
+    url_label: Slides (PDF)
+    blog_slug: aas-2024
+    summary: >
+      The vision behind extending ADS to cover every NASA Science Mission Directorate
+      division, and what that means for open science and interdisciplinary research.
+
+  # Source: _includes/_blogcontent/2024-01-03-aas-2024.md
+  - title: "The Science Explorer: ADS for all of NASA Science"
+    type: invited-talk
+    people: Alberto Accomazzi
+    venue: 243rd AAS Meeting, NASA Booth Hyperwall
+    location: New Orleans, Louisiana
+    date: "2024-01-08"
+    url: https://ads.harvard.edu/pubs/AAS2024/AAS2024_Hyperwall.pdf
+    url_label: Slides (PDF)
+    blog_slug: aas-2024
+    summary: >
+      A Hyperwall overview of how SciX and ADS relate, with search examples that did
+      not fit in the shorter oral presentation.
+
+  # Source: _includes/_blogcontent/2024-01-03-aas-2024.md
+  - title: "The Impact of Artificial Intelligence on Astrophysics Research: Avenues and Potential Breakthroughs"
+    type: poster
+    people: Kelly Lockhart
+    venue: 243rd AAS Meeting
+    location: New Orleans, Louisiana
+    date: "2024-01-08"
+    url: https://aas243-aas.ipostersessions.com/Default.aspx?s=06-91-EA-2E-AF-63-51-11-B4-F8-40-FF-47-52-8C-D3
+    url_label: View the iPoster
+    blog_slug: aas-2024
+    summary: >
+      Using AI for information retrieval and data enrichment inside ADS.
+
+  # Source: _includes/_blogcontent/2024-01-03-aas-2024.md
+  - title: "What's New @ ADS"
+    type: contributed-talk
+    people: Alberto Accomazzi, Kelly Lockhart, Jennifer Lynn Bartlett, and Michael Kurtz
+    venue: 243rd AAS Meeting, Exhibitor Presentation
+    location: New Orleans, Louisiana
+    date: "2024-01-09"
+    url: https://ads.harvard.edu/pubs/AAS2024/AAS2024_Exhibitor_Presentation.pdf
+    url_label: Slides (PDF)
+    blog_slug: aas-2024
+    summary: >
+      The SciX launch, the AI and machine learning initiatives underway, and practical
+      tips for getting relevant results out of a search.
+
+  # ---------------------------------------------------------------------------
+  # 2023
+  # ---------------------------------------------------------------------------
+  # Source: _includes/_blogcontent/2023-12-06-AGUSciXLaunch.md
+  - title: "Announcing the Launch of the Science Explorer"
+    type: invited-talk
+    people: Alberto Accomazzi
+    venue: AGU Fall Meeting 2023, NASA Hyperwall
+    location: San Francisco, California
+    date: "2023-12-14"
+    blog_slug: AGUSciXLaunch
+    summary: >
+      The public reveal of the SciX digital library at the NASA Hyperwall, marking the
+      expansion of ADS into all of NASA science.
+
+  # Source: _includes/_blogcontent/2023-12-06-AGUSciXLaunch.md and
+  # _includes/_whatsnew/whats-new.md, "February 2024" section.
+  - title: "Discovering and Accessing Planetary and Earth Science Literature with the Science Explorer (SciX)"
+    type: poster
+    people: Edwin A. Henneken
+    venue: AGU Fall Meeting 2023
+    location: San Francisco, California
+    date: "2023-12-12"
+    url: https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1290903
+    url_label: AGU programme
+    blog_slug: AGUSciXLaunch
+    summary: >
+      An introduction to the open, literature-based information system unifying
+      astrophysics, planetary science, heliophysics, and earth science.
+
+  # Source: _includes/_blogcontent/2023-12-06-AGUSciXLaunch.md
+  - title: "Building SciX: An Open Access Digital Library Empowering Earth and Space Science Research"
+    type: contributed-talk
+    people: Daniel Chivvis
+    venue: AGU Fall Meeting 2023
+    location: San Francisco, California
+    date: "2023-12-12"
+    url: https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1400075
+    url_label: AGU programme
+    blog_slug: AGUSciXLaunch
+    summary: >
+      The content curation method behind the SciX digital library, including the
+      priority given to open access journals and FAIR-supporting institutions.
+
+  # Source: _includes/_blogcontent/2023-12-06-AGUSciXLaunch.md and
+  # _includes/_whatsnew/whats-new.md, "February 2024" section.
+  - title: "The Science Explorer as a Platform for Open Science"
+    type: poster
+    people: Carolyn Grant
+    venue: AGU Fall Meeting 2023
+    location: San Francisco, California
+    date: "2023-12-13"
+    url: https://agu23.ipostersessions.com//?s=4A-3A-88-98-A8-20-74-FE-E6-1C-8D-BE-87-F0-4B-BC
+    url_label: View the iPoster
+    blog_slug: AGUSciXLaunch
+    summary: >
+      How SciX uses the ADS infrastructure to cross-link published literature,
+      preprints, data products, and software packages.
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2024" section.
+  - title: "Exploring the limits of Large Language Models with the SciX corpus"
+    type: poster
+    venue: AGU Fall Meeting 2023
+    location: San Francisco, California
+    date: "2023-12-01"
+    date_display: December 2023
+    url: https://agu23.ipostersessions.com//?s=F7-6A-ED-01-EC-B8-8C-CD-99-CC-C8-7D-48-81-E9-7D
+    url_label: View the iPoster
+
+  # Source: _includes/_whatsnew/whats-new.md, "February 2024" section.
+  - title: "The SciX Open Corpus: Curating Domain-Relevant Datasets for Deep Learning Models"
+    type: poster
+    venue: AGU Fall Meeting 2023
+    location: San Francisco, California
+    date: "2023-12-01"
+    date_display: December 2023
+    url: https://agu23.ipostersessions.com//?s=AF-08-1B-8D-44-47-4F-0D-86-34-A9-31-DC-4E-B2-9A
+    url_label: View the iPoster
+
+  # Source: _includes/_blogcontent/2023-12-06-AGUSciXLaunch.md
+  - title: "Live Science Explorer (SciX) demonstrations"
+    type: demo
+    people: Carolyn Grant, Kelly Lockhart, and Edwin A. Henneken
+    venue: AGU Fall Meeting 2023
+    location: San Francisco, California
+    date: "2023-12-11"
+    date_display: December 2023
+    blog_slug: AGUSciXLaunch
+    summary: >
+      Three guided walkthroughs of the new SciX portal at the Open Science Pavilion
+      and the NASA booth demo kiosk, on 11, 12, and 14 December.
+
+  # Source: _includes/_whatsnew/whats-new.md, "November 2023" and
+  # "September 2023" sections.
+  - title: "ADASS Prize for an Outstanding Contribution to Astronomical Software: award talk"
+    type: invited-talk
+    people: Alberto Accomazzi
+    venue: Astronomical Data Analysis Software and Systems XXXIII
+    location: Tucson, Arizona
+    date: "2023-11-09"
+    url: https://adass2023.lpl.arizona.edu/
+    url_label: Conference site
+    summary: >
+      Accepting the 2023 ADASS Prize on behalf of the ADS team, with an accompanying
+      talk.
+
+  # ---------------------------------------------------------------------------
+  # 2022 and 2021
+  # ---------------------------------------------------------------------------
+  # Source: _includes/_whatsnew/whats-new.md, "June 2022" section (AAS 240).
+  - title: "Automatically Detecting Facilities in the Scientific Literature Using Deep Learning Techniques"
+    type: poster
+    venue: 240th AAS Meeting
+    location: Pasadena, California
+    date: "2022-06-14"
+    url: https://aas240-aas.ipostersessions.com/?s=37-20-C6-6B-32-64-32-A6-9F-7E-B4-00-48-A6-D9-A3
+    url_label: View the iPoster
+
+  # Source: _includes/_whatsnew/whats-new.md, "June 2022" section.
+  - title: "How to find Experts Using the ADS"
+    type: invited-talk
+    venue: 240th AAS Meeting, NASA Hyperwall
+    location: Pasadena, California
+    date: "2022-06-13"
+
+  # Source: _includes/_whatsnew/whats-new.md, "June 2022" section.
+  - title: "What's New @ ADS"
+    type: contributed-talk
+    venue: 240th AAS Meeting, Exhibitors' Showcase
+    location: Pasadena, California
+    date: "2022-06-13"
+
+  # Source: _includes/_whatsnew/whats-new.md, "January 2021" section (AAS 237,
+  # held virtually).
+  - title: "Get your Personalized Notifications and Recommendations from ADS"
+    type: demo
+    venue: 237th AAS Meeting (virtual)
+    date: "2021-01-12"
+    summary: A webinar given during the virtual AAS 237 meeting.
+
+  # ---------------------------------------------------------------------------
+  # 2018 and earlier - migrated from the original ADS presentations page
+  # ---------------------------------------------------------------------------
+  # Source: the previous version of about/documents/index.md. The PDFs live in
+  # this repo at about/documents/documents/.
+  # UNCERTAIN: the original page recorded no dates; only the meeting is known.
+  - title: "The Astrophysics Data System: Capabilities and Roadmap for the 2020s"
+    type: contributed-talk
+    venue: AAS 232, Astrophysics Archives in the 2020s
+    date: "2018-06-01"
+    date_display: "2018"
+    url: /about/documents/documents/AAS232_ADS_Astro2020.pdf
+    url_label: Slides (PDF)
+
+  - title: "Don't Panic! Or How to Survive the Transition from ADS Classic to Bumblebee"
+    type: invited-talk
+    venue: AAS 231 Hyperwall
+    date: "2018-01-02"
+    date_display: "2018"
+    url: /about/documents/documents/AAS231_ADS.pdf
+    url_label: Slides (PDF)
+
+  - title: "The Role of the ADS in Software Discovery and Citation"
+    type: contributed-talk
+    venue: AAS 231 Special Session on Software
+    date: "2018-01-01"
+    date_display: "2018"
+    url: /about/documents/documents/AAS2018_SoftwareSpecialSession.pdf
+    url_label: Slides (PDF)
+
+  - title: "ADS Services in Support of the Discovery, Management, and Evaluation of Science Data"
+    type: contributed-talk
+    venue: SciOps 2015
+    date: "2015-01-01"
+    date_display: "2015"
+    url: https://zenodo.org/record/34494
+    url_label: View on Zenodo

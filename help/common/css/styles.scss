@@ -139,7 +139,7 @@ $nav-text-color: $text-color;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'bootstrap', 'layout', 'sidebar', 'darkmode';
-@import 'marketing', 'awards', 'media', 'presentations', 'outreach';
+@import 'marketing', 'awards', 'media', 'presentations', 'outreach', 'about-story';
 /* Home Page Styles */
 .home-page-content {
   width: 100%;

@@ -1,131 +1,156 @@
 # ADS/SciX Team Data
 # This is the single source of truth for team member information
+#
+# photo is optional. Paths are under site.baseurl. Members without a photo
+# render as an initials tile on the SciX team mosaic.
 
 team_members:
   - id: aaccomazzi
     name: "Dr. Alberto Accomazzi"
     title: "PI & Program Manager"
     order: 1
-    
+    photo: /about/team/img/accomazzi.jpg
+
   - id: mkurtz
     name: "Dr. Michael J. Kurtz"
     title: "Project Scientist Emeritus"
     order: 2
-    
+    photo: /about/team/img/kurtz.jpg
+    role_type: "research_associate"
+
   - id: pprotopapas
     name: "Dr. Pavlos Protopapas"
     title: "Interim Project Scientist for Data Science"
     order: 3
-    
+    photo: /about/team/img/protopapas.jpg
+    role_type: "research_associate"
+
   - id: csterngrant
     name: "Carolyn Stern Grant"
     title: "Data Ingestion Lead"
     order: 4
-    
+    photo: /about/team/img/csg.jpg
+
   - id: ehenneken
     name: "Edwin Henneken"
     title: "Content, Curation & Collaborations Lead"
     order: 5
-    
+    photo: /about/team/img/ehennekenADS.png
+
   - id: klockhart
     name: "Dr. Kelly Lockhart"
     title: "Technical Lead"
     order: 6
-    
+    photo: /about/team/img/lockhart.jpeg
+
   - id: thostetler
     name: "Tim Hostetler"
     title: "User Interface and Front-End Development"
     order: 7
-    
+    photo: /about/team/img/tim.jpg
+
   - id: mtempleton
     name: "Dr. Matthew Templeton"
     title: "Data Integration Manager"
     order: 8
-    
+    photo: /about/team/img/matthew_templeton.jpg
+
   - id: schen
     name: "Shinyi (Jennifer) Chen"
     title: "User Experience and Front-End Development"
     order: 9
-    
+
   - id: fgrezes
     name: "Dr. Felix Grezes"
     title: "Machine Learning and Natural Language Processing"
     order: 10
-    
+    photo: /about/team/img/fgrezes.jpg
+
   - id: jmarch
     name: "Jennifer March"
     title: "Digital Technologies Development Librarian"
     order: 11
-    
+    photo: /about/team/img/jmarch.jpg
+
   - id: tallen
     name: "Dr. Tom Allen"
     title: "Astrophysics Data Support"
     order: 12
-    
+    photo: /about/team/img/tallen.jpg
+
   - id: tjacovich
     name: "Dr. Taylor Jacovich"
     title: "Back-End Development & Data Analysis"
     order: 13
-    
+    photo: /about/team/img/tjacovich.jpeg
+
   - id: dchivvis
     name: "Daniel Chivvis"
     title: "Digital Technologies Development Librarian"
     order: 14
-    
+    photo: /about/team/img/dchivvis.png
+
   - id: fdemacedoalves
     name: "Fernanda de Macedo Alves"
     title: "Back-End Development"
     order: 15
-    
+
   - id: jcpaquin
     name: "Jean-Claude Paquin"
     title: "Back-End Development (search)"
     order: 16
-    
+
   - id: jbartlett
     name: "Dr. Jennifer Bartlett"
     title: "Astrophysics Project Scientist"
     order: 17
-    
+    photo: /about/team/img/bartlett.jpg
+
   - id: mpolimera
     name: "Dr. Mugdha Polimera"
     title: "Back-End Development & Astrophysicist"
     order: 18
-    
+    photo: /about/team/img/mpolimera.jpg
+
   - id: akelbert
     name: "Dr. Anna Kelbert"
     title: "Earth Science Project Scientist"
     order: 19
-    
+    photo: /about/team/img/akelbert.jpg
+
   - id: pdire
     name: "Paul Di Re"
     title: "Project Manager"
     order: 20
-    
+
   - id: jpomerantz
     name: "Dr. Jeffrey Pomerantz"
     title: "Digital Technologies Development Librarian"
     order: 21
-    
+
   - id: aalkan
     name: "Dr. Atilla Kaan Alkan"
     title: "Postdoctoral Research Fellow"
     order: 22
-    
+    photo: /about/team/img/aalkan.jpg
+
   - id: skundu
     name: "Dr. Suze Kundu"
     title: "Community Engagement Coordinator"
     order: 23
     role_type: "community"
-    
+    photo: /about/team/img/skundu.jpg
+
   - id: sblancocuaresma
     name: "Dr. Sergi Blanco-Cuaresma"
     title: "ADS/SciX Research Associate"
     order: 24
     role_type: "research_associate"
-    
+    photo: /about/team/img/sergi.jpeg
+
   - id: sjarmak
     name: "Dr. Stephanie Jarmak"
     title: "ADS/SciX Research Associate"
     order: 25
     role_type: "research_associate"
+    photo: /about/team/img/sjarmak.png

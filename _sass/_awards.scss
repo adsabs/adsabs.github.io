@@ -1,2 +1,519 @@
-// Awards pages: featured award treatment and the heritage award list.
+// Awards pages: a wall of honours built from tiles of varying width.
 // Rendered by about/awards.md and scixabout/awards.md via _includes/_awards/awards.md.
+//
+// Design notes
+//   Tiles sit on a 12 column grid and take their width from the `span` value
+//   in _data/awards.yml, so the wall is uneven rather than tabular. Awards are
+//   stored newest first and render in that order, so the wall reads strictly
+//   descending left to right and top to bottom.
+//
+//   Colour follows one rule: the decade. Tiles from the 2020s are deep navy,
+//   tiles from the 2010s are mid blue, and tiles from 2009 and earlier are
+//   pale blue. The wall therefore lightens as it goes back in time, and no
+//   tile is tinted for decoration alone.
+
+/* Awards Tokens */
+$awards-mono: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+
+$awards-navy: #1c459b;
+$awards-hero-bg: #0f2a63;
+$awards-now-bg: #163a86;
+$awards-mid-bg: #2f62ab;
+$awards-early-bg: #e8eef9;
+
+$awards-early-ink: #16306b;
+$awards-early-soft: #44588a;
+$awards-on-dark-soft: #c7d4ee;
+
+$awards-ink: #1a1d20;
+$awards-ink-soft: #495057;
+$awards-ink-muted: #6c757d;
+$awards-hairline: #dfe3e8;
+
+/* Awards Page Shell */
+.awards-page {
+  color: $awards-ink;
+}
+
+.awards-intro {
+  margin: 0 0 4rem;
+}
+
+.awards-count {
+  margin: 0 0 1.2rem;
+  font-size: clamp(2.6rem, 3.6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  color: $awards-navy;
+
+  span {
+    color: #0b74c4;
+  }
+}
+
+.awards-lede {
+  margin: 0;
+  max-width: 62rem;
+  font-size: 1.9rem;
+  line-height: 1.55;
+  color: $awards-ink-soft;
+}
+
+/* Awards Section */
+.awards-section {
+  margin: 0 0 5rem;
+}
+
+.awards-section-head {
+  margin-bottom: 2rem;
+}
+
+.awards-section-title {
+  margin: 0 0 1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: $awards-ink;
+}
+
+.awards-section-intro {
+  display: block;
+  margin: 0;
+  max-width: 64rem;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: $awards-ink-soft;
+}
+
+/* Awards Grid */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.4rem;
+  /* start, not stretch: a tile is as tall as its content, so short entries
+     stop rendering as half empty rectangles. dense lets later small tiles
+     backfill the hole a wide tile leaves at the end of a row. */
+  align-items: start;
+  grid-auto-flow: row dense;
+}
+
+.awards-span-4 { grid-column: span 4; }
+.awards-span-6 { grid-column: span 6; }
+.awards-span-8 { grid-column: span 8; }
+
+/* Awards Tile */
+.awards-card {
+  --awards-accent: #1c459b;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2.4rem 2.4rem 2.6rem;
+  border-radius: 3px;
+  background: $awards-early-bg;
+  color: $awards-early-ink;
+  overflow: hidden;
+}
+
+.awards-card-foot {
+  margin-top: auto;
+  padding-top: 1.8rem;
+}
+
+/* Awards Year */
+.awards-year {
+  margin: 0 0 1.4rem;
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+  color: inherit;
+  opacity: 0.9;
+}
+
+/* Awards Tile Typography */
+.awards-org {
+  margin: 0 0 0.7rem;
+  font-family: $awards-mono;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: $awards-early-soft;
+}
+
+.awards-card-title {
+  margin: 0 0 0.8rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: inherit;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      text-decoration: none;
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+.awards-program {
+  margin: 0 0 0.8rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: $awards-early-soft;
+}
+
+.awards-recipient {
+  margin: 0 0 1.2rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: inherit;
+}
+
+.awards-blurb {
+  margin: 0 0 1.2rem;
+  font-size: 1.45rem;
+  line-height: 1.65;
+  color: $awards-early-soft;
+}
+
+/* Awards Quote */
+.awards-quote {
+  position: relative;
+  margin: 0.4rem 0 1.2rem;
+  padding: 0 0 0 2.2rem;
+  border: 0;
+  font-size: 1.5rem;
+
+  &:before {
+    content: '\201C';
+    position: absolute;
+    left: -0.2rem;
+    top: 0.6rem;
+    font-size: 4.4rem;
+    line-height: 0;
+    font-weight: 700;
+    opacity: 0.32;
+    color: inherit;
+  }
+
+  p {
+    margin: 0;
+    font-style: italic;
+    line-height: 1.6;
+    color: inherit;
+  }
+}
+
+.awards-attribution {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: $awards-early-soft;
+}
+
+/* Awards Honorees */
+.awards-honorees {
+  margin: 1.8rem 0 0;
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.awards-honorees-label {
+  margin: 0 0 1.2rem;
+  font-family: $awards-mono;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $awards-on-dark-soft;
+}
+
+.awards-honoree-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 0.5rem 2rem;
+
+  li {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: $awards-on-dark-soft;
+  }
+}
+
+/* Awards Links */
+.awards-links {
+  margin: 1rem 0 0;
+}
+
+.awards-card-foot .awards-attribution + .awards-links {
+  margin-top: 1.4rem;
+}
+
+.awards-viewall {
+  display: inline-block;
+  margin-right: 1.8rem;
+  padding-bottom: 0.2rem;
+  font-family: $awards-mono;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: inherit;
+  border-bottom: 2px solid currentColor;
+  text-decoration: none;
+  transition: letter-spacing 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+  }
+}
+
+/* Awards Era Tints */
+// 2009 and earlier: pale tile, navy ink.
+/* Historic tiles sit on paper with the awarding body's colour carried in a
+   top rule and the year, so the wall reads as varied without 15 competing
+   filled rectangles. The two recent team awards stay solid and dominant. */
+.awards-card {
+  border-top: 5px solid var(--awards-accent);
+  box-shadow: inset 0 0 0 1px rgba(22, 48, 107, 0.12);
+}
+
+.awards-card .awards-year {
+  color: var(--awards-accent);
+  opacity: 1;
+}
+
+.awards-card--un     { --awards-accent: #1c459b; }
+.awards-card--sla    { --awards-accent: #60c3b2; }
+.awards-card--si     { --awards-accent: #049dd9; }
+.awards-card--nasa   { --awards-accent: #0b6f96; }
+.awards-card--cfa    { --awards-accent: #7a5bd6; }
+.awards-card--ras    { --awards-accent: #e0702a; }
+.awards-card--aas    { --awards-accent: #c2185b; }
+.awards-card--nas    { --awards-accent: #5b7f22; }
+.awards-card--mpc    { --awards-accent: #b8860b; }
+.awards-card--asist  { --awards-accent: #2a7568; }
+.awards-card--other  { --awards-accent: #1c459b; }
+
+.awards-card--featured {
+  background: $awards-now-bg;
+  color: #fff;
+  border-top-color: #fff;
+
+  .awards-year,
+  .awards-card-title a {
+    color: #fff;
+  }
+
+  .awards-org,
+  .awards-program,
+  .awards-blurb,
+  .awards-attribution {
+    color: $awards-on-dark-soft;
+  }
+}
+
+.awards-card--hero {
+  background: $awards-hero-bg;
+  color: #fff;
+  border-top-color: #fff;
+  padding: clamp(2.6rem, 3.4vw, 4rem);
+
+  .awards-year {
+    font-size: clamp(5.2rem, 6.4vw, 7.6rem);
+    margin-bottom: 1.6rem;
+    opacity: 1;
+    color: #fff;
+  }
+
+  .awards-card-title {
+    font-size: clamp(2.6rem, 3.2vw, 3.6rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.2rem;
+  }
+
+  .awards-blurb {
+    font-size: 1.6rem;
+    line-height: 1.65;
+    max-width: 58rem;
+  }
+
+  .awards-org,
+  .awards-program,
+  .awards-blurb,
+  .awards-attribution {
+    color: $awards-on-dark-soft;
+  }
+}
+
+/* Awards Footnote */
+.awards-footnote {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: $awards-ink-soft;
+
+  .awards-viewall {
+    color: $awards-navy;
+  }
+}
+
+/* Awards Scroll Reveal */
+@keyframes awards-rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Tiles are only hidden once the IntersectionObserver script has run, so the
+// content stays visible without JavaScript.
+.awards-reveal-on .awards-section--heritage .awards-card {
+  opacity: 0;
+}
+
+.awards-reveal-on .awards-section--heritage .awards-card.is-revealed {
+  animation: awards-rise 0.45s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .awards-reveal-on .awards-section--heritage .awards-card {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+/* Awards Responsive */
+@media (max-width: 1100px) {
+  .awards-card {
+    padding: 2.2rem 2rem 2.4rem;
+  }
+
+  .awards-year {
+    font-size: 3.2rem;
+  }
+
+  .awards-card-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .awards-span-4,
+  .awards-span-6 {
+    grid-column: span 1;
+  }
+
+  .awards-span-8 {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .awards-span-4,
+  .awards-span-6,
+  .awards-span-8 {
+    grid-column: span 1;
+  }
+
+  .awards-honoree-list {
+    grid-template-columns: 1fr;
+  }
+
+  .awards-lede {
+    font-size: 1.7rem;
+  }
+
+  .awards-card--hero .awards-year {
+    font-size: 4.8rem;
+  }
+
+  .awards-card--hero .awards-card-title {
+    font-size: 2.4rem;
+  }
+}
+
+/* Awards Dark Mode */
+[data-theme='dark'] {
+  .awards-page,
+  .awards-section-title {
+    color: $darkmode-text-strong;
+  }
+
+  .awards-count {
+    color: $darkmode-text-strong;
+
+    span {
+      color: #7cb4ff;
+    }
+  }
+
+  .awards-lede,
+  .awards-section-intro,
+  .awards-footnote {
+    color: $darkmode-text;
+  }
+
+  .awards-footnote .awards-viewall {
+    color: #7cb4ff;
+  }
+
+  .awards-card {
+    background: #101826;
+    color: $darkmode-text-strong;
+    box-shadow: inset 0 0 0 1px rgba(124, 180, 255, 0.2);
+
+    .awards-org,
+    .awards-program,
+    .awards-blurb,
+    .awards-attribution {
+      color: #b4c2d6;
+    }
+  }
+
+
+  /* The two solid tiles keep their fill in dark mode, just deeper. */
+  .awards-card--featured {
+    background: #17345f;
+    border-top-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .awards-card--hero {
+    background: #112a5e;
+    border-top-color: rgba(255, 255, 255, 0.6);
+  }
+}

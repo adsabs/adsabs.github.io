@@ -1,15 +1,67 @@
 <!--googleoff: all-->
+{% assign u = page.url %}
+{% assign in_project = false %}
+{% if u contains '/about/history' or u contains '/about/awards' or u contains '/about/initiatives' %}
+  {% assign in_project = true %}
+{% endif %}
+{% assign in_people = false %}
+{% if u contains '/about/team' or u contains '/about/ambassador' or u contains '/about/adsug' or u contains '/about/careers' %}
+  {% assign in_people = true %}
+{% endif %}
+{% assign in_public = false %}
+{% if u contains '/about/documents' %}
+  {% assign in_public = true %}
+{% endif %}
 
-<nav class="help-nav">
+<nav class="help-nav scix-about-nav" aria-label="About ADS">
+  <div class="{% if u == '/about/' %} active {% endif %}">
+    <a href="{{ site.baseurl }}/about/">About ADS</a>
+  </div>
 
-    <div class="{% if '/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about">About </a></div>
-    <div class="{% if '/team/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/team">Team </a></div>
-    <div class="{% if '/ambassador/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/ambassador">Ambassador Program </a></div>
-    <div class="{% if '/history/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/history">History of ADS </a></div>
-    <div class="{% if '/adsug/adsug' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/adsug/adsug">ADS Users Group </a></div>
-    <div class="{% if '/documents/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/documents">Past Presentations</a></div>
-    <div class="{% if '/initiatives/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/initiatives">Initiatives </a></div>
-    <div class="{% if '/careers/index.html' == page.url %} active {% endif %}"> <a href="{{ site.baseurl }}/about/careers">Careers@ADS</a></div>
+  <div class="panel-group" id="ads-about-accordion" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" id="ads-about-project">
+        <a class="{% if in_project %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse" href="#ads-about-project-items" aria-expanded="{% if in_project %}true{% else %}false{% endif %}" aria-controls="ads-about-project-items">
+          <div class="{% if in_project %} active {% endif %}"><i class="fa fa-lg fa-caret-right" aria-hidden="true"></i> The project</div>
+        </a>
+      </div>
+      <div id="ads-about-project-items" class="panel-collapse collapse{% if in_project %} in{% endif %}" aria-labelledby="ads-about-project">
+        <ul class="list-group">
+          <a href="{{ site.baseurl }}/about/history/"><li class="list-group-item{% if u contains '/about/history' %} active{% endif %}">History</li></a>
+          <a href="{{ site.baseurl }}/about/initiatives/"><li class="list-group-item{% if u contains '/about/initiatives' %} active{% endif %}">Initiatives</li></a>
+          <a href="{{ site.baseurl }}/about/awards"><li class="list-group-item{% if u == '/about/awards' %} active{% endif %}">Awards</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" id="ads-about-people">
+        <a class="{% if in_people %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse" href="#ads-about-people-items" aria-expanded="{% if in_people %}true{% else %}false{% endif %}" aria-controls="ads-about-people-items">
+          <div class="{% if in_people %} active {% endif %}"><i class="fa fa-lg fa-caret-right" aria-hidden="true"></i> People</div>
+        </a>
+      </div>
+      <div id="ads-about-people-items" class="panel-collapse collapse{% if in_people %} in{% endif %}" aria-labelledby="ads-about-people">
+        <ul class="list-group">
+          <a href="{{ site.baseurl }}/about/team/"><li class="list-group-item{% if u contains '/about/team' %} active{% endif %}">Team</li></a>
+          <a href="{{ site.baseurl }}/about/adsug/adsug"><li class="list-group-item{% if u contains '/about/adsug' %} active{% endif %}">ADS Users Group</li></a>
+          <a href="{{ site.baseurl }}/about/ambassador/"><li class="list-group-item{% if u contains '/about/ambassador' %} active{% endif %}">Ambassador Program</li></a>
+          <a href="{{ site.baseurl }}/about/careers/"><li class="list-group-item{% if u contains '/about/careers' %} active{% endif %}">Careers</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" id="ads-about-public">
+        <a class="{% if in_public %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse" href="#ads-about-public-items" aria-expanded="{% if in_public %}true{% else %}false{% endif %}" aria-controls="ads-about-public-items">
+          <div class="{% if in_public %} active {% endif %}"><i class="fa fa-lg fa-caret-right" aria-hidden="true"></i> In public</div>
+        </a>
+      </div>
+      <div id="ads-about-public-items" class="panel-collapse collapse{% if in_public %} in{% endif %}" aria-labelledby="ads-about-public">
+        <ul class="list-group">
+          <a href="{{ site.baseurl }}/about/documents/"><li class="list-group-item{% if u contains '/about/documents' %} active{% endif %}">Presentations</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
-
 <!--googleon: all-->

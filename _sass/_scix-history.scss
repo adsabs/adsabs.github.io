@@ -1,0 +1,559 @@
+// SciX History page.
+//
+// Standalone on purpose. The wider About redesign lives on another branch and
+// will bring a full _about-story partial with it; this file carries only what
+// the history page needs so the page can ship on its own. When the larger work
+// lands, these rules are superseded and this file can go.
+//
+// Bootstrap sets html { font-size: 10px }, so 1rem = 10px.
+
+$scixhist-navy: #1c459b;
+$scixhist-cyan: #049dd9;
+$scixhist-ink: #333;
+$scixhist-muted: #555;
+// Awards are marked in gold, which is the SciX brand yellow. At full strength
+// it measures 2.3:1 on white, so it carries the decoration only; the label
+// uses the same hue darkened to 5.8:1.
+$scixhist-gold: #bfac4b;
+$scixhist-gold-ink: #716528;
+
+/* Page masthead
+   These pages set no-header and render their own, so the default grey
+   .post-title is bypassed. Eyebrow, display heading, standfirst. */
+.about-masthead {
+  margin: 0 0 1.6em;
+  padding-bottom: 1.2em;
+  border-bottom: 1px solid #dce3ea;
+}
+
+
+.about-title {
+  margin: 0;
+  font-size: clamp(3rem, 2.2vw + 2rem, 4.6rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: $scixhist-navy;
+}
+
+.about-standfirst {
+  margin: 0.5em 0 0;
+  font-size: clamp(1.8rem, 0.5vw + 1.6rem, 2.1rem);
+  line-height: 1.4;
+  color: $scixhist-muted;
+  max-width: 58ch;
+}
+
+// Moved off the inline style the layout used to carry, so the dark mode rule
+// at the bottom of this file can win.
+.post-subtitle {
+  color: #666;
+  margin-top: -10px;
+  font-weight: bolder;
+}
+
+.about-story {
+  color: $scixhist-ink;
+  font-size: clamp(1.6rem, 0.35vw + 1.5rem, 1.8rem);
+  line-height: 1.65;
+
+  p {
+    margin: 0 0 1em;
+    max-width: 78ch;
+  }
+
+  a {
+    color: $scixhist-cyan;
+  }
+}
+
+.about-lead {
+  font-size: clamp(1.8rem, 0.55vw + 1.6rem, 2.3rem);
+  line-height: 1.45;
+  color: $scixhist-ink;
+  max-width: 62ch;
+  margin-bottom: 1.2em;
+}
+
+// Section headings. The class is qualified with .about-story so it outranks
+// the element selector above it; a bare .about-group-title loses the cascade
+// to `.about-story h3` and renders at body size.
+.about-story .about-group-title {
+  font-size: clamp(2rem, 0.6vw + 1.8rem, 2.4rem);
+  font-weight: 700;
+  color: $scixhist-navy;
+  margin: 1.8em 0 0.5em;
+}
+
+/* Timeline
+   Milestone cards on a central rail, alternating left and right. Five
+   milestones is the right count: enough to read as a journey, few enough
+   that nothing crowds. */
+.about-timeline {
+  position: relative;
+  list-style: none;
+  margin: 2em 0 2.6em;
+  padding: 1rem 0;
+}
+
+// Rail. Fades out at both ends so it reads as a span of time rather than an
+// arrow running off the page.
+.about-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: linear-gradient(
+    180deg,
+    rgba(4, 157, 217, 0) 0%,
+    $scixhist-cyan 8%,
+    $scixhist-cyan 92%,
+    rgba(4, 157, 217, 0) 100%
+  );
+  opacity: 0.45;
+}
+
+.about-timeline-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
+  align-items: center;
+  margin-bottom: 1.6rem;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+// Year rides on the rail, on its own paper, so the line passes behind it.
+.about-timeline-year {
+  grid-column: 2;
+  margin: 0;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: $scixhist-navy;
+  background: #fff;
+  padding: 6px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.about-timeline-card {
+  grid-row: 1;
+  padding: 1.5rem 1.7rem;
+  background: #fff;
+  border: 1px solid #dce3ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(16, 32, 56, 0.06);
+  position: relative;
+}
+
+.about-timeline-row--left  .about-timeline-card { grid-column: 1; margin-right: 10px; }
+.about-timeline-row--right .about-timeline-card { grid-column: 3; margin-left: 10px; }
+
+// Tick joining card to rail.
+.about-timeline-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: $scixhist-cyan;
+  opacity: 0.5;
+}
+
+.about-timeline-row--left  .about-timeline-card::after { right: -10px; }
+.about-timeline-row--right .about-timeline-card::after { left: -10px; }
+
+.about-timeline-title {
+  margin: 0 0 4px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: $scixhist-navy;
+}
+
+.about-timeline-body {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.55;
+  color: $scixhist-muted;
+}
+
+.about-timeline-tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  background: #eef6fb;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: $scixhist-cyan;
+}
+
+/* Award satellites.
+   Deliberately unchromed: a card competing with the milestone card would read
+   as a second event. These are marginal annotations, set in the opposite
+   margin and tethered to the rail by a hairline. */
+.about-timeline-award {
+  grid-row: 1;
+  position: relative;
+  padding: 2px 0;
+  align-self: center;
+}
+
+.about-timeline-row--left  .about-timeline-award { grid-column: 3; margin-left: 10px; }
+.about-timeline-row--right .about-timeline-award { grid-column: 1; margin-right: 10px; text-align: right; }
+
+// The long tether back to the rail, with a small open marker at the far end.
+.about-timeline-award::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 26px;
+  height: 1px;
+  background: $scixhist-gold;
+  opacity: 0.6;
+}
+
+.about-timeline-award::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid $scixhist-gold;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.about-timeline-row--left .about-timeline-award {
+  padding-left: 34px;
+  border-left: 2px solid rgba(191, 172, 75, 0.5);
+
+  &::before { left: -10px; }
+  &::after  { left: 20px; }
+}
+
+.about-timeline-row--right .about-timeline-award {
+  padding-right: 34px;
+  border-right: 2px solid rgba(191, 172, 75, 0.5);
+
+  &::before { right: -10px; }
+  &::after  { right: 20px; }
+}
+
+.about-timeline-award-org {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $scixhist-gold-ink;
+  margin-bottom: 3px;
+}
+
+.about-timeline-award-name {
+  display: block;
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.35;
+  color: $scixhist-navy;
+}
+
+.about-timeline-award-quote {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: $scixhist-muted;
+}
+
+// Rows carrying only a recognition, with no milestone of their own.
+.about-timeline-row--awardonly .about-timeline-year {
+  font-weight: 700;
+  color: $scixhist-muted;
+}
+
+// Too narrow for two columns: rail moves left, cards line up under it.
+@media (max-width: 820px) {
+  .about-timeline::before { left: 7px; }
+
+  .about-timeline-row {
+    grid-template-columns: 1fr;
+    margin-bottom: 1.2rem;
+    padding-left: 32px;
+  }
+
+  .about-timeline-year {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    padding: 0 0 4px;
+    background: none;
+  }
+
+  .about-timeline-row--left .about-timeline-card,
+  .about-timeline-row--right .about-timeline-card {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  .about-timeline-card::after { display: none; }
+
+  .about-timeline-row--left .about-timeline-award,
+  .about-timeline-row--right .about-timeline-award {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    text-align: left;
+    border-top: 1px solid #dce3ea;
+
+    &::before,
+    &::after { display: none; }
+  }
+
+  .about-timeline-row::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $scixhist-cyan;
+    box-shadow: 0 0 0 4px #fff;
+    z-index: 2;
+  }
+}
+
+/* Dark mode */
+[data-theme='dark'] {
+  .about-story {
+    color: $darkmode-text;
+  }
+
+  .about-lead {
+    color: $darkmode-text-strong;
+  }
+
+  .about-masthead {
+    border-bottom-color: $darkmode-border;
+  }
+
+  .about-title {
+    color: $darkmode-text-strong;
+  }
+
+  .about-standfirst {
+    color: $darkmode-text;
+  }
+
+  .about-story .about-group-title {
+    color: $darkmode-text-strong;
+  }
+
+  .about-story a {
+    color: $darkmode-link;
+  }
+
+  .about-timeline-year {
+    color: $darkmode-text-strong;
+    background: $darkmode-background;
+  }
+
+  .about-timeline-card {
+    background: $darkmode-background-secondary;
+    border-color: $darkmode-border;
+    box-shadow: none;
+  }
+
+  .about-timeline-title {
+    color: $darkmode-text-strong;
+  }
+
+  .about-timeline-body {
+    color: $darkmode-text;
+  }
+
+  .about-timeline-tag {
+    background: rgba(4, 157, 217, 0.14);
+  }
+
+  .about-timeline-row::before {
+    box-shadow: 0 0 0 4px $darkmode-background;
+  }
+
+  // The sub-page heading and subtitle are mid greys from the base stylesheet
+  // and fall below contrast on the dark background.
+  .post-title,
+  .post-subtitle {
+    color: $darkmode-text-strong;
+  }
+}
+
+/* Growth chart
+   Markers are announced figures. The styling keeps them visibly discrete so
+   the line never reads as a continuous measurement it is not. */
+.about-growth,
+.about-legacy {
+  margin-top: 2.6em;
+}
+
+.about-chart {
+  margin: 1.6em 0 1.4em;
+  padding: 1.6rem 1.2rem 1rem;
+  border: 1px solid #dce3ea;
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.about-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.about-chart figcaption {
+  margin-top: 0.8em;
+  padding: 0 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: $scixhist-muted;
+}
+
+.gc-grid { stroke: #e9eef4; stroke-width: 1; }
+.gc-axis { stroke: #c6d2e0; stroke-width: 1.5; }
+
+.gc-ylab,
+.gc-xlab {
+  font-size: 12px;
+  fill: #8a97a6;
+}
+
+.gc-seg { shape-rendering: crispEdges; }
+.gc-over { shape-rendering: crispEdges; }
+
+.gc-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0 0.6rem;
+  font-size: 1.3rem;
+  color: $scixhist-muted;
+
+  li { display: flex; align-items: center; }
+
+  i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
+    border-radius: 2px;
+  }
+}
+
+.gc-legend-hatch {
+  background: repeating-linear-gradient(
+    45deg,
+    #5b6b7f 0 2px,
+    #fff 2px 5px
+  );
+  border: 1px solid #c6d2e0;
+}
+
+[data-theme='dark'] {
+  .about-chart {
+    background: $darkmode-background-secondary;
+    border-color: $darkmode-border;
+  }
+
+  .about-chart figcaption { color: $darkmode-text-secondary; }
+
+  .gc-grid { stroke: #22303f; }
+  .gc-legend { color: $darkmode-text-secondary; }
+  .gc-legend-hatch { background: repeating-linear-gradient(45deg, #8b949e 0 2px, #0d1117 2px 5px); border-color: $darkmode-border; }
+  .gc-axis { stroke: #3a4a5c; }
+  .gc-ylab,
+  .gc-xlab { fill: $darkmode-text-secondary; }
+
+  .about-timeline-award-org,
+  .about-timeline-award-quote { color: $darkmode-text-secondary; }
+
+  .about-timeline-award-name { color: $darkmode-text-strong; }
+
+  .about-timeline-award::before { background: $scixhist-gold; opacity: 0.7; }
+  .about-timeline-award::after  { border-color: $scixhist-gold; background: $darkmode-background; }
+  .about-timeline-award-org { color: $scixhist-gold; }
+
+  .about-timeline-row--left .about-timeline-award { border-left-color: rgba(191, 172, 75, 0.45); }
+  .about-timeline-row--right .about-timeline-award { border-right-color: rgba(191, 172, 75, 0.45); }
+}
+
+/* Small multiples under the main chart */
+.gc-sm {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.4rem;
+}
+
+.gc-sm-title {
+  font-size: 13px;
+  font-weight: 700;
+  fill: $scixhist-navy;
+}
+
+.gc-sm-peak {
+  font-size: 11px;
+  fill: #8a97a6;
+}
+
+.gc-sm-lab {
+  font-size: 10px;
+  fill: #a7b2be;
+}
+
+.gc-sm-axis {
+  stroke: #d9e1ea;
+  stroke-width: 1;
+}
+
+.gc-sm-note {
+  margin: 0.6rem 0 0;
+  padding: 0 0.6rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: $scixhist-muted;
+}
+
+[data-theme='dark'] {
+  .gc-sm-title { fill: $darkmode-text-strong; }
+  .gc-sm-peak,
+  .gc-sm-lab { fill: $darkmode-text-secondary; }
+  .gc-sm-axis { stroke: $darkmode-border; }
+  .gc-sm-note { color: $darkmode-text-secondary; }
+}
+
+.gc-sm-ylab {
+  font-size: 10px;
+  fill: #8a97a6;
+}
+
+.gc-sm-grid {
+  stroke: #e9eef4;
+  stroke-width: 1;
+}
+
+[data-theme='dark'] {
+  .gc-sm-ylab { fill: $darkmode-text-secondary; }
+  .gc-sm-grid { stroke: #22303f; }
+}

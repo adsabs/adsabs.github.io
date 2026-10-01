@@ -1,0 +1,375 @@
+# Awards and recognition for SciX and the NASA Astrophysics Data System (ADS).
+#
+# Rendered by _includes/_awards/awards.md, which is included by
+# about/awards.md (ADS branding) and scixabout/awards.md (SciX branding).
+#
+# Section fields
+#   id          slug used for the section id attribute and for Liquid lookups
+#   eyebrow     small uppercase label above the section heading
+#   title       section heading
+#   intro_scix  framing paragraph shown on the SciX page (HTML allowed)
+#   intro_ads   framing paragraph shown on the ADS page (HTML allowed)
+#   awards      list of awards, kept in strictly descending year order; the
+#               page renders them in this order, and the span values are
+#               chosen so each row of the 12 column grid adds up to 12
+#
+# Award fields
+#   id           unique slug, used for the card id attribute
+#   variant      set to `hero` for the single headline award; omit otherwise
+#   span         tile width in columns of a 12 column grid (8, 6 or 4)
+#   year         four digit year, rendered as the large numeral on the tile.
+#                The year also sets the tile tint: 2020s tiles are deep navy,
+#                2010s tiles are mid blue, earlier tiles are pale blue, so the
+#                wall lightens as it goes back in time
+#   organization awarding body, rendered as the eyebrow label
+#   name         award title
+#   url          primary link for the award title; omit to leave it unlinked
+#   program      awarding programme, when it differs from the award name
+#   recipient    who received the award
+#   blurb        one or two sentences of HTML
+#   quote        verbatim citation, rendered as a blockquote
+#   attribution  HTML source note, shown under the quote
+#   links        extra outbound links, each with a label and a url
+#   honorees     named honorees; only the 2026 feature uses this
+
+sections:
+  - id: scix
+    eyebrow: Science Explorer
+    title: Recognition for SciX
+    intro_scix: >-
+      SciX is a NASA-funded open search engine for astrophysics, Earth
+      science, heliophysics, planetary science and physics. The two most
+      recent honors went to the team as a whole, for expanding a thirty-year
+      astronomy service into a discovery engine for all of the Earth and
+      space sciences.
+    intro_ads: >-
+      Science Explorer (SciX) is the multidisciplinary search engine that
+      grew out of ADS. The two most recent honors went to the team as a
+      whole, for expanding a thirty-year astronomy service into a discovery
+      engine for all of the Earth and space sciences.
+    awards:
+      - id: smithsonian-digital-innovation-2026
+        variant: hero
+        span: 8
+        year: 2026
+        organization: Smithsonian Institution
+        name: Smithsonian Digital Innovation Award
+        # URL PENDING. The Smithsonian has not published a public page for the
+        # Smithsonian Excellence in Digital Awards 2026, so `url` is
+        # deliberately unset and the award title renders unlinked. Add the
+        # official link here once it is live; no placeholder URL is invented.
+        program: Smithsonian Excellence in Digital Awards 2026
+        recipient: the SciX Team
+        # Wording follows the Smithsonian's own announcement.
+        blurb: >-
+          The category recognizes a team's ability to solve institutional
+          challenges by applying innovative technologies, tools or processes.
+          The citation credits SciX with expanding the long-running
+          Astrophysics Data System beyond astronomy into the Earth,
+          environmental, planetary and space sciences, and with connecting
+          papers to the datasets, software, observing proposals, grants,
+          references and citations behind them rather than returning lists of
+          publications.
+        quote: >-
+          SciX has extended a research infrastructure that astronomers have
+          relied on for decades to many more scientific communities and
+          provides a free, expertly curated and interconnected body of
+          scientific knowledge that can serve as a trustworthy foundation for
+          both human research and emerging AI-assisted scientific discovery.
+        attribution: Smithsonian Excellence in Digital Awards 2026 citation
+        honorees:
+          - Dr. Alberto Accomazzi
+          - Dr. Kelly Lockhart
+          - Dr. Taylor Jacovich
+          - Dr. Mugdha Polimera
+          - Jean-Claude Paquin
+          - Fernanda de Macedo Alves
+          - Tim Hostetler
+          - Shinyi (Jennifer) Chen
+          - Dr. Felix Grezes
+          - Dr. Matthew Templeton
+          - Dr. Tom Allen
+          - Edwin Henneken
+          - Carolyn Stern Grant
+          - Dr. Jeffrey Pomerantz
+          - Jennifer March
+          - Daniel Chivvis
+          - Dr. Jennifer Bartlett
+          - Dr. Anna Kelbert
+          - Paul Di Re
+          - Dr. Atilla Kaan Alkan
+
+      - id: nasa-group-achievement-indus-2025
+        variant: featured
+        span: 4
+        year: 2025
+        organization: NASA
+        name: NASA Agency Group Achievement Award
+        url: https://science.nasa.gov/open-science/ai-language-model-science-research/
+        recipient: the team behind INDUS
+        blurb: >-
+          Awarded for the development of INDUS, a language model for
+          scientific research built through a collaboration between NASA and
+          IBM.
+        links:
+          - label: IBM Research announcement
+            url: https://research.ibm.com/blog/nasa-award-ibm-foundation-model
+
+  - id: heritage
+    eyebrow: 2001 to 2023
+    title: Earlier recognition, 2001 to 2023
+    intro_scix: >-
+      The record below spans awards to the team as a whole, awards to
+      individual team members, and recognition earned by the NASA
+      Astrophysics Data System (ADS), the legacy product SciX grew out of.
+      ADS folds fully into SciX by 2027, so these citations form one
+      continuous record for one long-running service.
+    intro_ads: >-
+      The record below spans awards to the team as a whole, awards to
+      individual team members, and recognition earned by ADS itself. ADS is
+      the legacy product that SciX grew out of and folds fully into SciX by
+      2027, so these citations form one continuous record rather than the
+      record of two separate institutions.
+    awards:
+      - id: adass-software-prize-2023
+        span: 8
+        year: 2023
+        organization: ADASS
+        name: >-
+          Software Prize for an Outstanding Contribution to Astronomical
+          Software
+        url: https://adass.org/softwareprize.html
+        recipient: Alberto Accomazzi and the ADS Team
+        blurb: >-
+          Awarded in recognition of the outstanding contribution of ADS to the
+          astronomical software community and the positive impact it has on
+          many astronomy projects and scientists.
+
+      - id: smithsonian-secretarys-research-2019
+        span: 4
+        year: 2019
+        organization: Smithsonian Institution
+        name: Secretary's Research Award
+        url: https://pweb.cfa.harvard.edu/news/dr-alberto-accomazzi-awarded-sis-2019-secretary-research-prize
+        recipient: Alberto Accomazzi
+        blurb: >-
+          Awarded in the category of <em>scholarly web site</em> for the new
+          ADS website.
+
+      - id: cfa-strategic-plan-2019
+        span: 4
+        year: 2019
+        organization: Center for Astrophysics | Harvard &amp; Smithsonian
+        name: CfA Strategic Plan 2019-2024
+        url: https://www.cfa.harvard.edu/do/comms/CfA_Strategic_Plan_2019-2024.pdf
+        blurb: The Center commended ADS in its strategic plan.
+        quote: >-
+          A prime example of the CfA ground-breaking efforts in the data and
+          literature arena is provided by the NASA-funded Astrophysics Data
+          System (ADS), which provides a first-class interface to the astronomy
+          and astrophysics literature, serving the international astronomical
+          community as its primary connection to its literature.
+        attribution: CfA strategic plan for 2019-2024.
+
+      - id: asist-best-jasist-paper-2018
+        span: 4
+        year: 2018
+        organization: Association for Information Science &amp; Technology
+        name: Best JASIST Paper Award
+        url: https://www.asist.org/news/kurtz-henneken-win-best-jasist-paper-award/
+        recipient: Michael Kurtz and Edwin Henneken
+        blurb: >-
+          Awarded for their paper &ldquo;Measuring Metrics &#8212; A 40-Year
+          Longitudinal Cross-Validation of Citations, Downloads, and Peer
+          Review in Astrophysics&rdquo; in the <em>Journal of the Association
+          for Information Science &amp; Technology</em>.
+
+      - id: sla-pam-division-award-2018
+        span: 4
+        year: 2018
+        organization: Special Libraries Association
+        name: Physics, Astronomy, and Mathematics Division Award
+        url: http://pam.sla1.org/report-of-the-awards-presentation/
+        recipient: the Astrophysics Data System
+        quote: >-
+          ADS is not only an outstanding provider of information but an
+          integral and involved part of the physics and astronomy communities.
+        attribution: >-
+          Special Libraries Association, report of the awards presentation.
+
+      - id: sla-pam-achievement-award-2016
+        span: 4
+        year: 2016
+        organization: Special Libraries Association
+        name: Physics, Astronomy and Mathematics Achievement Award
+        url: http://pam.sla1.org/2016-pam-awards/
+        recipient: Donna Thompson
+        blurb: >-
+          Awarded for outstanding contributions to the division and her
+          professional work at ADS, marked by distinction and dedication to
+          librarianship in astronomy and physics.
+
+      - id: minor-planet-69287-2015
+        span: 4
+        year: 2015
+        organization: Minor Planet Center
+        name: Minor Planet 69287 Gunthereichhorn
+        url: https://minorplanetcenter.net/iau/ECS/MPCArchive/2015/MPC_20150928.pdf
+        recipient: Günther Eichhorn
+        blurb: >-
+          Minor Planet 69287 was named Gunthereichhorn for Günther Eichhorn,
+          who developed and managed the Astrophysics Data System from 1992 to
+          2007.
+        attribution: >-
+          <strong>Minor Planet Circular 95804</strong>, 28 September 2015.
+
+      - id: ras-services-to-astronomy-2008
+        span: 4
+        year: 2008
+        organization: Royal Astronomical Society
+        name: Award for Services to Astronomy
+        url: http://www.ras.org.uk/news-and-press/news-archive/204-news2008/1384
+        recipient: Günther Eichhorn
+        blurb: >-
+          Awarded for his work as project manager of the Astrophysics Data
+          System.
+        quote: >-
+          the project manager for the Astrophysics Data System (ADS), the
+          online database that includes the vast majority of astronomical
+          literature. ADS gives open access to astronomical research material
+          and has revolutionised the field, allowing astronomers and others to
+          investigate publications on an equal basis.
+        attribution: Royal Astronomical Society press release, 2008.
+
+      - id: nasa-archival-senior-review-2008
+        span: 4
+        year: 2008
+        organization: NASA Astrophysics Archival Senior Review Panel
+        name: Senior Review Assessment
+        url: https://smd-prod.s3.amazonaws.com/science-red/s3fs-public/atoms/files/ApArchSR-2008_final.pdf
+        blurb: >-
+          The panel ranked ADS first among six projects in its 2008
+          assessment.
+        quote: >-
+          ADS is so extensively used by the entire professional astronomy
+          community that it is hard to imagine existing without it.
+        attribution: >-
+          NASA Astrophysics Archival Senior Review Panel, 2008 report.
+
+      - id: un-commendation-2005
+        span: 8
+        year: 2005
+        organization: United Nations General Assembly
+        name: Commendation of the ADS Mirror Sites
+        url: http://www.unoosa.org/pdf/reports/ac105/AC105_856E.pdf
+        quote: >-
+          the mirror sites of the NASA-funded Astrophysics Data System (ADS)
+          . . . had been enthusiastically accepted by the scientific community
+          and had become important assets for developing countries . . .
+        attribution: >-
+          Excerpt from the United Nations Committee on the Peaceful Uses of
+          Outer Space, &ldquo;Report on the United Nations/European Space
+          Agency/National Aeronautics and Space Administration of the United
+          States of America Workshop on the International Heliophysical Year
+          2007&rdquo; (Abu Dhabi and Al-Ain, United Arab Emirates, 20-23
+          November 2005), report number A/AC105_856.
+
+      - id: un-commendation-2004
+        span: 6
+        year: 2004
+        organization: United Nations General Assembly
+        name: Commendation of Open Access Road Maps
+        url: http://www.unoosa.org/pdf/reports/ac105/AC105_829E.pdf
+        quote: >-
+          its work and success in laying out and implementing road maps for the
+          improved access for all scientists to the scientific literature . . .
+        attribution: >-
+          Excerpt from the United Nations Committee on the Peaceful Uses of
+          Outer Space, &ldquo;Report on the Twelfth United Nations/European
+          Space Agency Workshop on Basic Space Science&rdquo; (Beijing, 24-28
+          May 2004), report number A/AC105_829.
+
+      - id: cfa-visiting-committee-2002
+        span: 6
+        year: 2002
+        organization: Harvard-Smithsonian Center for Astrophysics Visiting Committee
+        name: Visiting Committee Report
+        quote: >-
+          It is no exaggeration to say that ADS has revolutionized the use of
+          the astronomical literature, dramatically changed the use and focus
+          of astronomical libraries, empowered astronomy research in
+          underdeveloped countries and small institutions, and is probably the
+          most valuable single contribution to astronomy research that the CfA
+          has made in its lifetime.
+        attribution: Report of the CfA Visiting Committee, 2002.
+
+      - id: aas-van-biesbroeck-prize-2001
+        span: 8
+        year: 2001
+        organization: American Astronomical Society
+        name: George Van Biesbroeck Prize
+        url: https://aas.org/grants-and-prizes/george-van-biesbroeck-prize
+        recipient: Michael Kurtz
+        quote: >-
+          ... the visionary designer of the Astrophysics Data System (ADS)
+          which clearly has revolutionized for over a decade the speed and
+          thoroughness in which astronomers now can search and access the vast
+          and still growing technical literature.
+        attribution: >-
+          Excerpt from <strong>Physics Today</strong>, vol. 54, issue 6, p. 72.
+        links:
+          - label: Physics Today citation
+            url: http://physicstoday.scitation.org/doi/10.1063/1.1387600
+
+      - id: un-commendation-2001
+        span: 4
+        year: 2001
+        organization: United Nations General Assembly
+        name: Commendation of Literature Access
+        url: http://www.unoosa.org/pdf/reports/ac105/AC105_766E.pdf
+        quote: >-
+          . . . noted the great value of NASA's Astrophysics Data System in
+          providing access to astronomical literature. Participants urge
+          industrialized countries to ensure continuing support for free access
+          to the system . . .
+        attribution: >-
+          Excerpt from the United Nations Committee on the Peaceful Uses of
+          Outer Space, &ldquo;Report on the Tenth United Nations/European Space
+          Agency Workshop on Basic Space Science: Exploring the Universe; Sky
+          Surveys, Space Exploration and Space Technologies&rdquo; (Reduit,
+          Mauritius, 25-29 June 2001), report number A/AC.105.766.
+
+      - id: national-academy-of-science-2001
+        span: 6
+        year: 2001
+        organization: U.S. National Academy of Science
+        name: Astronomy and Astrophysics in the New Millennium
+        url: https://nap.nationalacademies.org/read/9839/chapter/8#193
+        quote: >-
+          NASA's initiative for the Astrophysics Data System has vastly
+          increased the accessibility of the scientific literature for
+          astronomers. NASA deserves credit for this valuable initiative and is
+          urged to continue it.
+        attribution: >-
+          Excerpt from <strong>Astronomy and Astrophysics in the New
+          Millennium</strong>, 2001, &ldquo;Policy Recommendations for NASA:
+          Space-Based Astronomy&rdquo; section, p. 193.
+
+      - id: sla-pam-division-award-2001
+        span: 6
+        year: 2001
+        organization: Special Libraries Association
+        name: Physics, Astronomy and Mathematics Division Award
+        url: http://pam.sla.org/manual/awards/division-winners-list/
+        recipient: Günther Eichhorn
+        quote: >-
+          in the genesis and growth of the Astrophysics Data System, the
+          development of which represents an unparalleled shift in the
+          propagation of the literature of astronomy. ... Under your
+          leadership, the ADS ... has become an indispensable aid to
+          astronomical research.
+        attribution: >-
+          Excerpt from <strong>Physics Today</strong>, vol. 54, issue 8, p. 61.
+        links:
+          - label: Physics Today citation
+            url: http://physicstoday.scitation.org/doi/10.1063/1.2405666

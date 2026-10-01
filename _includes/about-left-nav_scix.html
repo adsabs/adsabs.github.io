@@ -5,12 +5,16 @@ All three drawers render open. cur_* only marks which section the current page
 sits in, so the group heading can be highlighted without collapsing the others.
 {%- endcomment -%}
 {% assign cur_project = false %}
-{% if u contains '/scixabout/history' or u contains '/scixabout/initiatives' %}
+{% if u contains '/scixabout/history' or u contains '/scixabout/awards' or u contains '/scixabout/initiatives' %}
   {% assign cur_project = true %}
 {% endif %}
 {% assign cur_people = false %}
 {% if u contains '/scixabout/team' or u contains '/scixabout/advisory_board' or u contains '/scixabout/ambassador' or u contains '/scixabout/careers' %}
   {% assign cur_people = true %}
+{% endif %}
+{% assign cur_public = false %}
+{% if u contains '/scixabout/media' or u contains '/scixabout/presentations' or u contains '/scixabout/outreach' %}
+  {% assign cur_public = true %}
 {% endif %}
 
 <nav class="help-nav scix-about-nav" aria-label="About SciX">
@@ -29,6 +33,7 @@ sits in, so the group heading can be highlighted without collapsing the others.
         <ul class="list-group">
           <a href="{{ site.baseurl }}/scixabout/history/"><li class="list-group-item{% if u contains '/scixabout/history' %} active{% endif %}">History</li></a>
           <a href="{{ site.baseurl }}/scixabout/initiatives/"><li class="list-group-item{% if u contains '/scixabout/initiatives' %} active{% endif %}">Initiatives</li></a>
+          <a href="{{ site.baseurl }}/scixabout/awards"><li class="list-group-item{% if u == '/scixabout/awards' %} active{% endif %}">Awards</li></a>
         </ul>
       </div>
     </div>
@@ -45,6 +50,21 @@ sits in, so the group heading can be highlighted without collapsing the others.
           <a href="{{ site.baseurl }}/scixabout/advisory_board/"><li class="list-group-item{% if u contains '/scixabout/advisory_board' %} active{% endif %}">Advisory Board</li></a>
           <a href="{{ site.baseurl }}/scixabout/ambassador/"><li class="list-group-item{% if u contains '/scixabout/ambassador' %} active{% endif %}">Ambassador Program</li></a>
           <a href="{{ site.baseurl }}/scixabout/careers/"><li class="list-group-item{% if u contains '/scixabout/careers' %} active{% endif %}">Careers</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" id="scix-about-public">
+        <a class="expanded" role="button" data-toggle="collapse" href="#scix-about-public-items" aria-expanded="true" aria-controls="scix-about-public-items">
+          <div class="{% if cur_public %} active {% endif %}"><i class="fa fa-lg fa-caret-down" aria-hidden="true"></i> Media and outreach</div>
+        </a>
+      </div>
+      <div id="scix-about-public-items" class="panel-collapse collapse in" aria-labelledby="scix-about-public">
+        <ul class="list-group">
+          <a href="{{ site.baseurl }}/scixabout/media/"><li class="list-group-item{% if u contains '/scixabout/media' %} active{% endif %}">Media</li></a>
+          <a href="{{ site.baseurl }}/scixabout/presentations/"><li class="list-group-item{% if u contains '/scixabout/presentations' %} active{% endif %}">Presentations</li></a>
+          <a href="{{ site.baseurl }}/scixabout/outreach/"><li class="list-group-item{% if u contains '/scixabout/outreach' %} active{% endif %}">Outreach</li></a>
         </ul>
       </div>
     </div>

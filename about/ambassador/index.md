@@ -19,28 +19,6 @@ The 2024-26 SciX Lead Ambassadors, our first cohort, achieved an exciting lineup
 
 - Engagement in high-visibility events to represent and promote SciX initiatives.
 
-**2025-27 SciX Lead Ambassadors**:
-- [Alvin Angeles](../ambassador/team/Angeles.html) (Heliophysics)
-- [Anna Cammaro](../ambassador/team/Cammaro.html) (Science Education, Space Advocacy)
-- [Saswati Das](../ambassador/team/Das.html) (Biochemistry, Chemical Pathology)
-- [Vincent Ledvina](../ambassador/team/Ledvina.html) (Space Physics, Space Weather)
-- [Brooke Long-Fox](../ambassador/team/Long-Fox.html) (Conservation Paleobiology)
-- [Jodie McLennan](../ambassador/team/McLennan.html) (Space Physics, Space Weather)
-- [Murti Nauth](../ambassador/team/Nauth.html) (Planetary Science)
-- [Cielo Sharkus](../ambassador/team/Sharkus.html) (Civil and Environmental Engineering)
-- [Keith Siew](../ambassador/team/Siew.html) (Medicine, Physiology)
-  
-**2024-26 SciX Lead Ambassadors**:
-- [Simon Anghel](../ambassador/team/Anghel.html) (Astronomy, Physics)
-- [Thom Chaffee](../ambassador/team/Chaffee.html) (Geophysics, Geology)
-- [Yueyi Che](../ambassador/team/Che.html) (Glaciology, Geology)
-- [Gwyneth Hutchinson](../ambassador/team/Hutchinson.html) (Bioengineering)
-- [Chenyue Jiao](../ambassador/team/Jiao.html) (Information Sciences)
-- [Sarah Lamm](../ambassador/team/Lamm.html) (Geology)
-- [Manuel Pichardo Marcano](../ambassador/team/PichardoMarcan.html) (Astronomy)
-- [Amirhosein Mousavi](../ambassador/team/Mousavi.html) (Earth Data Science)
-- [Anand “Sunny” Narayanan](../ambassador/team/Narayanan.html) (Space and Medical Physiology)
-- [Tieza Mica Santos](../ambassador/team/Santos.html) (Environmental Sciences and Policy)
-- [Olivia Wilkins](../ambassador/team/Wilkins.html) (Astrochemistry)
+{% include _about/ambassador-grid.md root="/about/ambassador/team" %}
 
 If you have comments or questions about SciX, you are welcome to contact any Ambassador directly, although the preferred way to get in touch with SciX staff is through our support email ([help [at] scixplorer.org](mailto:help@scixplorer.org)), which guarantees a timely reply to your inquiry.

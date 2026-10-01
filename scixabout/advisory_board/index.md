@@ -1,15 +1,18 @@
 ---
 layout: about_scix
 title: "SciX Advisory Board"
+subtitle: "Researchers and information scientists who advise the project"
 ---
 
-The Science Explorer Advisory Board (SciX AB) advises SciX on the operations of the project and recommends changes and improvements to both its services and procedures in order to maximize the scientific productivity of the communities it serves. SciX AB will advocate for the user communities and provide suggestions regarding content curation, technical infrastructure, management, and priority setting. SciX AB will make its reports to the SciX Principal Investigator (PI).
+The Science Explorer Advisory Board advises SciX on how the project is run and recommends changes to its services and procedures, with the aim of making the communities SciX serves more productive. The board advocates for users and gives the team guidance on content curation, technical infrastructure, management and priorities. It reports to the SciX Principal Investigator.
 
-The SciX AB held two meetings in 2025, in February (virtual) and in June (hybrid), and produced a report published in October 2025.
+Members are drawn from across the sciences SciX covers, from geophysics and oceanography to planetary science, climate science and knowledge representation, along with librarians and information scientists.
+
+The board met twice in 2025, in February online and in June in person, and published a report in October 2025.
 
 **[Read the SciX AB Report for the In-Person Meeting - June 11-12, 2025](https://ads.harvard.edu/adsug/2025/SciXAB_Oct2025.pdf)**
 
-Get to know the SciX AB members.
+The current members are below.
 
 ---
 

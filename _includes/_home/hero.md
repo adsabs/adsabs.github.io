@@ -20,14 +20,14 @@
     
     <div class="hero-stats">
       <div class="stat-card">
-        <div class="stat-number">30M+</div>
+        <div class="stat-number">36M+</div>
         <div class="stat-label">Scientific Documents</div>
         <div class="stat-icon"><i class="fa fa-database"></i></div>
       </div>
       <div class="stat-card">
-        <div class="stat-number">16M+</div>
-        <div class="stat-label">Annual Users</div>
-        <div class="stat-icon"><i class="fa fa-users"></i></div>
+        <div class="stat-number">11.6M</div>
+        <div class="stat-label">Engaged Sessions (FY25)</div>
+        <div class="stat-icon"><i class="fa fa-line-chart"></i></div>
       </div>
       <div class="stat-card">
         <div class="stat-number">30+</div>

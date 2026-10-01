@@ -9,7 +9,7 @@
   {% assign in_people = true %}
 {% endif %}
 {% assign in_public = false %}
-{% if u contains '/about/documents' %}
+{% if u contains '/about/media' or u contains '/about/documents' %}
   {% assign in_public = true %}
 {% endif %}
 
@@ -58,6 +58,7 @@
       </div>
       <div id="ads-about-public-items" class="panel-collapse collapse{% if in_public %} in{% endif %}" aria-labelledby="ads-about-public">
         <ul class="list-group">
+          <a href="{{ site.baseurl }}/about/media/"><li class="list-group-item{% if u contains '/about/media' %} active{% endif %}">Media</li></a>
           <a href="{{ site.baseurl }}/about/documents/"><li class="list-group-item{% if u contains '/about/documents' %} active{% endif %}">Presentations</li></a>
         </ul>
       </div>

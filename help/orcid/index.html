@@ -8,6 +8,7 @@ category: orcid
 
 {% assign posts = site.categories[page.category] | sort:"order"  %}
     {% for post in posts %}
-        <h3>{{post.title}}</h3>
+        {% assign section_id = post.section_id | default: post.slug %}
+        {% include _help/section_heading.html id=section_id title=post.title %}
         {{post.content}}
     {% endfor %}

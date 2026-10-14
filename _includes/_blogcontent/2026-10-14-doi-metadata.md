@@ -1,5 +1,3 @@
-<h3 style="margin-top: 0; color: #5FBFAE;">Introduction</h3>
-
 <figure style="float: left; width: 350px; margin: 1em 1.5em 1em 0; text-align: center;">
   <img src="{{site.baseurl}}/blog/images/blog_2026-10-14-metadata-cartoon.png" 
       alt="Two-panel cartoon: a sweating man hesitates between two red buttons labeled 'Create metadata' and 'Let user guess what's in dataset.'"
@@ -9,6 +7,8 @@
     "With great metadata comes great responsibility."
   </figcaption>
 </figure>
+
+<h3 style="margin-top: 0; color: #5FBFAE;">Introduction</h3>
 
 Metadata is the lifeblood of publishing in the digital age and the key to discovery and attribution. Metadata permeates and enables all aspects of publishing. It is essential for publishers, authors, and all others involved in the publishing industry to understand the metadata ecosystem in order to maximize the resources that contribute to a title’s presence, popularity, and reuse. In other words, there are many stakeholders involved in this world of metadata. Metadata and the associated processes to use it are evolving, becoming more interconnected and social, enabling linkages between a broad network of digital objects and resources. So, bad metadata will travel through this interconnected web and will cause all kinds of headaches for everybody involved; bad metadata can refer to badly formatted metadata, ambiguous metadata, incomplete metadata and all kinds of other reasons causing it to not accurately represent the object it is supposed to describe (the importance of accurate metadata for data products in the astronomy community is e.g. discussed in [Blanton et al. 2023](https://scixplorer.org/abs/2023arXiv231104272B/abstract)). 
 
@@ -34,11 +34,11 @@ Our systematic use of DataCite DOIs started with the Asclepias project. The [Cit
 
 We have started to systematically harvest DataCite metadata for the following sources:
 
-- Publications
+- <b>Publications</b>
     - Zenodo: specific user-defined collections 
     - MPEC: Minor Planet Circular
     - LSST: NSF-DOE Vera C. Rubin Observatory Technical Reports
-- Data Sets
+- <b>Data Sets</b>
     - PDS: NASA Planetary Data System Data
     - JAXA: JAXA Data
     - IPAC: NASA IPAC Data

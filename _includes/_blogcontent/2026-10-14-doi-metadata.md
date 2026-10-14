@@ -1,10 +1,13 @@
 <h3 style="margin-top: 0; color: #5FBFAE;">Introduction</h3>
 
-<figure style="text-align: center; margin: 1em auto 2em auto;">
-    <img src="{{site.baseurl}}/blog/images/blog_2026-10-14-metadata-cartoon.png" alt="" class="img-responsive" style="float:left; margin: 1em; width: 350px;">
-    <figcaption style="font-size: 0.85em; color: #8da09a;">
-      "With great metadata comes great responsibility."
-    </figcaption>
+<figure style="float: left; width: 350px; margin: 1em 1.5em 1em 0; text-align: center;">
+  <img src="{{site.baseurl}}/blog/images/blog_2026-10-14-metadata-cartoon.png" 
+      alt="Two-panel cartoon: a sweating man hesitates between two red buttons labeled 'Create metadata' and 'Let user guess what's in dataset.'"
+      class="img-responsive" 
+      style="width: 100%;">
+  <figcaption style="font-size: 0.85em; color: #8da09a; margin-top: 0.5em;">
+    "With great metadata comes great responsibility."
+  </figcaption>
 </figure>
 
 Metadata is the lifeblood of publishing in the digital age and the key to discovery and attribution. Metadata permeates and enables all aspects of publishing. It is essential for publishers, authors, and all others involved in the publishing industry to understand the metadata ecosystem in order to maximize the resources that contribute to a title’s presence, popularity, and reuse. In other words, there are many stakeholders involved in this world of metadata. Metadata and the associated processes to use it are evolving, becoming more interconnected and social, enabling linkages between a broad network of digital objects and resources. So, bad metadata will travel through this interconnected web and will cause all kinds of headaches for everybody involved; bad metadata can refer to badly formatted metadata, ambiguous metadata, incomplete metadata and all kinds of other reasons causing it to not accurately represent the object it is supposed to describe (the importance of accurate metadata for data products in the astronomy community is e.g. discussed in [Blanton et al. 2023](https://scixplorer.org/abs/2023arXiv231104272B/abstract)). 
@@ -45,15 +48,15 @@ We have started to systematically harvest DataCite metadata for the following so
     - USGS: United States Geological Survey
     - IEDA: Interdisciplinary Earth Data Alliance
 
-The main goal of the DataCite harvests is obtaining sufficient metadata to create records and, if appropriate, assign citations. Extending the indexing of data products beyond PDS data, is relatively recent. This extension has already shown us how challenging indexing dataset metadata can be, for all of the reasons mentioned above (see our [blog on indexing data products](https://scixplorer.org/scixblog/data-linking-III)). Unlike the registration of Crossref DOIs for journal articles, there is, in general, no quality control for the registration of dataset DOIs. The query `[doctype:dataset](https://scixplorer.org/search?p=1&q=doctype%3Adataset&sort=score+desc&sort=date+desc&d=astrophysics)` returns all data products currently indexed in SciX. Inspection of the author facet illustrates one particular aspect of the challenge. The population of this facet is based on author information in the SciX ingest data model; for metadata harvested from DataCite, author information is based on the `creator` element. [Description](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/creator/) of this element in the DataCite metadata schema indicates that this can represent a corporate/institutional or personal name. Inspection of the SciX author facet shows that there are entries that are neither, unless the concept of the corporate/institutional name is interpreted very loosely. The DataCite metadata schema supports the specification of the type of contributor through the `nameType` attribute; this attribute supports two values from a controlled vocabulary: `Organizational` or `Personal`. An entry like the following one is unfortunate for two reasons: first, the name is not really an institutional name and second, the name type was not specified:
+The main goal of the DataCite harvests is obtaining sufficient metadata to create records and, if appropriate, assign citations. Extending the indexing of data products beyond PDS data, is relatively recent. This extension has already shown us how challenging indexing dataset metadata can be, for all of the reasons mentioned above (see our [blog on indexing data products](https://scixplorer.org/scixblog/data-linking-III)). Unlike the registration of Crossref DOIs for journal articles, there is, in general, no quality control for the registration of dataset DOIs. The query [`doctype:dataset`](https://scixplorer.org/search?p=1&q=doctype%3Adataset&sort=score+desc&sort=date+desc&d=astrophysics) returns all data products currently indexed in SciX. Inspection of the author facet illustrates one particular aspect of the challenge. The population of this facet is based on author information in the SciX ingest data model; for metadata harvested from DataCite, author information is based on the `creator` element. [Description](https://datacite-metadata-schema.readthedocs.io/en/4.5/properties/creator/) of this element in the DataCite metadata schema indicates that this can represent a corporate/institutional or personal name. Inspection of the SciX author facet shows that there are entries that are neither, unless the concept of the corporate/institutional name is interpreted very loosely. The DataCite metadata schema supports the specification of the type of contributor through the `nameType` attribute; this attribute supports two values from a controlled vocabulary: `Organizational` or `Personal`. An entry like the following one is unfortunate for two reasons: first, the name is not really an institutional name and second, the name type was not specified:
 
-`
+```xml
   <creators>
     <creator>
       <creatorName>Precipitation Processing System (PPS) at NASA GSFC</creatorName>
     </creator>
   </creators>
-`
+```
 
 In SciX, this example resulted in an "author" entry `NASA GSFC, P.` in the author facet.
 
@@ -65,6 +68,8 @@ We are still actively discussing the act of indexing datasets; this is not neces
 - Active datasets
 - Collections
 - What other metadata fields to capture
+
+---
 
 [^1]: There are other DOI registries: [https://www.doi.org/the-community/existing-registration-agencies/](https://www.doi.org/the-community/existing-registration-agencies/). Some of these registries might have an underlying metadata model and API, others like China's do not.
 

@@ -1609,32 +1609,32 @@ function openFromHash() {
 }
 
 // Hash links open the tab that contains the target, including links added later.
-document.addEventListener('click', function (e) {
-  const anchor = e.target.closest('a[href^="#"]');
-  if (!anchor) return;
+const helpRoot = document.querySelector('.post-content');
+if (helpRoot) {
+  helpRoot.addEventListener('click', function (e) {
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
 
-  const href = anchor.getAttribute('href');
-  if (!href || href === '#') return;
+    const anchor = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!anchor || anchor.hasAttribute('data-toggle')) return;
 
-  let target;
-  try {
-    target = document.querySelector(href);
-  } catch (err) {
-    return;
-  }
-  if (!target) return;
+    const href = anchor.getAttribute('href');
+    if (!href || href === '#') return;
 
-  if (anchor.classList.contains('section-anchor-link') && window.copySectionAnchor) {
-    window.copySectionAnchor(anchor, e);
-  }
+    let target;
+    try {
+      target = document.querySelector(href);
+    } catch (err) {
+      return;
+    }
+    if (!target) return;
 
-  e.preventDefault();
-  e.stopPropagation();
-  if (history.pushState) {
-    history.pushState(null, '', href);
-  }
-  revealHashTarget(target);
-}, true);
+    e.preventDefault();
+    if (history.pushState) {
+      history.pushState(null, '', href);
+    }
+    revealHashTarget(target);
+  }, true);
+}
 
 // Restore FAQ states from localStorage
 function restoreFAQStates() {

@@ -1,0 +1,151 @@
+<script>
+(function () {
+  var root = document.querySelector('.post-content');
+  if (!root) return;
+
+  var seen = {};
+
+  function isTaken(candidate, except) {
+    if (seen[candidate]) return true;
+    var existing = document.getElementById(candidate);
+    return !!(existing && existing !== except);
+  }
+
+  function uniqueId(base, except) {
+    var rootName = base || 'section';
+    var candidate = rootName;
+    var n = 2;
+    while (isTaken(candidate, except)) {
+      candidate = rootName + '-' + n;
+      n += 1;
+    }
+    seen[candidate] = true;
+    return candidate;
+  }
+
+  function slugify(text) {
+    return (text || '')
+      .toLowerCase()
+      .replace(/&/g, ' ')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/[\s_-]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function addLink(heading, id) {
+    if (heading.querySelector('.section-anchor-link')) return;
+    heading.classList.add('section-anchor');
+    var link = document.createElement('a');
+    link.href = '#' + id;
+    link.className = 'section-anchor-link';
+    link.setAttribute('aria-label', 'Copy link to this section');
+    link.title = 'Copy link to this section';
+    var icon = document.createElement('i');
+    icon.className = 'fa fa-link';
+    icon.setAttribute('aria-hidden', 'true');
+    link.appendChild(icon);
+    link.addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+    heading.appendChild(link);
+  }
+
+  function copyWithTextarea(text) {
+    var area = document.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.top = '0';
+    area.style.left = '-9999px';
+    document.body.appendChild(area);
+    area.focus();
+    area.select();
+    var ok = false;
+    try {
+      ok = document.execCommand('copy');
+    } catch (err) {}
+    document.body.removeChild(area);
+    return ok;
+  }
+
+  function copySectionLink(url) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(url).then(function () {
+        return true;
+      }).catch(function () {
+        return copyWithTextarea(url);
+      });
+    }
+    return Promise.resolve(copyWithTextarea(url));
+  }
+
+  function markCopied(link) {
+    var icon = link.querySelector('.fa');
+    link.setAttribute('title', 'Link copied');
+    link.setAttribute('aria-label', 'Link copied');
+    if (icon) {
+      icon.classList.remove('fa-link');
+      icon.classList.add('fa-check');
+    }
+    window.clearTimeout(link._copyTimer);
+    link._copyTimer = window.setTimeout(function () {
+      link.setAttribute('title', 'Copy link to this section');
+      link.setAttribute('aria-label', 'Copy link to this section');
+      if (icon) {
+        icon.classList.remove('fa-check');
+        icon.classList.add('fa-link');
+      }
+    }, 1600);
+  }
+
+  function copyAnchorLink(link, event) {
+    if (!link || (event && event._sectionCopied)) return;
+    if (event) event._sectionCopied = true;
+    var href = link.getAttribute('href') || '';
+    if (href.charAt(0) !== '#') return;
+    var url = window.location.origin + window.location.pathname + window.location.search + href;
+    copySectionLink(url).then(function (ok) {
+      if (ok) markCopied(link);
+    });
+  }
+
+  window.copySectionAnchor = copyAnchorLink;
+
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('.section-anchor-link');
+    if (!link || !root.contains(link)) return;
+    copyAnchorLink(link, event);
+  }, true);
+
+  var parentSlug = '';
+  var headings = root.querySelectorAll('h2, h3, h4, h5');
+  Array.prototype.forEach.call(headings, function (heading) {
+    if (heading.classList.contains('section-anchor') && heading.id) {
+      parentSlug = heading.id;
+      seen[heading.id] = true;
+      addLink(heading, heading.id);
+      return;
+    }
+
+    var toggleHeading = heading.closest('.faq-question, .video-title-wrapper');
+    if (toggleHeading) {
+      var section = heading.closest('.faq-item, .video-item');
+      if (section && section.id) addLink(heading, section.id);
+      return;
+    }
+
+    var existing = heading.id ? document.getElementById(heading.id) : null;
+    if (heading.id && !seen[heading.id] && (!existing || existing === heading)) {
+      seen[heading.id] = true;
+    } else if (heading.id) {
+      var prefixed = parentSlug ? parentSlug + '-' + heading.id : heading.id;
+      heading.id = uniqueId(prefixed, heading);
+    } else {
+      heading.id = uniqueId(slugify(heading.textContent), heading);
+    }
+
+    addLink(heading, heading.id);
+  });
+})();
+</script>

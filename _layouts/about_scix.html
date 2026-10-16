@@ -25,11 +25,11 @@ layout: about_layout_scix
       {%unless page.no-header %}
       <h2 class="post-title">{{ page.title }}</h2>
       {% if page.subtitle %}
-      <div class="post-subtitle" style="color: #666; margin-top: -10px; font-weight: bolder;">{{ page.subtitle }}</div>
+      <div class="post-subtitle">{{ page.subtitle }}</div>
       {% elsif page.team_id %}
         {% assign team_member = site.data.team.team_members | where: "id", page.team_id | first %}
         {% if team_member %}
-      <div class="post-subtitle" style="color: #666; margin-top: -10px; font-weight: bolder;">{{ team_member.title }}</div>
+      <div class="post-subtitle">{{ team_member.title }}</div>
         {% endif %}
       {% endif %}
       {% endunless %}

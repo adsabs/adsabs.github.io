@@ -7,7 +7,7 @@
 |--------|----------|
 | Space Missions & Telescopes | [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [HST](#hubble), [INT](#int), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
 | Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [USGS](#usgs), [USNO](#usno) |
-| Archives & Programs | [NASA Astrobiology](#astrbio), [NASA PubSpace](#pubspace), [NOAO](#noao), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
+| Archives & Programs | [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NOAO](#noao), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
 | Topical | [SETI](#seti) |
 
 <details id="cfht"><summary><strong>Canada-France-Hawaiʻi Telescope (CFHT)</strong></summary>
@@ -52,7 +52,7 @@ This group primarily contains refereed articles that made scientific use of data
 
 <details id="astrobio"><summary><strong>NASA Astrobiology</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA Astrobiology</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Program</p>
-This bibgroup contains publications, software, and data funded in full or in part by <a href="https://science.nasa.gov/astrobiology/">NASA Astrobiology</a> as a <a href="https://scixplorer.org/scixblog/astrobiology-collab">continuously updated resource</a> for researchers, collaborators, and the public. NASA Astrobiology personnel maintain this bibgroup, which is sourced from their <a href="https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA">library of publications for researchers</a>.</details>
+This bibgroup contains publications, software, and data funded in full or in part by <a href="https://science.nasa.gov/astrobiology/">NASA Astrobiology</a> as a <a href="https://scixplorer.org/scixblog/astrobiology-collab">continuously updated resource</a> for researchers, collaborators, and the public. NASA Astrobiology personnel and the SciX Team collaboratively maintain this bibgroup, which is sourced from their <a href="https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA">library of publications for researchers</a>.</details>
 
 <details id="pubspace"><summary><strong>NASA PubSpace</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA PubSpace</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>

@@ -94,4 +94,5 @@ You can also apply a bibgroup field to your initial search directly in the searc
 
 For more assistance with building precise queries and exploring the power of SciX, please visit our help section starting with "<a href="https://scixplorer.org/scixhelp/search-scix/search-syntax" target="_blank">Search Syntax</a>."
 
+{% endif %}
 <div style="clear: both; margin-bottom: 10px;"></div>

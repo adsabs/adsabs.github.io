@@ -68,6 +68,32 @@ If you click on a paper’s title, you can explore all the resources of our full
 	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
 	 
 For more assistance with using SciX libraries or to get started creating your own, review our help section starting with “[Creating and Editing a Library](https://www.scixplorer.org/scixhelp/libraries-scix/creating-libraries).”
+
+<h3 style="margin-top: 0; color: #5FBFAE;">Using the Astrobiology Bibgroup</h3>
+
+The Astrobiology library is also available as the **NASA Astrobiology** [bibgroup, or bibliographic group,](https://scixplorer.org/scixhelp/data_faq-scix/Bibgroups) maintained within SciX. You can see whether and to which bibgroups an abstract belongs by looking towards the bottom of the Abstract View below keywords and above comments.
+
+<img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure8.JPG" 
+	 alt="Screenshot of SciX Abstract view of article titled “New Young Stars and Brown Dwarfs in the Upper Scorpius Association” in the Astrophysical Journal. A left sidebar lists sections such as abstract, citations, references, graphics, and metrics. The main panel shows the article abstract and publication details, including DOI, arXiv link, keywords, and bibgroups. Two blue callout bubbles annotate the page: one at lower left says the bibgroups a paper belongs to may have more than one option, and one at center right says to click the magnifying glass to see all members of a bibgroup."
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
+
+You can filter any search using bibgroups. For instance, one way to find papers by the "right" [J. Wright](https://scixplorer.org/search?p=1&q=author%3A%22Wright%2C+J%22&sort=score+desc&sort=date+desc&d=astrophysics) would be to filter the initial thousands of results by many Wrights working in multiple disciplines by requiring that papers also be in the NASA Astrobiology bibgroup. This limitation reduces the number to a manageable few tens of papers by a single [Jason Wright](https://sites.psu.edu/astrowright/jason-t-wright-assistant-professor-of-astronomy-and-astrophysics/) working in astrobiology. 
+
+<img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure9.JPG" 
+	 alt="Two annotated screenshots of the SciX by ADS astrophysics search interface showing author disambiguation with filters. The larger left view shows a search for “author: Wright, J” returning 7,789 results, with a callout asking which J. Wright is the correct author and another note pointing to the NASA Astrobiology bibgroup filter in the sidebar. The smaller inset at right shows the results narrowed to the NASA Astrobiology bibgroup, leaving 35 papers, with a callout identifying them as papers by Jason Wright."
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
+
+You can also apply a bibgroup field to your initial search directly in the search bar on the main SciX page. You might exclude NASA Astrobiology publications to see work by groups less familiar to you. For instance, [`abs:technosignatures -bibgroup:"NASA Astrobiology"`](https://scixplorer.org/search?p=1&q=abs%3Atechnosignatures+-bibgroup%3A%22NASA+Astrobiology%22&sort=score+desc&sort=date+desc&d=astrophysics) returns a few hundred papers. A handful of these have funding information from the National Science Foundation (NSF). Most are associated with the topical [SETI bibgroup](https://scixplorer.org/scixhelp/data_faq-scix/Bibgroups#seti).
+
+<img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure10.JPG" 
+	 alt="Screenshot of the SciX by ADS astrophysics search results page for the query abs:technosignatures -bibgroup:NASA Astrobiology, showing 477 results. A left sidebar contains filters including a year histogram, award categories, and bibgroups such as SETI, NRAO, and CfA. The main panel lists papers related to technosignatures, with titles, authors, publication details, citation counts, and action icons beside each result."
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
+
+For more assistance with building precise queries and exploring the power of SciX, please visit our help pages starting with [Search Syntax](https://scixplorer.org/scixhelp/search-scix/search-syntax).
+
 {% endif %}
 
 <div style="clear: both; margin-bottom: 10px;"></div>

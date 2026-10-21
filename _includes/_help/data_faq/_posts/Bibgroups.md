@@ -7,7 +7,7 @@
 |--------|----------|
 | Space Missions & Telescopes | [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [HST](#hubble), [INT](#int), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
 | Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [USGS](#usgs), [USNO](#usno) |
-| Archives & Programs | [NASA PubSpace](#pubspace), [NOAO](#noao), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
+| Archives & Programs | [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NOAO](#noao), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
 | Topical | [SETI](#seti) |
 
 <details id="cfht"><summary><strong>Canada-France-Hawaiʻi Telescope (CFHT)</strong></summary>
@@ -49,6 +49,10 @@ The INT bibgroup contains refereed papers published since 1984 using Isaac Newto
 <details id="jwst"><summary><strong>James Webb Space Telescope (JWST)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:JWST</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Telescope</p>
 This group primarily contains refereed articles that made scientific use of data from the NASA/ESA/CSA James Webb Space Telescope (JWST) since 2022, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). Papers are added continuously and may lag up to one year from date of publication. Articles are linked to the program IDs and observational data on which they are based whenever feasible. Note that matching JWST proposal IDs to published papers is an ongoing project and never completely up to date. Some non-refereed articles and conference proceedings may also be included when use of the telescope's data is noted. Key papers (refereed and non-refereed) which address instrumentation or engineering systems are included; these non-data papers may precede 2022. For further information, visit the <a href="https://www.stsci.edu/scientific-community/stsci-library-and-institutional-archive/missions-publications">STScI Library and Institutional Archive</a> or contact metrics@stsci.edu.</details>
+
+<details id="astrobio"><summary><strong>NASA Astrobiology</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA Astrobiology</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Program</p>
+This bibgroup contains publications, software, and data funded in full or in part by <a href="https://science.nasa.gov/astrobiology/">NASA Astrobiology</a> as a <a href="https://scixplorer.org/scixblog/astrobiology-collab">continuously updated resource</a> for researchers, collaborators, and the public. NASA Astrobiology personnel and the SciX Team collaboratively maintain this bibgroup, which is sourced from their <a href="https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA">library of publications for researchers</a>.</details>
 
 <details id="pubspace"><summary><strong>NASA PubSpace</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA PubSpace</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>

@@ -85,15 +85,13 @@ You can filter any search using bibgroups. For instance, one way to find papers 
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
 
-You can also apply a bibgroup field to your initial search directly in the search bar on the main SciX page. You might exclude NASA Astrobiology publications to see work by groups less familiar to you. For instance, <a href="https://scixplorer.org/search?p=1&q=abs%3Atechnosignatures+-bibgroup%3A%22NASA+Astrobiology%22&sort=score+desc&sort=date+desc&d=astrophysics" target="_blank">`abs:technosignatures -bibgroup:"NASA Astrobiology"`</a> returns a few hundred papers. A handful of these have funding information from the National Science Foundation (NSF). Most are associated with the topical <a href="https://scixplorer.org/scixhelp/data_faq-scix/Bibgroups#seti" target="_blank">SETI bibgroup</a> .
+You can also apply a bibgroup field to your initial search directly in the search bar on the main SciX page. You might exclude NASA Astrobiology publications to see work by groups less familiar to you. For instance, <a href="https://scixplorer.org/search?p=1&q=abs%3Atechnosignatures+-bibgroup%3A%22NASA+Astrobiology%22&sort=score+desc&sort=date+desc&d=astrophysics" target="_blank">`abs:technosignatures -bibgroup:"NASA Astrobiology"`</a> returns a few hundred papers. A handful of these have funding information from the National Science Foundation (NSF). Most are associated with the topical <a href="https://scixplorer.org/scixhelp/data_faq-scix/Bibgroups#seti" target="_blank">SETI bibgroup</a>.
 
 <img src="{{site.baseurl}}/blog/images/blog_2026-05-05_figure10.JPG" 
 	 alt="Screenshot of the SciX by ADS astrophysics search results page for the query abs:technosignatures -bibgroup:NASA Astrobiology, showing 477 results. A left sidebar contains filters including a year histogram, award categories, and bibgroups such as SETI, NRAO, and CfA. The main panel lists papers related to technosignatures, with titles, authors, publication details, citation counts, and action icons beside each result."
 	 class="img-responsive" 
 	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">
 
-For more assistance with building precise queries and exploring the power of SciX, please visit our help pages starting with [Search Syntax](https://scixplorer.org/scixhelp/search-scix/search-syntax).
-
-{% endif %}
+For more assistance with building precise queries and exploring the power of SciX, please visit our help section starting with "<a href="https://scixplorer.org/scixhelp/search-scix/search-syntax" target="_blank">Search Syntax</a>."
 
 <div style="clear: both; margin-bottom: 10px;"></div>

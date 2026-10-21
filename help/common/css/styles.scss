@@ -139,6 +139,7 @@ $nav-text-color: $text-color;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import 'bootstrap', 'layout', 'sidebar', 'darkmode';
+@import 'awards', 'scix-history';
 /* Home Page Styles */
 .home-page-content {
   width: 100%;
@@ -1575,7 +1576,11 @@ $nav-text-color: $text-color;
 .search-bar-container {
   display: flex;
   justify-content: center;
+  min-height: 92px;
   margin-bottom: 30px;
+}
+
+.what-we-do-header .search-bar-container {
   animation: slideInDown 1s ease-out;
 }
 
@@ -4285,3 +4290,8 @@ $nav-text-color: $text-color;
 }
 
 //==== end of flyer =====================
+
+.year-dropdown {
+  margin-top: 27px;
+  display: inline-block;
+}

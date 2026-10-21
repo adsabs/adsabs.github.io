@@ -453,4 +453,16 @@ $darkmode-default-darken: darken($darkmode-default, 10%);
   .highlight-box-yellow {
     border-left-color: #BFAC4B !important;
   }
+
+  .post-header .post-title.section-anchor .section-anchor-link,
+  .post-content .section-anchor-link {
+    color: $darkmode-text-secondary;
+
+    &:hover,
+    &:focus {
+      color: $darkmode-link;
+      background-color: rgba($darkmode-link, 0.12);
+      border-color: rgba($darkmode-link, 0.25);
+    }
+  }
 }

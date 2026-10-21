@@ -445,7 +445,7 @@ no-header: true
     
     <div class="video-gallery">
       <!-- Video 1 -->
-      <div class="video-item">
+      <div class="video-item" id="welcome-to-the-scix-training-hub">
         <div class="video-header" onclick="toggleVideo('video1')">
           <div class="video-thumbnail-wrapper">
             <img src="https://img.youtube.com/vi/jJ0ve_3ov0M/maxresdefault.jpg" alt="Welcome to the SciX Training Hub" class="video-thumbnail">
@@ -464,7 +464,7 @@ no-header: true
       </div>
 
       <!-- Video 2 -->
-      <div class="video-item">
+      <div class="video-item" id="searching-for-a-specific-paper">
         <div class="video-header" onclick="toggleVideo('video2')">
           <div class="video-thumbnail-wrapper">
             <img src="https://img.youtube.com/vi/7ELEYN5L49U/maxresdefault.jpg" alt="Searching for a Specific Paper" class="video-thumbnail">
@@ -483,7 +483,7 @@ no-header: true
       </div>
 
       <!-- Video 3 -->
-      <div class="video-item">
+      <div class="video-item" id="beginning-a-literature-search">
         <div class="video-header" onclick="toggleVideo('video3')">
           <div class="video-thumbnail-wrapper">
             <img src="https://img.youtube.com/vi/WsYbgdaC2Es/maxresdefault.jpg" alt="Beginning a Literature Search" class="video-thumbnail">
@@ -502,7 +502,7 @@ no-header: true
       </div>
 
       <!-- Video 4 -->
-      <div class="video-item">
+      <div class="video-item" id="searching-for-authors-with-common-names">
         <div class="video-header" onclick="toggleVideo('video4')">
           <div class="video-thumbnail-wrapper">
             <img src="https://img.youtube.com/vi/aOq_JxQId4M/maxresdefault.jpg" alt="Searching for Authors with Common Names" class="video-thumbnail">
@@ -521,26 +521,26 @@ no-header: true
       </div>
 
       <!-- Video 5 -->
-      <div class="video-item">
+      <div class="video-item" id="advanced-queries-and-operators">
         <div class="video-header" onclick="toggleVideo('video5')">
           <div class="video-thumbnail-wrapper">
-            <img src="https://img.youtube.com/vi/tZaLIAoavv8/maxresdefault.jpg" alt="Building a Library & Calculating Metrics" class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/tZaLIAoavv8/maxresdefault.jpg" alt="Advanced queries and operators" class="video-thumbnail">
             <div class="play-button-overlay">
               <i class="fa fa-play-circle"></i>
             </div>
           </div>
           <div class="video-title-wrapper">
-            <h3>Building a Library & Calculating Metrics</h3>
+            <h3>Advanced queries and operators</h3>
             <span class="video-toggle">+</span>
           </div>
         </div>
         <div class="video-content" id="video5" data-video-id="tZaLIAoavv8">
-          <p class="video-description">Create personal libraries to organize your research and analyze citation metrics for papers and authors.</p>
+          <p class="video-description">Refine a broad search with fielded queries, filters, and operators such as similar() and useful().</p>
         </div>
       </div>
 
       <!-- Video 6 -->
-      <div class="video-item">
+      <div class="video-item" id="orcid-and-science-explorer">
         <div class="video-header" onclick="toggleVideo('video6')">
           <div class="video-thumbnail-wrapper">
             <img src="https://img.youtube.com/vi/IPGv0vPxy4M/maxresdefault.jpg" alt="ORCiD and Science Explorer" class="video-thumbnail">
@@ -947,6 +947,12 @@ no-header: true
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.faq-item[id],
+.video-item[id],
+.tab-content[id] {
+  scroll-margin-top: 5rem;
 }
 
 .faq-item {
@@ -1526,42 +1532,109 @@ function toggleSearchExamples() {
 }
 
 
-// Smooth scrolling for anchor links and auto-open FAQ
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-      
-      // If it's an FAQ item, open it automatically
-      if (target.classList.contains('faq-item')) {
-        const faqAnswer = target.querySelector('.faq-answer');
-        const faqQuestion = target.querySelector('.faq-question');
-        if (faqAnswer && faqQuestion) {
-          // Close all other FAQs first
-          document.querySelectorAll('.faq-answer.active').forEach(answer => {
-            answer.classList.remove('active');
-          });
-          document.querySelectorAll('.faq-question.active').forEach(question => {
-            question.classList.remove('active');
-            const toggle = question.querySelector('.faq-toggle');
-            if (toggle) toggle.textContent = '+';
-          });
-          
-          // Open the target FAQ
-          faqAnswer.classList.add('active');
-          faqQuestion.classList.add('active');
-          const toggle = faqQuestion.querySelector('.faq-toggle');
-          if (toggle) toggle.textContent = '−';
-        }
-      }
+function activateTab(tabName) {
+  const tabButtons = document.getElementsByClassName('tab-button');
+  for (let i = 0; i < tabButtons.length; i++) {
+    const button = tabButtons[i];
+    const onclickAttr = button.getAttribute('onclick');
+    if (onclickAttr && onclickAttr.indexOf("'" + tabName + "'") !== -1) {
+      openTab({ currentTarget: button }, tabName);
+      return true;
     }
+  }
+  return false;
+}
+
+function openFaqItem(faqItem) {
+  const faqAnswer = faqItem.querySelector('.faq-answer');
+  const faqQuestion = faqItem.querySelector('.faq-question');
+  if (!faqAnswer || !faqQuestion) return;
+
+  document.querySelectorAll('.faq-answer.active').forEach(answer => {
+    answer.classList.remove('active');
   });
-});
+  document.querySelectorAll('.faq-question.active').forEach(question => {
+    question.classList.remove('active');
+    const toggle = question.querySelector('.faq-toggle');
+    if (toggle) toggle.textContent = '+';
+  });
+
+  faqAnswer.classList.add('active');
+  faqQuestion.classList.add('active');
+  const toggle = faqQuestion.querySelector('.faq-toggle');
+  if (toggle) toggle.textContent = '−';
+}
+
+function revealHashTarget(target) {
+  if (!target) return;
+
+  const tab = target.classList.contains('tab-content') ? target : target.closest('.tab-content');
+  if (tab && tab.id) {
+    activateTab(tab.id);
+  }
+
+  const videoItem = target.classList.contains('video-item') ? target : target.closest('.video-item');
+  if (videoItem) {
+    const videoContent = videoItem.querySelector('.video-content');
+    if (videoContent && !videoContent.classList.contains('active')) {
+      toggleVideo(videoContent.id);
+    }
+  }
+
+  const faqItem = target.classList.contains('faq-item') ? target : target.closest('.faq-item');
+  if (faqItem) {
+    openFaqItem(faqItem);
+  }
+
+  target.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+
+function openFromHash() {
+  const hash = window.location.hash;
+  if (!hash || hash === '#') return false;
+
+  let target;
+  try {
+    target = document.querySelector(hash);
+  } catch (e) {
+    return false;
+  }
+  if (!target) return false;
+
+  revealHashTarget(target);
+  return true;
+}
+
+// Hash links open the tab that contains the target, including links added later.
+const helpRoot = document.querySelector('.post-content');
+if (helpRoot) {
+  helpRoot.addEventListener('click', function (e) {
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+    const anchor = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!anchor || anchor.hasAttribute('data-toggle')) return;
+
+    const href = anchor.getAttribute('href');
+    if (!href || href === '#') return;
+
+    let target;
+    try {
+      target = document.querySelector(href);
+    } catch (err) {
+      return;
+    }
+    if (!target) return;
+
+    e.preventDefault();
+    if (history.pushState) {
+      history.pushState(null, '', href);
+    }
+    revealHashTarget(target);
+  }, true);
+}
 
 // Restore FAQ states from localStorage
 function restoreFAQStates() {
@@ -1587,52 +1660,16 @@ function restoreFAQStates() {
 function restoreTabState() {
   const savedTab = localStorage.getItem('scixhelp_active_tab');
   if (savedTab) {
-    // Find the tab button that corresponds to the saved tab
-    const tabButtons = document.getElementsByClassName('tab-button');
-    for (let i = 0; i < tabButtons.length; i++) {
-      const button = tabButtons[i];
-      const onclickAttr = button.getAttribute('onclick');
-      if (onclickAttr && onclickAttr.includes(savedTab)) {
-        // Simulate clicking the tab button
-        openTab({ currentTarget: button }, savedTab);
-        break;
-      }
-    }
+    activateTab(savedTab);
   }
 }
 
-// Auto-open FAQ on page load if there's a hash in the URL
+// A hash in the URL wins over the tab saved from the last visit.
 document.addEventListener('DOMContentLoaded', function() {
-  // First restore saved FAQ states
   restoreFAQStates();
-  
-  // Restore the active tab
-  restoreTabState();
-  
-  // Then handle URL hash if present
-  if (window.location.hash) {
-    const target = document.querySelector(window.location.hash);
-    if (target && target.classList.contains('faq-item')) {
-      const faqAnswer = target.querySelector('.faq-answer');
-      const faqQuestion = target.querySelector('.faq-question');
-      if (faqAnswer && faqQuestion) {
-        // Close all other FAQs first
-        document.querySelectorAll('.faq-answer.active').forEach(answer => {
-          answer.classList.remove('active');
-        });
-        document.querySelectorAll('.faq-question.active').forEach(question => {
-          question.classList.remove('active');
-          const toggle = question.querySelector('.faq-toggle');
-          if (toggle) toggle.textContent = '+';
-        });
-        
-        // Open the target FAQ
-        faqAnswer.classList.add('active');
-        faqQuestion.classList.add('active');
-        const toggle = faqQuestion.querySelector('.faq-toggle');
-        if (toggle) toggle.textContent = '−';
-      }
-    }
+
+  if (!openFromHash()) {
+    restoreTabState();
   }
 });
 </script>

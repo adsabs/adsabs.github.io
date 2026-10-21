@@ -1,7 +1,7 @@
 ---
 layout: blog_post_scix
 title: "ADS Docmatcher"
-author: "Jennifer Koch, Golnaz Shapurian, Carolyn Grant, and Donna Thompson"
+author: "Jennifer March, Golnaz Shapurian, Carolyn Grant, and Donna Thompson"
 position: "ADS"
 category: scixblog
 label: general

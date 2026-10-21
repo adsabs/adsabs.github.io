@@ -1,4 +1,4 @@
-<img src="{{ site.baseurl }}/about/ambassador/img/2024-Che.jpg" height="200" width="225" alt="Image of Yueyi Che in boat with glacier in background" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+<img src="{{ site.baseurl }}/about/ambassador/img/2024-Che.jpg" width="225" alt="Image of Yueyi Che in boat with glacier in background" style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
 
 Yueyi Che is a glaciologist and a second-year PhD student at the University of California Irvine. Yueyi received her Bachelor of Arts from the University of
 California, Berkeley in Geology with a Climate Science minor. Yueyi’s current research interests

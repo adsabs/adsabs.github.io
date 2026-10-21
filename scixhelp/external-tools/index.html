@@ -1,0 +1,13 @@
+---
+layout: post_scix
+category: external-tools
+---
+
+<h2>All Entries in the Category "External Tools"</h2>
+
+{% assign posts = site.categories.external-tools | sort:"order" %} 
+  {% for post in posts %}
+  {% assign section_id = post.section_id | default: post.slug %}
+  {% include _help/section_heading.html id=section_id title=post.title %}
+  {{post.content}}
+  {% endfor %}

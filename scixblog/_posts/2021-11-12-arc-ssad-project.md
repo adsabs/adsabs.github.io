@@ -1,7 +1,7 @@
 ---
 layout: blog_post_scix
 title: "Identifying ADS Bibliographic Gaps Against NASA Ames Space Sciences and Astrobiology Division (ARC/SSAD)"
-author: "Jennifer Koch"
+author: "Jennifer March"
 position: "ADS"
 category: scixblog
 label: technical-posts

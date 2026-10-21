@@ -1,0 +1,17 @@
+---
+layout: post_scix
+category: whats_new_scix
+by-year: true
+title: "What's New"
+---
+
+<div>
+  This page is updated monthly with a list of new and improved features and bug
+  fixes to our website, API, data pipelines, and data holdings. We also list
+  operations issues and improvements of note. To receive this listing via
+  monthly email newsletter, along with announcements and new blog posts,
+  <a href="http://eepurl.com/ggoxhn">sign up here</a>.
+</div>
+
+{% assign posts = site.categories["whats_new_scix"] | sort: "date" | reverse %}
+{% assign latest = posts.first %} {{ latest.content }}

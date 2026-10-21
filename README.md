@@ -68,8 +68,8 @@ The help pages are static web pages built using Jekyll (written in Ruby) and tak
 After installing Jekyll, run the following commands to preview the site:
 
 * install gems with `bundle install` (you may need to run `bundle update` first to update the Gemfile.lock file
-* build with `jekyll build`
-* serve the project with the command `jekyll serve`
+* build with `jekyll build` (optional, `jekyll serve` will first build and then serve)
+* serve the project with the command `jekyll serve` (may need to prepend `bundle exec`, so: `bundle exec jekyll serve`)
 
 You will now be able to access the help pages locally at `http://0.0.0.0:4000`  or `localhost:4000` (default configuration). After the website is built for the first time, you should only need to save the file, wait a second or two for it to rebuild automatically (check the terminal window where you ran `jekyll serve`), then refresh the page to see any changes.
 

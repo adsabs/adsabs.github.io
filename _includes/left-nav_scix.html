@@ -125,6 +125,23 @@
   </div>
 </div>
 
+<div class="panel panel-default">
+  <div class="panel-heading"  id="external-tools-help">
+      <a class="{% if page.url contains '/external-tools/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#external-tools-items" aria-expanded="{% if page.url contains '/external-tools/' %}true{% else %}false{% endif %}" aria-controls="external-tools-items">
+          <div class="{% if page.url contains '/external-tools/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> External Tools </div>
+      </a>
+  </div>
+  <div id="external-tools-items" class="panel-collapse collapse{% if page.url contains '/external-tools/' %} in{% endif %}"  aria-labelledby="external-tools-help">
+      <ul class="list-group">
+          {% assign posts = site.categories.external-tools %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
+          </a>
+          {% endif %} {% endfor %} {% endif %}
+      </ul>
+  </div>
+</div>
+
   <div class="panel panel-default">
     <div class="panel-heading"  id="troubleshooting-help">
       <a class="{% if page.url contains '/troubleshooting-scix/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#troubleshooting-items" aria-expanded="{% if page.url contains '/troubleshooting-scix/' %}true{% else %}false{% endif %}" aria-controls="troubleshooting-items">

@@ -51,15 +51,15 @@ The INT bibgroup contains refereed papers published since 1984 using Isaac Newto
 This group primarily contains refereed articles that made scientific use of data from the NASA/ESA/CSA James Webb Space Telescope (JWST) since 2022, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). Papers are added continuously and may lag up to one year from date of publication. Articles are linked to the program IDs and observational data on which they are based whenever feasible. Note that matching JWST proposal IDs to published papers is an ongoing project and never completely up to date. Some non-refereed articles and conference proceedings may also be included when use of the telescope's data is noted. Key papers (refereed and non-refereed) which address instrumentation or engineering systems are included; these non-data papers may precede 2022. For further information, visit the <a href="https://www.stsci.edu/scientific-community/stsci-library-and-institutional-archive/missions-publications">STScI Library and Institutional Archive</a> or contact metrics@stsci.edu.</details>
 
 <details id="astrobio"><summary><strong>NASA Astrobiology</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA Astrobiology</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Program</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA Astrobiology"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Program</p>
 This bibgroup contains publications, software, and data funded in full or in part by <a href="https://science.nasa.gov/astrobiology/">NASA Astrobiology</a> as a <a href="https://scixplorer.org/scixblog/astrobiology-collab">continuously updated resource</a> for researchers, collaborators, and the public. NASA Astrobiology personnel and the SciX Team collaboratively maintain this bibgroup, which is sourced from their <a href="https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA">library of publications for researchers</a>.</details>
 
 <details id="pubspace"><summary><strong>NASA PubSpace</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA PubSpace</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA PubSpace"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
 This bibgroup contains publications made available via NASA's designated public access repository, <a href="https://ntrs.nasa.gov/collections/pubspace">PubSpace</a>, a collection of NASA-funded scholarly publications, primarily accepted manuscripts and peer-reviewed publisher version of record. The bibgroup is maintained by {{ include.site }} and is sourced from the PubSpace collection of the <a href="https://sti.nasa.gov/public-access/">NASA STI Repository (NTRS)</a>.</details>
 
 <details id="nslsl"><summary><strong>NASA Space Life Sciences Library (NSLSL)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA SLSL</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA SLSL"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
 This bibgroup contains publications made available via <a href="https://public.ksc.nasa.gov/nslsl/">NASA Space Life Sciences Library (NSLSL)</a>, a collection of global space life sciences literature addressing the effects of the space environment on biological systems. The NSLSL is co-funded by NASA's Biological and Physical Sciences (BPS) division and Kennedy Space Center (KSC). The bibgroup is maintained by {{ include.site }} and is sourced from the <a href="https://extapps.ksc.nasa.gov/NSLSL/Search#">NSLSL repository</a>.</details>
 
 <details id="ntrs"><summary><strong>NASA Technical Reports Server (NTRS)</strong></summary>
@@ -79,7 +79,7 @@ The NOIRLab bibgroup is a curated list of the U.S. National Science Foundation N
 This group contains refereed articles that made scientific use of data from the Pan-STARRS PS1 survey, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). The data were obtained during the entire PS1 survey (from 2012 through 2015). Papers are added continuously but may lag up to one year from date of publication. For further information contact the MAST HelpDesk (archive@stsci.edu).</details>
 
 <details id="sdo"><summary><strong>Solar Dynamics Observatory (SDO)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:Solar Dynamics Observatory</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Solar Dynamics Observatory"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
 {{ include.site }} Library of publications and abstracts involving data from NASA’s Solar Dynamics Observatory (SDO) mission or describing the mission and its instrumentation from 2000 to the present.  This library is maintained by SDO Project Team and updated monthly. SDO data is publicly available; data access and information about the SDO mission can be found at <a href="https://sdo.gsfc.nasa.gov">NASA SDO</a>.</details>
 
 <details id="seti"><summary><strong>SETI Institute</strong></summary>

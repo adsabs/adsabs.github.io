@@ -7,7 +7,7 @@
 |--------|----------|
 | Space Missions & Telescopes | [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [HST](#hubble), [INT](#int), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
 | Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [USGS](#usgs), [USNO](#usno) |
-| Archives & Programs | [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NOAO](#noao), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
+| Archives & Programs | [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOAO](#noao), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
 | Topical | [SETI](#seti) |
 
 <details id="cfht"><summary><strong>Canada-France-Hawaiʻi Telescope (CFHT)</strong></summary>
@@ -57,6 +57,10 @@ This bibgroup contains publications, software, and data funded in full or in par
 <details id="pubspace"><summary><strong>NASA PubSpace</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA PubSpace</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
 This bibgroup contains publications made available via NASA's designated public access repository, <a href="https://ntrs.nasa.gov/collections/pubspace">PubSpace</a>, a collection of NASA-funded scholarly publications, primarily accepted manuscripts and peer-reviewed publisher version of record. The bibgroup is maintained by {{ include.site }} and is sourced from the PubSpace collection of the <a href="https://sti.nasa.gov/public-access/">NASA STI Repository (NTRS)</a>.</details>
+
+<details id="nslsl"><summary><strong>NASA Space Life Sciences Library (NSLSL)</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NASA SLSL</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
+This bibgroup contains publications made available via <a href="https://public.ksc.nasa.gov/nslsl/">NASA Space Life Sciences Library (NSLSL)</a>, a collection of global space life sciences literature addressing the effects of the space environment on biological systems. The NSLSL is co-funded by NASA's Biological and Physical Sciences (BPS) division and Kennedy Space Center (KSC). The bibgroup is maintained by {{ include.site }} and is sourced from the <a href="https://extapps.ksc.nasa.gov/NSLSL/Search#">NSLSL repository</a>.</details>
 
 <details id="ntrs"><summary><strong>NASA Technical Reports Server (NTRS)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NTRS</code> &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>

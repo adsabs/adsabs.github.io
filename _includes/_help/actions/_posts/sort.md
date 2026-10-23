@@ -1,6 +1,12 @@
 Results lists can be sorted in both descending and ascending order. Choose the desired sort order on the search results page using the dropdown menu at the top of the page, below the search box. {% if include.ads %}The default sort order is [Date](https://scixplorer.org/scixhelp/actions-scix/sort#date) from most recent to oldest.{% else %}The default sort order is usually [Relevance](https://scixplorer.org/scixhelp/actions-scix/sort#relevance) from most to least. For ADS compatibility mode, the default sort order is [Date](https://scixplorer.org/scixhelp/actions-scix/sort#date) from most recent to oldest. You can set your personal default order in your free [SciX account](https://scixplorer.org/scixhelp/userpreferences-scix/scix-account).{% endif %}
 <br/>
 
+{% if include.ads %}<img src="{{site.baseurl}}/scixhelp/images/scix-sortresults-layout.jpb" 
+	 alt="Annotated screenshot of the SciX by ADS astrophysics search results page for `first_author:"van de Kamp, P"`, showing 309 results. The sort menu is expanded with options such as relevance, date, author count, citation count, entry date, first author, and normalized citation count. Two blue callouts explain that the sort order defaults to relevance and that the sort direction control, beside the menu, is usually descending.."
+	 class="img-responsive" 
+	 style="display: block; margin: 1em auto; width: 650px; border: 3px solid #049DD9; border-radius: 6px;">{% endif %}
+<br/>
+
 <h4>Author Count</h4>
 This option sorts based on a record's number of authors.
 

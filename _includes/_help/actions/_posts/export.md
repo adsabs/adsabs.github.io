@@ -1,6 +1,6 @@
 ### How to Export Results
 
-{{ include.site }} provides the ability to export results into various formats. There are two options:
+{{ include.site }} provides the ability to export results into various formats. {% if include.ads %}There are two options:{% else %}In addition, you can quick copy single citations from your [Results list](https://scixplorer.org/scixhelp/actions-scix/quick-links} and from an [article view](https://scixplorer.org/scixhelp/actions-scix/article-view). The two full Export options are{% endif %}
 
 1. **Export All Results:**
 {% if include.ads %}![export-all-results](/help/img/export-all-results.gif){:width="800px"}{% endif %} From the results page, find the **{% if include.ads %}Export{% else %}Bulk Actions{% endif %}** dropdown menu in the top right of the page. From there, you can select a format.

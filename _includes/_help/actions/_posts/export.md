@@ -1,3 +1,5 @@
+**On this page:** [How to export](#how-to-export-results) · [Export formats](#export-formats) · [BibTeX options](#the-bibtex-format-configuration) · [Custom format](#custom-format) · [Author formats](#author-formats) · [Field specifiers](#other-formats)
+
 ### How to Export Results
 
 {{ include.site }} provides the ability to export results into various formats. There are two options:
@@ -42,7 +44,7 @@ Use this button to export your search results in different formats.  Currently a
 
 For the two BibTeX formats there are two optional parameters `maxauthor` and `keyformat` which can be specified in user preferences.
 
-`maxauthor` is maxinum number of authors displayed if number of authors exceed 200. The default values for `maxauthor` for *BibTeX* and *BibTeX ABS* are respectively 10 and 0, where 0 means display all authors.
+`maxauthor` is maximum number of authors displayed if number of authors exceed 200. The default values for `maxauthor` for *BibTeX* and *BibTeX ABS* are respectively 10 and 0, where 0 means display all authors.
 
 `keyformat` is mnemonic key for identifying a BibTeX entry where default is the bibcode. Key can be specified to contain the first author's last name, or some combination of publication year, journal, or additional authors. The key generation algorithm can be specified as a custom format. For example, the default BibTeX export for `2019AAS...23338108A` is:
 {% raw %}
@@ -69,7 +71,7 @@ Accomazzi2019b
 Kurtz2019
 ```
 
-### The {{ include.site }} Custom Format
+<h3 id="custom-format"> The {{ include.site }} Custom Format</h3>
 
 The custom format feature allows you to output {{ include.site }} data in a completely user-defined format. For example, the following format
 
@@ -93,7 +95,7 @@ As can be seen from the above examples, the format is specified as a string usin
 
 Furthermore, using custom format, you can format your output as a csv file. For example, the following format
 
-{% raw %} `%ZEncoding:csv %ZHeader:'Author,Year,Title,Journal' %G,%Y,%T,%J` {% endraw %}
+{% raw %} `%ZEncoding:csv %ZHeader:"Author,Year,Title,Journal" %G,%Y,%T,%J` {% endraw %}
 
 would create the four specified columns, listing your results under the column heading. Note that if no column heading is specified in your custom format, the export adds the headings based on your field selections.
 
@@ -223,7 +225,7 @@ The output field specifiers are added to the beginning of the custom format as d
     * **Linelength:number** This specifies the output line length (default is 0 meaning no line wraps).
     * **Header:&ldquo;string&rdquo;** This specifies a header that will be output once before the data records.
     * **Footer:&ldquo;string&rdquo;** This specifies a footer that will be output once after all the data records are output.
-    * **Markup:word**	This specifies how to process HTML markup found in input fields (such as ≤SUB>). Available options are:
+    * **Markup:word**	This specifies how to process HTML markup found in input fields (such as <SUB>). Available options are:
         * **keep**: keep the markup (default)
         * **strip**: remove the markup
     * **EOL:&ldquo;string&rdquo;** This specifies the character to be printed at the end of a record (newline by default).

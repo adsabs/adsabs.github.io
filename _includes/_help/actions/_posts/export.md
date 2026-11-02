@@ -93,7 +93,7 @@ As can be seen from the above examples, the format is specified as a string usin
 
 Furthermore, using custom format, you can format your output as a csv file. For example, the following format
 
-{% raw %} `%ZEncoding:csv %ZHeader:'Author,Year,Title,Journal' %G,%Y,%T,%J` {% endraw %}
+{% raw %} `%ZEncoding:csv %ZHeader:"Author,Year,Title,Journal" %G,%Y,%T,%J` {% endraw %}
 
 would create the four specified columns, listing your results under the column heading. Note that if no column heading is specified in your custom format, the export adds the headings based on your field selections.
 

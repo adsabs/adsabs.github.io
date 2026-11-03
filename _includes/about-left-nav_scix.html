@@ -5,7 +5,7 @@ All three drawers render open. cur_* only marks which section the current page
 sits in, so the group heading can be highlighted without collapsing the others.
 {%- endcomment -%}
 {% assign cur_project = false %}
-{% if u contains '/scixabout/history' or u contains '/scixabout/initiatives' or u contains '/scixabout/awards' %}
+{% if u contains '/scixabout/history' or u contains '/scixabout/awards' or u contains '/scixabout/initiatives' %}
   {% assign cur_project = true %}
 {% endif %}
 {% assign cur_people = false %}
@@ -29,7 +29,7 @@ sits in, so the group heading can be highlighted without collapsing the others.
         <ul class="list-group">
           <a href="{{ site.baseurl }}/scixabout/history/"><li class="list-group-item{% if u contains '/scixabout/history' %} active{% endif %}">History</li></a>
           <a href="{{ site.baseurl }}/scixabout/initiatives/"><li class="list-group-item{% if u contains '/scixabout/initiatives' %} active{% endif %}">Initiatives</li></a>
-          <a href="{{ site.baseurl }}/scixabout/awards"><li class="list-group-item{% if u contains '/scixabout/awards' %} active{% endif %}">Awards</li></a>
+          <a href="{{ site.baseurl }}/scixabout/awards"><li class="list-group-item{% if u == '/scixabout/awards' %} active{% endif %}">Awards</li></a>
         </ul>
       </div>
     </div>

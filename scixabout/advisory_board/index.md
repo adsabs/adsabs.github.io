@@ -1,15 +1,18 @@
 ---
 layout: about_scix
 title: "SciX Advisory Board"
+subtitle: "Researchers and information scientists who advise the project"
 ---
 
-The Science Explorer Advisory Board (SciX AB) advises SciX on the operations of the project and recommends changes and improvements to both its services and procedures in order to maximize the scientific productivity of the communities it serves. SciX AB will advocate for the user communities and provide suggestions regarding content curation, technical infrastructure, management, and priority setting. SciX AB will make its reports to the SciX Principal Investigator (PI).
+The Science Explorer Advisory Board advises SciX on how the project is run and recommends changes to its services and procedures, with the aim of making the communities SciX serves more productive. The board advocates for users and gives the team guidance on content curation, technical infrastructure, management and priorities. It reports to the SciX Principal Investigator.
 
-The SciX AB held two meetings in 2025, in February (virtual) and in June (hybrid), and produced a report published in October 2025.
+Members are drawn from across the sciences SciX covers, from geophysics and oceanography to planetary science, climate science and knowledge representation, along with librarians and information scientists.
+
+The board met twice in 2025, in February online and in June in person, and published a report in October 2025.
 
 **[Read the SciX AB Report for the In-Person Meeting - June 11-12, 2025](https://ads.harvard.edu/adsug/2025/SciXAB_Oct2025.pdf)**
 
-Get to know the SciX AB members.
+The current members are below.
 
 ---
 
@@ -180,5 +183,4 @@ Dr. Stephanie Jarmak is an Applied Research Scientist and AI Agent Advocate at S
 **Adjunct Research Fellow, Centre for Astrophysics, University of Southern Queensland**  
 *Disciplinary Expertise: Planetary Geology/Mars Science*
 
-Dr. Graziella Caprarelli is an Adjunct Professor at the Centre for Astrophysics, University of Southern Queensland, Australia; Research Associate at the Istituto Nazionale di Astrofisica (INAF-IRA) in Bologna, Italy; and Editor-in-Chief of the AGU journal *Earth and Space Science*. She served as Deputy Chair of the National Committee for Space Science (Australia), served 5 years as member in the Macelwane Medal Committee for the American Geophysical Union, and as Chair of the Hess Medal Committee. She earned her M.S. in Geological Sciences and her Ph.D. in Earth Sciences from Sapienza University in Rome (Italy). Her most recent research spans volcanic and tectonic processes on Earth and Mars, impact cratering of planetary surfaces, and the stability of water and ice on Mars. She is a member of the MARSIS radar sounder science team on ESA’s Mars Express mission. Dr. Caprarelli was elected a Fellow of the Australian Institute of Geoscientists in 2018, and was named Australian Space Scientist of the Year in 2021.
-
+Dr. Graziella Caprarelli is an Adjunct Research Fellow at the Centre for Astrophysics, University of Southern Queensland, and Editor-in-Chief of the AGU journal *Earth and Space Science*. She earned her Ph.D. in Earth Sciences and M.S. in Geological Sciences from Sapienza University of Rome. Her research spans volcanic and tectonic processes on Earth and Mars, impact cratering of planetary surfaces, and the stability of water and ice on Mars, and she is a member of the MARSIS radar sounder science team on ESA's Mars Express mission. Dr. Caprarelli is a Fellow of the Australian Institute of Geoscientists and was named Australian Space Scientist of the Year in 2021.

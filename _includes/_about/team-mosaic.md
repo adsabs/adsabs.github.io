@@ -1,5 +1,5 @@
 {% comment %}
-SciX team mosaic. include.group is staff | community | research_associate.
+SciX team mosaic. include.group is staff | community | research_associate | intern.
 Staff are members with no role_type. Shapes cycle so the cluster is not a square grid.
 {% endcomment %}
 {% assign n = 0 %}

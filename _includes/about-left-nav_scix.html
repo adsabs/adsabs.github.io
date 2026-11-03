@@ -13,7 +13,7 @@ sits in, so the group heading can be highlighted without collapsing the others.
   {% assign cur_people = true %}
 {% endif %}
 {% assign cur_public = false %}
-{% if u contains '/scixabout/media' or u contains '/scixabout/presentations' %}
+{% if u contains '/scixabout/media' or u contains '/scixabout/presentations' or u contains '/scixabout/outreach' %}
   {% assign cur_public = true %}
 {% endif %}
 
@@ -65,6 +65,7 @@ sits in, so the group heading can be highlighted without collapsing the others.
         <ul class="list-group">
           <a href="{{ site.baseurl }}/scixabout/media/"><li class="list-group-item{% if u contains '/scixabout/media' %} active{% endif %}">Media</li></a>
           <a href="{{ site.baseurl }}/scixabout/presentations/"><li class="list-group-item{% if u contains '/scixabout/presentations' %} active{% endif %}">Presentations</li></a>
+          <a href="{{ site.baseurl }}/scixabout/outreach/"><li class="list-group-item{% if u contains '/scixabout/outreach' %} active{% endif %}">Outreach</li></a>
         </ul>
       </div>
     </div>

@@ -7,7 +7,7 @@
 |--------|----------|
 | Space Missions & Telescopes | [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [HST](#hubble), [INT](#int), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
 | Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [USGS](#usgs), [USNO](#usno) |
-| Archives & Programs | [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOAO](#noao), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
+| Archives & Programs | [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
 | Topical | [SETI](#seti) |
 
 <details id="cfht"><summary><strong>Canada-France-Hawaiʻi Telescope (CFHT)</strong></summary>
@@ -65,10 +65,6 @@ This bibgroup contains publications made available via <a href="https://public.k
 <details id="ntrs"><summary><strong>NASA Technical Reports Server (NTRS)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NTRS</code> &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
 This bibgroup contains publications made available via the NASA Technical Reports Server (NTRS), which provides access to scientific and technical information (STI) created or funded by NASA. The bibgroup is maintained by {{ include.site }} and is sourced from the STI collection of the <a href="https://sti.nasa.gov/public-access/">NASA STI Repository (NTRS)</a>.</details>
-
-<details id="noao"><summary><strong>National Optical Astronomy Observatory (NOAO)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NOAO</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
-The NOAO bibgroup is a curated list of the National Optical Astronomy Observatory (NOAO). The bibgroup comprises publications from 1990 to October 2019, when NOAO became part of the U.S. National Science Foundation National Optical-Infrared Astronomy Research Laboratory (NSF NOIRLab / NOIRLab). The citations in the NOAO bibgroup are included in the NOIRLab bibgroup. The NOAO bibgroup comprises refereed science data publications in a core set of journals that use NOAO telescope data and/or data products & services. Telescopes included are the Nicholas U. Mayall 4-meter Telescope, WIYN 3.5-meter Telescope, WIYN 0.9-meter Telescope, KPNO 0.9m Telescope, Coudé Feed Telescope, and KPNO 2.1-meter Telescope, located at Kitt Peak National Observatory, Tucson, Arizona, USA; the Víctor M. Blanco 4-meter Telescope and SMARTS Consortium telescopes, located at Cerro Tololo Inter-American Observatory, La Serena, Chile; and the SOAR telescope, located at Cerro Pachón, Chile. The bibgroup also includes publications that make use of NOAO-granted community-access time on non-NOAO telescopes. NOAO Community Science and Data Center data products and services included are the Astro Data Archive (previously Science Data Archive), Astro Data Lab (previously NOAO Data Lab), NOIRLab Source Catalog (previously NOAO Source Catalog), and ANTARES. The bibgroup is only updated when publications are identified for the time period of the bibgroup.</details>
 
 <details id="noirlab"><summary><strong>National Optical-Infrared Astronomy Research Laboratory (NOIRLab)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NOIRLab</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>

@@ -72,6 +72,7 @@ This section contains information on how to access bibliographic groups (bibgrou
 * ROSAT: [Articles about ROSAT experiments and/or ROSAT data (1981-2005)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/ABp7idYeQVyAAwlSd6y9_w)
 * ARI: [Papers written by researchers at the Astronomisches Rechen-Institut at the University of Heidelberg (1924-1998)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/ZdD_lXA_Td-hJ4HmAs8JJQ)
 * ISO: [Articles pertaining to the Infrared Space Observatory (1996-2011)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/PP9TJW6uT-SNJhlk-WzlEg)
+* NOAO: [Articles using data from the National Optical Astronomy Observatory telescopes (1990-2019)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/CNUtCvUjT-SiVHjdxGWKIg)
 
 ## ADS Scanned Books
 

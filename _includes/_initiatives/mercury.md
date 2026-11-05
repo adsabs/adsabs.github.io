@@ -1,3 +1,5 @@
+{% include _initiatives/styles.html %}
+
 <figure style="float: left; width: 200px; margin: 0.3em 1.5em 1em 0; text-align: center;">
   <img src="{{ site.baseurl }}/about/initiatives/img/mercury1.jpg"
       alt="Cover of Mercury, the magazine of the Astronomical Society of the Pacific"
@@ -59,12 +61,14 @@ cost to any reader, anywhere.
   science, and journalists gain a primary record of how discoveries
   were explained to the public as they happened.
 
----
+<div class="initiative-callout" markdown="1">
+<h3 style="color: #5FBFAE;">To Make a Gift</h3>
 
-<h3 style="margin-top: 0; color: #5FBFAE;">To Make a Gift</h3>
-
-<a class="btn btn-primary" href="https://www.cfa.harvard.edu/?form=FUNWMCLALXB" target="_blank">Support by Donating</a>
+<div class="initiative-cta">
+  <a class="initiative-btn" href="https://www.cfa.harvard.edu/?form=FUNWMCLALXB" target="_blank">Support by Donating</a>
+</div>
 
 **Please note:** The giving form contains a designation dropdown.
 Donors must select **"SAO Mercury Magazine Digitization"** for the
 gift to be directed to this project.
+</div>

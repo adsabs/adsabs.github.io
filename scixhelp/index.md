@@ -381,7 +381,7 @@ no-header: true
       <span class="faq-toggle">+</span>
     </div>
     <div class="faq-answer" id="faq-ads-libraries">
-      <p>They are all there. <a href="https://scixplorer.org/user/account/login">Log in to SciX</a> from the Account menu in the upper right, using your ADS email and password. There is nothing to import or convert.</p>
+      <p>Your ADS libraries are automatically synced to your SciX account. To see them, <a href="https://scixplorer.org/user/account/login">log in to SciX</a> from the Account menu in the upper right, using your ADS email and password. There is nothing to import or convert.</p>
       <img src="{{ site.baseurl }}/scixhelp/sciximg/ads-quickstart-account.png" class="img-responsive center-block" alt="SciX header with the Account menu open, showing Login and Signup.">
       <p>New in SciX: you can now add your own annotations to the abstracts in your <a href="{{ site.baseurl }}/scixhelp/libraries-scix/creating-libraries">libraries</a>.</p>
     </div>

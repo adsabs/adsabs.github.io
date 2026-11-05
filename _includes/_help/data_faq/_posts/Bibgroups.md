@@ -6,7 +6,7 @@
 | Type | Examples |
 |--------|----------|
 | Space Missions & Telescopes | [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [HST](#hubble), [INT](#int), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
-| Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [USGS](#usgs), [USNO](#usno) |
+| Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [Leiden Observatory](#leiden), [USGS](#usgs), [USNO](#usno) |
 | Archives & Programs | [Astronomy Historical Literature](#ast-hist-lit), [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
 | Topical | [PhysEd](#physed), [SETI](#seti) |
 
@@ -53,6 +53,10 @@ The INT bibgroup contains refereed papers published since 1984 using Isaac Newto
 <details id="jwst"><summary><strong>James Webb Space Telescope (JWST)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:JWST</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Telescope</p>
 This group primarily contains refereed articles that made scientific use of data from the NASA/ESA/CSA James Webb Space Telescope (JWST) since 2022, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). Papers are added continuously and may lag up to one year from date of publication. Articles are linked to the program IDs and observational data on which they are based whenever feasible. Note that matching JWST proposal IDs to published papers is an ongoing project and never completely up to date. Some non-refereed articles and conference proceedings may also be included when use of the telescope's data is noted. Key papers (refereed and non-refereed) which address instrumentation or engineering systems are included; these non-data papers may precede 2022. For further information, visit the <a href="https://www.stsci.edu/scientific-community/stsci-library-and-institutional-archive/missions-publications">STScI Library and Institutional Archive</a> or contact metrics@stsci.edu.</details>
+
+<details id="leiden"><summary><strong>Leiden Observatory</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Leiden Observatory"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Institution</p>
+This bibgroup is populated with publications by scraping the astro-ph listing on the Leiden Observatory website and querying SciX/ADS with aff:"Leiden Observatory". This bibgroup is maintained by {{ include.site }}.</details>
 
 <details id="astrobio"><summary><strong>NASA Astrobiology</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA Astrobiology"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Program</p>

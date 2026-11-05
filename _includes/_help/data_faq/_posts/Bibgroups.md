@@ -1,5 +1,5 @@
 > ### What are Bibgroups? 
-> Bibgroups are curated collections of publications maintained by librarians, archivists, and scientists to track the scientific output of missions, observatories, institutions, and research programs. Descriptions of each bibgroup include information that details the coverage in the collection and frequency of updates.  Many of the bibgroups include contact information for the maintainer.{% if include.ads %} We maintain links to [{{ include.site }} legacy bibgroups](../legacy/#ads-legacy-bibgroups) that are no longer updated but contain useful information.{% endif %}
+> Bibgroups are curated collections of publications maintained by librarians, archivists, and scientists to track the scientific output of missions, observatories, institutions, and research programs. Descriptions of each bibgroup include information that details the coverage in the collection and frequency of updates. Many of the bibgroups include contact information for the maintainer. We also maintain links to [ADS Legacy Bibgroups](#ads-legacy-bibgroups) that are no longer updated but contain useful information and are available as public libraries.
 
 ## Bibgroups at a Glance
 
@@ -118,4 +118,17 @@ The WHT bibgroup contains refereed papers published since 1988 using William Her
 <p>&nbsp;&nbsp;&nbsp; 🏷️ <strong>Types:</strong> Telescope </p>
 These groups contain refereed articles that made scientific use of data from the respective NASA mission, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). The data were obtained during the entire in-service period of the mission. Papers are added continuously but may lag up to one year from date of publication. For further information contact the MAST HelpDesk (archive@stsci.edu).</details>
 
+<h2 id="ads-legacy-bibgroups">ADS Legacy Bibgroups</h2>
+
+This section contains information on how to access bibliographic groups (bibgroups) that are no longer being maintained. Since we feel that these legacy bibgroups can still be useful, we have transferred their contents to public libraries. The list below names the retired bibgroup, describes the contents of each, and provides the link to access the library. To work with their contents or apply additional filters/search terms, please click on the button "View library in search results page" (upper right).
+
+* LPI: [Lunar and Planetary Institute (LPI) bibliography, from approximately 1975 to 1996]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/9wjG2lMRSauOQidpFkv_5Q)
+* UKIRT: [Papers published in refereed journals that contain data from observations at the United Kingdom Infrared Telescope (UKIRT) on Mauna Kea, Hawaii (1988-2013)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/0A9ojS99QNOuOb24OqOpmg)
+* VSGC: [Papers about variable stars in globular clusters (1934-1996)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/4Fmohh6jSAC7GTXAxbWUew)
+* ROSAT: [Articles about ROSAT experiments and/or ROSAT data (1981-2005)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/ABp7idYeQVyAAwlSd6y9_w)
+* ARI: [Papers written by researchers at the Astronomisches Rechen-Institut at the University of Heidelberg (1924-1998)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/ZdD_lXA_Td-hJ4HmAs8JJQ)
+* ISO: [Articles pertaining to the Infrared Space Observatory (1996-2011)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/PP9TJW6uT-SNJhlk-WzlEg)
+* NOAO: [Articles using data from the National Optical Astronomy Observatory telescopes (1990-2019)]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/CNUtCvUjT-SiVHjdxGWKIg)
+* JCMT: [Articles using data from the James Clerk Maxwell Telescope (JCMT) on Mauna Kea, Hawaii]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/FFUnBRxWROK-NauemkAjlQ)
+  
 <div style="clear: both; margin-bottom: 10px;"></div>

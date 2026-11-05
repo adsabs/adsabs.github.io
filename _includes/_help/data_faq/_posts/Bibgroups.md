@@ -7,8 +7,12 @@
 |--------|----------|
 | Space Missions & Telescopes | [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [HST](#hubble), [INT](#int), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
 | Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [USGS](#usgs), [USNO](#usno) |
-| Archives & Programs | [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
-| Topical | [SETI](#seti) |
+| Archives & Programs | [Astronomy Historical Literature](#ast-hist-lit), [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
+| Topical | [PhysEd](#physed), [SETI](#seti) |
+
+<details id="ast-hist-lit"><summary><strong>Astronomy Historical Literature</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Historical Literature"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
+This group includes historic observatory publications published in the field of astronomy going back as far as the 1780's. It is curated and maintained by the SciX Team and is sourced from a list of bibstems and volumes that were scanned for the <a href="../../{% if include.ads %}blog{% else %}scixblog{% endif %}/HistoricLit">SciX Historical Literature project</a>. These historic records contain foundational work that remains relevant today, observational data of unrepeatable sky views, and evidence of the evolving culture of astronomy.</details>
 
 <details id="cfht"><summary><strong>Canada-France-Hawaiʻi Telescope (CFHT)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:CFHT</code> &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Telescope</p>
@@ -73,6 +77,10 @@ The NOIRLab bibgroup is a curated list of the U.S. National Science Foundation N
 <details id="pan-starrs"><summary><strong>Panoramic Survey Telescope and Rapid Response System (Pan-STARRS)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:Pan-STARRS</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
 This group contains refereed articles that made scientific use of data from the Pan-STARRS PS1 survey, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). The data were obtained during the entire PS1 survey (from 2012 through 2015). Papers are added continuously but may lag up to one year from date of publication. For further information contact the MAST HelpDesk (archive@stsci.edu).</details>
+
+<details id="physed"><summary><strong>Physics Education (PhysEd)</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:PhysEd</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topical</p>
+The Physics Education bibgroup is a topical bibliographic group containing articles related to education in physics and engineering. It is automatically populated based on a SciX-curated filter for specific journals or bibstems plus additional items like AAS education sessions and PhDTs that are categorized as physics education related.</details>
 
 <details id="sdo"><summary><strong>Solar Dynamics Observatory (SDO)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Solar Dynamics Observatory"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>

@@ -4,6 +4,8 @@ Clicking on the title of an individual article will bring you to a page showing 
    * References in the article
    * Co-Reads of the article (papers that have been read by people who read this article)
    * Graphics in the article
+{% unless include.ads %}   * Mentions of software and datasets in the article, and Credits for software, datasets and grants (see [Mentions and Credits]({{ site.scix_base_url }}/scixhelp/actions-scix/mentions-credits))
+{% endunless %}
 
 Export functions will allow you to export the article metadata in
 available formats (see [Export Results]({% if include.ads %}{{ site.ads_base_url }}/help/actions{% else %}{{ site.scix_base_url }}/scixhelp/actions-scix{% endif %}/export) for a full list of formats)

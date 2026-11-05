@@ -1,0 +1,56 @@
+The ADS Users Group (ADSUG) was formed in early 2017 to advise the ADS project on a number of issues. The current membership list and report are available from the [main ADSUG page]({{ include.root }}/adsug.html).
+
+Prior members and reports are listed below.
+
+### November 20--21, 2025
+**Members**: Licia Verde (Chair), Matthew J. Graham (Immediate Past Chair), John Wu (Vice chair), Alex Akins, Stephanie Juneau, Brian Mason, Ryan McGranaghan, Silvia Meakins, Laura Wolz,  Louis Moresi (SciX Advisory Board chair) 
+
+**[Presentations]({{ include.root }}/past_meetings/2025-11-20-202511-program.html)**     
+**[Report](https://ads.harvard.edu/adsug/2025/ADSUG-2025-Report.pdf)** 
+
+### December 5--6, 2024
+**Members**: Matthew J. Graham (Chair), Licia Verde (Vice Chair), Alex Akins, Vandana Desai, Brian Mason, Ryan McGranaghan, Silvia Meakins, John Wu, Louis Moresi (SciX Advisory Board chair) 
+
+**[Presentations]({{ include.root }}/past_meetings/2024-12-05-202411-program.html)**   
+**[Report](https://ads.harvard.edu/adsug/2024/ADSUG_2024_Report.pdf)**
+
+### November 16--17, 2023
+**Members**: J.J. Kavelaars (Chair), Matthew J. Graham (Vice Chair), Jason Barnes, Julianne Dalcanton, Vandana Desai, Silvia Meakins, Aimee Norton, Annalisa Pillepich, Licia Verde 
+
+**[Presentations]({{ include.root }}/past_meetings/2023-11-16-202311-program.html)**  
+**[Report](https://ads.harvard.edu/adsug/2023/ADSUGReport2023.pdf)**
+
+### November 9--10, 2022
+**Members**: Bryan Gaensler (Chair), Jason Barnes, Andy Casey, Julianne Dalcanton, Vandana Desai, J.J. Kavelaars, Aimee Norton, Jenny Novacescu, Annalisa Pillepich    
+**[Presentations]({{ include.root }}/past_meetings/2022-11-01-202211-program.html)**   
+**[Report](https://ads.harvard.edu/adsug/2022/ADSUG_report_2022.pdf)** 
+
+### November 15--16, 2021
+**Members**: Bryan Gaensler (Chair), Jason Barnes, Andy Casey, Julianne Dalcanton, Vandana Desai, J.J. Kavelaars, Martin Lessmeister, Aimee Norton, Jenny Novacescu   
+**[Presentations]({{ include.root }}/past_meetings/2021-11-01-202111-program.html)**   
+**[Report](https://ads.harvard.edu/adsug/2021/ADSUG_2021-Report.pdf)**
+
+### November 19--20, 2020
+**Members**: Chris Lintott (Chair), Andy Casey, Bryan Gaensler, Dawn Gelino, J.J. Kavelaars, Martin Lessmeister, Jenny Novacescu, Jonathan Sick  
+**[Presentations]({{ include.root }}/past_meetings/2020-11-01-202011-program.html)**  
+**[Report](http://ads.harvard.edu/adsug/2020/ADSUG_Report_2020.pdf)**
+
+### November 20--21, 2019
+**Members**: Chris Lintott (Chair), Line Nybakk Akerholt, Bryan Gaensler, Dawn Gelino, Martin Lessmeister, Josh Peek, Jonathan Sick  
+**[Presentations]({{ include.root }}/past_meetings/2019-11-01-201911-program.html)**  
+**[Report](http://ads.harvard.edu/adsug/2019/ADSUG_Report_2019.pdf)**
+
+### November 28--29, 2018
+**Members**: Chris Lintott (Chair), Kathy Flanagan (outgoing chair), Line Nybakk Akerholt, Roc Cutri, Dawn Gelino, Erick Peirson, Josh Peek, Jonathan Sick, Matthew Turk, Michael Wise  
+**[Presentations]({{ include.root }}/past_meetings/2018-11-01-201811-program.html)**  
+**[Report](http://ads.harvard.edu/adsug/2018/ADSUG_Report_2018.pdf)**
+
+### November 2--3, 2017
+**Members**: Kathy Flanagan (Chair), Line Nybakk Akerholt, Carrie Anderson, Roc Cutri, Chris Lintott, Erick Peirson, Josh Peek, Matthew Turk,  Jake VanderPlas, Michael Wise  
+**[Presentations]({{ include.root }}/past_meetings/2018-01-01-201711-program.html)**  
+**[Report](http://ads.harvard.edu/adsug/2017b/ADSUG_Report_Jan2018.pdf)**
+
+### January 17--18, 2017
+**Members**: Kathy Flanagan (Chair), Carrie Anderson, Roc Cutri, Ruth Kneale, Chris Lintott, Sandy Payette, Josh Peek, Matthew Turk, Jake VanderPlas, Michael Wise  
+**[Presentations]({{ include.root }}/past_meetings/2018-01-01-201701-program.html)**  
+**[Report](http://ads.harvard.edu/adsug/2017/ADSUG_Report.pdf)**

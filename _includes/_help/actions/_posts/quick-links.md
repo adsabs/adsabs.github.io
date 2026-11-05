@@ -17,5 +17,5 @@ Here you will find links to Data in the article.  We provide links to {% if incl
 
 {% if include.ads %}{% else %}
 #### Share Options  
-Here you will find options to share the article. Available options are "copy URL" and "copy citation" (meant to be friendly to copy-paste into a text editor/word processing doc). The default copy citation format is AGU and it can be modified in the [export settings](https://scixplorer.org/user/settings/export).
+Here you will find options to share the article. Available options are "copy URL" and "copy citation" (meant to be friendly to copy-paste into a text editor/word processing doc). The default copy citation format is AGU and it can be modified in the [export settings](https://scixplorer.org/user/settings/export). See [Copy Citation]({{ site.scix_base_url }}/scixhelp/actions-scix/copy-citation#from-results-view) for details.
 {% endif %}

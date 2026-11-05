@@ -15,6 +15,10 @@ SciX Research Associates:
 {% for member in site.data.team.team_members %}{% if member.role_type == "research_associate" %}- [{{ member.name }}](../team/team/{{ member.id }}.html)
 {% endif %}{% endfor %}
 
+SciX Interns:
+{% for member in site.data.team.team_members %}{% if member.role_type == "intern" %}- [{{ member.name }}](../team/team/{{ member.id }}.html)
+{% endif %}{% endfor %}
+
 If you have comments or questions about the SciX, you are welcome to contact any of us directly, although the preferred way to get in touch with SciX staff is through our support email ([help [at] scixplorer.org](mailto:help@scixplorer.org)), which guarantees a timely reply to your inquiry.
 
 <div>

@@ -131,3 +131,15 @@ team_members:
     title: "ADS/SciX Research Associate"
     order: 25
     role_type: "research_associate"
+
+  - id: lhees
+    name: "Lisa Hees, MLIS"
+    title: "Intern"
+    order: 26
+    role_type: "intern"
+
+  - id: zmishara
+    name: "Zachary Mishara"
+    title: "Intern"
+    order: 27
+    role_type: "intern"

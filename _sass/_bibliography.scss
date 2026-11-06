@@ -1,0 +1,350 @@
+// Bibliography page: summary tiles, collapsible sections, and paper lists.
+// Data comes from _data/bibliography.yml.
+// Rendered by about/bibliography/index.md and scixabout/bibliography/index.md via
+// _includes/_about/bibliography.md.
+//
+// Imported after _darkmode.scss, so the $darkmode-* variables are in scope.
+
+/* Bibliography: shared tokens */
+$bib-accent: #049dd9;
+$bib-teal: #60c3b2;
+$bib-brand: #1c459b;
+$bib-surface: #fff;
+$bib-band: #f8f9fa;
+$bib-hairline: #e3e6ea;
+$bib-text: #333;
+$bib-text-muted: #495057;
+$bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+.bib-page {
+  margin-top: 6px;
+}
+
+.bib-lede {
+  font-size: 16px;
+  line-height: 1.65;
+  color: $bib-text-muted;
+  max-width: 62em;
+  margin-bottom: 26px;
+}
+
+/* Bibliography: summary tiles */
+.bib-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  margin: 0 0 32px;
+}
+
+.bib-page a.bib-stat {
+  display: block;
+  padding: 18px 18px 16px;
+  border: 1px solid $bib-hairline;
+  border-top: 3px solid $bib-accent;
+  border-radius: 6px;
+  background: $bib-surface;
+  color: $bib-text;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bib-page a.bib-stat:hover,
+.bib-page a.bib-stat:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(28, 69, 155, 0.12);
+  text-decoration: none;
+}
+
+.bib-stat:nth-child(2) { border-top-color: $bib-teal; }
+.bib-stat:nth-child(3) { border-top-color: $bib-brand; }
+.bib-stat:nth-child(4) { border-top-color: #95c949; }
+
+.bib-stat-number {
+  display: block;
+  font-family: $bib-mono;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: $bib-brand;
+}
+
+.bib-stat-label {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: $bib-text-muted;
+}
+
+/* Bibliography: collapsible sections */
+.bib-section {
+  border: 1px solid $bib-hairline;
+  border-radius: 6px;
+  background: $bib-surface;
+  margin: 0 0 14px;
+}
+
+.bib-section > summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.bib-section > summary::-webkit-details-marker {
+  display: none;
+}
+
+.bib-section > summary::before {
+  content: '';
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid $bib-accent;
+  border-bottom: 2px solid $bib-accent;
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.bib-section[open] > summary::before {
+  transform: rotate(45deg);
+}
+
+.bib-section > summary:hover {
+  background: $bib-band;
+}
+
+.bib-section > summary:focus-visible {
+  outline: 3px solid $bib-teal;
+  outline-offset: -3px;
+}
+
+.bib-summary-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.bib-summary-title {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: $bib-text;
+}
+
+.bib-summary-blurb {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: $bib-text-muted;
+}
+
+.bib-count {
+  flex: none;
+  font-family: $bib-mono;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: rgba(4, 157, 217, 0.12);
+  color: darken($bib-accent, 14%);
+  border: 1px solid rgba(4, 157, 217, 0.3);
+}
+
+.bib-section-body {
+  padding: 4px 20px 20px;
+  border-top: 1px solid $bib-hairline;
+}
+
+/* Bibliography: refereed / non-refereed pills */
+.bib-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 4px;
+}
+
+.bib-pill {
+  border: 1px solid $bib-accent;
+  border-radius: 50px;
+  background: $bib-surface;
+  color: $bib-brand;
+  padding: 5px 14px;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
+.bib-pill.is-active,
+.bib-pill:hover,
+.bib-pill:focus {
+  background: $bib-accent;
+  color: #fff;
+}
+
+.bib-list-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 18px 0 0;
+  color: $bib-text-muted;
+}
+
+/* Bibliography: paper rows */
+.bib-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bib-row {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 4px 14px;
+  padding: 14px 8px;
+  border-bottom: 1px solid $bib-hairline;
+  transition: background-color 0.2s ease;
+}
+
+.bib-row:hover {
+  background: $bib-band;
+}
+
+.bib-row-year {
+  font-family: $bib-mono;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #6c757d;
+  padding-top: 3px;
+}
+
+.bib-row-title {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.bib-page .bib-row-title a {
+  color: $bib-text;
+}
+
+.bib-page .bib-row-title a:hover,
+.bib-page .bib-row-title a:focus {
+  color: $bib-brand;
+}
+
+.bib-row-meta {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: $bib-text-muted;
+}
+
+/* Bibliography: see all in SciX */
+.bib-seeall-wrap {
+  margin: 18px 0 0;
+  text-align: center;
+}
+
+.bib-page a.bib-seeall {
+  display: inline-block;
+  padding: 9px 22px;
+  border-radius: 50px;
+  border: 1px solid $bib-accent;
+  font-size: 14px;
+  font-weight: 600;
+  color: $bib-brand;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.bib-page a.bib-seeall:hover,
+.bib-page a.bib-seeall:focus {
+  background: $bib-accent;
+  color: #fff;
+}
+
+.bib-footnote {
+  margin: 28px 0 0;
+  font-size: 13px;
+  color: $bib-text-muted;
+}
+
+@media (max-width: 480px) {
+  .bib-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bib-section > summary {
+    padding: 14px;
+  }
+
+  .bib-section-body {
+    padding: 4px 14px 16px;
+  }
+}
+
+/* Bibliography: dark mode */
+[data-theme='dark'] .bib-lede,
+[data-theme='dark'] .bib-row-meta,
+[data-theme='dark'] .bib-summary-blurb,
+[data-theme='dark'] .bib-stat-label,
+[data-theme='dark'] .bib-footnote,
+[data-theme='dark'] .bib-list-title {
+  color: $darkmode-text-secondary;
+}
+
+[data-theme='dark'] .bib-page a.bib-stat,
+[data-theme='dark'] .bib-section {
+  background: $darkmode-background-secondary;
+  border-color: $darkmode-border;
+  color: $darkmode-text;
+}
+
+[data-theme='dark'] .bib-stat-number {
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .bib-summary-title,
+[data-theme='dark'] .bib-page .bib-row-title a {
+  color: $darkmode-text-strong;
+}
+
+[data-theme='dark'] .bib-page .bib-row-title a:hover,
+[data-theme='dark'] .bib-page .bib-row-title a:focus {
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .bib-section > summary:hover,
+[data-theme='dark'] .bib-row:hover {
+  background: $darkmode-background-tertiary;
+}
+
+[data-theme='dark'] .bib-section-body,
+[data-theme='dark'] .bib-row {
+  border-color: $darkmode-border;
+}
+
+[data-theme='dark'] .bib-count {
+  background: $darkmode-background-tertiary;
+  border-color: $darkmode-border;
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .bib-pill,
+[data-theme='dark'] .bib-page a.bib-seeall {
+  background: transparent;
+  border-color: $darkmode-link;
+  color: $darkmode-link;
+}
+
+[data-theme='dark'] .bib-pill.is-active,
+[data-theme='dark'] .bib-pill:hover,
+[data-theme='dark'] .bib-pill:focus,
+[data-theme='dark'] .bib-page a.bib-seeall:hover,
+[data-theme='dark'] .bib-page a.bib-seeall:focus {
+  background: $darkmode-selected-bg;
+  border-color: $darkmode-selected-bg;
+  color: $darkmode-selected-text;
+}

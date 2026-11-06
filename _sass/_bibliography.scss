@@ -157,6 +157,43 @@ $bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   border-top: 1px solid $bib-hairline;
 }
 
+/* Bibliography: how each list is collected */
+.bib-method {
+  margin: 16px 0 4px;
+  border: 1px solid #cfe9e3;
+  border-left: 4px solid $bib-teal;
+  border-radius: 6px;
+  background: #f2faf8;
+}
+
+.bib-method > summary {
+  padding: 9px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: darken($bib-teal, 30%);
+  cursor: pointer;
+}
+
+.bib-method > summary:focus-visible {
+  outline: 3px solid $bib-teal;
+  outline-offset: 2px;
+}
+
+.bib-method-body {
+  padding: 0 14px 4px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: $bib-text-muted;
+}
+
+.bib-method-body code {
+  font-size: 12px;
+  white-space: normal;
+  word-break: break-word;
+  background: rgba(255, 255, 255, 0.7);
+  color: $bib-text;
+}
+
 /* Bibliography: refereed / non-refereed pills */
 .bib-filters {
   display: flex;
@@ -328,6 +365,25 @@ $bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 [data-theme='dark'] .bib-section-body,
 [data-theme='dark'] .bib-row {
   border-color: $darkmode-border;
+}
+
+[data-theme='dark'] .bib-method {
+  background: rgba(95, 191, 174, 0.08);
+  border-color: rgba(95, 191, 174, 0.35);
+  border-left-color: $bib-teal;
+}
+
+[data-theme='dark'] .bib-method > summary {
+  color: $bib-teal;
+}
+
+[data-theme='dark'] .bib-method-body {
+  color: $darkmode-text-secondary;
+}
+
+[data-theme='dark'] .bib-method-body code {
+  background: $darkmode-background-tertiary;
+  color: $darkmode-text;
 }
 
 [data-theme='dark'] .bib-count {

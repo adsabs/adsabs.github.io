@@ -1,38 +1,46 @@
 {% comment %}
 Bibliography page, shared by ADS (/about/bibliography) and SciX (/scixabout/bibliography).
-Call with ads=true for ADS, ads=false for SciX. Content comes from _data/bibliography.yml,
+Call with ads=true for ADS, ads=false for SciX. Paper lists come from _data/bibliography.yml,
 which scripts/fetch-bibliography.py regenerates weekly; edit the script, not the data.
+Section titles and "How is this list collected?" text come from _data/bibliography_groups.yml.
 Styling from _sass/_bibliography.scss.
 
-The six data sections are shown as four collapsible groups: refereed and non-refereed
-lists share a group and are switched with pills.
+Each group is a collapsible section; a group with two lists (refereed and non-refereed)
+switches between them with pills.
 {% endcomment %}
-{% if include.ads %}{% assign abs_root = site.ads_base_url %}{% else %}{% assign abs_root = site.scix_base_url %}{% endif %}
+{% if include.ads %}{% assign abs_root = site.ads_base_url %}{% assign team_page = '/about/team/' %}{% else %}{% assign abs_root = site.scix_base_url %}{% assign team_page = '/scixabout/team/' %}{% endif %}
+{% assign team_page = team_page | prepend: site.baseurl %}
 {% assign bib_sections = site.data.bibliography.sections %}
-{% assign groups = "about|Papers about ADS and SciX|How the system works, how it is used, and what it has meant for research.|team_refereed;team_non_refereed^citing|Papers citing ADS and SciX literature|Research that builds on the papers above.|citing_refereed;citing_non_refereed^acknowledging|Papers acknowledging ADS or SciX|Authors who thank ADS, SciX or the Science Explorer in their acknowledgments.|acknowledging^team|Research by the ADS and SciX team|Papers by current team members, found through their ORCID iDs.|team_research" | split: "^" %}
+{% assign groups = site.data.bibliography_groups %}
 <div class="bib-page">
 
 <p class="bib-lede">Papers about ADS and SciX, the research that cites them, and the work of the people who build them. The lists are drawn from SciX and refreshed every week. Each section shows the newest papers, with a link to the full list in SciX.</p>
 
 <div class="bib-stats">
-{% for g in groups %}{% assign g_parts = g | split: "|" %}{% assign g_ids = g_parts[3] | split: ";" %}{% assign g_total = 0 %}{% for sid in g_ids %}{% assign s = bib_sections | where: "id", sid | first %}{% assign g_total = g_total | plus: s.total %}{% endfor %}
-  <a class="bib-stat" href="#{{ g_parts[0] }}" data-bib-open="{{ g_parts[0] }}">
+{% for g in groups %}{% assign g_ids = g.lists %}{% assign g_total = 0 %}{% for sid in g_ids %}{% assign s = bib_sections | where: "id", sid | first %}{% assign g_total = g_total | plus: s.total %}{% endfor %}
+  <a class="bib-stat" href="#{{ g.id }}" data-bib-open="{{ g.id }}">
     <span class="bib-stat-number">{% include _about/bib-number.html n=g_total %}</span>
-    <span class="bib-stat-label">{{ g_parts[1] }}</span>
+    <span class="bib-stat-label">{{ g.title }}</span>
   </a>
 {% endfor %}
 </div>
 
-{% for g in groups %}{% assign g_parts = g | split: "|" %}{% assign g_ids = g_parts[3] | split: ";" %}{% assign g_total = 0 %}{% for sid in g_ids %}{% assign s = bib_sections | where: "id", sid | first %}{% assign g_total = g_total | plus: s.total %}{% endfor %}
-<details class="bib-section" id="{{ g_parts[0] }}"{% if forloop.first %} open{% endif %}>
+{% for g in groups %}{% assign g_ids = g.lists %}{% assign g_total = 0 %}{% for sid in g_ids %}{% assign s = bib_sections | where: "id", sid | first %}{% assign g_total = g_total | plus: s.total %}{% endfor %}
+<details class="bib-section" id="{{ g.id }}"{% if forloop.first %} open{% endif %}>
   <summary>
     <span class="bib-summary-text">
-      <span class="bib-summary-title">{{ g_parts[1] }}</span>
-      <span class="bib-summary-blurb">{{ g_parts[2] }}</span>
+      <span class="bib-summary-title">{{ g.title }}</span>
+      <span class="bib-summary-blurb">{{ g.blurb }}</span>
     </span>
     <span class="bib-count">{% include _about/bib-number.html n=g_total %}</span>
   </summary>
   <div class="bib-section-body">
+  {% if g.method %}
+    <details class="bib-method">
+      <summary>How is this list collected?</summary>
+      <div class="bib-method-body">{{ g.method | replace: "{root}", abs_root | replace: "{team}", team_page | markdownify }}</div>
+    </details>
+  {% endif %}
   {% if g_ids.size > 1 %}
     <div class="bib-filters" role="group" aria-label="Show refereed or non-refereed papers" hidden>
     {% for sid in g_ids %}{% assign s = bib_sections | where: "id", sid | first %}

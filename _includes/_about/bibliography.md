@@ -105,6 +105,7 @@ lists share a group and are switched with pills.
       tiles[n].addEventListener('click', function () { openSection(this.getAttribute('data-bib-open')); });
     }
     if (location.hash) openSection(location.hash.slice(1));
+    window.addEventListener('hashchange', function () { openSection(location.hash.slice(1)); });
   })();
 </script>
 </div>

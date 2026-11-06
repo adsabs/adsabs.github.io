@@ -1,0 +1,57 @@
+<style>
+/* Shared by the initiative pages. Scoped classes, because the site-wide
+   .btn-primary is overridden to a white button elsewhere in styles.css. */
+.initiative-callout {
+  background: #f2faf8;
+  border: 1px solid #cfe9e3;
+  border-left: 6px solid #5fbfae;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 28px 0;
+}
+
+.initiative-callout h3 {
+  margin-top: 0;
+}
+
+.initiative-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.initiative-cta {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.post-content a.initiative-btn,
+.post-content a.initiative-btn:visited {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #0a6fa3, #2a8577);
+  color: #ffffff;
+  font-size: 1.15em;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(10, 111, 163, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-content a.initiative-btn:hover,
+.post-content a.initiative-btn:focus {
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(10, 111, 163, 0.4);
+}
+
+.post-content a.initiative-btn:focus-visible {
+  outline: 3px solid #5fbfae;
+  outline-offset: 3px;
+}
+
+[data-theme='dark'] .initiative-callout {
+  background: rgba(95, 191, 174, 0.08);
+  border-color: rgba(95, 191, 174, 0.35);
+  border-left-color: #5fbfae;
+}
+</style>

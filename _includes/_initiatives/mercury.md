@@ -1,4 +1,14 @@
-<img src="{{ site.baseurl }}/about/initiatives/img/mercury1.jpg" height="200" width="154" alt="Image" style="float: left; margin: 4px 20px 10px 0px; border: 1px solid #000000;" />
+{% include _initiatives/styles.html %}
+
+<figure style="float: left; width: 200px; margin: 0.3em 1.5em 1em 0; text-align: center;">
+  <img src="{{ site.baseurl }}/about/initiatives/img/mercury1.jpg"
+      alt="Cover of Mercury, the magazine of the Astronomical Society of the Pacific"
+      class="img-responsive"
+      style="width: 100%; border: 1px solid #000000;">
+  <figcaption style="font-size: 0.85em; margin-top: 0.5em;">
+    <em>Mercury</em>, published by the Astronomical Society of the Pacific since 1972
+  </figcaption>
+</figure>
 
 Your donation will fund the digitization of _<a href="https://astrosociety.org/news-publications/mercury-magazine/" target="_blank" referrer="none">Mercury</a>_ magazine, the
 <a href="https://astrosociety.org/" target="_blank" referrer="none">Astronomical Society of the Pacific</a>'s popular-level publication. This
@@ -9,7 +19,7 @@ accessible online.
 
 <div style="clear: both;"></div>
 
-### A 35-year gap in the public record of astronomy
+<h3 style="margin-top: 0; color: #5FBFAE;">A 35-year gap in the public record of astronomy</h3>
 
 Founded in 1889, the Astronomical Society of the Pacific has spent more
 than a century connecting professional astronomers, educators, and the
@@ -24,7 +34,7 @@ Issues from 2007 forward are online. Everything printed between 1972 and
 2007 exists only on paper, scattered across member bookshelves and
 library stacks, effectively invisible to anyone searching today.
 
-### Where these issues will live
+<h3 style="margin-top: 0; color: #5FBFAE;">Where these issues will live</h3>
 
 The Astrophysics Data System, operated by the Smithsonian Astrophysical
 Observatory --- part of the Center for Astrophysics \| Harvard &
@@ -39,7 +49,7 @@ article becomes full-text searchable, permanently citable, and linked
 alongside the research literature it was written to explain --- at no
 cost to any reader, anywhere.
 
-### What your gift makes possible
+<h3 style="margin-top: 0; color: #5FBFAE;">What your gift makes possible</h3>
 
 - **Thirty-five years of issues preserved.** Every printed volume from
   1972 through 2007, scanned and archived to modern standards.
@@ -51,12 +61,14 @@ cost to any reader, anywhere.
   science, and journalists gain a primary record of how discoveries
   were explained to the public as they happened.
 
----
+<div class="initiative-callout" markdown="1">
+<h3 style="color: #5FBFAE;">To Make a Gift</h3>
 
-### To Make a Gift
-
-<a href="https://www.cfa.harvard.edu/?form=FUNWMCLALXB" target="_blank">Support by Donating</a>
+<div class="initiative-cta">
+  <a class="initiative-btn" href="https://www.cfa.harvard.edu/?form=FUNWMCLALXB" target="_blank">Support by Donating</a>
+</div>
 
 **Please note:** The giving form contains a designation dropdown.
 Donors must select **"SAO Mercury Magazine Digitization"** for the
 gift to be directed to this project.
+</div>

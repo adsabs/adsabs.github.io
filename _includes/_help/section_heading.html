@@ -1,1 +1,2 @@
-<h3 id="{{ include.id }}" class="section-anchor">{{ include.title }}{% include _help/section_anchor_link.html id=include.id %}</h3>
+{%- assign heading_level = include.level | default: 3 -%}
+<h{{ heading_level }} id="{{ include.id }}" class="section-anchor">{{ include.title }}{% include _help/section_anchor_link.html id=include.id %}</h{{ heading_level }}>

@@ -1,13 +1,13 @@
 # Sections of the Bibliography page (_includes/_about/bibliography.md). Edited by hand.
 # Paper lists come from _data/bibliography.yml, which scripts/fetch-bibliography.py
-# regenerates; `lists` names its section ids. In `method`, {root} becomes the SciX or
-# ADS site and {team} the Team page, and the text is rendered as Markdown.
+# regenerates; `lists` names its section ids. In `method`, ROOT_URL becomes the SciX or
+# ADS site and TEAM_URL the Team page, and the text is rendered as Markdown.
 - id: about
   title: Papers about ADS and SciX
   blurb: How the system works, how it is used, and what it has meant for research.
   lists: [team_refereed, team_non_refereed]
   method: |
-    Curated by hand. The ADS/SciX team keeps two public libraries, [ADS Refereed Papers]({root}/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ) and [ADS Non-Refereed Papers]({root}/public-libraries/iETdWs2pSGajhFBI30X3UQ), and adds papers that describe ADS or SciX, study how they are used, or build on their data and services.
+    Curated by hand. The ADS/SciX team keeps two public libraries, [ADS Refereed Papers](ROOT_URL/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ) and [ADS Non-Refereed Papers](ROOT_URL/public-libraries/iETdWs2pSGajhFBI30X3UQ), and adds papers that describe ADS or SciX, study how they are used, or build on their data and services.
 
     Query: `docs(library/aI9-ox_2RNeZK-gm-4DpVQ)` and `docs(library/iETdWs2pSGajhFBI30X3UQ)`
 - id: citing
@@ -31,6 +31,6 @@
   blurb: Papers by current team members, found through their ORCID iDs.
   lists: [team_research]
   method: |
-    Automatic. Papers claimed by, or tagged with, the ORCID iD of a current member of the [team]({team}). Members without an ORCID iD on record are not included yet.
+    Automatic. Papers claimed by, or tagged with, the ORCID iD of a current member of the [team](TEAM_URL). Members without an ORCID iD on record are not included yet.
 
     Query: `orcid:(…)` with one ORCID iD per team member

@@ -38,7 +38,7 @@ switches between them with pills.
   {% if g.method %}
     <details class="bib-method">
       <summary>How is this list collected?</summary>
-      <div class="bib-method-body">{{ g.method | replace: "{root}", abs_root | replace: "{team}", team_page | markdownify }}</div>
+      <div class="bib-method-body">{{ g.method | replace: "ROOT_URL", abs_root | replace: "TEAM_URL", team_page | markdownify }}</div>
     </details>
   {% endif %}
   {% if g_ids.size > 1 %}

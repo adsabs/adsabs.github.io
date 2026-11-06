@@ -48,11 +48,20 @@
   </div>
   <div id="actions-items" class="panel-collapse collapse{% if page.url contains '/actions-scix/' %} in{% endif %}"  aria-labelledby="actions-help">
     <ul class="list-group">
-        {% assign posts = site.categories.actions-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
+        {%- comment -%}
+        Grouped to match the search results page: results-page features, then the
+        Bulk Actions and Explore menus. A post sets menu_group in its front matter;
+        posts without one are listed under "Results page".
+        {%- endcomment -%}
+        {% assign posts = site.categories.actions-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %}
+        {% assign groups = "results|Results page,bulk-actions|Bulk Actions menu,explore|Explore menu" | split: "," %}
+        {% for g in groups %}{% assign g_id = g | split: "|" | first %}{% assign g_label = g | split: "|" | last %}
+        <li class="list-group-item scix-nav-group-label" role="presentation"><strong>{{ g_label }}</strong></li>
+        {% for post in sorted_posts %}{% assign post_group = post.menu_group | default: "results" %}{% if post.url and post_group == g_id %}
         <a href="{{ site.baseurl }}{{ post.url }}">
             <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
         </a>
-        {% endif %} {% endfor %} {% endif %}
+        {% endif %}{% endfor %}{% endfor %} {% endif %}
       </ul>
     </div>
 </div>

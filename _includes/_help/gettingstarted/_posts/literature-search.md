@@ -142,7 +142,15 @@ the useful() and reviews() operators above. The suggested papers are
 sorted by score, with the most relevant papers first. If you have
 write access to a library, you can select desired papers and add them
 to your library within this tool.
-{% else %} you can use the Explore menu to discover related papers and add them to your library.{% endif %}
+{% else %} the [Citation Helper]({{ site.baseurl }}/scixhelp/actions-scix/citation-helper) in the Explore menu is
+designed to find related papers. Open the library, select **View as search
+results**, then choose **Explore** → **Citation Helper**. It finds up to 100
+papers that are either cited by or that cite the papers in the library,
+but are not contained in the library. Its results are similar to a
+combination of the useful() and reviews() operators above. The suggested
+papers are sorted by score, with the most relevant papers first. If you
+are logged in and have write access to a library, you can select
+desired papers and add them to your library within this tool.{% endif %}
 
 {% if include.ads %}
 <figure>

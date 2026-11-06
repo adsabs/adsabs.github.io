@@ -1,6 +1,7 @@
 ---
 layout: post_scix
 title: "Visualize Results"
+menu_group: explore
 order: 5
 ---
 

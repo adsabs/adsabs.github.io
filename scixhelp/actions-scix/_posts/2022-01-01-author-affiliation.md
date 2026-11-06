@@ -1,6 +1,7 @@
 ---
 layout: post_scix
 title: "Author Affiliation"
+menu_group: bulk-actions
 order: 4
 ---
 

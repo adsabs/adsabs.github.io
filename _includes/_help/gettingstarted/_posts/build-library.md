@@ -27,12 +27,16 @@ The contents of a library can be [exported in a variety of formats]({% if includ
    <img src="/scixhelp/sciximg/scix-library-export.gif"  class="img-responsive">
 </figure>{% endif %}
  
-{% if include.ads %}
 ### Citation helper
-The [library citation helper](../libraries/citation-helper) is a unique feature specifically available to help build and maintain complete collections. It's designed to evaluate the papers already in a library and suggest related papers that should possibly also be included. 
+{% if include.ads %}The [library citation helper](../libraries/citation-helper) is a unique feature specifically available to help build and maintain complete collections. It's designed to evaluate the papers already in a library and suggest related papers that should possibly also be included. 
 
 <figure>
    <img src="/help/img/library-citation-helper.png"  class="img-responsive">
+</figure>
+{% else %}The [Citation Helper]({{ site.baseurl }}/scixhelp/actions-scix/citation-helper) helps build and maintain complete collections. It evaluates the papers already in a library and suggests related papers that should possibly also be included. Open the library, select **View as search results**, then choose **Explore** → **Citation Helper**. It suggests up to 100 papers, each with a score, and if you are logged in you can add them to the library with **Add to library**.
+
+<figure>
+   <img src="/scixhelp/sciximg/citation-helper.png" class="img-responsive" alt="The SciX Citation Helper page, listing suggested papers with a score for each.">
 </figure>
 {% endif %}
 

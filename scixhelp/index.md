@@ -263,6 +263,20 @@ no-header: true
     </div>
   </div>
   
+  <div class="faq-item" id="grant-applications">
+    <div class="faq-question" onclick="toggleFAQ('faq-grants')">
+      <h3>Can SciX help with my grant application?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq-grants">
+      <ul>
+        <li><strong>Co-author list (for example, the NSF collaborator form):</strong> search for your papers, then choose <strong>Bulk Actions</strong> → <strong>Author Affiliations</strong> to build a list of your co-authors and their affiliations. See <a href="{{ site.baseurl }}/scixhelp/actions-scix/author-affiliation">Author Affiliation</a>.</li>
+        <li><strong>SciENcv CV:</strong> export your publications in RIS format, or add them to your ORCID profile and import them into SciENcv from there.</li>
+      </ul>
+      <p>Step-by-step details are in <a href="{{ site.baseurl }}/scixhelp/faq-scix/#submitting-grant-applications">Submitting Grant Applications</a> in the FAQ.</p>
+    </div>
+  </div>
+
   <div class="faq-item" id="exploration-features">
     <div class="faq-question" onclick="toggleFAQ('faq7')">
       <h3>What exploration and discovery features does SciX have?</h3>

@@ -2,6 +2,15 @@
 
 <nav class="help-nav" aria-label="Help topics">
 
+<style>
+/* Search Results: a menu's overview page heads its group, and pages that belong
+   to a menu or to another page are indented under it. The sidebar puts the
+   padding on the link, so the indent goes there too. */
+.help-nav li.list-group-item.scix-nav-menu { margin-top: 10px; }
+.help-nav li.list-group-item.scix-nav-menu > a { font-weight: 700; }
+.help-nav li.list-group-item.scix-nav-sub > a { padding-left: calc(10% + 1.5em); }
+</style>
+
 <div class="panel-group" id="accordion">
 
 <div class="panel panel-default">
@@ -9,7 +18,7 @@
         <button class="{% if page.url contains '/gettingstarted-scix/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#gettingstarted-items" aria-expanded="{% if page.url contains '/gettingstarted-scix/' %}true{% else %}false{% endif %}" aria-controls="gettingstarted-items">
             <span class="{% if page.url contains '/gettingstarted-scix/' %}
     active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i>
-    Getting Started</span>
+    Search Basics</span>
         </button>
     </div>
     <div id="gettingstarted-items" class="panel-collapse collapse{% if page.url contains '/gettingstarted-scix/' %} in{% endif %}"  aria-labelledby="gettingstarted-help">
@@ -48,11 +57,23 @@
   </div>
   <div id="actions-items" class="panel-collapse collapse{% if page.url contains '/actions-scix/' %} in{% endif %}"  aria-labelledby="actions-help">
     <ul class="list-group">
-        {% assign posts = site.categories.actions-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-        <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+        {%- comment -%}
+        Ordered to match the search results page: results-page features first, then
+        the Bulk Actions and Explore menus, then reference pages. A post sets
+        menu_group (bulk-actions, explore or reference) in its front matter; posts
+        without one are results-page features. The first post of a menu (its
+        overview page) heads the group and the rest are indented under it. A post
+        with menu_parent is indented under that page.
+        {%- endcomment -%}
+        {% assign posts = site.categories.actions-scix %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %}
+        {% assign groups = "results,bulk-actions,explore,reference" | split: "," %}
+        {% for g_id in groups %}{% assign group_posts = "" | split: "" %}
+        {% for post in sorted_posts %}{% assign post_group = post.menu_group | default: "results" %}{% if post.url and post_group == g_id %}{% assign group_posts = group_posts | push: post %}{% endif %}{% endfor %}
+        {% for post in group_posts %}{% if g_id == "bulk-actions" or g_id == "explore" %}{% if forloop.first %}{% assign item_class = "scix-nav-menu" %}{% else %}{% assign item_class = "scix-nav-sub" %}{% endif %}{% elsif post.menu_parent %}{% assign item_class = "scix-nav-sub" %}{% else %}{% assign item_class = "" %}{% endif %}
+        <li class="{% if post.url == page.url %} active {% endif %} list-group-item {{ item_class }}">
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </li>
-        {% endif %} {% endfor %} {% endif %}
+        {% endfor %}{% endfor %} {% endif %}
       </ul>
     </div>
 </div>

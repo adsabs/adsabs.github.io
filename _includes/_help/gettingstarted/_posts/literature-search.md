@@ -1,6 +1,6 @@
 ### How do you start a literature search in {{ include.site }}?
 
-*Note: the Getting Started series is designed to get you started with the new interface. More advanced information on searching can be found in the [Second Order Queries]({% if include.ads %}../search/second-order{% else %}../../search-scix/second-order{% endif %}){% if include.ads %}, [Citation Helper](../libraries/citation-helper),{% endif %} and [Article View]({% if include.ads %}../actions/article-view{% else %}../../actions-scix/article-view{% endif %}) help pages and other pages in the "Making a Query" and "Search Results" sections.*
+*Note: the {% if include.ads %}Getting Started{% else %}Search Basics{% endif %} series is designed to get you started with the new interface. More advanced information on searching can be found in the [Second Order Queries]({% if include.ads %}../search/second-order{% else %}{{ site.baseurl }}/scixhelp/search-scix/second-order{% endif %}){% if include.ads %}, [Citation Helper](../libraries/citation-helper),{% endif %} and [Article View]({% if include.ads %}../actions/article-view{% else %}{{ site.baseurl }}/scixhelp/actions-scix/article-view{% endif %}) help pages and other pages in the "Making a Query" and "Search Results" sections.*
 
 Starting research on a new topic can be tricky, especially when you
 don't know which papers you should be reading. How do you make sure
@@ -63,7 +63,7 @@ days.
 
 **Second-order search operators**
 
-The [second-order search operators]({% if include.ads %}../search/second-order{% else %}../../search-scix/second-order{% endif %}) are usable in the one-box
+The [second-order search operators]({% if include.ads %}../search/second-order{% else %}{{ site.baseurl }}/scixhelp/search-scix/second-order{% endif %}) are usable in the one-box
 search box and are available as an autocomplete search term in the
 search box, or for selection from the search term menu above the
 search box. There are three main second-order search operators that
@@ -97,7 +97,7 @@ may be useful for literature searches:
 
 **Paper Network**
 
-The [Paper Network]({% if include.ads %}../actions/visualize#paper-network{% else %}../../actions-scix/visualize#paper-network{% endif %}), available from
+The [Paper Network]({% if include.ads %}../actions/visualize#paper-network{% else %}{{ site.baseurl }}/scixhelp/actions-scix/visualize#paper-network{% endif %}), available from
 the Explore dropdown menu in the upper right on the search results
 page, is a useful tool for exploring subtopics within a larger
 search. Results from a search are sorted into subgroups based on
@@ -142,7 +142,15 @@ the useful() and reviews() operators above. The suggested papers are
 sorted by score, with the most relevant papers first. If you have
 write access to a library, you can select desired papers and add them
 to your library within this tool.
-{% else %} you can use the Explore menu to discover related papers and add them to your library.{% endif %}
+{% else %} the [Citation Helper]({{ site.baseurl }}/scixhelp/actions-scix/citation-helper) in the Explore menu is
+designed to find related papers. Open the library, select **View as search
+results**, then choose **Explore** → **Citation Helper**. It finds up to 100
+papers that are either cited by or that cite the papers in the library,
+but are not contained in the library. Its results are similar to a
+combination of the useful() and reviews() operators above. The suggested
+papers are sorted by score, with the most relevant papers first. If you
+are logged in and have write access to a library, you can select
+desired papers and add them to your library within this tool.{% endif %}
 
 {% if include.ads %}
 <figure>

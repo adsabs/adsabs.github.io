@@ -1,5 +1,5 @@
 ### How do you build a library?
-*Note: the Getting Started series is designed to get you started with the new interface. More advanced information on libraries can be found in the [Creating and Editing a Library help page]({% if include.ads %}../libraries/creating-libraries{% else %}../../libraries-scix/creating-libraries{% endif %}) and other pages in the "{{ include.site }} Libraries" sections.*
+*Note: the {% if include.ads %}Getting Started{% else %}Search Basics{% endif %} series is designed to get you started with the new interface. More advanced information on libraries can be found in the [Creating and Editing a Library help page]({% if include.ads %}../libraries/creating-libraries{% else %}{{ site.baseurl }}/scixhelp/libraries-scix/creating-libraries{% endif %}) and other pages in the "{{ include.site }} Libraries" sections.*
 
 {{ include.site }} libraries allow you to save collections of papers to view later. These libraries can be private (by default) or public. In addition to viewing and sorting saved papers, you can export the collection in a variety of formats, view citations and other metrics, explore visualizations such as the paper or author networks, and check for related papers.  Libraries are a popular way to build reference lists when writing papers, or keeping one's bibliography to use in a CV.
 
@@ -19,7 +19,7 @@ Add papers to a new or existing library directly from the search results. You ca
 The same function is available on the abstract page of a single paper.
 
 ### Export
-The contents of a library can be [exported in a variety of formats]({% if include.ads %}../actions/export{% else %}../../actions-scix/export{% endif %}), including BibTeX and AASTeX. This was designed to facilitate the development of a {{ include.site }} library as a bibliography for a paper in progress, and allow its export into the appropriate format for the journal when ready.
+The contents of a library can be [exported in a variety of formats]({% if include.ads %}../actions/export{% else %}{{ site.baseurl }}/scixhelp/actions-scix/export{% endif %}), including BibTeX and AASTeX. This was designed to facilitate the development of a {{ include.site }} library as a bibliography for a paper in progress, and allow its export into the appropriate format for the journal when ready.
 
 {% if include.ads %}<figure>
    <img src="/help/img/library-export.png" alt="Screenshot of a library showing the Export button and format selection dropdown" class="img-responsive">
@@ -27,17 +27,21 @@ The contents of a library can be [exported in a variety of formats]({% if includ
    <img src="/scixhelp/sciximg/scix-library-export.gif" alt="Animated image showing how to export a library in SciX using the Export button" class="img-responsive">
 </figure>{% endif %}
  
-{% if include.ads %}
 ### Citation helper
-The [library citation helper](../libraries/citation-helper) is a unique feature specifically available to help build and maintain complete collections. It's designed to evaluate the papers already in a library and suggest related papers that should possibly also be included. 
+{% if include.ads %}The [library citation helper](../libraries/citation-helper) is a unique feature specifically available to help build and maintain complete collections. It's designed to evaluate the papers already in a library and suggest related papers that should possibly also be included. 
 
 <figure>
    <img src="/help/img/library-citation-helper.png" alt="Screenshot of the library citation helper suggesting related papers not yet in the library" class="img-responsive">
 </figure>
+{% else %}The [Citation Helper]({{ site.baseurl }}/scixhelp/actions-scix/citation-helper) helps build and maintain complete collections. It evaluates the papers already in a library and suggests related papers that should possibly also be included. Open the library, select **View as search results**, then choose **Explore** → **Citation Helper**. It suggests up to 100 papers, each with a score, and if you are logged in you can add them to the library with **Add to library**.
+
+<figure>
+   <img src="/scixhelp/sciximg/citation-helper.png" class="img-responsive" alt="The SciX Citation Helper page, listing suggested papers with a score for each.">
+</figure>
 {% endif %}
 
 ### Metrics: citations and reads
-The [citations and read statistics]({% if include.ads %}../actions/analyze{% else %}../../actions-scix/analyze{% endif %}) for a library are available, similar to those available from the search results page or an abstract page. Click on the Metrics button within the library to view.
+The [citations and read statistics]({% if include.ads %}../actions/analyze{% else %}{{ site.baseurl }}/scixhelp/actions-scix/analyze{% endif %}) for a library are available, similar to those available from the search results page or an abstract page. Click on the Metrics button within the library to view.
 
 {% if include.ads %}<figure>
    <img src="/help/img/library-metrics.png" alt="Screenshot of library metrics view showing citation and read statistics charts" class="img-responsive">
@@ -46,7 +50,7 @@ The [citations and read statistics]({% if include.ads %}../actions/analyze{% els
 </figure>{% endif %}
 
 ### Visualizations: paper network, author network, word cloud
-The same [visualizations]({% if include.ads %}../actions/visualize{% else %}../../actions-scix/visualize{% endif %}) available in the search results page are available within a {{ include.site }} library. 
+The same [visualizations]({% if include.ads %}../actions/visualize{% else %}{{ site.baseurl }}/scixhelp/actions-scix/visualize{% endif %}) available in the search results page are available within a {{ include.site }} library. 
 
 {% if include.ads %}<figure>
    <img src="/help/img/author_network.png" alt="Screenshot of the author network visualization showing color-coded groups of collaborating authors" class="img-responsive">

@@ -2,7 +2,7 @@
 layout: post_scix
 title: "Citation Helper"
 menu_group: explore
-order: 4
+order: 11
 ---
 
 The Citation Helper suggests papers that are closely related to a set of results through citations, but are not part of that set. It is useful for checking a bibliography or a library for papers you may have missed.

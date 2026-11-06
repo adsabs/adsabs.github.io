@@ -2,7 +2,7 @@
 layout: post_scix
 title: "Bulk Actions Menu"
 menu_group: bulk-actions
-order: 1
+order: 6
 ---
 
 The **Bulk Actions** menu, at the top right of the search results page next to **Explore**, acts on many results at once. Choose **All** to use every result, or **Selected** to use only the results you have checked.

@@ -2,7 +2,7 @@
 layout: post_scix
 title: "Explore Menu"
 menu_group: explore
-order: 1
+order: 9
 ---
 
 The **Explore** menu, at the top right of the search results page next to **Bulk Actions**, lets you visualize and analyze a set of results and find related papers. Choose **All** to use every result, or **Selected** to use only the results you have checked.
@@ -18,10 +18,6 @@ Each visualization opens on a Visualizations page, with a tab for each one and a
 * **Overview**: charts your results by publication **Years**, **Citations** or **Reads**, with refereed and non-refereed papers shown separately, and a count of each.
 * **Metrics**: citation, usage and index metrics for the results. See [Metrics](../actions-scix/analyze).
 * **Author Network**, **Paper Network**, **Concept Cloud** and **Results Graph**: see [Visualize Results](../actions-scix/visualize).
-
-<figure>
-   <img src="/scixhelp/sciximg/explore-overview.png" class="img-responsive center-block" alt="The Overview tab of the SciX Visualizations page, with Years selected. A table counts 47 refereed and 6 non-refereed papers, 53 in total, above a bar chart of papers per year with refereed and non-refereed papers in different colors, and a Download CSV Data link.">
-</figure>
 
 ## Citation Helper
 

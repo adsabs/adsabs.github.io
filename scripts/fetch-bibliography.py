@@ -75,10 +75,10 @@ def sections():
     orcid_query = "orcid:(" + " OR ".join(f'"{o}"' for o in team_orcids()) + ")"
     return [
         dict(id="team_refereed", title="Refereed papers about ADS and SciX",
-             query=f"docs(library/{REFEREED_LIBRARY})", limit=100,
+             query=f"docs(library/{REFEREED_LIBRARY})", limit=25,
              link=f"{SCIX}/public-libraries/{REFEREED_LIBRARY}"),
         dict(id="team_non_refereed", title="Non-refereed papers about ADS and SciX",
-             query=f"docs(library/{NON_REFEREED_LIBRARY})", limit=40,
+             query=f"docs(library/{NON_REFEREED_LIBRARY})", limit=25,
              link=f"{SCIX}/public-libraries/{NON_REFEREED_LIBRARY}"),
         dict(id="citing_refereed", title="Refereed papers citing ADS/SciX literature",
              query=f"{CITING} property:refereed", limit=25),

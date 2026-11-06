@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   {% include head_default.html %}
 
   <body>
     {% include header_default.html %}
 
-    <div class="page-content smart-container">{{ content }}</div>
+    <main class="page-content smart-container">{{ content }}</main>
 
     {% include footer_default.html %}
-    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
+    <button id="darkSwitch" class="darkmode-toggle" type="button" aria-label="Enable dark mode">
       🌓
-    </div>
+    </button>
     <script src="/help/common/js/dark-mode-switch.js"></script>
   </body>
 

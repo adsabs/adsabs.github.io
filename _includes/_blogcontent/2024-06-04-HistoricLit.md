@@ -1,5 +1,5 @@
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/histlit_titles.gif" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/histlit_titles.gif" alt="Animated display of historic observatory publication title pages available in SciX" />
 <br>
 <em>Historic Observatory Publications
 </em>

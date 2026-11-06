@@ -91,10 +91,6 @@ def main():
              'between fifty thousand and a million records a year. In 2023 that rises to '
              '2.4 million, in 2024 to 5.5 million, and in 2025 and 2026 to about 7.5 million. '
              'Earth science accounts for most of the increase.</desc>')
-    o.append('    <defs><pattern id="gc-hatch" width="5" height="5" patternUnits="userSpaceOnUse" '
-             'patternTransform="rotate(45)">'
-             '<line x1="0" y1="0" x2="0" y2="5" stroke="#1c459b" stroke-width="2.2" '
-             'stroke-opacity="0.55"/></pattern></defs>')
 
     for v in range(0, axis_max + 1, 2_000_000):
         o.append(f'    <line class="gc-grid" x1="{L}" y1="{y(v):.1f}" x2="{W-R}" y2="{y(v):.1f}" />')
@@ -110,13 +106,6 @@ def main():
             h = (v / axis_max) * plot_h
             o.append(f'    <rect x="{x:.1f}" y="{y(base)-h:.1f}" width="{bar_w:.1f}" '
                      f'height="{h:.1f}" fill="{colour}" />')
-            if key == "earthscience":
-                # the slice of Earth science that is also physics
-                ep = min(r.get("earth_physics", 0), v)
-                if ep > 0:
-                    eh = (ep / axis_max) * plot_h
-                    o.append(f'    <rect x="{x:.1f}" y="{y(base)-eh:.1f}" width="{bar_w:.1f}" '
-                             f'height="{eh:.1f}" fill="url(#gc-hatch)" />')
             base += v
         yr = r["year"]
         if yr % 5 == 0 or yr == rows[-1]["year"] or yr == rows[0]["year"]:
@@ -163,14 +152,9 @@ def main():
     o.append('  <p class="gc-sm-note">Each subject on its own scale, so the smaller ones '
              'can be seen. Note the different y axes: compare the shapes, not the heights.</p>')
 
-    o.append('  <ul class="gc-legend">')
-    for _, label, colour in COLS:
-        o.append(f'    <li><i style="background:{colour}"></i>{label}</li>')
-    o.append('    <li><i class="gc-legend-hatch"></i>Earth science that is also physics</li>')
-    o.append('  </ul>')
+    # No separate colour key: each small panel is titled and drawn in its subject's colour.
     o.append('  <figcaption>Records are counted by the year they joined the collection, '
-             'not the year they were published. Hatching marks papers that are both Earth '
-             'science and physics.</figcaption>')
+             'not the year they were published.</figcaption>')
     o.append('</figure>')
 
     dest = pathlib.Path("_includes/_about/growth-chart.html")

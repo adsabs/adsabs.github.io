@@ -16,6 +16,10 @@ no-header: true
       <span class="tab-icon"><i class="fa fa-rocket"></i></span>
       Quick Start
     </button>
+    <button class="tab-button" onclick="openTab(event, 'ads-users')">
+      <span class="tab-icon"><i class="fa fa-exchange"></i></span>
+      ADS Users
+    </button>
     <button class="tab-button" onclick="openTab(event, 'api')">
       <span class="tab-icon"><i class="fa fa-code"></i></span>
       API
@@ -340,6 +344,83 @@ no-header: true
         <li><strong>Built by scientists, for scientists:</strong> Designed specifically for the scientific community's needs</li>
       </ul>
       <p>Learn more about what SciX can do for you at <a href="https://www.scixplorer.org/home" target="_blank">scixplorer.org/home</a>.</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Quick Start for ADS Users Tab -->
+  <div id="ads-users" class="tab-content">
+    <div class="tab-header">
+      <h2>Quick Start for ADS Users</h2>
+      <p>Coming from ADS? Your account, libraries, and notifications all carry over to SciX. Here is what to expect and how to get the search experience you are used to. New to SciX altogether? Start with the <a href="#quickstart">Quick Start Guide</a>.</p>
+    </div>
+
+<div class="faq-container">
+  <div class="faq-item" id="ads-experience">
+    <div class="faq-question" onclick="toggleFAQ('faq-ads-experience')">
+      <h3>How do I get the ADS search experience I am used to?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq-ads-experience">
+      <p>Select <strong>Astrophysics</strong> from the discipline menu in the upper left of the SciX header. Then choose how much of SciX you want to take on:</p>
+      <ul>
+        <li><strong>ADS Classic:</strong> select the <strong>Classic Form</strong> tab above the search bar. It works like the ADS Classic form, and shows the fielded query it builds below the Submit button.</li>
+        <li><strong>ADS Modern:</strong> set <strong>Search mode</strong>, just below the search bar, to <a href="{{ site.baseurl }}/scixhelp/search-scix/compatibility-mode">ADS compatibility mode</a>. Searches are limited to the Astronomy and Physics collections and sorted by date, newest first, as in ADS.</li>
+        <li><strong>Full SciX:</strong> leave Search mode on <strong>All relevant content</strong>. You search the whole SciX collection, with astronomy content ranked higher and results sorted by <a href="{{ site.baseurl }}/scixhelp/actions-scix/sort">relevance</a>. Use the <a href="{{ site.baseurl }}/scixhelp/search-scix/filter">collection filters</a> to narrow your results.</li>
+      </ul>
+      <img src="{{ site.baseurl }}/scixhelp/sciximg/ads-quickstart-discipline.png" class="img-responsive center-block" alt="SciX header with the discipline menu open and Astrophysics selected, the Classic Form, Modern Form and Paper Form tabs, and the Search mode menu below the search bar set to All relevant content.">
+      <p>The Classic Form tab and Search mode are only available when Astrophysics is selected. You can change your discipline at any time.</p>
+    </div>
+  </div>
+
+  <div class="faq-item" id="ads-libraries">
+    <div class="faq-question" onclick="toggleFAQ('faq-ads-libraries')">
+      <h3>What happens to my ADS libraries?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq-ads-libraries">
+      <p>Your ADS libraries are automatically synced to your SciX account. To see them, <a href="https://scixplorer.org/user/account/login">log in to SciX</a> from the Account menu in the upper right, using your ADS email and password. There is nothing to import or convert.</p>
+      <img src="{{ site.baseurl }}/scixhelp/sciximg/ads-quickstart-account.png" class="img-responsive center-block" alt="SciX header with the Account menu open, showing Login and Signup.">
+      <p>New in SciX: you can now add your own annotations to the abstracts in your <a href="{{ site.baseurl }}/scixhelp/libraries-scix/creating-libraries">libraries</a>.</p>
+    </div>
+  </div>
+
+  <div class="faq-item" id="ads-settings">
+    <div class="faq-question" onclick="toggleFAQ('faq-ads-settings')">
+      <h3>What happens to my account settings?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq-ads-settings">
+      <p>All of your choices are still there once you log in to SciX with your ADS credentials. <a href="{{ site.baseurl }}/scixhelp/userpreferences-scix/scix-account">Account settings</a> also offer a few new options if you care to explore:</p>
+      <ul>
+        <li>A citation format for copying citations, which can be different from your export format</li>
+        <li>A default sort order for search results</li>
+        <li>A default landing page</li>
+        <li>A default sort order for libraries</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="faq-item" id="ads-notifications">
+    <div class="faq-question" onclick="toggleFAQ('faq-ads-notifications')">
+      <h3>What happens to my email notifications?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq-ads-notifications">
+      <p>They continue unchanged, even if you never log in to SciX. To review or edit them, log in with your ADS credentials and open your <a href="{{ site.baseurl }}/scixhelp/userpreferences-scix/myscix">mySciX notifications</a>.</p>
+    </div>
+  </div>
+
+  <div class="faq-item" id="ads-links">
+    <div class="faq-question" onclick="toggleFAQ('faq-ads-links')">
+      <h3>What happens to my links to ADS?</h3>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer" id="faq-ads-links">
+      <p>We will forward links to ADS pages to SciX, so you do not have to worry about links you have made to papers or other material in the past.</p>
+      <p>To update an abstract link yourself, replace <code>https://ui.adsabs.harvard.edu/</code> with <code>https://scixplorer.org/</code>.</p>
     </div>
   </div>
 </div>
@@ -1466,9 +1547,11 @@ function toggleVideo(videoId) {
       const embedWrapper = document.createElement('div');
       embedWrapper.className = 'video-embed-wrapper';
       
+      const videoTitle = ((videoHeader.querySelector('h3') || {}).textContent || '').trim() || 'Video';
       const iframe = document.createElement('iframe');
       // Add enablejsapi=1 to enable YouTube API control
       iframe.src = 'https://www.youtube.com/embed/' + videoYoutubeId + '?autoplay=1&enablejsapi=1';
+      iframe.setAttribute('title', videoTitle);
       iframe.setAttribute('frameborder', '0');
       iframe.setAttribute('allow', 'autoplay; encrypted-media');
       iframe.setAttribute('allowfullscreen', '');

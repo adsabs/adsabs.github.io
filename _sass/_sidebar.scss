@@ -63,7 +63,6 @@
 
     }
 
-
     h3 {
         font-size: $base-font-size;
         font-weight: bold;
@@ -92,7 +91,13 @@
       margin: 10px 0;
     }
 
-    .panel-heading > a {
+    .panel-heading > button {
+      // Accordion trigger: reset browser button defaults and match prior <a> styles.
+      background: none;
+      border: none;
+      padding: 0;
+      text-align: left;
+      cursor: pointer;
       &:active {
         text-decoration: none;
       }
@@ -102,10 +107,14 @@
       &:focus {
         text-decoration: none;
       }
+      &:focus-visible {
+        outline: 2px solid #4073dd;
+        outline-offset: 2px;
+      }
       color: $text-color;
       width: 100%;
       height: 100%;
-      display:block;
+      display: block;
 
     }
 
@@ -114,10 +123,30 @@
     }
 
     li.list-group-item {
-      padding-left: 10%;
+      // Zero out Bootstrap's padding so the child anchor fills the full tap
+      // area (sia-r68 fix: li>a nesting requires anchor to own the padding).
+      padding: 0;
       border-left: 4px solid transparent !important;
       border-radius: 0 !important;
 
+      > a {
+        display: block;
+        padding: 10px 15px 10px 10%;
+        min-height: 44px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+          background-color: $list-group-hover-bg;
+        }
+
+        &:focus-visible {
+          text-decoration: none;
+          background-color: $list-group-hover-bg;
+          outline: 2px solid #4073dd;
+          outline-offset: -2px;
+        }
+      }
     }
 
     li.active.list-group-item {
@@ -128,6 +157,10 @@
       border-left: 4px solid #4073dd !important;
       background: lighten(#C8DEFF, 7%);
       color: #2169DA;
+
+      > a {
+        color: #2169DA;
+      }
     }
 
 }

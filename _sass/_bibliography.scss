@@ -167,11 +167,35 @@ $bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 .bib-method > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 9px 14px;
   font-size: 13px;
   font-weight: 600;
   color: darken($bib-teal, 30%);
   cursor: pointer;
+  list-style: none;
+}
+
+.bib-method > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Same chevron as the section headers: points right when closed, down when open. */
+.bib-method > summary::before {
+  content: '';
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.bib-method[open] > summary::before {
+  transform: rotate(45deg);
 }
 
 .bib-method > summary:focus-visible {

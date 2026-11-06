@@ -7,7 +7,7 @@
   blurb: How the system works, how it is used, and what it has meant for research.
   lists: [team_refereed, team_non_refereed]
   method: |
-    Curated by hand. The ADS/SciX team keeps two public libraries, [ADS Refereed Papers](ROOT_URL/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ) and [ADS Non-Refereed Papers](ROOT_URL/public-libraries/iETdWs2pSGajhFBI30X3UQ), and adds papers that describe ADS or SciX, study how they are used, or build on their data and services.
+    The ADS/SciX team curates two public libraries by hand, [ADS Refereed Papers](ROOT_URL/public-libraries/aI9-ox_2RNeZK-gm-4DpVQ) and [ADS Non-Refereed Papers](ROOT_URL/public-libraries/iETdWs2pSGajhFBI30X3UQ), adding papers that describe ADS or SciX, study how they are used, or build on their data and services.
 
     Query: `docs(library/aI9-ox_2RNeZK-gm-4DpVQ)` and `docs(library/iETdWs2pSGajhFBI30X3UQ)`
 - id: citing
@@ -15,7 +15,7 @@
   blurb: Research that builds on the papers above.
   lists: [citing_refereed, citing_non_refereed]
   method: |
-    Automatic. Every paper that cites at least one paper in the two libraries above, split into refereed and non-refereed with SciX's `property:refereed` flag. A paper joins the list once SciX has indexed its references.
+    Every paper that cites at least one paper in the two libraries above, split into refereed and non-refereed with SciX's `property:refereed` flag. A paper joins the list once SciX has indexed its references.
 
     Query: `citations(docs(library/aI9-ox_2RNeZK-gm-4DpVQ)) OR citations(docs(library/iETdWs2pSGajhFBI30X3UQ))`
 - id: acknowledging
@@ -23,7 +23,7 @@
   blurb: Authors who thank ADS, SciX or the Science Explorer in their acknowledgments.
   lists: [acknowledging]
   method: |
-    Automatic. A search of the acknowledgments sections that SciX indexes for the names "Astrophysics Data System", "Science Explorer" or "SciX". Papers whose acknowledgments SciX has not indexed are missed, and a few matches may be other tools named "Science Explorer".
+    A search of the acknowledgments sections that SciX indexes for the names "Astrophysics Data System", "Science Explorer" or "SciX". Papers whose acknowledgments SciX has not indexed are missed, and a few matches may be other tools named "Science Explorer".
 
     Query: `ack:("Astrophysics Data System" OR "Science Explorer" OR "SciX")`
 - id: team
@@ -31,6 +31,6 @@
   blurb: Papers by current team members, found through their ORCID iDs.
   lists: [team_research]
   method: |
-    Automatic. Papers claimed by, or tagged with, the ORCID iD of a current member of the [team](TEAM_URL). Members without an ORCID iD on record are not included yet.
+    Papers claimed by, or tagged with, the ORCID iD of a current member of the [team](TEAM_URL). Members without an ORCID iD on record are not included yet.
 
     Query: `orcid:(…)` with one ORCID iD per team member

@@ -9,7 +9,7 @@ lists share a group and are switched with pills.
 {% endcomment %}
 {% if include.ads %}{% assign abs_root = site.ads_base_url %}{% else %}{% assign abs_root = site.scix_base_url %}{% endif %}
 {% assign bib_sections = site.data.bibliography.sections %}
-{% assign groups = "about|Papers about ADS and SciX|How the system works, how it is used, and what it has meant for research.|team_refereed;team_non_refereed,citing|Papers citing ADS and SciX literature|Research that builds on the papers above.|citing_refereed;citing_non_refereed,acknowledging|Papers acknowledging ADS or SciX|Authors who thank ADS, SciX or the Science Explorer in their acknowledgments.|acknowledging,team|Research by the ADS and SciX team|Papers by current team members, found through their ORCID iDs.|team_research" | split: "," %}
+{% assign groups = "about|Papers about ADS and SciX|How the system works, how it is used, and what it has meant for research.|team_refereed;team_non_refereed^citing|Papers citing ADS and SciX literature|Research that builds on the papers above.|citing_refereed;citing_non_refereed^acknowledging|Papers acknowledging ADS or SciX|Authors who thank ADS, SciX or the Science Explorer in their acknowledgments.|acknowledging^team|Research by the ADS and SciX team|Papers by current team members, found through their ORCID iDs.|team_research" | split: "^" %}
 <div class="bib-page">
 
 <p class="bib-lede">Papers about ADS and SciX, the research that cites them, and the work of the people who build them. The lists are drawn from SciX and refreshed every week. Each section shows the newest papers, with a link to the full list in SciX.</p>

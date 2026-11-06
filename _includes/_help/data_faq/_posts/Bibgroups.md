@@ -7,7 +7,7 @@
 |--------|----------|
 | Space Missions & Telescopes | [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [HST](#hubble), [INT](#int), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
 | Institutions | [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [Gemini](#gemini), [Harvard College Observatory Women Astronomical Computers](#hcowac), [Leiden Observatory](#leiden), [USGS](#usgs), [USNO](#usno) |
-| Archives & Programs | [Astronomy Historical Literature](#ast-hist-lit), [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
+| Archives & Programs | [Astronomy Historical Literature](#ast-hist-lit), [IRSA](#irsa), [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NOIRLab](#noirlab), [NTRS](#ntrs), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SOHO](#soho) |
 | Topical | [PhysEd](#physed), [SETI](#seti) |
 
 <details id="ast-hist-lit"><summary><strong>Astronomy Historical Literature</strong></summary>
@@ -45,6 +45,10 @@ This group primarily contains refereed articles that made scientific use of data
 <details id="gemini"><summary><strong>International Gemini Observatory (Gemini)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:Gemini</code> &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Institution</p>
 This group contains refereed articles based on observations (including observatory archive) made at the International Gemini Observatory, NSF NOIRLab. The coverage is from 2000 to present and the group is updated monthly. The Gemini Publications by Users webpage contains more information such as instruments and observation program IDs used for the publication.</details>
+
+<details id="irsa"><summary><strong>Infrared Science Archive (IRSA)</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:IRSA</code> &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Archive</p>
+The IRSA bibgroup contains refereed publications that use data from the <a href="https://irsa.ipac.caltech.edu/">NASA/IPAC Infrared Science Archive (IRSA)</a>, including archival data from Spitzer, WISE/NEOWISE, 2MASS, IRAS, and other missions and surveys hosted at IRSA. The list is compiled and maintained by the IRSA team at IPAC/Caltech, and the bibgroup is updated periodically from <a href="https://irsa.ipac.caltech.edu/bibdata/bibliography_table.html">IRSA’s published bibliography</a>. For further information please contact the <a href="https://irsa.ipac.caltech.edu/docs/help_desk.html">IRSA Help Desk</a>.</details>
 
 <details id="int"><summary><strong>Isaac Newton Telescope (INT)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:INT</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Telescope</p>

@@ -36,17 +36,6 @@ sections:
   - id: scix
     eyebrow: Science Explorer
     title: Recognition for SciX
-    intro_scix: >-
-      SciX is a NASA-funded open search engine for astrophysics, Earth
-      science, heliophysics, planetary science and physics. The two most
-      recent honors went to the team as a whole, for expanding a thirty-year
-      astronomy service into a discovery engine for all of the Earth and
-      space sciences.
-    intro_ads: >-
-      Science Explorer (SciX) is the multidisciplinary search engine that
-      grew out of ADS. The two most recent honors went to the team as a
-      whole, for expanding a thirty-year astronomy service into a discovery
-      engine for all of the Earth and space sciences.
     awards:
       - id: smithsonian-digital-innovation-2026
         variant: hero
@@ -117,19 +106,7 @@ sections:
 
   - id: heritage
     eyebrow: 2001 to 2023
-    title: Earlier recognition, 2001 to 2023
-    intro_scix: >-
-      The record below spans awards to the team as a whole, awards to
-      individual team members, and recognition earned by the NASA
-      Astrophysics Data System (ADS), the legacy product SciX grew out of.
-      ADS folds fully into SciX by 2027, so these citations form one
-      continuous record for one long-running service.
-    intro_ads: >-
-      The record below spans awards to the team as a whole, awards to
-      individual team members, and recognition earned by ADS itself. ADS is
-      the legacy product that SciX grew out of and folds fully into SciX by
-      2027, so these citations form one continuous record rather than the
-      record of two separate institutions.
+    title: Earlier recognition for ADS, 2001 to 2023
     awards:
       - id: adass-software-prize-2023
         span: 8

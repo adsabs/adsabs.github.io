@@ -110,6 +110,7 @@ team_members:
   - id: jpomerantz
     name: "Dr. Jeffrey Pomerantz"
     title: "Digital Technologies Development Librarian"
+    orcid: "0000-0003-1056-3627"
     order: 19
     
   - id: aalkan

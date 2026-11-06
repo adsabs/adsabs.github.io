@@ -55,9 +55,9 @@ $bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   text-decoration: none;
 }
 
-.bib-stat:nth-child(2) { border-top-color: $bib-teal; }
-.bib-stat:nth-child(3) { border-top-color: $bib-brand; }
-.bib-stat:nth-child(4) { border-top-color: #95c949; }
+.bib-page a.bib-stat:nth-child(2) { border-top-color: $bib-teal; }
+.bib-page a.bib-stat:nth-child(3) { border-top-color: $bib-brand; }
+.bib-page a.bib-stat:nth-child(4) { border-top-color: #95c949; }
 
 .bib-stat-number {
   display: block;
@@ -224,13 +224,13 @@ $bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   line-height: 1.4;
 }
 
-.bib-page .bib-row-title a {
-  color: $bib-text;
+.bib-page a.bib-row-title {
+  color: $bib-brand;
 }
 
-.bib-page .bib-row-title a:hover,
-.bib-page .bib-row-title a:focus {
-  color: $bib-brand;
+.bib-page a.bib-row-title:hover,
+.bib-page a.bib-row-title:focus {
+  color: $bib-accent;
 }
 
 .bib-row-meta {
@@ -296,6 +296,7 @@ $bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 [data-theme='dark'] .bib-page a.bib-stat,
+[data-theme='dark'] .bib-page a.bib-stat:nth-child(n),
 [data-theme='dark'] .bib-section {
   background: $darkmode-background-secondary;
   border-color: $darkmode-border;
@@ -306,14 +307,17 @@ $bib-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   color: $darkmode-link;
 }
 
-[data-theme='dark'] .bib-summary-title,
-[data-theme='dark'] .bib-page .bib-row-title a {
+[data-theme='dark'] .bib-summary-title {
   color: $darkmode-text-strong;
 }
 
-[data-theme='dark'] .bib-page .bib-row-title a:hover,
-[data-theme='dark'] .bib-page .bib-row-title a:focus {
+[data-theme='dark'] .bib-page a.bib-row-title {
   color: $darkmode-link;
+}
+
+[data-theme='dark'] .bib-page a.bib-row-title:hover,
+[data-theme='dark'] .bib-page a.bib-row-title:focus {
+  color: $darkmode-text-strong;
 }
 
 [data-theme='dark'] .bib-section > summary:hover,

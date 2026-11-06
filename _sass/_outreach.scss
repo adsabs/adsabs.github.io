@@ -962,7 +962,9 @@ $or-paper: #f3f1ec;
 /* --- Zines as flip books ------------------------------------------ */
 .or-books {
   display: grid;
-  gap: clamp(3.2rem, 5vw, 6rem);
+  // Two booklets side by side; they stack on narrow screens (below).
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.4rem, 4vw, 4rem);
   margin: 0 0 clamp(4rem, 6vw, 8rem);
 }
 
@@ -1085,41 +1087,6 @@ $or-paper: #f3f1ec;
   }
 }
 
-/* --- End mark ---------------------------------------------------- */
-.or-endmark {
-  display: grid;
-  grid-template-columns: clamp(12rem, 16vw, 20rem) minmax(0, 1fr);
-  gap: clamp(2.4rem, 4vw, 4.8rem);
-  align-items: center;
-  margin-top: clamp(4rem, 6vw, 8rem);
-  padding-top: clamp(2.4rem, 3vw, 4rem);
-  border-top: 2px solid $outreach-ink;
-}
-
-.or-endmark-crest {
-  margin: 0;
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-}
-
-.or-endmark-credit .outreach-eyebrow {
-  margin-bottom: 0.6rem;
-}
-
-.or-endmark-line {
-  margin: 0 0 0.8rem;
-  font-size: 1.7rem;
-  color: $outreach-ink;
-
-  a {
-    color: #1c459b;
-  }
-}
-
 /* --- Narrow screens ---------------------------------------------- */
 @media (max-width: 900px) {
   .or-masthead {
@@ -1127,6 +1094,7 @@ $or-paper: #f3f1ec;
   }
 
   .or-books {
+    grid-template-columns: 1fr;
     gap: clamp(2.4rem, 4vw, 3.2rem);
   }
 }
@@ -1134,10 +1102,6 @@ $or-paper: #f3f1ec;
 @media (max-width: 620px) {
   .or-hive {
     --hex-gap: 0.3rem;
-  }
-
-  .or-endmark {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -1156,8 +1120,7 @@ html.dark-mode {
     background: $darkmode-background-secondary;
   }
 
-  .or-masthead-name a,
-  .or-endmark-line {
+  .or-masthead-name a {
     color: $darkmode-text-strong;
   }
 
@@ -1169,8 +1132,7 @@ html.dark-mode {
     }
   }
 
-  .or-masthead-who,
-  .or-endmark {
+  .or-masthead-who {
     border-color: $darkmode-border;
   }
 

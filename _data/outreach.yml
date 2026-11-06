@@ -115,33 +115,6 @@ pieces:
     source_label: Read the EGU 2026 write-up
     source_url: /scixblog/EGU26
 
-  - id: osm-sticker-and-badge-table
-    variant: featured
-    span: 12
-    tone: blue
-    type: Button Badges
-    title: The Ocean Sciences Badge Table
-    image: /blog/images/blog_2026-03-03_osm26img4.png
-    fit: contain
-    alt: >-
-      A three panel photograph from the SciX booth at the Ocean Sciences
-      Meeting. Left, a hand fans out a pile of pentagon SciX character stickers
-      next to SciX name cards and a printed handout. Centre, an attendee in a
-      conference lanyard leans over the booth table to choose from rows of round
-      SciX button badges arranged in a fan. Right, a hand holds a pink "Barbie
-      in STEM" sticker above trays of orange, blue and green SciX button badges.
-    venue: AGU Ocean Sciences Meeting 2026, Glasgow
-    date: February 2026
-    description: >-
-      The stickers and button badges together on the booth table at Ocean
-      Sciences. The exclusive ocean science badges from this run were gone
-      before lunchtime on the Tuesday.
-    note: >-
-      The pink "Barbie in STEM" sticker at the right of this composite was a
-      gift from another exhibitor and is not part of the SciX set.
-    source_label: Read the OSM 2026 write-up
-    source_url: /scixblog/osm26
-
   - id: stickers-on-the-booth-table
     variant: featured
     span: 6

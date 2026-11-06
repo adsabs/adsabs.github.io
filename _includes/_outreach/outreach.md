@@ -127,8 +127,7 @@ about redistributing the artwork.
   {% endcomment %}
   <section class="outreach-section" aria-labelledby="outreach-gallery-title">
     <div class="outreach-section-head">
-      <h2 class="outreach-section-title" id="outreach-gallery-title">On the table</h2>
-      <p class="outreach-section-intro">{{ pieces | size }} pieces, photographed at SciX booths and poster sessions between February and May 2026.</p>
+      <h2 class="outreach-section-title" id="outreach-gallery-title">On the table: stickers, button badges, flyers, and booth displays</h2>
     </div>
 
     <div class="outreach-grid">
@@ -163,19 +162,6 @@ about redistributing the artwork.
       {% endfor %}
     </div>
   </section>
-
-  <footer class="or-endmark">
-    <figure class="or-endmark-crest">
-      <img src="{{ site.baseurl }}{{ f.crest.file }}" alt="{{ f.crest.alt | escape }}" loading="lazy">
-    </figure>
-    <div class="or-endmark-credit">
-      <p class="outreach-eyebrow">{{ f.crest.caption | escape }}</p>
-      <p class="or-endmark-line">
-        Artwork by <a href="{{ site.baseurl }}{{ designer.bio_url }}">{{ designer.name }}</a>, {{ designer.role }}.
-      </p>
-      <p><a class="outreach-viewall" href="{{ site.baseurl }}/scixblog/">Conference write-ups</a></p>
-    </div>
-  </footer>
 </div>
 
 <script>

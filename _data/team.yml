@@ -1,35 +1,44 @@
 # ADS/SciX Team Data
 # This is the single source of truth for team member information
+#
+# orcid is optional. It is used by scripts/fetch-bibliography.py to list the
+# team's research on the Bibliography page.
 
 team_members:
   - id: aaccomazzi
     name: "Dr. Alberto Accomazzi"
     title: "Director and Principal Investigator"
+    orcid: "0000-0002-4110-3511"
     order: 1
     
   - id: csterngrant
     name: "Carolyn Stern Grant"
     title: "Data Ingestion Lead"
+    orcid: "0000-0003-4424-7366"
     order: 2
     
   - id: ehenneken
     name: "Edwin Henneken"
     title: "Content, Curation & Collaborations Lead"
+    orcid: "0000-0003-4264-2450"
     order: 3
     
   - id: klockhart
     name: "Dr. Kelly Lockhart"
     title: "Technical Lead"
+    orcid: "0000-0002-8130-1440"
     order: 4
     
   - id: thostetler
     name: "Tim Hostetler"
     title: "User Interface and Front-End Development"
+    orcid: "0000-0001-9238-3667"
     order: 5
     
   - id: mtempleton
     name: "Dr. Matthew Templeton"
     title: "Data Integration Manager"
+    orcid: "0000-0003-1918-0622"
     order: 6
     
   - id: schen
@@ -40,6 +49,7 @@ team_members:
   - id: fgrezes
     name: "Dr. Felix Grezes"
     title: "Machine Learning and Natural Language Processing"
+    orcid: "0000-0001-8714-7774"
     order: 8
     
   - id: jmarch
@@ -55,11 +65,13 @@ team_members:
   - id: tjacovich
     name: "Dr. Taylor Jacovich"
     title: "Back-End Development & Data Analysis"
+    orcid: "0000-0003-0226-0343"
     order: 11
     
   - id: dchivvis
     name: "Daniel Chivvis"
     title: "Digital Technologies Development Librarian"
+    orcid: "0000-0001-6656-160X"
     order: 12
     
   - id: fdemacedoalves
@@ -75,16 +87,19 @@ team_members:
   - id: jbartlett
     name: "Dr. Jennifer Bartlett"
     title: "Astrophysics Project Scientist"
+    orcid: "0000-0001-7394-4545"
     order: 15
     
   - id: mpolimera
     name: "Dr. Mugdha Polimera"
     title: "Back-End Development & Astrophysicist"
+    orcid: "0000-0001-6162-3963"
     order: 16
     
   - id: akelbert
     name: "Dr. Anna Kelbert"
     title: "Earth Science Project Scientist"
+    orcid: "0000-0003-4395-398X"
     order: 17
     
   - id: pdire
@@ -100,6 +115,7 @@ team_members:
   - id: aalkan
     name: "Dr. Atilla Kaan Alkan"
     title: "Postdoctoral Research Fellow"
+    orcid: "0000-0001-7964-4420"
     order: 20
     
   - id: skundu
@@ -111,30 +127,35 @@ team_members:
   - id: mkurtz
     name: "Dr. Michael J. Kurtz"
     title: "Project Scientist Emeritus"
+    orcid: "0000-0002-6949-0090"
     order: 22
     role_type: "research_associate"
     
   - id: pprotopapas
     name: "Prof. Pavlos Protopapas"
     title: "Interim Project Scientist for Data Science"
+    orcid: "0000-0002-8178-8463"
     order: 23
     role_type: "research_associate"
     
   - id: sblancocuaresma
     name: "Dr. Sergi Blanco-Cuaresma"
     title: "ADS/SciX Research Associate"
+    orcid: "0000-0002-1584-0171"
     order: 24
     role_type: "research_associate"
     
   - id: sjarmak
     name: "Dr. Stephanie Jarmak"
     title: "ADS/SciX Research Associate"
+    orcid: "0000-0002-6982-7191"
     order: 25
     role_type: "research_associate"
 
   - id: lhees
     name: "Lisa Hees, MLIS"
     title: "ADS/SciX Research Associate"
+    orcid: "0009-0000-7315-1844"
     order: 26
     role_type: "research_associate"
 

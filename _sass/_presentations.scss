@@ -346,30 +346,6 @@ $pres-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 13px;
 }
 
-/* Presentations: view all affordance */
-.pres-viewall-wrap {
-  margin: 24px 0 0;
-}
-
-.pres-viewall {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: $pres-brand;
-  border-bottom: 2px solid $pres-accent;
-  padding-bottom: 3px;
-  transition: letter-spacing 0.25s ease, color 0.25s ease;
-}
-
-.pres-viewall:hover,
-.pres-viewall:focus {
-  letter-spacing: 0.26em;
-  color: $pres-accent;
-  text-decoration: none;
-}
-
 /* Presentations: type catalog */
 .pres-filter-label {
   font-size: 1.5rem;
@@ -702,16 +678,6 @@ $pres-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 
 [data-theme='dark'] .pres-card-meta {
   color: $darkmode-text-secondary;
-}
-
-[data-theme='dark'] .pres-viewall {
-  color: $darkmode-link;
-  border-bottom-color: $darkmode-link;
-}
-
-[data-theme='dark'] .pres-viewall:hover,
-[data-theme='dark'] .pres-viewall:focus {
-  color: #8fdcff;
 }
 
 [data-theme='dark'] .pres-list {

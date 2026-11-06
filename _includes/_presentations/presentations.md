@@ -73,18 +73,17 @@
   </div>
   {% endfor %}
 </div>
-
-<p class="pres-viewall-wrap">
-  <a class="pres-viewall" href="#all-presentations">View all {{ all_presentations | size }} presentations</a>
-</p>
 {% endif %}
 
 <h3 class="pres-section-title" id="all-presentations">All presentations</h3>
 <p class="pres-filter-label" id="pres-filter-label">Show by type</p>
 <div class="pres-filters" role="group" aria-labelledby="pres-filter-label">
-  <button type="button" class="pres-pill is-active" data-pres-filter="all" aria-pressed="true">All</button>
+  <button type="button" class="pres-pill is-active" data-pres-filter="all" aria-pressed="true">All ({{ all_presentations | size }})</button>
   {% for type_pair in site.data.presentations.types %}
-  <button type="button" class="pres-pill" data-pres-filter="{{ type_pair[0] }}" aria-pressed="false">{{ type_pair[1] }}</button>
+  {% assign type_count = all_presentations | where: 'type', type_pair[0] | size %}
+  {% if type_count > 0 %}
+  <button type="button" class="pres-pill" data-pres-filter="{{ type_pair[0] }}" aria-pressed="false">{{ type_pair[1] }} ({{ type_count }})</button>
+  {% endif %}
   {% endfor %}
 </div>
 

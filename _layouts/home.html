@@ -24,7 +24,7 @@
                 type="text" 
                 name="q" 
                 class="navbar-search-input" 
-                placeholder="Search 30M+ records in the Earth and space sciences..." 
+                placeholder="Search 36M+ records in the Earth and space sciences..." 
                 aria-label="Search scientific literature"
                 autocomplete="off"
                 required
@@ -59,6 +59,30 @@
                   </a>
                 </li>
                 <li>
+                  <a href="{{ site.baseurl }}/scixabout/awards">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    Awards
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ site.baseurl }}/scixabout/media/">
+                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                    Media
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ site.baseurl }}/scixabout/presentations/">
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                    Presentations
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ site.baseurl }}/scixabout/outreach/">
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                    Outreach
+                  </a>
+                </li>
+                <li>
                   <a href="{{ site.baseurl }}/scixblog/">
                     <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                     Blog
@@ -77,17 +101,15 @@
       </nav>
       
       <!-- Header Text Overlay -->
-      <div class="header-text-overlay">
-        <h1 class="header-welcome-text">Welcome to the Future of Scientific Discovery</h1>
+      <div class="header-text-overlay{% if page.header_subtext %} header-text-overlay-stacked{% endif %}">
+        <h1 class="header-welcome-text">{{ page.header_text | default: "Welcome to the Future of Scientific Discovery" }}</h1>{% if page.header_subtext %}<p class="header-welcome-subtext">{{ page.header_subtext }}</p>{% endif %}
       </div>
     </div>
     
     <div class="home-page-content">{{ content }}</div>
 
     <!-- Only include the dark mode toggle -->
-    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode">
-      🌓
-    </div>
+    <div id="darkSwitch" class="darkmode-toggle" title="Turn on dark mode"></div>
     <script defer src="/help/common/js/dark-mode-switch-scix.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script
@@ -143,7 +165,7 @@
           });
 
           searchInput.addEventListener('blur', function() {
-            this.placeholder = 'Search 30M+ records in the Earth and space sciences...';
+            this.placeholder = 'Search 36M+ records in the Earth and space sciences...';
           });
 
           // Add loading state on form submission
@@ -168,20 +190,13 @@
           });
         }
 
-        // Debug dropdown functionality
         const dropdownToggle = document.querySelector('.dropdown-toggle');
         const dropdown = document.querySelector('.dropdown');
 
         if (dropdownToggle && dropdown) {
-          console.log('Dropdown elements found');
-
-          // Add click event listener
           dropdownToggle.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            console.log('Dropdown clicked');
-
-            // Toggle dropdown manually
             if (dropdown.classList.contains('open')) {
               dropdown.classList.remove('open');
             } else {
@@ -189,14 +204,11 @@
             }
           });
 
-          // Close dropdown when clicking outside
           document.addEventListener('click', function(e) {
             if (!dropdown.contains(e.target)) {
               dropdown.classList.remove('open');
             }
           });
-        } else {
-          console.log('Dropdown elements not found');
         }
       });
     </script>

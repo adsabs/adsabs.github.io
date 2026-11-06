@@ -1,0 +1,9 @@
+{%- comment -%} Prints include.n with thousands separators, e.g. 19281 as 19,281. {%- endcomment -%}
+{%- assign bib_digits = include.n | append: "" -%}
+{%- assign bib_len = bib_digits.size -%}
+{%- for i in (1..bib_len) -%}
+{%- assign bib_idx = i | minus: 1 -%}
+{%- assign bib_left = bib_len | minus: bib_idx | modulo: 3 -%}
+{%- if bib_idx > 0 and bib_left == 0 -%},{%- endif -%}
+{{- bib_digits | slice: bib_idx -}}
+{%- endfor -%}

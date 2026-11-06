@@ -148,6 +148,9 @@ $nav-text-color: $text-color;
   padding: 0;
 }
 
+// Bibliography page; kept apart from the import list above.
+@import 'bibliography';
+
 .about-page {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;

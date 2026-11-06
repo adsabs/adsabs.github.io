@@ -1,23 +1,19 @@
 ---
 layout: about_scix
 title: From ADS to SciX
-no-header: true
+subtitle: How a service built for astronomers grew to serve the Earth and space sciences
 ---
 
 <div class="about-story">
-<header class="about-masthead">
-  <h1 class="about-title">From ADS to SciX</h1>
-  <p class="about-standfirst">How a service built for astronomers grew to serve the Earth and space sciences</p>
-</header>
 
-<p class="about-lead">SciX grew out of the Astrophysics Data System, a NASA-funded service. ADS has served astronomers since the early 1990s and is credited with raising the research efficiency of the field by at least <a href="https://scixplorer.org/abs/2005JASIS..56...36K/abstract">six percent</a>, which is roughly the entire annual astronomy output of a G7 country.</p>
+<p class="about-lead">SciX grew out of the Astrophysics Data System (ADS), a NASA-funded service. ADS has served astronomers since the early 1990s and is credited with raising the research efficiency of the field by at least <a href="https://scixplorer.org/abs/2005JASIS..56...36K/abstract">six percent</a>, which is roughly the entire annual astronomy output of a G7 country.</p>
 
 <ol class="about-timeline">
   <li class="about-timeline-row about-timeline-row--left">
     <p class="about-timeline-year">1988</p>
     <div class="about-timeline-card">
       <h3 class="about-timeline-title">Proof of concept</h3>
-      <p class="about-timeline-body">A prototype containing forty papers was built at the CfA, putting into practice an idea discussed at a conference in Garching the year before.</p>
+      <p class="about-timeline-body">A prototype containing forty papers was built at the Harvard-Smithsonian Center for Astrophysics (CfA), putting into practice an idea discussed at a conference in Garching the year before.</p>
     </div>
   </li>
   <li class="about-timeline-row about-timeline-row--right">
@@ -117,7 +113,7 @@ no-header: true
 </section>
 
 <section class="about-legacy">
-<h2 class="about-group-title">From ADS to SciX</h2>
+<h2 class="about-group-title">Growing into SciX</h2>
 
 <p>SciX builds on more than thirty years of ADS: its collections, its connections to data and archives, and the tools researchers have come to rely on. As the service has expanded into new disciplines, preserving that continuity has been a priority. Existing ADS accounts, libraries, and alerts moved with users to SciX.</p>
 

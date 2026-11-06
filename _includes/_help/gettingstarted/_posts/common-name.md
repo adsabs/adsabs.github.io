@@ -1,5 +1,5 @@
 ### How do you find a paper by an author with a common name?
-*Note: the Getting Started series is designed to get you started with the
+*Note: the {% if include.ads %}Getting Started{% else %}Search Basics{% endif %} series is designed to get you started with the
 new interface. More advanced information on searching can be found in
 the [Search Syntax help page]({% if include.ads %}../search/search-syntax{% else %}{{ site.baseurl }}/scixhelp/search-scix/search-syntax{% endif %}) and other pages in the "Making a Query"  and "Search Results" sections.*
 

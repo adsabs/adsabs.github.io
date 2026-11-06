@@ -53,7 +53,7 @@ no-header: true
           <li><strong>Collaboration search:</strong> Click author twice + institution → <code>author:"Crutzen" author:"Andreae" inst:"Max Planck"</code> → Their joint Max Planck work</li>
         </ul>
         
-        <p>See our <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">Getting Started Tutorial</a> for more tips.</p>
+        <p>See our <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">Search Basics guides</a> for more tips.</p>
       </div>
     </div>
     
@@ -242,7 +242,7 @@ no-header: true
         <li><strong>Funded projects:</strong> <code>abs:"sea level rise" doctype:proposal has:credit</code> → find published authors who were funded to work on this topic</li>
         <li><strong>Citations:</strong> Search for <code>citations(author:”Mitrovica, Jerry”)</code>. Click on the <strong>Explore</strong> menu to create a paper network or an author network of these citations</li>
       </ul>
-      <p>Learn more in our <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">Getting Started Tutorial</a>.</p>
+      <p>Learn more in our <a href="{{ site.baseurl }}/scixhelp/gettingstarted-scix">Search Basics guides</a>.</p>
     </div>
   </div>
   

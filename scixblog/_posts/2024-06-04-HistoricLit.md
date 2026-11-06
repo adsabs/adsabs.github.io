@@ -6,6 +6,8 @@ position: ADS/SciX Astrophysics Project Scientist & Data Curation Librarian
 category: scixblog
 label: news
 thumbnail: blog/images/histlit_titles.gif
+redirect_from:
+  - /scixblog/HistroricLit
 ---
 
 {% include _blogcontent/2024-06-04-HistoricLit.md %}

@@ -1,4 +1,4 @@
-All users, including API users, are subject to the same rate limit (currently 5000 regular requests/day for most request types). However, API users sometimes need or want higher rate limits for a given project, of either a fixed or indefinite length. This policy defines why and how enhanced rate limits may be granted.
+All registered users, including API users, are subject to the same rate limit (currently 5000 regular requests/day for most request types). However, API users sometimes need or want higher rate limits for a given project, of either a fixed or indefinite length. This policy defines why and how enhanced rate limits may be granted.
 
 ### Purpose of rate limits
 Rate limits ensure system stability and uptime by controlling the volume of API requests users can make. This prevents server overloads, maintains consistent response times, and protects against sudden traffic spikes that could impact system performance. In addition to rate limits, users are expected to obey our [API Terms of Use](terms).

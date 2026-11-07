@@ -13,7 +13,7 @@ const turnOnDarkMode = (options, save) => {
     .setAttribute(
               'src',
         (src =
-          '{{ site.baseurl }}/help/img/bbb_assets/transparent_logo.svg')
+          '/help/common/images/scix/FULLCOLORLIGHT-IsotypeNoBackground.svg')
     );
   document.querySelector('#logo-container').style.backgroundColor = '#000';
   document.querySelector('#logo-text').style.color = '#c9d1d9';
@@ -44,7 +44,7 @@ const turnOffDarkMode = (options, save) => {
     .querySelector('#logo')
     .setAttribute(
       'src',
-              (src = '{{ site.baseurl }}/help/img/bbb_assets/ads_partial_logo_dark_background.svg')
+              (src = '/help/common/images/scix/FULLCOLORDARK-IsotypeNoBackground.svg')
     );
   document.querySelector('#logo-container').style.backgroundColor = '#EEE';
   document.querySelector('#logo-text').style.color = '#5D5D5D';

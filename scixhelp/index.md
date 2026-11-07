@@ -457,7 +457,7 @@ no-header: true
         <h3><i class="fa fa-book"></i> Full Documentation</h3>
         <p>Comprehensive API reference with interactive examples:</p>
         <ul>
-          <li><strong>Interactive docs:</strong> <a href="https://ui.adsabs.harvard.edu/help/api/api-docs.html" target="_blank">Full API documentation</a> with live testing</li>
+          <li><strong>Interactive docs:</strong> <a href="{{ site.baseurl }}/scixhelp/api-scix/api-docs.html" target="_blank">Full API documentation</a> with live testing</li>
           <li><strong>Code examples:</strong> Python, R, and other language examples in our <a href="https://github.com/adsabs/adsabs-dev-api" target="_blank">GitHub repository</a></li>
           <li><strong>API terms:</strong> Read our <a href="{{ site.baseurl }}/scixhelp/terms-scix">API terms of use</a></li>
         </ul>
@@ -479,7 +479,7 @@ no-header: true
         <h3><i class="fa fa-cog"></i> Rate Limits & Support</h3>
         <p>API usage guidelines and support:</p>
         <ul>
-          <li><strong>Rate limits:</strong> All accounts have generous rate limits suitable for most use cases</li>
+          <li><strong>Rate limits:</strong> All accounts have generous rate limits suitable for most use cases (see our <a href="{{ site.baseurl }}/scixhelp/policies-scix/rate-limits">API rate limit policy</a>)</li>
           <li><strong>Higher limits:</strong> Contact us for increased rate limits if needed</li>
           <li><strong>Support:</strong> Email <a href="mailto:help@scixplorer.org">help@scixplorer.org</a> for API questions</li>
         </ul>

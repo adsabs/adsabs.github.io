@@ -44,7 +44,7 @@ There are two options to use {{ include.site }} to help build your SciENcv:
 
 {% if include.ads %}## Transitioning from Classic
 ### Q: How do I transfer a private library from Classic to the new {{ include.site }}?
-Link your Classic account to your the new {{ include.site }} account and [use our import tool to transfer your library](../libraries/legacy-importing#importing-libraries). {% endif %}
+Link your Classic account to your the new {{ include.site }} account and [use our import tool to transfer your library](../libraries/legacy-importing#importing-libraries).
 
 ### Q: I have some links to Classic pages on my website - do I need to update all of these to the new {{ include.site }} links?
 Nope! Existing Classic URLs now redirect to the corresponding URLs in the new {{ include.site }}.
@@ -54,7 +54,7 @@ In general, the function **Reviews** in the **Explore** menu will generate the s
 
 The new function **Useful** can be used in a similar way to generate the same results you would get the with button *Get reference lists for selected articles* in the old {{ include.site }}. When "score" is selected for sorting, the records are sorted by the number of cites by the original set.
 
-The **Co-reads** function corresponds with *Get also-read lists for selected articles*.
+The **Co-reads** function corresponds with *Get also-read lists for selected articles*.{% endif %}
 
 ## {{ include.site }} Libraries
 ### Q: The number of papers listed in the header of my library differs from the actual number in the library.

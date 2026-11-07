@@ -26,12 +26,26 @@ With those for author Y. S. Wang:
    initials. 233 total search results.">
 </figure>
 <br>
+{% else %}
+This can be especially helpful when a given author often uses their middle initial. For example, compare the number of results for author Y. Wang:
+<figure>
+   <img src="/scixhelp/sciximg/scix-exact-name-1.png"  class="img-responsive" alt="SciX search bar with the query =author:&quot;wang, y&quot;, which returned 15,346 results.">
+</figure>
+
+<br>
+With those for author Y. S. Wang:
+
+<figure>
+   <img src="/scixhelp/sciximg/scix-exact-name-2.png"  class="img-responsive" alt="SciX search bar with the query =author:&quot;wang, y s&quot;, which returned 470 results.">
+</figure>
+<br>
+For more ways to narrow down a common name, see <a href="{{ site.scix_base_url }}/scixhelp/#common-name-search">My colleague's name is not unique</a> in the SciX Quick Start.
 {% endif %}
 
 ### Filtering results
 
 The facets are useful when trying to narrow down a large list of search results. In addition to the author facet, which allows you to include or exclude name variations of authors, try these facets. All are located in the left-hand column, unless otherwise noted:
-- Collections: by default, records from all database collections (astronomy, physics, and general) are searched from the one-box modern search interface. Limit or exclude collections here as necessary
+- Collections: by default, records from all database collections ({% if include.ads %}astronomy, physics, and general{% else %}astronomy, physics, Earth science, and general{% endif %}) are searched from the one-box modern search interface. Limit or exclude collections here as necessary
 - Refereed: limit your search to refereed or non-refereed records
 - Years: located in the right-hand column, the year sliders allow you to select a publication year or range of publication years to include or exclude
 - Publications: if the journal or other publication name is known, select it here

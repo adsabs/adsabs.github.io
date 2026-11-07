@@ -1,6 +1,6 @@
 # Frequently Asked Questions (FAQs)
 
-[Searching](#searching) • {% if include.ads %}[Submitting Grant Applications](#submitting-grant-applications) •{% endif %}{% if include.ads %}[Transitioning from Classic](#transitioning-from-classic) •{% endif %}[{{ include.site }} Libraries](#{{ include.site | downcase }}-libraries) • [ORCID](#orcid) • [Data and Curation](#data-and-curation) • [Database Coverage](#database-coverage) • [Other](#other)
+[Searching](#searching) • [Submitting Grant Applications](#submitting-grant-applications) •{% if include.ads %}[Transitioning from Classic](#transitioning-from-classic) •{% endif %}[{{ include.site }} Libraries](#{{ include.site | downcase }}-libraries) • [ORCID](#orcid) • [Data and Curation](#data-and-curation) • [Database Coverage](#database-coverage) • [Other](#other)
 
 ## Searching
 
@@ -33,18 +33,18 @@ You can access the abstract page of a known paper by inserting an identifier (bi
     * [{% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/abs/arXiv:0808.2870]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/abs/arXiv:0808.2870)
     * [{% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/abs/0808.2870]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/abs/0808.2870)
 
-{% if include.ads %}## Submitting Grant Applications
+## Submitting Grant Applications
 ### Q: My NSF grant application requires that I provide a list of all of my recent co-authors. Can {{ include.site }} provide that list?
-We have a tool specifically for this purpose: the "Author Affiliation" report option on the Export menu (accessible from the search results page). For more, see the [Author Affiliation help page]({% if include.ads %}{{ site.ads_base_url }}/help/actions{% else %}{{ site.scix_base_url }}/scixhelp/actions-scix{% endif %}/author-affiliation).
+We have a tool specifically for this purpose: the "Author Affiliation" report option on the {% if include.ads %}Export{% else %}Bulk Actions{% endif %} menu (accessible from the search results page). For more, see the [Author Affiliation help page]({% if include.ads %}{{ site.ads_base_url }}/help/actions{% else %}{{ site.scix_base_url }}/scixhelp/actions-scix{% endif %}/author-affiliation).
 
 ### Q: My NSF application requires I build a CV via SciENcv. Can {{ include.site }} help with that?
 There are two options to use {{ include.site }} to help build your SciENcv:  
 1. The first option is to export your publications from {{ include.site }} in the [RIS format]({% if include.ads %}{{ site.ads_base_url }}/help/actions{% else %}{{ site.scix_base_url }}/scixhelp/actions-scix{% endif %}/export). The SciENcv citations manager will then allow you to import your citations in this format.  
-2. The second option is to link your ORCID account with SciENcv and import your citations from there. You can use {{ include.site }} to [add citations to your ORCID profile]({% if include.ads %}{{ site.ads_base_url }}/help/orcid{% else %}{{ site.scix_base_url }}/scixhelp/orcid-scix{% endif %}/claiming-papers), then link your updated ORCID profile to your account in SciENcv.{% endif %}
+2. The second option is to link your ORCID account with SciENcv and import your citations from there. You can use {{ include.site }} to [add citations to your ORCID profile]({% if include.ads %}{{ site.ads_base_url }}/help/orcid{% else %}{{ site.scix_base_url }}/scixhelp/orcid-scix{% endif %}/claiming-papers), then link your updated ORCID profile to your account in SciENcv.
 
 {% if include.ads %}## Transitioning from Classic
 ### Q: How do I transfer a private library from Classic to the new {{ include.site }}?
-Link your Classic account to your the new {{ include.site }} account and [use our import tool to transfer your library](../libraries/legacy-importing#importing-libraries). {% endif %}
+Link your Classic account to your the new {{ include.site }} account and [use our import tool to transfer your library](../libraries/legacy-importing#importing-libraries).
 
 ### Q: I have some links to Classic pages on my website - do I need to update all of these to the new {{ include.site }} links?
 Nope! Existing Classic URLs now redirect to the corresponding URLs in the new {{ include.site }}.
@@ -54,7 +54,7 @@ In general, the function **Reviews** in the **Explore** menu will generate the s
 
 The new function **Useful** can be used in a similar way to generate the same results you would get the with button *Get reference lists for selected articles* in the old {{ include.site }}. When "score" is selected for sorting, the records are sorted by the number of cites by the original set.
 
-The **Co-reads** function corresponds with *Get also-read lists for selected articles*.
+The **Co-reads** function corresponds with *Get also-read lists for selected articles*.{% endif %}
 
 ## {{ include.site }} Libraries
 ### Q: The number of papers listed in the header of my library differs from the actual number in the library.
@@ -82,7 +82,8 @@ The full text is available for searching for many records, including most recent
 
 ## Other
 {% if include.ads %}### Q: I'm trying to use the new interface but I'm getting a message about JavaScript / it's stuck on a loading screen.
-This issue is commonly seen when users have JavaScript turned off in their browser, or they're using security software or browser plugins (such as NoScript) that block JavaScript, or are accessing the site from a network that blocks content from certain domains (e.g. google.com).  The full version of the new {{ include.site }} requires JavaScript in order to function (note: the basic HTML version, linked from the bottom of the search page or from the loading page when JavaScript is not detected, offers limited functionality without requiring JavaScript).  At an absolute minimum you must have JavaScript turned on.  Further, if you have any security settings or plugins that require sites to be whitelisted before running JavaScript, you must whitelist two domains for basic functionality: harvard.edu, and google.com.{% endif %}
+This issue is commonly seen when users have JavaScript turned off in their browser, or they're using security software or browser plugins (such as NoScript) that block JavaScript, or are accessing the site from a network that blocks content from certain domains (e.g. google.com).  The full version of the new {{ include.site }} requires JavaScript in order to function (note: the basic HTML version, linked from the bottom of the search page or from the loading page when JavaScript is not detected, offers limited functionality without requiring JavaScript).  At an absolute minimum you must have JavaScript turned on.  Further, if you have any security settings or plugins that require sites to be whitelisted before running JavaScript, you must whitelist two domains for basic functionality: harvard.edu, and google.com.{% else %}### Q: SciX is stuck on a loading screen or shows a message about JavaScript.
+SciX requires JavaScript. This issue is commonly seen when JavaScript is turned off in the browser, when security software or browser plugins (such as NoScript) block JavaScript, or when a network blocks content from certain domains. If your settings or plugins require sites to be allowed before they can run JavaScript, allow scixplorer.org, which serves both the site and its search API. Two other domains are used for parts of the site: cdn.jsdelivr.net renders mathematics in titles and abstracts, and google.com and gstatic.com provide the reCAPTCHA check on account forms.{% endif %}
 
 ### Q: What internet browsers are supported by {{ include.site }}?
 We support all current versions (within the last 5 years) of Chrome, Firefox, Safari, and Edge. We also support Internet Explorer 11. This includes Firefox ESR (extended service release) versions, but does not include versions of any browser newer than 5 years old that have been officially retired.

@@ -7,7 +7,7 @@ When I search for literature on a search engine, my instinct is to type in a key
 The `abs:""` function of SciX can search my keywords in titles and also in the abstract and keywords sections. For example, I can type in the search bar on SciX `abs:(“Antarctica” AND “snowfall” AND “sea ice”)`, and SciX will go through the titles, abstracts, and keywords of records in the corpus to find the most relevant literature for these topics. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_1.png" alt="Screenshot of SciX search results using the abs: field for Antarctica, snowfall, and sea ice keywords" />
 <br>
 </div>
 <br>
@@ -15,7 +15,7 @@ The `abs:""` function of SciX can search my keywords in titles and also in the a
 What blew my mind was that SciX actually works with publishers to obtain the full text in their metadata. Although you still often need your own way of access to the full text (for example, through an institutional subscription to a journal), on SciX regardless of institutional access you can search your keyword in the full text of literature using `full:""`, in a way similar to `abs:""`. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_2.png" alt="Screenshot of SciX search results using the full: field to search within the full text of literature" />
 <br>
 </div>
 <br>
@@ -26,16 +26,16 @@ It’s happened to me often that my advisor would give me one paper that they th
 When I type “Wagner and Eisenman, 2015” in the SciX search bar, I can find the paper my advisor gave me. Here are some functions I would use to expand my search on this paper: 
 
 1. **`useful()`** is a function that asks what papers are cited by publications most relevant to my topic. In my example, I would type `useful(Wagner and Eisenman, 2015)` in the search bar, and it will show me what papers are cited by studies like Wagner and Eisenman 2015. These would be the studies that came before Wagner and Eisenman 2015 that this topic built upon. If I type just some keywords rather than metadata associated with a specific paper, it would provide records covering the foundation for this topic that authors cite. 
-<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_3.png" />
+<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_3.png" alt="Screenshot of SciX search results using the useful() function to find foundational papers cited by relevant literature" />
 
 2. **`reviews()`** is a function that finds the papers that include citations most relevant to my topic. When I use this function, I am going to find papers that came after Wagner and Eisenman and synthesize or build on top of their research, thus citing this research. 
-<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_4.png" />
+<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_4.png" alt="Screenshot of SciX search results using the reviews() function to find papers that cite and build on relevant literature" />
 
 3. **`trending()`** shows me the reader community of this topic. I can see what papers on this topic do SciX users read the most. Using this function is like how in your lab group, you might see what else people are reading that you might not have discovered yet. 
-<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_5.png" />
+<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_5.png" alt="Screenshot of SciX search results using the trending() function to show most-read papers in a topic area" />
 
 4. Finally, **`similar()`** helps me find papers that have similar content to this one paper I have. SciX compares abstracts and provides a robust way of discovering similar research when I have no idea who else is doing similar research in the field. 
-<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_6.png" />
+<img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_6.png" alt="Screenshot of SciX search results using the similar() function to find papers with similar content based on abstract comparison" />
 
 Using these four functions, I quickly identified many more papers that are very relevant to my research questions and expanded my one reading assignment to a more comprehensive reading list. 
 
@@ -45,7 +45,7 @@ As a graduate student, I often want to search for my advisor’s work or the pub
 SciX provides more advanced search filters that can help with the common name issue. First, on the left of the screen, the first filter is authors. If you click the checkbox of certain names, you can limit to or exclude those people. To further narrow down by name, you can click on the small arrow next to the names and expand to people with the same last name and first name initial, so you can distinguish them with their middle names. If someone changed their name throughout their career, you could click on multiple names in the `author` filter and limit the search results to multiple names. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_7.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_7.png" alt="Screenshot of the SciX author filter showing how to narrow search results by author name and middle initial" />
 <br>
 </div>
 <br>
@@ -55,7 +55,7 @@ Another handy filter is `institutions`. Once you click on this filter, you can s
 With both the `author` and `institutions` filters, I can quickly narrow my search down to the right author I am looking for.  
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_8.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_8.png" alt="Screenshot of the SciX institutions filter showing how to narrow search results by author affiliation" />
 <br>
 </div>
 <br>
@@ -64,7 +64,7 @@ With both the `author` and `institutions` filters, I can quickly narrow my searc
 My favorite function of SciX has to be their visualization tools for the search results. When I first entered the field, I wanted to identify who was publishing under the topic that I became interested in. The author network visualization generated when I search a certain topic such as “Antarctic Ice Sheet” can show me a color-coded pie-chart of different groups of people who tend to publish together. When I click on the `view link overlay` option, I can see the authorship collaborations between different groups. This is helpful for me to find out who is publishing often in the group and who collaborates with particular authors. This function can be very helpful when you are applying for graduate school to identify the big contributors in the field. The author network is also a powerful tool when you are trying to find collaborators in a field that you are not familiar with. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_9.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_9.png" alt="Author network visualization in SciX for the query 'Antarctic Ice Sheet', showing color-coded research groups and collaboration links" />
 <br>
 </div>
 <br>
@@ -75,7 +75,7 @@ One piece of advice that I got from a professor was to subscribe to important ac
 On SciX, I can sign up for weekly or daily alerts that include the results of certain queries. To do this, once I search for specific keywords or authors I click on the little bell button on the top right of all my search results. It will prompt me to receive email notifications when new literature is added to the search result. This is a topic-specific and cross-journal method of keeping up-to-date with the literature of your interest. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_10.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixlitreview_image_10.png" alt="Screenshot of SciX showing the email alert notification bell to subscribe to search result updates" />
 <br>
 </div>
 <br>

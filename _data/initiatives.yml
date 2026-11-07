@@ -5,3 +5,6 @@ initiatives:
   - id: mercury
     title: 'Digitizing Mercury Magazine'
     order: 1
+  - id: c3
+    title: 'Constructing Constellations of Computers'
+    order: 2

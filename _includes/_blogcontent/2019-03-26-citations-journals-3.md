@@ -12,7 +12,7 @@ The [Journal Impact Factor](https://ui.adsabs.harvard.edu/#abs/1972Sci...178..47
 Impact is a form of relative aging. In the case of scholarly articles, aging is often measured by counting citations. As material ages, in general we observe relative decrease in its use, translating into decreasing citation counts. In bibliometrics we refer to this effect as the obsolescence of citations. Qualitatively speaking, the effect is the same across all journals, but there are differences on a quantitative level: relative use differs among journals and in that sense a given journal's impact is different. Traditional impact measures overlook these longer-term effects. Here we present two different ways to examine these obsolescence effects. First we ask the question: given the references in astronomy articles published in the set of 50 journals in year Y, what fraction of (astronomy content of) journal J is cited in year Y-n? The diagram below present these fractions based on 2017. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_1.png" alt="Line chart showing fraction of astronomy journal articles cited by year, comparing ApJ, MNRAS, A&amp;A, and ApJS"/>
 <em>Figure 1</em>
 </div>
 <br>
@@ -28,7 +28,7 @@ IF(Y,n) = num total cites to astronomy articles published in year Y in the n yea
 This IF is another way of quantifying relative aging of citations, or relative use of articles. The diagram below shows a comparison between MNRAS, A&A, and the ApJ (main journal). The dotted line represents equal IF between the ApJ and a given journal. Qualitatively IF ratios grow linearly for the journals in our comparison below (R<sup>2</sup>=0.9996). However, quantitatively speaking, the MNRAS values of IF are about 0.72 of those for the ApJ for publications from 1997. In the case of A&A articles published in 1997, the IF values are 0.57 of those for the ApJ.  In addition to articles published in 1997 (black points), the diagram compares IF values for articles published in 2002 (purple points), 2007 (green points), and 2012 (orange points). For each journal and publication year, a line has been fit to the data, as shown. For 2002 the slope for MNRAS increased to 0.74 and for A&A to 0.61. Again 5 years later, we only see a significant increase for A&A, but the size of the ApJ is still significantly larger. This illustrates the dominance of the ApJ in the field. These shifts in time are due to multiple factors that will be hard to single out. For one, editorial policies change over time. We also know that citation behavior changes over time (see e.g. [Henneken et al. 2009](https://ui.adsabs.harvard.edu/#abs/2009JInfo...3....1H/abstract), figure 2). We do see the effect we mentioned in the [previous blog](../blog/citations-journals-2), of MNRAS catching up with the ApJ. This is illustrated by the data for 2016.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_2.png" alt="Scatter plot comparing impact factor ratios of MNRAS and A&amp;A relative to ApJ for publications from 1997 to 2012"/>
 <em>Figure 2</em>
 </div>
 <br>
@@ -36,7 +36,7 @@ This IF is another way of quantifying relative aging of citations, or relative u
 We offer one last way of comparing journals: compare mean cites for astronomy papers relative to mean cites in the Sample Group (consisting of the 50 journals, defined in the [first blog](../blog/citations-journals)). Here we may look at "Letter journals" and "Regular journals" separately, because these are different classes in terms of citation rates.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_3.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_3.png" alt="Line chart showing mean citations per article relative to sample group mean for letter and regular astronomy journals"/>
 <em>Figure 3</em>
 </div>
 <br>
@@ -44,7 +44,7 @@ We offer one last way of comparing journals: compare mean cites for astronomy pa
 The relatively steep rise for PhRvL is largely due to gravitational wave publications, especially the LIGO papers, just like how the Planck papers skew the results for A&A (see diagram below). Values for 2017, and probably even 2016, should be interpreted with some caution, because these publications are still actively accumulating significant citations. It is also worth noting that a journal like E&PSL is very much embedded in the Earth Sciences discipline, which has very different citation rates.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_4.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/citations-journals-pt3_4.png" alt="Line chart showing mean citations per article for selected journals including PhRvL and A&amp;A, highlighting Planck paper effect"/>
 <em>Figure 4</em>
 </div>
 <br>

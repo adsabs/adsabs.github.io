@@ -5,20 +5,20 @@ As can be seen from the list of datasets displayed in the filter, data collectio
 In addition to being able to select records in a data collections by using the proper filter, one can also use the corresponding search constraint via the data field, e.g. `data:ORNL.DAAC` will return all records that belong to the NASA’s ORNL.DAAC collection.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixdatacollections1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixdatacollections1.png" alt="Figure 1: SciX data filter showing available Earth science data collections on the left, and publication types for ORNL DAAC records on the right" />
 <em>
 Figure 1: Left: Data collections currently available in SciX’s Earth science collection (`collection:earthscience`). Right: Publication types for records currently found in the ORNL DAAC data collection (`data:ORNL.DAAC`).
 </em>
 </div>
 <br>
 
-### Contents
+## Contents
 
 The records found in a given data collection consist of resources which either *are* datasets hosted by a particular repository or *use* data from a particular repository. The first category typically consists of high-level data products that are indexed in SciX. Examples of such records include ones found in the different NASA DAACs (original observations by NASA’s earth observing satellites) or the VizieR data products (machine readable datasets associated with astronomy articles), which have been indexed in the system to make them discoverable and citable. The second category includes data bibliographies which link articles to datasets hosted by the repositories. Examples include the SIMBAD and NED collections, which link articles to measurements of astronomical objects, and the collections from the astrophysics archives (MAST, Chandra, IRSA, HEASARC), which link papers to data products hosted by them.
 
 In order to distinguish between records which correspond to a dataset from the records of papers that use the dataset, one can simply use the “Publication Type” filter to see the different documents available in the particular collection. As an example, figure 1 shows the documents found in the ORNL DAAC data collection.
 
-### Curation
+## Curation
 
 All data collections in SciX are curated according to various criteria and various levels of effort. Historically, the collections associated with the data hosted by the astrophysics archives have been maintained by curators working at the different archives, and have relied on a meticulous analysis of the papers published in the scientific journals of interest to astronomers. (For more information on the process followed, please refer to [this publication](https://scixplorer.org/abs/2024OJAp....7E..85O/abstract)).
 
@@ -26,21 +26,21 @@ With the advent of electronic publishing and the adoption of FAIR principles, mo
 
 In general, any given data collection may be composed by aggregating records which are curated by data managers collaborating with SciX, and records which are mined from the literature by the indexing pipelines implemented by SciX. As our full-text holdings in SciX increase and our ability to incorporate robust AI/ML methods in our pipelines improves, we expect to reduce the amount of human efforts needed to curate these collections long-term.
 
-### Citations and Credits
+## Citations and Credits
 
 One distinctive feature of SciX is to track citations between research works. While this has traditionally meant providing links between papers based on the list of formal citations found in their bibliography, it has now made it possible to also track citations between a paper and a data product or software records. This information is exposed in SciX via the “Citations” tab available in the left menu for each record, as shown in figure 2.
 
 However, thanks to our text mining efforts, we are now able to supplement this information with additional links between papers and datasets or software mined from the papers’ full-text (typically the so-called “data availability statement” sections). This provides an additional set of linkages between papers and data products mentioned in them which are named credits in SciX. This will become an additional impact metric that we will track for an increasingly larger number of research products such as data and software going forward.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixdatacollections2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/scixdatacollections2.png" alt="Figure 2: SciX record for an ORNL DAAC dataset showing 139 citations and 2 credits from mentions, with citation metrics inset" />
 <em>
 Figure 2: The <a href="https://www.scixplorer.org/abs/2022ornl.data.2129T/abstract">SciX record</a> for a dataset hosted by the ORNL DAAC. As of 8/25/2025, SciX has identified 139 citations and 2 credits from mentions for the dataset. Insert: the corresponding citation metrics for the record in question.
 </em>
 </div>
 <br>
 
-### Concluding Remarks
+## Concluding Remarks
 
 Tracking the use of research data and software in the scientific literature is one of the primary goals of SciX. This not only helps reproducibility of scientific results, but it also allows greater discoverability of all the research artifacts involved: papers, software, and datasets. An additional benefit of enhancing the FAIRness of this content is the ability for researchers, data managers, and funders alike to evaluate the scientific impact of people, projects and institutions.
 

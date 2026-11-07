@@ -7,7 +7,7 @@ The basic intellectual structure of the ADS can be described using a bullseye mo
 * Planetary Science
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads-curation_model_f1.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads-curation_model_f1.png" alt="Bullseye diagram showing ADS tiered curation model with Core Collection at center surrounded by Inner and Outer Rings"/>
 <br>
 <em>Figure 1: ADS's tiered curation model. The core collection represents disciplines where its curation is strongest and its coverage is authoritative. The surrounding tiers are connected to the core via the citation network.
 </em>
@@ -41,7 +41,7 @@ In the following step, the librarian walks over to the shelf with the journal vo
 There are some compelling reasons to favor the Eigenfactor. Some of them are the fact that it weights citations with the importance of the citing journals, the fact that it exploits the entire citation network and ignores self-citations and that it has a solid mathematical underpinning and an intuitive stochastic interpretation. Another reason for favoring the Eigenfactor is the fact that it uses a 5-year window to gather citations. This allows, in general, a broader evaluation of journal citations, in particular for disciplines with longer citing half lives. 
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads-curation_model_f2.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads-curation_model_f2.png" alt="Directed network diagram showing citation relationships between journals as nodes and edges"/>
 <em>Figure 2: Directed network based on citation relationship between journals. The nodes represent journals. This is a fictitious network, for illustration purposes only.
 </em>
 </div>
@@ -52,7 +52,7 @@ At its core, the algorithm that calculates the Eigenfactor values is the well-kn
 The results are shown in figure 3. The fact that values are not equal is no surprise, because the citation networks in the ADS and Web of Science are different. The encouraging result is that the values have a very strong correlation.
 
 <div class="text-center">
-    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads-curation_model_f3.png" />
+    <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/ads-curation_model_f3.png" alt="Scatter plot comparing journal Eigenfactor values calculated from ADS citation data versus JCR values"/>
 <em>Figure 3: Comparison between Eigenfactors calculated from ADS data and provided in the JCR. The categorization is based on journal assignments provided in the JCR.
 </em>
 </div>

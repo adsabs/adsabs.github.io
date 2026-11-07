@@ -3,12 +3,12 @@ One of the features new to ADS since the new interface has launched is search an
 
 Users are reminded that while affiliation information is largely complete for recent refereed literature, not all records contain an affiliation, therefore, searching by affiliation alone will inherently be incomplete.  We strongly recommend combining affiliation searches with author searches for best results.
 
-### Using affiliations as part of your search strategy: Author searches and the Affiliation facet
+## Using affiliations as part of your search strategy: Author searches and the Affiliation facet
 
 Affiliation data for papers are available via the "Affiliations" facet in ADS.  As an example, if you search for a first author, you'll get a list of papers having that first author, and on the left-hand side of the results page you'll see ways to refine those results -- who their coauthors are, whether the paper is in the astronomy, physics, or general database, whether it's a refereed publication or not, and so on.  One of those facets is "Affiliations", and by clicking it you'll get a list of institutional affiliations sorted by the number of papers having that affiliation.
 
 <div class="text-center">
-<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2020-01-15_facet.png" />
+<img class="img-thumbnail" src="{{ site.baseurl }} /blog/images/blog_2020-01-15_facet.png" alt="Screenshot of the ADS Affiliations facet showing institutional affiliations sorted by number of papers" />
 <br>
 <em>Example of the Affiliations facet</em>
 </div>
@@ -16,7 +16,7 @@ Affiliation data for papers are available via the "Affiliations" facet in ADS.  
 
 Using one of this blog's coauthors, searching for first_author:&ldquo;Templeton, Matthew" brings up a list of his papers along with a few other "Matthew Templeton"s who are active researchers in ADS-relevant fields.  Selecting the "astronomy" collection and "limit to" yields (mostly) just his set of first-authored publications, and refereed lowers it further to a manageable number.  If you then open the Affiliations facet, you're presented with a list of all affiliations (of any author) contained within his papers.  Matthew Templeton's historical affiliations -- AAVSO, New Mexico State University, Yale University, Los Alamos National Laboratory -- are among the most common in the list.  However, you also find affiliations of co-authors too, for example Iowa State and the Center for Astrophysics.
 
-### Using affiliations as part of your search strategy: Direct affiliation searches
+## Using affiliations as part of your search strategy: Direct affiliation searches
 
 Affiliations in the ADS have been indexed in several different fields, with the intention of allowing multiple use cases. We have currently assigned identifiers with parent/child relationships, such as an academic department within a university. A child may have multiple parents, but we restrict a child from having children of its own. This has required a few modifications to remain useful. For instance, so that University of California schools can identify departments, we have assigned them a parent status, even though the "University of California System" should really be the parent level.  Likewise, NASA's Goddard Space Flight Center is at a parent level, as are France's CNRS institutions to allow for further subdivision.  Further work on a schema to allow more complex relationships between institutions is under development in conjunction with work by the [ROR Community](https://ror.org/).
 
@@ -32,7 +32,7 @@ In addition to this new field, we've maintained the original search terms for af
 
 So, you could search for [aff:Harvard](https://ui.adsabs.harvard.edu/search/fl=identifier&q=aff:"Harvard") and get back all affiliations that contain Harvard in the affiliation string -- including "Harvard Street".  To ensure you get only the University, you could search for [aff:&ldquo;Harvard University"](https://ui.adsabs.harvard.edu/search/fl=identifier&q=aff:"Harvard%20University") but that would return only affiliation strings with that exact phrase, excluding "Harvard Univ.", "Harvard U", etc.  Better would be to use the identifier for Harvard University by searching [aff_id:A00211](https://ui.adsabs.harvard.edu/search/fl=identifier&q=aff_id:A00211).  This returns all affiliations which contain Harvard University at the parent level. Best yet would be to search by institution, [inst:&ldquo;Harvard U"](https://ui.adsabs.harvard.edu/search/fl=identifier&q=inst:"Harvard U")  which returns affiliations which contain Harvard University at the parent level, plus all affiliations for all of Harvard University's children.
 
-### How we got here: the curation and pipeline process
+## How we got here: the curation and pipeline process
 
 **The human element: curation**
 
@@ -55,7 +55,7 @@ We've entirely automated the process, so once the dictionary of affiliation stri
 However, we're getting close to the limit of what we can do with human classification without lots of effort.  Our most recent pass through our metadata has just over 4.8 million unique unclassified strings yielding a total of 16.6 million unclassified affiliations.  There are about 6000 unclassified affiliations that appear 100 times or more in the metadata and assigning them aff_ids would provide a lot of new information.  However, over 65 percent of unclassified affiliations occur fewer than 10 times, and **13 percent of unmatched affiliation strings only appear once in all of our affiliation metadata**.
 
 <div class="text-center">
-        <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-01-15_matched.png" width="50%" /><img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-01-15_unmatched.png" width="50%"/>
+        <img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-01-15_matched.png" width="50%" alt="Chart showing nearly 90% of matched affiliation strings appear at least 10 times in the ADS database" /><img class="img-thumbnail" src="{{ site.baseurl }}/blog/images/blog_2020-01-15_unmatched.png" width="50%" alt="Chart showing unmatched affiliation string counts dominated by those appearing fewer than 10 times"/>
 <em>Left: Nearly 90 percent of matched publisher-provided affiliation strings in our database appear at least 10 times. Right: The number of unmatched affiliation strings is dominated by those appearing fewer than 10 times.</em>
 </div>
 <br>
@@ -66,6 +66,6 @@ We've found the process is reliable to the limits of the input dictionary, and a
 
 For now, we're using machine learning to assist with curation, but we're not yet confident enough to pass it an affiliation string and guarantee it returns the correct ID; it's not (yet) a part of our hands-off pipeline.  It's an ongoing process of improvement, and always will be as new metadata keeps coming in.
 
-### What's next?
+## What's next?
 
 Searching ADS by affiliation is already very useful for helping with disambiguation, and for helping build institutional publication lists.  We hope to make it even more powerful by integrating our system with [ROR](https://ror.org) and integrating publisher-specific identifiers in our workflow.  We are actively working with other projects to extend ROR identifiers (which are assigned one per institution) to the department level.  In addition, we hope to improve the user experience by coupling affiliation with authors, adding hover-over expansion of abbreviations, and implementing auto-complete with the institution search.  As always, we welcome feedback and corrections.

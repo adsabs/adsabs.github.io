@@ -8,5 +8,3 @@ Gemfile.lock
 /.jekyll-metadata
 /vendor
 .cursor
-# Personal interview prep, not for publication
-interview-prep.md

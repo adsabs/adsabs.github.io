@@ -1,15 +1,21 @@
 """Rebuild the outreach page artwork from Yueyi Che's source files.
 
-Run this when the source designs change. SRC points at the shared swag
-folder, which is not in the repository; only the generated web assets are
-committed. Requires Pillow.
+Run this when the source designs change, passing the shared swag folder
+(not in the repository; only the generated web assets are committed):
+
+    python3 scripts/build-outreach-assets.py "path/to/Swag Designs 2026 - non disciplinary"
+
+Output goes to help/img/outreach in this repository. Requires Pillow.
 """
 from PIL import Image
 import os
+import sys
 
-SRC = "/Users/mugdhapolimera/Downloads/Swag Designs 2026 - non disciplinary"
+if len(sys.argv) != 2:
+    sys.exit(__doc__)
+SRC = sys.argv[1]
 SQ  = os.path.join(SRC, "Square_Originals")
-OUT = "/Users/mugdhapolimera/github/adsabs.github.io/help/img/outreach"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "help", "img", "outreach")
 
 def square_center(im):
     w, h = im.size

@@ -31,6 +31,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+redirect_from:
+  json: false
 
 last-modified-at:
   date-format: '%Y-%m-%dT%H:%M:%S%:z'

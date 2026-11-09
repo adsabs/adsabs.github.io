@@ -3,6 +3,8 @@ The author network detects **groups of authors** and **connections between those
 
 {% if include.ads %}<img src="/help/img/author_network.png" alt="author network" class="img-responsive">
 <i>An image of the author network for John Huchra with the link overlay activated. </i>
+<br/>{% else %}<img src="/scixhelp/sciximg/explore-author-network.png" alt="The Author Network tab of the SciX Visualizations page for a library of papers about ADS. A ring chart groups the authors, with Kurtz, M, Eichhorn, G and Accomazzi, A in the largest group; a line chart on the right shows each group's papers per year." class="img-responsive">
+<i>The author network for a library of papers about ADS, from the Explore menu.</i>
 <br/>{% endif %}
 
 #### How the network is made

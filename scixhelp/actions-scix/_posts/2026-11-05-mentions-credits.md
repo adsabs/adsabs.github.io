@@ -1,7 +1,7 @@
 ---
 layout: post_scix
 title: "Mentions and Credits"
-order: 7.5
+order: 5
 ---
 
 Citations record when one paper lists another in its reference list. Software, datasets and grants are often acknowledged less formally: in a Data Availability Statement, in the text, or in the funding information a publisher supplies. SciX captures these acknowledgments as **mentions** and **credits**, so the people who build software, curate data and fund research can see the work that relied on it.

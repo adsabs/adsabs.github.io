@@ -1,7 +1,8 @@
 ---
 layout: post_scix
 title: "Copy Citation"
-order: 3.5
+order: 3
+menu_parent: quick-links
 ---
 
 SciX lets you copy a single formatted citation quickly from two places:

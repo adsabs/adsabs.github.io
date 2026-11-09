@@ -6,7 +6,7 @@ title: 'Transition from ADS to SciX'
 <section class="flyer">
   <header class="flyer-header">
     <div class="flyer-text">
-      <h1>What to Know About the ADS Transition to SciX</h1>
+      <h1>ADS transitions to SciX on November 16, 2026</h1>
       <p>
         The Astrophysics Data System (ADS) is evolving into Science Explorer (SciX) — the digital library and information hub for Astrophysics, Planetary Science, Heliophysics, and Earth Science. This expanded scope brings the innovative information services long used by astronomers to new disciplines, fostering cross-disciplinary discovery and innovation.
       </p>

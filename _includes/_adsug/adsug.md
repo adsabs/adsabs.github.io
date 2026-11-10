@@ -32,13 +32,13 @@ Current members of the ADSUG are:
 - [John Wu](https://jwuphysics.github.io/) --- Chair; STScI
 - [Laura Wolz](https://research.manchester.ac.uk/en/persons/laura.wolz) --- Vice Chair; Manchester U. 
 - [Licia Verde](https://liciaverde.icc.ub.edu) --- Immediate Past Chair; UB-IEEC
-- Matthew J. Graham --- Past Chair and [SciX Advisory Board](https://scixplorer.org/scixabout/advisory_board/) Member; Caltech
-- Alex Akins --- NASA JPL
+- Matthew J. Graham --- Former Chair and [SciX Advisory Board](https://scixplorer.org/scixabout/advisory_board/) Member; Caltech
+- Alex Atkins --- NASA JPL
 - [Stéphanie Juneau](https://stephjuneau.github.io)   --- NOIRLab  
-- [Sera Markoff](www.seramarkoff.com) --- Univ. Cambridge & Univ. Amsterdam
+- [Sera Markoff](https://www.seramarkoff.com) --- Univ. Cambridge & Univ. Amsterdam
 - [Brian Mason](https://crf.usno.navy.mil/wds/) --- USNO
 - Ryan McGranaghan --- NASA JPL
-- [Sam Teplitzky](https://samteplitzky.github.io) --- UC Berkley Libraries
+- [Sam Teplitzky](https://samteplitzky.github.io) --- UC Berkeley Libraries
 - [Paul Torrey](https://astronomy.as.virginia.edu/paul-torrey) --- UVa 
 - [Louis Moresi](https://researchportalplus.anu.edu.au/en/persons/louis-moresi) --- [SciX Advisory Board](https://scixplorer.org/scixabout/advisory_board/) chair; ANU 
 
@@ -119,7 +119,7 @@ For more information, please read [ADSUG's charter]({{ include.root }}/charter.h
 	 alt="tight headshot of Sera Markoff">
   </div>
   <div class="textlabel">
-    <p><A HREF="www.seramarkoff.com"><B>Sera Markoff</B></A></p>
+    <p><A HREF="https://www.seramarkoff.com"><B>Sera Markoff</B></A></p>
   </div>
 </div>
 
@@ -153,7 +153,7 @@ For more information, please read [ADSUG's charter]({{ include.root }}/charter.h
 
 <div style="float:left;">
   <div class="floated_img">
-    <img class="sizedpic" src="{{ site.baseurl }}/about/img/adsug/ptorrey.png" alt="headshot of Paul Torrey">
+    <img class="sizedpic" src="{{ site.baseurl }}/about/img/adsug/ptorrey.jpg" alt="headshot of Paul Torrey">
   </div>
   <div class="textlabel">
     <p><A HREF="https://astronomy.as.virginia.edu/paul-torrey"><B>Paul Torrey</B></A></p>

@@ -44,7 +44,7 @@ Current members of the ADSUG are:
 
 The next meeting of the ADSUG will take place on November 17--18, 2026, virtually and at the Center for Astrophysics \| Harvard & Smithsonian.  Please contact the chair if you would like to attend or have concerns that should be brought to the ADSUG. 
 
-**[Agenda](https://docs.google.com/document/d/1g86KNWfFX10PUCwKjPuYF9b0dcSaXi-9DO0xIvjmIDw/edit?tab=t.0)**     
+**[Agenda](https://docs.google.com/document/d/1g86KNWfFX10PUCwKjPuYF9b0dcSaXi-9DO0xIvjmIDw/edit?usp=sharing)**     
 
 A list of [prior Users Group meeting presentations, reports, and membership]({{ include.root }}/meetings.html) is available.
 

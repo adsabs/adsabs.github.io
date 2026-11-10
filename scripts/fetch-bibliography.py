@@ -5,7 +5,7 @@ The token is never printed. Writes _data/bibliography.yml.
 
 Four sources, each its own section on the page:
 
-    papers about ADS/SciX        the public "ADS Refereed Papers" and
+    papers about ADS/SciX        the public "ADS/SciX refereed papers" and
                                  "ADS Non-Refereed Papers" SciX libraries
     papers citing them           citations() of everything in those libraries
     papers acknowledging us      ack: mentions of ADS, Science Explorer, SciX
@@ -31,7 +31,7 @@ import urllib.request
 API = "https://api.adsabs.harvard.edu/v1/search/query"
 SCIX = "https://scixplorer.org"
 
-REFEREED_LIBRARY = "aI9-ox_2RNeZK-gm-4DpVQ"
+REFEREED_LIBRARY = "rWiNDShzQ0adoQyx7RFKDg"
 NON_REFEREED_LIBRARY = "iETdWs2pSGajhFBI30X3UQ"
 CITING = (f"(citations(docs(library/{REFEREED_LIBRARY})) OR "
           f"citations(docs(library/{NON_REFEREED_LIBRARY})))")

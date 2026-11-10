@@ -18,9 +18,27 @@
     margin-top: 10px;
 }
 .textlabel {
-    height: 50px;
+    min-height: 50px;
     text-align: left;
     padding-left: 10px;
+}
+
+/* Cards sit in a wrapping row of equal widths, so a long title wraps instead
+   of widening its card, and the row grows to fit it rather than spilling into
+   the footer. Linked names get a 44px tap target from _layout.scss; names
+   without a link get the same spacing so every name lines up. */
+.adsug-members {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.adsug-members > div {
+    width: 200px;
+}
+.textlabel p > b {
+    display: inline-block;
+    min-height: 44px;
+    padding-block: 10px;
 }
 
 </style>
@@ -54,7 +72,7 @@ The ADSUG will summarize its deliberations in a written report to the PI, and it
 
 For more information, please read [ADSUG's charter]({{ include.root }}/charter.html).
 
-<div>
+<div class="adsug-members">
 
 <div style="float:left;">
   <div class="floated_img">

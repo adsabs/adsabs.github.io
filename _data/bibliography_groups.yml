@@ -23,9 +23,9 @@
   blurb: Authors who thank ADS, SciX or the Science Explorer in their acknowledgments.
   lists: [acknowledging]
   method: |
-    A search of the acknowledgments sections that SciX indexes for the names "Astrophysics Data System", "Science Explorer" or "SciX". Papers whose acknowledgments SciX has not indexed are missed, and a few matches may be other tools named "Science Explorer".
+    A search of the acknowledgments sections that SciX indexes for the exact names "Astrophysics Data System", "NASA ADS", "NASA's ADS", "ADS Abstract Service", "ADS Bibliographic Services", "Science Explorer" or "SciX", in any discipline. The bare acronym "ADS" only counts in astronomy papers, because elsewhere it is often an author's initials or another service, and papers that mention ALMA are left out of that part because ALMA's data codes begin "ADS/JAO.ALMA". Papers whose acknowledgments SciX has not indexed are missed.
 
-    Query: `ack:("Astrophysics Data System" OR "Science Explorer" OR "SciX")`
+    Query: `ack:(="Astrophysics Data System" OR ="NASA ADS" OR … OR ="SciX") OR (ack:ADS collection:astronomy -ack:ALMA)`
 - id: team
   title: Research by the ADS and SciX team
   blurb: Papers by current team members, found through their ORCID iDs.

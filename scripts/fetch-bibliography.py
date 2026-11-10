@@ -8,7 +8,7 @@ Four sources, each its own section on the page:
     papers about ADS/SciX        the public "ADS/SciX refereed papers" and
                                  "ADS Non-Refereed Papers" SciX libraries
     papers citing them           citations() of everything in those libraries
-    papers acknowledging us      ack: mentions of ADS, Science Explorer, SciX
+    papers acknowledging us      ack: mentions of ADS, NASA ADS, Science Explorer, SciX
     team research                orcid: of every team member in _data/team.yml
 
 Only the newest few records of each section are stored; the page links to the
@@ -35,7 +35,16 @@ REFEREED_LIBRARY = "rWiNDShzQ0adoQyx7RFKDg"
 NON_REFEREED_LIBRARY = "iETdWs2pSGajhFBI30X3UQ"
 CITING = (f"(citations(docs(library/{REFEREED_LIBRARY})) OR "
           f"citations(docs(library/{NON_REFEREED_LIBRARY})))")
-ACK = 'ack:("Astrophysics Data System" OR "Science Explorer" OR "SciX")'
+# "=" turns off synonym expansion. Without it "Astrophysics Data System" also
+# matches every bare "ADS", including ALMA's "ADS/JAO.ALMA" project codes and
+# author initials in other fields. The bare acronym is only trusted in
+# astronomy papers that do not mention ALMA (it catches "Facilities: ADS").
+ACK_PHRASES = ["Astrophysics Data System", "Astrophysical Data System",
+               "NASA ADS", "NASA/ADS", "NASA's ADS", "NASA\u2019s ADS",
+               "NASAs ADS", "SAO/NASA ADS", "ADS Abstract Service",
+               "ADS Bibliographic", "Science Explorer", "SciX"]
+ACK = ("ack:(" + " OR ".join(f'="{p}"' for p in ACK_PHRASES) + ")"
+       " OR (ack:ADS collection:astronomy -ack:ALMA)")
 AUTHORS_SHOWN = 3
 
 

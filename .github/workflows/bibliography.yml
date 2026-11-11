@@ -1,0 +1,39 @@
+name: Refresh bibliography
+
+# Regenerates _data/bibliography.yml from the SciX API and opens a pull request
+# when the lists change. The API token comes from the SCIX_DEV_KEY repository
+# secret (ADS_DEV_KEY is accepted until that secret is renamed).
+
+on:
+  schedule:
+    - cron: '0 12 * * 1' # Mondays, 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Fetch bibliography from SciX
+        run: python3 scripts/fetch-bibliography.py
+        env:
+          SCIX_DEV_KEY: ${{ secrets.SCIX_DEV_KEY || secrets.ADS_DEV_KEY }}
+      - name: Open a pull request if anything changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/bibliography
+          delete-branch: true
+          add-paths: _data/bibliography.yml
+          commit-message: Refresh bibliography from SciX
+          title: Refresh bibliography from SciX
+          body: |
+            Weekly refresh of `_data/bibliography.yml` by `scripts/fetch-bibliography.py`.
+
+            ## Pages changed
+            - [SciX Bibliography](https://scixplorer.org/scixabout/bibliography)
+            - [ADS Bibliography](https://ui.adsabs.harvard.edu/about/bibliography/)

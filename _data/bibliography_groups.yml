@@ -7,30 +7,30 @@
   blurb: How the system works, how it is used, and what it has meant for research.
   lists: [team_refereed, team_non_refereed]
   method: |
-    The ADS/SciX team curates two public libraries by hand, [ADS/SciX refereed papers](ROOT_URL/public-libraries/rWiNDShzQ0adoQyx7RFKDg) and [ADS Non-Refereed Papers](ROOT_URL/public-libraries/iETdWs2pSGajhFBI30X3UQ), adding papers that describe ADS or SciX, study how they are used, or build on their data and services.
-
     Query: `docs(library/rWiNDShzQ0adoQyx7RFKDg)` and `docs(library/iETdWs2pSGajhFBI30X3UQ)`
+
+    The ADS/SciX team curates two public libraries by hand, [ADS/SciX refereed papers](ROOT_URL/public-libraries/rWiNDShzQ0adoQyx7RFKDg) and [ADS Non-Refereed Papers](ROOT_URL/public-libraries/iETdWs2pSGajhFBI30X3UQ), adding papers that describe ADS or SciX, study how they are used, or build on their data and services.
 - id: citing
   title: Papers citing ADS and SciX literature
   blurb: Research that builds on the papers above.
   lists: [citing_refereed, citing_non_refereed]
   method: |
-    Every paper that cites at least one paper in the two libraries above, split into refereed and non-refereed with SciX's `property:refereed` flag. A paper joins the list once SciX has indexed its references.
-
     Query: `citations(docs(library/rWiNDShzQ0adoQyx7RFKDg)) OR citations(docs(library/iETdWs2pSGajhFBI30X3UQ))`
+
+    Every paper that cites at least one paper in the two libraries above, split into refereed and non-refereed with SciX's `property:refereed` flag. A paper joins the list once SciX has indexed its references.
 - id: acknowledging
   title: Papers acknowledging ADS or SciX
   blurb: Authors who thank ADS, SciX or the Science Explorer in their acknowledgments.
   lists: [acknowledging]
   method: |
-    A search of the acknowledgments sections that SciX indexes for the exact names "Astrophysics Data System", "NASA ADS", "NASA's ADS", "ADS Abstract Service", "ADS Bibliographic Services", "Science Explorer" or "SciX", in any discipline. The bare acronym "ADS" only counts in astronomy papers, because elsewhere it is often an author's initials or another service, and papers that mention ALMA are left out of that part because ALMA's data codes begin "ADS/JAO.ALMA". Papers whose acknowledgments SciX has not indexed are missed.
+    Query: `ack:(="Astrophysics Data System" OR ="Astrophysical Data System" OR ="NASA ADS" OR ="NASA/ADS" OR ="NASA's ADS" OR ="NASA’s ADS" OR ="NASAs ADS" OR ="SAO/NASA ADS" OR ="ADS Abstract Service" OR ="ADS Bibliographic" OR ="Science Explorer" OR ="SciX") OR (ack:ADS collection:astronomy -ack:ALMA)`
 
-    Query: `ack:(="Astrophysics Data System" OR ="NASA ADS" OR … OR ="SciX") OR (ack:ADS collection:astronomy -ack:ALMA)`
+    A search of the acknowledgments sections that SciX indexes for the exact names "Astrophysics Data System", "NASA ADS", "NASA's ADS", "ADS Abstract Service", "ADS Bibliographic Services", "Science Explorer" or "SciX", in any discipline. The bare acronym "ADS" only counts in astronomy papers, because elsewhere it is often an author's initials or another service, and papers that mention ALMA are left out of that part because ALMA's data codes begin "ADS/JAO.ALMA". Papers whose acknowledgments SciX has not indexed are missed.
 - id: team
   title: Research by the ADS and SciX team
   blurb: Papers by current team members, found through their ORCID iDs.
   lists: [team_research]
   method: |
-    Papers claimed by, or tagged with, the ORCID iD of a current member of the [team](TEAM_URL). Members without an ORCID iD on record are not included yet.
-
     Query: `orcid:(…)` with one ORCID iD per team member
+
+    Papers claimed by, or tagged with, the ORCID iD of a current member of the [team](TEAM_URL). Members without an ORCID iD on record are not included yet.

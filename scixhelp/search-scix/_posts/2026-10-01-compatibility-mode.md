@@ -4,7 +4,7 @@ title: "Search Mode"
 order: 6
 ---
 
-Search mode selection is only possible when Discipline is set to Astrophysics. For all other Disciplines, search mode is fixed to the default of  “All relevant content” and no selector is provided.
+Search mode selection is only possible when [Discipline]({{ site.baseurl }}/scixhelp/search-scix/discipline-selection) is set to Astrophysics. For all other Disciplines, search mode is fixed to the default of  “All relevant content” and no selector is provided.
 
 ## All relevant content
 
@@ -16,7 +16,7 @@ When search mode is set to “All relevant content,” searches include the full
 
 ## ADS compatibility mode
 
-ADS compatibility mode is only available when Discipline is set to Astrophysics; the Discipline dropdown menu is in the upper left of every SciX header.
+ADS compatibility mode is only available when [Discipline]({{ site.baseurl }}/scixhelp/search-scix/discipline-selection) is set to Astrophysics; the Discipline dropdown menu is in the upper left of every SciX header.
 
 <div class="scalable scalable-16-9">
   <div class="scalable-content">

@@ -22,7 +22,7 @@ This option sorts based on a prestige score, designed to more highly rank papers
 {% if include.ads %}{% else %}<h4>Credit Count</h4>
 This option sorts based on a record's number of credits.{% endif %}
 
-<h4>Date</h4>
+<h4 id="date">Date</h4>
 This option sorts based on a paper's publication date (month and year). {% if include.ads %}It is the default sort order in {{include.site}}.{% endif %}
 <br/>
 
@@ -44,7 +44,7 @@ This option is a measure of <b>recent popularity</b>. It sorts on the 90-day rea
 {% if include.ads %}<h4>Score</h4>
 This option is currently a combination of two factors: the first is the raw search score, or how well the results match the search terms. For unfielded searches, or those that don't use search tags, commonly searched fields such as author and publication year are more heavily weighted in determining the score. The second factor is a boost factor for more highly read and cited papers. This boost factor is designed to more highly rank papers that are relevant and popular now and is calculated via an age-normalized combination of reads and citation.
 
-{% else %}<h4>Relevance</h4>
+{% else %}<h4 id="relevance">Relevance</h4>
 This option is usually the default sort in {{include.site }}, although ADS compatibility mode uses [Date](../actions-scix/sort#date) as its default sort order. Relevance sorts records based on a combination of four factors. 
 - The Lucene score from the search enginetakes into account how well a given result matches [the search terms](../search-scix/search-syntax). Matches to certain fields are valued more highly than others; a match to an author name, for example, is weighted more highly than a match to a keyword. For unfielded searches, or those that do not use search tags, commonly searched fields, such as author and publication year, are more heavily weighted in determining the score (for example, see the weights within the "qf" parameter [here](https://github.com/adsabs/montysolr/blob/main/deploy/adsabs/server/solr/collection1/conf/solrconfig.xml)). 
 - A popularity boost is applied to articles that are more highly cited or read. An age-normalized cite boost and recency boost are in development that will jointly replace this factor. (For more, see the  [cite_read_boost](https://github.com/adsabs/montysolr/blob/main/deploy/adsabs/server/solr/collection1/conf/schema.xml).)

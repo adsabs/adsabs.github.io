@@ -155,9 +155,9 @@
   <div id="external-tools-items" class="panel-collapse collapse{% if page.url contains '/external-tools/' %} in{% endif %}"  aria-labelledby="external-tools-help">
       <ul class="list-group">
           {% assign posts = site.categories.external-tools %} {% if posts %} {% assign sorted_posts = posts | sort:"order" %} {% for post in sorted_posts %} {% if post.url %}
-          <a href="{{ site.baseurl }}{{ post.url }}">
-              <li class="{% if post.url == page.url %} active {% endif %} list-group-item">{{ post.title }}</li>
-          </a>
+          <li class="{% if post.url == page.url %} active {% endif %} list-group-item">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endif %} {% endfor %} {% endif %}
       </ul>
   </div>

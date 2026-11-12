@@ -148,9 +148,9 @@
 
 <div class="panel panel-default">
   <div class="panel-heading"  id="external-tools-help">
-      <a class="{% if page.url contains '/external-tools/' %}expanded{% else %}collapsed{% endif %}" role="button" data-toggle="collapse"  href="#external-tools-items" aria-expanded="{% if page.url contains '/external-tools/' %}true{% else %}false{% endif %}" aria-controls="external-tools-items">
-          <div class="{% if page.url contains '/external-tools/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right"> </i> External Tools </div>
-      </a>
+      <button class="{% if page.url contains '/external-tools/' %}expanded{% else %}collapsed{% endif %}" type="button" data-toggle="collapse" data-target="#external-tools-items" aria-expanded="{% if page.url contains '/external-tools/' %}true{% else %}false{% endif %}" aria-controls="external-tools-items">
+        <span class="{% if page.url contains '/external-tools/' %} active {% endif %}"> <i class="fa fa-lg fa-caret-right" aria-hidden="true"> </i> External Tools </span>
+      </button>
   </div>
   <div id="external-tools-items" class="panel-collapse collapse{% if page.url contains '/external-tools/' %} in{% endif %}"  aria-labelledby="external-tools-help">
       <ul class="list-group">

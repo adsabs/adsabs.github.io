@@ -1,7 +1,7 @@
 # Site settings
-title: ADS news, blogs, and help pages
-url: https://ui.adsabs.harvard.edu
-email: adshelp@cfa.harvard.edu
+title: SciX news, blogs, and help pages
+url: https://scixplorer.org
+email: help@scixplorer.org
 description: All your questions will be answered here.
 
 # Base URLs for different sites
@@ -10,7 +10,7 @@ scix_base_url: https://scixplorer.org
 
 # Social
 twitter:
-  username: adsabs
+  username: scixcommunity
 github:
   username: adsabs
 logo: /help/common/images/transparent_logo.svg

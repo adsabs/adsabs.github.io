@@ -616,7 +616,7 @@ no-header: true
       </div>
 
       <!-- Video 5 -->
-      <div class="video-item" id="advanced-queries-and-operators">
+      <div class="video-item" id="building-a-library-calculating-metrics">
         <div class="video-header" onclick="toggleVideo('video5')">
           <div class="video-thumbnail-wrapper">
             <img src="https://img.youtube.com/vi/rvocLFQLkhU/maxresdefault.jpg" alt="Building a Library & Calculating Metrics" class="video-thumbnail">
@@ -625,7 +625,7 @@ no-header: true
             </div>
           </div>
           <div class="video-title-wrapper">
-            <h3>Advanced queries and operators</h3>
+            <h3>Building a Library & Calculating Metrics</h3>
             <span class="video-toggle">+</span>
           </div>
         </div>

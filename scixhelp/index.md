@@ -581,7 +581,7 @@ no-header: true
       <div class="video-item" id="beginning-a-literature-search">
         <div class="video-header" onclick="toggleVideo('video3')">
           <div class="video-thumbnail-wrapper">
-            <img src="https://img.youtube.com/vi/WsYbgdaC2Es/maxresdefault.jpg" alt="Beginning a Literature Search" class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/LKPNDAwJ8ag/maxresdefault.jpg" alt="Beginning a Literature Search" class="video-thumbnail">
             <div class="play-button-overlay">
               <i class="fa fa-play-circle"></i>
             </div>
@@ -591,7 +591,7 @@ no-header: true
             <span class="video-toggle">+</span>
           </div>
         </div>
-        <div class="video-content" id="video3" data-video-id="WsYbgdaC2Es">
+        <div class="video-content" id="video3" data-video-id="LKPNDAwJ8ag">
           <p class="video-description">Start your research journey with effective literature search techniques and discover relevant papers in your field.</p>
         </div>
       </div>
@@ -600,7 +600,7 @@ no-header: true
       <div class="video-item" id="searching-for-authors-with-common-names">
         <div class="video-header" onclick="toggleVideo('video4')">
           <div class="video-thumbnail-wrapper">
-            <img src="https://img.youtube.com/vi/aOq_JxQId4M/maxresdefault.jpg" alt="Searching for Authors with Common Names" class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/i6CRHYkUT0Y/maxresdefault.jpg" alt="Searching for Authors with Common Names" class="video-thumbnail">
             <div class="play-button-overlay">
               <i class="fa fa-play-circle"></i>
             </div>
@@ -610,27 +610,27 @@ no-header: true
             <span class="video-toggle">+</span>
           </div>
         </div>
-        <div class="video-content" id="video4" data-video-id="aOq_JxQId4M">
+        <div class="video-content" id="video4" data-video-id="i6CRHYkUT0Y">
           <p class="video-description">Master advanced author search techniques to find the right researcher when dealing with common names.</p>
         </div>
       </div>
 
       <!-- Video 5 -->
-      <div class="video-item" id="advanced-queries-and-operators">
+      <div class="video-item" id="building-a-library-calculating-metrics">
         <div class="video-header" onclick="toggleVideo('video5')">
           <div class="video-thumbnail-wrapper">
-            <img src="https://img.youtube.com/vi/tZaLIAoavv8/maxresdefault.jpg" alt="Advanced queries and operators" class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/rvocLFQLkhU/maxresdefault.jpg" alt="Building a Library & Calculating Metrics" class="video-thumbnail">
             <div class="play-button-overlay">
               <i class="fa fa-play-circle"></i>
             </div>
           </div>
           <div class="video-title-wrapper">
-            <h3>Advanced queries and operators</h3>
+            <h3>Building a Library & Calculating Metrics</h3>
             <span class="video-toggle">+</span>
           </div>
         </div>
-        <div class="video-content" id="video5" data-video-id="tZaLIAoavv8">
-          <p class="video-description">Refine a broad search with fielded queries, filters, and operators such as similar() and useful().</p>
+        <div class="video-content" id="video5" data-video-id="rvocLFQLkhU">
+          <p class="video-description">Track papers, build personal libraries, and explore citation trends and impact with ease.</p>
         </div>
       </div>
 

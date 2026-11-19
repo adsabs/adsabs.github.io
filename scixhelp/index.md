@@ -84,15 +84,9 @@ no-header: true
       <span class="faq-toggle">+</span>
     </div>
     <div class="faq-answer" id="faq16">
-      <p>Specify your discipline to boost relevant content and improve search results:</p>
-      
-        <p><strong>Choose discpline from the top-left menu (boosts content):</strong> Select a preferred discipline for your search. Note: "General Science" corresponds primarily to physics, computer science, and chemistry content. This choice doesn't filter out other disciplines but <em>boosts the most relevant content</em> to appear closer to the top of your search results.</p>
-      
-      <p><strong>Left panel (filters content):</strong> Select a collection by discipline to <strong>filter out results</strong> that don't belong to your selected discipline. This gives you a more focused view of results within your field.</p>
-      
-      <p><strong>Account benefits:</strong> If you <a href="https://scixplorer.org/user/account/register">create an account</a>, you can select your discipline once and it will stay selected for your future searches until you change it.</p>
-      
-        <p>Learn more about the <a href="#create-account">benefits of creating an account</a>.</p>
+      <p>Choose the discipline closest to your research from the menu in the upper left of the SciX header. Your discipline tailors the search page, which filters show first, some defaults, and which results rank highest when sorted by relevance. It does not limit what you search: every search covers all of SciX unless you add filters.</p>
+      <p>If you came from ADS, your discipline is set to Astrophysics; otherwise it starts as "No preferred discipline." It stays set until you change it, and you can change it from any page.</p>
+      <p>For everything a discipline changes, see <a href="{{ site.baseurl }}/scixhelp/search-scix/discipline-selection">Discipline Selection</a>.</p>
     </div>
   </div>
 
@@ -378,7 +372,7 @@ no-header: true
       <span class="faq-toggle">+</span>
     </div>
     <div class="faq-answer" id="faq-ads-experience">
-      <p>Select <strong>Astrophysics</strong> from the discipline menu in the upper left of the SciX header. Then choose how much of SciX you want to take on:</p>
+      <p>Set your discipline to <strong>Astrophysics</strong>, the best fit for ADS research, using the menu in the upper left of the SciX header (<a href="{{ site.baseurl }}/scixhelp/search-scix/discipline-selection">what a discipline changes</a>). Then choose how much of SciX you want to take on:</p>
       <ul>
         <li><strong>ADS Classic:</strong> select the <strong>Classic Form</strong> tab above the search bar. It works like the ADS Classic form, and shows the fielded query it builds below the Submit button.</li>
         <li><strong>ADS Modern:</strong> set <strong>Search mode</strong>, just below the search bar, to <a href="{{ site.baseurl }}/scixhelp/search-scix/compatibility-mode">ADS compatibility mode</a>. Searches are limited to the Astronomy and Physics collections and sorted by date, newest first, as in ADS.</li>

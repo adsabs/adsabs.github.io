@@ -5,7 +5,7 @@
 
 | Type | Examples |
 |--------|----------|
-| Missions, Telescopes & Surveys | [ALMA](#alma), [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [Gemini](#gemini), [HST](#hubble), [INT](#int), [IRSA](#irsa), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [NOIRLab](#noirlab), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SMA](#sma), [SOHO](#soho), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
+| Missions, Telescopes & Surveys | [ALMA](#alma), [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [Gemini](#gemini), [GTC](#gtc), [HST](#hubble), [INT](#int), [IRSA](#irsa), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [NOIRLab](#noirlab), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SMA](#sma), [SOHO](#soho), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
 | Organizations & Institutions | [Astronomy Historical Literature](#ast-hist-lit), [Harvard College Observatory Women Astronomical Computers](#hcowac), [Leiden Observatory](#leiden), [NASA Astrobiology Program](#astrobio), [NASA PubSpace](#pubspace), [NASA Technical Reports Server (NTRS)](#ntrs), [USGS](#usgs), [USNO](#usno) |
 | Topics & Collections | [NASA Space Life Sciences Library](#nslsl), [PhysEd](#physed), [SETI](#seti) |
 
@@ -36,6 +36,10 @@ This group contains articles pertaining to the Chandra mission and includes arti
 <details id="eso"><summary><strong>European Southern Observatory (ESO) Telescopes</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:ESO/Telescopes</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
 This group contains refereed articles using data from ESO (European Southern Observatory) telescopes. Papers since publication year 1996 using data from Paranal (VLT, VLTI, VISTA, VST) or Chajnantor facilities (ESO observing time of APEX or ALMA) as well as La Silla papers since publication year 2000 reference the program IDs from which the data originated. They are linked to the corresponding raw data or data products located in the ESO Science Archive. The database is maintained by the ESO Library and can be queried in more detail at <a href="https://telbib.eso.org">https://telbib.eso.org</a>. It is updated daily. For further questions, please contact the ESO librarians at library@eso.org.</details>
+
+<details id="gtc"><summary><strong>Gran Telescopio CANARIAS (GTC)</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:GTC</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
+The Gran Telescopio CANARIAS (GTC, http://www.gtc.iac.es) is an optical-infared 10.4m telescope operating in La Palma, Spain since spring 2009. This group contains articles that are related to the Gran Telescopio CANARIAS including articles on software, calibration, instruments, etc. Those articles that present specific GTC observations are linked to the data in the Gran Telescopio CANARIAS Public Archive on which they are based. A database is maintained by the Spanish Virtual Observatory and can be queried in more detail with the search tool available at <a href="http://gtc.sdc.cab.inta-csic.es/gtc/">The Gran Telescopio CANARIAS Public Archive</a>.</details>
 
 <details id="hcowac"><summary><strong>Harvard College Observatory Women Astronomical Computers</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:HCOWAC</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>

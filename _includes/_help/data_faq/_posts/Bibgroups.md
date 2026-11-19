@@ -1,16 +1,16 @@
 > ### What are Bibgroups? 
-> Bibgroups are curated collections of publications maintained by librarians, archivists, and scientists to track the scientific output of missions, observatories, institutions, and research programs. Descriptions of each bibgroup include information that details the coverage in the collection and frequency of updates. Many of the bibgroups include contact information for the maintainer. We also maintain links to [ADS Legacy Bibgroups](#ads-legacy-bibgroups) that are no longer updated but contain useful information and are available as public libraries.
+> Bibgroups are curated collections of publications maintained by librarians, archivists, and scientists to track the scientific output of missions, observatories, institutions, and research topics. Descriptions of each bibgroup include information that details the coverage in the collection and frequency of updates. Many of the bibgroups include contact information for the maintainer. We also maintain links to [ADS Legacy Bibgroups](#ads-legacy-bibgroups) that are no longer updated but contain useful information and are available as public libraries.
 
 ## Bibgroups at a Glance
 
 | Type | Examples |
 |--------|----------|
-| Missions, Telescopes & Surveys | [ALMA](#alma), [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [Gemini](#gemini), [HST](#hubble), [INT](#int), [IRSA](#irsa), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [NOIRLab](#noirlab), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SMA](#sma), [SOHO](#soho), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
-| Organizations & Collections | [Astronomy Historical Literature](#ast-hist-lit), [Harvard College Observatory Women Astronomical Computers](#hcowac), [Leiden Observatory](#leiden), [NASA Astrobiology](#astrobio), [NASA PubSpace](#pubspace), [NASA Space Life Sciences Library](#nslsl), [NASA Technical Reports Server (NTRS)](#ntrs), [USGS](#usgs), [USNO](#usno) |
-| Topics | [Chandra Technical Papers](#chandra-technical-papers), [PhysEd](#physed), [SETI](#seti) |
+| Missions, Telescopes & Surveys | [ALMA](#alma), [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [Gemini](#gemini), [HST](#hubble), [INT](#int), [IRSA](#irsa), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [NOIRLab](#noirlab), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SMA](#sma), [SOHO](#soho), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
+| Organizations & Institutions | [Astronomy Historical Literature](#ast-hist-lit), [Harvard College Observatory Women Astronomical Computers](#hcowac), [Leiden Observatory](#leiden), [NASA Astrobiology Program](#astrobio), [NASA PubSpace](#pubspace), [NASA Technical Reports Server (NTRS)](#ntrs), [USGS](#usgs), [USNO](#usno) |
+| Topics & Collections | [NASA Space Life Sciences Library](#nslsl), [PhysEd](#physed), [SETI](#seti) |
 
 <details id="ast-hist-lit"><summary><strong>Astronomy Historical Literature</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Historical Literature"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Historical Literature"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 This group includes historic observatory publications published in the field of astronomy going back as far as the 1780's. It is curated and maintained by the SciX Team and is sourced from a list of bibstems and volumes that were scanned for the <a href="../../{% if include.ads %}blog{% else %}scixblog{% endif %}/HistoricLit">SciX Historical Literature project</a>. These historic records contain foundational work that remains relevant today, observational data of unrepeatable sky views, and evidence of the evolving culture of astronomy.</details>
 
 <details id="alma"><summary><strong>Atacama Large Millimeter/submillimeter Array (ALMA)</strong></summary>
@@ -30,7 +30,7 @@ This group contains articles where Chandra data contributes significantly to the
 This group contains both refereed and non-refereed articles published from 2009-present that are related to the Chandra Source Catalog, is updated monthly, and includes papers that perform scientific analysis on data from the Chandra Source Catalog. The database is maintained by the <a href="https://cxc.cfa.harvard.edu/cda">Chandra Data Archive</a>, but CSC metadata is not currently accessible using their search tool.</details>
 
 <details id="chandra-technical-papers"><summary><strong>Chandra Technical Papers</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:Chandra/Technical</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topics</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:Chandra/Technical</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
 This group contains articles pertaining to the Chandra mission and includes articles about Chandra instruments, software, and operations. The <a href="https://cxc.cfa.harvard.edu/cda">Chandra Data Archive</a> maintains a <a href="https://cxc.harvard.edu/cda/cxo_papers/cxo_papers.html">repository</a> of these papers grouped by individual instrument, operations, and software.</details>
 
 <details id="eso"><summary><strong>European Southern Observatory (ESO) Telescopes</strong></summary>
@@ -38,7 +38,7 @@ This group contains articles pertaining to the Chandra mission and includes arti
 This group contains refereed articles using data from ESO (European Southern Observatory) telescopes. Papers since publication year 1996 using data from Paranal (VLT, VLTI, VISTA, VST) or Chajnantor facilities (ESO observing time of APEX or ALMA) as well as La Silla papers since publication year 2000 reference the program IDs from which the data originated. They are linked to the corresponding raw data or data products located in the ESO Science Archive. The database is maintained by the ESO Library and can be queried in more detail at <a href="https://telbib.eso.org">https://telbib.eso.org</a>. It is updated daily. For further questions, please contact the ESO librarians at library@eso.org.</details>
 
 <details id="hcowac"><summary><strong>Harvard College Observatory Women Astronomical Computers</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:HCOWAC</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:HCOWAC</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 By 2027, this developmental bibgroup will highlight the scientific contributions of the <a href="https://platestacks.cfa.harvard.edu/women-at-hco">Women Astronomical Computers</a> working at <a href="https://platestacks.cfa.harvard.edu/observatories">Harvard College Observatory</a> by identifying their scholarly work. Because it is an alpha product, it only contains a few thousand items, including the work of Martha Betz Shapley, <a href="{% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/g6EFzgD_Rw6DGOoEu1RXSw">Cecilia Payne-Gaposchkin</a>, and the <a href="https://platestacks.cfa.harvard.edu/project-phaedra">Project PHaEDRA</a> notebooks. If you have comments or suggestions about this project, please contact Jennifer Lynn Bartlett (jennifer.bartlett@cfa.harvard.edu), <a href="{% if include.ads %}../../about/team/team/jbartlett.html{% else %}../../scixabout/team/team/jbartlett.html{% endif %}">Project Scientist for Astrophysics</a>.</details>
 
 <details id="hubble"><summary><strong>Hubble Space Telescope (HST)</strong></summary>
@@ -62,23 +62,27 @@ The INT bibgroup contains refereed papers published since 1984 using Isaac Newto
 This group primarily contains refereed articles that made scientific use of data from the NASA/ESA/CSA James Webb Space Telescope (JWST) since 2022, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). Papers are added continuously and may lag up to one year from date of publication. Articles are linked to the program IDs and observational data on which they are based whenever feasible. Note that matching JWST proposal IDs to published papers is an ongoing project and never completely up to date. Some non-refereed articles and conference proceedings may also be included when use of the telescope's data is noted. Key papers (refereed and non-refereed) which address instrumentation or engineering systems are included; these non-data papers may precede 2022. For further information, visit the <a href="https://www.stsci.edu/scientific-community/stsci-library-and-institutional-archive/missions-publications">STScI Library and Institutional Archive</a> or contact metrics@stsci.edu.</details>
 
 <details id="leiden"><summary><strong>Leiden Observatory</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Leiden Observatory"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Leiden Observatory"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 This bibgroup is populated with publications by scraping the astro-ph listing on the Leiden Observatory website and querying SciX/ADS with aff:"Leiden Observatory". This bibgroup is maintained by {{ include.site }}.</details>
 
-<details id="astrobio"><summary><strong>NASA Astrobiology</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA Astrobiology"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<details id="mast"><summary><strong>(MAST) Copernicus • EUVE • FUSE • GALEX • IUE • K2 • Kepler • TESS</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🏷️ <strong>Types:</strong> Missions, Telescopes & Surveys</p>
+These groups contain refereed articles that made scientific use of data from the respective NASA mission, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). The data were obtained during the entire in-service period of the mission. Papers are added continuously but may lag up to one year from date of publication. For further information contact the MAST HelpDesk (archive@stsci.edu).</details>
+
+<details id="astrobio"><summary><strong>NASA Astrobiology Program</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA Astrobiology"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 This bibgroup contains publications, software, and data funded in full or in part by <a href="https://science.nasa.gov/astrobiology/">NASA Astrobiology</a> as a <a href="https://scixplorer.org/scixblog/astrobiology-collab">continuously updated resource</a> for researchers, collaborators, and the public. NASA Astrobiology personnel and the SciX Team collaboratively maintain this bibgroup, which is sourced from their <a href="https://scixplorer.org/public-libraries/UTViEyO9T7izQP7i_r6yqA">library of publications for researchers</a>.</details>
 
 <details id="pubspace"><summary><strong>NASA PubSpace</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA PubSpace"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA PubSpace"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 This bibgroup contains publications made available via NASA's designated public access repository, <a href="https://ntrs.nasa.gov/collections/pubspace">PubSpace</a>, a collection of NASA-funded scholarly publications, primarily accepted manuscripts and peer-reviewed publisher version of record. The bibgroup is maintained by {{ include.site }} and is sourced from the PubSpace collection of the <a href="https://sti.nasa.gov/public-access/">NASA STI Repository (NTRS)</a>.</details>
 
 <details id="nslsl"><summary><strong>NASA Space Life Sciences Library (NSLSL)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA SLSL"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"NASA SLSL"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topics & Collections</p>
 This bibgroup contains publications made available via <a href="https://public.ksc.nasa.gov/nslsl/">NASA Space Life Sciences Library (NSLSL)</a>, a collection of global space life sciences literature addressing the effects of the space environment on biological systems. The NSLSL is co-funded by NASA's Biological and Physical Sciences (BPS) division and Kennedy Space Center (KSC). The bibgroup is maintained by {{ include.site }} and is sourced from the <a href="https://extapps.ksc.nasa.gov/NSLSL/Search#">NSLSL repository</a>.</details>
 
 <details id="ntrs"><summary><strong>NASA Technical Reports Server (NTRS)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NTRS</code> &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:NTRS</code> &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 This bibgroup contains publications made available via the NASA Technical Reports Server (NTRS), which provides access to scientific and technical information (STI) created or funded by NASA. The bibgroup is maintained by {{ include.site }} and is sourced from the STI collection of the <a href="https://sti.nasa.gov/public-access/">NASA STI Repository (NTRS)</a>.</details>
 
 <details id="noirlab"><summary><strong>National Optical-Infrared Astronomy Research Laboratory (NOIRLab)</strong></summary>
@@ -90,20 +94,20 @@ The NOIRLab bibgroup is a curated list of the U.S. National Science Foundation N
 This group contains refereed articles that made scientific use of data from the Pan-STARRS PS1 survey, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). The data were obtained during the entire PS1 survey (from 2012 through 2015). Papers are added continuously but may lag up to one year from date of publication. For further information contact the MAST HelpDesk (archive@stsci.edu).</details>
 
 <details id="physed"><summary><strong>Physics Education (PhysEd)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:PhysEd</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topics</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:PhysEd</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topics & Collections</p>
 The Physics Education bibgroup is a topical bibliographic group containing articles related to education in physics and engineering. It is automatically populated based on a SciX-curated filter for specific journals or bibstems plus additional items like AAS education sessions and PhDTs that are categorized as physics education related.</details>
 
-<details id="sdo"><summary><strong>Solar Dynamics Observatory (SDO)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Solar Dynamics Observatory"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
-{{ include.site }} Library of publications and abstracts involving data from NASA’s Solar Dynamics Observatory (SDO) mission or describing the mission and its instrumentation from 2000 to the present.  This library is maintained by SDO Project Team and updated monthly. SDO data is publicly available; data access and information about the SDO mission can be found at <a href="https://sdo.gsfc.nasa.gov">NASA SDO</a>.</details>
-
 <details id="seti"><summary><strong>SETI Institute</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:SETI</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topics</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:SETI</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topics & Collections</p>
 The SETI bibgroup is a topical bibliographic group, part of a project at the Penn State Extraterrestrial Intelligence Center to find and track the SETI literature. This includes all kinds of technosignature search, theoretical explorations of the nature of technological alien life, and social aspects of SETI such as METI and post-detection protocols.  The bibgroup is continuously maintained, and one can subscribe to receive a selection of monthly updates to it as new papers are published at seti.news.  The methodology is described in Reyes & Wright (2019) and LaFond et al. (2021). The intention is that the bibgroup be comprehensive including every {{ include.site }} entry relevant to SETI. Questions, comments, or notices of omissions can be directed to astrowright@gmail.com.</details>
 
 <details id="soho"><summary><strong>Solar and Heliospheric Observatory (SOHO)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:SOHO</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
 {{ include.site }} Library of refereed publications for the ESA/NASA SOHO mission, starting in 1995. This library is maintained by acting ESA SOHO Project Scientist, Daniel Mueller (daniel.mueller@esa.int) and updated every two months. SOHO data is publicly available from the ESA SOHO Science Archive, SunPy, and the Virtual Solar Observatory.</details>
+
+<details id="sdo"><summary><strong>Solar Dynamics Observatory (SDO)</strong></summary>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Solar Dynamics Observatory"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
+{{ include.site }} Library of publications and abstracts involving data from NASA’s Solar Dynamics Observatory (SDO) mission or describing the mission and its instrumentation from 2000 to the present.  This library is maintained by SDO Project Team and updated monthly. SDO data is publicly available; data access and information about the SDO mission can be found at <a href="https://sdo.gsfc.nasa.gov">NASA SDO</a>.</details>
 
 <details id="stereo"><summary><strong>Solar TErrestrial RElations Observatory (STEREO)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:STEREO</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
@@ -114,30 +118,26 @@ The SETI bibgroup is a topical bibliographic group, part of a project at the Pen
 The SMA bibliographic group aims to be a comprehensive list of refereed science papers that use data from the <a href="https://www.cfa.harvard.edu/facilities-technology/telescopes-instruments/submillimeter-array-maunakea-hi">Submillimeter Array (SMA)</a> on Maunakea, Hawai'i from the start of SMA science operations in 2003. New papers are typically added to the bibgroup within one month of publication. The Submillimeter Array is operated by the Smithsonian Astrophysical Observatory, and is funded by the Smithsonian Institution. We recognize that Maunakea is a culturally important site for the indigenous Hawaiian people; we are privileged to study the cosmos from its summit.</details>
 
 <details id="usgs"><summary><strong>United States Geological Survey (USGS)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:USGS</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:USGS</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 The USGS bibgroup contains publications authored by USGS scientists over the entire century-plus history of the bureau. Publications available include USGS-authored journal articles, series reports, book chapters, other government publications, and more. This bibgroup is maintained by {{ include.site }} and is sourced from the <a href="https://www.usgs.gov/products/publications">USGS Publications Warehouse</a>.</details>
 
 <details id="usno"><summary><strong>United States Naval Observatory (USNO)</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:USNO</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Collections</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:USNO</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
 The U.S. Naval Observatory (USNO) bibgroup contains publications authored by USNO scientists over the entire 150+ year history of the Observatory. Publications available include USNO-authored journal articles, reports, abstracts, and more. This bibgroup is maintained by USNO Library staff and is updated quarterly.</details>
 
 <details id="wht"><summary><strong>William Herschel Telescope (WHT)</strong></summary>
 <p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:WHT</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys</p>
 The WHT bibgroup contains refereed papers published since 1988 using William Herschel Telescope data. The Isaac Newton Group of Telescopes (ING) operates the 4.2 metre William Herschel Telescope (WHT) and the 2.5 metre Isaac Newton Telescope (INT) at the Roque de los Muchachos Observatory, La Palma, Spain. The ING is funded by the Science and Technology Facilities Council (STFC-UKRI) of the United Kingdom, the Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO) of the Netherlands, and the Instituto de Astrofísica de Canarias (IAC) in Spain. IAC's contribution to ING is funded by the Spanish Ministry of Science and Innovation. This bibgroup is maintained by ING and is updated yearly - more information about the publications can be found at the <a href="https://astro.ing.iac.es/biblio/pubs.php">ING Publications</a> website.</details>
 
-<details id="mast"><summary><strong>Copernicus • EUVE • FUSE • GALEX • IUE • K2 • Kepler • TESS</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🏷️ <strong>Types:</strong> Missions, Telescopes & Surveys</p>
-These groups contain refereed articles that made scientific use of data from the respective NASA mission, which can be obtained from the Mikulski Archive for Space Telescopes (MAST) at Space Telescope Science Institute (STScI). The data were obtained during the entire in-service period of the mission. Papers are added continuously but may lag up to one year from date of publication. For further information contact the MAST HelpDesk (archive@stsci.edu).</details>
-
 <h2 id="ads-legacy-bibgroups">ADS Legacy Bibgroups</h2>
 
-This section contains information on how to access bibliographic groups (bibgroups) that are no longer being maintained. Since we feel that these legacy bibgroups can still be useful, we have transferred their contents to public libraries. The list below names the retired bibgroup, describes the contents of each, and provides the link to access the library. To work with their contents or apply additional filters/search terms, please click on the button "View library in search results page" (upper right).
+This section contains information on how to access bibgroups that are no longer being maintained. Since we feel that these legacy bibgroups can still be useful, we have transferred their contents to public libraries. The list below names the retired bibgroup, describes the contents of each, and provides the link to access the library. To work with their contents or apply additional filters/search terms, please click on the button "View library in search results page" (upper right).
 
-[LPI]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/9wjG2lMRSauOQidpFkv_5Q): |&nbsp;🏷️ <strong>Type:</strong> Organizations & Collections <br>Lunar and Planetary Institute (LPI) bibliography, from approximately 1975 to 1996
+[LPI]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/9wjG2lMRSauOQidpFkv_5Q): |&nbsp;🏷️ <strong>Type:</strong> Organizations & Institutions <br>Lunar and Planetary Institute (LPI) bibliography, from approximately 1975 to 1996
 [UKIRT]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/0A9ojS99QNOuOb24OqOpmg): |&nbsp;🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys <br>Refereed papers containing data from observations at the United Kingdom Infrared Telescope (UKIRT) on Mauna Kea, Hawaii (1988-2013)
-[VSGC]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/4Fmohh6jSAC7GTXAxbWUew): |&nbsp;🏷️ <strong>Type:</strong> Topics <br>Papers about variable stars in globular clusters (1934-1996)
+[VSGC]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/4Fmohh6jSAC7GTXAxbWUew): |&nbsp;🏷️ <strong>Type:</strong> Topics & Collections <br>Papers about variable stars in globular clusters (1934-1996)
 [ROSAT]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/ABp7idYeQVyAAwlSd6y9_w): |&nbsp;🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys <br>Articles about ROSAT experiments and/or ROSAT data (1981-2005)
-[ARI]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/ZdD_lXA_Td-hJ4HmAs8JJQ): |&nbsp;🏷️ <strong>Type:</strong> Organizations & Collections <br>Papers written by researchers at the Astronomisches Rechen-Institut at the University of Heidelberg (1924-1998)
+[ARI]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/ZdD_lXA_Td-hJ4HmAs8JJQ): |&nbsp;🏷️ <strong>Type:</strong> Organizations & Institutions <br>Papers written by researchers at the Astronomisches Rechen-Institut at the University of Heidelberg (1924-1998)
 [ISO]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/PP9TJW6uT-SNJhlk-WzlEg): |&nbsp;🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys <br>Articles pertaining to the Infrared Space Observatory (1996-2011)
 [NOAO]({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/CNUtCvUjT-SiVHjdxGWKIg): |&nbsp;🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys <br>Articles using data from the National Optical Astronomy Observatory telescopes (1990-2019)
 [JCMT](({% if include.ads %}{{ site.ads_base_url }}{% else %}{{ site.scix_base_url }}{% endif %}/public-libraries/FFUnBRxWROK-NauemkAjlQ)): |&nbsp;🏷️ <strong>Type:</strong> Missions, Telescopes & Surveys <br>Articles using data from the James Clerk Maxwell Telescope (JCMT) on Mauna Kea, Hawaii

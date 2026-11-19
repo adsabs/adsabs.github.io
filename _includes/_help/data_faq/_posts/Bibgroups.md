@@ -1,5 +1,5 @@
 > ### What are Bibgroups? 
-> Bibgroups are curated collections of publications maintained by librarians, archivists, and scientists to track the scientific output of missions, observatories, institutions, and research topics. Descriptions of each bibgroup include information that details the coverage in the collection and frequency of updates. Many of the bibgroups include contact information for the maintainer. We also maintain links to [ADS Legacy Bibgroups](#ads-legacy-bibgroups) that are no longer updated but contain useful information and are available as public libraries.
+> Bibgroups are curated collections of publications maintained by librarians, archivists, and scientists to track the scientific output of missions, telescopes, observatories, institutions, and research topics. Descriptions of each bibgroup include information that details the coverage in the collection and frequency of updates. Many of the bibgroups include contact information for the maintainer. We also maintain links to [ADS Legacy Bibgroups](#ads-legacy-bibgroups) that are no longer updated but contain useful information and are available as public libraries.
 
 ## Bibgroups at a Glance
 

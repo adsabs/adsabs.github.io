@@ -6,11 +6,11 @@
 | Type | Examples |
 |--------|----------|
 | Missions, Telescopes & Surveys | [ALMA](#alma), [Chandra Science Papers](#chandra-science-papers), [Chandra Source Catalog](#chandra-source-catalog), [Chandra Technical Papers](#chandra-technical-papers), [CFHT](#cfht), [Copernicus](#mast), [ESO](#eso), [EUVE](#mast), [FUSE](#mast), [GALEX](#mast), [Gemini](#gemini), [GTC](#gtc), [HST](#hubble), [INT](#int), [IRSA](#irsa), [IUE](#mast), [JWST](#jwst), [K2](#mast), [Kepler](#mast), [NOIRLab](#noirlab), [Pan-STARRS](#pan-starrs), [SDO](#sdo), [SMA](#sma), [SOHO](#soho), [STEREO](#stereo), [TESS](#mast), [WHT](#wht) |
-| Organizations & Institutions | [Astronomy Historical Literature](#ast-hist-lit), [Harvard College Observatory Women Astronomical Computers](#hcowac), [Leiden Observatory](#leiden), [NASA Astrobiology Program](#astrobio), [NASA PubSpace](#pubspace), [NASA Technical Reports Server (NTRS)](#ntrs), [USGS](#usgs), [USNO](#usno) |
-| Topics & Collections | [NASA Space Life Sciences Library](#nslsl), [PhysEd](#physed), [SETI](#seti) |
+| Organizations & Institutions | [Harvard College Observatory Women Astronomical Computers](#hcowac), [Leiden Observatory](#leiden), [NASA Astrobiology Program](#astrobio), [NASA PubSpace](#pubspace), [NASA Technical Reports Server (NTRS)](#ntrs), [USGS](#usgs), [USNO](#usno) |
+| Topics & Collections | [Astronomy Historical Literature](#ast-hist-lit), [NASA Space Life Sciences Library](#nslsl), [PhysEd](#physed), [SETI](#seti) |
 
 <details id="ast-hist-lit"><summary><strong>Astronomy Historical Literature</strong></summary>
-<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Historical Literature"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Organizations & Institutions</p>
+<p>&nbsp;&nbsp;&nbsp; 🔎 <strong>Search</strong> <code>bibgroup:"Historical Literature"</code>  &nbsp;|&nbsp; 🏷️ <strong>Type:</strong> Topics & Collections</p>
 This group includes historic observatory publications published in the field of astronomy going back as far as the 1780's. It is curated and maintained by the SciX Team and is sourced from a list of bibstems and volumes that were scanned for the <a href="../../{% if include.ads %}blog{% else %}scixblog{% endif %}/HistoricLit">SciX Historical Literature project</a>. These historic records contain foundational work that remains relevant today, observational data of unrepeatable sky views, and evidence of the evolving culture of astronomy.</details>
 
 <details id="alma"><summary><strong>Atacama Large Millimeter/submillimeter Array (ALMA)</strong></summary>

@@ -50,6 +50,8 @@ The number of hidden filters is stated at the bottom of the list of immediately 
 
 Some options, such as Copy Citation format or [Export Results]({{ site.baseurl }}/scixhelp/actions-scix/export) format, default to a Discipline-specific choice when you have not made a personal selection.
 
+**Note**: Discipline-specific defaults for Copy Citation are coming in the next SciX release.
+
 ## Boost Related Collections in Results
 
 When your results are sorted by [Relevance]({{ site.baseurl }}/scixhelp/actions-scix/sort#relevance), the sorting algorithm applies a disciplinary boost so that items from collections most applicable to the selected Discipline are returned more highly ranked than those in less applicable collections. For example, if “Astrophysics” is selected, results from the astrophysics subcollection are weighted most, while articles from physics, general, planetary science, heliophysics, and earth science, in that order, are weighted with gradually decreasing boosts. (Astrophysics, planetary science, and heliophysics are developmental subcollections of the astronomy collection.)

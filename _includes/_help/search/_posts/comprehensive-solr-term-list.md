@@ -94,5 +94,37 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |   planetary_feature_facet_hier_3level | y | n | Facets for the planetary_feature field. |
  |                       property | y | y | Array of miscellaneous flags associated with the record. For possible values see [Properties](search-syntax#properties).| 
  |                            pub | y | y | Canonical name of the publication the record appeared in |
+|                        pub_raw | y | y | Full publication string assembled from publication name plus volume, issue, and page if they exist (e.g. `Physical Review Letters, Volume 116, Issue 6, article id.061102`) |
+ |                        pubdate | y | y | Publication date in the form `YYYY-MM-DD` (DD value will always be "00") - corresponds to the old version of metadata timestamps (ADS Classic) |
+ |                      publisher | y | y | Name of the publisher (e.g. `APS`, `IOP`) |
+ |                        pubnote | y | y | Comments submitted with the arXiv version of the paper |
+ |                     read_count | y | y | Number of times the record has been viewed in a 90-day windows (by users from ADS and arXiv -- aggregate value) |
+ |                         reader | y | n | List of (anonymized) identifiers for people who have read the article |
+ |                          recid | y | y | Unique identifier of the document, Integer version of 'id' - more efficient for sorting, and range queries |
+ |                      reference | y | y | List of (identified/resolved) references from the paper |
+ |                         series | y | y | Information about conference series |
+ |       simbad_object_facet_hier | y | y | The hierarchical facets consisting of SIMBAD `object_type/object_id` |
+ |                         simbid | y | y | List of SIMBAD IDs within the paper |
+ |                       simbtype | y | y | Keywords used to describe the SIMBAD type |
+ |                          title | y | y | Title of the record |
  |                            uat | y | y | List of Unified Astronomy Thesaurus (UAT) terms assigned to the record. |
  |                      uat_facet | y | n | Facets for the uat field. |
+|               update_timestamp | y | y | Machine readable modification timestamp; corresponds to time when the record was reindexed |
+ |                         vizier | y | y | Keywords, "subject" tags from VizieR |
+ |                   vizier_facet | y | y | Contains list of VizieR keywords with the number of occurences that keyword has for the search |
+ |                         volume | y | y | Volume of the journal that the article exists in |
+ |                           year | y | y | Year of publication |
+
+
+
+ |  **Functional Operators**   | **Example** | **Explanation** |
+ | --------------------------- | - | - |
+ |  [citations()](citations-and-references)  | `citations(aff:MIT)` | Returns list of citations for papers matching the inner query; use `fl=[citations]` to retrieve the field contents |
+ |  [pos()](positional)                      | `pos(author:accomazzi, 1, 5)` | The pos() operator allows you to search for an item within a field by specifying the position  (range). The syntax for this operator is `pos(fieldedquery,position,[endposition])`. If no endposition is given, then it is assumed to be endposition = position, otherwise this performs a query within the range [position, endposition]. |
+ |  [references()](citations-and-references) | `references(author:huchra)` | Returns list of references from papers matching the inner query |
+ |  [reviews()](second-order)                | `reviews(title:"monte carlo")` | returns the list of documents citing the most relevant papers on the topic being researched; these are papers containing the most extensive reviews of the field. |
+ |  [similar()](second-order)                | `similar(title:hubble^2, abstract, 100)`<br/>`similar("hubble space telescope", input)` | Find similar documents, either based on their similarity with the documents from the inner query or similar to the text that you supplied. <br/><br/>Format: `similar(queryOrText, fields, maxQueryTerms, docToSearch, minTermFreq, minDocFreq, percentToMatch)`. <br/><br/>- `queryOrText`: string, this can be a query or input <br/>- `fields`: list of fields separated by spaces, or special token 'input' which means use the query as is, as input <br/>- `maxQueryTerms`: modifies similarity search, only this many terms will be considered during the search (those terms are NOT the first X collected, but they will be the first X terms weighted by TFIDF - term frequency/inverse document frequency) <br/>- `docToSearch`: how many documents to collect in the first phase, is ignored when fields='input' <br/>- `minTermFreq`: term is selected only if its frequency is this or higher <br/>- `minDocFreq`: selected term must be present in at least that many documents <br/>- `percentToMatch`: ratio of terms that have to be present in the selected documents, default is 0.0f. For example, if 100 terms was used to discover similar docs, and if the ratio was 0.3f - then 30 terms must be present in the docs that are returned. |
+ |  [topn()](second-order)                   | `topn(200, citations(title:hubble), citation_count desc)` | Limit results to the best top N (by their ranking or sort order); format: `topn(int, query, 'sort order')`. If the sort order is not specified, the default `score desc` will be used. |
+ |  [trending()](second-order)               | `trending("machine learning")` | Trending – returns the list of documents most read by users who read recent papers on the topic being researched; these are papers currently being read by people interested in this field. |
+ |  [useful() ](second-order)                | `useful("gradient descent")` | Useful – returns the list of documents frequently cited by the most relevant papers on the topic being researched; these are studies which discuss methods and techniques useful to conduct research in this field. |
+ |  docs()                                          | `docs(library/rWiNDShzQ0adoQyx7RFKDg)` | Retrieve set of documents specified by their IDs. You can think of this as a set operator; it will fill the set with documents that correspond to identifiers that are passed in. And this set can then be combined with other queries (i.e. `docs(A) NOT author:huchra`) |

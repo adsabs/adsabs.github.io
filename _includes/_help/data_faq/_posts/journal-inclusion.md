@@ -1,4 +1,10 @@
-## How do you evaluate journals for inclusion?
+{% unless include.ads %}## What journals and conferences do you include?
+
+The journals, conference proceedings, observatory bulletins and circulars, NASA reports and books that {{ include.site }} indexes are listed, with their bibliographic code abbreviations, on the [Bibliographic Code Abbreviations](https://adsabs.harvard.edu/abs_doc/journal_abbr.html) page. It has four lists: all journals, all conferences, refereed journals, and non-refereed publications.
+
+Being on a list does not mean our coverage of that publication is complete. We also index articles from journals in other disciplines when they cite or reference our core subjects.
+
+{% endunless %}## How do you evaluate journals for inclusion?
 
 The {{ include.site }} evaluates all journals for coverage using the criteria listed below. We seek comprehensive, but not all-inclusive, coverage of the field of astronomy, and we take into consideration relevancy of content, standards of presentation, and regularity of publication. We evaluate journals on an ongoing basis and add or delete journals regularly. {{ include.site }} reserves the right to exclude content deemed inappropriate for its collection or inconsistent with its editorial policies.
 To be accepted for coverage, a journal must:

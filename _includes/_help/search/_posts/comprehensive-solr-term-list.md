@@ -94,7 +94,7 @@ An aggregated list of the fields, operators, and other parameters that are acces
  |   planetary_feature_facet_hier_3level | y | n | Facets for the planetary_feature field. |
  |                       property | y | y | Array of miscellaneous flags associated with the record. For possible values see [Properties](search-syntax#properties).| 
  |                            pub | y | y | Canonical name of the publication the record appeared in |
-|                        pub_raw | y | y | Full publication string as given by the source: publication name plus volume, issue, and page if they exist (e.g. `Physical Review Letters, Volume 116, Issue 6, article id.061102`) |
+|                        pub_raw | y | y | Full publication string assembled from publication name plus volume, issue, and page if they exist (e.g. `Physical Review Letters, Volume 116, Issue 6, article id.061102`) |
  |                        pubdate | y | y | Publication date in the form `YYYY-MM-DD` (DD value will always be "00") - corresponds to the old version of metadata timestamps (ADS Classic) |
  |                      publisher | y | y | Name of the publisher (e.g. `APS`, `IOP`) |
  |                        pubnote | y | y | Comments submitted with the arXiv version of the paper |
